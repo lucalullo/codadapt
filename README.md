@@ -4,9 +4,7 @@ CodAdapt is a compact experimental machine-learning library for tabular data. Ve
 **adaptive coded memory with shared multi-resolution encoding** for binary classification and
 single-target regression, while preserving a scikit-learn-style estimator interface.
 
-CodAdapt 0.1.0 is an experimental pre-1.0 release. It is suitable for controlled experiments,
-Kaggle notebooks, and reproducible evaluation; it is **not** a claim that CodAdapt will outperform
-LightGBM or other established tabular models on every dataset.
+CodAdapt 0.1.0 is an experimental pre-1.0 release. It is intended for controlled experiments and reproducible evaluation; it does not claim to outperform established tree-based models across all tabular datasets.
 
 ## Highlights in 0.1.0
 
