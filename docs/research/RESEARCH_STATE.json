@@ -1,0 +1,2841 @@
+{
+  "project": "CodAdapt",
+  "public_version": "0.2.0rc1",
+  "research_state_version": 7,
+  "last_completed_round": 43,
+  "current_date": "2026-09-21",
+  "public_core": {
+    "status": "frozen",
+    "description": "Shared train-only quantile/category encoder; up to3residual memory levels; budgeted mains and fixed-code pair tables; validation-level stopping.",
+    "classifier": true,
+    "regressor": true,
+    "multiclass": false,
+    "api": [
+      "CodAdapt = CodAdaptClassifier",
+      "CodAdaptClassifier",
+      "CodAdaptRegressor"
+    ],
+    "authoritative_implementation": [
+      "src/codadapt/_base.py",
+      "src/codadapt/_training.py",
+      "src/codadapt/preprocessing.py"
+    ],
+    "stale_documentation": "docs/ALGORITHM.md describes legacy adaptive code search not executed by the public trainer;see round7_audit.md.",
+    "native_core_version": "0.1.0",
+    "default_changed": false
+  },
+  "current_research_branches": {
+    "native_core": {
+      "status": "FROZEN_NO_PROMOTED_REPLACEMENT",
+      "main_problem": "No independently demonstrated stronger native core; direct additive line closed.",
+      "best_confirmed_result": "R15 systems wins vs tuned LGBM19/27 fit,24/27predict,24/27serialized; no stable predictive niche."
+    },
+    "ebm_compiler": {
+      "status": "LOCAL_RC_HANDOFF_VALIDATED",
+      "fidelity": "Exact raw/regression verification; probabilities abs<=1e-15, not bitwise",
+      "main_bottleneck": "External validation excluded by user; manual handoff only, no new optimization",
+      "scope": "Opt-in codadapt.experimental.compile_ebm(teacher, *, X_verify, max_states=None); interpret-core0.7.8 additive standard EBM only, binary/scalar regression; named DataFrames, real numeric and string categorical labels, supported missing/unseen. Exact raw/regression; numerical probability fidelity, not bitwise. Mandatory exact capacity/schema checks and heldout compile-then-verify. No teacher retained. Existing native API/default unchanged; standalone runtime ports frozen R37 ordered NumPy lookup and buffer persistence; no R38/R39 native backend.",
+      "last_evidence_round": 43,
+      "backend": "Public standalone NumPy port of frozen R37; no native extension",
+      "metrics_model": "Performance numbers retained here are historical R41, not measurements of public wrapper",
+      "independent_hardware_replication": false,
+      "round41_historical_reference": {
+        "status": "SCOPED_EXPERIMENTAL_RECOMMENDED_EXTERNAL_HARDWARE_PENDING",
+        "fidelity": "Raw scores exact to EBM; compiled predictions exact to frozen R37; teacher probabilities may differ by<=2.22e-16 and strict bitwise contract is REJECT",
+        "single_row_ratio_vs_ebm": 0.2605210420841683,
+        "batch100k_ratio_vs_ebm": 1.445112247171741,
+        "deep_memory_ratio_vs_ebm": 0.1821487164770666,
+        "main_bottleneck": "Independent hardware and explicit deployment/output contract; no universal throughput advantage",
+        "numeric_probe_count": 12009816,
+        "bucket_mismatches": 0,
+        "prediction_mismatches": 0,
+        "new_false_safe_cases": 0,
+        "teacher_required_at_inference": false,
+        "no_demonstrated_numeric_speedup_vs_round36": true,
+        "scope": "Opt-in exact binary logits and single-target regression; supported additive EBM schemas; target-host fidelity/profile before FAST_SAFE; no bitwise EBM probability guarantee",
+        "last_evidence_round": 41,
+        "backend": "Official R37 NumPy; secondary unchanged R39 C D",
+        "best_large_batch_threads": 1,
+        "no_demonstrated_numeric_speedup_vs_round36_scope": "Historical R37 NumPy finding only; R38 native candidate has separate paired metrics.",
+        "metrics_model": "R41 R37 exact raw-score contract; secondary R39 and probability contracts separately reported",
+        "round37_historical_reference": {
+          "status": "EXPERIMENTAL_PARTIALLY_READY",
+          "fidelity": "Bitwise exact on6verified SAFEteachers in supported univariate binary/regression contract.",
+          "single_row_ratio_vs_ebm": 0.27431168202494904,
+          "batch1k_ratio_vs_ebm": 0.7227760205502473,
+          "batch100k_ratio_vs_ebm": 1.0987637136350596,
+          "deep_memory_ratio_vs_ebm": 0.16724776408356024,
+          "main_bottleneck": "Numeric searchsorted+gather atlarge batch; Power/Gas/Diabetes outliers; cross-process variability.",
+          "numeric_probe_count": 11036405,
+          "bucket_mismatches": 0,
+          "prediction_mismatches": 0,
+          "new_false_safe_cases": 0,
+          "teacher_required_at_inference": false,
+          "no_demonstrated_numeric_speedup_vs_round36": true,
+          "scope": "Six fixedteachers, oneWindowsmachine; medians not universal guarantees."
+        },
+        "preferred_runtime": "R37 official; R39 secondary frozen candidate only",
+        "safe_global_thread_recommendation": 1,
+        "parallel_policy_admissible": false,
+        "round38_historical_reference": {
+          "status": "EXPERIMENTAL_PARTIALLY_READY_NATIVE_NOT_PROMOTED",
+          "fidelity": "Bitwise exact in both native backends across six frozen SAFE models and numeric probes.",
+          "single_row_ratio_vs_ebm": 0.2705199314567174,
+          "batch1k_ratio_vs_ebm": 1.2183080135757494,
+          "batch100k_ratio_vs_ebm": 3.6477847122354867,
+          "deep_memory_ratio_vs_ebm": 0.17016496350855906,
+          "main_bottleneck": "Wide input conversion: SECOM 89.0%, Mfeat 89.8%; single-thread fused slower on 4/6 ready-buffer cases; parallel policy regresses on some workloads.",
+          "numeric_probe_count": 12465430,
+          "bucket_mismatches": 0,
+          "prediction_mismatches": 0,
+          "new_false_safe_cases": 0,
+          "teacher_required_at_inference": false,
+          "no_demonstrated_numeric_speedup_vs_round36": true,
+          "scope": "Six frozen teachers;three alternating sessions on oneWindows host;synthetic million-row result is streamed.",
+          "last_evidence_round": 38,
+          "backend": "c",
+          "best_large_batch_threads": 4,
+          "batch100k_speedup_vs_round37": 0.5044809989665726,
+          "no_demonstrated_numeric_speedup_vs_round36_scope": "Historical R37 NumPy finding only; R38 native candidate has separate paired metrics.",
+          "metrics_model": "Round38 native diagnostic candidate; not automatically the preferred deployment runtime",
+          "round37_historical_reference": {
+            "status": "EXPERIMENTAL_PARTIALLY_READY",
+            "fidelity": "Bitwise exact on6verified SAFEteachers in supported univariate binary/regression contract.",
+            "single_row_ratio_vs_ebm": 0.27431168202494904,
+            "batch1k_ratio_vs_ebm": 0.7227760205502473,
+            "batch100k_ratio_vs_ebm": 1.0987637136350596,
+            "deep_memory_ratio_vs_ebm": 0.16724776408356024,
+            "main_bottleneck": "Numeric searchsorted+gather atlarge batch; Power/Gas/Diabetes outliers; cross-process variability.",
+            "numeric_probe_count": 11036405,
+            "bucket_mismatches": 0,
+            "prediction_mismatches": 0,
+            "new_false_safe_cases": 0,
+            "teacher_required_at_inference": false,
+            "no_demonstrated_numeric_speedup_vs_round36": true,
+            "scope": "Six fixedteachers, oneWindowsmachine; medians not universal guarantees."
+          },
+          "preferred_runtime": "Round37; failed native candidate not promoted",
+          "safe_global_thread_recommendation": 1,
+          "parallel_policy_admissible": false,
+          "dominant_adapter_phase": "native_execute",
+          "dominant_adapter_fraction": 0.5438821820247023,
+          "wide_conversion_fraction": {
+            "secom590": 0.8899748499944348,
+            "mfeat649": 0.8977541428118004
+          },
+          "datasets_with_slower_single_thread_fused_kernel": 4
+        },
+        "round39_historical_reference": {
+          "status": "PARTIAL_SYSTEMS_GATE_PASS",
+          "fidelity": "Round39 C feature-major: bitwise prediction/raw-score equivalence to frozen R37 on audited cases; exact bucket probes; teacher modules absent in deployment audit.",
+          "single_row_ratio_vs_ebm": 0.2878016737671398,
+          "batch1k_ratio_vs_ebm": 1.3156068067156728,
+          "batch100k_ratio_vs_ebm": 1.0331027382072695,
+          "deep_memory_ratio_vs_ebm": 0.1701189660001134,
+          "main_bottleneck": "KERNEL",
+          "numeric_probe_count": 12009816,
+          "bucket_mismatches": 0,
+          "prediction_mismatches": 0,
+          "new_false_safe_cases": 0,
+          "teacher_required_at_inference": false,
+          "no_demonstrated_numeric_speedup_vs_round36": true,
+          "scope": "Six frozen exports, one Windows host, paired two-process timing sessions; resident synthetic up to1M×300; no new admissions.",
+          "last_evidence_round": 39,
+          "backend": "C feature-major direct, strict FP",
+          "best_large_batch_threads": 1,
+          "batch100k_speedup_vs_round37": 1.3367276365310983,
+          "no_demonstrated_numeric_speedup_vs_round36_scope": "Historical R37 NumPy finding only; R38 native candidate has separate paired metrics.",
+          "metrics_model": "Round39 D private candidate; ready gate uses actual frozen R37 control",
+          "round37_historical_reference": {
+            "status": "EXPERIMENTAL_PARTIALLY_READY",
+            "fidelity": "Bitwise exact on6verified SAFEteachers in supported univariate binary/regression contract.",
+            "single_row_ratio_vs_ebm": 0.27431168202494904,
+            "batch1k_ratio_vs_ebm": 0.7227760205502473,
+            "batch100k_ratio_vs_ebm": 1.0987637136350596,
+            "deep_memory_ratio_vs_ebm": 0.16724776408356024,
+            "main_bottleneck": "Numeric searchsorted+gather atlarge batch; Power/Gas/Diabetes outliers; cross-process variability.",
+            "numeric_probe_count": 11036405,
+            "bucket_mismatches": 0,
+            "prediction_mismatches": 0,
+            "new_false_safe_cases": 0,
+            "teacher_required_at_inference": false,
+            "no_demonstrated_numeric_speedup_vs_round36": true,
+            "scope": "Six fixedteachers, oneWindowsmachine; medians not universal guarantees."
+          },
+          "preferred_runtime": "R37 retained reference/default; R39 D is an experimental candidate pending independent validation",
+          "safe_global_thread_recommendation": 1,
+          "parallel_policy_admissible": false,
+          "dominant_adapter_phase": "Measured preparation and feature-major exact execution; see R39 dataset breakdown",
+          "dominant_adapter_fraction": 0.055662980039167295,
+          "ready_buffer_speedup_vs_round37": 1.500687452517257,
+          "round38_historical_reference": {
+            "status": "EXPERIMENTAL_PARTIALLY_READY_NATIVE_NOT_PROMOTED",
+            "fidelity": "Bitwise exact in both native backends across six frozen SAFE models and numeric probes.",
+            "single_row_ratio_vs_ebm": 0.2705199314567174,
+            "batch1k_ratio_vs_ebm": 1.2183080135757494,
+            "batch100k_ratio_vs_ebm": 3.6477847122354867,
+            "deep_memory_ratio_vs_ebm": 0.17016496350855906,
+            "main_bottleneck": "Wide input conversion: SECOM 89.0%, Mfeat 89.8%; single-thread fused slower on 4/6 ready-buffer cases; parallel policy regresses on some workloads.",
+            "numeric_probe_count": 12465430,
+            "bucket_mismatches": 0,
+            "prediction_mismatches": 0,
+            "new_false_safe_cases": 0,
+            "teacher_required_at_inference": false,
+            "no_demonstrated_numeric_speedup_vs_round36": true,
+            "scope": "Six frozen teachers;three alternating sessions on oneWindows host;synthetic million-row result is streamed.",
+            "last_evidence_round": 38,
+            "backend": "c",
+            "best_large_batch_threads": 4,
+            "batch100k_speedup_vs_round37": 0.5044809989665726,
+            "no_demonstrated_numeric_speedup_vs_round36_scope": "Historical R37 NumPy finding only; R38 native candidate has separate paired metrics.",
+            "metrics_model": "Round38 native diagnostic candidate; not automatically the preferred deployment runtime",
+            "round37_historical_reference": {
+              "status": "EXPERIMENTAL_PARTIALLY_READY",
+              "fidelity": "Bitwise exact on6verified SAFEteachers in supported univariate binary/regression contract.",
+              "single_row_ratio_vs_ebm": 0.27431168202494904,
+              "batch1k_ratio_vs_ebm": 0.7227760205502473,
+              "batch100k_ratio_vs_ebm": 1.0987637136350596,
+              "deep_memory_ratio_vs_ebm": 0.16724776408356024,
+              "main_bottleneck": "Numeric searchsorted+gather atlarge batch; Power/Gas/Diabetes outliers; cross-process variability.",
+              "numeric_probe_count": 11036405,
+              "bucket_mismatches": 0,
+              "prediction_mismatches": 0,
+              "new_false_safe_cases": 0,
+              "teacher_required_at_inference": false,
+              "no_demonstrated_numeric_speedup_vs_round36": true,
+              "scope": "Six fixedteachers, oneWindowsmachine; medians not universal guarantees."
+            },
+            "preferred_runtime": "Round37; failed native candidate not promoted",
+            "safe_global_thread_recommendation": 1,
+            "parallel_policy_admissible": false,
+            "dominant_adapter_phase": "native_execute",
+            "dominant_adapter_fraction": 0.5438821820247023,
+            "wide_conversion_fraction": {
+              "secom590": 0.8899748499944348,
+              "mfeat649": 0.8977541428118004
+            },
+            "datasets_with_slower_single_thread_fused_kernel": 4
+          }
+        },
+        "round40_replication": {
+          "historical": {
+            "dataset_count": 6,
+            "ready_by_session": [
+              1.5097995780788627,
+              1.5223270633516743,
+              1.5121240266033158
+            ],
+            "ready_sessions_pass": 3,
+            "ready_speedup": 1.5121240266033158,
+            "end_to_end_speedup": 1.3643374696263124,
+            "batch100k_ratio": 0.9973092404261098,
+            "single_ratio": 0.28956583748599785,
+            "deep_ratio": 0.16994989407717803,
+            "gates": {
+              "ready": true,
+              "end_to_end": true,
+              "batch100k": true,
+              "single": true,
+              "deep": true
+            },
+            "pass": true,
+            "dataset_bootstrap_ci": {
+              "ready_speedup": [
+                1.1066096113192363,
+                1.7996766171967518
+              ],
+              "end_to_end_speedup": [
+                1.116300728800875,
+                1.827032740310901
+              ],
+              "ratio_vs_ebm": [
+                0.7276933449582514,
+                1.6959707057708182
+              ],
+              "deep_ratio": [
+                0.13130446348743713,
+                0.40868998923086264
+              ]
+            }
+          },
+          "new": {
+            "dataset_count": 7,
+            "ready_by_session": [
+              1.362480888455787,
+              1.385029012881379,
+              1.360380090821325
+            ],
+            "ready_sessions_pass": 0,
+            "ready_speedup": 1.362480888455787,
+            "end_to_end_speedup": 1.2999158221905656,
+            "batch100k_ratio": 1.203241934768407,
+            "single_ratio": 0.23788738542121346,
+            "deep_ratio": 0.2114776905495379,
+            "gates": {
+              "ready": false,
+              "end_to_end": true,
+              "batch100k": false,
+              "single": true,
+              "deep": true
+            },
+            "pass": false,
+            "dataset_bootstrap_ci": {
+              "ready_speedup": [
+                1.197351779298685,
+                1.8241807261889627
+              ],
+              "end_to_end_speedup": [
+                1.0697086233079502,
+                1.7651997591102455
+              ],
+              "ratio_vs_ebm": [
+                0.861953075094811,
+                1.532239356794517
+              ],
+              "deep_ratio": [
+                0.18199343258028705,
+                0.27462630211225375
+              ]
+            }
+          },
+          "all": {
+            "dataset_count": 13,
+            "ready_by_session": [
+              1.4317128292023877,
+              1.4413265705603435,
+              1.4323441042257767
+            ],
+            "ready_sessions_pass": 3,
+            "ready_speedup": 1.4323441042257767,
+            "end_to_end_speedup": 1.3457402372017089,
+            "batch100k_ratio": 1.0082097000388308,
+            "single_ratio": 0.26648458837300043,
+            "deep_ratio": 0.1857385739115368,
+            "gates": {
+              "ready": true,
+              "end_to_end": true,
+              "batch100k": true,
+              "single": true,
+              "deep": true
+            },
+            "pass": true,
+            "dataset_bootstrap_ci": {
+              "ready_speedup": [
+                1.197351779298685,
+                1.7981574754587037
+              ],
+              "end_to_end_speedup": [
+                1.1330438014180262,
+                1.6556870589542703
+              ],
+              "ratio_vs_ebm": [
+                0.861953075094811,
+                1.3557050592034445
+              ],
+              "deep_ratio": [
+                0.1620705676776025,
+                0.22702564430517364
+              ]
+            }
+          },
+          "fidelity": {
+            "numeric_probes": 12009816,
+            "bucket_mismatches": 0,
+            "prediction_mismatches": 0,
+            "false_safe": 0,
+            "scaling_cases": 72,
+            "teacher_max_error": 0.0,
+            "teacher_max_nmse": 0.0
+          },
+          "promote": false,
+          "requested_pooled_numeric_gate": true,
+          "additional_preregistered_transfer_gate": false,
+          "replicated": "PARTIALLY",
+          "readiness": "PARTIALLY",
+          "next_step": "Validate an explicit small-batch/compact-memory deployment contract on independent hardware; keep R37 as reference and do not resume equivalent runtime tuning.",
+          "special": {
+            "power_600000": {
+              "ready_speedup": 1.0268277388696236,
+              "end_to_end_speedup": 1.1330438014180262,
+              "ratio_vs_ebm": 2.1524044041532044,
+              "deep_ratio": 0.22702564430517364
+            },
+            "gas128": {
+              "ready_speedup": 1.7055536693287732,
+              "end_to_end_speedup": 1.6118290631807723,
+              "ratio_vs_ebm": 1.0082097000388308,
+              "deep_ratio": 0.17782922047675354
+            },
+            "diabetes47": {
+              "ready_speedup": 1.1863914837688492,
+              "end_to_end_speedup": 1.0995576561837241,
+              "ratio_vs_ebm": 1.2395370073884322,
+              "deep_ratio": 0.5903543341565516
+            }
+          }
+        },
+        "round40_historical_reference": {
+          "status": "R37_REFERENCE_RETAINED_REPLICATION_GATE_FAIL",
+          "fidelity": "Full R39 controls replayed and extended: exact bucket/prediction equivalence to R37; teacher-heldout checks; teacher-blocked persistence",
+          "single_row_ratio_vs_ebm": 0.26648458837300043,
+          "batch1k_ratio_vs_ebm": 1.51491747778248,
+          "batch100k_ratio_vs_ebm": 1.0082097000388308,
+          "deep_memory_ratio_vs_ebm": 0.1857385739115368,
+          "main_bottleneck": "Reproducibility and workload-dependent serving performance; no further optimization in R40",
+          "numeric_probe_count": 12009816,
+          "bucket_mismatches": 0,
+          "prediction_mismatches": 0,
+          "new_false_safe_cases": 0,
+          "teacher_required_at_inference": false,
+          "no_demonstrated_numeric_speedup_vs_round36": true,
+          "scope": "13 SAFE exports;3 fresh-process sessions per workload; same Windows host;7 workloads new to runtime selection, not previously unseen predictive datasets",
+          "last_evidence_round": 40,
+          "backend": "C feature-major direct, strict FP",
+          "best_large_batch_threads": 1,
+          "batch100k_speedup_vs_round37": 1.3457402372017089,
+          "no_demonstrated_numeric_speedup_vs_round36_scope": "Historical R37 NumPy finding only; R38 native candidate has separate paired metrics.",
+          "metrics_model": "Round40 frozen R39 D; pooled13 with historical6/new7 gates separate",
+          "round37_historical_reference": {
+            "status": "EXPERIMENTAL_PARTIALLY_READY",
+            "fidelity": "Bitwise exact on6verified SAFEteachers in supported univariate binary/regression contract.",
+            "single_row_ratio_vs_ebm": 0.27431168202494904,
+            "batch1k_ratio_vs_ebm": 0.7227760205502473,
+            "batch100k_ratio_vs_ebm": 1.0987637136350596,
+            "deep_memory_ratio_vs_ebm": 0.16724776408356024,
+            "main_bottleneck": "Numeric searchsorted+gather atlarge batch; Power/Gas/Diabetes outliers; cross-process variability.",
+            "numeric_probe_count": 11036405,
+            "bucket_mismatches": 0,
+            "prediction_mismatches": 0,
+            "new_false_safe_cases": 0,
+            "teacher_required_at_inference": false,
+            "no_demonstrated_numeric_speedup_vs_round36": true,
+            "scope": "Six fixedteachers, oneWindowsmachine; medians not universal guarantees."
+          },
+          "preferred_runtime": "R37 official research reference; R39 not promoted after independent replication",
+          "safe_global_thread_recommendation": 1,
+          "parallel_policy_admissible": false,
+          "ready_buffer_speedup_vs_round37": 1.4323441042257767,
+          "round38_historical_reference": {
+            "status": "EXPERIMENTAL_PARTIALLY_READY_NATIVE_NOT_PROMOTED",
+            "fidelity": "Bitwise exact in both native backends across six frozen SAFE models and numeric probes.",
+            "single_row_ratio_vs_ebm": 0.2705199314567174,
+            "batch1k_ratio_vs_ebm": 1.2183080135757494,
+            "batch100k_ratio_vs_ebm": 3.6477847122354867,
+            "deep_memory_ratio_vs_ebm": 0.17016496350855906,
+            "main_bottleneck": "Wide input conversion: SECOM 89.0%, Mfeat 89.8%; single-thread fused slower on 4/6 ready-buffer cases; parallel policy regresses on some workloads.",
+            "numeric_probe_count": 12465430,
+            "bucket_mismatches": 0,
+            "prediction_mismatches": 0,
+            "new_false_safe_cases": 0,
+            "teacher_required_at_inference": false,
+            "no_demonstrated_numeric_speedup_vs_round36": true,
+            "scope": "Six frozen teachers;three alternating sessions on oneWindows host;synthetic million-row result is streamed.",
+            "last_evidence_round": 38,
+            "backend": "c",
+            "best_large_batch_threads": 4,
+            "batch100k_speedup_vs_round37": 0.5044809989665726,
+            "no_demonstrated_numeric_speedup_vs_round36_scope": "Historical R37 NumPy finding only; R38 native candidate has separate paired metrics.",
+            "metrics_model": "Round38 native diagnostic candidate; not automatically the preferred deployment runtime",
+            "round37_historical_reference": {
+              "status": "EXPERIMENTAL_PARTIALLY_READY",
+              "fidelity": "Bitwise exact on6verified SAFEteachers in supported univariate binary/regression contract.",
+              "single_row_ratio_vs_ebm": 0.27431168202494904,
+              "batch1k_ratio_vs_ebm": 0.7227760205502473,
+              "batch100k_ratio_vs_ebm": 1.0987637136350596,
+              "deep_memory_ratio_vs_ebm": 0.16724776408356024,
+              "main_bottleneck": "Numeric searchsorted+gather atlarge batch; Power/Gas/Diabetes outliers; cross-process variability.",
+              "numeric_probe_count": 11036405,
+              "bucket_mismatches": 0,
+              "prediction_mismatches": 0,
+              "new_false_safe_cases": 0,
+              "teacher_required_at_inference": false,
+              "no_demonstrated_numeric_speedup_vs_round36": true,
+              "scope": "Six fixedteachers, oneWindowsmachine; medians not universal guarantees."
+            },
+            "preferred_runtime": "Round37; failed native candidate not promoted",
+            "safe_global_thread_recommendation": 1,
+            "parallel_policy_admissible": false,
+            "dominant_adapter_phase": "native_execute",
+            "dominant_adapter_fraction": 0.5438821820247023,
+            "wide_conversion_fraction": {
+              "secom590": 0.8899748499944348,
+              "mfeat649": 0.8977541428118004
+            },
+            "datasets_with_slower_single_thread_fused_kernel": 4
+          },
+          "round39_historical_reference": {
+            "status": "PARTIAL_SYSTEMS_GATE_PASS",
+            "fidelity": "Round39 C feature-major: bitwise prediction/raw-score equivalence to frozen R37 on audited cases; exact bucket probes; teacher modules absent in deployment audit.",
+            "single_row_ratio_vs_ebm": 0.2878016737671398,
+            "batch1k_ratio_vs_ebm": 1.3156068067156728,
+            "batch100k_ratio_vs_ebm": 1.0331027382072695,
+            "deep_memory_ratio_vs_ebm": 0.1701189660001134,
+            "main_bottleneck": "KERNEL",
+            "numeric_probe_count": 12009816,
+            "bucket_mismatches": 0,
+            "prediction_mismatches": 0,
+            "new_false_safe_cases": 0,
+            "teacher_required_at_inference": false,
+            "no_demonstrated_numeric_speedup_vs_round36": true,
+            "scope": "Six frozen exports, one Windows host, paired two-process timing sessions; resident synthetic up to1M×300; no new admissions.",
+            "last_evidence_round": 39,
+            "backend": "C feature-major direct, strict FP",
+            "best_large_batch_threads": 1,
+            "batch100k_speedup_vs_round37": 1.3367276365310983,
+            "no_demonstrated_numeric_speedup_vs_round36_scope": "Historical R37 NumPy finding only; R38 native candidate has separate paired metrics.",
+            "metrics_model": "Round39 D private candidate; ready gate uses actual frozen R37 control",
+            "round37_historical_reference": {
+              "status": "EXPERIMENTAL_PARTIALLY_READY",
+              "fidelity": "Bitwise exact on6verified SAFEteachers in supported univariate binary/regression contract.",
+              "single_row_ratio_vs_ebm": 0.27431168202494904,
+              "batch1k_ratio_vs_ebm": 0.7227760205502473,
+              "batch100k_ratio_vs_ebm": 1.0987637136350596,
+              "deep_memory_ratio_vs_ebm": 0.16724776408356024,
+              "main_bottleneck": "Numeric searchsorted+gather atlarge batch; Power/Gas/Diabetes outliers; cross-process variability.",
+              "numeric_probe_count": 11036405,
+              "bucket_mismatches": 0,
+              "prediction_mismatches": 0,
+              "new_false_safe_cases": 0,
+              "teacher_required_at_inference": false,
+              "no_demonstrated_numeric_speedup_vs_round36": true,
+              "scope": "Six fixedteachers, oneWindowsmachine; medians not universal guarantees."
+            },
+            "preferred_runtime": "R37 retained reference/default; R39 D is an experimental candidate pending independent validation",
+            "safe_global_thread_recommendation": 1,
+            "parallel_policy_admissible": false,
+            "dominant_adapter_phase": "Measured preparation and feature-major exact execution; see R39 dataset breakdown",
+            "dominant_adapter_fraction": 0.055662980039167295,
+            "ready_buffer_speedup_vs_round37": 1.500687452517257,
+            "round38_historical_reference": {
+              "status": "EXPERIMENTAL_PARTIALLY_READY_NATIVE_NOT_PROMOTED",
+              "fidelity": "Bitwise exact in both native backends across six frozen SAFE models and numeric probes.",
+              "single_row_ratio_vs_ebm": 0.2705199314567174,
+              "batch1k_ratio_vs_ebm": 1.2183080135757494,
+              "batch100k_ratio_vs_ebm": 3.6477847122354867,
+              "deep_memory_ratio_vs_ebm": 0.17016496350855906,
+              "main_bottleneck": "Wide input conversion: SECOM 89.0%, Mfeat 89.8%; single-thread fused slower on 4/6 ready-buffer cases; parallel policy regresses on some workloads.",
+              "numeric_probe_count": 12465430,
+              "bucket_mismatches": 0,
+              "prediction_mismatches": 0,
+              "new_false_safe_cases": 0,
+              "teacher_required_at_inference": false,
+              "no_demonstrated_numeric_speedup_vs_round36": true,
+              "scope": "Six frozen teachers;three alternating sessions on oneWindows host;synthetic million-row result is streamed.",
+              "last_evidence_round": 38,
+              "backend": "c",
+              "best_large_batch_threads": 4,
+              "batch100k_speedup_vs_round37": 0.5044809989665726,
+              "no_demonstrated_numeric_speedup_vs_round36_scope": "Historical R37 NumPy finding only; R38 native candidate has separate paired metrics.",
+              "metrics_model": "Round38 native diagnostic candidate; not automatically the preferred deployment runtime",
+              "round37_historical_reference": {
+                "status": "EXPERIMENTAL_PARTIALLY_READY",
+                "fidelity": "Bitwise exact on6verified SAFEteachers in supported univariate binary/regression contract.",
+                "single_row_ratio_vs_ebm": 0.27431168202494904,
+                "batch1k_ratio_vs_ebm": 0.7227760205502473,
+                "batch100k_ratio_vs_ebm": 1.0987637136350596,
+                "deep_memory_ratio_vs_ebm": 0.16724776408356024,
+                "main_bottleneck": "Numeric searchsorted+gather atlarge batch; Power/Gas/Diabetes outliers; cross-process variability.",
+                "numeric_probe_count": 11036405,
+                "bucket_mismatches": 0,
+                "prediction_mismatches": 0,
+                "new_false_safe_cases": 0,
+                "teacher_required_at_inference": false,
+                "no_demonstrated_numeric_speedup_vs_round36": true,
+                "scope": "Six fixedteachers, oneWindowsmachine; medians not universal guarantees."
+              },
+              "preferred_runtime": "Round37; failed native candidate not promoted",
+              "safe_global_thread_recommendation": 1,
+              "parallel_policy_admissible": false,
+              "dominant_adapter_phase": "native_execute",
+              "dominant_adapter_fraction": 0.5438821820247023,
+              "wide_conversion_fraction": {
+                "secom590": 0.8899748499944348,
+                "mfeat649": 0.8977541428118004
+              },
+              "datasets_with_slower_single_thread_fused_kernel": 4
+            }
+          },
+          "round40_replication": {
+            "historical": {
+              "dataset_count": 6,
+              "ready_by_session": [
+                1.5097995780788627,
+                1.5223270633516743,
+                1.5121240266033158
+              ],
+              "ready_sessions_pass": 3,
+              "ready_speedup": 1.5121240266033158,
+              "end_to_end_speedup": 1.3643374696263124,
+              "batch100k_ratio": 0.9973092404261098,
+              "single_ratio": 0.28956583748599785,
+              "deep_ratio": 0.16994989407717803,
+              "gates": {
+                "ready": true,
+                "end_to_end": true,
+                "batch100k": true,
+                "single": true,
+                "deep": true
+              },
+              "pass": true,
+              "dataset_bootstrap_ci": {
+                "ready_speedup": [
+                  1.1066096113192363,
+                  1.7996766171967518
+                ],
+                "end_to_end_speedup": [
+                  1.116300728800875,
+                  1.827032740310901
+                ],
+                "ratio_vs_ebm": [
+                  0.7276933449582514,
+                  1.6959707057708182
+                ],
+                "deep_ratio": [
+                  0.13130446348743713,
+                  0.40868998923086264
+                ]
+              }
+            },
+            "new": {
+              "dataset_count": 7,
+              "ready_by_session": [
+                1.362480888455787,
+                1.385029012881379,
+                1.360380090821325
+              ],
+              "ready_sessions_pass": 0,
+              "ready_speedup": 1.362480888455787,
+              "end_to_end_speedup": 1.2999158221905656,
+              "batch100k_ratio": 1.203241934768407,
+              "single_ratio": 0.23788738542121346,
+              "deep_ratio": 0.2114776905495379,
+              "gates": {
+                "ready": false,
+                "end_to_end": true,
+                "batch100k": false,
+                "single": true,
+                "deep": true
+              },
+              "pass": false,
+              "dataset_bootstrap_ci": {
+                "ready_speedup": [
+                  1.197351779298685,
+                  1.8241807261889627
+                ],
+                "end_to_end_speedup": [
+                  1.0697086233079502,
+                  1.7651997591102455
+                ],
+                "ratio_vs_ebm": [
+                  0.861953075094811,
+                  1.532239356794517
+                ],
+                "deep_ratio": [
+                  0.18199343258028705,
+                  0.27462630211225375
+                ]
+              }
+            },
+            "all": {
+              "dataset_count": 13,
+              "ready_by_session": [
+                1.4317128292023877,
+                1.4413265705603435,
+                1.4323441042257767
+              ],
+              "ready_sessions_pass": 3,
+              "ready_speedup": 1.4323441042257767,
+              "end_to_end_speedup": 1.3457402372017089,
+              "batch100k_ratio": 1.0082097000388308,
+              "single_ratio": 0.26648458837300043,
+              "deep_ratio": 0.1857385739115368,
+              "gates": {
+                "ready": true,
+                "end_to_end": true,
+                "batch100k": true,
+                "single": true,
+                "deep": true
+              },
+              "pass": true,
+              "dataset_bootstrap_ci": {
+                "ready_speedup": [
+                  1.197351779298685,
+                  1.7981574754587037
+                ],
+                "end_to_end_speedup": [
+                  1.1330438014180262,
+                  1.6556870589542703
+                ],
+                "ratio_vs_ebm": [
+                  0.861953075094811,
+                  1.3557050592034445
+                ],
+                "deep_ratio": [
+                  0.1620705676776025,
+                  0.22702564430517364
+                ]
+              }
+            },
+            "fidelity": {
+              "numeric_probes": 12009816,
+              "bucket_mismatches": 0,
+              "prediction_mismatches": 0,
+              "false_safe": 0,
+              "scaling_cases": 72,
+              "teacher_max_error": 0.0,
+              "teacher_max_nmse": 0.0
+            },
+            "promote": false,
+            "requested_pooled_numeric_gate": true,
+            "additional_preregistered_transfer_gate": false,
+            "replicated": "PARTIALLY",
+            "readiness": "PARTIALLY",
+            "next_step": "Validate an explicit small-batch/compact-memory deployment contract on independent hardware; keep R37 as reference and do not resume equivalent runtime tuning.",
+            "special": {
+              "power_600000": {
+                "ready_speedup": 1.0268277388696236,
+                "end_to_end_speedup": 1.1330438014180262,
+                "ratio_vs_ebm": 2.1524044041532044,
+                "deep_ratio": 0.22702564430517364
+              },
+              "gas128": {
+                "ready_speedup": 1.7055536693287732,
+                "end_to_end_speedup": 1.6118290631807723,
+                "ratio_vs_ebm": 1.0082097000388308,
+                "deep_ratio": 0.17782922047675354
+              },
+              "diabetes47": {
+                "ready_speedup": 1.1863914837688492,
+                "end_to_end_speedup": 1.0995576561837241,
+                "ratio_vs_ebm": 1.2395370073884322,
+                "deep_ratio": 0.5903543341565516
+              }
+            }
+          }
+        },
+        "independent_hardware_replication": false,
+        "portable_kit_prepared": true,
+        "linux_build_validated": false,
+        "teacher_probability_max_error": 2.220446049250313e-16,
+        "strict_probability_rejected_models": [
+          "gas128",
+          "diabetes47",
+          "secom590",
+          "mfeat649",
+          "breast_cancer",
+          "phoneme",
+          "adult",
+          "bank",
+          "clean1",
+          "covertype"
+        ],
+        "round41_deployment_envelope": {
+          "Round37": {
+            "single_speedup": 3.8384615384615386,
+            "single_ge3_count": 9,
+            "single_ge3_ci_count": 8,
+            "deep_ratio": 0.1821487164770666,
+            "memory_le030_count": 11,
+            "peak_rss_ratio": 0.5970001682935039,
+            "fast_safe_count": 84,
+            "safe_count": 7,
+            "observed_cases": 91,
+            "large100k_ratio": 1.445112247171741,
+            "latency_ge1p5_count": 41
+          },
+          "Round39": {
+            "single_speedup": 3.5065423741632946,
+            "single_ge3_count": 9,
+            "single_ge3_ci_count": 8,
+            "deep_ratio": 0.187471235116711,
+            "memory_le030_count": 10,
+            "peak_rss_ratio": 0.7037823964994951,
+            "fast_safe_count": 84,
+            "safe_count": 7,
+            "observed_cases": 91,
+            "large100k_ratio": 0.9777634089797979,
+            "latency_ge1p5_count": 30
+          },
+          "prediction_contract_rejected_models": [
+            "gas128",
+            "diabetes47",
+            "secom590",
+            "mfeat649",
+            "breast_cancer",
+            "phoneme",
+            "adult",
+            "bank",
+            "clean1",
+            "covertype"
+          ],
+          "metrics_contract": "raw_score: regression prediction / binary logit",
+          "crossovers": [
+            {
+              "dataset": "adult",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 1,
+              "slower_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "adult",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 1,
+              "slower_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "adult",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 1,
+              "slower_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "adult",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 1,
+              "slower_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "bank",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 1,
+              "slower_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "bank",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 1,
+              "slower_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "bank",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 1,
+              "slower_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "bank",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 1,
+              "slower_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "blog280",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": null,
+              "slower_batches": [],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "blog280",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 100000,
+              "slower_batches": [
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "blog280",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                10000,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "blog280",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                10000,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "breast_cancer",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "breast_cancer",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "breast_cancer",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "breast_cancer",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "california_housing",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 1000,
+              "slower_batches": [
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "california_housing",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 1000,
+              "slower_batches": [
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "california_housing",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "california_housing",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "clean1",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "clean1",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 100000,
+              "slower_batches": [
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "clean1",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                10000,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "clean1",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                10000,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "covertype",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "covertype",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "covertype",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "covertype",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "diabetes47",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 100000,
+              "slower_batches": [
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "diabetes47",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 100000,
+              "slower_batches": [
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "diabetes47",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 100000,
+              "slower_batches": [
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "diabetes47",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 100000,
+              "slower_batches": [
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "gas128",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 1000,
+              "slower_batches": [
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "gas128",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 1000,
+              "slower_batches": [
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "gas128",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "gas128",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "mfeat649",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "mfeat649",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 100000,
+              "slower_batches": [
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000,
+                10000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "mfeat649",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "mfeat649",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "phoneme",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 1000,
+              "slower_batches": [
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "phoneme",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 1000,
+              "slower_batches": [
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "phoneme",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "phoneme",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "power_600000",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "power_600000",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "power_600000",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "power_600000",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000,
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "secom590",
+              "runtime": "Round37",
+              "contract": "prediction",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "secom590",
+              "runtime": "Round37",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 10000,
+              "slower_batches": [
+                10000,
+                100000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                128,
+                1000
+              ],
+              "recovery_after_first": false
+            },
+            {
+              "dataset": "secom590",
+              "runtime": "Round39",
+              "contract": "prediction",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                10000,
+                100000
+              ],
+              "recovery_after_first": true
+            },
+            {
+              "dataset": "secom590",
+              "runtime": "Round39",
+              "contract": "raw_score",
+              "first_measured_batch_slower": 128,
+              "slower_batches": [
+                128,
+                1000
+              ],
+              "faster_batches": [
+                1,
+                8,
+                32,
+                10000,
+                100000
+              ],
+              "recovery_after_first": true
+            }
+          ],
+          "independent_hardware_replication": false,
+          "hardware_claim": "This file is one host. Compare returned environment fingerprints/results before asserting independent replication.",
+          "second_host_available": false,
+          "portable_kit": "research_private/round41/portable",
+          "linux_run": "NOT EXECUTED",
+          "local_packaging_test": "PASSED",
+          "public_default": false,
+          "can_expose_scoped_mode": true,
+          "experimental_v02": true,
+          "official_runtime": "Round37 unchanged; Round39 secondary only",
+          "fidelity": {
+            "numeric_probes": 12009816,
+            "bucket_mismatches": 0,
+            "raw_score_mismatches": 0,
+            "compiled_vs_frozen_prediction_mismatches": 0,
+            "teacher_probability_bit_mismatches": 110678,
+            "teacher_probability_max_error": 2.220446049250313e-16,
+            "false_safe_under_unchanged_compiler_contract": 0,
+            "negative_rejections": 65
+          },
+          "scope": "Opt-in exact binary logits and single-target regression; supported additive EBM schemas; target-host fidelity/profile before FAST_SAFE; no bitwise EBM probability guarantee",
+          "remaining": [
+            "Execute kit on genuinely independent hardware and return artifacts",
+            "Validate Linux native ABI/build before making portability claims",
+            "Implement/review public packaging and explicit schema/output-contract API in a separately authorized task",
+            "Keep performance labels tied to target host/model/batch; no universal throughput cutoff"
+          ]
+        }
+      },
+      "api": "codadapt.experimental.compile_ebm(teacher, *, X_verify, max_states=None)",
+      "public_version": "0.2.0rc1",
+      "release_gate": {
+        "version": "0.2.0rc1",
+        "default_changed": false,
+        "public_api": "codadapt.experimental.compile_ebm(teacher, *, X_verify, max_states=None)",
+        "tests_passed": 375,
+        "expected_xfails": 4,
+        "failures": 0,
+        "errors": 0,
+        "ruff_errors": 0,
+        "format_clean": true,
+        "compiler_test_cases": 25,
+        "optional_ebm": "interpret-core==0.7.8",
+        "raw_score_fidelity": "PASS",
+        "regression_fidelity": "PASS",
+        "probability_absolute_tolerance": 1e-15,
+        "probability_max_observed_error": 2.220446049250313e-16,
+        "frozen_models_checked": 13,
+        "safe": 12,
+        "rejected": [
+          {
+            "dataset": "diabetes47",
+            "status": "REJECT",
+            "reason": "REJECT: unsupported model/schema or verification failure: Categorical feature 'admission_type_id' supports string labels only."
+          }
+        ],
+        "standalone": {
+          "models": 12,
+          "raw_mismatches": 0,
+          "probability_mismatches": 0,
+          "teacher_import_blocked": true,
+          "installed_module": "C:\\Users\\lucal\\Desktop\\codadapt\\research_private\\round42\\package_final\\test_installed_wheel_fit_predi0\\wheel-environment\\Lib\\site-packages\\codadapt\\__init__.py",
+          "version": "0.2.0rc1"
+        },
+        "default_core_hashes_unchanged": 7,
+        "wheel_install": "PASS",
+        "source_checkout_install": "PASS",
+        "sdist_private_data_excluded": true,
+        "twine": "PASS",
+        "github_workflow_configured": true,
+        "github_workflow_executed": false,
+        "remote_install_of_uncommitted_candidate": false,
+        "independent_hardware": false,
+        "final_release": false,
+        "commit_push": false,
+        "wheel_sha256": "c21c150787254761c1249f09bc0c3dc6b8346abc201a1357a2483a9df317a412",
+        "sdist_sha256": "178022afa88f49acb2bd88651832a9e3470a7ba6b931b475b8a3b8c00d4792c0"
+      },
+      "preferred_runtime": "Round37 NumPy reference, one thread; R39 remains research-only",
+      "teacher_required_at_inference": false,
+      "round43_local_validation": {
+        "status": "LOCAL_HANDOFF_READY",
+        "external_scope": "EXCLUDED_BY_USER",
+        "tests_passed": 375,
+        "expected_xfails": 4,
+        "failures": 0,
+        "ruff": "PASS",
+        "clean_wheel": "PASS",
+        "ebm_extra": "PASS",
+        "standalone": "PASS",
+        "version": "0.2.0rc1",
+        "runtime_changed": false,
+        "compiler_changed": false,
+        "github_ci": "NOT_RUN",
+        "github_install": "NOT_RUN",
+        "independent_hardware": false,
+        "python310": "NOT_RUN",
+        "python311": "NOT_RUN",
+        "python312": "PASS",
+        "zip_sha256": "c8c9c3c91fa9fe1deeb05f6e2fe6aa9df6fc73026092b44ce5f80ca426a109f4",
+        "zip_files": 44,
+        "zip": "C:\\Users\\lucal\\Desktop\\codadapt\\codadapt-v0.2.0rc1.zip",
+        "directory": "C:\\Users\\lucal\\Desktop\\codadapt\\codadapt-v0.2.0rc1",
+        "published": false,
+        "commit_push": false
+      }
+    }
+  },
+  "confirmed_findings": [
+    {
+      "status": "CONFIRMED",
+      "finding": "Public shared encoder and validation-level stopping are implemented; R1–6effect sizes remain historical."
+    },
+    {
+      "status": "CONFIRMED",
+      "finding": "R10 and R15 do not replicate R9 general classifier superiority."
+    },
+    {
+      "status": "CONFIRMED",
+      "finding": "Pair-memory/low-rank/backfitting variants fail their new-data promotion thresholds."
+    },
+    {
+      "status": "CONFIRMED",
+      "finding": "R23 strong additive hybrid improves new-data point estimates:+0.011209AUC/+7.98% RMSE, at high training cost."
+    },
+    {
+      "status": "CONFIRMED",
+      "finding": "R26 and R33 preserve fixedadditiveEBM functions ontestedcohorts; not alltreeensembleinteractions."
+    },
+    {
+      "status": "CONFIRMED",
+      "finding": "R35 capacity-aware exactcompiler rejects unsafeoutputs in supportedcontract;0observed false-safe."
+    },
+    {
+      "status": "CONFIRMED",
+      "finding": "R36 categorical path and R37 persistence optimize samevalues/cuts; teacher-free load verified."
+    },
+    {
+      "status": "CONFIRMED",
+      "finding": "R37 meets sessionmedian systems gates but alternate paired R36/R37 speed is essentially equal."
+    },
+    {
+      "status": "CONFIRMED",
+      "round": 38,
+      "finding": "Backend c; thread grandi 4; bucket/prediction mismatch0/0 su 12,465,430 probe numerici. Kernel bucket speedup0.739x, fused0.781x. End-to-end single/1k/100k vs EBM 0.271/1.218/3.648x; speedup100k vs R37 0.504x; deep0.170xEBM. Gate mediano FAIL.",
+      "scope": "Systems-only,within measured host/teachers;not publicpromotion"
+    },
+    {
+      "status": "CONFIRMED",
+      "round": 39,
+      "finding": "Layout D, colonne contigue dirette quando possibile, single-thread. Ready-buffer vs R37 1.5007x; end-to-end vs R37 1.3367x. Batch100k/EBM 1.0331x; Power/Gas/Diabetes 2.2778/1.0194/1.2293x. Single/EBM 0.2878x; deep/EBM 0.1701x; conversion share 5.57%. Bucket/prediction mismatch 0/0; nuovi false-safe0 sui sei SAFE congelati. Gate PASS. Margine ready rispetto alla soglia1.5x 0.0458%; mediane per sessione {'1': 1.4717679786503473, '2': 1.53024342881784}. Passaggio eventualmente nominale, non prova robusta di replica; nessuna promozione pubblica.",
+      "scope": "Measured host, unchanged six exports; not universal or public readiness"
+    },
+    {
+      "status": "CONFIRMED",
+      "round": 40,
+      "finding": "Round39 replicated PARTIALLY. Historical ready/session [1.5097995780788627, 1.5223270633516743, 1.5121240266033158]; new ready/session [1.362480888455787, 1.385029012881379, 1.360380090821325]. Pooled ready 1.4323x, end-to-end 1.3457x, batch100k/EBM 1.0082x, single/EBM 0.2665x, deep/EBM 0.1857x. Historical complete gate PASS; new complete gate FAIL. R37 official research reference; R39 not promoted after independent replication. Power/Gas/Diabetes100k/EBM 2.1524/1.0082/1.2395x. Fidelity bucket/prediction/false-safe 0/0/0. Requested numerical gates pooled across13 datasets PASS; the conservative reference decision uses the additional preregistered separate-cohort transfer gate, not a claimed failure of pooled thresholds.",
+      "scope": "Three same-host process sessions,13 SAFE models; not universal or cross-hardware readiness"
+    },
+    {
+      "status": "CONFIRMED_LOCAL_SCOPE",
+      "round": 41,
+      "finding": "Independent hardware replication NO; portable kit prepared and executed locally only, Linux build UNRUN. Official R37 exact raw-score contract: single-row 3.838xEBM, >=3x on 9/13; deep memory 0.182x, <=0.30 on 11/13; sampled peak RSS100k 0.597x. FAST_SAFE 84/91 observed model/batch cases, SAFE 7/91. No universal monotonic batch cutoff. Raw scores and frozen compiled predictions bitwise exact; strict teacher-probability contract REJECT for 10/13 models, max difference 2.22e-16. No runtime fix; this clarifies prior raw-score versus probability fidelity scope.",
+      "independent_hardware": false
+    },
+    {
+      "status": "CONFIRMED_LOCAL_INTEGRATION",
+      "round": 42,
+      "finding": "375 passed, 4 existing expected xfails, 0 failed/error; 25 real-EBM compiler tests; Ruff/format clean; wheel+sdist build and twine PASS; wheel and local source install PASS. Frozen cohort12/13 SAFE, raw bit mismatches0 against teacher and R37 across7 batch sizes; Diabetes47 REJECT because numerical category labels are outside the string-only public contract. Max probability difference2.22e-16, allowed absolute1e-15. All12 SAFE artifacts load/predict from installed wheel while interpret import is blocked.",
+      "scope": "Opt-in codadapt.experimental.compile_ebm(teacher, *, X_verify, max_states=None); interpret-core0.7.8 additive standard EBM only, binary/scalar regression; named DataFrames, real numeric and string categorical labels, supported missing/unseen. Exact raw/regression; numerical probability fidelity, not bitwise. Mandatory exact capacity/schema checks and heldout compile-then-verify. No teacher retained. Existing native API/default unchanged; standalone runtime ports frozen R37 ordered NumPy lookup and buffer persistence; no R38/R39 native backend."
+    },
+    {
+      "round": 43,
+      "status": "CONFIRMED_LOCAL_INTEGRATION_ONLY",
+      "finding": "Local-only scope completed:375 passed,4 existing xfails,0 failed; Ruff/format clean; wheel+sdist rebuilt from the delivery ZIP; two fresh venvs with system-site-packages=false and isolated Python; base classifier/regressor, EBM compile+SAFE/REJECT and numerical fidelity PASS;16 pickle/joblib checks including12 historical exports in an environment where interpret is absent. Version/metadata0.2.0rc1 coherent. Clean folder+ZIP44 public files, no research/cache/venv/build output.",
+      "external_scope": "User explicitly replaced remote validation with local checks and final source artifacts. No GitHub install, dispatch, Kaggle/Colab/SSH execution, commit, push, tag or release. Earlier read-only GitHub inspection showed green Python3.10/3.11/3.12 jobs only for v0.1.0, not this RC; it is not RC evidence."
+    }
+  ],
+  "rejected_directions": [
+    {
+      "name": "full scan",
+      "rounds": [
+        1,
+        2
+      ],
+      "reason": "Costo storico eccessivo; nessuna confirmation grezza recuperata.",
+      "reopen_condition": "Una riduzione di complessità dimostrata, non hardware più veloce soltanto.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "residual guided code search",
+      "rounds": [
+        1,
+        2
+      ],
+      "reason": "Riduzione del lavoro storica insufficiente; distinta dal pair proposal R7.",
+      "reopen_condition": "Nuovo limite di costo verificabile con baseline identica.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "fixed multi-resolution",
+      "rounds": [
+        3,
+        4
+      ],
+      "reason": "Troppi livelli: costi/collisioni; validation stopping evita livelli dannosi.",
+      "reopen_condition": "Nuova prova che livelli fissi aggiungano qualità indipendente a pari costo.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "adaptive module gating",
+      "rounds": [
+        8,
+        9
+      ],
+      "reason": "R8 dodici nuovi e R9 dieci nuovi: costi2.65/4.883x senza qualità sufficiente.",
+      "reopen_condition": "Candidati realmente diversi e costo di selezione sostanzialmente minore.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "local-linear memory",
+      "rounds": [
+        10
+      ],
+      "reason": "13 realnoti:gain0.92%,predict1.363x; nessuna nuova confirmation regression.",
+      "reopen_condition": "Nuova stima/realizzazione sostenuta da controllo che risolva costo e trasferimento.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "pair-memory line",
+      "rounds": [
+        11,
+        12,
+        13
+      ],
+      "reason": "10 nuovi R11 gain0%;10 nuovi R13 gain0.48%,harmful21.4%.",
+      "reopen_condition": "Correzioni statisticamente diverse; non altro ranking/admission dello stesso schema.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "low-rank interactions",
+      "rounds": [
+        14
+      ],
+      "reason": "11 nuovi:gain0%,fit1.951x; active-only costi peggiori.",
+      "reopen_condition": "Nuova evidenza sull’apprendimento/statistical sharing oltre i ranghi già provati.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "discovery catalog and automatic preprocessing",
+      "rounds": [
+        17,
+        18,
+        22
+      ],
+      "reason": "10+10+12 nuovi:primary non replica o perde; controlli additive deboli.",
+      "reopen_condition": "Ipotesi specifica con scaffold adeguato e falsificazione prima del nuovo cohort.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "fast backfitting and joint memory optimization",
+      "rounds": [
+        20,
+        21
+      ],
+      "reason": "12 nuovi ciascuno:gain0.047% e0.565%,sotto gate.",
+      "reopen_condition": "Dimostrare nuovo margine generalizzabile a struttura fissa, non solo training loss.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "native additive spline replacement",
+      "rounds": [
+        24
+      ],
+      "reason": "Reimpiego R23:regression peggiore1.44%,predict~1.65x; nessuna nuova confirmation.",
+      "reopen_condition": "Separare extrapolation e funzione target con evidenza indipendente.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "direct additive learner",
+      "rounds": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "reason": "R27 15 nuovi perde; R31 12 nuovi non salva; R32 dev negativo non autorizza confirmation.",
+      "reopen_condition": "Nuova spiegazione falsificabile del gap, non altra variazione di iperparametri.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "smoothing sweep",
+      "rounds": [
+        30
+      ],
+      "reason": "Development24:gain0.004432AUC/0.916% RMSE, gate fallito; confirmation non eseguita.",
+      "reopen_condition": "Nuovo meccanismo causale, non intensità diverse dello stesso smoother.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "amplitude calibration and fixed-state value estimation",
+      "rounds": [
+        31
+      ],
+      "reason": "12 nuovi:0.001880AUC/0.560% RMSE, fit>4x.",
+      "reopen_condition": "Nuova evidenza su partizioni/identifiabilità che questa prova non isola.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "global additive optimization",
+      "rounds": [
+        32
+      ],
+      "reason": "1440 fit convergenti, gate dev fallito; nessuna confirmation.",
+      "reopen_condition": "Obiettivo o informazione diversa motivati, non solver più lungo sugli stessi bin.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "fixed 512-state universal compiler",
+      "rounds": [
+        34,
+        35
+      ],
+      "reason": "Gas degrada ewide falliscono; exact capacity fino 33488.",
+      "reopen_condition": "Budget guidato dall’audit già implementato R35,non comprimere a caso.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "NumPy numeric kernel proliferation",
+      "rounds": [
+        36,
+        37
+      ],
+      "reason": "Nessuna alternativa searchsorted vinceglobalmente; pairedruntime invariato.",
+      "reopen_condition": "Kernel realmente diverso nativo/esatto e benchmark interleaved preregistrato.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "Round38 native adapter as deployment replacement",
+      "rounds": [
+        38
+      ],
+      "reason": "The frozen native adapter fails the systems gate; exact semantics alone do not establish an end-to-end speed advantage.",
+      "reopen_condition": "Measured diagnosis of conversion, native execution and dispatch followed by a separately frozen implementation; not a rerun of the same adapter.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "Unconditional global four-thread deployment policy",
+      "rounds": [
+        38
+      ],
+      "reason": "Global geometric selection hides validation regressions on individual workloads; do not increase threads when slower.",
+      "reopen_condition": "A preregistered thread policy must pass a per-workload latency/memory non-regression guard.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "Round39 unconditional two/four-thread feature-major policy",
+      "rounds": [
+        39
+      ],
+      "reason": "Single-thread improvement justified testing, but the parallel policies fail the per-workload validation non-regression guard.",
+      "reopen_condition": "Only a separately preregistered independent workload/hardware result, not more equivalent tuning on these six models.",
+      "status": "REJECTED_UNDER_TESTED_CRITERIA"
+    },
+    {
+      "name": "Promoting R39 as general research reference from its R39 selection result alone",
+      "rounds": [
+        39,
+        40
+      ],
+      "reason": "Full independent temporal-and-transfer gate not satisfied.",
+      "reopen_condition": "A distinct preregistered deployment scope or independent hardware evidence, not equivalent retuning on observed workloads.",
+      "status": "NOT_PROMOTED"
+    },
+    {
+      "name": "Unqualified bitwise EBM probability replacement and universal FAST guarantees",
+      "rounds": [
+        41
+      ],
+      "reason": "Raw logits exact but sigmoid probability last bits differ; performance depends on host/schema/batch and memory-only FAST_SAFE may be slower.",
+      "status": "OUTSIDE_SUPPORTED_CONTRACT",
+      "reopen_condition": "Separately authorized evidence/contract work, no silent tolerance relaxation or runtime changes in R41"
+    },
+    {
+      "name": "Unsupported public compiler schema/version/task and silent loss",
+      "rounds": [
+        42
+      ],
+      "reason": "Initial public contract intentionally rejects numeric category labels, teacher interactions/subclasses/multiclass, non0.7.8 versions, insufficient capacity or failed verification",
+      "status": "PUBLIC_REJECT",
+      "reopen_condition": "Separately scoped compatibility work and tests, no silent coercion"
+    }
+  ],
+  "partially_promising": [
+    "Optional compiled EBM local RC validated for manual source handoff",
+    "Historical memory/small-batch niches remain local evidence, no independent hardware claim"
+  ],
+  "open_questions": [
+    "Whether the user later authorizes remote CI and publication; outside current scope",
+    "Cross-version and independent-host behavior remain unverified for the RC"
+  ],
+  "next_experiments": [
+    {
+      "id": "MANUAL_SOURCE_HANDOFF",
+      "priority": 1,
+      "name": "User-controlled review and upload of validated local candidate",
+      "status": "PREPARED_NOT_PUBLISHED",
+      "mechanism": "User reviews and manually uploads the delivered source repository when desired. External CI/hardware remain unverified and are excluded from this task. Do not run them, publish, tag, commit or push without new instruction.",
+      "success_criterion": "Explicit future user decision; no current external requirement claimed passed",
+      "stop_criterion": "No automatic remote execution/publication, new feature or default change"
+    }
+  ],
+  "v0_2_readiness": {
+    "native_core_improved": false,
+    "multiclass": false,
+    "regression": true,
+    "ebm_compiler_safe": true,
+    "ebm_compiler_exact_fidelity": true,
+    "single_row_target": true,
+    "large_batch_target": false,
+    "persistence_without_teacher": true,
+    "wide_datasets": true,
+    "public_api_frozen": false,
+    "ready": "LOCAL_RC_HANDOFF_READY",
+    "round39_disjunctive_gate": true,
+    "round40_replication_gate": false,
+    "research_runtime_reference": "Round37",
+    "experimental_compiler_recommended": true,
+    "default": false,
+    "independent_hardware_validated": false,
+    "strict_teacher_probability_bitwise": false,
+    "single_row_target_local": true,
+    "memory_target_local": true,
+    "experimental_compiler_implemented": true,
+    "final_release": false,
+    "probability_absolute_tolerance": 1e-15,
+    "local_release_gate": {
+      "version": "0.2.0rc1",
+      "default_changed": false,
+      "public_api": "codadapt.experimental.compile_ebm(teacher, *, X_verify, max_states=None)",
+      "tests_passed": 375,
+      "expected_xfails": 4,
+      "failures": 0,
+      "errors": 0,
+      "ruff_errors": 0,
+      "format_clean": true,
+      "compiler_test_cases": 25,
+      "optional_ebm": "interpret-core==0.7.8",
+      "raw_score_fidelity": "PASS",
+      "regression_fidelity": "PASS",
+      "probability_absolute_tolerance": 1e-15,
+      "probability_max_observed_error": 2.220446049250313e-16,
+      "frozen_models_checked": 13,
+      "safe": 12,
+      "rejected": [
+        {
+          "dataset": "diabetes47",
+          "status": "REJECT",
+          "reason": "REJECT: unsupported model/schema or verification failure: Categorical feature 'admission_type_id' supports string labels only."
+        }
+      ],
+      "standalone": {
+        "models": 12,
+        "raw_mismatches": 0,
+        "probability_mismatches": 0,
+        "teacher_import_blocked": true,
+        "installed_module": "C:\\Users\\lucal\\Desktop\\codadapt\\research_private\\round42\\package_final\\test_installed_wheel_fit_predi0\\wheel-environment\\Lib\\site-packages\\codadapt\\__init__.py",
+        "version": "0.2.0rc1"
+      },
+      "default_core_hashes_unchanged": 7,
+      "wheel_install": "PASS",
+      "source_checkout_install": "PASS",
+      "sdist_private_data_excluded": true,
+      "twine": "PASS",
+      "github_workflow_configured": true,
+      "github_workflow_executed": false,
+      "remote_install_of_uncommitted_candidate": false,
+      "independent_hardware": false,
+      "final_release": false,
+      "commit_push": false,
+      "wheel_sha256": "c21c150787254761c1249f09bc0c3dc6b8346abc201a1357a2483a9df317a412",
+      "sdist_sha256": "178022afa88f49acb2bd88651832a9e3470a7ba6b931b475b8a3b8c00d4792c0"
+    },
+    "existing_native_api_frozen": true,
+    "experimental_namespace_added": true,
+    "ebm_compiler_exact_fidelity_scope": "Raw logits and regression only; probabilities use absolute1e-15",
+    "performance_target_scope": "Historical local R41 evidence, not a new public-wrapper benchmark",
+    "round43": {
+      "status": "LOCAL_HANDOFF_READY",
+      "external_scope": "EXCLUDED_BY_USER",
+      "tests_passed": 375,
+      "expected_xfails": 4,
+      "failures": 0,
+      "ruff": "PASS",
+      "clean_wheel": "PASS",
+      "ebm_extra": "PASS",
+      "standalone": "PASS",
+      "version": "0.2.0rc1",
+      "runtime_changed": false,
+      "compiler_changed": false,
+      "github_ci": "NOT_RUN",
+      "github_install": "NOT_RUN",
+      "independent_hardware": false,
+      "python310": "NOT_RUN",
+      "python311": "NOT_RUN",
+      "python312": "PASS",
+      "zip_sha256": "c8c9c3c91fa9fe1deeb05f6e2fe6aa9df6fc73026092b44ce5f80ca426a109f4",
+      "zip_files": 44,
+      "zip": "C:\\Users\\lucal\\Desktop\\codadapt\\codadapt-v0.2.0rc1.zip",
+      "directory": "C:\\Users\\lucal\\Desktop\\codadapt\\codadapt-v0.2.0rc1",
+      "published": false,
+      "commit_push": false
+    },
+    "remote_release_gate": "NOT_EVALUATED_USER_EXCLUDED"
+  },
+  "readiness_scope": {
+    "regression": "Public single-target regression supported, not stronger than v0.1.0.",
+    "wide_datasets": "Exactcapacity audited up to649 features, not universalbudget/latency guarantee.",
+    "single_row_target": "R41 local exact raw-score measurements only; independent>=3x replication NOT established",
+    "large_batch_target": "No general promotion target; per-model/batch throughput recommendation and nonmonotonic crossover",
+    "ebm_compiler_safe": "Opt-in codadapt.experimental.compile_ebm(teacher, *, X_verify, max_states=None); interpret-core0.7.8 additive standard EBM only, binary/scalar regression; named DataFrames, real numeric and string categorical labels, supported missing/unseen. Exact raw/regression; numerical probability fidelity, not bitwise. Mandatory exact capacity/schema checks and heldout compile-then-verify. No teacher retained. Existing native API/default unchanged; standalone runtime ports frozen R37 ordered NumPy lookup and buffer persistence; no R38/R39 native backend.",
+    "experimental": "Local0.2.0rc1 source archive and directory verified; user-managed upload, external checks excluded"
+  },
+  "do_not_repeat_without_new_evidence": [
+    "full scan",
+    "residual guided code search",
+    "fixed multi-resolution",
+    "adaptive module gating",
+    "local-linear memory",
+    "pair-memory line",
+    "low-rank interactions",
+    "discovery catalog and automatic preprocessing",
+    "fast backfitting and joint memory optimization",
+    "native additive spline replacement",
+    "direct additive learner",
+    "smoothing sweep",
+    "amplitude calibration and fixed-state value estimation",
+    "global additive optimization",
+    "fixed 512-state universal compiler",
+    "NumPy numeric kernel proliferation"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "title": "Full code scan — attribuzione storica congiunta R1–2",
+      "decision": "REJECT",
+      "evidence": "HISTORICAL_UNVERIFIED",
+      "source": "USER_HISTORY_R1_R6"
+    },
+    {
+      "round": 2,
+      "title": "Residual-guided search — attribuzione storica congiunta R1–2",
+      "decision": "REJECT",
+      "evidence": "HISTORICAL_UNVERIFIED",
+      "source": "USER_HISTORY_R1_R6"
+    },
+    {
+      "round": 3,
+      "title": "Multi-resolution residual memory",
+      "decision": "PARTIAL",
+      "evidence": "HISTORICAL_UNVERIFIED",
+      "source": "USER_HISTORY_R1_R6"
+    },
+    {
+      "round": 4,
+      "title": "Adaptive resolution and validation stopping",
+      "decision": "ACCEPT",
+      "evidence": "HISTORICAL_UNVERIFIED",
+      "source": "USER_HISTORY_R1_R6"
+    },
+    {
+      "round": 5,
+      "title": "Shared encoding",
+      "decision": "ACCEPT",
+      "evidence": "HISTORICAL_UNVERIFIED",
+      "source": "USER_HISTORY_R1_R6"
+    },
+    {
+      "round": 6,
+      "title": "Frozen release benchmark",
+      "decision": "DIAGNOSTIC ONLY",
+      "evidence": "HISTORICAL_DISCLOSURE",
+      "source": "USER_HISTORY_R1_R6"
+    },
+    {
+      "round": 7,
+      "title": "Numeric interpolation / residual proposal / capacity",
+      "decision": "PARTIAL",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round7_findings.md"
+    },
+    {
+      "round": 8,
+      "title": "Interaction refit after interpolation",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round8_findings.md"
+    },
+    {
+      "round": 9,
+      "title": "Adaptive optional modules",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round9_findings.md"
+    },
+    {
+      "round": 10,
+      "title": "Classifier freeze / local-linear cells",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round10_findings.md"
+    },
+    {
+      "round": 11,
+      "title": "Pair-memory and nonlinear refinement",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round11_findings.md"
+    },
+    {
+      "round": 12,
+      "title": "Proposal coverage and transfer",
+      "decision": "DIAGNOSTIC ONLY",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round12_findings.md"
+    },
+    {
+      "round": 13,
+      "title": "Independent admission validation",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round13_findings.md"
+    },
+    {
+      "round": 14,
+      "title": "Shared low-rank coded interactions",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round14_findings.md"
+    },
+    {
+      "round": 15,
+      "title": "Frozen core external validation",
+      "decision": "PARTIAL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round15_findings.md"
+    },
+    {
+      "round": 16,
+      "title": "Quality-matched Pareto frontier",
+      "decision": "PARTIAL",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round16_findings.md"
+    },
+    {
+      "round": 17,
+      "title": "Algorithm discovery lab",
+      "decision": "REJECT",
+      "evidence": "FAILED TO REPLICATE",
+      "source": "research_private/discovery/DISCOVERY_REPORT.md"
+    },
+    {
+      "round": 18,
+      "title": "Unexplored algorithms and auto preprocessing",
+      "decision": "REJECT",
+      "evidence": "FAILED TO REPLICATE",
+      "source": "research_private/discovery2/DISCOVERY2_REPORT.md"
+    },
+    {
+      "round": 19,
+      "title": "Capacity ceiling / oracle diagnosis",
+      "decision": "DIAGNOSTIC ONLY",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round19_findings.md"
+    },
+    {
+      "round": 20,
+      "title": "Fast backfitting",
+      "decision": "REJECT",
+      "evidence": "FAILED TO REPLICATE",
+      "source": "research_private/round20_findings.md"
+    },
+    {
+      "round": 21,
+      "title": "Joint memory optimization",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round21_findings.md"
+    },
+    {
+      "round": 22,
+      "title": "Paradigm break",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round22_findings.md"
+    },
+    {
+      "round": 23,
+      "title": "Strong additive control",
+      "decision": "PARTIAL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round23_findings.md"
+    },
+    {
+      "round": 24,
+      "title": "Native additive core",
+      "decision": "REJECT",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round24_findings.md"
+    },
+    {
+      "round": 25,
+      "title": "Additive shape distillation",
+      "decision": "PARTIAL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round25_findings.md"
+    },
+    {
+      "round": 26,
+      "title": "Additive compression diagnosis",
+      "decision": "PARTIAL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round26_findings.md"
+    },
+    {
+      "round": 27,
+      "title": "Direct adaptive additive learning",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round27_findings.md"
+    },
+    {
+      "round": 28,
+      "title": "Direct training diagnosis",
+      "decision": "REJECT",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round28_findings.md"
+    },
+    {
+      "round": 29,
+      "title": "Feature shape transfer diagnosis",
+      "decision": "DIAGNOSTIC ONLY",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round29_findings.md"
+    },
+    {
+      "round": 30,
+      "title": "Support-aware shape learning",
+      "decision": "REJECT",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round30_findings.md"
+    },
+    {
+      "round": 31,
+      "title": "Fixed states, value estimation",
+      "decision": "REJECT",
+      "evidence": "FAILED TO REPLICATE",
+      "source": "research_private/round31_findings.md"
+    },
+    {
+      "round": 32,
+      "title": "Global shape optimization",
+      "decision": "REJECT",
+      "evidence": "EXPLORATORY",
+      "source": "research_private/round32_findings.md"
+    },
+    {
+      "round": 33,
+      "title": "Model compilation into coded memory",
+      "decision": "PARTIAL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round33_findings.md"
+    },
+    {
+      "round": 34,
+      "title": "Compiled deployment validation",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round34_findings.md"
+    },
+    {
+      "round": 35,
+      "title": "Safe compiler and capacity",
+      "decision": "PARTIAL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round35_findings.md"
+    },
+    {
+      "round": 36,
+      "title": "Fast compiled runtime",
+      "decision": "PARTIAL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round36_findings.md"
+    },
+    {
+      "round": 37,
+      "title": "Fast numeric discretizer",
+      "decision": "PARTIAL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round37_findings.md"
+    },
+    {
+      "round": 38,
+      "title": "Exact native numeric kernel",
+      "decision": "REJECT",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round38_findings.md"
+    },
+    {
+      "round": 39,
+      "title": "Feature-major zero-copy runtime",
+      "decision": "PARTIAL_SYSTEMS_GATE_PASS",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round39_findings.md"
+    },
+    {
+      "round": 40,
+      "title": "Independent runtime replication",
+      "decision": "R37_REFERENCE_RETAINED_REPLICATION_GATE_FAIL",
+      "evidence": "CONFIRMED",
+      "source": "research_private/round40_findings.md"
+    },
+    {
+      "round": 41,
+      "title": "Deployment envelope validation",
+      "decision": "SCOPED_EXPERIMENTAL_RECOMMENDED_EXTERNAL_HARDWARE_PENDING",
+      "evidence": "CONFIRMED_LOCAL_SCOPE_EXTERNAL_PENDING",
+      "source": "research_private/round41_findings.md"
+    },
+    {
+      "round": 42,
+      "title": "v0.2 compiler integration",
+      "decision": "INTERNAL_RC_READY",
+      "evidence": "CONFIRMED_LOCAL_INTEGRATION_REMOTE_CI_PENDING",
+      "source": "research_private/round42_findings.md"
+    },
+    {
+      "round": 43,
+      "title": "Release candidate validation, local-only scope",
+      "decision": "LOCAL_HANDOFF_READY_EXTERNAL_VALIDATION_EXCLUDED",
+      "evidence": "CONFIRMED_LOCAL_INTEGRATION_ONLY",
+      "source": "research_private/round43_findings.md"
+    }
+  ],
+  "history_completeness": {
+    "indexed_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "missing_round_numbers": [],
+    "primary_local_report_rounds": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "historical_summary_only_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "early_round_raw_artifacts_available": false,
+    "early_source_attachment": "C:\\Users\\lucal\\.codex\\attachments\\bd0dab7b-54cb-4c3f-9139-35c35d016a46\\pasted-text.txt",
+    "early_source_sha256": "0900cb73a9c9aa9998aa3fd83ed7fbecd18b618b4000d1ebc1312050ffe670eb",
+    "notes": "R1–2combinedhistory cannot be split with confidence; R6 publicdisclosure corroborates aggregatecounts. No invented missingprotocols.",
+    "clean_clone_note": "docs/research contains the self-contained continuity summary. research_private source paths are historical local references and are not expected in a clean GitHub clone."
+  },
+  "authoritative_files": [
+    "docs/research/RESEARCH_MASTER.md",
+    "docs/research/RESEARCH_STATE.json",
+    "README.md",
+    "BENCHMARKS.md",
+    "CHANGELOG.md",
+    "src/codadapt/_version.py",
+    "research_private/round7_audit.md",
+    "research_private/CODADAPT_PRIVATE_RESEARCH_HISTORY.txt",
+    "research_private/round7_findings.md",
+    "research_private/round8_findings.md",
+    "research_private/round9_findings.md",
+    "research_private/round10_findings.md",
+    "research_private/round11_findings.md",
+    "research_private/round12_findings.md",
+    "research_private/round13_findings.md",
+    "research_private/round14_findings.md",
+    "research_private/round15_findings.md",
+    "research_private/round16_findings.md",
+    "research_private/discovery/DISCOVERY_REPORT.md",
+    "research_private/discovery2/DISCOVERY2_REPORT.md",
+    "research_private/round19_findings.md",
+    "research_private/round20_findings.md",
+    "research_private/round21_findings.md",
+    "research_private/round22_findings.md",
+    "research_private/round23_findings.md",
+    "research_private/round24_findings.md",
+    "research_private/round25_findings.md",
+    "research_private/round26_findings.md",
+    "research_private/round27_findings.md",
+    "research_private/round28_findings.md",
+    "research_private/round29_findings.md",
+    "research_private/round30_findings.md",
+    "research_private/round31_findings.md",
+    "research_private/round32_findings.md",
+    "research_private/round33_findings.md",
+    "research_private/round34_findings.md",
+    "research_private/round35_findings.md",
+    "research_private/round36_findings.md",
+    "research_private/round37_findings.md",
+    "research_private/round35/compiler35.py",
+    "research_private/round36/runtime36.py",
+    "research_private/round37/runtime37.py",
+    "research_private/round37/summary.json",
+    "research_private/round37/paired_runtime_check.csv",
+    "research_private/round37/final_manifest.json",
+    "research_private/round38_findings.md",
+    "research_private/round38/protocol.json",
+    "research_private/round38/freeze.json",
+    "research_private/round38/manifest.json",
+    "research_private/round39_findings.md",
+    "research_private/round39/protocol.json",
+    "research_private/round39/freeze.json",
+    "research_private/round39/manifest.json",
+    "research_private/round40_findings.md",
+    "research_private/round40_replication.csv",
+    "research_private/round40_environment.json",
+    "research_private/round40/protocol.md",
+    "research_private/round40/freeze.json",
+    "research_private/round40/manifest.json",
+    "research_private/round41_findings.md",
+    "research_private/round41_results.csv",
+    "research_private/round41_deployment_envelope.csv",
+    "research_private/round41_reproduction.zip",
+    "research_private/round41/protocol.md",
+    "research_private/round41/manifest.json",
+    "src/codadapt/experimental/_compiler.py",
+    "src/codadapt/experimental/_model.py",
+    "docs/EBM_COMPILER.md",
+    "research_private/round42_findings.md",
+    "research_private/round42/release_gate.json",
+    "research_private/round42/parity.json",
+    "research_private/round43_findings.md",
+    "research_private/round43_ci.md",
+    "research_private/round43_external_validation.csv",
+    "research_private/round43/package_manifest.json",
+    "research_private/round43/summary.json"
+  ],
+  "frozen_public_source_sha256": {
+    "src\\codadapt\\classifier.py": "22dad21d5eb03f41ddbad673c4ec473681749d680d24f79baadec028a5adec9a",
+    "src\\codadapt\\preprocessing.py": "4125faef3699edd015cb9b91be4cfa40ec78930fede7ab07ca0650d1021e399a",
+    "src\\codadapt\\regressor.py": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8",
+    "src\\codadapt\\_base.py": "3117015f1e30696765c2cffef47f1606205a9a317b5836cede67dc23963854fc",
+    "src\\codadapt\\_core.py": "7ebdd55cc7c0c47f06f02aae04979f37aa603c0f6951dca9c39bdd933b2d12bf",
+    "src\\codadapt\\_training.py": "6b87eb0d0d6edee0eec73e4a6019fd5647d9c8508095a3058fccc053bf839cd9",
+    "src\\codadapt\\_version.py": "8062abdd401fbc8bb40a9cb1b5fd324d62ddb715da7000c32bb3efa71b213622",
+    "src\\codadapt\\__init__.py": "08ca7a596aaf414912d4d9c18e1d88b919954034312c258467daca79daf51919"
+  },
+  "rules": [
+    "Read RESEARCH_MASTER.md and RESEARCH_STATE.json first.",
+    "Do not rerun closed lines without new evidence.",
+    "Do not change API/default without independent confirmation and explicit scope.",
+    "Development is not confirmation.",
+    "Synthetic wins are not real-data wins.",
+    "Every new promotion requires unseen confirmation.",
+    "No automatic commit/push.",
+    "Track docs/research research-memory files in Git; keep research_private raw artifacts excluded.",
+    "Update bothmemoryfiles after eachround.",
+    "Preserve evidence denominators, signs, costdefinitions and discrepancies.",
+    "MANDATORY after EVERY future round: update both memoryfiles,all requiredstatefields,and verify continuousroundindex,privacy,JSONsync and unchangedpublicruntime."
+  ],
+  "source_inventory": {
+    "report_documents": 84,
+    "inventory_sha256": "10fb80a5e373e0d2cb2096202f7a1713f03387821f074191cc0fc4cf3af9d47e",
+    "round_report_sha256": {
+      "research_private/round7_findings.md": "fb4dfb8c26d6c1348a84a313d0980f13819b7a742683787a809945d37921ccb5",
+      "research_private/round8_findings.md": "4ddb714ba4e7181780c40f7c65383bcfc3ee7b41af7a84eef81f393aeec2674b",
+      "research_private/round9_findings.md": "a39a0250f74746e940b346970fe1663b4d3019eeecaa5839d9aff85080e522c7",
+      "research_private/round10_findings.md": "85f4eabbf877ed236ab0fe1bb22749a2b000e76567d50b0d7810375b2a4cc5a4",
+      "research_private/round11_findings.md": "c555891c409574f243271d33c42377af8e25ceef71709c414f73b8fc548d05e1",
+      "research_private/round12_findings.md": "d48636c1eeec85d3a63ccb88582b7711a58fb32f6800f7582a5fec1f8a04b3bd",
+      "research_private/round13_findings.md": "a102894a6808f99608b27d6ada55b7a769ef6f6a45401d046023e769730db0b9",
+      "research_private/round14_findings.md": "5988c6a44c05e3c3b8cc714e2d8cbebcccc2fe78ecd657cb890fe26370078c5a",
+      "research_private/round15_findings.md": "0d4d7a4cc64a7a31d57c033a235ed32bedd800ddc635acd5d02fd94fa3368c83",
+      "research_private/round16_findings.md": "fb9139078422231d37e639010db035cc88927e5e0b65eb42439071fbaaef4a97",
+      "research_private/discovery/DISCOVERY_REPORT.md": "3b59950b54ae647dbcaeb77c56cda7c595551f09e0c6407e32411f01a15628f2",
+      "research_private/discovery2/DISCOVERY2_REPORT.md": "cb1e922d63e90d097c167c66e94582c86959fd9c45884ff9aad77e58e1791aef",
+      "research_private/round19_findings.md": "98e400113e7c5262072b555538739c42b24f28724fdb3eb3e7ae72f744f9cff2",
+      "research_private/round20_findings.md": "cb6e6327794471352eb1c8da1ed29827db96e5d20a303380b080dd4fb1c3a7be",
+      "research_private/round21_findings.md": "6da542d5ef5b39e76224f93709a33644c5dc60a0b04733d5586f6ee28ca652a3",
+      "research_private/round22_findings.md": "7fcb4b4da7b332964ffef97c8eaece1ed280c88cf915de96d6672226317db1a5",
+      "research_private/round23_findings.md": "d95cbd116cd549f6d1b085b1004940af637d223e1e80d8b797d23d0449b78ddc",
+      "research_private/round24_findings.md": "891aa1ef412608b7815887755ea3488b5ca024328094e45a8acf0b789b5e545e",
+      "research_private/round25_findings.md": "b8a91813c6216b0b716b57bc412b7b58b846ee2dab2d3a0812ff9307072e08c5",
+      "research_private/round26_findings.md": "fbeaf0ece19dad9112706cf9d75c604f77dd594e2e80e6a29cbdb5d6c48be684",
+      "research_private/round27_findings.md": "7aeb49bafdcfca8b6872b832dadeb07fb30e17b27dd3f8a1513394526d6b52db",
+      "research_private/round28_findings.md": "3cb3e58a9ca5b9e12e23e3f42d12e8fafff092e19754940a953ba49907f62641",
+      "research_private/round29_findings.md": "774faa709cc46207df6b62ba289786d6f786f153c0b1756e29927967d428820f",
+      "research_private/round30_findings.md": "c7c3ffb6dcb012b6bde61206d47ac3e5e40e1fd7a04ba19d890f5c7204084773",
+      "research_private/round31_findings.md": "054927d5014e01c748469dfaca5116852758e3cb6351a13e050503408e09a4a2",
+      "research_private/round32_findings.md": "1fac99e08efb4169c5a170db2ed945d87648f9869c5c71449ae3ba5068452115",
+      "research_private/round33_findings.md": "9bf84ce3756da5fabe6b97cb26de9f26813df9a313201d113243a9dfac3b258c",
+      "research_private/round34_findings.md": "55a70277d72ad281228fccaf942268350c9aca6985f49b2150e7f9c786329de8",
+      "research_private/round35_findings.md": "ca6a4c73553dbe3539e14e84d932f520874e36cd0cdc2d98236a73483ebcec15",
+      "research_private/round36_findings.md": "5f9fd1423a435e7c180996159659e7ee74990d2b137665caf7e086a566e2d2ea",
+      "research_private/round37_findings.md": "1157268dd5b2e5dc3f38408980333e4535dfda398f5f6506cbe45819de794f28",
+      "research_private/round38_findings.md": "280652bbf3af3ff9860df357608290ac81270862f97f725c55d4980a51839ec4",
+      "research_private/round39_findings.md": "5574df950252129e1f28795fac744d4e195ac46b94645d1ab2697e61280b8083",
+      "research_private/round40_findings.md": "be250ceda9145620c8bf4847e28249162bee69e1542f77865d38ce409280bcc0",
+      "research_private/round41_findings.md": "f3cc4dabda14b2c2b813b0b466a056408ca5bad0d43dbc18aee47365b5f0871d",
+      "research_private/round42_findings.md": "6b68cddc5f1135db3fd4436d5ab122142200a8f81656e474c553a848e532cf53",
+      "research_private/round43_findings.md": "58bcd0678cf753b87cc2ba4b13c74021cdf16bd2e7d2d92ba9e4120057a1a65b"
+    }
+  },
+  "publication_status": "LOCAL_RC_SOURCE_HANDOFF_NOT_PUBLISHED",
+  "frozen_v010_source_sha256": {
+    "src\\codadapt\\classifier.py": "22dad21d5eb03f41ddbad673c4ec473681749d680d24f79baadec028a5adec9a",
+    "src\\codadapt\\preprocessing.py": "4125faef3699edd015cb9b91be4cfa40ec78930fede7ab07ca0650d1021e399a",
+    "src\\codadapt\\regressor.py": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8",
+    "src\\codadapt\\_base.py": "3117015f1e30696765c2cffef47f1606205a9a317b5836cede67dc23963854fc",
+    "src\\codadapt\\_core.py": "7ebdd55cc7c0c47f06f02aae04979f37aa603c0f6951dca9c39bdd933b2d12bf",
+    "src\\codadapt\\_training.py": "6b87eb0d0d6edee0eec73e4a6019fd5647d9c8508095a3058fccc053bf839cd9",
+    "src\\codadapt\\_version.py": "41362a5ea4931c546433d4c48290c5707bf02dbbea1c3aafa9f43d1225e47003",
+    "src\\codadapt\\__init__.py": "08ca7a596aaf414912d4d9c18e1d88b919954034312c258467daca79daf51919"
+  },
+  "experimental_compiler_source_sha256": {
+    "src/codadapt/experimental/_compiler.py": "fe355d7954f20fa6af34f40e27d4aee9cdada474fc18d0f261be3e44bbff1a03",
+    "src/codadapt/experimental/_model.py": "e38c537f785447fc01b884a2d2ac276b3a4a84d6d2f31e4ec018e2f6a180449d",
+    "src/codadapt/experimental/__init__.py": "71dbe645f149300a8039be0b33da39c321846a052af355b2a5c187779e0d28a7"
+  },
+  "research_memory_policy": {
+    "tracked_in_repository": true,
+    "paths": [
+      "docs/research/RESEARCH_MASTER.md",
+      "docs/research/RESEARCH_STATE.json"
+    ],
+    "purpose": "Persistent research continuity for fresh Codex sessions and human review.",
+    "private_raw_artifacts": "research_private/ remains excluded from Git and distributions.",
+    "startup_rule": "Read both research memory files before starting new research work.",
+    "update_rule": "After every completed research round, update both files and keep them synchronized."
+  },
+  "release_ci_fixes": [
+    {
+      "id": "rc1_notebook_version_alignment",
+      "date": "2026-09-21",
+      "version": "0.2.0rc1",
+      "scope": "Current canonical repository only; no previous checkout or archive used.",
+      "fix": "Updated six current-version notebook references: title, future tag, wheel filenames, install pin and metadata assertion. Preserved historical v0.1.0 references.",
+      "changed_runtime": false,
+      "validation": {
+        "python": "3.12.14",
+        "ruff": "PASS, zero errors",
+        "pytest_passed": 375,
+        "pytest_expected_xfails": 4,
+        "pytest_failed": 0,
+        "ci_examples": "PASS, classifier and regressor",
+        "ci_notebook": "PASS, seven executed code cells using installed wheel",
+        "package_metadata": "0.2.0rc1, consistent with dynamic pyproject version",
+        "runtime_sha256_unchanged": true
+      },
+      "research_round_added": false
+    }
+  ]
+}
