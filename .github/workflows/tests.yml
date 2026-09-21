@@ -52,14 +52,15 @@ jobs:
         run: |
           python -m build
           python -m twine check dist/*
+          python -m pytest tests/test_packaging.py
       - name: Install wheel in a clean environment and run examples
         run: |
           python -m venv "$RUNNER_TEMP/codadapt-wheel"
-          "$RUNNER_TEMP/codadapt-wheel/bin/python" -m pip install dist/codadapt-0.1.0-py3-none-any.whl
+          "$RUNNER_TEMP/codadapt-wheel/bin/python" -m pip install dist/codadapt-*-py3-none-any.whl
           mkdir -p "$RUNNER_TEMP/codadapt-smoke"
           cp examples/basic_classification.py examples/basic_regression.py "$RUNNER_TEMP/codadapt-smoke/"
           cd "$RUNNER_TEMP/codadapt-smoke"
-          "$RUNNER_TEMP/codadapt-wheel/bin/python" -c "import codadapt; print(codadapt.__version__, codadapt.__file__); assert codadapt.__version__ == '0.1.0'"
+          "$RUNNER_TEMP/codadapt-wheel/bin/python" -c "import codadapt; from importlib.metadata import version; print(codadapt.__version__, codadapt.__file__); assert codadapt.__version__ == version('codadapt')"
           "$RUNNER_TEMP/codadapt-wheel/bin/python" basic_classification.py
           "$RUNNER_TEMP/codadapt-wheel/bin/python" basic_regression.py
       - name: Execute example notebook against installed wheel
@@ -76,3 +77,19 @@ jobs:
           name: codadapt-distributions
           path: dist/*
           if-no-files-found: error
+
+  experimental-ebm:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e ".[dev,ebm]"
+      - run: python -m build
+      - run: python -m pytest

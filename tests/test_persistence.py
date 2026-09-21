@@ -53,7 +53,7 @@ def test_model_does_not_retain_dataset_sized_arrays(binary):
 
 @pytest.mark.parametrize("binary", [True, False])
 @pytest.mark.parametrize("serializer", ["pickle", "joblib"])
-def test_roundtrip_in_new_process_without_refit(binary, serializer, tmp_path):
+def test_roundtrip_in_new_process_without_refit(binary, serializer, tmp_path, dependency_paths):
     model, X = fitted(binary)
     model_path = tmp_path / f"model.{serializer}"
     if serializer == "pickle":
@@ -64,7 +64,9 @@ def test_roundtrip_in_new_process_without_refit(binary, serializer, tmp_path):
     np.save(query_path, X[:13])
     script = tmp_path / "load_and_predict.py"
     script.write_text(
-        "import sys, pickle, joblib, numpy as np\n"
+        "import sys\n"
+        f"sys.path[:0] = {dependency_paths!r}\n"
+        "import pickle, joblib, numpy as np\n"
         "from codadapt import CodAdaptClassifier, CodAdaptRegressor\n"
         "def forbidden_fit(*args, **kwargs):\n    raise AssertionError('Loading must not fit')\n"
         "CodAdaptClassifier.fit = forbidden_fit\nCodAdaptRegressor.fit = forbidden_fit\n"

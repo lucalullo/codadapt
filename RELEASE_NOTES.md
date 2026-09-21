@@ -1,4 +1,14 @@
-# CodAdapt 0.1.0 Release Notes
+# CodAdapt release notes
+
+## 0.2.0rc1 — Experimental release candidate
+
+This candidate adds the optional experimental additive EBM compiler documented in
+[EBM_COMPILER.md](docs/EBM_COMPILER.md). The native default remains the v0.1.0 core.
+Compilation requires the optional EBM extra; inference from a saved compiled model
+does not. Exact raw-score verification and numerical probability tolerance are mandatory.
+Remote CI and independent-hardware validation are not claimed until they are run on the uploaded repository. The candidate remains experimental and does not change the native default.
+
+## 0.1.0 — Historical release notes
 
 CodAdapt 0.1.0 is the first experimental public release.
 
