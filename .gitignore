@@ -15,7 +15,6 @@ venv/
 .env.*
 benchmark_results/
 research/
-research_private/
 experiments/
 RESEARCH_NOTES.md
 CODADAPT_RESEARCH_HISTORY.txt

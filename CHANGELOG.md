@@ -1,17 +1,5 @@
 # Changelog
 
-## 0.2.0rc1 - Experimental release candidate
-
-- Added opt-in `codadapt.experimental.compile_ebm` for supported additive binary and
-  regression EBMs, with capacity/schema checks and mandatory fidelity verification.
-- Added standalone compiled estimators with pickle/joblib persistence and no EBM
-  dependency at inference. Compilation uses the optional pinned `ebm` extra.
-- Kept the native v0.1.0 default, training algorithm and existing estimator API unchanged.
-- Added compiler contract documentation, integration tests and optional-dependency CI.
-- Excluded private research directories from source distributions.
-
-This is an experimental release candidate. Probability fidelity is numerical; no universal large-batch performance or independent-hardware claim is made.
-
 ## 0.1.0 - Experimental public release
 
 - Made adaptive coded memory with shared multi-resolution encoding the official CodAdapt default.

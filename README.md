@@ -1,7 +1,5 @@
 # CodAdapt
 
-`0.2.0rc1` is an experimental release candidate that adds optional EBM compilation. It is not a final release; the native default remains the unchanged v0.1.0 core described below.
-
 CodAdapt is a compact experimental machine-learning library for tabular data. Version 0.1.0 uses
 **adaptive coded memory with shared multi-resolution encoding** for binary classification and
 single-target regression, while preserving a scikit-learn-style estimator interface.
@@ -25,20 +23,19 @@ CodAdapt 0.1.0 is an experimental pre-1.0 release. It is intended for controlled
 The release default is the architecture selected by the internal development process: shared
 multi-resolution encoding feeding adaptive coded memory. No experimental strategy flag is required.
 
-## Experimental EBM compilation
-
-The optional `codadapt.experimental.compile_ebm(teacher, X_verify=...)` exports supported
-additive binary/regression EBMs to standalone NumPy lookup models. Install the optional
-`.[ebm]` extra to compile; EBM is not needed to reload or use the compiled artifact.
-Compilation verifies fidelity and explicitly rejects unsupported models, insufficient
-capacity or failed verification. Raw logits/regression predictions are exact on verification
-data; classification probabilities are numerically equivalent, not promised bitwise equal.
-
-This experimental mode does not change the default CodAdapt estimator. Observed benefits
-are mainly compact memory and single-row latency; a large-batch advantage is not guaranteed.
-See [the compiler contract and example](docs/EBM_COMPILER.md) before deployment.
-
 ## Installation
+
+From GitHub after the `v0.1.0` tag is published:
+
+```bash
+python -m pip install "git+https://github.com/lucalullo/codadapt.git@v0.1.0"
+```
+
+In Kaggle:
+
+```python
+!pip install -qq git+https://github.com/lucalullo/codadapt.git@v0.1.0
+```
 
 From a local checkout:
 
@@ -47,17 +44,6 @@ python -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -e .
 ```
-
-From GitHub main (after this candidate is pushed):
-
-```bash
-python -m pip install git+https://github.com/lucalullo/codadapt.git
-```
-
-After a `v0.2.0rc1` tag exists, pin the candidate with `@v0.2.0rc1`.
-
-To enable compilation, install `python -m pip install ".[ebm]"` from the same
-directory. The normal installation can load and use compiled models without this extra.
 
 For tests, lint, package checks, and optional LightGBM benchmarks:
 
@@ -68,7 +54,7 @@ python -m ruff format --check .
 python -m pytest
 ```
 
-Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.3+, and SciPy 1.8+. LightGBM and
+Runtime requirements are NumPy 1.24+, pandas 2.0+, and scikit-learn 1.3+. LightGBM and
 `psutil` are optional benchmark-only dependencies; they are not required to use CodAdapt.
 
 ## Quick start
@@ -238,18 +224,11 @@ returns one-dimensional real-valued predictions.
 
 - [API reference](docs/API.md)
 - [Algorithm](docs/ALGORITHM.md)
-- [Research master](docs/research/RESEARCH_MASTER.md)
-- [Research state](docs/research/RESEARCH_STATE.json)
 - [Benchmark disclosure](BENCHMARKS.md)
 - [Release notes](RELEASE_NOTES.md)
 - [Changelog](CHANGELOG.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security](SECURITY.md)
-
-
-## Research continuity
-
-`docs/research/RESEARCH_MASTER.md` and `docs/research/RESEARCH_STATE.json` are tracked in the repository so future development sessions can recover the experimental history, rejected directions, open questions, and current next steps without the private raw experiment tree. They are development documentation and are intentionally excluded from the wheel and source distribution.
 
 ## Limitations
 
