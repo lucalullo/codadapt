@@ -1,46 +1,65 @@
 # CodAdapt
 
-`0.2.0rc1` is an experimental release candidate that adds optional EBM compilation. It is not a final release; the native default remains the unchanged v0.1.0 core described below.
+CodAdapt is an experimental machine-learning library for tabular data. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary classification and single-target regression, while preserving a scikit-learn-style API.
 
-CodAdapt is a compact experimental machine-learning library for tabular data. Version 0.1.0 uses
-**adaptive coded memory with shared multi-resolution encoding** for binary classification and
-single-target regression, while preserving a scikit-learn-style estimator interface.
+**CodAdapt 0.2.0rc1 adds an optional experimental EBM compiler while keeping the native CodAdapt core and default behavior unchanged.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
 
-CodAdapt 0.1.0 is an experimental pre-1.0 release. It is intended for controlled experiments and reproducible evaluation; it does not claim to outperform established tree-based models across all tabular datasets.
+CodAdapt remains a pre-1.0 experimental project. It is intended for controlled experiments, reproducible evaluation, and practical tabular workflows. It does not claim universal superiority over established tree-based models.
 
-## Highlights in 0.1.0
+## Highlights
 
-- one simple classifier API through `CodAdapt`, plus `CodAdaptClassifier` and `CodAdaptRegressor`;
+- simple estimator API through `CodAdapt`, `CodAdaptClassifier`, and `CodAdaptRegressor`;
 - `fit`, `predict`, `predict_proba`, `get_params`, `set_params`, cloning, pipelines, and cross-validation compatibility;
-- automatic numerical, string/object, categorical, boolean, nullable-boolean, and missing-value handling for pandas DataFrames;
+- automatic handling of numerical, string/object, categorical, boolean, nullable-boolean, and missing values in pandas DataFrames;
 - dense numeric NumPy input, with optional explicit categorical column indices;
-- train-only quantile buckets and categorical vocabularies, with distinct buckets for missing, rare observed, and unseen categories;
-- one shared finest encoding that derives nested coarse-to-fine integer resolutions without re-encoding the raw input at every level;
-- adaptive residual-memory levels with validation-based stopping and feature-level stopping;
-- compact collision-aware coded interaction tables controlled by a lookup budget;
-- sample weights, explicit validation sets, deterministic random states, and best-state restoration when early stopping is enabled;
-- pickle/joblib persistence and CPU-only NumPy execution;
-- Python 3.10-3.12 compatibility gates.
+- train-only quantile buckets and categorical vocabularies;
+- explicit handling of missing, rare observed, and unseen categories;
+- shared finest encoding with nested coarse-to-fine integer resolutions;
+- adaptive residual-memory levels with validation-based and feature-level stopping;
+- compact coded interaction tables controlled by a lookup budget;
+- sample weights, explicit validation sets, deterministic random states, and best-state restoration;
+- pickle/joblib persistence;
+- CPU-only NumPy runtime;
+- Python 3.10-3.12 compatibility gates;
+- optional experimental EBM compilation in `codadapt.experimental`.
 
-The release default is the architecture selected by the internal development process: shared
-multi-resolution encoding feeding adaptive coded memory. No experimental strategy flag is required.
-
-## Experimental EBM compilation
-
-The optional `codadapt.experimental.compile_ebm(teacher, X_verify=...)` exports supported
-additive binary/regression EBMs to standalone NumPy lookup models. Install the optional
-`.[ebm]` extra to compile; EBM is not needed to reload or use the compiled artifact.
-Compilation verifies fidelity and explicitly rejects unsupported models, insufficient
-capacity or failed verification. Raw logits/regression predictions are exact on verification
-data; classification probabilities are numerically equivalent, not promised bitwise equal.
-
-This experimental mode does not change the default CodAdapt estimator. Observed benefits
-are mainly compact memory and single-row latency; a large-batch advantage is not guaranteed.
-See [the compiler contract and example](docs/EBM_COMPILER.md) before deployment.
+The native CodAdapt default remains the architecture selected during the 0.1 development process. No experimental strategy flag is required.
 
 ## Installation
 
-From a local checkout:
+### From GitHub
+
+Install the release candidate directly from GitHub:
+
+```bash
+python -m pip install "git+https://github.com/lucalullo/codadapt.git@v0.2.0rc1"
+```
+
+For the optional EBM compiler:
+
+```bash
+python -m pip install "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc1"
+```
+
+The normal CodAdapt installation does **not** require EBM. The optional dependency is needed only when compiling an EBM teacher.
+
+### Kaggle
+
+Native CodAdapt:
+
+```python
+!pip install -qq git+https://github.com/lucalullo/codadapt.git@v0.2.0rc1
+```
+
+With the experimental EBM compiler:
+
+```python
+!pip install -qq "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc1"
+```
+
+Then restart the notebook kernel only if the environment requires it.
+
+### Local checkout
 
 ```bash
 python -m venv .venv
@@ -48,18 +67,7 @@ python -m pip install --upgrade pip
 python -m pip install -e .
 ```
 
-From GitHub main (after this candidate is pushed):
-
-```bash
-python -m pip install git+https://github.com/lucalullo/codadapt.git
-```
-
-After a `v0.2.0rc1` tag exists, pin the candidate with `@v0.2.0rc1`.
-
-To enable compilation, install `python -m pip install ".[ebm]"` from the same
-directory. The normal installation can load and use compiled models without this extra.
-
-For tests, lint, package checks, and optional LightGBM benchmarks:
+For development, tests, lint, and benchmark helpers:
 
 ```bash
 python -m pip install -e ".[dev,benchmark]"
@@ -68,8 +76,7 @@ python -m ruff format --check .
 python -m pytest
 ```
 
-Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.3+, and SciPy 1.8+. LightGBM and
-`psutil` are optional benchmark-only dependencies; they are not required to use CodAdapt.
+Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.3+, and SciPy 1.8+. LightGBM and `psutil` are optional benchmark-only dependencies.
 
 ## Quick start
 
@@ -95,8 +102,7 @@ labels = model.predict(X)
 probabilities = model.predict_proba(X)[:, 1]
 ```
 
-`early_stopping=False` is used above only because the toy dataset is very small. On normal datasets
-the default `early_stopping=True` creates a deterministic internal validation split.
+`early_stopping=False` is used here only because the example is extremely small. On normal datasets the default `early_stopping=True` creates a deterministic internal validation split.
 
 ### Regression
 
@@ -105,51 +111,101 @@ from codadapt import CodAdaptRegressor
 
 model = CodAdaptRegressor(random_state=42, verbosity=0)
 model.fit(X_train, y_train)
+
 predictions = model.predict(X_test)
+```
+
+## Cross-validation
+
+CodAdapt follows the scikit-learn estimator protocol:
+
+```python
+import numpy as np
+from codadapt import CodAdaptClassifier
+from sklearn.model_selection import cross_val_score
+
+model = CodAdaptClassifier(random_state=42, verbosity=0)
+scores = cross_val_score(model, X, y, cv=5, scoring="roc_auc")
+
+print(f"Mean ROC-AUC: {np.mean(scores):.6f}")
 ```
 
 ## Data handling
 
-With pandas DataFrames, numeric columns are treated as numeric and supported string/object,
-`category`, boolean, and nullable-boolean columns are treated as categorical. Missing values are
-handled natively.
+With pandas DataFrames, supported numeric columns are treated as numerical features. String/object, `category`, boolean, and nullable-boolean columns are handled as categorical features. Missing values are handled natively.
 
 Integer-coded categorical columns should be declared explicitly:
 
 ```python
-model = CodAdapt(categorical_features=["postal_code"], random_state=42)
+model = CodAdapt(
+    categorical_features=["postal_code"],
+    random_state=42,
+)
 ```
 
-For dense NumPy arrays, input must be numeric. Integer column indices may be supplied through
-`categorical_features` when numeric codes should be treated as categories.
+For dense NumPy arrays, input must be numeric. Integer column indices may be supplied through `categorical_features` when numeric codes should be interpreted as categories.
 
-At prediction time, DataFrames must contain the same unique column names used during fitting.
-Different column order is accepted and realigned; missing or unexpected columns are rejected.
+At prediction time, DataFrames must contain the same unique column names used during fitting. Column order may differ and is realigned automatically; missing or unexpected columns are rejected.
 
 ## Validation and sample weights
 
-Without an explicit validation set, CodAdapt creates an internal validation split when
-`early_stopping=True`. For a user-controlled holdout:
+Without an explicit validation set, CodAdapt creates an internal validation split when `early_stopping=True`.
+
+For a user-controlled holdout:
 
 ```python
-model.fit(X_train, y_train, eval_set=(X_valid, y_valid))
+model.fit(
+    X_train,
+    y_train,
+    eval_set=(X_valid, y_valid),
+)
 ```
 
-Preprocessing is fitted only on the effective training rows. Validation data does not determine
-quantile thresholds, categorical vocabularies, or adaptive code proposals.
+Preprocessing is fitted only on the effective training rows. Validation data does not determine quantile thresholds or categorical vocabularies.
 
-Per-row non-negative weights are supported:
+Per-row non-negative sample weights are supported:
 
 ```python
 model.fit(X_train, y_train, sample_weight=weights)
 ```
 
-Rows with zero weight are removed before preprocessing and validation splitting.
+Rows with zero effective weight are removed before preprocessing and validation splitting.
+
+## Experimental EBM compilation
+
+CodAdapt 0.2.0rc1 introduces an **experimental** compiler for a deliberately limited subset of additive EBM models.
+
+```python
+from codadapt.experimental import compile_ebm
+
+compiled = compile_ebm(
+    teacher,
+    X_verify=X_valid,
+)
+
+predictions = compiled.predict(X_test)
+probabilities = compiled.predict_proba(X_test)
+```
+
+The compiler performs preflight checks and post-compilation fidelity verification. Unsupported models, unsupported schemas, insufficient capacity, or failed verification are rejected explicitly rather than silently approximated.
+
+For the verified contract:
+
+- binary additive EBM classification is supported;
+- single-target additive EBM regression is supported;
+- regression predictions and binary raw scores are preserved exactly on verification data;
+- classification probabilities are preserved within numerical tolerance, not promised bitwise-identical;
+- compiled models can be saved, loaded, and used without the EBM package installed;
+- the EBM teacher is required only during compilation;
+- the compiler is optional and does not replace the native CodAdapt estimator.
+
+Observed benefits are mainly compact model memory and low single-row latency. Large-batch throughput can be workload-dependent and is not guaranteed to outperform the original EBM.
+
+See [docs/EBM_COMPILER.md](docs/EBM_COMPILER.md) before deployment.
 
 ## Main parameters
 
-The defaults are intended to be the starting point. Advanced users can control model size and
-training behavior explicitly:
+The defaults are intended to be the starting point. Advanced users can control model size and training behavior explicitly:
 
 ```python
 model = CodAdapt(
@@ -188,56 +244,43 @@ residual corrections across accepted levels
 prediction
 ```
 
-Numeric features are discretized from train-only quantiles. Categorical features use stable integer
-buckets. The finest representation is computed once and mapped to coarser resolutions through cached
-integer maps. Each accepted level adds compact main-effect and coded interaction tables; validation
-stopping prevents unnecessary deeper levels. Prediction is then dominated by integer addressing,
-table lookups, and additions rather than tree traversal or neural-network layers.
+Numeric features are discretized from train-only quantiles. Categorical features use stable integer buckets. The finest representation is computed once and mapped to coarser resolutions through cached integer maps. Each accepted level adds compact main-effect and coded interaction tables; validation stopping prevents unnecessary deeper levels.
+
+Prediction is dominated by integer addressing, table lookups, and additions rather than tree traversal or neural-network layers.
 
 See [docs/ALGORITHM.md](docs/ALGORITHM.md) for the detailed formulation.
 
 ## Performance
 
-The frozen local comparison behind 0.1.0 used 12 datasets and five shared splits per dataset against
-budget-matched LightGBM. CodAdapt did **not** win mean predictive quality on those datasets. It did,
-however, win median raw-input inference latency on 10/12 datasets and retained-model memory on 12/12.
+The frozen 0.1 engineering comparison used 12 datasets and five shared splits per dataset against budget-matched LightGBM. CodAdapt did **not** win mean predictive quality on those datasets. It did, however, win median raw-input inference latency on 10/12 datasets and retained-model memory on 12/12.
 
-With ratios defined as `LightGBM / CodAdapt`, the median fit-speed ratio was `0.887x`, inference-speed
-ratio `1.258x`, and retained-model-memory ratio `8.830x`. Therefore the measured release candidate
-was slightly slower in median training overall, faster in median inference, and substantially more
-compact in retained model memory on that limited benchmark.
+With ratios defined as `LightGBM / CodAdapt`, the median fit-speed ratio was `0.887x`, the inference-speed ratio was `1.258x`, and the retained-model-memory ratio was `8.830x`.
 
-These are local experimental results, not universal throughput or quality claims. Hardware, dataset,
-versions, thread settings, split choice, and workload can change the outcome. See
-[BENCHMARKS.md](BENCHMARKS.md) for the disclosure and use the bundled lightweight runner for your own
-sanity comparisons:
+These are local experimental measurements, not universal performance claims. Hardware, dataset, package versions, thread settings, split choice, and workload can change the result.
+
+The 0.2.0rc1 EBM compiler has a separate performance profile. It is intended primarily as an experimental compact deployment path, not as a claim that compiled inference is faster for every batch size or workload.
+
+See [BENCHMARKS.md](BENCHMARKS.md) for the public benchmark disclosure.
+
+A lightweight sanity benchmark can be run with:
 
 ```bash
 python benchmarks/run_benchmarks.py --quick
 ```
 
-## scikit-learn use
+## Persistence
 
-CodAdapt follows the estimator parameter protocol, so standard composition works:
+Native CodAdapt models support pickle/joblib persistence.
 
-```python
-from codadapt import CodAdapt
-from sklearn.base import clone
-from sklearn.model_selection import cross_val_score
+Compiled EBM models are also designed to be standalone after compilation: the teacher does not need to be installed when loading and using the compiled artifact.
 
-base = CodAdapt(max_iter=10, early_stopping=False, random_state=7)
-copy = clone(base)
-scores = cross_val_score(copy, X, y, cv=3, scoring="roc_auc")
-```
-
-The classifier returns the original two class labels from `predict`; `predict_proba` returns two
-columns in the order stored in `classes_`. The regressor uses the same common estimator API and
-returns one-dimensional real-valued predictions.
+As with any pickle/joblib artifact, load only trusted files and prefer matching dependency versions across environments.
 
 ## Documentation
 
 - [API reference](docs/API.md)
 - [Algorithm](docs/ALGORITHM.md)
+- [Experimental EBM compiler](docs/EBM_COMPILER.md)
 - [Research master](docs/research/RESEARCH_MASTER.md)
 - [Research state](docs/research/RESEARCH_STATE.json)
 - [Benchmark disclosure](BENCHMARKS.md)
@@ -246,10 +289,11 @@ returns one-dimensional real-valued predictions.
 - [Contributing](CONTRIBUTING.md)
 - [Security](SECURITY.md)
 
-
 ## Research continuity
 
-`docs/research/RESEARCH_MASTER.md` and `docs/research/RESEARCH_STATE.json` are tracked in the repository so future development sessions can recover the experimental history, rejected directions, open questions, and current next steps without the private raw experiment tree. They are development documentation and are intentionally excluded from the wheel and source distribution.
+`docs/research/RESEARCH_MASTER.md` and `docs/research/RESEARCH_STATE.json` are tracked in the repository so future development sessions can reconstruct the experimental history, rejected directions, open questions, and next research steps without requiring the private raw experiment tree.
+
+These files are development documentation and are intentionally excluded from the Python wheel and source distribution.
 
 ## Limitations
 
@@ -260,10 +304,19 @@ returns one-dimensional real-valued predictions.
 - mixed NumPy object arrays are unsupported; use pandas DataFrames for heterogeneous data;
 - raw datetime, complex, and infinite-valued features are unsupported;
 - CPU only; no GPU or online/incremental training interface;
-- very high cardinality is capped by `max_categories`, with rare and unseen categories handled through dedicated buckets;
+- very high categorical cardinality is capped by `max_categories`, with rare and unseen categories handled through dedicated buckets;
 - early stopping reserves validation rows unless an external `eval_set` is provided;
+- the EBM compiler supports only its documented additive binary/regression contract;
+- compiled EBM classification probabilities are numerically equivalent within tolerance, not guaranteed bitwise-identical;
+- compiled EBM throughput advantages are workload- and batch-size-dependent;
 - performance and memory results are hardware- and workload-specific;
-- this release does not claim state-of-the-art accuracy or general superiority over gradient-boosted trees.
+- this release does not claim state-of-the-art accuracy or general superiority over established tree-based models.
+
+## Status
+
+CodAdapt 0.2.0rc1 is an experimental pre-release. The native core remains unchanged from the validated 0.1 line, while the EBM compiler is opt-in and experimental.
+
+The public API, compiler contract, and defaults may evolve as broader external validation continues.
 
 ## License
 
