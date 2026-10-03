@@ -18866,7 +18866,7 @@
       "research_round_added": false
     }
   ],
-  "current_research_status": "POST_R77_RC2_CI_FIX_PREPARED_PENDING_MATRIX_VALIDATION",
+  "current_research_status": "POST_R77_CURRENT_RC2_MODERN_PYTHON_READY",
   "unresolved_mechanisms": {
     "historical": [
       "Unique-source crowding versus repeated residual refinement",
@@ -50676,5 +50676,178 @@
     "round78_started": false,
     "next_step": "User manually runs the frozen Linux CI matrix; inspect versions/threadpool/smoke/pytest logs. Do not claim CI_FIX_CONFIRMED until3.10/3.11/3.12 pass. If3.10 smoke passes then tests segfault, diagnose pre-Cholesky gram/rhs and stop; no solver substitution.",
     "report": "research_private/rc2_ci_safeblend_fix/findings.md"
+  },
+  "PYTHON_COMPATIBILITY_GATE": {
+    "name": "PYTHON_COMPATIBILITY_GATE",
+    "scope": "Permanent release engineering policy; not a research round",
+    "document": "docs/PYTHON_COMPATIBILITY.md",
+    "required": [
+      "oldest supported Python",
+      "middle supported Python",
+      "current mainstream Python",
+      "newest stable Python practical for dependencies",
+      "separate core, EBM and SafeBlend matrices",
+      "minimum declared and modern numerical dependencies",
+      "clean wheel/sdist build, installation and provenance",
+      "frozen scientific checkpoint replay with zero drift"
+    ],
+    "no_untested_support_claims": true,
+    "optional_dependencies_do_not_unnecessarily_limit_core": true,
+    "teacher_or_solver_change_requires_separate_revalidation": true,
+    "review_every_release": true,
+    "real_kaggle_confirmation_requires_actual_remote_execution": true,
+    "all_supported_mainstream_minors_required": true,
+    "ci_supported_minors": [
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13",
+      "3.14"
+    ]
+  },
+  "POST_R77_MODERN_PYTHON_PYTHON_COMPATIBILITY": {
+    "date": "2026-10-03",
+    "status": "PYTHON_313_BLOCKED",
+    "execution_status": "LOCAL_AVAILABLE_WORK_COMPLETE; required matrix pending",
+    "blocker": "Interpreters3.10/3.11/3.13/3.14 unavailable; download authorization pending",
+    "is_research_round": false,
+    "last_completed_round": 77,
+    "round78_started": false,
+    "public_version": "0.2.0rc2",
+    "requires_python": ">=3.10,<3.13",
+    "metadata_and_version_changed": false,
+    "modern_python_prepared": false,
+    "actually_tested_minors": [
+      "3.12"
+    ],
+    "modern_stack": {
+      "python": "3.12.3 WSL/Linux",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.9.0",
+      "lightgbm": "4.7.0",
+      "interpret-core": "0.7.8",
+      "joblib": "1.6.0",
+      "pytest": "9.1.1",
+      "source": "Preregistered existing local wheel cache; offline installation"
+    },
+    "modern_full_tests": {
+      "passed": 404,
+      "failed": 0,
+      "xfailed": 4,
+      "skipped": 2
+    },
+    "safeblend_tests": 29,
+    "ebm_tests": 25,
+    "packaging_tests": 4,
+    "scipy_cholesky": "PASS",
+    "local_native_crashes": 0,
+    "reported_ci_crash_not_independently_closed": true,
+    "scientific_code_changed": false,
+    "scientific_drift": "NO",
+    "replay": {
+      "cases": 90,
+      "partitions": 270,
+      "mismatches": 0,
+      "fits": 0,
+      "solves": 0
+    },
+    "cross_stack_persistence": "PASS; same3.12 minor across patch/OS/dependency stacks only",
+    "cross_minor_persistence_contract": false,
+    "kaggle_status": "KAGGLE_REMOTE_CONFIRMATION_PENDING",
+    "local_kaggle_equivalent": "PASS on3.12; n_jobs4; teacher-free pickle/joblib",
+    "rc2_archives_immutable": true,
+    "python313": "NOT_TESTED_INTERPRETER_UNAVAILABLE",
+    "python314": "NOT_YET_SUPPORTED",
+    "minimum_declared_dependency_floor": "PENDING_EXECUTED_VALIDATION",
+    "official_newest_stable_inventory": "PENDING_AUTHORIZED_EXTERNAL_VERIFICATION",
+    "network_downloads": 0,
+    "remote_operations": 0,
+    "report": "the private Python compatibility audit",
+    "artifacts": "the private compatibility evidence archive/",
+    "next_action": "Complete missing interpreter/dependency matrix; MODERN_PYTHON only after required passes"
+  },
+  "POST_R77_MODERN_PYTHON_COMPATIBILITY_AUTHORIZED_RESUME": {
+    "date": "2026-10-03",
+    "status": "MODERN_PYTHON_COMPATIBILITY_READY",
+    "python314": "PYTHON_314_SUPPORTED",
+    "is_research_round": false,
+    "last_completed_round": 77,
+    "round78_started": false,
+    "public_version": "0.2.0rc2",
+    "requires_python": ">=3.10,<3.15",
+    "source_changes": "Only version metadata in src;16 predictive/recipe files byte-identical",
+    "dependency_floor_change": "sklearn>=1.4;1.3.0 checker failed before fit; no new XFAIL",
+    "teacher_versions": {
+      "lightgbm": "4.7.0",
+      "interpret-core": "0.7.8"
+    },
+    "python_new": [
+      "3.10.11",
+      "3.11.9",
+      "3.13.16",
+      "3.14.8"
+    ],
+    "python312": "ALL VALID TEST/REPLAY CHECKPOINTS REUSED; not rerun",
+    "latest_stable": "3.14.8; python.org;3.15 prerelease excluded",
+    "full313": "403 initial+1 minimal long-path environment retry=404passed;2skip;4knownXFAIL",
+    "full314": "404passed;2conditionalskip;4knownXFAIL;0failed direct full run",
+    "cholesky": "PASS all new extra stacks; no observed segfault",
+    "replay": "90/90 per3.13/3.14 stack;270partitions;0bitwise/branch/RMSE mismatch;0fits/solves",
+    "scientific_drift": "NO",
+    "scientific_fits_solves": 0,
+    "cross_python_persistence": "Diagnostic pass; not official portability contract",
+    "packaging": "MODERN_PYTHONwheel/sdistPASS;sdist rebuilt22wheelpayloads identical;RC2archivesimmutable",
+    "clean_install": "PASS3.10minimum/extras,3.11,3.13,3.14;3.12evidence reused",
+    "ci": "15localvalidatedlanes;105Bashscripts;noGitHubexecution",
+    "kaggle": "KAGGLE_REMOTE_CONFIRMATION_PENDING;local3.13/3.14n_jobs4smokesPASS",
+    "remote_repository_operations_uploads_publications": 0,
+    "downloads": "Explicitly authorized python.org/PyPI dependencies only",
+    "existing_python_untouched": "Primary3.12.14 still imports RC2;noPATH/launcher change",
+    "environment_failures_preserved": [
+      "MSIcache",
+      "WindowsDLLpolicytransient",
+      "tarrealpath",
+      "ensurepipMAXPATH"
+    ],
+    "report": "the private Python compatibility audit",
+    "final_audit": "the private compatibility evidence archive/final_audit.json",
+    "next": "Manual user Kaggle smoke/CI verification and release review only;noRound78"
+  },
+  "POST_R77_CURRENT_RC2_MODERN_PYTHON_NORMALIZATION": {
+    "date": "2026-10-03",
+    "status": "CURRENT_RC2_MODERN_PYTHON_READY",
+    "canonical_version": "0.2.0rc2",
+    "requires_python": ">=3.10,<3.15",
+    "supported_minors": [
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13",
+      "3.14"
+    ],
+    "sklearn_minimum": "1.4",
+    "teachers": {
+      "lightgbm": "4.7.0",
+      "interpret-core": "0.7.8"
+    },
+    "full313": "404 passed, 2 conditional skips, 4 existing XFAIL; direct full run",
+    "full314": "404 passed, 2 conditional skips, 4 existing XFAIL; direct full run",
+    "new_package_environments": "Fresh venvs and wheel installs; validated dependency paths reused",
+    "old_audit_history": "Exact prior public snapshots and original audit retained privately",
+    "replay": "Prior 90/90 per new minor verified and reused; zero mismatch",
+    "scientific_code_changed": false,
+    "scientific_drift": "NO",
+    "scientific_fits_solves": 0,
+    "segfault_observed": false,
+    "ci": "Existing 15-lane modern matrix retained; remote confirmation pending",
+    "kaggle": "KAGGLE_REMOTE_CONFIRMATION_PENDING = YES",
+    "install_source": "main after manual upload; historical published tag unchanged",
+    "is_research_round": false,
+    "last_completed_round": 77,
+    "round78_started": false,
+    "remote_operations_downloads_uploads_publications": 0,
+    "report": "research_private/current_rc2_normalization/findings.md"
   }
 }

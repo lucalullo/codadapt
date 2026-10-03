@@ -2,6 +2,19 @@
 
 ## 0.2.0rc2 - Experimental release candidate
 
+**Current repository compatibility update (no new release):**
+
+- Verified Python 3.10–3.14 for the native core, EBM and SafeBlend extras.
+- Expanded the permanent compatibility CI to all five supported Python minors,
+  retaining dependency diagnostics, BLAS limits and isolated Cholesky smoke.
+- Raised the minimum scikit-learn requirement to 1.4 following the upstream 1.3
+  pickle-checker failure; the tested modern stack is not a public dependency pin.
+- Kept LightGBM 4.7.0, interpret-core 0.7.8 and all scientific behavior unchanged.
+- Updated `main` installation and Kaggle guidance. The older published tag remains
+  unchanged; actual GitHub CI and Kaggle confirmation are pending.
+
+**Existing experimental integration:**
+
 - Added opt-in `codadapt.experimental.SafeBlendRegressor` for single-target regression.
 - Added the optional pinned `safeblend` LightGBM training dependency; saved models
   predict and reload without the teacher.
@@ -12,7 +25,8 @@
 - Added public contract, persistence and packaging tests and deployment documentation.
 - Removed non-executable private source-path metadata from the packaged recipe.
 
-This is an experimental release candidate. Training remains expensive; the measured large-batch path is slower than Base. The native core and defaults remain unchanged.
+This working-tree compatibility update creates no release or research round.
+Training remains expensive; the measured large-batch path is slower than Base.
 
 ## 0.2.0rc1 - Experimental release candidate
 

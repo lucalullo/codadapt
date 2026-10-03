@@ -1,3 +1,28 @@
+# Current engineering state — current RC2 with modern Python support
+
+**CURRENT_RC2_MODERN_PYTHON_READY.** Canonical version: 0.2.0rc2.
+Python 3.10–3.14 support and all validated compatibility evidence are retained.
+The user chose an update to the existing line, not a new release. Earlier engineering
+banners are historical snapshots. Original audit labels/artifacts are archived privately.
+No scientific changes, new research round or remote repository operation.
+last_completed_round = 77; Round78 NOT_STARTED.
+
+# Current engineering state — MODERN_PYTHON compatibility READY locally, unpublished
+
+**MODERN_PYTHON_COMPATIBILITY_READY;PYTHON_314_SUPPORTED.** Public candidate0.2.0rc2,
+Python>=3.10,<3.15;16predictive/recipe sources unchanged. Explicit download
+authorization resolved prior environment block. Fresh3.13/3.14 full gate and
+checkpoint replay pass;3.12valid evidence reused. No publication or remote repo action.
+last_completed_round77;Round78NOT_STARTED. Older banners are historical snapshots.
+
+# Current engineering state — MODERN_PYTHON compatibility gate blocked, RC2 preserved
+
+**PYTHON_313_BLOCKED** by unavailable interpreters and pending download authorization;
+not a demonstrated algorithm failure. Public0.2.0rc2 and >=3.10,<3.13 unchanged.
+Clean offline modern Python3.12 core/SafeBlend/EBM/full tests pass;90case replay exact.
+Only documentation/CI engineering; no scientific changes or new research round.
+last_completed_round77;Round78NOT_STARTED. Earlier banners are historical snapshots.
+
 # Current engineering state — RC2 SafeBlend CI remediation, matrix pending
 
 **CI_FIX_PREPARED_PENDING_MATRIX_VALIDATION.** Public version0.2.0rc2 unchanged.
@@ -10141,3 +10166,123 @@ SafeBlend-specific native failure. User must manually run3.10/3.11/3.12 CI; if p
 without solver replacement. Current artifact hashes and complete provenance in
 STATE `POST_R77_RC2_SAFE_BLEND_CI_FIX` and
 `research_private/rc2_ci_safeblend_fix/{findings.md,final_audit.json}`.
+
+
+## Post-R77 — Python compatibility modernization / MODERN_PYTHON gate (2026-10-03)
+
+Local available work complete; mandatory expanded matrix pending. Verdict
+**PYTHON_313_BLOCKED** identifies environment/authorization limits, not model failure.
+Only Windows3.12.14 and WSL3.12.3 available;3.10/3.11/3.13/3.14 NOT_TESTED.
+Official newest-stable review and minimum declared dependency boundary also pending.
+No download or remote access under the existing user restriction. Metadata, classifiers,
+version0.2.0rc2 and immutable RC2 archives preserved;no MODERN_PYTHON artifacts prepared.
+
+Clean WSL3.12.3 modern stack preregistered from cached wheels: NumPy2.5.3,
+SciPy1.18.1,pandas2.3.3,sklearn1.9.0;fixedLightGBM4.7.0/interpret-core0.7.8.
+Core346PASS;SafeBlend29PASS;EBM25PASS;full404PASS/4knownXFAIL/2conditional
+array-API skips;packaging4PASS. Clean isolated RC2 wheel import/provenance/pipcheckPASS.
+SPD1024CholeskyPASS;local native crashes0. Original CI failure not independently closed.
+Existing Windows/recent WSL audit evidence reused without repeating valid fits.
+
+Predictive/version/recipe source bytes unchanged;science/default/alpha/safety/solver
+unchanged. Frozen90case/270partition replay verified;additional Windows3.12.14->
+WSL3.12.3 modern-stack pickle replay0bitwise/branch/RMSE mismatches,0fits/solves.
+Same-minor patch/OS/dependency diagnostic only,not a cross-minor portability promise.
+Local Kaggle-equivalent mixed/missing/unseen n_jobs4 fit/predict and teacher-free
+pickle/joblib PASS;KAGGLE_REMOTE_CONFIRMATION_PENDING. Manual smoke/cell prepared.
+
+Permanent **PYTHON_COMPATIBILITY_GATE** in docs/PYTHON_COMPATIBILITY.md and STATE:
+oldest/middle/mainstream/newest practical stable Python;core and extras separately;
+minimum+modern dependencies;clean packaging;no untested support or optional restrictions
+on core without evidence. Review each release. Teacher/solver replacement requires
+separate revalidation. README states3.13 RC2 rejection explicitly. CI3.12 uses tested
+modern stack;configured3.10/3.11 remain pending,not PASS claims. YAML/Python/Bash
+syntax and Ruff PASS;thread controls/native smoke preserved. No GitHub execution.
+
+Next engineering work: authorized/local toolchains for missing minors,prioritize3.13
+core/SafeBlend/packaging/full tests,then conditional metadata/MODERN_PYTHON preparation.
+R75/R76/R77 scientific verdicts and continuous1–77 index unchanged;Round78NOT_STARTED.
+No commit,push,pull,fetch,tag,release,publication or new scientific panel fit/solve.
+Evidence:the private Python compatibility audit;
+the private compatibility evidence archive/environment_matrix.json,dependency/layer CSVs,logs,
+cross_stack_replay.json,workflow_validation.json,final_audit.json.
+
+
+## Post-R77 — Authorized MODERN_PYTHON compatibility completion (2026-10-03)
+
+Engineering COMPLETE, **MODERN_PYTHON_COMPATIBILITY_READY;PYTHON_314_SUPPORTED**.
+Earlier PYTHON_313_BLOCKED was environment/authorization only and is preserved
+historically. User authorized official python.org/PyPI downloads; no remote repo,
+upload,commit,push,pull,fetch,tag,PR,release or publication. Side-by-side official
+signed MSI extraction+isolatedvenvs;noPATH/launcher/systemPythonreplacement.
+
+New Windows CPython3.10.11/3.11.9/3.13.16/3.14.8 tested;validWindows/WSL3.12
+tests/replay reused,not rerun. Official lateststable3.14.8;3.15prereleaseexcluded.
+Old3.10/3.11binarypatches are fixtures,not security recommendations.
+CoreminimumNumPy1.24.0/SciPy1.8.0/pandas2.0.0/sklearn1.4.0 PASS327/2knownXFAIL.
+Originalsklearn1.3.0 yielded2upstreamNaN-int pickle-checker errors before fit;
+lowerboundraisedto1.4,not model/test exceptions.3.10extras2.2.6/1.15.3/2.3.3/1.7.2;
+3.11recent2.3.5/1.16.2/2.2.3/1.8.0;3.13/3.14modern2.5.3/1.18.1/2.3.3/1.9.0.
+LGBM4.7.0/interpret-core0.7.8 unchanged;all minors core+extras source gates PASS.
+
+3.13installedfull403PASS+1ensurepipMAXPATHfailure;onlyfailedtestretriedwith
+shortprivatebasetempPASS:aggregate404PASS/2conditionalSKIP/4knownXFAIL,0remaining.
+3.14installeddirectfull404PASS/2conditionalSKIP/4knownXFAIL. DLLpolicytransient
+source-collectionfailure resolved by boundedimportretry; no security bypass.
+SPD1024CholeskyPASS,BLAS1;nativecrashes0. OriginalGitHubfailure not remotelyclosed.
+Localn_jobs4mixed/missing/unseen fit/predict+teacher-freepickle/joblibPASSboth.
+KAGGLE_REMOTE_CONFIRMATION_PENDING;actualreported3.13.15image not executed.
+
+All16predictive/recipe hashes frozen;only_version.py changedwithinSRC. Noalpha,
+safety,Base,teacher,compiler,cells,cuts,capacity,solver,validation or default change.
+Existing90replay reused;new3.13and3.14each90models/270partitions exact,
+0bitwise/branch/RMSEmismatch,0scientificfits/solves. Cross-minorpickle diagnostic
+pass,not officialportabilitycontract. No new quality/performanceconfirmation.
+
+MODERN_PYTHONrequires>=3.10,<3.15,classifiers3.10–3.14,sklearn>=1.4;core/extras separated.
+Wheel/sdistPASS;sdistrebuild22byte-identicalwheelpayloads;RC2archivesimmutable.
+Initialtarrealpathfailurepreserved;nativevalidatedextractionrecoveredminimumphase.
+FreshMODERN_PYTHONpackaging4PASSon3.10minimum,3.10extras,3.11;3.13/3.14fullpackagingPASS.
+README/notes/changelog/notebookversion/policydocaligned. Notebooktemplatechanged
+but no fresh notebook/Kaggle execution claim. PermanentPYTHON_COMPATIBILITY_GATE
+requiresall mainstreamsupportedminors/core/extras/minimum+modern/cleanpackaging.
+CI15lanes/105Bashscripts YAML/Python/BashsyntaxPASS;remoteCI not executed.
+Ruffpublic/private/formatPASS;JSON/index1–77 coherent;researchprivateignored,
+docs/researchtrackableanddistributionexcluded. R75/R76/R77 scientific state unchanged.
+Currentcandidate0.2.0rc2 localonly;manualKaggle/CI/release reviewnext,stop,noRound78.
+Evidence:the private Python compatibility audit;
+the private compatibility evidence archive/matrixCSVs,environment_matrix.json,replays,build_verification.json,
+workflow_validation.json,logs,final_audit.json;dist/MODERN_PYTHONwheel+sdist.
+
+
+## Post-R77 — Current RC2 modern Python normalization (2026-10-03)
+
+**CURRENT_RC2_MODERN_PYTHON_READY.** The user chose to incorporate the verified
+compatibility work into canonical 0.2.0rc2, with no new release. Python
+>=3.10,<3.15; classifiers 3.10–3.14; sklearn>=1.4. Fixed LightGBM 4.7.0 and
+interpret-core 0.7.8, 16 predictive/recipe source hashes unchanged. Public
+native core, alpha, safety, compiler, solver and semantics are unchanged.
+
+All prior technical evidence retained. Fresh current-version wheel environments
+on Windows 3.13.16 and 3.14.8 each passed a direct full suite: 404 passed,
+2 conditional array-API skips, 4 existing XFAIL, 0 failures. Numerical dependency
+paths were reused from validated isolated stacks; this is not a new resolver
+experiment. Installed package/version provenance, pip check, SafeBlend usage,
+teacher-free persistence and Cholesky smoke passed. No observed segfault.
+Notebook's seven code cells and the documented manual smoke ran locally;
+remote installation commands were omitted. Actual Kaggle remains pending.
+
+Prior 90-case/270-partition replay per new minor verified and reused, with
+zero prediction/branch/RMSE mismatch and no new scientific fits or solves.
+R75–77 scientific findings, all round records and last_completed_round=77
+are preserved. Earlier engineering snapshots were normalized to neutral
+compatibility labels; exact original snapshots are preserved privately.
+
+Current wheel/sdist rebuilt under the existing version name; previous archive
+bytes retained privately. Python policy, README, notes and notebook align.
+Installation documentation uses main after manual upload, because the older
+published v0.2.0rc2 tag remains unchanged. Existing 15 CI lanes and Cholesky/BLAS
+diagnostics retained; no remote CI pass is claimed. Private research stays
+ignored and excluded from distributions. No network, commit, tag, publication,
+release or remote repository operation in this normalization task. Stop;
+Round78 NOT_STARTED. Evidence is in the private current-version normalization audit.

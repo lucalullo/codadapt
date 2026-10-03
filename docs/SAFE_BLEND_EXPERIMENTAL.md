@@ -2,8 +2,9 @@
 
 `SafeBlendRegressor` is an opt-in, single-target **regression-only** estimator in
 `codadapt.experimental`. Native CodAdapt estimators and defaults are unchanged.
-CodAdapt 0.2.0rc2 includes the validated engineering integration of this frozen recipe.
-The integration itself is not a new predictive confirmation; the experimental recipe/API is frozen.
+SafeBlend was integrated in the 0.2.0rc2 line after Round77. The current
+repository compatibility update adds Python 3.10–3.14 support without a new
+predictive confirmation. The experimental recipe/API remains frozen.
 
 ```python
 from codadapt.experimental import SafeBlendRegressor
@@ -15,13 +16,8 @@ prediction = model.predict(X_test)
 
 ## Fit-only optional dependency
 
-Install the tagged GitHub release with the optional training extra:
-
-```bash
-python -m pip install "codadapt[safeblend] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc2"
-```
-
-From a local checkout:
+After publication, install with `python -m pip install "codadapt[safeblend]"`.
+For the unpublished local candidate, install the optional training extra from a checkout:
 
 ```bash
 python -m pip install -e ".[safeblend]"
@@ -71,7 +67,7 @@ Signature: `SafeBlendRegressor(*, random_state=0, verbosity=0, n_jobs=4)`.
 - `random_state`: fixed integer seed for reproducibility.
 - `verbosity`: 0 or 1.
 - `n_jobs`: 1–4 fitting BLAS threads; teacher remains at one thread. Prediction uses
-  the caller's BLAS settings; the frozen RC2 audit used four threads.
+  the caller's BLAS settings; the published local audit used four threads.
 
 Alpha, safety threshold, validation fraction, compiler capacity, teacher tuning and
 representation recipe are not configurable. There is no sample-weight, external
@@ -128,7 +124,7 @@ No automatic public migration from private names is provided.
 
 ## Quality evidence and limits
 
-A frozen independent confirmation evaluated the candidate on **18 real regression dataset
+Round76 independently confirmed the frozen candidate on **18 real regression dataset
 sources × 5 splits** not used earlier in the recorded research. The median of dataset
 mean RMSE gains was **+5.20% versus CodAdapt Base**, with dataset-bootstrap 95% interval
 approximately **+2.87% to +15.37%** and **17 wins / 1 tie / 0 losses** at ±0.1% gain.
@@ -145,8 +141,8 @@ integration replays the same frozen evidence; it is not new quality confirmation
 The frozen productization panel used 18 first-seed workloads for paired warm latency,
 90 artifacts for size, batches1/32/1k/100k, warmup1 and repeats9/9/7/3, alternating
 model order. Preprocessing/Base/correction are included; batch materialization is not.
-The environment was the development machine (AMD Ryzen 7 255, about 32 GB RAM), Windows 11,
-Python 3.12.14, NumPy 2.3.5, LightGBM 4.7.0 and four BLAS threads/one teacher thread.
+The environment was LUCA-PC, user-supplied Ryzen7 255/about32GB, Windows11,
+Python3.12.14, NumPy2.3.5, LightGBM4.7.0 and four BLAS threads/one teacher thread.
 No independent hardware claim is made.
 
 | Batch | Productization latency / Base | Productization latency / LightGBM |
@@ -156,8 +152,8 @@ No independent hardware claim is made.
 | 1k | 1.927× | 0.173× |
 | 100k | 5.383× | 0.105× |
 
-Median serialized/deep retained size was **1.434× / 0.819× Base**. The frozen systems audit measured serialized
-size versus its teacher at about 0.045×; deep Python graph accounting does not fully
+Median serialized/deep retained size was **1.434× / 0.819× Base**. Round77 serialized
+size versus its teacher was about0.045×; deep Python graph accounting does not fully
 capture native LightGBM memory. Serialized size and retained graphs are not peak RSS.
 The streaming task's four representative workloads had about55.83MiB median traced
 whole-deployment temporary peak; this is not total isolated process RAM.
@@ -173,17 +169,19 @@ These are source-balanced medians with full-pipeline Base denominators, not univ
 costs. Small API fit smoke tests do not replace real-panel training-cost evidence.
 Different hardware, libraries, data, feature counts and batch sizes can change costs.
 
-The RC2 integration audit separately checked public/private bitwise predictions,
+The current local integration separately checks public/private bitwise predictions,
 serialization, representative paired API costs, public tests and built packages.
-The experimental namespace may change; validate quality and deployment cost on the intended workload.
+Version/tag/default promotion remains a user decision. The experimental namespace may
+change; validate quality and deployment cost on the intended workload.
 
 ## RC2 integration measurements
 
-The RC2 public integration audit measured serialized/deep size **1.433× / 0.819× Base**
+The public integration audit measured serialized/deep size **1.433× / 0.819× Base**
 and latency **0.477× / 0.621× / 1.546× / 4.692× Base** at batches 1 / 32 / 1k / 100k.
-These are source-balanced local medians, not performance promises. Hardware/protocol: development machine (AMD Ryzen 7 255, about 32 GB RAM), Windows 11,
-Python 3.12.14, NumPy 2.3.5, four BLAS threads; 18 first-seed workloads, 90 size
-artifacts, warmup 1, repeats 9/9/7/3 and paired alternating Base/private/public order. Predictions include
+These are source-balanced local medians, not performance promises. Hardware/protocol:
+LUCA-PC (user-reported AMD Ryzen7 255, about32GB RAM), Windows11, Python3.12.14,
+NumPy2.3.5, four BLAS threads; 18 first-seed workloads,90size artifacts, warmup1,
+repeats9/9/7/3 and paired alternating Base/private/public order. Predictions include
 preprocessing; input batch materialization is excluded equally. No material public
 wrapper regression was detected. This RC changes version/docs/non-executable provenance
 only; it does not optimize or change the measured model. Large batches remain slower

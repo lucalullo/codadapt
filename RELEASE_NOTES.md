@@ -2,6 +2,20 @@
 
 ## 0.2.0rc2 — Experimental release candidate
 
+### CURRENT REPOSITORY COMPATIBILITY UPDATE
+
+The current working tree supports Python 3.10–3.14 for the native core, EBM and
+SafeBlend. The minimum scikit-learn version is 1.4; numeric packages retain minimum
+requirements rather than the modern audit pins. The permanent compatibility gate
+and five-minor CI retain Cholesky/thread diagnostics and teacher-free persistence.
+See [PYTHON_COMPATIBILITY.md](docs/PYTHON_COMPATIBILITY.md) for executed evidence.
+
+This is an update to the existing version line, not a new release. Use `main` after
+the local changes are uploaded manually; the historical `v0.2.0rc2` tag remains at
+its older commit. GitHub CI and real Kaggle confirmation remain pending. Native
+behavior, SafeBlend mathematics and compiler fidelity are unchanged.
+
+
 ### NEW
 
 This candidate adds the opt-in, regression-only `SafeBlendRegressor` under
@@ -13,11 +27,11 @@ frozen experimentally. Native defaults and the existing EBM compiler are unchang
 
 ### VALIDATED
 
-The frozen independent confirmation used 18 new regression dataset sources × 5 splits:
+Round76 independent confirmation used 18 new regression dataset sources × 5 splits:
 median dataset-mean RMSE gain versus CodAdapt Base +5.20%, 95% dataset-bootstrap CI
 [+2.87%, +15.37%], and 17 wins / 1 tie / 0 losses. These are panel-specific results,
-not a universal guarantee. The RC2 integration replay preserved all 90 frozen predictions, branch decisions and RMSE,
-with zero bitwise mismatches.
+not a universal guarantee. Public integration preserved all 90 checkpoint predictions,
+branches and RMSE, with zero bitwise mismatches and no new scientific fits.
 
 The local integration measured serialized/deep memory 1.433× / 0.819× Base and latency
 0.477× / 0.621× / 1.546× / 4.692× Base for batches 1 / 32 / 1k / 100k. Measurements
@@ -33,7 +47,8 @@ convenience panel with overlapping IID splits, not independent-hardware or unive
 Numeric multiclass IDs are indistinguishable from valid count regression; callers must
 respect the regression-only contract. Trusted pickle/joblib needs compatible dependencies.
 
-The validation cited here is local and does not establish independent-hardware performance. See [the contract](docs/SAFE_BLEND_EXPERIMENTAL.md) for measured panel evidence, expensive fitting and large-batch limitations.
+No tag, upload or remote validation is implied. See [the contract](docs/SAFE_BLEND_EXPERIMENTAL.md)
+for measured panel evidence, expensive fitting and large-batch limitations.
 
 ## 0.2.0rc1 — Experimental release candidate
 
