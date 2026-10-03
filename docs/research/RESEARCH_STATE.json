@@ -3019,7 +3019,7 @@
     "single_row_target": "R41 local exact raw-score measurements only; independent>=3x replication NOT established",
     "large_batch_target": "No general promotion target; per-model/batch throughput recommendation and nonmonotonic crossover",
     "ebm_compiler_safe": "Opt-in codadapt.experimental.compile_ebm(teacher, *, X_verify, max_states=None); interpret-core0.7.8 additive standard EBM only, binary/scalar regression; named DataFrames, real numeric and string categorical labels, supported missing/unseen. Exact raw/regression; numerical probability fidelity, not bitwise. Mandatory exact capacity/schema checks and heldout compile-then-verify. No teacher retained. Existing native API/default unchanged; standalone runtime ports frozen R37 ordered NumPy lookup and buffer persistence; no R38/R39 native backend.",
-    "experimental": "0.2.0rc2 GitHub-ready source tree verified; SafeBlendRegressor remains opt-in experimental; repository publication/tagging is user-managed and external to research state."
+    "experimental": "Local0.2.0rc1 source archive and directory verified; user-managed upload, external checks excluded"
   },
   "do_not_repeat_without_new_evidence": [
     "full scan",
@@ -18817,7 +18817,7 @@
     },
     "round44_note": "Previous report_documents/inventory_sha256 describe historical inventory; R44 current artifacts have a separate manifest."
   },
-  "publication_status": "RC2_GITHUB_HANDOFF_READY",
+  "publication_status": "LOCAL_RC_SOURCE_HANDOFF_NOT_PUBLISHED",
   "frozen_v010_source_sha256": {
     "src\\codadapt\\classifier.py": "22dad21d5eb03f41ddbad673c4ec473681749d680d24f79baadec028a5adec9a",
     "src\\codadapt\\preprocessing.py": "4125faef3699edd015cb9b91be4cfa40ec78930fede7ab07ca0650d1021e399a",
@@ -18866,7 +18866,7 @@
       "research_round_added": false
     }
   ],
-  "current_research_status": "POST_R77_RC2_GITHUB_HANDOFF_READY",
+  "current_research_status": "POST_R77_RC2_CI_FIX_PREPARED_PENDING_MATRIX_VALIDATION",
   "unresolved_mechanisms": {
     "historical": [
       "Unique-source crowding versus repeated residual refinement",
@@ -50562,5 +50562,119 @@
     "releases": 0,
     "round78_started": false,
     "next_step": "Stop; user reviews and manually publishes if desired. No remote CI or independent host claim."
+  },
+  "POST_R77_RC2_SAFE_BLEND_CI_FIX": {
+    "status": "LOCAL_FIX_AND_VALIDATION_COMPLETE_REMOTE_MATRIX_PENDING",
+    "verdict": "CI_FIX_PREPARED_PENDING_MATRIX_VALIDATION",
+    "last_completed_round": 77,
+    "version": "0.2.0rc2",
+    "github_versions_before": "UNKNOWN_NO_RUN_LOG_PROVIDED",
+    "github_threadpool_before": "UNKNOWN_NO_RUN_LOG_PROVIDED",
+    "workflow_discrepancy": "Local workflow has test and experimental-ebm only; experimental-safeblend absent.",
+    "public_changes": [
+      ".github/workflows/tests.yml",
+      "tests/test_safe_blend.py"
+    ],
+    "other_workflow_jobs_unchanged": true,
+    "pins": {
+      "3.10": {
+        "numpy": "1.24.4",
+        "pandas": "2.0.3",
+        "sklearn": "1.3.2",
+        "scipy": "1.11.4"
+      },
+      "3.11": {
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "sklearn": "1.8.0",
+        "scipy": "1.16.2"
+      },
+      "3.12": {
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "sklearn": "1.8.0",
+        "scipy": "1.16.2"
+      }
+    },
+    "lightgbm": "4.7.0",
+    "ci_blas_threads": 1,
+    "public_default_n_jobs": 4,
+    "accepted_n_jobs": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "python310": "NOT_RUN_NO_LOCAL_INTERPRETER_OR_MINIMUM_STACK",
+    "python311": "NOT_RUN_NO_LOCAL_INTERPRETER",
+    "python312": "PASS_WINDOWS_AND_CLEAN_WSL_LINUX_RECENT_PINNED_STACK",
+    "windows_full_pytest": {
+      "passed": 404,
+      "failed": 0,
+      "skipped": 0,
+      "xfailed": 4
+    },
+    "linux_full_pytest": {
+      "passed": 379,
+      "failed": 0,
+      "skipped": 1,
+      "xfailed": 4
+    },
+    "linux_targeted_pytest": {
+      "passed": 33,
+      "failed": 0,
+      "skipped": 0,
+      "xfailed": 0
+    },
+    "safe_blend_tests": 29,
+    "packaging_tests": 4,
+    "linux_ebm_optional_dependency": "ABSENT; EBM module skipped as in safeblend-only CI extra",
+    "observed_segfaults": 0,
+    "original_failure_reproduced": false,
+    "scientific_code_changed": false,
+    "scientific_drift": "NO",
+    "frozen_replay": {
+      "cases": 90,
+      "partitions": 270,
+      "mismatches": 0,
+      "fits": 0,
+      "solves": 0,
+      "threads": 4
+    },
+    "ruff": "PASS",
+    "format": "PASS",
+    "workflow_yaml_and_inline_python": "PASS",
+    "workflow_bash_syntax": "PASS",
+    "build": "WHEEL_SDIST_PASS",
+    "wheel_content_unchanged": true,
+    "sdist_contains_updated_workflow_tests": true,
+    "archives": {
+      "codadapt-0.2.0rc2-py3-none-any.whl": {
+        "sha256": "333c24a4c1b90085d0f61904eeb290e20cfb21731bde79845776e1b8dade6ea3",
+        "bytes": 43558,
+        "files": 22
+      },
+      "codadapt-0.2.0rc2.tar.gz": {
+        "sha256": "c8bb4515162a1974ac239421540c543947a7262b3159ed49fa3340a2626ef5a4",
+        "bytes": 96754,
+        "files": 58
+      }
+    },
+    "old_archive_location": "research_private/rc2_ci_safeblend_fix/previous_dist/",
+    "artifact_privacy": "PASS",
+    "environment_failures_preserved": [
+      "Windows initial packaging ensurepip failure; single retry with dedicated TEMP passed; full suite passed",
+      "WSL initial pytest capture on DrvFS raised FileNotFoundError before collection; Linux /tmp capture buffers fixed environment",
+      "WSL initial full suite: four isolated imports failed because source metadata caused pip to skip wheel installation; actual force-install without PYTHONPATH fixed environment"
+    ],
+    "dependency_install_scope": "clean WSL venv, local cached wheels only, no-index, no network; no3.10/3.11 claim",
+    "remote_operations": 0,
+    "commits": 0,
+    "push": 0,
+    "tags": 0,
+    "releases": 0,
+    "round78_started": false,
+    "next_step": "User manually runs the frozen Linux CI matrix; inspect versions/threadpool/smoke/pytest logs. Do not claim CI_FIX_CONFIRMED until3.10/3.11/3.12 pass. If3.10 smoke passes then tests segfault, diagnose pre-Cholesky gram/rhs and stop; no solver substitution.",
+    "report": "research_private/rc2_ci_safeblend_fix/findings.md"
   }
 }

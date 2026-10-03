@@ -1,10 +1,20 @@
-# Current engineering state — v0.2.0rc2 GitHub handoff READY
+# Current engineering state — RC2 SafeBlend CI remediation, matrix pending
 
-**RC2_READY_FOR_GITHUB_HANDOFF.** Version 0.2.0rc2 source, documentation, tests and packaging are prepared for repository publication. Native core/default and scientific recipe are unchanged; `last_completed_round = 77`; Round78 is NOT_STARTED. Publication/tag state is external to this research continuity file. Older version/integration banners are historical snapshots; the final RC2 section and STATE are current.
+**CI_FIX_PREPARED_PENDING_MATRIX_VALIDATION.** Public version0.2.0rc2 unchanged.
+Local Windows and clean Linux/WSL Python3.12 pinned-stack tests pass; GitHub3.10/3.11
+not executed or claimed. Only isolated SafeBlend workflow/test resource controls changed;
+scientific code/default/recipe unchanged,90case/270partition replay exact with0refits.
+Historical RC2_READY_FOR_MANUAL_PUBLICATION refers to the prior local artifact audit;
+the reported native CI failure remains pending full matrix validation. Last round77;
+Round78NOT_STARTED. Earlier banners are historical snapshots.
+
+# Current engineering state — v0.2.0rc2 local candidate READY
+
+**RC2_READY_FOR_MANUAL_PUBLICATION.** Version0.2.0rc2 locally prepared,not published. Native core/default and scientific recipe unchanged;last_completed_round77,Round78NOT_STARTED. Older version/integration banners are historical snapshots;final RC2 section and STATE are current.
 
 # Current engineering state — SafeBlend experimental integration COMPLETE
 
-**EXPERIMENTAL_INTEGRATION_READY.** The opt-in experimental API is integrated in the RC2 source tree; native core/default and scientific recipe are unchanged. Last completed round77; Round78 NOT_STARTED. Older banners/plans are historical snapshots; the final integration section and STATE record the later authorized application.
+**EXPERIMENTAL_INTEGRATION_READY.** Authorized local opt-in experimental API only; native core/default and scientific recipe unchanged. Last completed round77; Round78NOT_STARTED. Public version0.2.0rc1 unchanged; nothing published. Older banners/plans are historical snapshots; final integration section and STATE record the later authorized application.
 
 # Current research continuity — Round77 COMPLETE
 
@@ -10102,3 +10112,32 @@ researchmemoriestrackable;no source runtime changes. No tag/commit/push/remote/r
 Round78NOT_STARTED. Manual user review/publication only;stop.
 Evidence:research_private/RC2_RELEASE_CANDIDATE_AUDIT.md;release_rc2/final_audit.json,
 privacy_scan.json,replay.csv,packaging.json,notebook.json,public_pytest.log,private_pytest.log.
+
+
+## Post-R77 — RC2 SafeBlend pinned stack / SciPy native-crash CI remediation (2026-10-03)
+
+Engineering task only; `last_completed_round=77`. Scientific R75–77 verdicts and
+all research history retained. Public version0.2.0rc2 and default n_jobs4 remain.
+The reported GitHub3.10 cho_factor segfault cannot be attributed to specific installed
+versions/thread pools because no runner inventory log was provided. Canonical local
+workflow lacked that SafeBlend job; added it without changing existing jobs/settings.
+Minimum3.10 pins: NumPy1.24.4/SciPy1.11.4/pandas2.0.3/sklearn1.3.2. Recent3.11/3.12
+pins from RC2 audit: NumPy2.3.5/SciPy1.16.2/pandas2.2.3/sklearn1.8.0. LGBM4.7.0 all.
+Constrained installs, no-deps editable, stack/thread diagnostics, separate1024SPD
+Cholesky smoke, BLAS1 and explicit heavy unit-fit n_jobs1; cheap API tests1..4/default4.
+No solver, gram, ridge, coefficients, alpha, safety, predictive or runtime changes.
+
+Windows3.12:404PASS/4knownXFAIL. Clean offline WSL3.12 recent stack:33targetedPASS;
+full suite379PASS/4knownXFAIL/1optionalEBMmodule skip. Smoke PASS both. Native crashes0.
+Initial ensurepip/capture/isolated-import environment failures retained; corrected only
+audit environment. Frozen90case/270partition scientific replay4threads unchanged,
+0fits/solves. Ruff/format, YAML/Python/Bash syntax, build/twine/privacy pass. Wheel
+payload unchanged; sdist updated CI/tests; old archives preserved under task audit.
+
+**CI_FIX_PREPARED_PENDING_MATRIX_VALIDATION**: Python3.10/3.11 unavailable locally;
+no GitHub operations. Cannot claim CI_FIX_CONFIRMED or a demonstrated backend/
+SafeBlend-specific native failure. User must manually run3.10/3.11/3.12 CI; if pinned
+3.10 smoke passes then SafeBlend segfaults, capture gram/rhs diagnostics and stop,
+without solver replacement. Current artifact hashes and complete provenance in
+STATE `POST_R77_RC2_SAFE_BLEND_CI_FIX` and
+`research_private/rc2_ci_safeblend_fix/{findings.md,final_audit.json}`.
