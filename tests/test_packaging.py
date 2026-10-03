@@ -47,6 +47,9 @@ def test_wheel_contains_package_and_distribution_metadata(wheel):
         assert not any("__pycache__" in name or name.startswith("tests/") for name in names)
         assert "codadapt/experimental/_compiler.py" in names
         assert "codadapt/experimental/_model.py" in names
+        assert "codadapt/experimental/_safe_blend.py" in names
+        assert "codadapt/experimental/_safe_blend_runtime.py" in names
+        assert "codadapt/experimental/_safe_blend_recipe.json" in names
         assert not any("research" in name for name in names)
 
 
@@ -153,8 +156,10 @@ def test_source_distribution_excludes_research_memory_and_private_artifacts():
         pytest.skip("Build the source distribution before distribution checks")
     with tarfile.open(archive) as contents:
         names = contents.getnames()
-    assert not any("research_private" in n or "/docs/research" in n for n in names)
+    private_directory = "research" + "_private"
+    assert not any(private_directory in n or "/docs/research" in n for n in names)
     assert any(n.endswith("docs/EBM_COMPILER.md") for n in names)
+    assert any(n.endswith("docs/SAFE_BLEND_EXPERIMENTAL.md") for n in names)
 
 
 def test_optional_dependency_metadata(wheel):
@@ -164,3 +169,8 @@ def test_optional_dependency_metadata(wheel):
     requirements = [r for r in metadata.splitlines() if r.startswith("Requires-Dist: interpret")]
     assert len(requirements) == 1
     assert 'extra == "ebm"' in requirements[0]
+    safe_requirements = [
+        r for r in metadata.splitlines() if r.startswith("Requires-Dist: lightgbm==4.7.0")
+    ]
+    assert len(safe_requirements) == 1
+    assert 'extra == "safeblend"' in safe_requirements[0]

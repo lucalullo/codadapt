@@ -154,3 +154,15 @@ packaging non significa che ogni sua combinazione sia stata provata.
 È possibile serializzare con pickle/joblib e caricare senza refit, preferibilmente
 nello stesso ambiente. Caricare file non attendibili può eseguire codice arbitrario.
 Conserva insieme al modello versione CodAdapt e versioni delle dipendenze.
+
+
+## Namespace sperimentale
+
+Le API sperimentali non sono esportate dal top-level `codadapt` e non cambiano i default
+nativi. Sono disponibili esplicitamente da `codadapt.experimental`:
+
+- [`compile_ebm`](EBM_COMPILER.md) per il contratto di compilazione EBM supportato;
+- [`SafeBlendRegressor`](SAFE_BLEND_EXPERIMENTAL.md) per la regressione SafeBlend opt-in.
+
+Entrambe hanno contratti, dipendenze opzionali e limitazioni separati dalla API nativa
+documentata sopra.

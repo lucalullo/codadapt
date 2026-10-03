@@ -2,7 +2,7 @@
 
 CodAdapt is an experimental machine-learning library for tabular data. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary classification and single-target regression, while preserving a scikit-learn-style API.
 
-**CodAdapt 0.2.0rc1 adds an optional experimental EBM compiler while keeping the native CodAdapt core and default behavior unchanged.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
+**CodAdapt 0.2.0rc2 keeps the native core and default behavior unchanged and adds an opt-in experimental `SafeBlendRegressor`.** SafeBlend trains the native CodAdapt Base together with a fixed LightGBM teacher, compiles the teacher into a standalone coded artifact, applies a frozen blend amplitude, and uses an internal validation holdout to deploy either Base alone or the blend. The fitted deployment artifact retains no LightGBM teacher. The existing experimental EBM compiler remains available and unchanged.
 
 CodAdapt remains a pre-1.0 experimental project. It is intended for controlled experiments, reproducible evaluation, and practical tabular workflows. It does not claim universal superiority over established tree-based models.
 
@@ -21,7 +21,8 @@ CodAdapt remains a pre-1.0 experimental project. It is intended for controlled e
 - pickle/joblib persistence;
 - CPU-only NumPy runtime;
 - Python 3.10-3.12 compatibility gates;
-- optional experimental EBM compilation in `codadapt.experimental`.
+- optional experimental EBM compilation in `codadapt.experimental`;
+- optional regression-only `SafeBlendRegressor` with validation-based Base fallback and teacher-free deployment.
 
 The native CodAdapt default remains the architecture selected during the 0.1 development process. No experimental strategy flag is required.
 
@@ -32,29 +33,41 @@ The native CodAdapt default remains the architecture selected during the 0.1 dev
 Install the release candidate directly from GitHub:
 
 ```bash
-python -m pip install "git+https://github.com/lucalullo/codadapt.git@v0.2.0rc1"
+python -m pip install "git+https://github.com/lucalullo/codadapt.git@v0.2.0rc2"
 ```
 
 For the optional EBM compiler:
 
 ```bash
-python -m pip install "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc1"
+python -m pip install "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc2"
 ```
 
-The normal CodAdapt installation does **not** require EBM. The optional dependency is needed only when compiling an EBM teacher.
+For experimental SafeBlend fitting:
+
+```bash
+python -m pip install "codadapt[safeblend] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc2"
+```
+
+The normal CodAdapt installation requires neither EBM nor LightGBM. The `ebm` extra is needed only when compiling a supported EBM teacher. The `safeblend` extra pins LightGBM 4.7.0 for `SafeBlendRegressor.fit`; fitted SafeBlend artifacts can be reloaded and used for prediction without LightGBM.
 
 ### Kaggle
 
 Native CodAdapt:
 
 ```python
-!pip install -qq git+https://github.com/lucalullo/codadapt.git@v0.2.0rc1
+!pip install -qq git+https://github.com/lucalullo/codadapt.git@v0.2.0rc2
 ```
 
 With the experimental EBM compiler:
 
 ```python
-!pip install -qq "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc1"
+!pip install -qq "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc2"
+```
+
+With experimental SafeBlend fitting:
+
+```python
+!pip install -qq "codadapt[safeblend] @ git+https://github.com/lucalullo/codadapt.git@v0.2.0rc2"
 ```
 
 Then restart the notebook kernel only if the environment requires it.
@@ -76,7 +89,7 @@ python -m ruff format --check .
 python -m pytest
 ```
 
-Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.3+, and SciPy 1.8+. LightGBM and `psutil` are optional benchmark-only dependencies.
+Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.3+, and SciPy 1.8+. LightGBM is not a core dependency; `SafeBlendRegressor.fit` uses the pinned `safeblend` extra (`lightgbm==4.7.0`). `psutil` is an optional benchmark dependency.
 
 ## Quick start
 
@@ -173,7 +186,7 @@ Rows with zero effective weight are removed before preprocessing and validation 
 
 ## Experimental EBM compilation
 
-CodAdapt 0.2.0rc1 introduces an **experimental** compiler for a deliberately limited subset of additive EBM models.
+CodAdapt 0.2.0rc2 includes an **experimental, opt-in** compiler for supported additive `interpret-core==0.7.8` EBM models. Install the [optional `ebm` extra](#installation) when compiling a fitted teacher; the native CodAdapt installation remains independent of interpret.
 
 ```python
 from codadapt.experimental import compile_ebm
@@ -184,7 +197,7 @@ compiled = compile_ebm(
 )
 
 predictions = compiled.predict(X_test)
-probabilities = compiled.predict_proba(X_test)
+probabilities = compiled.predict_proba(X_test)  # binary classifiers only
 ```
 
 The compiler performs preflight checks and post-compilation fidelity verification. Unsupported models, unsupported schemas, insufficient capacity, or failed verification are rejected explicitly rather than silently approximated.
@@ -192,16 +205,56 @@ The compiler performs preflight checks and post-compilation fidelity verificatio
 For the verified contract:
 
 - binary additive EBM classification is supported;
-- single-target additive EBM regression is supported;
+- scalar additive EBM regression is supported; interactions and multiclass teachers are not;
 - regression predictions and binary raw scores are preserved exactly on verification data;
-- classification probabilities are preserved within numerical tolerance, not promised bitwise-identical;
-- compiled models can be saved, loaded, and used without the EBM package installed;
-- the EBM teacher is required only during compilation;
+- classification probabilities must match within `atol=1e-15, rtol=0`, not necessarily bitwise;
+- standalone loading and inference without interpret passed 36/36 cases in the frozen local Windows environment; CodAdapt and its normal runtime dependencies remain required;
+- the fitted teacher is used during compilation and is not retained in the compiled model;
 - the compiler is optional and does not replace the native CodAdapt estimator.
 
-Observed benefits are mainly compact model memory and low single-row latency. Large-batch throughput can be workload-dependent and is not guaranteed to outperform the original EBM.
+In the frozen Windows/WSL validation panel (12 datasets × 3 splits, 36 cases per environment, one thread on the same physical host), median compiled/EBM memory ratios were **0.195× deep retained memory** and **0.236× serialized size**. These are panel measurements, not universal memory bounds.
+
+Runtime performance is workload- and environment-dependent. **The historical single-row speed advantage did not replicate**, and a general inference-speed advantage has not been established. Independent-hardware validation remains pending. See the complete [compiler benchmark disclosure](BENCHMARKS.md#experimental-ebm-compiler--frozen-local-validation) for fidelity, memory and all measured batch sizes.
 
 See [docs/EBM_COMPILER.md](docs/EBM_COMPILER.md) before deployment.
+
+## Experimental SafeBlendRegressor
+
+`SafeBlendRegressor` is an **experimental, opt-in, regression-only** estimator. It does not replace `CodAdaptRegressor` and it does not change any native default. Install the `safeblend` extra when fitting:
+
+```python
+from codadapt.experimental import SafeBlendRegressor
+
+model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=4)
+model.fit(X_train, y_train)
+prediction = model.predict(X_test)
+```
+
+The fitting path is deliberately frozen rather than exposed as a new hyperparameter search:
+
+```text
+input training data
+        ↓
+fixed internal TRAIN / branch-validation split
+        ↓
+CodAdapt Base + fixed LightGBM teacher fitted on TRAIN
+        ↓
+teacher compiled into flat coded/binary-function state
+        ↓
+blend = Base + 0.27388247139831357 × (Compiled - Base)
+        ↓
+branch validation compares RMSE(Base) and RMSE(blend)
+        ↓
+BASE if blend is not better, otherwise BLEND
+        ↓
+teacher-free deployment artifact
+```
+
+Ties choose Base. There is no final refit after the branch decision. If Base is selected, the compiler state is discarded; if Blend is selected, the artifact retains only Base, compiled state, the frozen amplitude and compact metadata. LightGBM is used only during fitting and is not retained for reload or prediction.
+
+In the independent confirmation used to freeze this experimental recipe, 18 new regression dataset sources were evaluated over five splits each. The median dataset-level RMSE gain versus CodAdapt Base was **+5.20%**, with a dataset-bootstrap 95% interval of **+2.87% to +15.37%** and **17 wins / 1 tie / 0 losses** at the preregistered dataset-level threshold. These results are panel-specific evidence, not a guarantee on future datasets.
+
+Training remains expensive and large batches remain slower than native Base in the measured environment. The feature is therefore experimental and opt-in. See [the SafeBlend contract, evidence and deployment limits](docs/SAFE_BLEND_EXPERIMENTAL.md).
 
 ## Main parameters
 
@@ -258,7 +311,9 @@ With ratios defined as `LightGBM / CodAdapt`, the median fit-speed ratio was `0.
 
 These are local experimental measurements, not universal performance claims. Hardware, dataset, package versions, thread settings, split choice, and workload can change the result.
 
-The 0.2.0rc1 EBM compiler has a separate performance profile. It is intended primarily as an experimental compact deployment path, not as a claim that compiled inference is faster for every batch size or workload.
+The 0.2.0rc2 EBM compiler has a separate performance profile. It is intended primarily as an experimental compact deployment path, not as a claim that compiled inference is faster for every batch size or workload.
+
+SafeBlend also has a separate profile. In the frozen RC2 integration measurements, median latency relative to native Base was **0.477× / 0.621× / 1.546× / 4.692×** for batches 1 / 32 / 1k / 100k, with serialized/deep retained size **1.433× / 0.819× Base**. Offline training remained expensive at a historical median of about **75.71× Base** for the full pipeline. These measurements are hardware- and workload-specific and do not imply general superiority.
 
 See [BENCHMARKS.md](BENCHMARKS.md) for the public benchmark disclosure.
 
@@ -272,7 +327,9 @@ python benchmarks/run_benchmarks.py --quick
 
 Native CodAdapt models support pickle/joblib persistence.
 
-Compiled EBM models are also designed to be standalone after compilation: the teacher does not need to be installed when loading and using the compiled artifact.
+Compiled EBM models retain no teacher. Loading and inference without interpret were verified in the frozen local Windows environment; this is not a guarantee across every platform or future dependency version.
+
+Fitted `SafeBlendRegressor` artifacts also retain no LightGBM teacher. Pickle/joblib reload and prediction without LightGBM were verified during the RC2 integration audit.
 
 As with any pickle/joblib artifact, load only trusted files and prefer matching dependency versions across environments.
 
@@ -281,6 +338,7 @@ As with any pickle/joblib artifact, load only trusted files and prefer matching 
 - [API reference](docs/API.md)
 - [Algorithm](docs/ALGORITHM.md)
 - [Experimental EBM compiler](docs/EBM_COMPILER.md)
+- [Experimental SafeBlendRegressor](docs/SAFE_BLEND_EXPERIMENTAL.md)
 - [Research master](docs/research/RESEARCH_MASTER.md)
 - [Research state](docs/research/RESEARCH_STATE.json)
 - [Benchmark disclosure](BENCHMARKS.md)
@@ -308,15 +366,18 @@ These files are development documentation and are intentionally excluded from th
 - early stopping reserves validation rows unless an external `eval_set` is provided;
 - the EBM compiler supports only its documented additive binary/regression contract;
 - compiled EBM classification probabilities are numerically equivalent within tolerance, not guaranteed bitwise-identical;
-- compiled EBM throughput advantages are workload- and batch-size-dependent;
+- compiled EBM runtime is workload- and environment-dependent, with no general speed advantage established or independent-hardware validation completed;
+- `SafeBlendRegressor` is regression-only, uses a fixed internal validation branch decision, and does not support sample weights, external validation sets, classification or partial fitting;
+- SafeBlend fitting requires the pinned LightGBM 4.7.0 optional dependency, remains substantially more expensive than native Base, and large-batch prediction was slower than Base in the measured environment;
+- SafeBlend validation fallback reduces observed downside but cannot guarantee improvement on future data;
 - performance and memory results are hardware- and workload-specific;
 - this release does not claim state-of-the-art accuracy or general superiority over established tree-based models.
 
 ## Status
 
-CodAdapt 0.2.0rc1 is an experimental pre-release. The native core remains unchanged from the validated 0.1 line, while the EBM compiler is opt-in and experimental.
+CodAdapt 0.2.0rc2 is an experimental pre-release. The native core remains unchanged from the validated 0.1 line. Both the EBM compiler and `SafeBlendRegressor` are opt-in experimental features under `codadapt.experimental`; neither is a new default.
 
-The public API, compiler contract, and defaults may evolve as broader external validation continues.
+The experimental API, compiler contracts, deployment runtime and defaults may evolve as broader external validation continues.
 
 ## License
 

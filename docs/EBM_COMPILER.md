@@ -8,6 +8,10 @@ It is experimental and is not enabled automatically.
 python -m pip install ".[ebm]"  # from this checkout
 ```
 
+The optional extra is required to compile the fitted teacher. Loading and using a
+compiled artifact requires CodAdapt and its normal runtime dependencies, not interpret.
+For the tagged GitHub installation commands, see the [README](../README.md#installation).
+
 ```python
 from interpret.glassbox import ExplainableBoostingClassifier
 from codadapt.experimental import compile_ebm
@@ -85,6 +89,10 @@ no teacher, training/verification rows, callback or teacher module is stored. Ne
 untrusted pickle files. Experimental serialization compatibility across future releases
 is not guaranteed; retain the package version alongside the artifact.
 
+Standalone loading and prediction passed 36/36 cases in a frozen local Windows
+environment with interpret physically absent. This verifies the tested environment,
+not every platform or future dependency version.
+
 The returned estimators support prediction and sklearn scoring/type inspection. They
 are compiler products: `fit` raises `TypeError`, and sklearn `clone` returns an unfitted
 shell, not a copied compiled model. Use pickle/joblib for fitted copies; do not put them
@@ -94,7 +102,29 @@ in a fitting/CV pipeline expecting retraining.
 
 The general runtime uses ordered NumPy searchsorted/gather/addition with small-batch
 blocks and compact numeric buffers. No native extension, Numba or teacher is required
-for inference. Observed advantages are primarily model memory and single-row latency;
-large-batch throughput and end-to-end RSS gains are not guaranteed. Benchmark the exact
+for inference. Frozen local evidence supports model-memory reduction and standalone
+deployment with the documented fidelity. The historical single-row speed advantage
+did not replicate; no general inference-speed advantage is established. Runtime depends
+on workload and environment, and end-to-end RSS gains are not established. Benchmark the exact
 artifact, input schema and batch sizes on the target host. Independent hardware validation
 remains pending; this is an opt-in experimental candidate, not a final release or default.
+
+## Frozen local evidence
+
+The panel covered 12 known datasets × 3 fixed splits (36 cases per environment),
+with one thread on native Windows and WSL/Linux on the same physical host. It is
+software-environment replication, not independent-hardware validation.
+
+- **Fidelity:** Windows 36/36 and WSL 36/36 teacher-to-compiled checks passed.
+  Cross-OS raw scores/regression predictions and classes were bitwise identical.
+  Probability differences reached 2.22e-16, within the frozen `atol=1e-15, rtol=0`
+  contract. Strict cross-OS probability-bitwise checks did not all pass; this is
+  distinct from a numerical-fidelity failure. Verification criteria were not relaxed.
+- **Memory:** source-balanced median compiled/EBM ratios were 0.195x deep retained
+  memory and 0.236x serialized size in both environments. Neither is a peak-RSS ratio
+  or a universal bound.
+- **Runtime:** small-batch medians were slower than EBM; large-batch results varied
+  by workload and environment. `SAFE` does not promise faster inference.
+
+See [BENCHMARKS.md](../BENCHMARKS.md#experimental-ebm-compiler--frozen-local-validation)
+for every measured batch size, versions, aggregation, dispersion and limitations.

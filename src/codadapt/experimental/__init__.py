@@ -7,5 +7,14 @@ __all__ = [
     "CompilationError",
     "CompiledEBMClassifier",
     "CompiledEBMRegressor",
+    "SafeBlendRegressor",
     "compile_ebm",
 ]
+
+
+def __getattr__(name):
+    if name == "SafeBlendRegressor":
+        from ._safe_blend import SafeBlendRegressor
+
+        return SafeBlendRegressor
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
