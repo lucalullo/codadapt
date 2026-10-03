@@ -94,13 +94,33 @@ jobs:
       - run: python -m build
       - run: python -m pytest
 
-
   experimental-safeblend:
     runs-on: ubuntu-latest
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
     strategy:
       fail-fast: false
       matrix:
-        python: ["3.10", "3.11", "3.12"]
+        include:
+          - python: "3.10"
+            numpy: "1.24.4"
+            pandas: "2.0.3"
+            sklearn: "1.3.2"
+            scipy: "1.11.4"
+          # Recent stack recorded in the local RC2 release audit.
+          - python: "3.11"
+            numpy: "2.3.5"
+            pandas: "2.2.3"
+            sklearn: "1.8.0"
+            scipy: "1.16.2"
+          - python: "3.12"
+            numpy: "2.3.5"
+            pandas: "2.2.3"
+            sklearn: "1.8.0"
+            scipy: "1.16.2"
     steps:
       - uses: actions/checkout@v7
         with:
@@ -108,5 +128,86 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
-      - run: python -m pip install -e ".[dev,safeblend]"
-      - run: python -m pytest tests/test_safe_blend.py tests/test_packaging.py
+      - name: Freeze numerical dependencies for every subsequent pip invocation
+        run: |
+          cat > "$RUNNER_TEMP/safeblend-constraints.txt" <<'EOF'
+          numpy==${{ matrix.numpy }}
+          pandas==${{ matrix.pandas }}
+          scikit-learn==${{ matrix.sklearn }}
+          scipy==${{ matrix.scipy }}
+          lightgbm==4.7.0
+          EOF
+          echo "PIP_CONSTRAINT=$RUNNER_TEMP/safeblend-constraints.txt" >> "$GITHUB_ENV"
+      - name: Install constrained dependencies then editable package without dependency resolution
+        run: |
+          python -m pip install -c "$PIP_CONSTRAINT" ".[dev,safeblend]"
+          python -m pip install --no-deps -e .
+          python -m pip check
+      - name: Print and verify numerical stack and active thread pools
+        run: |
+          python - <<'PY'
+          import json, platform
+          import numpy, scipy, pandas, sklearn, lightgbm
+          from scipy.linalg import cho_factor
+          from threadpoolctl import threadpool_info, threadpool_limits
+          from codadapt import __version__
+          expected = {
+              "numpy": "${{ matrix.numpy }}", "scipy": "${{ matrix.scipy }}",
+              "pandas": "${{ matrix.pandas }}", "scikit-learn": "${{ matrix.sklearn }}",
+              "lightgbm": "4.7.0",
+          }
+          actual = {
+              "numpy": numpy.__version__, "scipy": scipy.__version__,
+              "pandas": pandas.__version__, "scikit-learn": sklearn.__version__,
+              "lightgbm": lightgbm.__version__,
+          }
+          print("Python:", platform.python_version(), "CodAdapt:", __version__, flush=True)
+          print(json.dumps(actual, indent=2), flush=True)
+          print("threadpool_info:", json.dumps(threadpool_info(), indent=2), flush=True)
+          assert actual == expected, (actual, expected)
+          with threadpool_limits(limits=1):
+              pools = threadpool_info()
+              print("test thread pools:", json.dumps(pools, indent=2), flush=True)
+              assert all(p["num_threads"] == 1 for p in pools)
+          PY
+      - name: Isolated SciPy Cholesky smoke (SCIPY_BACKEND_FAILURE on failure)
+        shell: bash
+        run: |
+          if python -X faulthandler - <<'PY'
+          import numpy as np
+          from scipy.linalg import cho_factor, cho_solve
+          from threadpoolctl import threadpool_limits
+          with threadpool_limits(limits=1):
+              rng = np.random.default_rng(20261003)
+              a = rng.normal(size=(1024, 1024)).astype(np.float64)
+              gram = a.T @ a / 1024 + np.eye(1024, dtype=np.float64)
+              rhs = rng.normal(size=1024).astype(np.float64)
+              solution = cho_solve(cho_factor(gram, lower=True, check_finite=False),
+                                   rhs, check_finite=False)
+              assert np.isfinite(solution).all()
+              np.testing.assert_allclose(gram @ solution, rhs, rtol=1e-10, atol=1e-10)
+          print("SCIPY_CHOLESKY_SMOKE_PASS", flush=True)
+          PY
+          then
+            echo "SciPy backend smoke completed independently of SafeBlend"
+          else
+            status=$?
+            echo "::error::SCIPY_BACKEND_FAILURE: isolated Cholesky smoke exit $status"
+            exit "$status"
+          fi
+      - name: Build distributions for packaging tests
+        run: python -m build
+      - name: SafeBlend and packaging contract tests
+        shell: bash
+        run: |
+          if python -X faulthandler -m pytest tests/test_safe_blend.py tests/test_packaging.py; then
+            echo "SAFEBLEND_CONTRACT_PASS"
+          else
+            status=$?
+            if [ "$status" -eq 139 ]; then
+              echo "::error::SAFEBLEND_SPECIFIC_NATIVE_FAILURE: SciPy smoke passed, contract tests segfaulted"
+            fi
+            exit "$status"
+          fi
+      - name: Full public suite on the same frozen stack
+        run: python -X faulthandler -m pytest

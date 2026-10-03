@@ -49,8 +49,8 @@ def fitted(regression_data):
 
     implementation.teacher_class = lambda: factory
     try:
-        with threadpool_limits(limits=4):
-            result = SafeBlendRegressor(random_state=123).fit(x, y)
+        with threadpool_limits(limits=1):
+            result = SafeBlendRegressor(random_state=123, n_jobs=1).fit(x, y)
     finally:
         implementation.teacher_class = original
     gc.collect()
@@ -58,13 +58,18 @@ def fitted(regression_data):
     return result
 
 
-def test_import_opt_in_and_minimal_parameters():
+@pytest.mark.parametrize("n_jobs", [1, 2, 3, 4])
+def test_import_opt_in_and_minimal_parameters(n_jobs):
     import codadapt
 
     assert not hasattr(codadapt, "SafeBlendRegressor")
-    model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=2)
+    assert SafeBlendRegressor().get_params()["n_jobs"] == 4
+    model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=n_jobs)
     assert is_regressor(model)
-    assert clone(model).get_params() == dict(random_state=42, verbosity=0, n_jobs=2)
+    # Validate accepted resource settings without four expensive compiler fits.
+    with pytest.raises(ValueError, match="at least 8 rows"):
+        model.fit(np.zeros((1, 2)), np.zeros(1))
+    assert clone(model).get_params() == dict(random_state=42, verbosity=0, n_jobs=n_jobs)
     for forbidden in ["alpha", "capacity", "teacher", "validation_fraction", "safety_threshold"]:
         with pytest.raises(ValueError):
             model.set_params(**{forbidden: 1})
@@ -80,7 +85,7 @@ def test_fitted_state_before_fit():
 
 def test_regression_fit_and_diagnostics(fitted, regression_data):
     x, _ = regression_data
-    with threadpool_limits(limits=4):
+    with threadpool_limits(limits=1):
         prediction = fitted.predict(x)
     assert prediction.shape == (160,) and np.isfinite(prediction).all()
     assert fitted.alpha_ == 0.27388247139831357
@@ -102,7 +107,7 @@ def test_regression_fit_and_diagnostics(fitted, regression_data):
 
 def test_deterministic_random_state(fitted, regression_data):
     x, y = regression_data
-    with threadpool_limits(limits=4):
+    with threadpool_limits(limits=1):
         repeated = clone(fitted).fit(x, y)
         assert repeated.predict(x).tobytes() == fitted.predict(x).tobytes()
     assert repeated.branch_ == fitted.branch_
@@ -112,7 +117,7 @@ def test_blend_branch_formula(fitted, regression_data):
     x, _ = regression_data
     assert fitted.branch_ == "BLEND"
     assert fitted.compiled_ is fitted.compiler_ and fitted.compiled_ is not None
-    with threadpool_limits(limits=4):
+    with threadpool_limits(limits=1):
         a = fitted._artifact.shared_preprocessing.transform(x)
         b = fitted.base_.predict(a)
         c = implementation.SafeBlendArtifact.__module__  # qualified public deployment state
@@ -134,8 +139,8 @@ def test_base_branch_drops_compiler(monkeypatch, fitted, regression_data):
         return "BASE", vb, vz
 
     monkeypatch.setattr(implementation, "choose_branch", force_base)
-    with threadpool_limits(limits=4):
-        model = SafeBlendRegressor(random_state=123).fit(x, y)
+    with threadpool_limits(limits=1):
+        model = SafeBlendRegressor(random_state=123, n_jobs=1).fit(x, y)
         assert model.branch_ == "BASE"
         assert model.compiled_ is model.compiler_ is None
         assert not hasattr(model._artifact, "compiled")
@@ -150,8 +155,8 @@ def test_numeric_array_fit(regression_data):
     pytest.importorskip("lightgbm")
     x, y = regression_data
     a = x.iloc[:, :2].to_numpy()
-    with threadpool_limits(limits=4):
-        model = SafeBlendRegressor(random_state=123).fit(a, y)
+    with threadpool_limits(limits=1):
+        model = SafeBlendRegressor(random_state=123, n_jobs=1).fit(a, y)
         assert np.isfinite(model.predict(a)).all()
     assert model.n_features_in_ == 2
 
@@ -161,7 +166,7 @@ def test_persistence_without_teacher(fitted, regression_data, tmp_path, format):
     x, _ = regression_data
     model_path, data_path = tmp_path / "model", tmp_path / "data.pkl"
     data_path.write_bytes(pickle.dumps(x))
-    with threadpool_limits(limits=4):
+    with threadpool_limits(limits=1):
         np.save(tmp_path / "expected.npy", fitted.predict(x))
     if format == "pickle":
         model_path.write_bytes(pickle.dumps(fitted, protocol=5))
@@ -182,7 +187,7 @@ SafeBlendRegressor.fit=forbid
 root=Path(sys.argv[1])
 model=pickle.loads((root/'model').read_bytes()) if sys.argv[2]=='pickle' else joblib.load(root/'model')
 x=pickle.loads((root/'data.pkl').read_bytes())
-with threadpool_limits(limits=4):
+with threadpool_limits(limits=1):
     assert model.predict(x).tobytes()==np.load(root/'expected.npy').tobytes()
 assert not any(k.split('.')[0] in {'lightgbm','research'+'_private'} for k in sys.modules)
 """
@@ -200,7 +205,7 @@ def test_missing_and_categorical_unseen(fitted, regression_data):
     x = x.iloc[:12].copy()
     x.loc[x.index[:3], "category"] = ["new", None, "a"]
     x.iloc[4, 0] = np.nan
-    with threadpool_limits(limits=4):
+    with threadpool_limits(limits=1):
         assert np.isfinite(fitted.predict(x)).all()
         categorical = x.copy()
         categorical["category"] = pd.Categorical(categorical["category"])
