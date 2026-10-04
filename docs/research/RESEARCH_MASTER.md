@@ -1,3 +1,42 @@
+# Current state — Round78 COMPLETE
+
+**STRONG_NATIVE_DIVERSITY_CONFIRMED**;SafeRMSE median+2.061069%,CI95[+0.403189,+4.694716]%,17/1/0W/T/L;18new executable sources×5splits. last_completed_round=78;public0.2.0rc2 unchanged;Round79NOT_STARTED. Private integration proposal justified;no public integration. Historical Rational standalone/residual failures remain closed. Older current-state banners below are preserved historical snapshots.
+
+# Current state — frozen fully native complementary blend transfers on18sources
+
+**STRONG_NATIVE_DIVERSITY_TRANSFER**; safe RMSE median gain3.835750%, CI95[1.302813,7.943343]%,17/18positive. Rational standalone/residual historical failures remain closed. Public0.2.0rc2; last_completed_round77; Round78 JUSTIFIED_NOT_STARTED. No public promotion. Older current-state banners below are historical snapshots.
+
+# Current state — native complete-model complementarity: strong retrospective signal
+
+Public0.2.0rc2;last_completed_round77;Round78NOT_STARTED.
+STRONG_NATIVE_DIVERSITY_SIGNAL concerns known-source complete-model blending, not
+a new corrector, standalone promotion or independent confirmation. Base/API/compiler
+unchanged. Earlier readout failures and historical banners remain valid snapshots.
+
+# Current state — native representation audit: no stable residual information in frozen probes
+
+Public0.2.0rc2;last_completed_round77;Round78NOT_STARTED.
+NO_STABLE_RESIDUAL_INFORMATION is a finite-readout development verdict, not a universal
+absence-of-information theorem. No native architecture/Corrector justified. Base/API/compiler
+unchanged; public native independence retained. Older banners remain historical snapshots.
+
+# Current state — internal-state witness has local signal, no global transfer
+
+Public version0.2.0rc2; last_completed_round77; Round78 NOT_STARTED.
+PARTIAL_INTERNAL_STATE_SIGNAL; no Native State Corrector justified. Native Base and
+public/compiler/API remain unchanged; native fit independent of external ML.
+Older banners below are historical snapshots; prior residual witness remains preserved.
+
+# Current state — public native independence restored; residual witness gate FAILED
+
+Public version0.2.0rc2; last_completed_round77; Round78 NOT_STARTED.
+User-authorized removal: teacher-based SafeBlend API/implementation/extra withdrawn;
+no replacement exposed. Native fit/validation/predict/reload needs no external ML model.
+Optional EBM remains only an explicit compiler/import tool. Core/default/compiler unchanged.
+POST-R77 native residual diagnostics: PARTIAL_RESIDUAL_STRUCTURE, no strong witness,
+no NativeCorrector justified. Historical R75–77 scientific evidence is preserved.
+Older engineering banners below describe prior states, not the current public API.
+
 # Current engineering state — current RC2 with modern Python support
 
 **CURRENT_RC2_MODERN_PYTHON_READY.** Canonical version: 0.2.0rc2.
@@ -10286,3 +10325,219 @@ diagnostics retained; no remote CI pass is claimed. Private research stays
 ignored and excluded from distributions. No network, commit, tag, publication,
 release or remote repository operation in this normalization task. Stop;
 Round78 NOT_STARTED. Evidence is in the private current-version normalization audit.
+
+
+## POST-R77 — Native SafeBlend architecture discovery
+
+Date: 2026-10-03. **Not Round78; last_completed_round remains 77; public version remains 0.2.0rc2.**
+
+Verdict: **NATIVE_CORRECTOR_NOT_YET_FOUND**. Phase A and admission audit completed; **Stage1/Stage2 NOT_STARTED**, no implemented or evaluated native replacement. This is an admission stop, not negative empirical performance evidence for a new architecture.
+
+Reused **78 R75/R76 contexts (26 known sources × 3 splits)** and verified 1,476 original artifacts. Zero new teacher fits, zero native fits, zero OOF Base fits. Diagnostic probes used cached `D=C−B`, with true target residuals used only for diagnosis, not native training. Stage2's twelve sources were sealed in this activity and were historically observed R76 sources; no independent native confirmation is claimed.
+
+Source-balanced median finite main recovery **8.59%**, pair increment **3.58%**, three-way increment **0.56%**, finite unexplained remainder **87.40%**. This is an ordered finite projection, **not unique functional ANOVA**; the remainder is not identified higher-order signal. All-feature/all-available-state main probe did not materially change the median. Native encoder capacity remains the frozen model's capacity even when a diagnostic requests 64 states. Missing/category/tail masks overlap and are not causal shares.
+
+`D`/residual Pearson **0.304**, same-row heldout delta stability **0.435**, main-shape stability **0.307**. Historical fixed-shrink correction captures **6.85%** of squared residual error on this forensic subset. UJI shows a stable/representable correction with poor target utility; Geography shows poor alignment and amplitude downside. These are descriptive subset numbers, not replacements for original Round75/76 confirmation results.
+
+Four proposals considered after Phase A: centered coded TensorSketch, nonseparable ancestry-coupled details, discrete residual-gradient metric, conditional tail-moment correction. **None admitted**. Kernel/sketch proposals lack a cleared R17/18 equivalence and target-alignment witness; ancestry needs contribution-weighted target-stable parent/child evidence; metric rank proxies do not establish target-aligned geometry; unconstrained tail decomposition is algebraically the same conditional cell mean. No broad literature family is newly empirically falsified. OOF residual training, alpha=1/.5 and validation fallback remain **unevaluated** for a new native model; R76 does not validate them automatically.
+
+Technical audit repair: initial pair/triple/local diagnostic maps used heldout predictor maxima to define capacity. v2 uses frozen train-only schemas, preserves original outputs, reuses valid main fits and covariance solves, and recalculates only affected small tables. No heldout target was fit. Constant-feature roughness reporting was repaired without teacher/model refits.
+
+**Fully native SafeBlend is not achieved.** Public SafeBlend still requires LightGBM during fit and no teacher at inference. Removal/deprecation remains a pending product decision; the user's final instruction freezes public SafeBlend during this research activity. No public source/API/default change, no remote operation, commit, push, tag or release.
+
+Next eligible step: recover the missing R17/18 concrete algebra, or establish a genuinely distinct train-only target-aligned ancestry/metric/kernel witness with a matched control; only then one preregistered native micro-test. No automatic Round78.
+
+Artifacts: `research_private/NATIVE_SAFEBLEND_DISCOVERY.md`, `research_private/native_safeblend/` (history, frozen panels, tomography/capacity/local/covariance/shape/calibration diagnostics, candidate admission specs, NOT_STARTED result manifests, checks and final audit). Knowledge base updated with admission status and exact retry conditions; prior conclusions preserved.
+
+
+## POST-R77 — Public independence restoration and train-only residual witness
+
+Date2026-10-03. **Not Round78; last_completed_round remains77; version0.2.0rc2.**
+The human explicitly authorized withdrawal of the public teacher-based SafeBlend.
+Removed API, implementation, LightGBM/safeblend extra, usage docs and CI job, without
+a stub or unvalidated replacement. Archived prior files/builds privately. Native
+classifier/regressor algorithms/defaults and EBM compiler source hashes unchanged.
+EBM is an explicit optional compiler/import tool, never native training.
+
+Local offline wheel installation in Python3.12.14 physically excludes lightgbm,
+xgboost, catboost and interpret. Native fit/predict/validation/pickle/joblib PASS;
+public pytest352PASS,1optional EBM skip,4known XFAIL; final rebuilt-wheel packaging
+and independence6PASS; private8PASS; notebook code smoke and Ruff PASS. No new
+teacher fits. The compiler's earlier fidelity evidence is reused by unchanged hashes,
+not claimed freshly teacher-fit validated. Wheel/sdist exclude private/research files.
+
+Witness panel12 known real REGRESSION sources×3 archived splits,36 contexts. Cached
+R70 inner-fold0 Base trained/stopped exclusively on A; group-disjoint portions B/C
+of its heldout fold estimate/evaluate diagnostic residuals with that SAME anchor.
+Exact OOF replay and3,045 metric rows verified. No research Base fit, teacher query,
+external-test target use, new representation or production correction. Historical
+data bundles discard teacher model classes without importing their libraries.
+
+W1 conditional means and W4 generic latent methods excluded as historical equivalents.
+W2 shared SIGN×MAGNITUDE residual posterior readout is a diagnostic material variant;
+W3 tests support/density/coarse–fine consistency vs heldout utility without changing
+the readout or fitting a gate. Means, budget-bounded fixed global main+pair,5shuffled
+residual and5support/cardinality-matched random-code controls frozen before outcomes.
+
+Verdict **PARTIAL_RESIDUAL_STRUCTURE**; strong witness **NO**; NativeCorrector justified **NO**.
+W2 heldout residualR² median **-0.011463**, descriptive95%CI
+[-0.084308,-0.004693], Pearson **0.079936**,
+sign agreement **55.72%**, positive sources **2/12**,
+positive splits9/36. Simple mainR² **0.002191**,
+pairR² **0.004759** (11applicable sources).
+Median paired W2–main **-0.021508**,
+W2–pair **-0.023841**. Negative
+null R² is finite-sample variance, not a claim that shuffled predictability is positive;
+null correlations are near0. No specific advantage over random codes/simple means.
+
+B-half readout correlation **0.150706**; common-X split
+function correlation **0.254860** is label-free stability,
+NOT independent transport. Support score/utility correlation **0.010545**
+with CI including0. All leave-one-source-out medians negative. Bodyfat and RAM_price
+show severe downside; RAM's tiny heldout residual variance/rare fitting residuals
+inflate R² negativity. No source excluded or winsorized. Wide/historical global
+control also overfits, but its weakness cannot validate W2 when simple means win.
+
+Resources: one process/thread, observed peak0.196GiB; new
+diagnostic arithmetic18.65s (not isolated benchmark).
+Small B/C and overlapping historical splits limit inference. These are development
+regression diagnostics, not confirmation/classification evidence. No broad native
+family impossibility claim. R75/76/77 teacher-based results remain unchanged, and
+the prior NATIVE_CORRECTOR_NOT_YET_FOUND admission stop remains correctly distinguished
+from this new diagnostic gate failure.
+
+Next: keep autonomous Base and SafeBlend withdrawn. No correction implementation,
+post-hoc rescue or Round78. Reopen only for a distinct train-only principle with
+heldout amplitude advantage beyond simple/capacity/null controls, stable source transfer
+and bounded downside. Missing R17/18 algebra remains HISTORICAL_OVERLAP_UNRESOLVED.
+
+Reports: research_private/PUBLIC_INDEPENDENCE_AUDIT.md and NATIVE_RESIDUAL_WITNESS.md;
+artifacts: research_private/public_independence/ and native_residual_witness/.
+No remote operation, commit, push, tag, release or publication.
+
+
+<!-- POST_R77_INTERNAL_STATE_RESIDUAL_WITNESS -->
+## POST-R77 — Internal-state residual witness (not Round78)
+
+**MATERIAL_VARIANT;PARTIAL_INTERNAL_STATE_SIGNAL.** 12known regression sources×3splits,
+36archived Base anchors, zero new Base/teacher fits.20fixed state/trajectory features,
+one closed-form ridge. Group-excluded B/C, exact path replay and effective-A support.
+Local residualR²+0.015044 (source-bootstrap95%CI−0.092989..+0.046986),8/12sources;
+residualMSE reduction+3.6815% (different denominator, not targetRMSE gain).
+Actual donor-only globalLODO R²−0.040912 (CI−0.120910..−0.000741),3/12sources.
+Best descriptive groupA+0.014245, but stable incremental gate fails:7/12sources
+versus frozen60%. Prediction-only+0.000582; mainfine+0.002191; pair+0.004759/11sources.
+Order/sign null advantages and prediction-only advantage CIs crosszero. Local
+delete-one/two medianspositive, coefficient cosine.193, halfreadoutcorr.506.
+Bodyfat/Diabetes downside; RAM residual bias/variance shift; water-treatment rank0
+head means only bias removal. SGEMM/house_sales/diamonds are descriptive local successes.
+No stable globally transferable signed correction; no production Corrector or Round78.
+Rejected row tables unavailable; row target-dependent residual slope excluded.
+Close promotion of the tested20-feature head; reopen only on a distinct target-aligned
+principle demonstrating cross-source transfer and downside control, not feature/tuning
+expansion on this panel. Previous closed experiments and original R1–77 entries unchanged.
+Private report:research_private/INTERNAL_STATE_RESIDUAL_WITNESS.md; protocol and
+861local+684LODO records, replay/audit in research_private/internal_state_witness/.
+No public files changed; no remote operations, commit, tag or release.
+
+
+<!-- POST_R77_REPRESENTATION_SUFFICIENCY -->
+## POST-R77 — Native representation sufficiency audit
+
+**MATERIAL_VARIANT;NO_STABLE_RESIDUAL_INFORMATION (finite readout).**12known regression
+sources×3splits;36archived native Base anchors,0new Base/teacher fits. Same real OOF
+residual, group-excluded B/C, A-only raw/coded/hybrid transforms, one ridge lambda.01.
+Dimension/active-rank matched1..64, strict half-capacity control. R3 spline/Nystrom/kernel
+historically equivalent, skipped; missing R17/18 and R23/24/26 originals disclosed.
+RAW R²−.027233;CODED−.007248;HYBRID−.003260. PairedREP_GAP+.014369,
+source-bootstrapCI−.070350..+.173505;W/T/L8/0/4. Half-capacitygap+.008489,
+CI+.001239..+.083100,10/12positive, but matchedRAW/CODED mediansremainnegative.
+Quantizationgap−.000202;interaction+.002269, bothCIsincludezero. Categorygap0 on3sources;
+allcategoriesretained, no rare/unseen cases: NO_POWER_FOR_RARE_UNSEEN_COMPRESSION_LOSS.
+Occupancy/support/n-p/state-count/missing/cardinality associations have CIsincludingzero.
+Delete-one/two paired medianspositive, but absolute quality/null/localization gatesfail.
+BuzzRAW+.497826 is genuine localsignal;RAM_price−934.579529 is severe residual-scale/bias
+failure. No universal information/noise/coding sufficiency ceiling claimed.
+573primary/control+108matched records,1561pairedfeature/pair records,135572OOFrows;
+replay and equations checked, no repeated readoutfit.8private tests/RuffPASS;public
+suite receipt reused with unchanged40public files. Allpriorrounds/results preserved.
+Close promotion/tuning of this frozen witness; reopen only with distinct causal localized
+heldout evidence or stable estimation headroom, then independent transfer. No architecture,
+Round78 or remote operation. Report:research_private/REPRESENTATION_SUFFICIENCY_AUDIT.md.
+
+
+<!-- POST_R77_NATIVE_ERROR_DIVERSITY -->
+## POST-R77 — Native error-diversity / complementarity audit
+
+**MATERIAL_VARIANT;STRONG_NATIVE_DIVERSITY_SIGNAL, retrospective only.** Twelve
+frozen historical native recipes,1,145valid paired cases,5splits/source. Joint41sources;
+Oblique12;R65Rational/TT16each;other8recipes18each. R72-74 teacher-delta probe
+composition differs from this complete-native-model error covariance audit. R17/18
+catalogs missing; no claim of NEW_PRINCIPLE. Zero new Base/native/teacher fits or solves.
+
+Context-additive standalone gain−.514984% vsBase, errorcorr.821378;fixedalpha.10
++1.347007%RMSEgain,safe.10+1.281606%;validationglobalalpha.20safe+2.218740%
+CI[+1.534445,+3.506791],17/18positive. SafeLODOsame median,16/18positive,worstsource
+RAM_price−.202853%,worstsplit−1.014266%. Nine standalone-worse sources,8/9positive
+unguarded blends; strong diversity gate passes. Simpler R67Additive standalone−4.624357%,
+safealpha.20+1.813923%,16/18positive;stronggatepasses, no material>1%downside.
+
+Rational standalone is validation-selected winner:standalone+4.313994%,safeglobal
+alpha.30+3.500140%CI[+1.680013,+7.007432],16/16positive,LODOalpha100%stable.
+Worstsplitbodyfat44003−3.090615%,2/80losses>1%,1/80>2%,none>5%. Rational passes
+basic diversity gate, not stronger quality-independent gate. Keep REJECTED_AS_STANDALONE
+and PROMISING_AS_COMPLEMENT separate. No historical standalone verdict overwritten.
+
+Duplicate/noisy/random/quality-only controls and exact covariance/bias/amplitude identity
+replayed. Shuffled errors preserve MSE but usey: hypothetical decorrelation ceiling, never
+deployable null. Historical validation reused; overlapping splits/12family comparisons
+are development, not independent safety or confirmation. CheapOblique checkpoint-only
+recipes excluded without refitting.20R52 archives recovered via correct half-loss/RMSE
+comparison;1125already-valid analytic cases reused.25invalid/4excludedlines retained.
+
+Next: separately authorize one frozen historical pair's independent transfer and full
+systems costs, using validation-only ranking, not higher test gain. No new architecture,
+smaller-principle fit or Round78 now. Public0.2.0rc2 and core/API/compiler unchanged.
+Report:research_private/NATIVE_ERROR_DIVERSITY_AUDIT.md;replay/audit/CSVs in
+research_private/native_error_diversity/. Memory index1-77 preserved; no remote action.
+
+
+<!-- POST_R77_FROZEN_NATIVE_DIVERSITY_TRANSFER -->
+## POST-R77 — FROZEN NATIVE DIVERSITY TRANSFER (2026-10-04)
+
+NotRound78. FrozenR65 Rational16standalone+Base,alpha.30,strictinner-validationRMSE safety; tieBase. PrimarySafevsBase; no teacher/family switching/newrepresentation. All18R76sources frozen before firstfit,5splits,90/90science+90/90cost cases, 360sealed nativefits(90Base,90Rational,90Additive,90Context),0externalML/teacher, 0repeatedvalidfits. KnownR76projectdata but disjoint fromnative-diversity/alpha/safetyformation; notglobalunseen. IID row scope,nottemporal/subject extrapolation.
+
+Verdict **STRONG_NATIVE_DIVERSITY_TRANSFER**. Rationalstandalonemedian−0.274834%; Fixed+3.902538%,Safe+3.835750%,CI95+1.302813..+7.943343%,mean+5.225114%, trim+4.957794%,W/T/L17/0/1. All18LODO and153LTO medianspositive. 9standalone-worse sources allimproveFixed(median+2.000263%); errorcorr.806579, normalizedcrossmoment.791558,all18favorable. Notsolely standalonequality. Positiveambiguity isanalgebraicidentity; beyondbestendpointCIincludeszero.
+
+Safetyadmits80/90; >1%harm3→2splits, >2%2→1; worstsourcegeyser−.564001%, worstsplit−4.360798%; no>5%Safe loss. MeanSafe−Fixed−.152523pp; safetyis notperfect. RationalworstsourceRegensburg−24.756186%,worstsplit−47.960692%; 44/90nonconvergedfinalsolverresults retained withoutrescue. R65standalonestatus REJECTED_AS_STANDALONE andR66Rational32residualfailedconfirmation remainunchanged. Newcomplementstatus separateSTRONG_NATIVE_DIVERSITY_TRANSFER.
+
+SecondaryContextsafe+2.502950%(17/0/1),Additive+2.341896%(15/2/1),alpha.20; notcandidates,neverinprimarydecision. Testoraclealpha.554657,gain+5.226226%, frozen→oracle+1.371039pp,calculatedonlyafterimmutableprimaryseal; notdeployable.
+
+Fit7.174182×Base(CI4.828..11.543),serialized1.189486×,deep1.105281×; latencybatch1/32/1k/100k1.198404/1.197251/1.284870/1.359617×. 1process/1thread,observedfit/benchmarkpeak.321GiB. Costsplausibleforresearch, notoptimizedproductionorindependenthardwareevidence.180finalartifactreplays cleanprocesswithout4teacherpackages,bucket/modelpredictionbitwisePASS; 1620predictionarrays/270diversityrecords/360checkpointseals verified. Installedwheelnative7numericalsourcehashes matchrepo; sourcepathassert/psutilharness issues resolved withoutrefits.
+
+Report: `research_private/NATIVE_DIVERSITY_TRANSFER.md`; audit: `research_private/native_diversity_transfer/final_audit.json`. Candidate`1bc462630f03a7ebcd0775000560e8242abcec497cc142be74125fb06b3e8716`,panel`45e6aa0f11d85bc593c45678bf699c6a83e71896a8435bb48a36470586b380aa`. Next: Giustificata, solo dopo nuova autorizzazione, Round78 FROZEN FULLY-NATIVE DIVERSITY BLEND INDEPENDENT CONFIRMATION: stessa Rational16 standalone, alpha0.30, identica safety, nessuna selezione di famiglia o alpha; nuovo panel disgiunto da questa linea e dalla formazione storica, costi completi e downside. Verificare anche validità del protocollo IID per domini con tempo/soggetti. Non integrare il blend nell'API né promuovere Rational standalone. Questo task termina qui; Round78 NON avviata.
+
+
+<!-- ROUND78_FROZEN_NATIVE_DIVERSITY_CONFIRMATION -->
+## Round78 — FROZEN FULLY-NATIVE DIVERSITY BLEND INDEPENDENT CONFIRMATION
+
+20new source records selected before outcomes;18executable frozen sources,90/90cases,180native fits(90Base+90Rational),0external/teacher fits,0repeatedvalidfits. Honeybee403,WQ4distincttarget values prefit rejections retained,no substitutes after freeze. Recoverable histories+aliases audited;R17/18archive gap explicit. Frozen R65rational_base_standalone16,bins16/ridge.001/L-BFGS-B100/rawtarget;alpha.30,strict inner-validation RMSE fallback/tieBASE,60/20/20IID,nofulltrainrefit.
+
+Verdict **STRONG_NATIVE_DIVERSITY_CONFIRMED**. Safe+2.061069%,mean+4.251316%,trim+3.166568%,CI95[+0.403189,+4.694716]%,P10+0.260378%,17/1/0W/T/L(17strictpositive). All18LOO/153LTOpositive,drop-best2robust. Rationalstandalone−1.550661%,7/0/11;Fixed+2.464835%. Fixed beyond-better-endpoint+.764948%,CI+.318124..+2.464835%;Safe+.445261%,CI+.278911..+2.670918%. 11Rational-worse sources,10/11Fixedpositive,median+.938350%. Errorcorr.787582,covnorm.841456,crossnorm.841833. Complementarity independently confirmed,not standalone superiority.
+
+Safety73BLEND/17BASE,68correctblend,7truefallback,10falsefallback,5missedfailure. MeanSafe−Fixed−.139282pp;Safe worstsourceParking−.003889%,worstsplitYouTube−6.157465%. Source>1/2/5/10/15losses0/0/0/0/0,split1/1/1/0/0;no>10catastrophe. No guarantee of perfect safety.22/90solver nonconvergences finite/retained. 39/90cross-partition exactXfingerprint intersections remain after X+yduplicate removal;IID conditional association,not time/site/person extrapolation. Source/domain heterogeneity,ordinal outcomes,missing archival catalogs and warm-only singlehardware costs restrict scope. Effect retention53.733134%vs transfer,58.885316%vs discovery.
+
+Practical median fit4.133043×Base(fullwall4.180436),serialized1.086204×,deep1.082716×; latency1/32/1k/100k=1.233155/1.187830/1.232027/1.228617×. Allmedian cost gates pass,not guaranteed per source.180branch-awarefinal artifacts,teacher-free3.12pickle/joblib360predictionreplays;3.13/3.14numeric/categorical smokePASS. 1260model/artifactarraysbyte-exact,180fitsealsverified,no refit in verification. Ruff/privatePASS;fresh public343PASS+9ENVIRONMENT_FAILUREthenonly9retried9PASS=352PASS,1EBMskip,4knownXFAIL.
+
+Full55-field report`research_private/round78_findings.md`;candidate`81aab9b06030194695135ba7d19a96e13538d335973671270d11d67da08525d7`,panel`12f6d48e059d534d760dd5defc573b33a68718519007067d0157794d79a68102`. Audit`research_private/round78/final_audit.json`. IntegrationjustifiedYES,**proposal only**`research_private/NATIVE_INTEGRATION_PROPOSAL.md`,provisionalNativeDiversityRegressor. Native candidate may replace teacher-blend as preferred regression research line within confirmed scope;separate EBM export purpose retained,no unmeasured external boosting superiority claim. No publiccore/API/compiler/default/version change,commit,push,tag,release or Gitremote;onlyauthorizedOpenMLGET. Stopbefore79. Next: separately authorized experimental packaging/parity/safety documentation,not a newarchitecture or post-hocalpha adjustment.
+
+<!-- POST_R78_NATIVE_SAFEBLEND_PUBLIC_INTEGRATION -->
+## Post-R78 — Fully-native SafeBlend public integration (engineering, not Round79)
+
+**NATIVE_SAFEBLEND_INTEGRATION_READY**. Separately authorized `codadapt.experimental.SafeBlendRegressor(random_state=None, verbosity=0, n_jobs=1)` now ports the exact Round78 Base+Rational16 recipe. Alpha .30, 25% supplied-data internal validation/seed+100, strict RMSE fallback, no final refit; BASE discards Rational. No external ML/teacher required at fit/predict/reload; no extra. Default native core/classifier/EBM compiler/version0.2.0rc2 unchanged.
+
+90/90actualpublic-fit replays,1080predictionarrays/branches/RMSE bitwise exact; AST-identical Rational kernel. Final current-runtime/core verification PASS. Clean installed-wheel environments3.12/3.13/3.14 physically lack4teacher packages; each replays90pickle+90joblib artifacts exactly. Full public suites384PASS each,optional EBM25PASS separately,private6PASS,Ruff/format/wheel/sdist/privacy/notebook code-cell smokePASS. Existing4XFAIL unchanged; optionalEBM/array-api skips explicit. Native source fit/independence tests3.10/3.11 each34PASS; int64 unseeded RNG portability fixed without changing the integer-seeded scientific recipe. CIcore+EBM+nativeSafeBlend3.10–3.14 prepared,notremote-run.
+
+Representative six-source cost replay: fit3.9221×Base,serialized1.1494×,deep1.1347×;latency1/32/1k/100k=1.5795/1.6390/1.4120/1.5660×Base. Public schema validation adds~45/35/21/9%versusminimalR78artifact medians; disclosed,not optimized or hidden. Scientific R78confirmation+2.061%CI[+.403,+4.695]%,17/1/0,worstsplit−6.157%unchanged: fallback is not a guarantee. Original Round78 record's proposal-only/public-unchanged statements remain historical, superseded for experimental API only by this authorized engineering event.
+
+Report`research_private/NATIVE_SAFEBLEND_INTEGRATION_AUDIT.md`,audit`research_private/native_safeblend_integration/final_audit.json`; exact handoff lists (15 integration files; 28 total pending public files including prior local changes) listed there. Windows transient DLL/temp/backend issues recovered locally without recipe changes. No Git mutation,remote,publication,tag/release or Round79. `last_completed_round=78`; history1–78/rejected directions retained. Stop here.

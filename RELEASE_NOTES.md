@@ -1,54 +1,28 @@
-# CodAdapt release notes
+# Release notes
 
-## 0.2.0rc2 — Experimental release candidate
+## 0.2.0rc2 — current repository line
 
-### CURRENT REPOSITORY COMPATIBILITY UPDATE
+The native CodAdapt classifier/regressor, their defaults and algorithms are unchanged.
+Python 3.10–3.14 is supported; core dependencies are NumPy, pandas, scikit-learn and
+SciPy. No external ML model is required for native fit, validation, prediction or reload.
 
-The current working tree supports Python 3.10–3.14 for the native core, EBM and
-SafeBlend. The minimum scikit-learn version is 1.4; numeric packages retain minimum
-requirements rather than the modern audit pins. The permanent compatibility gate
-and five-minor CI retain Cholesky/thread diagnostics and teacher-free persistence.
-See [PYTHON_COMPATIBILITY.md](docs/PYTHON_COMPATIBILITY.md) for executed evidence.
+The experimental `SafeBlendRegressor` is fully native: unchanged Base plus a
+complementary Rational estimator, frozen weight 0.30 and internal validation fallback.
+It uses the normal core install with no external model dependency. Round 78 independent
+confirmation found +2.061% median RMSE gain, CI [+0.403%, +4.695%], on 18 new datasets
+× five splits; the worst split lost 6.157%. This is panel-specific evidence, not a
+no-harm guarantee. Fit remains about 4.13× Base in the frozen research panel.
+See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md).
 
-This is an update to the existing version line, not a new release. Use `main` after
-the local changes are uploaded manually; the historical `v0.2.0rc2` tag remains at
-its older commit. GitHub CI and real Kaggle confirmation remain pending. Native
-behavior, SafeBlend mathematics and compiler fidelity are unchanged.
+The optional `ebm` extra remains solely an explicit experimental compiler/import tool
+for already fitted additive interpret-core 0.7.8 models. It is not a native trainer,
+is never invoked by native estimators and is unnecessary for compiled-model inference.
+Its fidelity and runtime contract remain unchanged. See [the compiler documentation](docs/EBM_COMPILER.md).
 
-
-### NEW
-
-This candidate adds the opt-in, regression-only `SafeBlendRegressor` under
-`codadapt.experimental`. The optional `safeblend` extra supplies LightGBM for offline
-fit; the deployed artifact retains no teacher and supports trusted pickle/joblib.
-The frozen validation rule chooses Base-only or the compiled blend, without a final
-refit. The standalone deployment artifact is non-tree/non-neural; the API recipe is
-frozen experimentally. Native defaults and the existing EBM compiler are unchanged.
-
-### VALIDATED
-
-Round76 independent confirmation used 18 new regression dataset sources × 5 splits:
-median dataset-mean RMSE gain versus CodAdapt Base +5.20%, 95% dataset-bootstrap CI
-[+2.87%, +15.37%], and 17 wins / 1 tie / 0 losses. These are panel-specific results,
-not a universal guarantee. Public integration preserved all 90 checkpoint predictions,
-branches and RMSE, with zero bitwise mismatches and no new scientific fits.
-
-The local integration measured serialized/deep memory 1.433× / 0.819× Base and latency
-0.477× / 0.621× / 1.546× / 4.692× Base for batches 1 / 32 / 1k / 100k. Measurements
-used Windows/Python3.12, four BLAS threads, 18 first-seed workloads and paired warm
-benchmarks; see the contract for the full hardware/protocol and scope.
-
-### LIMITATIONS
-
-**SafeBlendRegressor remains experimental.** Offline fit is expensive (archived full
-pipeline median 75.71× Base); large batches are slower than Base on the measured panel.
-Validation fallback is not a test-set or future-data guarantee. This is a regression-only
-convenience panel with overlapping IID splits, not independent-hardware or universal validation.
-Numeric multiclass IDs are indistinguishable from valid count regression; callers must
-respect the regression-only contract. Trusted pickle/joblib needs compatible dependencies.
-
-No tag, upload or remote validation is implied. See [the contract](docs/SAFE_BLEND_EXPERIMENTAL.md)
-for measured panel evidence, expensive fitting and large-batch limitations.
+Local package validation is recorded separately from remote CI and independent-hardware
+validation. No release, tag, publication or version increment is created by this cleanup.
+The historical published tag is unchanged; current files and rebuilt local distributions
+must be distinguished from older artifacts bearing the same version.
 
 ## 0.2.0rc1 — Experimental release candidate
 

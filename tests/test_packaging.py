@@ -48,8 +48,7 @@ def test_wheel_contains_package_and_distribution_metadata(wheel):
         assert "codadapt/experimental/_compiler.py" in names
         assert "codadapt/experimental/_model.py" in names
         assert "codadapt/experimental/_safe_blend.py" in names
-        assert "codadapt/experimental/_safe_blend_runtime.py" in names
-        assert "codadapt/experimental/_safe_blend_recipe.json" in names
+        assert "codadapt/experimental/_rational.py" in names
         assert not any("research" in name for name in names)
 
 
@@ -57,7 +56,7 @@ def test_installed_wheel_fit_predict_and_persistence_in_external_environment(
     wheel, tmp_path, dependency_paths
 ):
     environment = tmp_path / "wheel-environment"
-    venv.EnvBuilder(with_pip=True, system_site_packages=True).create(environment)
+    venv.EnvBuilder(with_pip=True, system_site_packages=False).create(environment)
     python = environment / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
     site_packages = next(environment.glob("Lib/site-packages"), None)
     if site_packages is None:
@@ -101,10 +100,10 @@ def test_installed_wheel_fit_predict_and_persistence_in_external_environment(
         "from pathlib import Path\nimport sys, importlib.abc, pickle, joblib, numpy as np, pandas as pd\n"
         "class BlockTeacher(importlib.abc.MetaPathFinder):\n"
         "    def find_spec(self, fullname, path=None, target=None):\n"
-        "        if fullname.split('.')[0] == 'interpret': raise ImportError('teacher unavailable')\n"
+        "        if fullname.split('.')[0] in {'interpret', 'lightgbm', 'xgboost', 'catboost'}: raise ImportError('teacher unavailable')\n"
         "sys.meta_path.insert(0, BlockTeacher())\n"
         "import codadapt\nfrom codadapt import CodAdapt, CodAdaptClassifier, CodAdaptRegressor\n"
-        "from codadapt.experimental import compile_ebm\n"
+        "from codadapt.experimental import compile_ebm, SafeBlendRegressor\n"
         "try: compile_ebm(object(), X_verify=None)\n"
         "except ImportError as e: assert 'codadapt[ebm]' in str(e)\n"
         "else: raise AssertionError('compile must require optional dependency')\n"
@@ -120,7 +119,8 @@ def test_installed_wheel_fit_predict_and_persistence_in_external_environment(
         "def forbidden_fit(*args, **kwargs):\n    raise AssertionError('Loading must not fit')\n"
         "if sys.argv[1] == 'load':\n"
         "    CodAdaptClassifier.fit = forbidden_fit\n    CodAdaptRegressor.fit = forbidden_fit\n"
-        "for cls, y in [(CodAdapt, (v > 0).astype(int)), (CodAdaptRegressor, v)]:\n"
+        "    SafeBlendRegressor.fit = forbidden_fit\n"
+        "for cls, y in [(CodAdapt, (v > 0).astype(int)), (CodAdaptRegressor, v), (SafeBlendRegressor, v)]:\n"
         "    if sys.argv[1] == 'fit':\n"
         "        model = cls(random_state=42, verbosity=0).fit(X, y)\n"
         "        expected = model.predict(X.iloc[:5])\n"
@@ -160,6 +160,7 @@ def test_source_distribution_excludes_research_memory_and_private_artifacts():
     assert not any(private_directory in n or "/docs/research" in n for n in names)
     assert any(n.endswith("docs/EBM_COMPILER.md") for n in names)
     assert any(n.endswith("docs/SAFE_BLEND_EXPERIMENTAL.md") for n in names)
+    assert any(n.endswith("src/codadapt/experimental/_safe_blend.py") for n in names)
 
 
 def test_optional_dependency_metadata(wheel):
@@ -169,8 +170,10 @@ def test_optional_dependency_metadata(wheel):
     requirements = [r for r in metadata.splitlines() if r.startswith("Requires-Dist: interpret")]
     assert len(requirements) == 1
     assert 'extra == "ebm"' in requirements[0]
-    safe_requirements = [
-        r for r in metadata.splitlines() if r.startswith("Requires-Dist: lightgbm==4.7.0")
-    ]
-    assert len(safe_requirements) == 1
-    assert 'extra == "safeblend"' in safe_requirements[0]
+    assert not any(
+        r.startswith(
+            ("Requires-Dist: lightgbm", "Requires-Dist: xgboost", "Requires-Dist: catboost")
+        )
+        for r in metadata.splitlines()
+    )
+    assert "Provides-Extra: safeblend" not in metadata

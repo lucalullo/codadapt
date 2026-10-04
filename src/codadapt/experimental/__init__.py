@@ -2,6 +2,7 @@
 
 from ._compiler import CompilationError, compile_ebm
 from ._model import CompiledEBMClassifier, CompiledEBMRegressor
+from ._safe_blend import SafeBlendRegressor
 
 __all__ = [
     "CompilationError",
@@ -10,11 +11,3 @@ __all__ = [
     "SafeBlendRegressor",
     "compile_ebm",
 ]
-
-
-def __getattr__(name):
-    if name == "SafeBlendRegressor":
-        from ._safe_blend import SafeBlendRegressor
-
-        return SafeBlendRegressor
-    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

@@ -2,7 +2,7 @@
 
 CodAdapt is an experimental machine-learning library for tabular data. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary classification and single-target regression, while preserving a scikit-learn-style API.
 
-**CodAdapt 0.2.0rc2 keeps the native core and default behavior unchanged, with optional experimental EBM compilation and SafeBlend regression deployment.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
+**CodAdapt 0.2.0rc2 keeps the native core and default behavior unchanged and adds a fully native experimental `SafeBlendRegressor`.** SafeBlend combines the unchanged native Base regressor with a compact native Rational estimator, a frozen blend weight, and validation-based fallback. It requires no LightGBM or other external ML model. The existing experimental EBM compiler remains available as a separate optional import/compilation tool.
 
 CodAdapt remains a pre-1.0 experimental project. It is intended for controlled experiments, reproducible evaluation, and practical tabular workflows. It does not claim universal superiority over established tree-based models.
 
@@ -20,8 +20,9 @@ CodAdapt remains a pre-1.0 experimental project. It is intended for controlled e
 - sample weights, explicit validation sets, deterministic random states, and best-state restoration;
 - pickle/joblib persistence;
 - CPU-only NumPy runtime;
-- Python 3.10–3.14, with separate compatibility gates for the native core and optional extras;
-- optional experimental EBM compilation in `codadapt.experimental`.
+- Python 3.10–3.14 compatibility gates;
+- fully native experimental `SafeBlendRegressor` under `codadapt.experimental`;
+- optional experimental EBM compilation under `codadapt.experimental`.
 
 The native CodAdapt default remains the architecture selected during the 0.1 development process. No experimental strategy flag is required.
 
@@ -29,81 +30,47 @@ The native CodAdapt default remains the architecture selected during the 0.1 dev
 
 ### From GitHub
 
-The current repository line is **0.2.0rc2**, with verified Python **3.10–3.14**
-support. Use `main` for the compatibility update once these local changes have been
-uploaded manually. The published `v0.2.0rc2` tag points to the older commit and is
-not being rewritten; it does not include this update.
+The maintained repository line remains **0.2.0rc2**. Install the current repository from `main`:
 
 ```bash
 python -m pip install "git+https://github.com/lucalullo/codadapt.git@main"
 ```
 
-For the optional experimental EBM compiler:
+`SafeBlendRegressor` uses the same standard installation. No LightGBM, XGBoost, CatBoost, or other external ML model is required for native fitting or prediction.
+
+For the separate optional EBM compiler:
 
 ```bash
 python -m pip install "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@main"
 ```
 
-For optional experimental SafeBlend regression:
-
-```bash
-python -m pip install "codadapt[safeblend] @ git+https://github.com/lucalullo/codadapt.git@main"
-```
-
-The native installation does **not** require either teacher. Extras supply the
-fixed fit-only dependencies; saved deployment models do not retain their teacher.
+The `ebm` extra is required only when explicitly compiling a supported fitted EBM teacher. Native CodAdapt and native SafeBlend do not use it.
 
 ### Kaggle
 
-Current `main` supports Python **3.10–3.14** after the compatibility update is
-uploaded. Core, EBM and SafeBlend passed local validation separately; see
-[the compatibility matrix](docs/PYTHON_COMPATIBILITY.md). Remote GitHub CI and
-the actual Kaggle image remain pending. Do not use the historical tag for this fix.
-
-Native installation:
+Native CodAdapt and native SafeBlend:
 
 ```python
-!pip install -qq git+https://github.com/lucalullo/codadapt.git@main
+!pip install -qq --no-cache-dir git+https://github.com/lucalullo/codadapt.git@main
 ```
 
-EBM compilation:
+Then:
 
 ```python
-!pip install -qq "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@main"
-```
-
-SafeBlend installation and a small manual smoke:
-
-```python
-import sys
-print(sys.version)
-
-!pip install -qq "codadapt[safeblend] @ git+https://github.com/lucalullo/codadapt.git@main"
-
-import codadapt
-import numpy as np
-import pandas as pd
 from codadapt.experimental import SafeBlendRegressor
 
-print(codadapt.__version__)
-assert codadapt.__version__ == "0.2.0rc2"
-rng = np.random.default_rng(42)
-value = rng.normal(size=256)
-X = pd.DataFrame({"value": value, "category": np.where(value > 0, "a", "b")})
-X.loc[::17, "value"] = np.nan
-y = value ** 2 + rng.normal(scale=0.1, size=len(value))
-model = SafeBlendRegressor(random_state=42, verbosity=0).fit(X, y)
-print(model.predict(X.iloc[:5]))
+model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=4)
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
 ```
 
-Use network-enabled Kaggle only for this manual installation. Restart the kernel
-if numerical dependencies changed. Offline use can instead install the updated
-local `codadapt-0.2.0rc2-py3-none-any.whl` with compatible dependencies available.
-The same version name does not identify whether an older wheel contains this fix.
+For the optional EBM compiler:
 
-**KAGGLE_REMOTE_CONFIRMATION_PENDING = YES.** Local Python 3.13.16/3.14.8 checks
-do not validate the reported Kaggle 3.13.15 image. No remote command above was run
-by this task. The native core, compiler and frozen SafeBlend recipe are unchanged.
+```python
+!pip install -qq --no-cache-dir "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@main"
+```
+
+Restart the notebook kernel only if the environment changes numerical packages during installation.
 
 ### Local checkout
 
@@ -122,7 +89,7 @@ python -m ruff format --check .
 python -m pytest
 ```
 
-Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.4+, and SciPy 1.8+. LightGBM is optional for benchmarks and SafeBlend fitting; `psutil` is an optional benchmark dependency.
+Core runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.4+, and SciPy 1.8+. These are numerical/data dependencies, not external teacher models. `psutil` is optional for benchmarks, and `interpret-core==0.7.8` is available only through the explicit `ebm` extra.
 
 ## Quick start
 
@@ -253,25 +220,32 @@ See [docs/EBM_COMPILER.md](docs/EBM_COMPILER.md) before deployment.
 
 ## Experimental SafeBlendRegressor
 
-The experimental API provides a regression-only, opt-in safe blend. After publication,
-install the fit-only teacher extra with `python -m pip install "codadapt[safeblend]"`;
-from a local checkout use `python -m pip install -e ".[safeblend]"`:
+`SafeBlendRegressor` is an opt-in, regression-only **native Base + Rational** diversity
+blend. It uses the standard CodAdapt installation, with no external teacher or ML
+model dependency. Its internal weight is frozen at 0.30; validation fallback selects
+Base when the blend does not strictly improve internal validation RMSE. There is no
+final refit. `CodAdaptRegressor` remains the default.
 
 ```python
 from codadapt.experimental import SafeBlendRegressor
 
-model = SafeBlendRegressor(random_state=42, verbosity=0)
+model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=4)
 model.fit(X_train, y_train)
-prediction = model.predict(X_test)
+predictions = model.predict(X_test)
+print(model.branch_, model.alpha_)
 ```
 
-LightGBM is used offline during fit; the saved deployment artifact retains no teacher.
-Internal validation chooses Base-only or the frozen Base/compiled blend, without a final
-refit. On the independent Round76 panel of 18 regression sources × 5 splits, median
-RMSE improved 5.20% versus Base, with 17 wins / 1 tie / 0 losses at dataset level.
-This is not a guarantee on new data. Training is expensive and large batches remain
-slower than Base on the measured panel. Native defaults are unchanged. See
-[the contract and deployment limits](docs/SAFE_BLEND_EXPERIMENTAL.md).
+Independent confirmation on 18 new real regression datasets × 5 splits found a
+median RMSE gain of **+2.061%** versus Base, 95% CI **[+0.403%, +4.695%]**, and
+**17/1/0** dataset wins/ties/losses. The worst split lost **6.157%**: validation
+fallback reduces observed downside but does not guarantee improvement. These are
+panel-specific IID results, not a universal advantage.
+
+Round 78 local research-runtime medians were approximately **4.13× fit time**,
+**1.09× serialized memory**, **1.08× deep memory** and **1.19–1.23× inference
+latency** versus Base. Public schema validation adds overhead; results depend on
+hardware and workload. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md)
+for inputs, fitted diagnostics, persistence, costs and limitations.
 
 ## Main parameters
 
@@ -340,9 +314,9 @@ python benchmarks/run_benchmarks.py --quick
 
 ## Persistence
 
-Native CodAdapt models support pickle/joblib persistence.
+Native CodAdapt models and `SafeBlendRegressor` support pickle/joblib persistence. SafeBlend contains only native CodAdapt state; no external teacher model is retained or required for reload/prediction.
 
-Compiled EBM models retain no teacher. Loading and inference without interpret were verified in the frozen local Windows environment; this is not a guarantee across every platform or future dependency version.
+Compiled EBM models also retain no teacher. Loading and inference without interpret were verified in the frozen local Windows environment; this is not a guarantee across every platform or future dependency version.
 
 As with any pickle/joblib artifact, load only trusted files and prefer matching dependency versions across environments.
 
@@ -351,6 +325,7 @@ As with any pickle/joblib artifact, load only trusted files and prefer matching 
 - [API reference](docs/API.md)
 - [Algorithm](docs/ALGORITHM.md)
 - [Python compatibility and release gate](docs/PYTHON_COMPATIBILITY.md)
+- [Experimental native SafeBlend](docs/SAFE_BLEND_EXPERIMENTAL.md)
 - [Experimental EBM compiler](docs/EBM_COMPILER.md)
 - [Research master](docs/research/RESEARCH_MASTER.md)
 - [Research state](docs/research/RESEARCH_STATE.json)
@@ -368,7 +343,7 @@ These files are development documentation and are intentionally excluded from th
 
 ## Limitations
 
-- binary classification only;
+- binary classification only for the native classifier;
 - single-target regression only;
 - no multiclass, multilabel, ranking, or multi-output interface;
 - dense input only; sparse matrices are unsupported;
@@ -377,6 +352,7 @@ These files are development documentation and are intentionally excluded from th
 - CPU only; no GPU or online/incremental training interface;
 - very high categorical cardinality is capped by `max_categories`, with rare and unseen categories handled through dedicated buckets;
 - early stopping reserves validation rows unless an external `eval_set` is provided;
+- `SafeBlendRegressor` is experimental, regression-only, uses a frozen internal validation fallback, exposes no sample weights or external validation set, and does not guarantee improvement on every dataset or split;
 - the EBM compiler supports only its documented additive binary/regression contract;
 - compiled EBM classification probabilities are numerically equivalent within tolerance, not guaranteed bitwise-identical;
 - compiled EBM runtime is workload- and environment-dependent, with no general speed advantage established or independent-hardware validation completed;
@@ -385,9 +361,9 @@ These files are development documentation and are intentionally excluded from th
 
 ## Status
 
-CodAdapt 0.2.0rc2 is an experimental pre-release. The native core remains unchanged from the validated 0.1 line, while the EBM compiler is opt-in and experimental.
+CodAdapt 0.2.0rc2 is an experimental pre-release. The native core remains unchanged from the validated 0.1 line. `SafeBlendRegressor` is a fully native, opt-in experimental regressor, while the EBM compiler remains a separate opt-in experimental import/compilation tool. Neither changes the native default.
 
-The public API, compiler contract, and defaults may evolve as broader external validation continues.
+The experimental APIs, compiler contracts, deployment behavior, and defaults may evolve as broader external validation continues.
 
 ## License
 

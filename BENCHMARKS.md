@@ -37,7 +37,8 @@ scikit-learn and synthetic datasets:
 python benchmarks/run_benchmarks.py --quick
 ```
 
-Install the optional benchmark dependencies to include LightGBM:
+The public runner compares native CodAdapt with sklearn HistGradientBoosting only.
+The optional benchmark extra supplies system measurement tooling, not LightGBM:
 
 ```bash
 python -m pip install -e ".[benchmark]"
@@ -140,51 +141,3 @@ This supports compact standalone deployment within the verified contract, not
 compatibility with every future platform, package version or hardware configuration.
 Teacher training remains an upstream cost. See the [compiler contract](docs/EBM_COMPILER.md)
 for supported models, schemas, mandatory verification and explicit `REJECT` behavior.
-
-
-## Experimental SafeBlendRegressor — frozen confirmation and deployment audit
-
-`SafeBlendRegressor` is a regression-only, opt-in experimental estimator. It uses the
-native CodAdapt Base together with a fixed LightGBM 4.7.0 teacher during fitting,
-compiles the teacher to standalone coded state, applies a frozen blend amplitude, and
-uses internal validation to deploy either Base alone or the blend. The LightGBM teacher
-is not retained in the fitted deployment artifact.
-
-### Quality confirmation
-
-The frozen independent confirmation used **18 new real regression dataset sources × 5 splits**.
-The primary unit was the dataset mean over splits. Relative to CodAdapt Base, the median
-dataset-level RMSE gain was **+5.20%**, with a dataset-bootstrap 95% interval of
-**+2.87% to +15.37%** and **17 wins / 1 tie / 0 losses** at the preregistered dataset
-threshold. The safety branch selected Base or Blend from internal validation only.
-These are panel-specific IID split results and are not a guarantee on future datasets,
-sites, subjects or time periods.
-
-### Deployment measurements
-
-The RC2 integration audit preserved all 90 frozen predictions and branch decisions
-bitwise. On the local paired benchmark, median deployment ratios versus native Base were:
-
-| Measure | SafeBlend / Base |
-| --- | ---: |
-| Serialized size | 1.433× |
-| Deep retained size | 0.819× |
-| Latency, batch 1 | 0.477× |
-| Latency, batch 32 | 0.621× |
-| Latency, batch 1k | 1.546× |
-| Latency, batch 100k | 4.692× |
-
-The measured environment was Windows 11, Python 3.12.14, NumPy 2.3.5, four BLAS
-threads, on the development machine used for the frozen RC2 integration audit.
-Measurements are local, workload-specific and not independent-hardware claims.
-Large batches remained slower than Base.
-
-### Offline cost and standalone contract
-
-The archived full fitting pipeline had a source-balanced median cost of about
-**75.71× Base**, including teacher fitting. Training cost is therefore a major limitation.
-After fitting, the teacher is removed. Pickle/joblib reload and prediction without
-LightGBM were verified during the RC2 integration audit.
-
-See [docs/SAFE_BLEND_EXPERIMENTAL.md](docs/SAFE_BLEND_EXPERIMENTAL.md) for the exact
-frozen recipe, input contract, validation branch rule, persistence behavior and limitations.

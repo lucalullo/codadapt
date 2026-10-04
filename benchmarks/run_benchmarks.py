@@ -57,28 +57,12 @@ def models(task: str, seed: int):
             "codadapt": CodAdapt(random_state=seed, verbosity=0),
             "hist_gb": HistGradientBoostingClassifier(random_state=seed),
         }
-        try:
-            from lightgbm import LGBMClassifier
-
-            result["lightgbm"] = LGBMClassifier(
-                n_estimators=100, random_state=seed, n_jobs=1, verbosity=-1
-            )
-        except ImportError:
-            pass
         return result
 
     result = {
         "codadapt": CodAdaptRegressor(random_state=seed, verbosity=0),
         "hist_gb": HistGradientBoostingRegressor(random_state=seed),
     }
-    try:
-        from lightgbm import LGBMRegressor
-
-        result["lightgbm"] = LGBMRegressor(
-            n_estimators=100, random_state=seed, n_jobs=1, verbosity=-1
-        )
-    except ImportError:
-        pass
     return result
 
 
