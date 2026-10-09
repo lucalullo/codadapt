@@ -333,6 +333,25 @@ A lightweight sanity benchmark can be run with:
 python benchmarks/run_benchmarks.py --quick
 ```
 
+### Reproducible cross-validation benchmark
+
+An exploratory benchmark compares CodAdapt with LightGBM, Random Forest, and HistGradientBoosting on four public scikit-learn datasets, using 5-fold cross-validation repeated three times (240 evaluations).
+
+- [Methodology, results, and limitations](benchmarks/reproducibility/BENCHMARK_CV_REPORT.md)
+- [Benchmark runner](benchmarks/reproducibility/benchmark_codadapt_cv.py)
+- [Full results (CSV)](benchmarks/reproducibility/benchmark_cv_full.csv)
+- [Environment and experimental metadata (JSON)](benchmarks/reproducibility/benchmark_cv_full.json)
+
+To rerun the full benchmark from the repository root, install the benchmark dependencies and LightGBM, then run:
+
+```bash
+python -m pip install -e ".[dev,benchmark]"
+python -m pip install lightgbm==4.7.0
+python benchmarks/reproducibility/benchmark_codadapt_cv.py
+```
+
+These are author-run experiments with default model configurations and no hyperparameter tuning, **not independent validation**. The published CSV metadata records the SHA-256 of the original benchmark script, preserved in commit [`eae1950`](https://github.com/lucalullo/codadapt/blob/eae1950/benchmarks/reproducibility/benchmark_codadapt_cv.py); the current runner has formatting-only changes.
+
 ## Persistence
 
 Native CodAdapt models support pickle/joblib persistence.
