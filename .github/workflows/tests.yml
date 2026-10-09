@@ -80,10 +80,11 @@ jobs:
           python -m venv "$RUNNER_TEMP/codadapt-wheel"
           "$RUNNER_TEMP/codadapt-wheel/bin/python" -m pip install dist/codadapt-*-py3-none-any.whl
           mkdir -p "$RUNNER_TEMP/codadapt-smoke"
-          cp examples/basic_classification.py examples/basic_regression.py "$RUNNER_TEMP/codadapt-smoke/"
+          cp examples/basic_classification.py examples/basic_multiclass.py examples/basic_regression.py "$RUNNER_TEMP/codadapt-smoke/"
           cd "$RUNNER_TEMP/codadapt-smoke"
           "$RUNNER_TEMP/codadapt-wheel/bin/python" -c "import codadapt; from importlib.metadata import version; print(codadapt.__version__, codadapt.__file__); assert codadapt.__version__ == version('codadapt')"
           "$RUNNER_TEMP/codadapt-wheel/bin/python" basic_classification.py
+          "$RUNNER_TEMP/codadapt-wheel/bin/python" basic_multiclass.py
           "$RUNNER_TEMP/codadapt-wheel/bin/python" basic_regression.py
       - name: Execute example notebook against installed wheel
         if: matrix.python == '3.13'
@@ -187,4 +188,4 @@ jobs:
       - name: Build local distributions
         run: python -m build
       - name: Test native blend, independence and installed-wheel persistence
-        run: python -m pytest tests/test_safe_blend.py tests/test_independence.py tests/test_packaging.py
+        run: python -m pytest tests/test_safe_blend.py tests/test_independence.py tests/test_multiclass.py tests/test_packaging.py

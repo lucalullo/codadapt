@@ -172,3 +172,22 @@ indici, punteggi, ricerca, validation, ripristino e `fit` completo. Per confront
 pratici usare latenza end-to-end, RSS e dimensione serializzata insieme alla qualità.
 I riferimenti matematici brute-force nei test servono a verificare il percorso
 incrementale su shift, collisioni, masse vuote, pesi e mosse successive.
+
+## Multiclass Shared OVR (working tree 0.2.0rc2)
+
+Per K classi, un solo encoder train-only produce codici finest e mappe coarse.
+Il runtime nativo usa finest `max(2, min(16, n_bins))` e le tre risoluzioni annidate.
+Tutti gli head condividono schema, soglie, vocabolari, supporto e righe validation.
+Gli aggiornamenti dei K target binari `y == classe` restano quelli nativi: valori,
+residuali, ranking e arresto non vengono condivisi. I pesi originali sono invariati.
+
+Le cache fit-local riusano solo indirizzi, masse X-only identiche e conteggi dei
+codici. Il fitting usa una copia isolata della funzione nativa con callback di
+cache; non muta i globali del training binario. A prediction time si codifica una
+volta, si valutano i K head e si normalizzano le sigmoidi (non softmax).
+
+Un artifact compatto conserva un encoder, metadata immutable deduplicate, indici
+interi ridotti senza perdita e coefficienti float64 identici. Nessun merging o
+compressione numerica modifica celle o codici. Pickle/joblib ricostruiscono la
+stessa condivisione; dati, target, cache e estimator temporanei vengono eliminati.
+Il percorso binario originale e quello regressivo non cambiano.

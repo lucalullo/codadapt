@@ -1,3 +1,118 @@
+# Current engineering checkpoint — SAFEBLEND_EXACT_OPTIMIZATION_READY
+
+Index78/version0.2.0rc2. Compatibility-only resume: Python3.13.16/3.14.8 fresh isolated environments PASS/PASS; public code unchanged. All previous replay/timing/tests/packaging retained. Earlier blocked banners are history.
+
+---
+
+# Current engineering checkpoint — SafeBlend exact callback port; compatibility blocked
+
+Index78/version0.2.0rc2. Exact public Rational callback deduplication applied locally; no scientific recipe/API/default change. Replay54+36 exact; fresh solver parity and459public/3private tests pass. Python3.10–3.12 clean-wheel PASS;3.13/3.14 standalone SciPy Windows DLL policy failures prevent full clearance. No security workaround. Earlier checkpoint banners are history.
+
+---
+
+# Current checkpoint — POST-R78 Binary Base tomography COMPLETE
+
+**BINARY_NO_DOMINANT_MECHANISM. No native binary candidate; Round79justifiedNO.**
+Index78/public0.2.0rc2; regression/binary/multiclass/compiler/API/default unchanged.
+72Base checkpoints reused;0Base/teacher fits/downloads. Three frozen whole-logit
+validation calibration diagnostics are MATERIAL_VARIANT relative to closed shape-alpha
+learning; previous finite-grid temperature and R52joint reused. No Rational/safety tuning.
+Earlier checkpoint banners are historical snapshots.
+
+---
+
+# Current checkpoint — POST-R78 binary native complementarity complete
+
+**Not Round79. last_completed_round=78; public version0.2.0rc2.** Public regression,
+binary, multiclass, compiler and experimental API remain byte-identical to the
+completed public multiclass integration. Earlier checkpoint banners below are history.
+
+**PARTIAL_BINARY_COMPLEMENT — frozen transfer FAILED; Round79 justified:NO.**
+Zero-fit first phase reused144 aligned native historical cases across12 recipes.
+Only the unchanged R65 Rational32 probability-residual recipe passed necessary
+overlap complement tests; its27 missing development candidates were fitted on
+existing Base/splits, with no Rational tuning or new representation. Full12x3
+development chose global alpha.10 on validation: safe logloss gain5.772377%,
+W/T/L10/2/0, useful also on three standalone-losing sources. This remains development.
+
+Frozen12-new-source x3 transfer: safe median0%, W/T/L3/7/2; fixed median−8.130934%.
+Worst source Ozone−3.100762%; worst split−9.302286%; safety does not guarantee
+test benefit. Nomao/Wilt wins do not define an a-priori universal niche.
+Keep Binary Base; no alpha/clipping/recipe rescue or new experiment. Close this
+recipe as a general binary candidate, preserving other unavailable-family uncertainty.
+
+Matched development systems: fit3.362621x (cached timing caveat), serialized1.155005x,
+deep1.102668x; warm inference1/32/1k/100k=1.227426/1.200947/1.382612/1.420096x.
+No prior fit repeated; new research fits99 (27development +72transfer).
+Only public dataset downloads occurred. Pre-fit metadata/content checks corrected
+three dataset locators without changing intended panel identities or viewing results.
+New names were absent from accessible records, but missing original R1–43 reports
+prevent certainty about undocumented early dataset use. That caveat remains explicit.
+
+Evidence: research_private/BINARY_NATIVE_COMPLEMENTARITY.md and
+research_private/binary_native_complementarity/{protocol,inventory,summary,
+transfer_status,verification,final_audit}. No external ML model; no commit/push,
+tag/release or remote Git operation. Reopen only with a new train-only witness
+predicting useful probabilistic diversity beyond calibration/noise before outcomes.
+
+---
+
+# Current checkpoint — multiclass public integration READY
+
+Authorized exact Shared OVR port applied to the local0.2.0rc2 working tree. Binary/regression/native training/encoder/compiler/SafeBlend remain unchanged; multiclass support is now public. Index78; no Round79 or release. Earlier NOT_APPLIED/False snapshots are historical.
+
+# Current checkpoint — multiclass productization modern Python READY
+
+Index78/version0.2.0rc2. Python3.13/3.14 local qualification complete; exact public integration justified but NOT applied. Earlier banners/blocked verdicts are historical.
+
+# Current checkpoint — post-R78 shared OVR artifact audit COMPLETE
+
+Index78/public0.2.0rc2. Exact engineering transfer passes; productization audit required. Earlier banners below are historical.
+
+# Current research checkpoint — post-R78 shared native OVR audit COMPLETE
+
+Exact quality, incomplete systems gate. pairs25 rejected for training cost. Index78/public0.2.0rc2; no Round79. Older banners are historical.
+
+# Current research checkpoint — post-R78 stochastic solver audit COMPLETE
+
+COST_REDUCED_QUALITY_LOSS(limitedcoreonly);pilotquality/fullcostgatefailed;index78/public0.2.0rc2;noRound79. Older banners historical.
+
+# Current research checkpoint — post-R78 state-structure audit COMPLETE
+
+QUALITY_PRESERVED_COST_TOO_HIGH;index78/public0.2.0rc2;no newfit/solve/transfer/Round79. Older banners are historical.
+
+# Current research checkpoint — post-R78 pre-solve screening COMPLETE
+
+QUALITY_PRESERVED_COST_TOO_HIGH;index78/public0.2.0rc2;no Round79. Systems evidence qualified for initial thread provisioning failure;corrected selected1-thread clocks. Older banners are historical.
+
+# Current research checkpoint — post-R78 validation stopping COMPLETE
+
+COST_REDUCTION_QUALITY_LOSS;index78/public0.2.0rc2;no transfer,no Round79. Older banners are historical snapshots.
+
+# Current research checkpoint — post-R78 pairs25 solver audit COMPLETE
+
+**VALIDATION_SATURATES_EARLY**;index78/public0.2.0rc2;Round79justified=False,notstarted. Same-problem numerical audit only; older banners are historical snapshots.
+
+# Current research checkpoint — post-R78 pairs25 scaling COMPLETE
+
+**MIXED_BY_SCALE**; index78/public0.2.0rc2; Round79justified=False,notstarted. Frozen recipe,systems-only9real/16syntheticpoints; oldbanners are historical snapshots.
+
+# Current research checkpoint — post-R78 pairs25 fit-cost audit COMPLETE
+
+**PARTIAL_COST_RECOVERY; no Round79/transfer.** Index78/public0.2.0rc2. Exact bitwise replay12x3, cost7.472948x ->3.634165x OVR reconstructed; cached2.067036x; conditional floor2.608356x. Public/regression/binary unchanged. Full new-data acquisition cost was not remeasured; older banners are historical snapshots.
+
+# Current research checkpoint — post-R78 scaffold compression COMPLETE
+
+**QUALITY_COST_TRADEOFF; no compact-vector candidate/transfer/Round79.** Index78/public0.2.0rc2. Same solver/encoder/loss/class coordinates, scaffold-only pruning; originalpublic/regression/B unchanged. Older banners are historical snapshots.
+
+# Current research checkpoint — post-R78 function-matched multiclass COMPLETE
+
+**SCAFFOLD_DOMINANT (conditional development diagnosis); MULTICLASS_SHARED_VECTOR_NOT_READY.** No candidate or Round79; last_completed_round=78; public0.2.0rc2. Regression confirmation/native SafeBlend integration and binary PARTIAL_BINARY_SIGNAL unchanged. Rich dictionary helps both losses but fails systems gates. New event appended below; older banners are preserved historical snapshots.
+
+# Current research checkpoint — post-R78 multiclass tomography COMPLETE
+
+**MIXED_NO_SINGLE_MECHANISM; no Round79 candidate.** last_completed_round=78;public0.2.0rc2. Regression confirmation/experimental native SafeBlend unchanged,binary PARTIAL_BINARY_SIGNAL unchanged. Multiclass temperature/diagonal updatespartially recover quality, fail complete frozen gates. New event appended below;older current-state banners are historical snapshots, including integration status.
+
 # Current state — Round78 COMPLETE
 
 **STRONG_NATIVE_DIVERSITY_CONFIRMED**;SafeRMSE median+2.061069%,CI95[+0.403189,+4.694716]%,17/1/0W/T/L;18new executable sources×5splits. last_completed_round=78;public0.2.0rc2 unchanged;Round79NOT_STARTED. Private integration proposal justified;no public integration. Historical Rational standalone/residual failures remain closed. Older current-state banners below are preserved historical snapshots.
@@ -10541,3 +10656,2006 @@ Full55-field report`research_private/round78_findings.md`;candidate`81aab9b06030
 Representative six-source cost replay: fit3.9221×Base,serialized1.1494×,deep1.1347×;latency1/32/1k/100k=1.5795/1.6390/1.4120/1.5660×Base. Public schema validation adds~45/35/21/9%versusminimalR78artifact medians; disclosed,not optimized or hidden. Scientific R78confirmation+2.061%CI[+.403,+4.695]%,17/1/0,worstsplit−6.157%unchanged: fallback is not a guarantee. Original Round78 record's proposal-only/public-unchanged statements remain historical, superseded for experimental API only by this authorized engineering event.
 
 Report`research_private/NATIVE_SAFEBLEND_INTEGRATION_AUDIT.md`,audit`research_private/native_safeblend_integration/final_audit.json`; exact handoff lists (15 integration files; 28 total pending public files including prior local changes) listed there. Windows transient DLL/temp/backend issues recovered locally without recipe changes. No Git mutation,remote,publication,tag/release or Round79. `last_completed_round=78`; history1–78/rejected directions retained. Stop here.
+
+
+<!-- POST_R78_UNIFIED_RESEARCH -->
+## Post-R78 — Unified regression / binary / multiclass research (2026-10-04)
+
+Complete development and exact-systems audit, **not Round79**; index78/version0.2.0rc2. History1–78, closure/reopen conditions, prior art reviewed; early raw archive gaps preserved. No public source/API/default/compiler changes, Git mutation/remote/release. Public data GETs explicitly authorized, new binary data development only. Protocol/data/10scientific source hashes frozen before fitting; no posthoc tuning/source substitution. Separate task evidence:
+
+- **Regression**: frozen confirmed Base+.30×(Rational16−Base), strict validation RMSE safety/nofinalrefit, unchanged.90public checkpoints exact,1110numeric union-feature maps;0fits/solves. Raw prepare already shared, no retained code matrices. Median transient-code capacity ceiling80%, duplicate-encoding microtime ceiling8.99%, identical-cut payload alias ceiling288bytes/.139%deep, unionmetadata1240bytes. Theoretical ceilings, **no achieved speedup or memory saving**, categorical code/vocab IDs and support partitions differ. Prior public integration latency overhead remains disclosed.
+- **Binary PARTIAL_BINARY_SIGNAL**:12real development sources×3=36,4known+8authorized additionaldev; properlogistic Rational16 material variant, no teacher. Validation-selectedalpha.30 and all12LODO. Rationalstandalone+7.556%LL,Fixed+11.571%,Safe+7.475%,CI95[0,+18.200]%,8/2/2;AUC+.002722,Brier−.002162,ECE−.000517. Worstsource−2.658%,worstsplit−8.780%;3>1%harmssplits versus9Fixed,3harmfulaccepted,5falsefallback.0/4Rational-worse sources improveFixed; diversity-specific gateFAIL, source2%downside capFAIL. Jensen+.018031 is convex identity, not standalone-independent transfer. Fit3.547×Base(4.156fresh8-source-only),deep1.079×,serialized1.133×,warmprob1k1.277×. Costgatepasses; no confirmation justified, no binary integration.
+- **Multiclass MULTICLASS_QUALITY_NOT_READY**:12sources×3=36,K3–10, one native32-bin encoder,K−1dense reference-last vectors,coupled proper multinomial residual,L2=5,8sweeps. OVR normalizedLLmedian.420339,vector.543075,linearreference.206252. Pairedrelativegain−16.396%,CI[−32.034,+1.970]%,3/0/9;mainvalidation−19.528%,3/12nonworse. Conditionalmultires/pair **NOT_RUN_GATE_FAILED**, not zero-effect evidence. Fit.274×OVR,correcteddeep.070×,serialized.093×,prob1k.172×. Probabilitysumerror6.66e−16,labels/unseen/missing/persistence/determinismPASS. Vector19zero-recall class-splits vsOVR9,minorityfailure explicit.32/36stillimprovevalidation at8sweepbudget; no universal vectorrepresentation failure or causal solver conclusion; no additional rescuefits. TechnicalK3/5/10/20cost-only:coefficients O(states×(K−1)),noK²Hessian,vectorK20deep92806B vsOVR1463192B;finite overhead slopes not asymptotic evidence.
+- **Shared PARTIAL_SHARED_ENGINE**:output-head/objective abstraction possible,108binaryBase arrays and90regressionmodels byte-exact; fullnative144models+36Safebranches540arrays replay. Preserve task-specific trainers: Base stage ordering/support, Rational quotient chain rule/nonconvexity, multinomial coupling not interchangeable.
+
+180sealed fitunits valid,12historicalBasefitreuses;0repeatedvalidfits;metrics4428receiptchecks+CSVreplay.8technicalKcost units separate. Clean3.12replayblocks all external model engines; linear only benchmark. Publicpytest384PASS/1optionalEBMskip/4knownXFAIL,private11PASS,public/privateRuffPASS(import-sort exceptions only for byte-frozen private modules). Public51fileSHA snapshot unchanged. Deephelper corrected missingprotocol5memoryview.owner buffer and fresh-vsloaded measurement mismatch; original receipts preserved, only memory recounted, no fits/predictions/timings changed. Primary cost uses identical loaded artifacts and7interleaved probability timings, singlehardware/warm-only; end-of-fitRSS snapshots not peak.
+
+**Round79 justified NO; proposal NONE.** Best established candidate remains regression, experimentaloptin; no B/Mcandidate ready for confirmation. Separatefuturedevelopment could falsify multinomial convergence-budget/main-capacity confound at fixed states or exact regression sharing runtime ceiling; binary needs a distinct complement/safety premise, not alpha/loser tuning. No new work authorized automatically. Existing top-level STATE package/nativebranch still said SafeBlendwithdrawn/private despite the authorized integration event and currentcode; corrected memory only, old values retained. Historical rounds/rejections/scientificconfirmation unchanged. Report`research_private/POST_R78_UNIFIED_RESEARCH.md`,protocol/CSVs/checkpoints/audit`research_private/post_r78_unified/`. Stopbefore79.
+
+
+<!-- POST_R78_MULTICLASS_GAP_TOMOGRAPHY -->
+## Post-R78 — Multiclass OVR→Vector gap tomography (2026-10-04)
+
+**MIXED_NO_SINGLE_MECHANISM; candidate NO.** Five frozen mechanistic families,
+12originalsources×3splits,K3–10;72baseline fits reused,252new units/36local/36identity/36cost
+complete;no repeatedvalidfits,newdata,scientificteacher,B/Rresearch. Index78/version0.2.0rc2.
+Original vector pairedNLL+16.396074%vsOVR,CI[−1.970123,+32.033594]%;top1−1.737911pp,
+top2−.302825pp,macroF1−2.115750pp. Original identical encoder factorization0bitmismatches;
+sharedVector32+nativeOVRscaffoldNLL+0.000978%gainvsOVR. Fullscaffold(mainmultires/pairs,
+perclassselection)notmatchedVectorMainfunctionspace,so no pureobjectivecausal claim.
+
+Validation selects **Temperature**,Tmedian.640917. Primary gaprecovery64.736328%,NLLgain
+vsVector8.061719%CI[5.033927,42.526190]%,11/12better. ResidualpairedOVRdegradation9.959958%;
+car/glass/wine25.111439/21.760054/22.153077%worse,**no-catastrophegateFAIL**. Alternative
+positive-gap-onlymedianrecovery39.835286%,differentestimand. Strong75%/within3%gatesFAIL.
+Fit.353799×OVR,deep.071638×,serialized.093975×,prob1k.170410×. Conservativefitincludes
+requiredoriginalVectordiscoveryplusnewsolve;oldOVRdenominator,warmsinglehostcostonly.
+
+DiagonalNewton61.050082%recovery,6.669343%NLLgain,12/12bettervsVector;4residualcatastrophes,
+fit1.152241×OVR,deep.068049×,prob1k.170794×;notselectedpost-test. Classbias−.005762%recovery;
+SupportRidge1.098001%;independentfullK25.807617%;matchedK−1conditional−132.680267%.
+FullKextraK/(K−1)coeff/linkconfound;conditionalchangesrowweights/penaltymass. No principle
+completegatepass,no combinedrescue. Temperature/diagonalrecoveriesoverlap,notadditive.
+
+Localtrainconvexblockoptima398activeblocks/7566states/10sources,0nonconvergence;
+unstackedvalidationgainmedian.001509808NLL(.405955%validationOVR),30.432587%trainpositive
+statesvalidationnegative. Notglobaltestoracle,notstacked;no count-onlyclosedformwithoffsets.
+Current0.5countmajorizer/diagcurvature6.515971×. Exactreference↔sumzero/transportedridge
+probmax4.44e−16/0rankingmismatches;naivesymmetricridgefitUNTESTED. Classcolumns already
+independent;addresssharingisnotvalueequality. Krho−.633445,imbalanceratio−.042032,
+descriptive12sources,noregime/causalclaim. Calibration+finiteupdateestimationpartial;
+richerscaffold/perclassallocation/regularization/generalizationunresolved => **MIXED**.
+
+Clean3.12replay360models/1080arraysbitwise,96648rowchecks,19440metricreplays;
+protocol+8new/10originalsourcemodulesealsvalid,51publicfilehashunchanged. Ruff/private6tests
+andpublicsuiteaudit;Windowsenvironmentfailuresonlyminimalretry,separatefromalgorithm.
+1heavyprocess/1thread,RSSsnapshotsnotcontinuouspeak. B/PARTIAL_BINARY_SIGNAL andR78
+confirmation/recipe/publicSafeBlendintegration unchanged;histories1–78/rejectionsretained.
+Report`research_private/MULTICLASS_GAP_TOMOGRAPHY.md`;allartifacts/audit under
+`research_private/multiclass_gap_tomography/`. Next: Stop here. Only separately authorized development may isolate the richer OVR scaffold (multiresolution main effects / existing interactions / per-class feature allocation) at matched function space and transported regularization. Do not combine temperature with diagonal updates or tune these observed failures post-hoc. No confirmation or Round79 until one frozen, historically distinct principle passes quality, downside and cost gates.
+
+
+<!-- POST_R78_MULTICLASS_FUNCTION_MATCHED -->
+## Post-R78 — Multiclass function-matched OVR/vector isolation (2026-10-04)
+
+**SCAFFOLD_DOMINANT, conditional; MULTICLASS_SHARED_VECTOR_NOT_READY.** No candidate,
+no Round79. Original12sources×3splits reused; public0.2.0rc2/index78 unchanged.
+72baseline fits reused,360head solves/36train-only native discovery units (192class
+subfits) completed; no repeated valid fit, new data/teacher or B/Rresearch. Phi/head
+loss controls fixed; 5scientific module seals; no temperature or posthoc combination.
+
+VectorMain fine32/top24main versus SharedOVR32 nested4/8/16main+hashpair dictionaries,
+Kseparate24lookup budgets/validation admissions. Historical validation-admitted final
+dictionary cannot be train-only; fresh no-eval discovery used, fully costed. S0original
+main dictionary; S1union native main; S2adds native pairs. S0→S1dictionary replacement,
+not nested resolution-only. S2dense union is capacity envelope, not originalclassmask;
+matched sparse masks separately tested. Same rawKcount/Phi/ridge5/global300optimizer
+both objectives; sigmoid normalization differs from softmaxfamily, so zero-fit common
+softmax-link controls isolate trainingloss. Gauge-free counts disclosed, not designrank.
+
+S0OVR/Softmax median testNLL.483134/.411468;S1.295568/.243744;S2.211816/.194823.
+Paired S0→S2NLL gainsSoftmax41.287759%CI[20.467177,69.584311]%,OVR44.687743%
+CI[23.728851,67.655869]%,both11/0/1WTL. Main-onlydictionary21.164596%,12/0/0;
+pairincrement12.978509%,10/0/2. RawGmedian.073462625,CIincludeszero; rawG recoveries
+277.833251%Softmax/316.528539%OVR are overlapping ratio diagnostics, not additive
+causalshares. RelativeOVR alternative222.047322%/263.790131%; not newconfirmation.
+
+Common-link S2loss recovery7.849109%,gain3.133611%CI[−7.404635,21.645437]%,7/0/5.
+Legacy→symmetric effective ridge recovery43.280078%,gain8.968459%,11/1/0; actual
+transported-reference versus full-symmetric fits0/12/0,NLLdifference≈−0.000012%,max
+testprobabilitydifference5.235e−5 due finiteconvergence. Pure coordinates closed at
+thisprecision. Old8sweep→same-ridgeglobal solver gain1.999491%,not scaffoldcausality.
+SamePclass-specificallocation recovery−37.861560%,gain−6.233988%,3/0/9; exactpayload
+and supportedcountsame, gaugefreecounts differ. Classcapacity not dominant.
+
+Train/val/test scaffold gains.227800/.188249/.204104NLL; pairincrement attenuates
+.127676/.027074/.039823. S2Kcorrelationnatural/common+.129/+.032,old−.633not replicated;
+imbalancenatural/common+.242/−.658,12-source descriptive. No stable rare/difficult
+classOVRadvantage. Perclass support/NLL/recall/norms and allsecondarymetrics persisted.
+
+Validation-only endpointOBJ_S2(S2Softmax→S2OVRcommon) selected beforetest, never
+replaced: basicgateallFAIL,recovery7.849%,cmc26.112%worsevsOVR,fit19.520×,deep1.509×,
+prob1k.567×. DiagnosticS2Softmaxfit18.158×,deep1.506×,serialized4.258×,infer.577×;
+worstcmc12.756%worsevsOVR. S1Softmaxdeep.167×/infer.228×butfit5.527×andiris23.390%
+worse. Everyendpointfailscompletegate; no promotable VECTOR-RICH-SCAFFOLD yet.
+
+359/360solves converge; digits/44001/S2OVR reaches frozen300limit, norescue. Clean3.12
+blocked-engine replay360models/1404arraysbitwise,0predictionmismatches/96648rowchecks;
+14040metricreplays. Public51filehashes unchanged; prior409PASS/4knownXFAIL publictests
+reused, newprivate6PASS/RuffPASS. Oneprocess/thread; RSSsnapshotsmax.176GiB,notcontinuous
+peak. JSON/history1–78/Gitprivacy pass; prior events/rejections and regression/B unchanged.
+Report`research_private/MULTICLASS_FUNCTION_MATCHED_AUDIT.md`; artifacts/final_audit
+under`research_private/multiclass_function_matched/`. Next: Stop here: no Round79 or confirmation candidate. Separately authorized development would need to distinguish coarse main-dictionary/feature coverage from induced regularization at a fixed parameter budget, and demonstrate train-only discovery plus global fitting within the frozen cost/downside gate. The current dense native dictionary is a diagnostic envelope, not a compact candidate. Do not tune this panel, combine the loss/penalty/allocation probes post-hoc, rerun valid solves, reopen closed scalar additive research, or change public behavior.
+
+
+<!-- POST_R78_MULTICLASS_SCAFFOLD_COMPRESSION -->
+## Post-R78 — Multiclass scaffold capacity distillation (2026-10-04)
+
+**QUALITY_COST_TRADEOFF; candidateNO; no transfer orRound79.** 12originalsources×3splits,
+sameSoftmax/ridge5/fullK300solver/32encoder; onlyterm/state/maskinclusionchanges.
+Fourselectorsat40%,validationselectscontribution; onlyits10/20/40/60/80/100
+curve, no4×6grid. Block/resolution/hash25/50/100 and onefixed80/20core/private-tail
+controls preregistered. S2alreadysharedunion; noK-foldstructuralcompressionclaim.
+Privateblocks overlap main/pairblocks. Fullyclass-specific oldmaskcontrols reused.
+S0incrementalchain retainsfine32,finalenvelopelargerthanS2. Gradientfoldstability is
+statistics agreement,notrefittedshapestability. Fitted-normselectorrequiresfullS2fit,
+explicitlycharged; initialgradient/support/stability rankers do notuse fittedvalues.
+
+Bestvalidationdiagnosticselect_contribution_80: testNLL0.191573, gainretention
+99.580%, pairedNLL/OVR0.734199, WTL[11, 0, 1],
+worstcmcratio1.120033; failedgate['fit', 'serialized', 'inference'].
+Fit27.535×OVR,pickle0.688×,
+deep0.365×,infer1k0.433×. Bestvalidationcurveendpoint
+select_contribution_80,notposttestselection. CMCnotexcluded; alltrain/val/test/paired/block/cost
+andParetopoints persisted. No selector/budget/solvercombinationposthoc.
+
+884uniqueVALIDunits;704newsolves,
+180cachedsourcefitsreused,0repeatedvalidsolves/native
+discoveries. Cleanreplay2652arraysbitwise/0mismatches,
+32076metricchecks;public51hashes/upstreamsealsunchanged.
+FourprivatePASS,RuffPASS,public409PASS/4knownXFAIL evidencereused. Oneprocess/thread,
+RSSsnapshots0.178GiB,notcontinuouspeak. Index1–78,
+JSON/Gitprivacy/MASTERSTATEKBcoherence pass. Regressionconfirmed/Bpartialunchanged.
+TransferNOT_STARTED_DEVELOPMENT_GATE_FAILED,0datasets/0fits; header-onlyCSV isnot a transferresult.
+Report`research_private/MULTICLASS_SCAFFOLD_COMPRESSION.md`,artifacts/final_audit under
+`research_private/multiclass_scaffold_compression/`. Next: Stop here; no Round79 or independent transfer. A separately authorized next task could audit the fitting-cost floor of the already frozen pairs_25 recipe: separate original native scaffold discovery, code/address preparation, ranking and global head solve using the persisted receipts. It retains quality and deployment-cost gates but needs about 7.47x OVR fitting time. Determine whether the mandatory discovery alone already exhausts the 1.0x budget before proposing any new fit or optimization. Count every dependency; no post-test selector, budget, objective, solver or class-coordinate rescue in this study. Public behavior and regression stay frozen.
+
+
+## POST_R78_MULTICLASS_PAIRS25_COST — completed 2026-10-05
+
+# POST-R78 — MULTICLASS PAIRS25 FIT-COST FLOOR AUDIT
+
+Completed locally, 2026-10-05. **PARTIAL_COST_RECOVERY**. Not Round79.
+`last_completed_round=78`; public version `0.2.0rc2`. No public core/API/compiler
+change, new dataset, quality selection, transfer, remote operation or publication.
+
+The exact engineering track reduces reconstructed from-scratch fit from
+**7.472948x to 3.634165x OVR**. Given an already frozen
+scaffold, measured cache-load/preparation/solve costs **2.067036x**.
+Neither aggregate passes the interesting 2x gate. The most optimistic conditional
+Amdahl floor is **2.608356x**; a limited-cleanup
+proxy is **2.755223x**. These retain the observed exact
+core; they are not mathematical lower bounds on all possible exact implementations.
+The floor is between the prescribed 1.5x and 3x thresholds, so neither
+ENGINEERING_OVERHEAD_DOMINANT nor aggregate SOLVE_COST_INTRINSIC is justified.
+
+## Frozen contract and evidence
+
+Frozen SHA256: `66a18f679b6474a50e640c34cb75725691d9f2cf73f5ef0ce15c4fa0695fc5ab`. `frozen_candidate.json` and two seals protect
+the original inputs, mappings, codes, full candidate dictionary, addresses,
+train-only energy ranking, selected terms/masks, prior results, public sources and
+six primary engineering modules. All mains and the top ceil(25%) native S2 pairs
+are unchanged. Full-K symmetric softmax, ridge=5, zero initialization and original
+L-BFGS-B settings (max_iter=300, ftol=1e-11, gtol=1e-7, maxls=30) are unchanged.
+
+Six engineering cases: iris, digits, car, page_blocks, satimage, pendigits,
+seed44001. Final panel: the same 12 development datasets, seeds44001/44002/44003.
+36 original reference fits and discoveries reused; one new exact-engine head
+solve per split, 36 total. Completed engineering solves were reused in the full
+panel. No valid reference fit, discovery or completed optimized solve repeated.
+
+Fresh replay in the clean native environment verifies 36 models, 108 persisted
+probability arrays, 96648 row checks and 972
+metric checks. Coefficients, logits and probabilities are bitwise identical.
+All 3786 accepted-iteration objective/gradient
+trace checks match, including the original iteration counts. External teacher
+and tree/model engines are blocked during replay. Train/validation/test remain
+disjoint and identically ordered; test never enters fitting, ranking or stopping.
+
+Inherited **development** quality is unchanged: median test NLL
+0.208080, paired NLL ratio vs OVR
+0.749693, S2 gain retained
+84.0417%, W/T/L=[11, 0, 1].
+This is replay of known sources, not confirmation. The parent's separate
+validation retention remains 75.51%;
+no gate was redefined from test results.
+Historical deployment ratios remain deep=0.256812,
+serialized=0.406686,
+inference=0.299083 vs OVR; runtime unchanged.
+
+## Two distinct costs and clock limitations
+
+FROM_SCRATCH_COST_AFTER = historical fullVector preparation/fit + native rich
+dictionary discovery + original diagnostic term-statistics pass + original
+selected scaffold preparation + new shared index/buffer preparation + new exact
+head solve wall time. This is a **conservative reconstructed dependency cost**,
+not an observed new-data end-to-end fit. It retains historical unused work to keep
+the published 7.473x parent cost definition comparable. Actual new-data deployment
+still needs acquisition of encoder, native candidate dictionary, all-candidate
+addresses and train energy statistics before pruning to the same 25% terms.
+
+GIVEN_FROZEN_SCAFFOLD_COST = measured load + new index/buffer preparation + exact
+head solve. It skips valid persisted discovery, encoding and candidate statistics;
+it must not be presented as training a new dataset from scratch.
+
+The parent did not explicitly charge full candidate address generation used by
+ranking. Adding its persisted all-partition S2 address timing, conservatively,
+raises the reconstructed median to **3.710409x**.
+This is sensitivity to a missing prerequisite, not a new benchmark or an altered
+OVR denominator. Dedicated final cached validation prediction and serialization
+were outside the parent fit definition; they are shown separately below.
+
+The original acquisition logs do not separate A-E clocks (raw preprocessing,
+shared encoding, main construction, pair enumeration/dedup/sorting, hash/address).
+These stages are explicitly NOT_SEPARATELY_INSTRUMENTED_NO_REFIT, not zero-cost.
+Rerunning discovery merely to recover missing subphase clocks would violate the
+reuse requirement. The native dictionary block is measurable but not divisible
+into invented percentages. Pair enumeration/hash/support internals likewise have
+no independent before/after clocks; cached ranking alone is measured.
+
+Below, seconds and shares are **equal-case arithmetic means**, three cases per
+source. Shares refer to each row's stated mode; after-export K/M use the augmented
+export denominator. Source-balanced medians of paired ratios are used for verdicts,
+not ratios of median seconds. Clock resolution gaps remain in profile.csv.
+
+| Cost mode | A-M | Recorded component | Mean seconds | Mean share |
+|---|---|---|---:|---:|
+| AFTER_EXPORT_OUTSIDE_HISTORICAL_FIT | K | cached_validation_prediction | 0.001453 | 0.169% |
+| AFTER_EXPORT_OUTSIDE_HISTORICAL_FIT | M | model_serialization | 0.002548 | 0.820% |
+| FROM_SCRATCH_AFTER | A_B | fullVector_preparation_and_unused_learning | 0.092984 | 7.739% |
+| FROM_SCRATCH_AFTER | C_D_E_F_G | native_dictionary_discovery_unseparated | 0.303529 | 24.447% |
+| FROM_SCRATCH_AFTER | E_G | selected_scaffold_materialization_unseparated | 0.008439 | 1.643% |
+| FROM_SCRATCH_AFTER | F | full_diagnostic_statistics_proxy | 0.146459 | 13.709% |
+| FROM_SCRATCH_AFTER | G | coded_gather_score_accumulation | 0.321969 | 14.323% |
+| FROM_SCRATCH_AFTER | G | index_and_buffer_preparation | 0.005099 | 0.459% |
+| FROM_SCRATCH_AFTER | H | coupled_target_residual | 0.188822 | 12.901% |
+| FROM_SCRATCH_AFTER | I | shared_gradient_statistics_no_Gram | 0.270479 | 10.609% |
+| FROM_SCRATCH_AFTER | J | L_BFGS_and_other_overhead | 0.088449 | 7.007% |
+| FROM_SCRATCH_AFTER | J | ridge_and_gradient_assembly | 0.032576 | 2.537% |
+| FROM_SCRATCH_AFTER | L | callback_logging_and_checkpoint_diagnostics | 0.034087 | 4.626% |
+| FROM_SCRATCH_BEFORE | A_B | fullVector_preparation_and_unused_learning | 0.092984 | 3.899% |
+| FROM_SCRATCH_BEFORE | C_D_E_F_G | native_dictionary_discovery_unseparated | 0.303529 | 12.572% |
+| FROM_SCRATCH_BEFORE | E_G | selected_scaffold_materialization_unseparated | 0.008439 | 0.870% |
+| FROM_SCRATCH_BEFORE | F | full_diagnostic_statistics_proxy | 0.146459 | 7.081% |
+| FROM_SCRATCH_BEFORE | H_I_J_L | original_joint_solve_including_duplicate_callbacks | 2.985776 | 75.579% |
+| GIVEN_FROZEN_SCAFFOLD | G | cached_artifact_load | 0.010622 | 6.524% |
+| GIVEN_FROZEN_SCAFFOLD | G | index_and_buffer_preparation | 0.005099 | 0.931% |
+| GIVEN_FROZEN_SCAFFOLD | H_I_J_L | exact_joint_solve | 0.936382 | 92.544% |
+| HISTORICAL_LIMIT | A | raw_input_preprocessing | NOT_IDENTIFIED | NOT_IDENTIFIED |
+| HISTORICAL_LIMIT | B | shared_encoding | NOT_IDENTIFIED | NOT_IDENTIFIED |
+| HISTORICAL_LIMIT | C | main_state_construction | NOT_IDENTIFIED | NOT_IDENTIFIED |
+| HISTORICAL_LIMIT | D | pair_enumeration_dedup_sort | NOT_IDENTIFIED | NOT_IDENTIFIED |
+| HISTORICAL_LIMIT | E | pair_hash_addressing | NOT_IDENTIFIED | NOT_IDENTIFIED |
+
+Before, original solve including duplicate callbacks averages
+75.579% of fit; after, all optimized solve
+subcomponents together average 52.004%. Discovery is not the sole
+bottleneck. F contains the old diagnostic statistics proxy; I is dynamic gradient
+aggregation inside the nonlinear solve. There is no dense Gram/Hessian stage.
+
+## Reusable, removable and mandatory work
+
+| Component | Exactly eliminable? | Reusable here? | Required on unseen data? |
+|---|---|---|---|
+| A/B preprocessing/encoder/codes | No | Yes, verified codes/mappings | Yes |
+| C/D native main/pair discovery | No under the frozen recipe | Yes | Yes |
+| E candidate addresses/hash | No | Yes, exact cached addresses | Yes, including candidates for ranking |
+| F energy selector statistics | No | Yes | Yes, train-only |
+| F full diagnostics for other selectors | Yes as a future direct acquisition path | Yes | No; energy sufficient, its future clock not measured |
+| Full S2 global head | Yes; not required and not fitted here | Existing fits retained | No |
+| Eight unused VectorMain value updates | Yes; bounds from stored trace | Existing VectorMain artifact | No, but encoder/native prerequisites remain |
+| G selected terms/index/buffers | Reuse; no identical reconstruction per evaluation | Yes | Yes once |
+| H coupled residual/loss | No | Dynamic; cached targets | Yes per objective call |
+| I shared class-bin statistics | No | Cached index, dynamic weights | Yes per objective call |
+| J exact numerical solve | No | Completed checkpoints reused | Yes |
+| L redundant callback objective call | Yes, removed exactly | Last objective/gradient cache | No duplicate calculation needed |
+| K validation prediction | No | Same codes and scaffold | Yes once as required by protocol |
+| M serialization | No for persistence | Completed model | Yes once |
+
+The conditional optimistic floor retains observed native discovery plus new
+exact numerical core, setting every other component's cost to zero. The limited
+cleanup proxy additionally keeps VectorMain overhead minus stored unused updates,
+selected scaffold preparation and shared index/buffer setup. Both remove callback
+diagnostics and irrelevant full statistics optimistically. They do not establish
+that a complete raw-input fitting path has been implemented at those ratios.
+Core-only with scaffold free is 1.891273x OVR. Satimage's
+core-only source mean is >3x; declaring the whole panel intrinsically >3x would
+be incorrect. No micro-optimization loop is continued after this audit.
+
+## Exact engineering performed
+
+One preallocated float64 coefficient buffer, score buffer and gather buffer;
+np.take(out=...) retains the original term accumulation order. Valid-address masks
+and compact row indices are constructed once. Dynamic scoring no longer creates
+the old sequence of redundant arrays for every objective call.
+
+For each term, class-bin indices are flattened once in row/class order. One
+np.bincount aggregates all classes and reshapes to (states,K), replacing K calls
+and column_stack. The per-bin/per-class summation row order is unchanged, proven
+bitwise against the reference even with strided residuals and invalid addresses.
+The multiclass loss remains coupled; independent RHS solves, a fixed shared Gram
+or factorization substitution would change the objective. No such substitution
+was made. The shared L-BFGS history was already present.
+
+Callback loss/gradient diagnostics reuse the immediately preceding objective
+evaluation, with a parameter-equality assertion, eliminating
+3786 duplicate evaluations. The same objective,
+gradient and stopping are recorded; no max_iter reduction, early stop or new
+selector. Copies of the final intercept avoid retaining a larger parameter owner;
+values and prediction behavior are unchanged. The existing inference runtime is
+not optimized or modified in this task.
+
+Paired current microbenchmarks: one warmup, seven alternating reference/optimized
+then optimized/reference repeats, one process and one BLAS/OpenMP thread.
+Combined objective kernel speedup=1.964336x;
+class-bin statistic kernel=4.383638x;
+score/gather-buffer phase=1.737329x.
+These gains overlap and must not be multiplied or counted as independent full-fit
+speedups. Full-fit before timing is historical and after timing current, one solve
+per unit; equal thermal/load conditions across historical sessions are not claimed.
+
+## Encoding, pair acquisition and design layout
+
+OVR stores K separately fitted encoders, with identical schema hashes in all
+36 cases. Historical class preprocessing sums have a source-median
+0.041507s, compared with 0.011058s for
+the maximum single class preprocessing clock. This bounds redundant work but is
+not a measured optimized OVR fit. The frozen OVR denominator is unchanged.
+pairs_25 already has one shared encoder and rich discovery already shares 4/8/16
+level codes across classes. Class-specific native discovery has different residual
+targets and cannot be deleted as repeated encoding. The current exact path reuses
+all codes rather than rebinning; no additional K-fold encoding speedup is claimed.
+
+Candidate pair terms range 23-117;
+retained terms range 6-30.
+Median source-mean retention=25.720% (ceil rounding).
+Stable cached energy ranking is verified in original order; source-median cached
+ranking 0.000187s. Ranking uses all original candidates; full-S2 head fitting
+does not enter the selector. Zero pair hashes, supports, candidate dictionaries or
+addresses regenerated. A generation/hash speedup on unseen data was not measured.
+
+Design shape is (training rows, sum coded-state slots), stored in memory.csv for
+each split. The hypothetical one-hot density is
+0.008419-0.016224, with up to
+355.53MiB as a dense float64 design.
+Zero one-hot materializations/copies, zero dense Gram/full Hessian. Actual addresses
+are int32; weights and contiguous row/class accumulators float64. Extra class-bin
+indices peak at 34.71MiB, constructed once,
+not per iteration. np.bincount still allocates the current gradient accumulator;
+no sparse/chunked summation with a different numerical order was admitted.
+Validation uses precomputed validation codes and the same immutable scaffold;
+there is no fresh encoder, candidate proposal or discovery in a validation pass.
+
+## Iterations and diagnostic-only convergence
+
+Accepted iterations range 23-213; source-median
+mean=107.333. Iterations.csv records objective, improvement, incremental
+wall time, gradient infinity norm and update norm for every accepted iteration.
+No iteration path differs from its frozen reference. There is no assumption that
+100 iterations are always enough: satimage averages206.7, pendigits188.7.
+
+Validation probability convergence is recorded only at iterations1/2/5/every10/final.
+The median fraction of final iterations first recorded within max absolute
+probability error 1e-2/1e-3/1e-4/1e-6 is
+0.404/0.635/
+0.829/1.000.
+This is not the exact earliest qualifying iteration or a bitwise equivalence
+certificate. Diagnostics never select a model; stopping and final predictions
+remain the originals. Practical approximation cannot count as exact engineering.
+
+## Source-level fit results
+
+Each row averages three paired split ratios; the panel summary takes the median
+across 12 rows. Absolute panel medians before/after are
+0.901773s/0.443043s; they are not a paired
+ratio estimator. All given-scaffold solves include current instrumentation/logging.
+
+| Dataset | Before / OVR | After / OVR | Given scaffold / OVR | Iterations | Candidates | Retained |
+|---|---:|---:|---:|---:|---:|---:|
+| balance_scale | 5.849 | 3.532 | 1.565 | 44.0 | 33.0 | 8.7 |
+| car | 7.148 | 3.449 | 2.305 | 146.0 | 37.7 | 9.7 |
+| cmc | 6.035 | 2.925 | 1.635 | 106.0 | 41.7 | 11.0 |
+| digits | 10.410 | 3.121 | 2.102 | 123.0 | 110.3 | 28.0 |
+| glass | 7.535 | 3.873 | 2.032 | 69.7 | 57.3 | 14.7 |
+| iris | 5.631 | 3.500 | 1.295 | 24.3 | 26.0 | 7.0 |
+| page_blocks | 7.545 | 3.736 | 2.397 | 124.7 | 41.7 | 11.0 |
+| pendigits | 9.528 | 4.219 | 2.677 | 188.7 | 99.0 | 25.0 |
+| satimage | 12.297 | 4.712 | 3.306 | 206.7 | 55.7 | 14.3 |
+| segment | 7.411 | 3.799 | 1.974 | 108.7 | 69.7 | 17.7 |
+| vehicle | 7.964 | 4.210 | 2.373 | 92.7 | 44.7 | 11.7 |
+| wine | 6.473 | 3.396 | 1.075 | 27.7 | 30.0 | 7.7 |
+
+P90 across source mean ratios=4.218499x. Worst source=satimage,
+4.712102x; before satimage=12.297210x. No source is hidden by the median.
+
+## RAM, environment and audit
+
+Prior audit retained RSS snapshots only; **peak RAM before is NOT MEASURED**.
+Largest historical snapshot=0.145546GiB. The largest
+new Windows cumulative process peak working set=0.196980GiB.
+It is a sequential-process lifetime peak, not independent per-model peaks or a
+paired before/after memory ratio. Current working-set snapshots and structural
+buffer/gradient bytes are in memory.csv; resource policy was comfortably respected.
+
+Environment.json records Windows11, one process/thread, about32GB RAM,
+Python3.12.14/NumPy2.3.5/SciPy1.16.2 and actual loaded threadpools. Power mode not
+controlled. No second hardware replication or universal speed guarantee claimed.
+
+Private tests: 4PASS; fresh native-only replay: PASS; private/public Ruff reports
+and final_audit.json complete the final checks. Public test evidence409PASS/4knownXFAIL
+is reused under unchanged public hashes, not mislabeled as a new full test run.
+51 public files and 2322 protected source/artifact files remain byte-identical.
+Memory history1-78 and rejected directions are preserved; regression confirmation,
+native SafeBlend and binary PARTIAL_BINARY_SIGNAL are unchanged. Research stays
+Git-ignored, docs/research remains traceable, no commit/push/tag/release/remotes.
+
+## Required final 28 fields
+
+1. Frozen hash: `66a18f679b6474a50e640c34cb75725691d9f2cf73f5ef0ce15c4fa0695fc5ab`.
+2. Current reconstructed fit ratio: 3.634165x OVR; parent=7.472948x.
+3. Preprocessing share: not separately identified; A/B combined shown above.
+4. Encoding share: not separately identified; no fabricated split of A/B.
+5. Pair discovery share: C/D/E/F/G native block averages24.447% after; pair-only unknown.
+6. Pair materialization share: E/G selected block1.643%; index/buffers0.459%; pair-only unknown.
+7. Statistics share: F original diagnostics13.709%; I dynamic shared gradient10.609% after.
+8. Solve share: 75.579% before / 52.004% after, includes G/H/I/J/L solve work.
+9. Validation share:0.169% of augmented export cost (mean; outside historic fit).
+10. Serialization share:0.820% of augmented export cost (mean; outside historic fit).
+11. Given-scaffold ratio: 2.067036x OVR.
+12. Exact conditional floor: 2.608356x; limited-cleanup=2.755223x. Not a universal lower bound.
+13. Duplicate work: callback evaluations, avoidable VectorMain value updates/full diagnostic stats, retained parameter-owner copy; original fit proxy still includes historical waste.
+14. Shared encoding gain: zero repeated encoding in cached path; pairs already shared; no independently measured new-data speedup.
+15. Pair-generation gain: zero regeneration; no fresh generation timing/speedup claim.
+16. Shared-statistics gain: 4.383638x paired kernel.
+17. Multiclass solve reuse gain: same batched statistic improvement; joint solver already shared, no additional factorization gain. Combined kernel=1.964336x.
+18. Buffer/layout gain: score phase=1.737329x; not separable into individual optimizations.
+19. Fit before: 7.472948x; median absolute=0.901773s.
+20. Fit after: 3.634165x reconstructed; median absolute=0.443043s.
+21. P90: 4.218499x across source means.
+22. Worst: satimage, 4.712102x OVR.
+23. Peak RAM before/after: NOT_MEASURED / 0.196980GiB cumulative new process peak.
+24. Quality replay: 12x3 PASS, 108 arrays,972metrics; unchanged objective path.
+25. Bitwise mismatches:0 coefficients/logits/probabilities.
+26. Verdict: **PARTIAL_COST_RECOVERY**.
+27. Round79 justified: **NO**; not started.
+28. Precise next step: Stop this audit; no Round79 or independent transfer. The frozen pairs_25 exact engineering track retains bitwise quality but reconstructed from-scratch fit is 3.634x OVR, cached-scaffold fit 2.067x and conditional optimistic floor 2.608x. Do not continue micro-optimization indefinitely. Reopen cost work only with a falsifiable exact method addressing joint-score/statistic/solve cost or mandatory native discovery, preserving terms, masks, loss, ridge, selection and numerical contract. Before any independently authorized transfer, show complete new-data fitting cost <=2x OVR including all discovery, encoder, candidate addressing and energy statistics. No public promotion, no new quality tuning, no iteration-limit rescue. Regression and binary unchanged.
+
+
+
+## POST_R78_MULTICLASS_PAIRS25_SCALING — completed2026-10-05
+
+# POST-R78 — MULTICLASS PAIRS25 SCALING & PRACTICALITY AUDIT
+
+Completed locally2026-10-05. **MIXED_BY_SCALE**. Not Round79.
+Index78,public0.2.0rc2; public/API/compiler unchanged. No new architecture,optimization,selector,loss,regularizer,budget or stopping.
+On 6 fresh real systems workloads, pairs25 median absolute fitting is **34.013100s**. OVR median on 5 usable paired sources is **5.914346s**; pairs25 median within that same paired cohort is **18.220396s**, paired median ratio **3.747813x**. Fresh-real P90 **252.476733s**; worst **covtype, 452.137570s**. Seconds precede ratios.
+Frozen manifest SHA256 `4f2383348a3c24d2a5e9d40f08a92e6c46674d262a481c34986e50ec030d371c`. Parent recipe hash `66a18f679b6474a50e640c34cb75725691d9f2cf73f5ef0ce15c4fa0695fc5ab`. Original cost audit remains intact:3.634x reconstructed full cost,0.443043s small-panel absolute median. This task measures new raw-data acquisition directly; its clock semantics differ explicitly from the historical diagnostic-statistics proxy.
+## Scope, recipe and timing
+
+Nine real systems sources; three valid frozen small cases reused, six fresh larger cases. One preregistered stratified60/20/20 split each.16 unique synthetic workloads; baselineN10k/P10/K5 shared between the three axes, never fitted three times. Synthetic losses are not quality evidence. All real losses are sanity checks, never model selection, and these sources are not independent predictive confirmation.
+
+The frozen optimized objective/evaluator/solver modules are imported byte-identically. New-data acquisition uses original VectorMain.fit, encoder, train-only native scaffold.discover and original energy arithmetic. All main terms plus ceil25% of the original native pair candidates, stable gradient-energy ranking and train-support fullK mask. The train-generated terms vary naturally between datasets; the discovery/selection procedure is fixed. No fullS2 head is needed to calculate the prior-gradient energy. Only that original statistic is calculated; contribution/stability diagnostics and other selectors are not newly fitted. The unused VectorMain value iterations remain charged to avoid any new optimization.
+
+FullK symmetric softmax, ridge5, zero init, max_iter300, ftol1e-11, gtol1e-7,maxls30; no change after observing outcomes. Original inference runtime retained. Inheritance exactness was verified on12x3 by the prior audit; new systems models have no independently refitted reference optimum, so no bitwise equivalence-to-an-unfitted-reference claim is made. Native persisted predictions are freshly replayed bitwise.
+
+Fresh fitting cost = VectorMain preparation + further encoding + original native discovery + all-candidate train addressing + original energy statistics + selected-basis/holdout address construction + index/buffer setup + exact solve wall. Includes every prerequisite, including the candidate addressing missed by the old proxy. Downloads, data parsing, split construction, checkpoint writes, final sanity/inference/serialization are outside model-fitting clocks, recorded separately where available. OVR cost sums the unchanged class-fit wall times; all classes checkpointed once. No optimized OVR or modified denominator. Cached source fitting clocks stay historical/reconstructed and are excluded from the primary fresh-real decision.
+
+One heavy subprocess and one BLAS/OpenMP thread. Each new point fitted once; no repeated timing fits or quality tuning. Inference one warmup/five alternating paired runs for1/32/1k/100k;1M only forlargeN>=100k workloads passing frozen safety criteria. Large inference batches repeat heldout rows when necessary; they measure throughput, not new observations or predictive quality. Power mode and historical/current thermal equivalence are not claimed. Environment versions are in environment.json.
+
+Active native imports resolve to the local .venv installed package. active_runtime_source_audit.json verifies byte-identical classifier/regressor, base, training, core and encoder sources against this canonical repository. Version is0.2.0rc2; _version.py differs only by CRLF/LF. Unused installed experimental modules differ from current source and are not invoked here. This scoped environment discrepancy is recorded rather than silently updating any package or public file.
+
+## Real workload costs
+
+| name | N | P | K | OVR_fit_s | pairs_fit_s | ratio | band | observed_raw_input |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| page_blocks | 5473 | 10 | 5 | 0.417259 | 1.378939 | 3.304759 | INTERACTIVE | False |
+| satimage | 6430 | 36 | 6 | 0.775288 | 3.667224 | 4.730145 | INTERACTIVE | False |
+| pendigits | 10992 | 16 | 10 | 2.055416 | 7.666856 | 3.730075 | PRACTICAL | False |
+| gas | 13910 | 128 | 6 | 2.832236 | 11.498101 | 4.059726 | PRACTICAL | True |
+| letter | 20000 | 16 | 26 | 6.100643 | 52.815896 | 8.657431 | HEAVY | True |
+| shuttle | 58000 | 9 | 7 | 5.914346 | 16.218723 | 2.742268 | PRACTICAL | True |
+| sensorless | 58509 | 48 | 11 | 13.334450 | 49.805803 | 3.735123 | HEAVY | True |
+| connect4 | 67557 | 42 | 3 | 4.861608 | 18.220396 | 3.747813 | PRACTICAL | True |
+| covtype | 581012 | 54 | 7 | N/A | 452.137570 | N/A | VERY_HEAVY | True |
+
+Covtype pairs25 acquisition/solve completed and is retained in absolute-cost/RAM/scaling summaries. The unchanged public OVR reference rejects this input through its fixed512MiB preflight guard before its first class fit. No guard bypass, subsampling, feature deletion or failed-fit retry. OVR ratio/quality/latency are N/A on this source, not a predictive loss. Only the remaining measurement stages were completed from persisted pairs25 artifacts. This technical reference limit is not the14GiB host limit, and is part of the measured deployment envelope.
+
+
+
+All nine sources including cached cases: OVR median3.846922s,pairs median16.218723s,median paired ratio3.741468x. This aggregate is not a fresh fit replication. Descriptive bands: FAST<1s,INTERACTIVE1-<5s,PRACTICAL5-<30s,HEAVY30-120s,VERY_HEAVY>120s. Fresh-source counts={'PRACTICAL': 3, 'HEAVY': 2, 'VERY_HEAVY': 1}. Bands describe UX and are not scientific quality gates.
+
+## Controlled scaling
+
+Independent seeded standard normal columns, same signal/noise-generating mechanism and distribution; only the indicated axis changes. N usesP10/K5; K usesN10k/P10; P usesN10k/K5. N denotes total input rows, training60%. No synthetic gain or real generalization claim. Empirical least-squares log-log slopes include changing learned dictionary/state count and optimizer iterations under the fixed recipe; they are conditional observed exponents, not theoretical complexity guarantees. One fit per point gives no credible timing-replication CI.
+
+### N
+
+| value | OVR_fit_s | pairs_fit_s | ratio | states | values | candidate_pairs | retained_pairs | solve_share | discovery_share | band |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2000 | 0.229303 | 0.644260 | 2.809646 | 3581 | 7090 | 51 | 13 | 58.027944 | 29.327743 | FAST |
+| 5000 | 0.558673 | 1.413890 | 2.530799 | 4235 | 6705 | 62 | 16 | 53.476254 | 36.985329 | INTERACTIVE |
+| 10000 | 1.261165 | 2.377901 | 1.885480 | 3165 | 4395 | 48 | 12 | 44.874487 | 49.862709 | INTERACTIVE |
+| 25000 | 3.436269 | 6.180313 | 1.798553 | 2653 | 3895 | 38 | 10 | 47.165966 | 45.218773 | PRACTICAL |
+| 50000 | 5.744761 | 15.539508 | 2.704988 | 3165 | 4590 | 45 | 12 | 58.550109 | 36.839296 | PRACTICAL |
+| 100000 | 12.198081 | 33.675604 | 2.760730 | 2397 | 4140 | 34 | 9 | 60.503673 | 34.843215 | HEAVY |
+| 250000 | 40.035712 | 93.611463 | 2.338199 | 1885 | 3775 | 28 | 7 | 54.089290 | 39.930093 | HEAVY |
+| 500000 | 72.394015 | 188.931182 | 2.609762 | 1885 | 3775 | 26 | 7 | 58.216070 | 36.879274 | VERY_HEAVY |
+
+Empirical slopes={'pairs_fit_s': 1.0565494956202133, 'OVR_fit_s': 1.0485628208083457, 'discovery_s': 1.0687044248603241, 'solve_s': 1.0736931124386935}. Observed crossover markers={'first_HEAVY': 100000, 'first_VERY_HEAVY': 500000, 'first_ratio_above2': 2000, 'ratios': [{'value': 2000, 'ratio': 2.809645586558941}, {'value': 5000, 'ratio': 2.5307994011561847}, {'value': 10000, 'ratio': 1.8854799332325738}, {'value': 25000, 'ratio': 1.7985531576353035}, {'value': 50000, 'ratio': 2.7049875387345876}, {'value': 100000, 'ratio': 2.76072958097665}, {'value': 250000, 'ratio': 2.3381990675999154}, {'value': 500000, 'ratio': 2.609762434865588}], 'not_extrapolated': True}. No extrapolation beyond measured points.
+
+### K
+
+| value | OVR_fit_s | pairs_fit_s | ratio | states | values | candidate_pairs | retained_pairs | solve_share | discovery_share | band |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 3 | 1.036826 | 2.069308 | 1.995811 | 2653 | 2214 | 37 | 10 | 42.925808 | 47.424564 | INTERACTIVE |
+| 5 | 1.261165 | 2.377901 | 1.885480 | 3165 | 4395 | 48 | 12 | 44.874487 | 49.862709 | INTERACTIVE |
+| 10 | 2.373550 | 6.032462 | 2.541535 | 5833 | 25550 | 85 | 22 | 60.950889 | 33.490225 | PRACTICAL |
+| 20 | 2.637271 | 12.390049 | 4.698057 | 9782 | 77180 | 145 | 37 | 71.229967 | 23.509626 | PRACTICAL |
+| 40 | 5.152281 | 27.498580 | 5.337166 | 16438 | 330240 | 251 | 63 | 76.333100 | 18.962033 | PRACTICAL |
+
+Empirical slopes={'pairs_fit_s': 1.046490570442487, 'OVR_fit_s': 0.6020189099660254, 'discovery_s': 0.6483747501649031, 'solve_s': 1.2925597532383122}. Observed crossover markers={'first_HEAVY': None, 'first_VERY_HEAVY': None, 'first_ratio_above2': 10, 'ratios': [{'value': 3, 'ratio': 1.9958106744290238}, {'value': 5, 'ratio': 1.8854799332325738}, {'value': 10, 'ratio': 2.5415352689156743}, {'value': 20, 'ratio': 4.698056957294259}, {'value': 40, 'ratio': 5.337166140592321}], 'not_extrapolated': True}. No extrapolation beyond measured points.
+
+### P
+
+| value | OVR_fit_s | pairs_fit_s | ratio | states | values | candidate_pairs | retained_pairs | solve_share | discovery_share | band |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10 | 1.261165 | 2.377901 | 1.885480 | 3165 | 4395 | 48 | 12 | 44.874487 | 49.862709 | INTERACTIVE |
+| 25 | 1.113486 | 2.521183 | 2.264225 | 3421 | 7605 | 51 | 13 | 39.633090 | 45.799129 | INTERACTIVE |
+| 50 | 1.159230 | 2.509967 | 2.165202 | 3421 | 7605 | 51 | 13 | 39.000472 | 43.244050 | INTERACTIVE |
+| 100 | 1.480537 | 3.037943 | 2.051920 | 3969 | 6760 | 60 | 15 | 46.659757 | 38.740168 | INTERACTIVE |
+| 200 | 1.795009 | 3.161961 | 1.761530 | 4240 | 8655 | 61 | 16 | 44.853496 | 34.253928 | INTERACTIVE |
+
+Empirical slopes={'pairs_fit_s': 0.10122016976683695, 'OVR_fit_s': 0.12820687054552926, 'discovery_s': -0.02228411004002715, 'solve_s': 0.11996448465108439}. Observed crossover markers={'first_HEAVY': None, 'first_VERY_HEAVY': None, 'first_ratio_above2': 25, 'ratios': [{'value': 10, 'ratio': 1.8854799332325738}, {'value': 25, 'ratio': 2.264225462056155}, {'value': 50, 'ratio': 2.1652017287360468}, {'value': 100, 'ratio': 2.0519195329891406}, {'value': 200, 'ratio': 1.7615295680750125}], 'not_extrapolated': True}. No extrapolation beyond measured points.
+
+## Discovery/solve shares and state capacity
+
+| name | states | values | terms | candidate_pairs | retained_pairs | discovery_s | solve_s | discovery_share | solve_share |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| page_blocks | 3061 | N/A | 35 | 42 | 11 | 0.342243 | 0.848930 | 24.819307 | 61.563992 |
+| satimage | 4068 | N/A | 66 | 55 | 14 | 0.556673 | 2.581268 | 15.179696 | 70.387527 |
+| pendigits | 6811 | N/A | 68 | 100 | 25 | 1.533746 | 4.784704 | 20.004891 | 62.407640 |
+| gas | 4551 | 13974.000000 | 71 | 62 | 16 | 2.257185 | 8.069129 | 19.630933 | 70.177925 |
+| letter | 14170 | 105170.000000 | 96 | 215 | 54 | 5.954985 | 44.488266 | 11.274986 | 84.232719 |
+| shuttle | 4333 | 9940.000000 | 40 | 61 | 16 | 5.794200 | 8.946136 | 35.725380 | 55.159309 |
+| sensorless | 5050 | 18271.000000 | 37 | 76 | 19 | 10.230216 | 35.324581 | 20.540210 | 70.924628 |
+| connect4 | 2686 | 414.000000 | 31 | 37 | 10 | 3.466213 | 11.773599 | 19.023806 | 64.617690 |
+| covtype | 5838 | 10402.000000 | 54 | 86 | 22 | 83.732616 | 331.509684 | 18.519279 | 73.320535 |
+
+The previous52%solve/24.45%discovery shares used full diagnostic-statistics overhead. Current raw fitting has energy-only statistics; compare measured seconds as well as shares. A higher solve share does not itself imply higher complexity or an intrinsic lower bound. State and pair counts are data-dependent under the same budget and are reported for eachpoint.
+
+The frozen budget keeps25% of the original class-dependent native candidate pool, rather than a constant absolute pair count. Increasing K also increases the learned pool and retained capacity. These measurements expose that combined effect; they do not identify an independent causal law for states/pairs, since deliberately varying that budget was forbidden. The low P exponent comes from adding independent noise features around the same three-feature signal, with modest selected-capacity growth; it is not a guarantee for200informative features. N scaling is near linear under the fixed300-iteration cap, not evidence about time to full convergence.
+
+## Memory and inference
+
+| name | pairs_deep | deep_ratio | pairs_serialized | serialized_ratio | peak_RSS |
+| --- | --- | --- | --- | --- | --- |
+| page_blocks | 163680 | 0.300122 | 67658 | 0.443726 | 183685120 |
+| satimage | 359158 | 0.261483 | 134427 | 0.461742 | 239489024 |
+| pendigits | 414750 | 0.293478 | 260314 | 0.693651 | 216231936 |
+| gas | 494072 | 0.330853 | 281449 | 0.471856 | 401743872 |
+| letter | 1398663 | 0.859754 | 1289157 | 1.617678 | 485380096 |
+| shuttle | 189010 | 0.508396 | 133277 | 0.695038 | 259870720 |
+| sensorless | 409463 | 0.316691 | 272932 | 0.477378 | 328802304 |
+| connect4 | 213850 | 0.443264 | 38473 | 0.267218 | 254627840 |
+| covtype | 482368 | N/A | 162585 | N/A | 1562992640 |
+
+Fresh-real peak sampled workload RSS=1.455650GiB; all real/synthetic workloads=1.455650GiB; target10GiB/hard14GiB. Fresh median retained model=445916bytes,ratio0.443264; serialized=217758bytes,ratio0.477378. Deep traversal counts array/memoryview owners and aliases once. Primary RSS uses the worker internal20ms monitor. The250ms parent supervisor records the Windows launcher, whose RSS is not a reliable worker peak; it is not an independent confirmation of RAM consumption or a proven external hard kill. Conservative preflight and all internal sampled worker peaks satisfy the budget; instantaneous peaks between samples cannot be guaranteed. Per-stage peaks in stage_memory.csv distinguish acquisition/solve/OVR/inference; the maximum includes shared input and all workload stages, not solely final-model memory. Cached cases have only load/prediction peaks, not a new fit peak. Temporary address/index/buffer sizes are in memory.csv.
+
+| name | OVR_batch1_s | pairs_batch1_s | OVR_batch32_s | pairs_batch32_s | OVR_batch1000_s | pairs_batch1000_s | OVR_batch100000_s | pairs_batch100000_s |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| page_blocks | 0.003785 | 0.000983 | 0.004077 | 0.001019 | 0.007706 | 0.002567 | 0.349629 | 0.196147 |
+| satimage | 0.008211 | 0.001669 | 0.007716 | 0.001624 | 0.015273 | 0.003764 | 1.008034 | 0.427319 |
+| pendigits | 0.006852 | 0.001193 | 0.007438 | 0.001241 | 0.013011 | 0.002799 | 1.192768 | 0.544514 |
+| gas | 0.055135 | 0.009320 | 0.051024 | 0.011383 | 0.102827 | 0.017874 | 5.639876 | 1.278905 |
+| letter | 0.068986 | 0.006158 | 0.075845 | 0.007420 | 0.117662 | 0.015992 | 2.693977 | 1.197242 |
+| shuttle | 0.012523 | 0.002373 | 0.011530 | 0.002275 | 0.018828 | 0.004574 | 0.504122 | 0.263633 |
+| sensorless | 0.050556 | 0.005450 | 0.041786 | 0.004962 | 0.075513 | 0.009755 | 3.712699 | 0.673340 |
+| connect4 | 0.063663 | 0.024337 | 0.062401 | 0.020877 | 0.090915 | 0.031011 | 2.589218 | 0.996822 |
+| covtype | N/A | 0.009809 | N/A | 0.012414 | N/A | 0.016040 | N/A | 0.612718 |
+
+Fresh-real source medians={'1': {'OVR_seconds': 0.05513509999991584, 'pairs_seconds': 0.007739299999911964, 'paired_ratio': 0.16904113713373706}, '32': {'OVR_seconds': 0.051024100000176986, 'pairs_seconds': 0.009401649999745132, 'paired_ratio': 0.19727678763531417}, '1000': {'OVR_seconds': 0.09091450000005352, 'pairs_seconds': 0.016016449999824545, 'paired_ratio': 0.1738308031925992}, '100000': {'OVR_seconds': 2.6939766999998938, 'pairs_seconds': 0.8350810999997975, 'paired_ratio': 0.38498965865191465}}. Pairs25 absolute medians use six fresh sources; OVR absolute medians and paired ratios use five available references. Paired ratios differ from ratios of median seconds. Fullp50/p95/std/raw timing samples,throughput, optional1M results and repeated-row labels are in inference.csv and per-case inference.json.
+
+Memory advantages are heterogeneous. On real letter(K26), pairs25 serialization is1.618x OVR; in the controlled K40 case it is3.147x OVR and deep retention1.751x. Thus the favorable median cannot be extended to many-class workloads without qualification, even though absolute sizes remain small.
+
+## Quality sanity and resource diagnosis
+
+| name | OVR_logloss | pairs_logloss |
+| --- | --- | --- |
+| page_blocks | 0.146594 | 0.101311 |
+| satimage | 0.456218 | 0.329917 |
+| pendigits | 0.433979 | 0.087607 |
+| gas | 0.523784 | 0.113737 |
+| letter | 1.298436 | 0.357506 |
+| shuttle | 0.049384 | 0.006076 |
+| sensorless | 0.478939 | 0.428104 |
+| connect4 | 0.676613 | 0.670773 |
+| covtype | N/A | 0.605837 |
+
+These are sanity losses only. No source,recipe,budget,solver or selector was changed after observing quality. Native replay: 1843883 row-alignment checks,bitwise mismatches=0. Original selector-energy equivalence and ordering checked against persisted original records by private tests. Solver convergence and iteration counts are retained per workload; reaching300iterations is a convergence limitation of the frozen recipe, not silently rescued or excluded.
+
+| name | iterations | converged |
+| --- | --- | --- |
+| page_blocks | N/A | N/A |
+| satimage | N/A | N/A |
+| pendigits | N/A | N/A |
+| gas | 250.000000 | True |
+| letter | 210.000000 | True |
+| shuttle | 107.000000 | True |
+| sensorless | 300.000000 | False |
+| connect4 | 300.000000 | False |
+| covtype | 300.000000 | False |
+
+Fresh real convergence=[{'name': 'gas', 'iterations': 250, 'converged': True}, {'name': 'letter', 'iterations': 210, 'converged': True}, {'name': 'shuttle', 'iterations': 107, 'converged': True}, {'name': 'sensorless', 'iterations': 300, 'converged': False}, {'name': 'connect4', 'iterations': 300, 'converged': False}, {'name': 'covtype', 'iterations': 300, 'converged': False}]; synthetic nonconverged cases=['syn_N100000_P10_K5', 'syn_N250000_P10_K5', 'syn_N500000_P10_K5']. Older cached convergence is N/A when not carried in the historical timing receipt; original protected receipts remain available. Current timings measure the frozen iteration cap, not guaranteed time to convergence. fit_components.csv contains every measured prerequisite and solve component.
+
+## Decision and next step
+
+**MIXED_BY_SCALE**. Ratios alone do not establish impracticality. The frozen descriptive decision also uses absolute times, high-scale tails, N slope and memory/deployment. Primary decision uses six fresh sources; cached small cases cannot dilute a large-workload cost.
+
+Round79justified: **NO**. Round79notstarted. Systems-only justification would not establish predictive transfer or public promotion.
+
+Decision checks={'fresh_real_under30_s': 3, 'fresh_real_total': 6, 'strict_majority_under30_s': False, 'all_fresh_real_at_most120_s': False, 'N_empirical_exponent_at_most1_5': True, 'no_reference_or_resource_reject': False, 'fresh_real_sampled_RSS_within10_GiB': True, 'paired_median_deep_at_most_half': True, 'paired_median_inference_1k_at_most_half': True}. These thresholds were frozen for this systems audit and are descriptive policy, not scientific quality gates. The strict historical ratio<=2 requirement alone is explicitly superseded: the current refusal is due to absolute large-scale cost/convergence and the reference envelope, not the fit ratio by itself.
+
+Stop; do not startRound79. Preserve the measured scale envelope and all existing quality evidence. Reopen an independent transfer only with a prospective workload restriction justified by these systems data and explicit acceptance of its absolute cost/convergence/deployment limits, or separately authorized distinct exact-cost evidence. No post-hoc selector, objective, budget or iteration change in this task.
+
+## Required final21fields
+
+1. Real datasets: page_blocks, satimage, pendigits, gas, letter, shuttle, sensorless, connect4, covtype.
+2. N/P/Kranges: {'N': [5473, 581012], 'P': [9, 128], 'K': [3, 26]}.
+3. Median absolute OVRfit: 5.914346s,freshreal.
+4. Median absolute pairs25fit: 34.013100s,freshreal.
+5. Paired median ratio: 3.747813x.
+6. P90absolute fit: 252.476733s.
+7. Worstabsolute fit: covtype,452.137570s.
+8. Nscaling slope: 1.0565494956202133.
+9. Kscaling slope: 1.046490570442487.
+10. Pscaling slope: 0.10122016976683695.
+11. Crossovers: {'N': {'first_HEAVY': 100000, 'first_VERY_HEAVY': 500000, 'first_ratio_above2': 2000, 'ratios': [{'value': 2000, 'ratio': 2.809645586558941}, {'value': 5000, 'ratio': 2.5307994011561847}, {'value': 10000, 'ratio': 1.8854799332325738}, {'value': 25000, 'ratio': 1.7985531576353035}, {'value': 50000, 'ratio': 2.7049875387345876}, {'value': 100000, 'ratio': 2.76072958097665}, {'value': 250000, 'ratio': 2.3381990675999154}, {'value': 500000, 'ratio': 2.609762434865588}], 'not_extrapolated': True}, 'K': {'first_HEAVY': None, 'first_VERY_HEAVY': None, 'first_ratio_above2': 10, 'ratios': [{'value': 3, 'ratio': 1.9958106744290238}, {'value': 5, 'ratio': 1.8854799332325738}, {'value': 10, 'ratio': 2.5415352689156743}, {'value': 20, 'ratio': 4.698056957294259}, {'value': 40, 'ratio': 5.337166140592321}], 'not_extrapolated': True}, 'P': {'first_HEAVY': None, 'first_VERY_HEAVY': None, 'first_ratio_above2': 25, 'ratios': [{'value': 10, 'ratio': 1.8854799332325738}, {'value': 25, 'ratio': 2.264225462056155}, {'value': 50, 'ratio': 2.1652017287360468}, {'value': 100, 'ratio': 2.0519195329891406}, {'value': 200, 'ratio': 1.7615295680750125}], 'not_extrapolated': True}}.
+12. Solve share byscale: fullreal/N/K/P tables above.
+13. Discovery share byscale: fullreal/N/K/P tables above.
+14. PeakRAM: 1.455650GiB,freshreal sampled workloadmaximum.
+15. Serializedmemory: median217758bytes,ratio0.477378.
+16. Inference1/32/1k/100k: {'1': {'OVR_seconds': 0.05513509999991584, 'pairs_seconds': 0.007739299999911964, 'paired_ratio': 0.16904113713373706}, '32': {'OVR_seconds': 0.051024100000176986, 'pairs_seconds': 0.009401649999745132, 'paired_ratio': 0.19727678763531417}, '1000': {'OVR_seconds': 0.09091450000005352, 'pairs_seconds': 0.016016449999824545, 'paired_ratio': 0.1738308031925992}, '100000': {'OVR_seconds': 2.6939766999998938, 'pairs_seconds': 0.8350810999997975, 'paired_ratio': 0.38498965865191465}}.
+17. Qualitysanity: finite normalized predictions,replayPASS; newreal logloss reported,not tuning.
+18. Bands: {'PRACTICAL': 3, 'HEAVY': 2, 'VERY_HEAVY': 1}.
+19. Verdict: MIXED_BY_SCALE.
+20. Round79justified: NO.
+21. Precisenextstep: Stop; do not startRound79. Preserve the measured scale envelope and all existing quality evidence. Reopen an independent transfer only with a prospective workload restriction justified by these systems data and explicit acceptance of its absolute cost/convergence/deployment limits, or separately authorized distinct exact-cost evidence. No post-hoc selector, objective, budget or iteration change in this task.
+
+## Audit and data provenance
+
+Private tests3PASS; Ruffprivate/public and final_audit.json checked. Original public409PASS/4knownXFAIL evidence reused under unchanged source hashes,not a new fullpytest run. All original research records and history1-78 preserved. Raw public datasets stored only privately; no remoteGit/commit/push/tag/release/publication. Local7-Zip decodes original.Z archives; no new package installed. GasUCI270download slug corrected before fits; concentration token excluded from original128feature classification task.
+
+- [gas UCI source](https://archive.ics.uci.edu/dataset/270)
+- [letter UCI source](https://archive.ics.uci.edu/dataset/59)
+- [shuttle UCI source](https://archive.ics.uci.edu/dataset/148)
+- [sensorless UCI source](https://archive.ics.uci.edu/dataset/325)
+- [connect4 UCI source](https://archive.ics.uci.edu/dataset/26)
+- [covtype UCI source](https://archive.ics.uci.edu/dataset/31)
+
+
+
+## POST_R78_MULTICLASS_SOLVER_AUDIT — completed2026-10-07
+
+# POST-R78 — MULTICLASS PAIRS25 SOLVER / CONVERGENCE AUDIT
+
+**VALIDATION_SATURATES_EARLY**. Completed locally; not Round79. Last completed round78,public version0.2.0rc2. Public core/API/compiler unchanged; no remote operation.
+
+## Resume and artifact preservation
+
+Already VALID before interruption: **22 complete jobs**, all six A_TRACE, all six B, five C and five R. Their final receipts, models, trajectories and original logs retain byte hashes; they were skipped without another solve. The existing four numerical tests and full public Ruff evidence are also reused under unchanged source hashes.
+
+PARTIAL/INTERRUPTED: only Covtype/C, frozen zero initialization, original full split/repeat, at iteration932 with933accepted coefficient archives. Native L-BFGS curvature history was unavailable. All936partial files were moved intact to interrupted/covtype_C_attempt01 and verified against the resume inventory.
+
+Really restarted after the manual interruption: **1 minimal unsaved solve**, Covtype/C from its preregistered zero start. Starting from iteration932 without optimizer history would create an unregistered warm start. Newly completed after resume: **57 units**, listed individually in resume_verification.json; no original encoder, discovery, scaffold, A or OVR fit was repeated on this resume. Conditioning, selection/replay and final synthesis were previously NOT_STARTED. No artifact was INVALID; the original partials and failed lint diagnostics remain preserved.
+
+A subsequent Windows WinError5 interrupted the atomic trajectory replacement for Connect4/W_coarse after815written accepted iterations. All831files are preserved in interrupted/connect4_W_coarse_environment_attempt01, including the pending atomic-write file. The three completed restricted warm stages were copied and reused under their exact key/hash; only the unsaved final rich solve was restarted. An unsealed worker entry adds at most three short retries for transient private atomic replacement failures; all nine numerical modules remain byte-identical. This is ENVIRONMENT_FAILURE recovery, not algorithm failure. By the end of the first resumed session there had been **two minimal unsaved solve restarts**, only one caused by the original manual interruption.
+
+Latest manual resume2026-10-07: **41complete units were already valid** (one is a completed Newton technical-reject diagnostic, not an accepted solver). Only Covtype/W_main was interrupted at914iterations/915accepted coefficient checkpoints. Its921partial files are intact in interrupted/covtype_W_main_manual_attempt01; the completed restricted all_main stage is reused byte-for-byte. Only the unsaved final rich solve is restarted from that frozen stage endpoint. After this latest resume, 39units were completed, including this minimal restart; 38were previously not started. **Total unsaved-solve restarts across the task: 3**, two manual interruptions plus one Windows I/O recovery. No valid final solve is rerun.
+
+The three interrupted unsaved rich trajectories record at least **1681.249851s** of additional wall work. This is a lower bound at the last saved accepted iterate, including instrumentation, not measured CPU time or exact shutdown wall. It is reported separately as actual audit/restart waste; prospective per-recipe full-fit ratios charge one successful unit and every mandatory warm stage, rather than silently claiming that this interrupted work never happened. Details are in resume_verification.json.
+
+One global endpoint **B** was frozen using train-only evidence before final test replay. Numerically eligible=False. No arm qualified on every train numerical contract; B is the preregistered **diagnostic-only** fallback for final replay, not a deployable winner.
+
+B diagnostic-fallback reconstructed full fit: median **90.973553s**, paired median **11.175329x OVR**, P90 **783.163081s**, worst **1448.902052s**. These are fallback diagnostics, not costs of a qualifying winner. Cost targets pass=False. Round79 justified: **NO**; not started.
+
+Among tested alternatives, C (history30) has the lowest observed six-source median full fit, **27.079046s**, paired median **2.659485x OVR**, P90 **868.402088s**, worst **1679.146811s**. It is not numerically eligible on the full panel and exceeds the paired/P90/worst cost targets. Its shorter median does not create a deployable recipe. The historical A300 scaling reference remains 3.747813x OVR; no fresh timing replication of that reference is claimed.
+
+## Frozen problem and scope
+
+The six fresh scaling sources are Gas, Letter, Shuttle, Sensorless, Connect4 and Covtype. The same cached inputs, row order, split, class coordinates, selected pairs25 terms, address arrays, support mask, budget, main-effect scaffold and prediction runtime are reused. Final replay uses the original12development datasets×3splits plus those six real sources. No source acquisition, encoder, discovery, or OVR fit is repeated. A300 final fits are retained. Only six A numerical solves are rerun because the prior traces lack accepted-iterate validation NLL, step, coefficient updates and probability drift; all six must reproduce the existing final parameters bitwise.
+
+The mathematical objective is mean Softmax NLL plus2.5sum(all active fullK cell values squared)/n. The intercept is unpenalized. No reference class is removed; no representation, feature pruning, state change, approximate prediction, loss, regularizer or teacher is introduced. Codes are precomputed; the evaluator uses contiguous buffers and class-state bincount statistics. Matrix-free HVP uses the exact Softmax cross-class curvature. No dense one-hot matrix or dense Hessian is created.
+
+Protocol SHA256 `0f942ac2312568edeef91789de4527164e335268e3ffb05802ce4e784045779c`; nine numerical modules sealed before any new solve. The six prior scaling source modules and all valid old fitting/model/checkpoint evidence remain protected. Every costly unit has a deterministic key and an atomic final receipt. Accepted coefficients persist at every iteration; restricted warm stages also persist completed solve receipts. L-BFGS native curvature history is not serialized, so an interrupted unsaved solve would require only that minimal stage restart, not an asserted exact continuation. No interruption or completed-fit deletion is hidden.
+
+## Solver alternatives and costs
+
+A is already L-BFGS-B(history10), zero init,ftol1e-11,gtol1e-7,maxls30,max300. B changes variables using train class priors/support-count diagonal scaling and retains the same tolerances/history10. C retains the original coordinates and uses limited history30. B/C allow up to1500iterations to reach the unchanged tolerance; this is not a relaxed stopping criterion. R is a diagnostic continuation of B with tighterftol1e-14/gtol1e-9,max2000; it establishes a common train numerical reference, not a fourth deployable solver. D is matrix-free Newton-CG, conditionally tested on the fixed Letter/Covtype pilots, with a preregistered800HVP resource ceiling. It extends only if both pilots converge at raw gradient≤1e-7 and beat B numerical time. Budget-stopped D is a technical reject, not evidence of convergence or an accepted endpoint.
+
+The sealed Newton-CG prototype calls the joint objective/gradient evaluator separately through fun and jac. Its observed cost therefore includes duplicate evaluations. These bounded pilot results reject this implementation under the fixed extension rule; they do not establish a lower bound for a cached or otherwise optimized Newton implementation. No such optimization or additional pilot is introduced here.
+
+Warm diagnostics all use B, fixed before results: W_main estimates the original main coordinates first; W_coarse uses main resolution4→4/8→all main→full pairs25; W_previous begins at historic A300, charging its earlier fit cost. Only W_coarse is the single preregistered solver+warm combination eligible for selection. No best warm/solver/tolerance/stopping combination is constructed after looking at test. Every warm stage retains the identical full objective with unselected coordinates fixed; the final dictionary and active coordinates remain unchanged.
+
+| arm | iterations | numerical_solve_s | from_scratch_fit_s | gradient_inf | peak_sampled_RSS |
+| --- | --- | --- | --- | --- | --- |
+| A_TRACE | 275 | 20.3182 | 29.9963 | 1.53796e-06 | 2.89929e+08 |
+| B | 1018.5 | 83.2196 | 90.9736 | 7.10704e-07 | 2.91344e+08 |
+| C | 194.5 | 19.7352 | 27.079 | 1.28e-07 | 2.94552e+08 |
+| D | 23 | 217.164 | 281.38 | 2.84145e-05 | 1.13514e+09 |
+| R | 811 | 45.8204 | 52.6665 | 1.22344e-08 | 2.91076e+08 |
+| W_coarse | 973 | 44.4774 | 82.2956 | 5.88389e-07 | 2.90767e+08 |
+| W_main | 1070 | 49.9256 | 71.6589 | 5.96983e-07 | 2.9072e+08 |
+| W_previous | 24 | 0.859581 | 36.3542 | 5.28522e-07 | 2.87914e+08 |
+
+Medians above use the six real sources except conditional D, whose two pilots are explicitly a different cohort. R is a diagnostic cost, not a candidate fit ratio: its sealed receipt charges acquisition plus the continuation and does not add the already completed B solve. Thus its from_scratch_fit_s label is not a standalone deployable training cost. Detailed stage/function/gradient/HVP counts and gross wall/audit overhead are in solver_results.csv,timing.csv and each receipt. Warm table from_scratch_fit_s includes restricted-stage fitting and any mandatory historic start. Do not interpret rich-stage time alone as a warm-start speedup.
+
+| case | arm | iterations | converged | gradient_inf | numerical_solve_s | from_scratch_fit_s | fit_ratio | status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| connect4 | A_TRACE | 300 | False | 2.86894e-06 | 10.4293 | 16.8647 | 3.46895 | VALID |
+| connect4 | B | 1392 | True | 3.48625e-06 | 47.8967 | 54.3301 | 11.1753 | VALID |
+| connect4 | C | 199 | True | 1.70928e-07 | 6.4989 | 12.9294 | 2.65948 | VALID |
+| connect4 | R | 1120 | True | 1.01328e-08 | 47.6665 | 54.1016 | 11.1283 | VALID |
+| connect4 | W_coarse | 1197 | True | 1.64857e-06 | 23.1681 | 37.6936 | 7.75332 | VALID |
+| connect4 | W_main | 1268 | True | 4.006e-07 | 24.8206 | 34.9795 | 7.19506 | VALID |
+| connect4 | W_previous | 33 | True | 7.67586e-07 | 0.655465 | 18.8978 | 3.88714 | VALID |
+| covtype | A_TRACE | 300 | False | 0.000211703 | 317.853 | 438.147 | N/A | VALID |
+| covtype | B | 1500 | False | 1.78894e-05 | 1328.59 | 1448.9 | N/A | VALID |
+| covtype | C | 1500 | False | 1.00139e-06 | 1558.89 | 1679.15 | N/A | VALID |
+| covtype | D | 16 | False | 5.68122e-05 | 401.921 | 522.107 | N/A | TECHNICAL_HVP_WORK_BUDGET |
+| covtype | R | 2000 | False | 1.0247e-05 | 1493.32 | 1613.55 | N/A | VALID |
+| covtype | W_coarse | 1500 | False | 1.79202e-05 | 1266.63 | 1756.51 | N/A | VALID |
+| covtype | W_main | 1500 | False | 9.86891e-06 | 1291.32 | 1534.33 | N/A | VALID |
+| covtype | W_previous | 1500 | False | 5.412e-06 | 1238.35 | 1690.94 | N/A | VALID |
+| gas | A_TRACE | 250 | True | 2.06982e-07 | 4.94974 | 8.36255 | 2.95263 | VALID |
+| gas | B | 511 | True | 1.02142e-07 | 10.6667 | 14.0796 | 4.97121 | VALID |
+| gas | C | 185 | True | 7.85867e-08 | 3.80471 | 7.21655 | 2.548 | VALID |
+| gas | R | 187 | True | 1.4336e-08 | 3.58392 | 6.99759 | 2.47069 | VALID |
+| gas | W_coarse | 519 | True | 4.84855e-07 | 6.32912 | 14.5373 | 5.13278 | VALID |
+| gas | W_main | 390 | True | 1.50798e-06 | 4.83794 | 10.4918 | 3.70441 | VALID |
+| gas | W_previous | 1 | True | 2.89457e-07 | 0.0361675 | 11.5499 | 4.07802 | VALID |
+| letter | A_TRACE | 210 | True | 9.35493e-08 | 34.8838 | 43.1279 | 7.06941 | VALID |
+| letter | B | 451 | True | 4.30639e-07 | 85.3477 | 93.6002 | 15.3427 | VALID |
+| letter | C | 190 | True | 8.50719e-08 | 32.9715 | 41.2287 | 6.75809 | VALID |
+| letter | D | 30 | True | 1.6742e-08 | 32.4079 | 40.6526 | 6.66365 | VALID |
+| letter | R | 199 | True | 5.55826e-09 | 32.463 | 40.7111 | 6.67325 | VALID |
+| letter | W_coarse | 449 | True | 9.36314e-08 | 46.953 | 96.7842 | 15.8646 | VALID |
+| letter | W_main | 488 | True | 4.96596e-07 | 51.2159 | 78.9251 | 12.9372 | VALID |
+| letter | W_previous | 8 | True | 2.24959e-07 | 0.931488 | 53.8106 | 8.82048 | VALID |
+| sensorless | A_TRACE | 300 | False | 3.5597e-06 | 30.2072 | 44.65 | 3.34847 | VALID |
+| sensorless | B | 1046 | True | 9.90769e-07 | 102.975 | 117.424 | 8.80607 | VALID |
+| sensorless | C | 427 | True | 2.64869e-07 | 43.2063 | 57.6574 | 4.32394 | VALID |
+| sensorless | R | 1026 | True | 2.43324e-08 | 105.789 | 120.236 | 9.01696 | VALID |
+| sensorless | W_coarse | 1025 | True | 6.91923e-07 | 61.9702 | 101.789 | 7.63353 | VALID |
+| sensorless | W_main | 1062 | True | 6.9737e-07 | 63.1401 | 88.5765 | 6.64268 | VALID |
+| sensorless | W_previous | 371 | True | 8.43193e-07 | 22.4704 | 72.3107 | 5.42285 | VALID |
+| shuttle | A_TRACE | 107 | True | 7.98844e-08 | 6.42751 | 13.6802 | 2.31305 | VALID |
+| shuttle | B | 991 | True | 2.07156e-07 | 81.0916 | 88.3469 | 14.9377 | VALID |
+| shuttle | C | 80 | True | 7.57875e-08 | 5.57427 | 12.8267 | 2.16875 | VALID |
+| shuttle | R | 596 | True | 9.93764e-09 | 43.9742 | 51.2314 | 8.66223 | VALID |
+| shuttle | W_coarse | 921 | True | 2.07351e-07 | 42.0018 | 67.8069 | 11.4648 | VALID |
+| shuttle | W_main | 1078 | True | 2.54348e-07 | 48.6354 | 64.3928 | 10.8876 | VALID |
+| shuttle | W_previous | 15 | True | 1.18605e-07 | 0.787674 | 17.038 | 2.88079 | VALID |
+
+Operational reconstructed full fit = original measured mandatory acquisition/discovery/address/statistics cost + current index/buffer setup + scale setup + all warm costs + current numerical solver wall, excluding this audit's accepted-iterate validation/checkpoint callbacks. Gross solver/unit wall and those excluded diagnostic costs are reported separately. The comparison does **not** claim a new end-to-end raw-data timing replication: acquisition and OVR clocks are historical. A_TRACE and the22already valid units precede the interruption; later units have clocks from the resumed session. Cross-session thermal/load equivalence is not established, and no valid A solve was repeated only for timing calibration. These are observed reconstructed costs, not a controlled paired speedup or independent timing replication. One fit per point gives no credible repeated-timing CI.
+
+Covtype's original OVR reference is rejected by its unchanged512MiB preflight guard. Its OVR ratio is N/A, never imputed or bypassed. Covtype remains in absolute median/P90/worst cost and numerical/fidelity checks. Five sources enter the paired ratio; all six enter absolute summaries.
+
+The five-source paired median **solver-free prerequisite floor is1.221512x OVR**. All five measured prerequisite costs already exceed their historical OVR full-fit clocks; a solver-only change therefore cannot reach≤1x OVR on this panel, even with a hypothetical zero-time head. This floor does not rule out≤2x; it quantifies the remaining numerical-time budget. Covtype prerequisites alone cost119.7955s and its relative floor is unavailable. cost_floor.csv contains all six rows, using valid existing receipts, with no fit rerun.
+
+## Useful iterations and validation
+
+| case | diagnosis | iteration_0.99 | iteration_0.995 | iteration_0.999 | iteration_0.9999 | validation_best_iteration | validation_suffix_saturation_iteration | prediction_stability_iteration | last20_objective_gain |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gas | UNKNOWN | 23 | 27 | 39 | 60 | 111 | 101 | 225 | 1.2097e-09 |
+| letter | UNKNOWN | 19 | 23 | 32 | 50 | 103 | 118 | 199 | 6.65027e-09 |
+| shuttle | UNKNOWN | 7 | 8 | 11 | 24 | 24 | N/A | N/A | 1.35054e-08 |
+| sensorless | STILL_IMPROVING | 11 | 16 | 43 | 87 | 30 | N/A | N/A | 1.93198e-07 |
+| connect4 | PLATEAU | 15 | 21 | 31 | 74 | 194 | 96 | 292 | 3.71182e-08 |
+| covtype | STILL_IMPROVING | 58 | 86 | 173 | 271 | 297 | 284 | N/A | 8.56504e-05 |
+
+Fractions are from initialization to the observed endpoint, **not** fractions of a certified optimal value. Prediction stability means the remaining consecutive validation probability drifts are≤1e-4; it is not a certified bound on distance to the final prediction. Validation suffix saturation requires all remaining NLLs within1e-4 of the best observed validation NLL. N/A means that suffix criterion never held, even if the best validation iteration was early. These diagnostics do not stop fitting or pick a new predictive endpoint. Full per-accepted-iterate diagnostics are in trajectories.csv. SciPy L-BFGS line-step is observed read-only; the small numerical test proves no bit changes. Newton line-step is unknown, not invented.
+
+Max300 diagnosis is based on the last20objective gain and update/gradient evidence. STILL_IMPROVING means that gain exceeds1e-7; PLATEAU means no material improvement by that diagnostic. This label is not proof of a global optimum or a spectral conditioning diagnosis. The exact objective is convex but has an unpenalized common intercept-shift null direction; coefficient identifiability is therefore not asserted merely from prediction equivalence.
+
+## Conditioning, N and K
+
+| case | point | diagonal_min | diagonal_max | diagonal_ratio | gradient_inf | gradient_l2 |
+| --- | --- | --- | --- | --- | --- | --- |
+| gas | A300 | 0.000599089 | 0.0194508 | 32.4673 | 2.06982e-07 | 2.03815e-06 |
+| gas | R | 0.000599089 | 0.0194509 | 32.4674 | 1.4336e-08 | 3.92878e-08 |
+| letter | A300 | 0.000416667 | 0.00953482 | 22.8836 | 9.35493e-08 | 1.33805e-06 |
+| letter | R | 0.000416667 | 0.00953487 | 22.8837 | 5.55826e-09 | 2.32426e-08 |
+| shuttle | A300 | 8.75245e-05 | 0.00148968 | 17.0201 | 7.98844e-08 | 3.93872e-07 |
+| shuttle | R | 8.75571e-05 | 0.00148969 | 17.0139 | 9.93764e-09 | 3.52995e-08 |
+| sensorless | A300 | 0.000142432 | 0.0445899 | 313.062 | 3.5597e-06 | 2.28864e-05 |
+| sensorless | R | 0.000142432 | 0.0445879 | 313.048 | 2.43324e-08 | 8.31235e-08 |
+| connect4 | A300 | 0.000322621 | 0.16404 | 508.461 | 2.86894e-06 | 1.93381e-05 |
+| connect4 | R | 0.000323043 | 0.164041 | 507.8 | 1.01328e-08 | 5.53211e-08 |
+| covtype | A300 | 1.43428e-05 | 0.148689 | 10366.8 | 0.000211703 | 0.0013632 |
+| covtype | R | 1.43428e-05 | 0.148801 | 10374.6 | 1.0247e-05 | 5.24453e-05 |
+| syn_N2000_P10_K5 | CACHED_FINAL | 0.00416828 | 0.098684 | 23.675 | 1.52041e-06 | 4.9705e-06 |
+| syn_N5000_P10_K5 | CACHED_FINAL | 0.00166742 | 0.0969984 | 58.1727 | 3.87092e-07 | 1.33678e-06 |
+| syn_N10000_P10_K5 | CACHED_FINAL | 0.000837475 | 0.0937088 | 111.894 | 7.66009e-07 | 2.07854e-06 |
+| syn_N25000_P10_K5 | CACHED_FINAL | 0.000351444 | 0.0930745 | 264.834 | 2.96287e-06 | 6.38921e-06 |
+| syn_N50000_P10_K5 | CACHED_FINAL | 0.000178858 | 0.0917581 | 513.022 | 1.31843e-06 | 3.58652e-06 |
+| syn_N100000_P10_K5 | CACHED_FINAL | 0.000103495 | 0.0907146 | 876.514 | 4.52576e-07 | 1.40501e-06 |
+| syn_N250000_P10_K5 | CACHED_FINAL | 5.98079e-05 | 0.0913534 | 1527.45 | 2.5259e-06 | 1.11292e-05 |
+| syn_N500000_P10_K5 | CACHED_FINAL | 5.37117e-05 | 0.0905221 | 1685.33 | 1.96108e-06 | 8.84641e-06 |
+| syn_N10000_P10_K3 | CACHED_FINAL | 0.000848819 | 0.105963 | 124.836 | 8.23918e-07 | 1.87119e-06 |
+| syn_N10000_P10_K5 | CACHED_FINAL | 0.000837475 | 0.0937088 | 111.894 | 7.66009e-07 | 2.07854e-06 |
+| syn_N10000_P10_K10 | CACHED_FINAL | 0.000835046 | 0.0646094 | 77.3723 | 1.32851e-07 | 9.60934e-07 |
+| syn_N10000_P10_K20 | CACHED_FINAL | 0.000833447 | 0.038462 | 46.1481 | 8.66386e-08 | 1.14197e-06 |
+| syn_N10000_P10_K40 | CACHED_FINAL | 0.000833579 | 0.0173022 | 20.7565 | 8.79597e-08 | 1.86647e-06 |
+
+This diagonal range is a **scale proxy, not a Hessian spectral condition number**. conditioning.csv additionally separates every class, main/pair block and individual term. It includes the original cached final controlled N/K endpoints (CACHED_FINAL), without any synthetic fit replay or data regeneration. Four deterministic Rayleigh directions and the intercept class-shift gauge HVP are in conditioning_details.json; these do not estimate a minimum eigenvalue. B tests one cheap prior/count scaling, not all possible block preconditioners. Its failure cannot prove preconditioning is intrinsically ineffective or class coupling is the sole cause.
+
+| axis | value | N | K | iterations | converged | evaluate_calls | core_s | seconds_per_iteration | seconds_per_evaluation | states | retained_pairs |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| N | 2000 | 2000 | 5 | 88 | True | 98 | 0.341211 | 0.00387739 | 0.00348174 | 3581 | 13 |
+| N | 5000 | 5000 | 5 | 116 | True | 129 | 0.711793 | 0.00613615 | 0.00551778 | 4235 | 16 |
+| N | 10000 | 10000 | 5 | 132 | True | 143 | 1.02394 | 0.00775716 | 0.00716045 | 3165 | 12 |
+| N | 25000 | 25000 | 5 | 179 | True | 198 | 2.85235 | 0.0159349 | 0.0144058 | 2653 | 10 |
+| N | 50000 | 50000 | 5 | 248 | True | 269 | 9.0142 | 0.0363476 | 0.0335101 | 3165 | 12 |
+| N | 100000 | 100000 | 5 | 300 | False | 327 | 20.2572 | 0.067524 | 0.0619487 | 2397 | 9 |
+| N | 250000 | 250000 | 5 | 300 | False | 328 | 50.5225 | 0.168408 | 0.154032 | 1885 | 7 |
+| N | 500000 | 500000 | 5 | 300 | False | 332 | 109.865 | 0.366216 | 0.330918 | 1885 | 7 |
+| K | 3 | 10000 | 3 | 110 | True | 119 | 0.835507 | 0.00759551 | 0.00702106 | 2653 | 10 |
+| K | 5 | 10000 | 5 | 132 | True | 143 | 1.02394 | 0.00775716 | 0.00716045 | 3165 | 12 |
+| K | 10 | 10000 | 10 | 207 | True | 215 | 3.54656 | 0.0171331 | 0.0164956 | 5833 | 22 |
+| K | 20 | 10000 | 20 | 195 | True | 202 | 8.57752 | 0.0439873 | 0.042463 | 9782 | 37 |
+| K | 40 | 10000 | 40 | 125 | True | 134 | 20.1861 | 0.161489 | 0.150643 | 16438 | 63 |
+
+Controlled N/K evidence reuses the previous completed fits. Report iteration count separately from cost per evaluation. Max300 is censored iterations-to-tolerance; it cannot be used to claim tolerance was attained. Changing K also changes fullK coefficients and the learned candidate/retained pair pool under the same recipe, so class coupling is not causally isolated. The frozen synthetic generator draws N uniform noise flags before drawing N replacement labels: equal seeds preserve feature prefixes, but do not guarantee identical noisy label prefixes across N. Its prefix-consistent docstring therefore applies to inputs, not all targets. These are fixed-distribution size probes, not a paired-label causal experiment; the existing generator and caches remain unchanged. The N slope under a cap is not time-to-convergence. No synthetic quality or theoretical complexity claim follows from these descriptive points.
+
+## Same-objective and same-quality contracts
+
+Preregistered tolerances: objective absolute1e-8; max probability error1e-4; absolute NLL difference1e-5; argmax disagreement≤0.001. R must have raw gradient≤1e-7. Two contracts are reported independently: proximity to the train-only tighter R, and preserving historical A300 predictions. A300 can be unfinished; moving toward the optimum may fail historical fidelity even with the same loss/dictionary. The tolerance is never changed to rescue an outcome.
+
+| case | arm | objective_abs_difference | gradient_inf | reference_gradient_inf | max_probability_error | NLL_difference | argmax_disagreement | same_objective_numerical_contract |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gas | B | 5.14013e-10 | 1.02142e-07 | 1.4336e-08 | 1.80289e-05 | 2.79261e-07 | 0 | True |
+| letter | B | 4.25104e-09 | 4.30639e-07 | 5.55826e-09 | 4.24095e-05 | 3.01469e-07 | 0 | True |
+| shuttle | B | 1.88561e-09 | 2.07156e-07 | 9.93764e-09 | 0.00012234 | 9.15759e-09 | 0 | False |
+| sensorless | B | 1.05703e-08 | 9.90769e-07 | 2.43324e-08 | 0.000435346 | 2.32236e-08 | 0 | False |
+| connect4 | B | 1.01393e-08 | 3.48625e-06 | 1.01328e-08 | 5.55021e-05 | -2.47548e-08 | 0 | False |
+| covtype | B | 4.28086e-05 | 1.78894e-05 | 1.0247e-05 | 0.0281142 | 6.03507e-06 | 0.000137691 | False |
+| gas | C | 1.0127e-10 | 7.85867e-08 | 1.4336e-08 | 2.68863e-05 | 2.67937e-07 | 0 | True |
+| letter | C | 4.71363e-10 | 8.50719e-08 | 5.55826e-09 | 4.01341e-05 | 1.65587e-08 | 0 | True |
+| shuttle | C | 3.6254e-10 | 7.57875e-08 | 9.93764e-09 | 0.000161727 | -6.92285e-08 | 0 | False |
+| sensorless | C | 6.72222e-10 | 2.64869e-07 | 2.43324e-08 | 0.000120102 | -1.25577e-08 | 0 | False |
+| connect4 | C | 5.95648e-11 | 1.70928e-07 | 1.01328e-08 | 4.2976e-05 | -2.61068e-08 | 0 | True |
+| covtype | C | 2.29535e-05 | 1.00139e-06 | 1.0247e-05 | 0.0345058 | -5.50452e-06 | 0.000143428 | False |
+| gas | W_coarse | 7.89561e-10 | 4.84855e-07 | 1.4336e-08 | 3.23118e-05 | 5.2903e-08 | 0 | True |
+| letter | W_coarse | 1.64331e-10 | 9.36314e-08 | 5.55826e-09 | 1.1199e-05 | -2.48675e-08 | 0 | True |
+| shuttle | W_coarse | 1.42956e-09 | 2.07351e-07 | 9.93764e-09 | 8.70993e-05 | -1.81404e-08 | 0 | True |
+| sensorless | W_coarse | 1.93792e-09 | 6.91923e-07 | 2.43324e-08 | 0.000149609 | -2.85036e-08 | 0 | False |
+| connect4 | W_coarse | 1.06598e-08 | 1.64857e-06 | 1.01328e-08 | 6.08342e-05 | 9.55775e-09 | 0 | False |
+| covtype | W_coarse | 3.66243e-05 | 1.79202e-05 | 1.0247e-05 | 0.0231397 | 1.12405e-05 | 0.000229485 | False |
+
+Selected-to-R heldout maximum probability error=0.0211971655; absolute NLL difference=5.72317139e-06; combined train/heldout contract pass=False. Selected-to-historical A300 across all42source/splits heldout maximum probability error=0.214624338; absolute NLL difference=0.000753667978; historical contract pass=False. quality_replay.csv includes train/validation/test separately and class disagreement. No source changes the decision silently.
+
+The R raw-gradient reference contract passes on all six sources=False; unfinished reference sources=['covtype']. In particular, Covtype/R reached2000iterations with gradient1.0247e-5, while Covtype/C at1500iterations has a lower observed objective (0.600726506 vsR0.600749459). Thus R is **not a certified optimum** there. Failure to meet the uniform R contract is a missing numerical certificate, not proof that every alternative is worse or optimizes a different objective. No extra reference iteration, altered tolerance, or alternative reference was introduced after observing this limitation. The independent full-cost and historical-prediction checks remain reported.
+
+tolerance_diagnostics.csv reports first observed raw gradient thresholds1e-4/1e-5/1e-6, their objective distance to R and validation probability/NLL drift. These are observations along completed trajectories, not additional fitted models or newly chosen stopping tolerances. Twelve×three replay sources have no separately refitted tighter R; their contract is to their protected historical endpoint. No claim of a verified common optimum on those36sources is made.
+
+## Resource, persistence and audit
+
+One isolated heavy worker at a time; OMP/MKL/OpenBLAS/NumExpr=1. Cached arrays are reused; no data acquisition or package installation. Worker RSS is sampled every20ms. On resume an external supervisor also samples the own subprocess tree every250ms, with target8GiB/hard12GiB, and terminates only its own job on hard-budget violation. This operational override leaves the sealed numerical recipe unchanged. Sampling cannot guarantee instantaneous peaks. Audit callback validation and serialization allocate additional arrays; peak includes these diagnostics rather than only deployable solver memory.
+
+Maximum sampled worker RSS **1.681366GiB**. The earlier sealed operational record used10/14GiB; resumed jobs obey the stricter user8/12GiB budget and retain supervisor receipts. Remaining materially unfinished selected max-iteration cases: **1** (raw gradient>1e-5 at cap). Small raw gradients and SciPy success are reported separately, not equated with prediction-contract satisfaction.
+
+Four private numerical tests pass and are reused unchanged. Full public Ruff passes and is reused; resumed private Ruff F correctness rules pass. Full default Ruff on the private prototype also reports preexisting formatting/import-style violations; those diagnostics are preserved rather than modifying the nine sealed numerical modules for style. Prior public409PASS/4knownXFAIL evidence is reused under unchanged public source hashes; this is not a new full public pytest run. Persisted native endpoints load/replay without importing teacher packages. All42endpoints reproduce cached-vs-raw mapping bitwise; every saved trajectory exists and its first/last objective/gradient is replayed, and all six A_TRACE endpoints match original parameters bitwise. Protocol, numerical implementation and thousands of protected artifacts retain hashes. JSON is valid, history1–78 continuous, private data ignored by Git and research memory traceable. No remote/commit/push/tag/release; no Round79.
+
+## Decision
+
+**VALIDATION_SATURATES_EARLY**. No PAIRS25_FAST_SOLVER is promoted unless the complete fixed contract passes. Validation diagnostics alone cannot justify VALIDATION_CONVERGENCE_STOP as an applied recipe; a separate preregistration/confirmation would be necessary and is not started.
+
+Stop; do not start Round79. Preserve pairs25 and its deployment evidence. No frozen solver meets the full numerical, historical-prediction and practical-cost contract. Any reopening must preregister a genuinely different numerical mechanism or a prospective workload restriction, retain all prerequisites in costs, and distinguish converging an unfinished A300 from reproducing its predictions. No tolerance rescue or post-hoc stopping.
+
+## Required final29fields
+
+1. Already VALID: latest resume41complete units; first resume22; tests and public Ruff reused.
+2. PARTIAL/INTERRUPTED: latest Covtype/W_main at914;921files preserved. Earlier Covtype/C at932;936files preserved. Connect4/W_coarse ENVIRONMENT_FAILURE:831files preserved, three completed warm stages reused.
+3. Really restarted: latest Covtype/W_main final rich solve only; earlier Covtype/C and Connect4/W_coarse final rich solve; total=3; latest newly completed=39 units.
+4. Current iterations: {'connect4': 300, 'covtype': 300, 'gas': 250, 'letter': 210, 'sensorless': 300, 'shuttle': 107}.
+5. Max-iter cases: ['connect4', 'covtype', 'sensorless'].
+6. Diagnosis: {'gas': 'UNKNOWN', 'letter': 'UNKNOWN', 'shuttle': 'UNKNOWN', 'sensorless': 'STILL_IMPROVING', 'connect4': 'PLATEAU', 'covtype': 'STILL_IMPROVING'}.
+7. Iteration to99%: {'gas': 23, 'letter': 19, 'shuttle': 7, 'sensorless': 11, 'connect4': 15, 'covtype': 58}.
+8. Iteration to99.9%: {'gas': 39, 'letter': 32, 'shuttle': 11, 'sensorless': 43, 'connect4': 31, 'covtype': 173}.
+9. Validation saturation: {'gas': 101.0, 'letter': 118.0, 'shuttle': nan, 'sensorless': nan, 'connect4': 96.0, 'covtype': 284.0}; best iterations are separately tabulated.
+10. Conditioning proxy: full Hessian diagonal tables above, not spectral conditioning.
+11. K relationship: cached censored counts and seconds/evaluation above.
+12. N relationship: cached censored counts and seconds/evaluation above.
+13. Baseline solver time: six-source median20.318216s, preserved pre-interruption A_TRACE; cross-session comparator.
+14. Preconditioned time: median numerical_solve_s=83.219640, fullfit=90.973553; cohort=6
+15. L-BFGS history30 time: median numerical_solve_s=19.735200, fullfit=27.079046; cohort=6
+16. Newton-CG time: median numerical_solve_s=217.164468, fullfit=281.379818; cohort=2
+17. Warm-start time: W_main: median rich solve=49.925625s, charged fullfit=71.658918s (six sources); W_coarse: median rich solve=44.477392s, charged fullfit=82.295560s (six sources); W_previous: median rich solve=0.859581s, charged fullfit=36.354189s (six sources).
+18. Best same-objective solver: global endpointB,eligible=False; unqualified fallback is diagnostic only.
+19. Objective difference: maximum selected vsR=4.2808636270152967e-05.
+20. Prediction max difference: vsR=0.0211971655,vsA300=0.214624338.
+21. NLL difference: vsR=5.72317139e-06,vsA300=0.000753667978.
+22. Median fit ratio vsOVR: 11.175329x.
+23. P90: 783.163081s.
+24. Worst absolute fit: 1448.902052s.
+25. RAM: 1.681366GiB sampled.
+26. Material max-iter remaining: 1.
+27. Verdict: VALIDATION_SATURATES_EARLY.
+28. Round79justified: NO.
+29. Precise next step: Stop; do not start Round79. Preserve pairs25 and its deployment evidence. No frozen solver meets the full numerical, historical-prediction and practical-cost contract. Any reopening must preregister a genuinely different numerical mechanism or a prospective workload restriction, retain all prerequisites in costs, and distinguish converging an unfinished A300 from reproducing its predictions. No tolerance rescue or post-hoc stopping.
+
+## Timing and trace boundaries
+
+Warm fitting costs include all restricted-stage solves. Minor restricted-stage mask/setup and a duplicate warm scale construction are not separately charged by the sealed timer; warm timings are therefore a slightly optimistic reconstruction, not an exact production clock. Preliminary restricted warm stages have final summaries/periodic progress checkpoints; full accepted-iterate trajectories refer to the final rich problem. The selected endpoint maximum objective difference from historical A300 is 0.00034855965947488965.
+
+## Future diagnostic candidate, not applied
+
+VALIDATION_CONVERGENCE_STOP is prepared only as a separately falsifiable proposal. Four of six A validation minima occur before half of the final iterations; this is not equivalent to early suffix stability on four sources. An online rule cannot use future suffix information. Any future work must preregister one online rule, account for all prerequisites, retain Covtype/highK and use untouched sources. Early stopped coefficients could change predictions and are not a same-optimum solver acceleration. No patience, tolerance, or prefix is selected from test; no new fit or Round79 is started.
+
+
+
+## POST_R78_MULTICLASS_VALIDATION_STOPPING — completed2026-10-07
+
+# POST-R78 — MULTICLASS VALIDATION-CONVERGENCE STOPPING
+
+**COST_REDUCTION_QUALITY_LOSS**. Completed locally, not Round79. Index78/public0.2.0rc2; public core/API/compiler unchanged.
+
+Frozen global policy **S2: patience20,relative min_delta=0.0001,cap300**. The earliest strict validation minimum is restored, including initialization and natural convergence. This changes predictive regularization/stopping, not the objective or solver. Same-optimum/prediction-equivalence from the previous solver audit is not the acceptance criterion here: task NLL/downside is.
+
+Development dataset-median test NLL delta **-1.325183%**, 95% bootstrap CI **[-1.8246814955226656, 0.06040396074411536]%**; W/T/L **[8, 2, 2]** at a fixed0.5% band. Worst dataset **page_blocks: +4.377196%**, worst split **+8.523940%**. Quality gate fails; no transfer is started. The gate has no post-hoc baseline-instability exception. Baseline variation is described below; it is not used retroactively to exempt the observed harmful source. A weak or noisy three-split baseline cannot automatically establish that early-stopping harm is harmless.
+
+Measured raw-input development fit median **0.218743s**, paired median **1.720756x historical OVR**. Iterations **107.5 -> 30.0**; median per-case saving **67.7442%**. The reduction in median cost and NLL does not satisfy the frozen downside contract.
+
+## Reuse, new work and freeze
+
+All historical solver trajectory diagnostics are inventoried. Six original A_TRACE full paths and their accepted-state checkpoints are reused without a new baseline solve. B/C/R/warm paths remain historical diagnostics and cannot substitute for the original history10, zero-init baseline. On12x3development sources, only missing baseline per-accepted-iteration validation/state diagnostics are reconstructed. These36necessary solves reproduce the protected old final parameters bitwise. Their validation/checkpoint instrumentation is diagnostic work, not production fit.
+
+After global selection,42new raw-input candidate fits are measured:36development splits and six stress sources. All previous fitted models, predictions, partials and receipts remain unchanged. Every completed new unit has a deterministic key/model hash and atomic receipt. No old baseline acquisition or OVR fit is repeated; new raw acquisition is necessary to measure the candidate, and must reproduce the old scaffold before solving. The accepted-state checkpoints remain intact. No teacher, acquisition network call, remote operation, commit, push, tag or release.
+
+Protocol SHA256 `0fc2d33c95a3b1f120717791e21a443cf447fa49f58238131fee03d269ced34b`; selection SHA256 `0ecf96f47537ab181ed4467fc280d9a6a06de7268a0ed42d5d09c7941b6c5d82`. The three policies and validation-only selection rule were sealed before any new development trajectory solve. The policy was selected only from12x3development validation losses, never stress or test metrics. Test comparisons and diagnostic oracle curves began only after the selection seal. The original loss, ridge5, fullK class coordinates, active support, pairs25 term order/addresses, encoder, resolutions and runtime are unchanged. Only online patience and validation restoration vary.
+
+## Validation-only policy comparison
+
+| policy | patience | min_delta | validation_delta | mean_iteration_fraction | eligible |
+| --- | --- | --- | --- | --- | --- |
+| S1 | 10 | 0.0001 | -0.0197315 | 0.279707 | True |
+| S2 | 20 | 0.0001 | -0.0208059 | 0.440337 | True |
+| S3 | 40 | 0.0001 | -0.0208059 | 0.607688 | True |
+
+Patience resets against the last significant-improvement anchor; improvements smaller than min_delta can accumulate before a reset. Best-state restoration tracks every strict minimum independently of that anchor, so small genuine improvements are not discarded. Policy simulation uses only the observed prefix and no future suffix. Among validation-eligible policies within0.1% of the best dataset-median validation delta, the frozen selector minimizes mean stop/full iteration fraction, with policy order as tie-break. There is no fine sweep or dataset-specific choice.
+
+## Development quality and downside
+
+| dataset | baseline_NLL | baseline_NLL_std | baseline_NLL_CV | NLL | NLL_delta | fit_total_s | fit_ratio |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| balance_scale | 0.345946 | 0.0114395 | 0.0330675 | 0.338765 | -0.0208016 | 0.100777 | 2.47063 |
+| car | 0.209691 | 0.0209838 | 0.10007 | 0.207816 | -0.00893802 | 0.241799 | 1.71699 |
+| cmc | 0.947475 | 0.036746 | 0.0387831 | 0.920328 | -0.0286949 | 0.102143 | 0.861798 |
+| digits | 0.191799 | 0.0220258 | 0.114838 | 0.179584 | -0.0638766 | 0.799783 | 1.31248 |
+| glass | 0.759409 | 0.127833 | 0.168333 | 0.767353 | 0.00885103 | 0.128551 | 1.81596 |
+| iris | 0.164472 | 0.07005 | 0.425908 | 0.163562 | -0.0141027 | 0.0285779 | 1.98026 |
+| page_blocks | 0.0932205 | 0.00860891 | 0.0923499 | 0.0974613 | 0.043772 | 0.572531 | 1.74616 |
+| pendigits | 0.0863912 | 0.0117433 | 0.135932 | 0.0862048 | -0.00218344 | 3.11719 | 1.63026 |
+| satimage | 0.308241 | 0.0210976 | 0.0684451 | 0.303236 | -0.0156921 | 1.27935 | 1.65017 |
+| segment | 0.110179 | 0.0112344 | 0.101965 | 0.108766 | -0.0149723 | 0.503957 | 1.64209 |
+| vehicle | 0.61089 | 0.0165705 | 0.0271252 | 0.60324 | -0.012401 | 0.196001 | 2.00115 |
+| wine | 0.20647 | 0.025234 | 0.122217 | 0.207068 | 0.00339152 | 0.0336557 | 1.76177 |
+
+NLL_delta=(candidate/baseline)-1: negative improves. Dataset values are means over the three original paired splits; the primary median gives each dataset equal weight. W/T/L compares those means at±0.5%, not significance tests. The fixed-seed2000 bootstrap resamples datasets; it is descriptive development uncertainty, not independent confirmation. Absolute NLL and its three-split baseline CV are supplied to expose small-denominator and split-variability effects. There is no predefined instability exemption, and none is introduced after seeing test.
+
+| case | baseline_NLL | NLL | NLL_delta | baseline_iterations | stop_iterations | best_iteration | policy_triggered | fit_total_s | fit_ratio |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| iris__44001 | 0.130589 | 0.126098 | -0.034387 | 23 | 23 | 5 | False | 0.0318212 | 1.92516 |
+| iris__44002 | 0.117806 | 0.114379 | -0.0290873 | 25 | 24 | 4 | True | 0.0285779 | 1.98026 |
+| iris__44003 | 0.245021 | 0.250208 | 0.0211661 | 25 | 24 | 4 | True | 0.0268492 | 2.162 |
+| wine__44001 | 0.218717 | 0.21673 | -0.00908497 | 26 | 25 | 5 | True | 0.0350427 | 1.84719 |
+| wine__44002 | 0.223242 | 0.225019 | 0.00795775 | 29 | 25 | 5 | True | 0.0336557 | 1.58583 |
+| wine__44003 | 0.177449 | 0.179455 | 0.0113018 | 28 | 24 | 4 | True | 0.033617 | 1.76177 |
+| digits__44001 | 0.200897 | 0.188708 | -0.0606742 | 113 | 31 | 11 | True | 0.502474 | 0.895655 |
+| digits__44002 | 0.207818 | 0.194534 | -0.0639246 | 114 | 31 | 11 | True | 0.804035 | 1.71375 |
+| digits__44003 | 0.166682 | 0.155509 | -0.067031 | 142 | 31 | 11 | True | 0.799783 | 1.31248 |
+| balance_scale__44001 | 0.333107 | 0.325149 | -0.0238877 | 45 | 29 | 9 | True | 0.100777 | 2.47063 |
+| balance_scale__44002 | 0.349676 | 0.34373 | -0.0170036 | 45 | 30 | 10 | True | 0.100778 | 2.4811 |
+| balance_scale__44003 | 0.355054 | 0.347416 | -0.0215134 | 42 | 29 | 9 | True | 0.0905959 | 1.82221 |
+| car__44001 | 0.187238 | 0.18488 | -0.0125908 | 137 | 50 | 30 | True | 0.23466 | 1.71699 |
+| car__44002 | 0.228805 | 0.225342 | -0.0151334 | 160 | 50 | 30 | True | 0.254197 | 1.60619 |
+| car__44003 | 0.213031 | 0.213225 | 0.000910121 | 141 | 48 | 28 | True | 0.241799 | 1.72452 |
+| page_blocks__44001 | 0.101311 | 0.106137 | 0.0476381 | 123 | 30 | 10 | True | 0.549224 | 1.31627 |
+| page_blocks__44002 | 0.0841732 | 0.0840417 | -0.00156157 | 124 | 56 | 36 | True | 0.800945 | 2.23214 |
+| page_blocks__44003 | 0.0941772 | 0.102205 | 0.0852394 | 127 | 28 | 8 | True | 0.572531 | 1.74616 |
+| vehicle__44001 | 0.598645 | 0.595719 | -0.00488647 | 91 | 33 | 13 | True | 0.202826 | 2.36389 |
+| vehicle__44002 | 0.629746 | 0.617477 | -0.0194822 | 93 | 29 | 9 | True | 0.170784 | 1.85158 |
+| vehicle__44003 | 0.604281 | 0.596525 | -0.0128342 | 94 | 30 | 10 | True | 0.196001 | 2.00115 |
+| segment__44001 | 0.119473 | 0.119748 | 0.00230068 | 104 | 52 | 32 | True | 0.594663 | 1.71662 |
+| segment__44002 | 0.0976945 | 0.0924648 | -0.0535316 | 113 | 30 | 10 | True | 0.491473 | 1.64209 |
+| segment__44003 | 0.113369 | 0.114085 | 0.00631393 | 109 | 31 | 11 | True | 0.503957 | 1.49645 |
+| glass__44001 | 0.784077 | 0.784173 | 0.000122589 | 74 | 41 | 41 | True | 0.15529 | 2.26705 |
+| glass__44002 | 0.87311 | 0.898472 | 0.0290483 | 69 | 27 | 7 | True | 0.128551 | 1.69673 |
+| glass__44003 | 0.621039 | 0.619413 | -0.00261779 | 66 | 25 | 5 | True | 0.125578 | 1.81596 |
+| satimage__44001 | 0.329917 | 0.318455 | -0.0347414 | 205 | 35 | 15 | True | 1.27935 | 1.65017 |
+| satimage__44002 | 0.287774 | 0.284257 | -0.0122222 | 202 | 36 | 16 | True | 1.26935 | 1.62846 |
+| satimage__44003 | 0.307031 | 0.306996 | -0.000112699 | 213 | 60 | 40 | True | 1.62184 | 1.95639 |
+| pendigits__44001 | 0.0876071 | 0.0875216 | -0.000975002 | 181 | 59 | 39 | True | 3.7615 | 1.83004 |
+| pendigits__44002 | 0.0974793 | 0.0972268 | -0.00259015 | 200 | 42 | 22 | True | 3.11719 | 1.63026 |
+| pendigits__44003 | 0.0740873 | 0.0738661 | -0.00298517 | 185 | 48 | 28 | True | 1.93531 | 1.07576 |
+| cmc__44001 | 0.905094 | 0.876081 | -0.0320553 | 106 | 26 | 6 | True | 0.0995204 | 0.671567 |
+| cmc__44002 | 0.966886 | 0.966123 | -0.00078947 | 101 | 29 | 9 | True | 0.103646 | 0.88597 |
+| cmc__44003 | 0.970445 | 0.918779 | -0.05324 | 111 | 25 | 5 | True | 0.102143 | 0.861798 |
+
+## Real stress sources, kept separate
+
+| case | baseline_NLL | NLL | NLL_delta | baseline_iterations | stop_iterations | best_iteration | policy_triggered | fit_total_s | fit_ratio |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gas | 0.113737 | 0.113824 | 0.000762603 | 250 | 131 | 111 | True | 4.24892 | 1.5002 |
+| letter | 0.357506 | 0.357521 | 3.99102e-05 | 210 | 93 | 73 | True | 24.7511 | 4.05714 |
+| shuttle | 0.00607558 | 0.00596589 | -0.0180537 | 107 | 44 | 24 | True | 9.74975 | 1.64849 |
+| sensorless | 0.428104 | 0.427302 | -0.00187502 | 300 | 50 | 30 | True | 13.3545 | 1.0015 |
+| connect4 | 0.670773 | 0.670766 | -1.07251e-05 | 300 | 70 | 67 | True | 8.34982 | 1.7175 |
+| covtype | 0.605837 | 0.605844 | 1.25059e-05 | 300 | 300 | 297 | False | 435.687 | N/A |
+
+Raw stress fit median **11.552118s**, P90 **230.219057s**, worst **435.686967s**. Covtype, Connect4 and Sensorless remain in all absolute stress summaries. Covtype has no OVR fit ratio because the original fixed512MiB OVR preflight rejected it; it is not imputed, omitted from absolute costs, or compared to a resource-guard-bypassed reference. These six datasets were already diagnostic before this task; their quality is not independent transfer evidence.
+
+## Validation/test iteration diagnostic
+
+| case | best_validation_iteration | oracle_best_test_iteration | best_validation_state_test_NLL | oracle_best_test_NLL |
+| --- | --- | --- | --- | --- |
+| gas | 111 | 146 | 0.113824 | 0.113708 |
+| letter | 103 | 97 | 0.357414 | 0.357364 |
+| shuttle | 24 | 24 | 0.00596589 | 0.00596589 |
+| sensorless | 30 | 32 | 0.427302 | 0.427144 |
+| connect4 | 194 | 194 | 0.670735 | 0.670735 |
+| covtype | 297 | 300 | 0.605844 | 0.605837 |
+
+Pearson **0.990150**, Spearman **1.000000**, n=6. The global best validation iteration over the full trajectory is reported independently of the online policy best iteration over its observed prefix. The best-test state is an oracle-only diagnostic computed after selection; no test state, iteration or correlation can select or stop a model. Six dependent development/stress observations do not establish a causal stopping law.
+
+## Complete costs and resource limits
+
+Candidate fit is newly measured from already loaded raw training/internal-validation inputs, including native vector preparation, shared encoding, full candidate discovery, train-only selection statistics, address materialization, solver buffer setup, solve, online validation and best-state copies/restoration. Outer-test scoring, input-cache I/O and audit export are outside the training clock. All individual clocks are in timing.csv. Source OVR and fullfit baseline clocks are historical; this is not an independent matched timing replication. One complete fit per point provides no reliable repeated-fit timing CI. Cached-only replay is never called end-to-end training. Solver-only time subtracts validation from measured solver wall; complete training always includes it.
+
+cost_attribution.csv also composes the same newly measured acquisition with the original full-A solver core clock (new diagnostic clocks on development, older A_TRACE clocks on stress). The development median candidate/composed-full ratio is 0.548280. This is a composed attribution check, not a rerun of a paired raw fullfit baseline. Thermal/load and timing/proxy differences mean that not every difference from historical end-to-end cost can be causally attributed to stopping. Earlier historical solver-free prerequisite floors remain valid for their original clocks; they do not constrain these freshly remeasured raw clocks.
+
+Peak sampled RSS **1.761398GiB**; one process/one numerical thread. Deep memory median ratio **0.761723x baseline**. Inference median ratio **0.998220x baseline** on paired batches up to1k (seven alternating timings per case, no model or runtime optimization). Dictionary/cell capacity is identical; coefficient/active/class/intercept array bytes are exactly unchanged on all42cases. Training metadata differences affect retained/pickled bytes, so the deep ratio is not a new predictive compression mechanism. Monitor samples cannot certify instantaneous RSS peaks. Four new private stopping tests pass; one root pytest-cache access warning is environmental and does not invalidate those tests. Public409PASS/4knownXFAIL evidence is reused under unchanged hashes. Public and new private Ruff pass. Persistence, raw/cached row mapping and best-state restoration replay bitwise on all42candidate endpoints without teacher imports. All prior42677protected files and all public sources retain their hashes.
+
+## Gate and decision
+
+{
+  "checks": {
+    "validation_selection": true,
+    "median_NLL": true,
+    "worst_dataset": false,
+    "worst_split": false,
+    "downside": true,
+    "fit_ratio": true
+  },
+  "failed": [
+    "worst_dataset",
+    "worst_split"
+  ],
+  "pass": false
+}
+
+Transfer status: **NOT_TRIGGERED_DEVELOPMENT_GATE_FAILED**;0datasets/0splits/0transfer fits. The frozen prospective8x3panel is listed in protocol.json; transfer_results.csv is intentionally header-only. This is neither a measured transfer failure nor confirmation. No alternative policy is chosen from the test downside. No tolerance, minimum delta, patience or public default is changed.
+
+**COST_REDUCTION_QUALITY_LOSS**. Round79 justified **NO**, not started.
+
+Stop; no Round79 or transfer. Preserve the frozen scaffold and S2 result. A separately authorized checkpoint-only diagnosis should first compare the S2 restored state with the full-path best-validation state on Page Blocks to distinguish premature stopping from validation-state selection variance; no new fit or policy selection is needed for that diagnostic. No post-hoc patience/min_delta/state or dataset exemption. Any reopening then needs prospective evidence that one preregistered global validation-only rule controls the Page Blocks downside and the Covtype cap/cost; retain complete raw acquisition and validation costs. This audit does not establish that all online stopping rules fail.
+
+## Required final28fields
+
+1. Trajectories reused: six full A paths; all previous solver paths inventoried, other arms diagnostic only.
+2. New fits:36minimal missing-diagnostic A solves +42complete raw selected-candidate fits;0OVR/teacher/transfer fits.
+3. Policies tested: S1/S2/S3,relative epsilon1e-4,patience10/20/40;validation comparison only.
+4. Policy selected: S2,global validation-only seal.
+5. Patience: 20.
+6. Min_delta: relative0.0001.
+7. Restoration: earliest strict best validation state; also at natural convergence/cap.
+8. Baseline iterations: median107.5,P90=192.5,worst=213.
+9. Stopping iterations: median30.0,P90=51.0,worst=60.
+10. Iteration saving: median per-case67.744211%.
+11. Development NLL delta: -1.325183% dataset-median.
+12. Development W/T/L: [8, 2, 2],fixed0.5%band.
+13. Worst development dataset: page_blocks,+4.377196%.
+14. Fit ratio development: 1.720756x historical OVR.
+15. Absolute fit development: median0.218743s,P901.450595s,worst3.761500s.
+16. Covtype: best prefix validation iteration=297,stop=300/300,test NLL delta=+0.001251%,raw fit=435.686967s, historical fullfit=452.137570s; historical timing difference is not a replicated speedup.
+17. Connect4: best prefix validation iteration=67,stop=70/300,test NLL delta=-0.001073%,raw fit=8.349824s, historical fullfit=18.220396s; historical timing difference is not a replicated speedup.
+18. Sensorless: best prefix validation iteration=30,stop=50/300,test NLL delta=-0.187502%,raw fit=13.354490s, historical fullfit=49.805803s; historical timing difference is not a replicated speedup.
+19. Transfer datasets:0run;prospective8frozen,NOT_TRIGGERED_GATE_FAILED.
+20. Transfer NLL delta:N/A,no transfer.
+21. Transfer W/T/L:N/A,no transfer.
+22. Transfer fit ratio:N/A,no transfer.
+23. P90 fit: stress230.219057s;transfer N/A.
+24. Worst fit: stress435.686967s;transfer N/A.
+25. Stop-before-cap: actual patience triggers=97.222222% development; 83.333333% stress. Iterations<300 including natural convergence=100.000000% development;these are distinct quantities.
+26. Verdict:COST_REDUCTION_QUALITY_LOSS.
+27. Round79 justified:NO.
+28. Precise next step:Stop; no Round79 or transfer. Preserve the frozen scaffold and S2 result. A separately authorized checkpoint-only diagnosis should first compare the S2 restored state with the full-path best-validation state on Page Blocks to distinguish premature stopping from validation-state selection variance; no new fit or policy selection is needed for that diagnostic. No post-hoc patience/min_delta/state or dataset exemption. Any reopening then needs prospective evidence that one preregistered global validation-only rule controls the Page Blocks downside and the Covtype cap/cost; retain complete raw acquisition and validation costs. This audit does not establish that all online stopping rules fail.
+
+
+## POST_R78_MULTICLASS_PRE_SOLVE_SCREENING — completed2026-10-07
+
+# POST-R78 — MULTICLASS PRE-SOLVE INTERACTION SCREENING
+
+**QUALITY_PRESERVED_COST_TOO_HIGH**. Development only; Round79 not justified/not started. Index78, public0.2.0rc2.
+
+# Semantic history dedup
+
+MATERIAL_VARIANT. Existing pairs25 is already PRE-SOLVE and TRAIN-only, on the
+multinomial class-count gradient about an empirical-prior intercept. It does NOT
+use the residual after the main4/8/16 coupled additive fit. Thus the broad claim
+that all past pruning required rich S2 fitting is false: only contribution
+pruning did. New intervention is conditional residual ranking after the fixed
+main fit, diagonal multinomial curvature and two TRAIN-half agreement. No new
+representation, candidate definition, objective, solver or admission validation.
+
+R12/13: proposal recall and independent validation admission of regression pair
+corrections; closed transfer instability. R46: proposal opportunity versus
+coverage/update multiplicity, not this coupled multinomial ranking. R48-50:
+regression additive/joint penalties, independent residual confidence, marginal
+utility-to-alpha; no such whole-table shrink/admission here. Contribution pruning:
+requires fitted rich S2; diagnostic only. S7 and compiler variability: train-only
+capacity relocation for regression teacher approximation, failed transfer; not
+multinomial subset ranking. Existing compression energy/stability rankings:
+prior-class gradients, not residualized main fits. These are material historical
+overlaps, not evidence this entire screening principle is new or guaranteed.
+
+All history read from complete MASTER/STATE and source implementations. Prior
+failed stopping remains closed; original A300 L-BFGS used, never S2 patience.
+
+
+## Frozen experiment and reuse
+
+Identical encoder, main4/8/16, native pair definitions/hashes,25% budget, ridge5, full-K multinomial objective, zero-init L-BFGS-B history10/max300/ftol1e-11/gtol1e-7/maxls30. No validation early stopping. 36valid TRAIN-only S1 main fits,36OVR and pairs25 fits, and rich S2 contribution statistics reused. 252new primary selected-scaffold solves plus36post-primary contribution diagnostic solves. 36necessary systems-only cost replicas after environmental provisioning correction; every original retained. No previous round, teacher, OVR or main full solve rerun. Native binary coded candidate-discovery training is still mandatory to preserve this exact proposal universe; its fresh acquisition timing is charged, not hidden as free cached metadata. No full rich multinomial S2 head is fitted by primary recipes.
+
+For scoring, p=softmax(main TRAIN logits),G=sum(one_hot(y)-p) per cell/class, H=sum p(1-p),count=cell support. Four fixed scores: A=sumG²/n; B=sumG²/(count+5)/n; C=0.5sumG²/(H+5)/n; D=C*max(0,cos(G_A/(H_A+5),G_B/(H_B+5))). The two halves are a deterministic random partition of TRAIN only. They share a fixed full-TRAIN main model: this is agreement of residual statistics, not independent cross-fitted stability. C uses diagonal softmax curvature, omitting cross-class covariance; it is not an exact local optimum/gain. Stable original-order ties,ceil25%,restore original term order. No threshold or dataset-specific rule.
+
+Selection compares complete recipes on validation across11x3, excluding CMC; equal-dataset mean NLL ratios and fixed method-order tie break. Selected **stability**, before test/oracle access. CMC remains in primary gate and final stress diagnosis. Controls are deterministic random25, mean support per occupied cell25, and SHA256(spec)-order25; none is selected after observing test.
+
+Protocol `25edf81fd46794b6852bc942da17df4863df5bd0a0f73028121d53a4e6e9bf24`; selection `03abf0ccc8a334a93f2dc3763ce8850454efc56e9eab907e890a81adca82d449`.
+
+## Primary development results
+
+| method | NLL_ratio_pairs25 | retained_gain | within3_fraction | worst_dataset | worst_dataset_ratio | total_fit_ratio | screening_fraction |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| gradient | 1.00188 | 0.998047 | 0.833333 | page_blocks | 1.04244 | 8.33526 | 0.0234144 |
+| normalized | 1.03582 | 0.916724 | 0.416667 | pendigits | 1.17269 | 8.80776 | 0.0220146 |
+| one_step | 1.0073 | 0.955897 | 0.916667 | glass | 1.03731 | 8.37167 | 0.0233651 |
+| stability | 0.987952 | 1.03702 | 0.916667 | page_blocks | 1.0389 | 11.6206 | 0.0271562 |
+| random | 1.03696 | 0.96257 | 0.416667 | iris | 1.1395 | 3.83976 | 0 |
+| support | 0.979883 | 1.00949 | 0.916667 | segment | 1.03014 | 3.86436 | 0.0131726 |
+| hash | 1.01969 | 0.963853 | 0.583333 | iris | 1.15547 | 3.71998 | 0 |
+
+All ratios are computed per source after averaging three splits, then median across datasets, except fit ratios: paired split ratios. NLL gain retention=(OVR-candidate)/(OVR-pairs25), on11sources with positive pairs25 gain; negative retention is not clipped. W/T/L uses a fixed±0.5%band, not statistical significance. This is known-data development, not confirmation.
+
+Selected NLL ratio **0.987952**; gain retained **103.702%**; W/T/L vs OVR **[11, 0, 1]**;11/12sources within+3%; worst **page_blocks +3.890%**. Dataset-bootstrap95% interval for median NLL ratio **[0.9074144585269319, 1.0058551379203842]** (2000resamples/fixedseed).
+
+| dataset | NLL | pairs25_NLL | OVR_NLL | main_NLL | ratio_pairs25 | ratio_OVR |
+| --- | --- | --- | --- | --- | --- | --- |
+| balance_scale | 0.350727 | 0.345946 | 0.422622 | 0.346685 | 1.01382 | 0.829883 |
+| car | 0.148923 | 0.209691 | 0.308 | 0.250224 | 0.710201 | 0.483516 |
+| cmc | 0.947581 | 0.947475 | 0.891948 | 0.912384 | 1.00011 | 1.06237 |
+| digits | 0.182694 | 0.191799 | 0.577684 | 0.213658 | 0.952529 | 0.316253 |
+| glass | 0.766383 | 0.759409 | 0.833961 | 0.855629 | 1.00918 | 0.918968 |
+| iris | 0.162564 | 0.164472 | 0.179068 | 0.220952 | 0.988401 | 0.907834 |
+| page_blocks | 0.096847 | 0.0932205 | 0.142368 | 0.100622 | 1.0389 | 0.680257 |
+| pendigits | 0.0695216 | 0.0863912 | 0.418057 | 0.125254 | 0.80473 | 0.166297 |
+| satimage | 0.302807 | 0.308241 | 0.455 | 0.319031 | 0.982372 | 0.665509 |
+| segment | 0.0950074 | 0.110179 | 0.316118 | 0.156927 | 0.8623 | 0.300544 |
+| vehicle | 0.612433 | 0.61089 | 0.742186 | 0.640101 | 1.00253 | 0.825176 |
+| wine | 0.203889 | 0.20647 | 0.241173 | 0.237265 | 0.987503 | 0.845406 |
+
+## Ranking versus contribution diagnostic
+
+Top25 overlap **0.462567**; Spearman **0.323890**; weighted recall **0.751857**; contribution mass **0.381559**; positive removal-loss mass **0.355656**. Weighted recall sums selected TRAIN contribution-norm² relative to the sum for norm-ranked top25; mass captured uses all candidate terms as denominator. Positive removal losses are correlated counterfactual diagnostics, not additive independent test gains. The upstream statistics container is read earlier solely for a candidate-count consistency check; its contribution fields are not examined for ranking or selection. Contribution-based subset construction/comparisons occur after primary results and never enter selection. The supplied historical file contains fullS2 TRAIN norms, not a test-optimal subset. Refitting norm-top25 is a diagnostic reference, not a mathematical upper bound. Its full rich fit cost is charged in oracle_cost.csv.
+
+Contribution-top25 selected solve median test ratio **0.981143**. Selected split-stability median exact-term Jaccard **0.000000**; feature/resolution Jaccard **0.275253**. Exact hash codes can change across splits, so exact-term and semantic pair overlap are distinct.
+
+## Full cost and avoided materialization
+
+Median candidates **42.5**,selected **11.0**. Selected dictionary entries/full **0.270236**; persisted address bytes/full **0.491522**.
+
+Against existing pairs25, coefficient ratio **0.989093**,iterations ratio **0.963740**,solve clock ratio **2.233303**. The candidate does not shrink the interaction budget below the existing25%; savings are relative to full rich materialization, not automatically to the official pairs25 fit. Scores stream one pair address vector/cell statistics at a time; only selected terms enter the coupled evaluator. Screening still visits every candidate pair. materialization.csv records N*term row visits, full/selected entries, bytes and the largest transient pair statistics.
+
+Corrected candidate composed fit median **1.451575s**,ratio **11.620597x historical OVR**, screening **2.716%** of total. Even excluding mandatory historical main solve, paired median lower-bound ratio **7.139250x**. Clocks combine freshly measured raw vector preparation/encoding/native discovery, archived mandatory main solve, fresh residual statistics,selected construction/setup/solve. No main-fit reuse is presented as free production training. Main timing is historical and conservatively includes its old callback; OVR/reference timing also historical. This is not a paired same-session raw end-to-end timing replication or a guaranteed future speed ratio. Costs fail even without the archived main clock. Ranking sorting/checkpoint IO timing is not part of measured screening; no favorable cost conclusion relies on omitting it. Original control timings below are historical noncompliant-environment exploratory clocks, not certified1-thread cost comparisons.
+
+| case | total_fit_s | fit_ratio | screening_s | pair_construction_s | statistics_s | solve_s | mandatory_main_solve_s |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| iris__44001 | 0.160419 | 9.70522 | 0.0037902 | 0.0012053 | 0.0044351 | 0.108841 | 0.0253382 |
+| iris__44002 | 0.141733 | 9.82118 | 0.0038047 | 0.0012331 | 0.0001807 | 0.097299 | 0.0197257 |
+| iris__44003 | 0.155681 | 12.536 | 0.0052224 | 0.0012742 | 0.0001664 | 0.0804609 | 0.0440056 |
+| wine__44001 | 0.219929 | 11.593 | 0.0061596 | 0.002373 | 0.0003136 | 0.105716 | 0.0665045 |
+| wine__44002 | 0.275375 | 12.9754 | 0.0104161 | 0.0030281 | 0.0006726 | 0.166447 | 0.0458234 |
+| wine__44003 | 0.302743 | 15.8659 | 0.0140199 | 0.0036768 | 0.0004139 | 0.168977 | 0.0550534 |
+| digits__44001 | 7.08167 | 12.623 | 0.362754 | 0.021659 | 0.0115659 | 1.42307 | 4.64657 |
+| digits__44002 | 6.79187 | 14.4764 | 0.186561 | 0.0218219 | 0.0181146 | 2.28397 | 3.69846 |
+| digits__44003 | 9.06212 | 14.8713 | 0.41118 | 0.0827875 | 0.0611565 | 3.57168 | 3.92547 |
+| balance_scale__44001 | 0.923348 | 22.6365 | 0.0454397 | 0.0023285 | 0.0007146 | 0.486 | 0.0912004 |
+| balance_scale__44002 | 0.730798 | 17.9918 | 0.0508404 | 0.0118369 | 0.0082695 | 0.407448 | 0.0814484 |
+| balance_scale__44003 | 0.613406 | 12.3378 | 0.0338516 | 0.0035555 | 0.001522 | 0.383676 | 0.0669266 |
+| car__44001 | 1.47956 | 10.8259 | 0.0483058 | 0.0080536 | 0.001347 | 0.767752 | 0.348019 |
+| car__44002 | 1.46326 | 9.24587 | 0.0510807 | 0.0194224 | 0.0062739 | 0.680205 | 0.383176 |
+| car__44003 | 1.48614 | 10.5992 | 0.0441711 | 0.022381 | 0.0018766 | 0.746449 | 0.329171 |
+| page_blocks__44001 | 3.87232 | 9.28038 | 0.0868794 | 0.0163578 | 0.0087704 | 1.38198 | 1.70006 |
+| page_blocks__44002 | 4.64024 | 12.9318 | 0.100392 | 0.0131821 | 0.0074919 | 1.7487 | 2.07762 |
+| page_blocks__44003 | 4.72308 | 14.4049 | 0.110051 | 0.0119775 | 0.0112148 | 1.73594 | 2.0647 |
+| vehicle__44001 | 1.06246 | 12.3828 | 0.0241192 | 0.0057088 | 0.0014327 | 0.381371 | 0.451864 |
+| vehicle__44002 | 1.07439 | 11.6481 | 0.0251222 | 0.007866 | 0.0016729 | 0.408268 | 0.459527 |
+| vehicle__44003 | 1.43989 | 14.7012 | 0.0371562 | 0.0087716 | 0.0021487 | 0.422197 | 0.740886 |
+| segment__44001 | 3.44614 | 9.94801 | 0.0799974 | 0.0099771 | 0.0047907 | 0.770684 | 2.15821 |
+| segment__44002 | 2.46268 | 8.2282 | 0.0827485 | 0.0085781 | 0.005301 | 0.729914 | 1.20951 |
+| segment__44003 | 3.27655 | 9.72939 | 0.080622 | 0.009295 | 0.0046638 | 0.817627 | 1.96312 |
+| glass__44001 | 0.754756 | 11.0185 | 0.0324385 | 0.0036501 | 0.0009743 | 0.373032 | 0.222983 |
+| glass__44002 | 0.83288 | 10.9931 | 0.0761788 | 0.0062609 | 0.001305 | 0.357945 | 0.286361 |
+| glass__44003 | 0.723283 | 10.4592 | 0.0346575 | 0.0047151 | 0.0012133 | 0.319122 | 0.221346 |
+| satimage__44001 | 15.004 | 19.3528 | 0.223264 | 0.0476592 | 0.0211494 | 5.67192 | 7.9252 |
+| satimage__44002 | 11.1458 | 14.299 | 0.195542 | 0.0484291 | 0.025466 | 3.28054 | 6.08845 |
+| satimage__44003 | 10.48 | 12.6418 | 0.132293 | 0.0246878 | 0.0130363 | 2.95804 | 6.33717 |
+| pendigits__44001 | 20.5025 | 9.97488 | 0.614732 | 0.0243933 | 0.0352521 | 5.5054 | 11.9507 |
+| pendigits__44002 | 24.8574 | 13.0002 | 0.493988 | 0.02513 | 0.0300407 | 5.53678 | 15.3277 |
+| pendigits__44003 | 19.4016 | 10.7845 | 0.474235 | 0.0188552 | 0.0262583 | 5.13482 | 11.5595 |
+| cmc__44001 | 0.874243 | 5.89942 | 0.0216165 | 0.0099739 | 0.0013134 | 0.353254 | 0.342689 |
+| cmc__44002 | 0.821116 | 7.01893 | 0.0213797 | 0.0093782 | 0.0013005 | 0.361778 | 0.282317 |
+| cmc__44003 | 0.811469 | 6.8465 | 0.0208539 | 0.0094433 | 0.0011885 | 0.349452 | 0.284661 |
+
+Corrected sampled fit RSS max **0.209721GiB** (<8GiB). Retained deep model ratio **0.651069x pairs25**. Static workspace comparisons are not peak-RSS reduction measurements against a concurrently measured rich fit.
+
+## Environment qualification and corrected replay
+
+Initial launcher set environment variables after importing NumPy; replicated startup exposed a16-thread OpenBLAS pool, contrary to resource preregistration. This is ENVIRONMENT_FAILURE, not a failed scientific formula. Original receipts/models/logs and initial CSV remain intact. Only the already selected recipe was repeated for systems measurement with all limits set before process launch; actual NumPy/SciPy pools1. Oracle/control costs remain explicitly unqualified rather than silently treated as compliant. Cross-thread L-BFGS endpoints are not always bitwise identical; this is reported, not forced through a fidelity assertion.
+
+Corrected selected-model NLL ratio **0.987952**; maximum probability drift **7.3039312e-05**; maximum absolute NLL drift **1.56513351e-06**. Within each persisted model, reload/prediction replay is bitwise with0bucket/prediction mismatches; all partitions/row addresses match upstream. No teacher import, no test pair scoring, no warm start, no solver/stopping change. Public suite initially resolved a stale installed package and sandbox temp permissions; corrected source path/private TEMP are separately logged, with no public-file or package-installation changes.
+
+## Gate and decision
+
+```json
+{
+  "method": "stability",
+  "checks": {
+    "retained_gain": true,
+    "median_NLL_ratio": true,
+    "within3_fraction": true,
+    "worst_dataset": true,
+    "favorable_OVR_WTL": true,
+    "total_fit": false,
+    "screening_overhead": true
+  },
+  "pass": false,
+  "alternatives_not_reselected_on_test": true
+}
+```
+
+Connect4/Sensorless/Covtype: NOT_TRIGGERED (development cost gate failed); no new stress fit. Transfer:0datasets/0splits; preregistered8x3panel not acquired or fitted. No transfer failure inferred. No retrospective support-control promotion, dataset exception, solver/stopping rescue or Round79.
+
+Stop; no Round79, stress or transfer. Pre-solve conditional ranking preserves development quality but cannot reduce the unchanged native candidate acquisition and existing25% coupled fit to the cost target. Do not rescue with stopping/solver/budget changes or select support25 post-hoc from test. Any future reopening needs a separately preregistered mechanism that avoids mandatory candidate discovery or the additional main solve, with a fresh matched raw timing baseline and independent quality/downside evidence. Such a change would be a new hypothesis, not an optimization authorized here.
+
+## Required final31fields
+
+1. History classification: MATERIAL_VARIANT; residualized multinomial ranking, existing pre-solve prior-gradient history explicitly acknowledged.
+2. Candidate pairs: median42.5; full per-case inventory in cost_results.csv.
+3. Selected pairs: median11.0;ceil25%,same universe.
+4. Scores: A rawgradient;B count+5 normalized;C diagonalcurvature+5 one-step;D C times TRAIN-half cosine reliability.
+5. Oracle overlap:0.462567;Spearman:0.323890.
+6. Weighted recall:0.751857;gainmass:0.355656.
+7. Ranking/selection stability: exactJaccard0.000000,feature/resolution0.275253.
+8. Random control:{'NLL_ratio_pairs25': 1.036959626381385, 'NLL_ratio_OVR': 0.7523994365443094, 'retained_gain': 0.9625703175688055, 'eligible_gain_sources': 11, 'gain_retention_unclipped': True, 'WTL': [10, 0, 2], 'within3_fraction': 0.4166666666666667, 'worst_dataset': 'iris', 'worst_dataset_ratio': 1.1394960168831703, 'total_fit_ratio': 3.839762424109433, 'median_fit_s': 0.473184250000827, 'screening_fraction': 0.0, 'quality_pass': False, 'gate': {'retained_gain': True, 'median_NLL_ratio': False, 'within3_fraction': False, 'worst_dataset': False, 'favorable_OVR_WTL': True, 'total_fit': False, 'screening_overhead': True}, 'pass_all': False}.
+9. Support control:{'NLL_ratio_pairs25': 0.9798833710080485, 'NLL_ratio_OVR': 0.7309607064239245, 'retained_gain': 1.0094901234157398, 'eligible_gain_sources': 11, 'gain_retention_unclipped': True, 'WTL': [11, 0, 1], 'within3_fraction': 0.9166666666666666, 'worst_dataset': 'segment', 'worst_dataset_ratio': 1.0301426382120362, 'total_fit_ratio': 3.8643580065314604, 'median_fit_s': 0.4920556499997133, 'screening_fraction': 0.013172638408632049, 'quality_pass': True, 'gate': {'retained_gain': True, 'median_NLL_ratio': True, 'within3_fraction': True, 'worst_dataset': True, 'favorable_OVR_WTL': True, 'total_fit': False, 'screening_overhead': True}, 'pass_all': False};not post-hoc promoted.
+10. Best screening method: stability;validation-only,CMC excluded.
+11. Development NLL ratio vs pairs25:0.987952.
+12. Gain retained:103.702% on11positive-reference sources.
+13. W/T/L vs OVR:[11, 0, 1].
+14. Worst dataset:page_blocks,ratio1.038903.
+15. CMC:{'test': {'NLL': 0.9475812928764015, 'pairs25_NLL': 0.9474751370577877, 'OVR_NLL': 0.891948008343685, 'main_NLL': 0.9123839765089672}, 'train': {'NLL': 0.7292003026982515, 'pairs25_NLL': 0.7172609959034745, 'OVR_NLL': 0.8048828742289712, 'main_NLL': 0.8605342459878345}, 'validation': {'NLL': 0.9447316992527646, 'pairs25_NLL': 0.9416506177848465, 'OVR_NLL': 0.9184430960540307, 'main_NLL': 0.9187106130929811}};train/validation/test separate,never selector input.
+16. Screening seconds median:0.049573.
+17. Pair construction seconds median:0.009411.
+18. Statistics/setup seconds median:0.003292.
+19. Solve seconds median:0.583103.
+20. Total composed fit ratio vs historical OVR:11.620597;not matched timing.
+21. Coefficient ratio vs pairs25:0.989093;no budget reduction below existing25%.
+22. RAM:sampled corrected peak0.209721GiB;static buffers in materialization.csv;peak reduction not measured.
+23. Connect4 cost:NOT_TRIGGERED_DEVELOPMENT_GATE_FAILED.
+24. Sensorless cost:NOT_TRIGGERED_DEVELOPMENT_GATE_FAILED.
+25. Covtype cost:NOT_TRIGGERED_DEVELOPMENT_GATE_FAILED.
+26. Transfer datasets:0;frozen8x3not acquired.
+27. Transfer quality:N/A.
+28. Transfer fit:N/A.
+29. Verdict:QUALITY_PRESERVED_COST_TOO_HIGH.
+30. Round79 justified:NO.
+31. Precise next step:Stop; no Round79, stress or transfer. Pre-solve conditional ranking preserves development quality but cannot reduce the unchanged native candidate acquisition and existing25% coupled fit to the cost target. Do not rescue with stopping/solver/budget changes or select support25 post-hoc from test. Any future reopening needs a separately preregistered mechanism that avoids mandatory candidate discovery or the additional main solve, with a fresh matched raw timing baseline and independent quality/downside evidence. Such a change would be a new hypothesis, not an optimization authorized here.
+
+
+## POST_R78_MULTICLASS_STATE_STRUCTURE — completed2026-10-07
+
+# POST-R78 — MULTICLASS INTERACTION-STATE STRUCTURE & SOLVE COMPRESSION
+
+**QUALITY_PRESERVED_COST_TOO_HIGH**. Structural development audit, not confirmation. No new fits/solves; Round79 not justified/not started. Public0.2.0rc2 and round index78 preserved.
+
+## Resume and frozen references
+
+The interrupted task had no task folder, output CSV or completed numerical job. Six console inspections were reconstructed from hash-validated original fit receipts. All36official pairs25 optimized models and three cached stress models, addresses, splits, parameters, class labels and historical cost receipts were reused. No discovery, OVR, solve, teacher or previous round was rerun. The first Iris tomography unit hit a NumPy-int64 JSON serialization error before a valid receipt; only this diagnostic unit restarted after a scalar cast. Its partial packet and .writing bytes, initial implementation seal and amendment remain preserved.
+
+Primary reference is official pairs25 optimized, not the later stability-selected pair set. Ordered pair identities, main4/8/16, encoder/missing gates, full-K coordinates, symmetric Softmax,2.5sum(w²) ridge and unpenalized intercept are unchanged. The recent screening result is historical context only; no new pair ranking, pruning or validation selection occurs. Freeze and implementation seals precede measurements; TRAIN decision precedes heldout replay. One process, numerical pools1thread, cached data only.
+
+## Semantic history check
+
+- R20 generic residual backfitting: CLOSED. No sequential residual memory architecture is reopened.
+- R47 decomposition and R52 fixed joint values/rank/duplicate incidence diagnosis: MATERIAL_VARIANT overlap. R52 already observed duplicate active columns and ridge identifiability; the broad diagnosis is not new. New intervention here is verified TRAIN-equivalence grouping with exact ridge multiplicities and preserved full prediction maps, on the frozen multinomial pairs25 scaffold.
+- R59 discovery/estimation reuse: HISTORICALLY_EQUIVALENT if used as a new split/admission proposal; not attempted.
+- R14/shared lowrank, TT/R69 and SBD/shared dictionary representation changes: CLOSED for this audit. No new lowrank coordinates, pair-capacity selection or dictionary training. Whole-term deduplication existed; state-column interning is a MATERIAL_VARIANT, not claimed algorithmic novelty.
+- Existing multiclass cost audit: flattened row/class bincount, active masking, buffers and callback reuse already implemented. Calling these sparse sufficient statistics NEW would be HISTORICALLY_EQUIVALENT. Only duplicate-row sharing is measured here.
+- Conceptual coded block Newton: MATERIAL_VARIANT of global fixed-objective numerical estimation, distinct from R20 by full-K multinomial objective, unchanged pairs25, local class Hessians and incremental logits. Not executed because the preregistered structural activation gate failed; no claim that this untested solver is mathematically impossible or disproven.
+
+## TRAIN tomography
+
+Development totals across36fits: **30943active states**, **214249coefficients** (not one model). Split medians: 770.5active/3092.0nominal states, 3725.0coefficients, 94.786%zero indicator entries, 38.0active states/row. One active state per term/row on these TRAIN panels. Baseline already excludes zero-support coefficients and has **0explicit training design bytes**. Bounded SVD/CountSketch matrices are diagnostic-only, never solve input.
+
+Median exact TRAIN duplicate fraction **10.520%**; within pair-state patterns **13.385%**. This is not universally<5%, so the prompt's strict weak-structure condition is NOT asserted. All39graphs have **one component**, containing 100%of active states. Star edges per training row preserve the clique's exact connected components; no quadratic full graph is allocated. Common intercept/classes also obstruct independent objectives. Coarse/fine main partitions supply nested/linear relations, but removing them without their induced ridge changes the objective; rank deficiency is not free coefficient pruning.
+
+| case | n_rows | classes | n_terms | active_states | duplicate_fraction | rank_lower | rank_upper | connected_components |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| iris__44001 | 90 | 3 | 14 | 125 | 0.256 | 47 | 47 | 1 |
+| iris__44002 | 90 | 3 | 18 | 254 | 0.232283 | 75 | 75 | 1 |
+| iris__44003 | 90 | 3 | 17 | 182 | 0.043956 | 73 | 73 | 1 |
+| wine__44001 | 106 | 3 | 26 | 225 | 0.00444444 | 106 | 106 | 1 |
+| wine__44002 | 106 | 3 | 25 | 210 | 0.0714286 | 106 | 106 | 1 |
+| wine__44003 | 106 | 3 | 26 | 225 | 0 | 106 | 106 | 1 |
+| digits__44001 | 1077 | 10 | 107 | 1820 | 0.0159341 | 1077 | 1077 | 1 |
+| digits__44002 | 1077 | 10 | 108 | 1913 | 0.0135912 | 128 | 1077 | 1 |
+| digits__44003 | 1077 | 10 | 112 | 2067 | 0.0120948 | 128 | 1077 | 1 |
+| balance_scale__44001 | 375 | 3 | 21 | 251 | 0.63745 | 49 | 49 | 1 |
+| balance_scale__44002 | 375 | 3 | 21 | 247 | 0.623482 | 49 | 49 | 1 |
+| balance_scale__44003 | 375 | 3 | 20 | 246 | 0.666667 | 49 | 49 | 1 |
+| car__44001 | 1036 | 4 | 25 | 150 | 0.686667 | 27 | 27 | 1 |
+| car__44002 | 1036 | 4 | 27 | 153 | 0.72549 | 26 | 26 | 1 |
+| car__44003 | 1036 | 4 | 25 | 154 | 0.662338 | 29 | 29 | 1 |
+| page_blocks__44001 | 3283 | 5 | 35 | 860 | 0.0534884 | 128 | 814 | 1 |
+| page_blocks__44002 | 3283 | 5 | 38 | 1124 | 0.0542705 | 128 | 1063 | 1 |
+| page_blocks__44003 | 3283 | 5 | 38 | 1197 | 0.0392648 | 128 | 1150 | 1 |
+| vehicle__44001 | 507 | 4 | 37 | 796 | 0.103015 | 442 | 442 | 1 |
+| vehicle__44002 | 507 | 4 | 40 | 773 | 0.15912 | 348 | 348 | 1 |
+| vehicle__44003 | 507 | 4 | 38 | 928 | 0.127155 | 467 | 467 | 1 |
+| segment__44001 | 1386 | 7 | 49 | 1015 | 0.107389 | 524 | 524 | 1 |
+| segment__44002 | 1386 | 7 | 51 | 1029 | 0.0806608 | 551 | 551 | 1 |
+| segment__44003 | 1386 | 7 | 52 | 1023 | 0.0772239 | 581 | 581 | 1 |
+| glass__44001 | 128 | 6 | 38 | 623 | 0.166934 | 127 | 127 | 1 |
+| glass__44002 | 128 | 6 | 41 | 701 | 0.212553 | 127 | 127 | 1 |
+| glass__44003 | 128 | 6 | 39 | 768 | 0.291667 | 127 | 127 | 1 |
+| satimage__44001 | 3858 | 6 | 66 | 1300 | 0.00230769 | 128 | 1235 | 1 |
+| satimage__44002 | 3858 | 6 | 62 | 1180 | 0.000847458 | 128 | 1119 | 1 |
+| satimage__44003 | 3858 | 6 | 68 | 1514 | 0.0303831 | 128 | 1447 | 1 |
+| pendigits__44001 | 6594 | 10 | 68 | 1955 | 0.113043 | 128 | 1734 | 1 |
+| pendigits__44002 | 6594 | 10 | 64 | 1902 | 0.0315457 | 128 | 1839 | 1 |
+| pendigits__44003 | 6594 | 10 | 69 | 1997 | 0.0615924 | 128 | 1874 | 1 |
+| cmc__44001 | 883 | 3 | 25 | 744 | 0.373656 | 238 | 238 | 1 |
+| cmc__44002 | 883 | 3 | 27 | 589 | 0.271647 | 229 | 229 | 1 |
+| cmc__44003 | 883 | 3 | 26 | 703 | 0.388336 | 212 | 212 | 1 |
+| sensorless | 35105 | 11 | 37 | 1661 | 0.192655 | 128 | 1341 | 1 |
+| connect4 | 40533 | 3 | 31 | 138 | 0.463768 | 37 | 74 | 1 |
+| covtype | 348606 | 7 | 54 | 1486 | 0.200538 | 128 | 1188 | 1 |
+
+Dense SVD numerical rank is reported only for bounded small panels. Others use deterministic 128-row signed CountSketch: its rank is a LOWER BOUND, not full approximate-rank recovery. Upper bounds use N,unique incidences and original partition-sum dependencies separately. Numerical rank is not an exact rational algebraic certificate. No lower-rank representation is fitted.
+
+Low-support coefficient fractions, median over36splits:
+
+| support≤ | coefficient share |
+| --- | --- |
+| 1 | 3.397% |
+| 2 | 6.380% |
+| 4 | 12.087% |
+| 8 | 23.831% |
+| 16 | 47.489% |
+| 32 | 66.166% |
+
+support.csv also records row/class visit and coefficient-energy fractions and TRAIN contribution energy of frozen fitted weights. Row visit share is NOT measured fit-time share. historical_support_contribution.csv additionally records NLL after post-gate frozen group ablation on train/validation/test, with no refit or decision use. These overlapping supports contribute to a coupled objective; no independent per-state causal quality attribution or quality-preserving low-support removal is claimed. Small support alone cannot justify deleting their states.
+
+Post-gate median NLL increase when the fixed low-support group is muted:
+
+| support_max | train | validation | test |
+| --- | --- | --- | --- |
+| 1 | 0.000248854 | 1.03727e-05 | 0 |
+| 2 | 0.000480539 | 2.33408e-05 | 5.39045e-05 |
+| 4 | 0.00144054 | 2.2576e-05 | 0.000415976 |
+| 8 | 0.00401564 | 0.000402693 | 0.000957531 |
+| 16 | 0.0279518 | 0.00321945 | 0.00392965 |
+| 32 | 0.0598458 | 0.0124148 | 0.0142416 |
+
+## Exact transformations and numerical contract
+
+TRAIN-identical columns are grouped only after SHA256 and explicit row-array equality. Original duplicate fitted vectors are bitwise equal on these receipts; interning stores one per group plus an original-state map. No differing fitted vector is averaged. Every original term/state mapping and accumulation order remain in prediction. **334group-partition observations diverge on validation/test**; therefore TRAIN duplicates are NOT certified globally identical functions. Deleting maps would be unsafe. Exact expansion restores original weights, objective, gradient and heldout function.
+
+For midentical columns, aggregate z=mw has ridge2.5||z||²/m; alternatively orthogonal q=sqrt(m)w has original ridge2.5||q||². Unchanged ridge on aggregate z would be wrong. The measured interning uses per-column w with multiplicity m; its compact penalty can differ by floating summation roundoff, so the bitwise objective certificate uses original-order expanded weights. It is a storage/capacity certificate, not a new converged reduced-coordinate fit.
+
+Median stored coefficient reduction **10.520%**; weight bytes PLUS necessary map ratio **0.989588x**. Original model map/encoder metadata is retained; this number is not a full-model memory ratio. **0solve coordinates actually removed,0new solves**. Actual reduced-solve speedup: N/A, not extrapolated from coefficient counts. Exact global gate≥25%reduction or≥2xspeedup does not pass. Car/Connect4 local capacity savings are real but not a globally selected candidate. Class-gauge probability equivalence alone would not satisfy identical-logit requirements; no class coordinate was removed.
+
+Replay: **39models/803726rows**, allthreepartitions; bucket/logit/probability mismatches **0**, objective/NLL difference **0**. Frozen raw-input encoding matches cached addresses. Teacher not imported/required; no validation/test used for grouping.
+
+The actual diagnostic packet also stores cells,multiplicities and intercept. Its total array bytes/original weight-only bytes median is **1.293420x**; actual pickle bytes are recorded in packet_memory.csv. It is NOT a deployed smaller model or a measured full-model memory win. The coefficient-plus-indirection ratio alone must not hide these additional retained arrays.
+
+## Sufficient statistics, solver eligibility and cost
+
+The existing optimized evaluator already computes state counts, row/class bincount gradients, shared input codes and reusable score/gather buffers. Softmax probabilities change each iterate: fixed class counts cannot replace these dynamic residual and curvature sums. Duplicate-only sharing skips representative-duplicate row visits, retaining bitwise gradients. Five alternating rounds×7calls measure aggregation, not fitting. Median speedup **0.676610x** (slower). Python/index/scatter cost outweighs saved visits in most panels; a different untested implementation is not ruled out.
+
+Preregistered conditional solver gate: exact gate must fail AND either shared-statistics speedup≥1.5xglobally or largest-component share≤0.8. Neither holds. The one-hot sparsity is already exploited, not new evidence to start more numerical variants. B1/B2 objective and time are **NOT_TRIGGERED/N/A**, not zero and not algorithm failures. No complex solver extension, generic L-BFGS repeat, changed convergence tolerance or order search.
+
+Historical official pairs25 fit/OVR: **3.634165x** (mean split ratios per dataset then dataset median); pooled paired-split median **3.699085x**. These differ by aggregation, not a new clock. Development absolute fit median **0.447389s**,P90 **3.814370s**, worst **8.507149s**. All historical prerequisites charged; no cached scaffold described as a free production fit. No current matched from-scratch clock or new fit≤2xOVR claim. Static design/addresses/coefficients/buffer bytes in cost_results.csv.
+
+| case | total_fit_s | solve_s | OVR_s | ratio_OVR | statistics_speedup | RSS_snapshot_GiB |
+| --- | --- | --- | --- | --- | --- | --- |
+| sensorless | 49.8058 | 35.1083 | 13.3344 | 3.73512 | 0.511933 | 0.41745 |
+| connect4 | 18.2204 | 11.68 | 4.86161 | 3.74781 | 1.51213 | 0.23225 |
+| covtype | 452.138 | 331.349 | N/A | N/A | 0.952666 | 2.35757 |
+
+Connect4/Sensorless/Covtype above are **archived models + fresh tomography only**; no newstress fit. Covtype historical OVR is rejected by its original unchanged512MiBguard, so its ratio is N/A. Absolute Covtype fit remains452.14s; not hidden in small-development median. Largest observed end-of-case RSS snapshot **2.357567GiB**, not a sampled peak certificate. No new solver peak-RAM claim. Single process and1thread provisioning satisfy requested≤4thread policy; no data acquisition.
+
+Transfer: **NOT_TRIGGERED**,0newdatasets/0fits. No independent confirmation, no transfer failure inferred. Existing regression/binary/public experimental scopes unchanged.
+
+## Decision and audit
+
+Stop; no Round79. Keep official pairs25 and all failed selection/stopping/solver histories. No global solver or state-compression candidate emerged. A future numerical investigation needs its own authorization and preregistration of an exploitable same-objective structure or a workload restriction defined from TRAIN before quality results, a matched raw cost baseline charging native acquisition, and an explicit A300-versus-optimum fidelity contract. Do not infer impossibility of untested coded block Newton or promote Car/Connect4 post-hoc.
+
+Verdict is QUALITY_PRESERVED_COST_TOO_HIGH, not STATE_STRUCTURE_NOT_EXPLOITABLE: duplication is material in several panels, but the tested exact mechanisms do not meet the global gate. The audit does not prove all future structured Newton methods ineffective. Public/private Ruff and public/private pytest logs are included; protected scientific artifacts/core sources are hash-verified; memory JSON/index1–78/private Git exclusion checked in final_audit.json. Public tests409PASS/4knownXFAIL;private tests6PASS. No new research fit; test fixtures may train small models as required by the unchanged public tests. Private Ruff checks source files, excluding generated pytest helper scripts. No remote/commit/push/tag/release, no Round79.
+
+## Required31fields
+
+1. Reused39frozen models and all valid original fit/code/split/cost receipts.
+2. Repeated fits/solves0; restarted only first failed JSON diagnostic unit.
+3. Active states total30943,median770.5.
+4. Active coefficients total214249,median3725.0.
+5. Sparsity94.786%.
+6. Active states/row38.0.
+7. TRAINduplicate fraction10.520%.
+8. Other global functional equivalences not certified;TRAIN-duplicate grouping only.
+9. Support≤1/2/4/8/16/32: tableabove; no state removed for low support.
+10. Rank: bounded numericalSVD or128lowerbound,fullbounds tableabove.
+11. Connected components1onall39.
+12. Largest component100%onall39.
+13. Interned values10.52%median;actualsolve states removed0.
+14. Stored coefficient reduction10.520%;withmapbytes ratio0.989588.
+15. Exact solve speedupN/A(no newsolve).
+16. Statistics speedup0.676610xaggregationonly.
+17. B1/B2NOT_TRIGGERED(historyMATERIAL_VARIANT,notgenericbackfitting).
+18. Objective difference0(original-orderexpansion).
+19. Prediction difference0bitwise.
+20. NLL difference0.
+21. Historical officialfit/OVR3.634165x.
+22. Historical medianfit0.447389s.
+23. P903.814370s.
+24. Worstdevelopment8.507149s.
+25. RSSsnapshot max2.357567GiB;peaknotmeasured.
+26. Connect4archivedfit18.2204s;freshduplicate46.38%,statsspeed1.512x.
+27. Sensorlessarchivedfit49.8058s;freshduplicate19.27%,statsspeed0.512x.
+28. Covtypearchivedfit452.138s;freshduplicate20.05%,statsspeed0.953x.
+29. QUALITY_PRESERVED_COST_TOO_HIGH.
+30. Round79justifiedNO.
+31. Stop; no Round79. Keep official pairs25 and all failed selection/stopping/solver histories. No global solver or state-compression candidate emerged. A future numerical investigation needs its own authorization and preregistration of an exploitable same-objective structure or a workload restriction defined from TRAIN before quality results, a matched raw cost baseline charging native acquisition, and an explicit A300-versus-optimum fidelity contract. Do not infer impossibility of untested coded block Newton or promote Car/Connect4 post-hoc..
+
+
+## POST_R78_MULTICLASS_STOCHASTIC_SOLVER — completed2026-10-07
+
+# POST-R78 — MULTICLASS SPARSE STOCHASTIC OPTIMIZATION AUDIT
+
+**COST_REDUCED_QUALITY_LOSS**. The cost recovery is limited to some numerical-core clocks; **no selected end-to-end speed win**. Known-source engineering pilot only, no confirmation. Index78/public0.2.0rc2 unchanged; Round79 not justified/not started.
+
+## History, freeze and reuse
+
+History classification: **NEW_NUMERICAL_PRINCIPLE**, relative to the documented frozen multinomial pairs25 numerical pipeline. SGD/momentum/SVRG are standard numerical methods; no external algorithmic novelty is claimed. Full MASTER/STATE/private knowledge base read before freeze. Keyword audit finds no prior minibatch/SVRG test of this sameobjective. Missing early private sources limit exhaustive historical proof. R20/R21 residual backfitting and coordinate memory updates modify conditional residual fits; this intervention samples gradients of one fixed convex full-K objective. R32/global shapes and R52/fixed joint values are full-batch or coordinate solves, not variance-reduced coded minibatches. Current solver audit tested L-BFGS scaling/history/Newton-CG/warm starts. Exact state compression and generic pruning remain closed; no scaffold/capacity/selection change is introduced.
+
+All six baseline models, original encoder, main4/8/16, pair identities/hashes, active mask, class order, symmetric full-K convention, rows/splits and historical clocks reused. No baseline, OVR, discovery or teacher fit repeated.36new numerical solves =6cases×3optimizers×2scales. No external ML estimator is used to optimize; numerical implementation is NumPy/SciPy, metrics are native NumPy. No Adam, grids, per-dataset selection or test tuning.
+
+Protocol SHA`83be55c2b64f5bbad97e64652dc8e7edff4e8cd6f15d52da72adc80ae84bef91`. One batch size **1024**;64fixed epochs; scales0.5/1.0; deterministic SHA256(case) XOR19431 +epoch shuffle seed, identical ordering across recipes. Each epoch is a without-replacement TRAIN permutation. Global selection minimizes equal-case mean relative TRAIN objective gap among complete recipes. Ties are SVRG,momentum,SGD then1,0.5. Validation is diagnostic only. Selection is sealed before any new test comparison. **momentum,scale1** selected; no switch to another recipe after test.
+
+## Sparse update and same-objective contract
+
+F=(sum multinomial NLL+2.5sum(w²))/N, intercept unpenalized; ridge gradient5w/N. Batch logits gather active coded states; gradients aggregate only unique batch states/classes. No dense one-hot/design matrix. Compact address arrays are precomputed once; coefficient count and prediction formula stay unchanged.
+
+TRAIN-only diagonal majorizer P_j=.5(Tmax+1)*support_j/N+5/N. Softmax class Hessian has spectral bound1/2 and each row activates at most Tmax+1coordinates per class including intercept; Cauchy-Schwarz gives this diagonal bound. Step eta_j=scale/P_j, intercept eta=scale/[.5(Tmax+1)]. SGD/momentum multiply by1/sqrt(1+epoch/8); SVRG remains constant. This is fixed diagonal preconditioning, not a new penalty/feature map. A safe full-gradient majorizer does NOT guarantee stochastic or heavy-ball convergence.
+
+SGD absent states receive all deferred ridge steps via q_j=1-eta_j*5/N and timestamp powers. Momentum uses beta0.9 and the exact linear absent-state recurrence matrix [[1-eta*lambda, -eta*beta],[lambda,beta]] on(weight,velocity), with precomputed powers. It is heavy-ball, not Nesterov. Sparse-only ridge or ignoring inactive velocity would optimize a different process; neither shortcut is used.
+
+SVRG-like: cache full TRAIN residual/mean data gradient at every epoch boundary. Inner g_B(w)-g_B(snapshot)+mu_data+lambda*w uses residual differences and deferred dense mu/ridge affine recurrences. Intercept mean-gradient correction is explicit. Snapshot residual uses O(NK)bytes, not an estimator/teacher. Random reshuffling rather than iid draws makes this SVRG-like; no iid-SVRG convergence theorem is claimed.
+
+Seven private tests verify tiny dense-vs-sparse objective/gradients, batch normalization, absent-state SGD/SVRG ridge and momentum equivalence, zero snapshot difference, bitwise epoch-checkpoint resume for allthreeoptimizers and no heldout data in numerical checkpoints. The legacy Head.converged field records completed fixed budget in these artifacts, **not a stationarity certificate**; use reported gradient/objective/trajectory, not that boolean.
+
+## Fixed-epoch results
+
+| optimizer | scale | objective_gap_median | NLL_median_delta | accuracy_median_delta | macroF1_median_delta | fit_median_s | numerical_core_speedup |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| sgd | 0.5 | 0.209805 | 0.399927 | -0.0102011 | -0.012392 | 7.4413 | 1.01149 |
+| sgd | 1 | 0.138704 | 0.248285 | -0.00467708 | -0.00858543 | 7.45586 | 1.00349 |
+| momentum | 0.5 | 0.0817917 | 0.118841 | -0.00339994 | -0.00290584 | 7.59505 | 0.987928 |
+| momentum | 1 | 0.0833299 | 0.106331 | -0.00436941 | -0.00281802 | 7.44316 | 0.989232 |
+| svrg | 0.5 | 0.118164 | 0.254373 | -0.00760998 | -0.00876287 | 7.47617 | 0.469371 |
+| svrg | 1 | 0.0684411 | 0.149779 | -0.000213639 | -0.00582366 | 7.50754 | 0.475879 |
+
+Quality deltas are relative NLL and absolute accuracy/F1;0.01accuracy means1percentage point. Each source has **one engineering split**, not three-fold development or confirmation; no dataset-level CI or independent statistical replication is claimed. AUC is not primary here. Reference is protected A300 endpoint, which can be unfinished; relative objective gap is to that endpoint, not a certified optimum. Other recipes are descriptive and cannot replace the TRAIN-selected recipe after test.
+
+Selected median relative objective gap **8.3330%**;mean TRAIN gap used for selection **10.7912%**. Median test NLL delta **+10.6331%**;worst **+32.6880%**. Median accuracy delta **-0.4369pp**,macro-F1 **-0.2818pp**; source downside gates fail too.
+
+| case | relative_objective_gap | NLL_relative_delta | accuracy_delta | macro_F1_delta | baseline_fit_s | total_fit_s | numerical_core_speedup | peak_RSS_GiB |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| car__44001 | 0.271617 | 0.32688 | -0.0346821 | -0.00172444 | 0.511506 | 0.673442 | 1.44377 | 0.14748 |
+| connect4 | 0.0012609 | 0.000209117 | -0.000518058 | -0.00250268 | 18.2204 | 35.7607 | 0.870873 | 0.192192 |
+| digits__44001 | 0.205341 | 0.238324 | -0.00555556 | -0.00553753 | 1.25642 | 3.06212 | 0.55447 | 0.175053 |
+| iris__44001 | 0.00259273 | -0.0114336 | 0 | 0 | 0.0505304 | 0.191437 | 0.343922 | 0.143574 |
+| pendigits__44001 | 0.110438 | 0.173677 | -0.00318327 | -0.00313337 | 7.66686 | 11.8242 | 1.10759 | 0.227703 |
+| sensorless | 0.0562221 | 0.038985 | -0.00803281 | -0.00508663 | 49.8058 | 54.8169 | 1.80704 | 0.230999 |
+
+## Work units, clocks and resources
+
+64optimization epochs process64Ntraining rows.65full TRAIN objective/gradient scans (including initialization) add65Nrows, so **129Ngradient-row equivalents** are charged, alongside64validation scans. SVRG TRAIN scans are its required snapshots and also monitoring; they are counted once. Inner snapshot residuals are cached, not a second snapshot forward pass. rows_processed/epochs_equivalent distinguish data-gradient work from minibatch counts. active-state-class visits count the inner coded incidences; full scan visits are additional. Deferred inactive ridge/momentum/mean updates and epoch flushes are real timed work. Baseline evaluate_calls*N and iterations are reported separately, so300iterations is not equated to300minibatches.
+
+| case | epochs_equivalent | rows_processed | batch_gradient_evaluations | full_gradient_evaluations | active_state_class_visits | batch_unique_state_class_updates | baseline_iterations | baseline_gradient_evaluations | baseline_gradient_rows |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| car__44001 | 129 | 133644 | 128 | 65 | 6630400 | 69744 | 137 | 149 | 154364 |
+| connect4 | 129 | 5228757 | 2560 | 65 | 241252416 | 1059840 | 300 | 336 | 13619088 |
+| digits__44001 | 129 | 138933 | 128 | 65 | 73752960 | 1886580 | 113 | 121 | 130317 |
+| iris__44001 | 129 | 11610 | 64 | 65 | 241920 | 24000 | 23 | 27 | 2430 |
+| pendigits__44001 | 129 | 850626 | 448 | 65 | 286970880 | 8218920 | 181 | 189 | 1246266 |
+| sensorless | 129 | 4528545 | 2240 | 65 | 914415040 | 37086775 | 300 | 314 | 11022970 |
+
+`active_state_class_visits` counts coded incidences; `batch_unique_state_class_updates` counts unique gradient coordinates updated per minibatch, including zero gradients. The latter was replayed from frozen TRAIN codes/order without fitting. Neither includes intercept, deferred absent-state recurrences, epoch flushes or full-scan coefficient operations, which still incur timed work.
+
+| case | historical_prerequisite_s | setup_s | optimization_s | train_monitor_s | snapshot_s | validation_s | checkpoint_s | total_fit_s | optimistic_fit_without_diagnostic_s |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| car__44001 | 0.176667 | 0.000741 | 0.205108 | 0.175215 | 0 | 0.0268911 | 0.0888203 | 0.673442 | 0.382515 |
+| connect4 | 6.40978 | 0.0131173 | 13.4118 | 15.0677 | 0 | 0.708553 | 0.149736 | 35.7607 | 19.8347 |
+| digits__44001 | 0.547478 | 0.0019934 | 1.19569 | 1.12034 | 0 | 0.0855846 | 0.111037 | 3.06212 | 1.74516 |
+| iris__44001 | 0.0356782 | 0.000387 | 0.0321965 | 0.0254901 | 0 | 0.0134073 | 0.0842776 | 0.191437 | 0.0682617 |
+| pendigits__44001 | 2.86364 | 0.0056843 | 4.24003 | 4.38606 | 0 | 0.205311 | 0.123475 | 11.8242 | 7.10936 |
+| sensorless | 14.4112 | 0.0147353 | 19.4286 | 19.8226 | 0 | 0.967306 | 0.172405 | 54.8169 | 33.8545 |
+
+SVRG scale 1: 65 full-gradient snapshots versus 64 inner epochs:
+
+| case | optimization_s | snapshot_s | snapshot_fraction_of_numerical_core | total_fit_s | numerical_core_speedup |
+| --- | --- | --- | --- | --- | --- |
+| car__44001 | 0.217383 | 0.175717 | 0.447003 | 0.687144 | 0.753318 |
+| connect4 | 13.6567 | 14.6291 | 0.51719 | 35.5894 | 0.412928 |
+| digits__44001 | 1.20918 | 1.1195 | 0.480745 | 3.07338 | 0.284699 |
+| iris__44001 | 0.0352245 | 0.0248287 | 0.413445 | 0.191407 | 0.184388 |
+| pendigits__44001 | 4.28982 | 4.42576 | 0.507799 | 11.9417 | 0.538831 |
+| sensorless | 19.1243 | 19.0585 | 0.499139 | 53.8472 | 0.919479 |
+
+Primary fit=historical frozen native prerequisites+fresh sparse setup+optimization+TRAIN monitor/snapshot+validation+checkpoint clock. Core/snapshot clocks are separate; optimistic cost excluding diagnostic monitors is exposed, never used to rescue the primary gate. SGD/momentum numerical-core clocks exclude their diagnostic TRAIN scans, whereas SVRG core includes required snapshots; complete cost governs the decision. Raw acquisition and OVR/full baseline are historical, not newly matched same-session end-to-end clocks. Cached input loading, final model serialization and final quality replay are outside the fit clock; epoch checkpoint IO is included. Timing is one isolated execution per recipe/source, not repeated latency samples; no credible timing CI is implied.
+
+Selected composed fit/OVR median **5.605448x**;absolute median **7.443159s**,P90 **45.288775s**,worst **54.816892s**. Selected numerical-core speedup median **0.989232x**. Some core clocks improve, especially on larger sources, but no selected source has lower complete cost. This scopes COST_REDUCED_QUALITY_LOSS to limited core recovery and avoids claiming a global systems advantage.
+
+Maximum worker-sampled RSS **0.235302GiB** at 20ms intervals. All pools use one thread, one heavy worker. Historical A_TRACE exact-parameter baseline RSS available for Sensorless/Connect4 is shown in cost_results.csv; small-panel baseline peak RSS was not measured, so uniform RAM≤baseline is not certified. Observed worker RSS is far below the intended resource budget; no memory failure occurred. Static design/coeff/address/snapshot bytes are included. The external 100ms supervisor recorded only the Windows .venv launcher PID (maximum about 4MiB), rather than the actual Python worker. Its 12GiB check was therefore not an effective worker hard limit and does not cover worker startup/input loading. Worker RSS is measured by the internal sampler after context loading. The full-process startup/load peak is UNKNOWN; launcher and worker peaks are separated in final_audit.json. This monitoring limitation is an environment/harness limitation, not an algorithmic rejection. No solve was repeated to repair timing.
+
+## Large N, classification and conditional stop
+
+| case | diagnosis | NLL_relative_delta | speedup |
+| --- | --- | --- | --- |
+| car__44001 | QUALITY_FLOOR | 0.32688 | 0.759541 |
+| connect4 | SLOW_BUT_ACCURATE | 0.000209117 | 0.50951 |
+| digits__44001 | QUALITY_FLOOR | 0.238324 | 0.41031 |
+| iris__44001 | SLOW_BUT_ACCURATE | -0.0114336 | 0.263954 |
+| pendigits__44001 | QUALITY_FLOOR | 0.173677 | 0.648404 |
+| sensorless | QUALITY_FLOOR | 0.038985 | 0.908585 |
+
+QUALITY_FLOOR labels the registered finite64epoch budget, not an asymptotic lower bound. Several loss curves are still improving; stronger convergence or altered rates were not tested. Finite output with missed quality gate is not automatically numerical instability. Connect4 and Sensorless are already engineering cases, not withheld transfer. Selected large-N end-to-end speedups are **0.50951x** and **0.908585x**, respectively, with test NLL deltas **+0.0209%** and **+3.8985%**. No robust large-N quality+cost win. Covtype expansion **NOT_TRIGGERED**, not a failed Covtype solve.12x3development and additional stress also NOT_TRIGGERED by failed engineering quality/cost gate. Transfer 0sources/0splits; no data downloaded or transfer evidence claimed.
+
+The frozen continuation prose mentions numerical speedup, while its gate implementation requires complete-fit speedup. The stronger complete-cost check governs this audit. The freeze was preserved; this discrepancy is disclosed, not silently amended.
+
+Frozen engineering gate:
+
+```json
+{
+  "phase": "pilot",
+  "checks": {
+    "complete": true,
+    "NLL_median": false,
+    "worst_source": false,
+    "accuracy": false,
+    "macro_F1": false,
+    "median_fit_OVR": false,
+    "large_N_speedup": false
+  },
+  "NLL_median_relative_delta": 0.1063310754559062,
+  "worst_source_relative_delta": 0.3268799201251127,
+  "fit_ratio_OVR": 5.605448335612771,
+  "median_s": 7.443158699991045,
+  "P90_s": 45.28877544999989,
+  "worst_s": 54.81689170000027,
+  "large_N_speedup": {
+    "connect4": 0.509509517095246,
+    "sensorless": 0.9085849608652704
+  },
+  "selection_sha": "89777c0cbb8371950bd53e9915c66c197fbca07c29b4ea20090bf5062481c093",
+  "pass": false
+}
+```
+
+## Decision
+
+Stop; keep the official full-batch pairs25 reference and do not start Round79. No stochastic recipe passed quality plus complete cost at the registered64epoch budget. Reuse saved TRAIN work/objective trajectories to distinguish incomplete convergence, stochastic oscillation and monitoring cost before any separately authorized reopening. A new experiment would need a TRAIN-derived safe step/preconditioning principle with prospective full-cost evidence, not post-hoc test tuning, more optimizer variants or a per-dataset recipe. No asymptotic impossibility of SGD/SVRG is asserted.
+
+## Required final fields
+
+1. **History classification:** NEW_NUMERICAL_PRINCIPLE within the documented frozen pipeline; standard algorithms.
+2. **Implemented optimizers:** SGD, heavy-ball momentum, SVRG-like.
+3. **Batch size:** 1024 only.
+4. **Learning schedule:** TRAIN diagonal majorizer; scales 0.5/1; SGD/momentum sqrt decay, SVRG constant.
+5. **Epochs:** 64 fixed; no validation stopping.
+6. **Rows processed:** 129N TRAIN gradient-row equivalents; per-source table above.
+7. **Active-state updates:** Unique minibatch state/class coordinates, incidences and additional full scans distinguished above.
+8. **Objective gap:** Median 8.3330% vs protected full-batch endpoint.
+9. **NLL delta:** Median +10.6331%.
+10. **Accuracy delta:** Median -0.4369 percentage points.
+11. **Macro-F1 delta:** Median -0.2818 points.
+12. **Baseline fit:** Historical frozen source clocks in the table above.
+13. **SGD fit:** Median 7.4413s / 7.45586s for scales 0.5 / 1.
+14. **Momentum fit:** Median 7.59505s / 7.44316s.
+15. **SVRG fit:** Median 7.47617s / 7.50754s.
+16. **Median fit/OVR:** 5.605448x, composed with historical prerequisites.
+17. **P90:** 45.288775s.
+18. **Worst:** 54.816892s.
+19. **RAM:** Worker-sampled max 0.235302GiB; uniform baseline certificate unavailable.
+20. **Connect4:** Selected NLL +0.0209%; fit 35.761s vs baseline 18.2204s.
+21. **Sensorless:** Selected NLL +3.8985%; fit 54.8169s vs baseline 49.8058s.
+22. **Covtype:** NOT_TRIGGERED.
+23. **Large-N speedup:** No selected complete-cost win.
+24. **Best optimizer:** Momentum scale 1, TRAIN-selected; not promoted.
+25. **Transfer datasets:** 0.
+26. **Transfer NLL delta:** N/A.
+27. **Transfer fit ratio:** N/A.
+28. **Verdict:** COST_REDUCED_QUALITY_LOSS (limited individual core recovery; no selected complete-cost reduction).
+29. **Round79 justified:** NO.
+30. **Precise next step:** Stop; keep the official full-batch pairs25 reference and do not start Round79. No stochastic recipe passed quality plus complete cost at the registered64epoch budget. Reuse saved TRAIN work/objective trajectories to distinguish incomplete convergence, stochastic oscillation and monitoring cost before any separately authorized reopening. A new experiment would need a TRAIN-derived safe step/preconditioning principle with prospective full-cost evidence, not post-hoc test tuning, more optimizer variants or a per-dataset recipe. No asymptotic impossibility of SGD/SVRG is asserted.
+
+Public/private Ruff and tests, protected input hashes, row/class alignment, objective/ridge equivalence, exact checkpoint resume, JSON/history/privacy and unchanged public sources are checked in final_audit.json. No remote,commit,push,tag or release.
+
+
+## POST_R78_MULTICLASS_SHARED_OVR — completed2026-10-07
+
+# POST-R78 — Practical multiclass OVR with shared native engine
+
+**QUALITY_EQUIVALENT_COST_PARTIAL**. Quality is preserved on the known development panel; the complete systems gate fails. No transfer or public integration is claimed. `last_completed_round=78`, public version `0.2.0rc2`; no Round79, release, tag, commit or remote operation.
+
+## History and contract
+
+**MATERIAL_VARIANT**. FactorOriginal already shared the native16 deployment encoder and historically reached inference1k 0.402×, deep0.649×, serialized0.867× OVR, but it did not establish a shared native fit cost (its reported zero fit was factoring cached models, not free training). SharedOVR32 used a32-bin scaffold and changed native geometry. R5 already introduced shared encoding; compiler shared-state work concerned externally fitted model deployment. This task is an exact engineering extension: native16 TRAIN preprocessing, X-only statistics/address reuse during fitting, independent native heads and a compact predictive-only artifact. It is not a novel learner or a new representation. Full persistent memory and private knowledge base were read before the freeze; early historical source gaps are not silently filled with claims of novelty.
+
+The reference remains K independent unchanged `CodAdaptClassifier` heads, all with the same seed and categorical declaration, fitted on the SAME original TRAIN and external validation rows. Historical reference models/quality are reused. One fresh independent fit per case is an authorized systems timing replication, not a new hypothesis/quality selection. Both recipes are measured in the same isolated worker, alternating recipe order between cases. No binary/regression/public API/compiler changes.
+
+**pairs25 = REJECTED_FOR_NOW_TRAINING_COST**. Its quality/deployment promise does not justify more equivalent fit optimizations. Retry requires a genuinely distinct numerical/architectural principle. No pairs25 or vector Softmax head is used here. Binary stays PARTIAL_BINARY_SIGNAL; regression Round78 remains frozen.
+
+## Shared and independent state
+
+Shared exactly: one native16-bin `BucketEncoder`; schema/vocabulary/missing handling; native4/8/16 integer mappings, supports and arrays; class-independent feature metadata. One set of encoded level arrays is reused for all K heads. X-only caches reuse aggregate mass A, identical table addresses and candidate combination counts. Cache admission has a32MiB **array-payload** budget; Python dictionary/key metadata is additional and counted in worker RSS. When full, reuse stops; no prediction/statistical change.
+
+Not shared: targets `y==class_k`, response B/residuals, feature gains, pair proposals/ranking, RNG progression, code/hash assignments, coefficients, memories, penalties, validation admission and stopping. The native binary surrogate has h=1/4 because every training weight is one. Mass A therefore depends only on X. We retain the original float64 bincount result, not a numerically different sum. Cache entries retain index arrays/views, preventing pointer reuse from aliasing another addressing. Target-dependent B is recalculated on every call.
+
+The private fitter clones the unchanged native training function into isolated globals for X-only callbacks, replacing exactly one combination-count expression. Public globals/functions are not monkeypatched. No objective, selection threshold, table size, capacity, regularization or addition order changes. One process, one thread, sequential heads. Parallel-head diagnostic was not needed and was not run.
+
+Final deployment stores only the shared encoder, classes and K predictive heads (intercept/levels/tables/codes). Training diagnostics/cache/raw data are discarded from the deployment object and pickle. Coefficients are float64 and independently retained; no target parameter tying, lossy quantization or pruning. The memory comparator is the complete naive independent OVR artifact, including its own fitted metadata; compressed-file size is not substituted for retained memory.
+
+## Probability/API behavior
+
+Primary `p_k=sigmoid(logit_k)/sum_j sigmoid(logit_j)`: the frozen historical OVR probability contract. `softmax(binary_logits)` is computed descriptively on the same fitted heads, never selected using test. Both preserve ordered argmax; neither is assumed calibrated. ECE/Brier and minority failures are explicit.
+
+Private `SharedOVRCodAdaptClassifier` supports fit/predict/predict_proba/classes_, integer/string/non-contiguous comparable labels, missing and unseen categories. When fit(X,y) has no eval_set, it creates ONE stratified multiclass holdout. Exact reference then means independent heads on that SAME explicit split, **not** K separate binary-stratified internal splits. Primary36cases use original external validation, so no rows/splits change. Rare classes (<5TRAIN rows) warn; single-class/binary/continuous targets reject; a class missing after common splitting rejects; impossible stratified validation asks for a valid eval_set. No smoothing or silent uniform probability repair is added. Unknown validation labels and invalid schema fail explicitly.
+
+## Development quality
+
+Twelve known sources × three original seeds44001–44003. Maximum probability difference **0**; raw-logit bit mismatches **0**; minimum class-decision equivalence **1**. Both historical and fresh independent heads are compared on TRAIN/validation/test; no heldout recipe selection or posthoc implementation change. Preregistered logits bitwise exact; probability absolute tolerance5e-15; relative logloss tolerance1e-12. The actual observed errors are reported rather than presumed.
+
+| dataset | shared_logloss | independent_logloss | logloss_relative_delta | shared_accuracy | shared_balanced_accuracy | shared_macro_f1 | shared_brier | shared_ece | shared_zero_recall_present_classes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| balance_scale | 0.422622 | 0.422622 | 0 | 0.904 | 0.655038 | 0.6281 | 0.193777 | 0.149261 | 1 |
+| car | 0.308 | 0.308 | 0 | 0.910405 | 0.602337 | 0.636838 | 0.15391 | 0.114951 | 0 |
+| cmc | 0.891948 | 0.891948 | 0 | 0.581921 | 0.551026 | 0.554193 | 0.531274 | 0.0532366 | 0 |
+| digits | 0.577684 | 0.577684 | 0 | 0.898148 | 0.898011 | 0.897966 | 0.248987 | 0.269805 | 0 |
+| glass | 0.833961 | 0.833961 | 0 | 0.705426 | 0.577249 | 0.559488 | 0.428056 | 0.159645 | 1.33333 |
+| iris | 0.179068 | 0.179068 | 0 | 0.988889 | 0.988889 | 0.988861 | 0.0632521 | 0.143462 | 0 |
+| page_blocks | 0.142368 | 0.142368 | 0 | 0.961948 | 0.612073 | 0.663621 | 0.0599286 | 0.0428847 | 0.666667 |
+| pendigits | 0.418057 | 0.418057 | 0 | 0.930271 | 0.930225 | 0.929971 | 0.166564 | 0.21337 | 0 |
+| satimage | 0.455 | 0.455 | 0 | 0.854588 | 0.81317 | 0.823254 | 0.218925 | 0.0760991 | 0 |
+| segment | 0.316118 | 0.316118 | 0 | 0.948773 | 0.948773 | 0.948255 | 0.12675 | 0.179001 | 0 |
+| vehicle | 0.742186 | 0.742186 | 0 | 0.713725 | 0.716135 | 0.702841 | 0.415941 | 0.116001 | 0 |
+| wine | 0.241173 | 0.241173 | 0 | 0.925926 | 0.935185 | 0.927089 | 0.106992 | 0.148961 | 0 |
+
+Median source-mean test metrics: logloss **0.420339**, accuracy **0.907202**, balanced accuracy **0.764652**, macro-F1 **0.763048**, Brier **0.180171**, ECE **0.146212**. Median relative logloss difference **0**. Per-case quality and minority recall counts remain in development_results.csv; sharing does not cure original OVR zero-recall classes.
+
+Probability comparison on the same frozen heads (descriptive; no rule selection):
+
+| dataset | shared_logloss | diagnostic_softmax_logloss |
+| --- | --- | --- |
+| balance_scale | 0.422622 | 0.342399 |
+| car | 0.308 | 0.228125 |
+| cmc | 0.891948 | 0.928106 |
+| digits | 0.577684 | 0.383937 |
+| glass | 0.833961 | 0.790106 |
+| iris | 0.179068 | 0.065009 |
+| page_blocks | 0.142368 | 0.123711 |
+| pendigits | 0.418057 | 0.252011 |
+| satimage | 0.455 | 0.431199 |
+| segment | 0.316118 | 0.170558 |
+| vehicle | 0.742186 | 0.702143 |
+| wine | 0.241173 | 0.14205 |
+
+## Complete costs and scaling
+
+| dataset | fit_s | serialized_bytes | deep_bytes | p50 |
+| --- | --- | --- | --- | --- |
+| balance_scale | 0.977298 | 0.889053 | 0.603526 | 0.700607 |
+| car | 0.627294 | 0.855598 | 0.515773 | 0.326158 |
+| cmc | 0.76783 | 0.831804 | 0.501653 | 0.383061 |
+| digits | 0.553214 | 0.558466 | 0.195255 | 0.189384 |
+| glass | 0.804638 | 0.793773 | 0.433521 | 0.428278 |
+| iris | 0.884215 | 0.886562 | 0.609274 | 0.661838 |
+| page_blocks | 0.735354 | 0.787004 | 0.453563 | 0.404958 |
+| pendigits | 0.707079 | 0.760545 | 0.356437 | 0.340994 |
+| satimage | 0.589177 | 0.630059 | 0.299064 | 0.266224 |
+| segment | 0.675514 | 0.739558 | 0.357569 | 0.365177 |
+| vehicle | 0.770259 | 0.755745 | 0.420851 | 0.424302 |
+| wine | 0.935819 | 0.830711 | 0.530046 | 0.54061 |
+
+These are paired shared/independent ratios averaged across the three splits per source, then median across sources. Fit **0.751592×**, serialized **0.790389×**, deep **0.443542×**, batch1k **0.394010×**. All four targets must be ≤0.75; partial benefits do not pass the complete gate.
+
+Inference ratios (seven warm interleaved samples per recipe/case/batch):
+
+| batch | ratio |
+| --- | --- |
+| 1 | 0.396626 |
+| 32 | 0.404176 |
+| 1000 | 0.39401 |
+| 100000 | 0.614522 |
+
+Fit clocks include native preparation, target head work and per-head checkpoint IO for BOTH arms. Final artifact save, heldout verification and latency runs are separate. Shared checkpoint fingerprint hashing is included. Fresh complete fit clocks are used, not historical denominators or cached factoring time. If interrupted within an arm, completed heads remain valid and are reused; the elapsed fragment is explicitly invalid as a full-fit clock, so it cannot pass the systems gate. No such timing invalidity occurred in these completed jobs. Fit has one sample per recipe/case; no precise timing CI or hardware-independent speed guarantee is claimed. Raw seven latency samples/p95 remain in each receipt. Batch100k repeats the original heldout inputs for systems measurement, not100k new quality observations.
+
+X-only reuse profile (source means; timed cache callbacks are inclusive components, not a complete mutually exclusive decomposition):
+
+| dataset | preparation_s | head_fit_s | address_hits | address_misses | mass_hits | mass_misses | combination_hits | combination_misses | address_s | aggregate_s | combination_s |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| balance_scale | 0.00179337 | 0.0157297 | 46.6667 | 41.6667 | 100.667 | 53.6667 | 34 | 18 | 0.000887567 | 0.00106763 | 0.0032941 |
+| car | 0.006708 | 0.0310814 | 52.3333 | 72.6667 | 148.667 | 89.3333 | 44 | 39.3333 | 0.00149683 | 0.00172487 | 0.0140606 |
+| cmc | 0.007745 | 0.0313204 | 41.3333 | 82.6667 | 101.333 | 100.667 | 29.6667 | 53 | 0.00160457 | 0.0016081 | 0.015571 |
+| digits | 0.0156091 | 0.126586 | 130 | 233 | 538.333 | 332.667 | 100 | 142 | 0.00598687 | 0.0080193 | 0.0586699 |
+| glass | 0.00419103 | 0.0313865 | 61 | 108 | 219.333 | 133 | 46.6667 | 66 | 0.00195533 | 0.0022815 | 0.00647803 |
+| iris | 0.00188947 | 0.0102523 | 57 | 35 | 97.6667 | 43.6667 | 34 | 18 | 0.000584033 | 0.000731467 | 0.0010991 |
+| page_blocks | 0.00479743 | 0.136181 | 60 | 82 | 203 | 109.333 | 29.3333 | 65.3333 | 0.0039563 | 0.00449117 | 0.0949293 |
+| pendigits | 0.00947393 | 0.70457 | 155 | 203 | 461 | 248.333 | 120.333 | 118.333 | 0.0215707 | 0.02518 | 0.494155 |
+| satimage | 0.0143554 | 0.186058 | 108.667 | 101 | 269.333 | 168.333 | 47 | 93.6667 | 0.0048172 | 0.0064943 | 0.131141 |
+| segment | 0.0052526 | 0.0947856 | 113.333 | 134 | 325 | 171.333 | 74.6667 | 90.6667 | 0.00386357 | 0.00459167 | 0.050362 |
+| vehicle | 0.00395593 | 0.0345974 | 54.3333 | 91.6667 | 157.333 | 127.333 | 31.3333 | 66 | 0.00174717 | 0.00187227 | 0.0141284 |
+| wine | 0.0030171 | 0.0166795 | 75.3333 | 50.6667 | 137 | 73 | 36 | 48 | 0.000991167 | 0.00114143 | 0.00372633 |
+
+| case | status | K | rows_total | rows_train | features | fit_s | serialized_bytes | deep_bytes | p50 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| connect4 | COMPLETE | 3 | 67557 | 40533 | 42 | 0.712451 | 0.747979 | 0.407313 | 0.329611 |
+| covtype | TECHNICAL_RESOURCE_REJECT_NATIVE_PREFLIGHT | 7 | 581012 | N/A | 54 | N/A | N/A | N/A | N/A |
+| letter | COMPLETE | 26 | 20000 | 12000 | 16 | 0.63099 | 0.724491 | 0.292411 | 0.173355 |
+| sensorless | COMPLETE | 11 | 58509 | 35105 | 48 | 0.157649 | 0.519904 | 0.204224 | 0.193378 |
+| syn_N10000_P10_K10 | COMPLETE | 10 | 10000 | 6000 | 10 | 0.474929 | 0.830868 | 0.448772 | 0.418302 |
+| syn_N10000_P10_K20 | COMPLETE | 20 | 10000 | 6000 | 10 | 0.141213 | 0.799636 | 0.398468 | 0.337165 |
+| syn_N10000_P10_K3 | COMPLETE | 3 | 10000 | 6000 | 10 | 0.554636 | 0.873114 | 0.574771 | 0.599378 |
+| syn_N10000_P10_K40 | COMPLETE | 40 | 10000 | 6000 | 10 | 0.200476 | 0.774927 | 0.364558 | 0.238437 |
+| syn_N10000_P10_K5 | COMPLETE | 5 | 10000 | 6000 | 10 | 0.437454 | 0.855238 | 0.510646 | 0.508676 |
+
+Absolute costs of the deployed large/K-scaling models (seconds and bytes; batch1k latency):
+
+| case | arm | fit_s | serialized_bytes | deep_bytes | p50 |
+| --- | --- | --- | --- | --- | --- |
+| connect4 | independent | 5.35676 | 143976 | 728001 | 0.191568 |
+| connect4 | shared | 3.81642 | 107691 | 296524 | 0.0631429 |
+| letter | independent | 4.32957 | 796918 | 2522032 | 0.088072 |
+| letter | shared | 2.73191 | 577360 | 737469 | 0.0152677 |
+| sensorless | shared | 1.97339 | 297246 | 482133 | 0.0109707 |
+| sensorless | independent | 12.5177 | 571732 | 2360806 | 0.0567318 |
+| syn_N10000_P10_K10 | independent | 1.10398 | 407846 | 833468 | 0.0247264 |
+| syn_N10000_P10_K10 | shared | 0.524314 | 338866 | 374037 | 0.0103431 |
+| syn_N10000_P10_K20 | shared | 0.519353 | 564746 | 631325 | 0.0201083 |
+| syn_N10000_P10_K20 | independent | 3.67779 | 706254 | 1584380 | 0.0596394 |
+| syn_N10000_P10_K3 | independent | 0.350736 | 140000 | 265770 | 0.0033785 |
+| syn_N10000_P10_K3 | shared | 0.194531 | 122236 | 152757 | 0.002025 |
+| syn_N10000_P10_K40 | independent | 9.49966 | 1267142 | 3044248 | 0.139256 |
+| syn_N10000_P10_K40 | shared | 1.90445 | 981943 | 1109805 | 0.0332037 |
+| syn_N10000_P10_K5 | shared | 0.24206 | 191599 | 221213 | 0.0031954 |
+| syn_N10000_P10_K5 | independent | 0.553337 | 224030 | 433202 | 0.0062818 |
+
+Letter/Sensorless/Connect4 and cached synthetic K=3/5/10/20/40 are systems-only workloads, run after development equivalence. K series keeps10krows/10features and its old generated labels/splits; different K is not evidence of monotonic quality or asymptotic complexity. Covtype retains the original native512MiB estimated-allocation guard: **TECHNICAL_RESOURCE_REJECT**, not a quality failure and not silently replaced by a smaller sample or pairs25. There is no valid naive Covtype reference fit to compare.
+
+Maximum worker-sampled RSS among completed fit cases **0.293037GiB**. The sampler starts before input loading. The external supervisor includes every job, including the early Covtype guard rejection, and measures launcher plus actual Python descendants: peak **0.636940GiB**, with an8GiB hard research cap. No nested multiprocessing or oversubscription. Unchanged source hashes and thread pools are in final_audit.json.
+
+Checkpoint scope: per-head fingerprints cover row values/IDs and labels; frozen case manifests additionally bind the complete input artifacts and schema. These receipts validate this audit's checkpoint reuse. General public checkpoint portability across arbitrary schema changes is not claimed and would require explicit column-name/dtype fingerprinting in a separate integration audit.
+
+Verification:6private API/exactness/cache/checkpoint/persistence tests passed before the implementation freeze and remain valid under unchanged sealed runtime sources. Fresh public/private source Ruff checks pass. The immediately preceding409PASS/4KNOWN_XFAIL public suite is reused, with its original log and audit hashes plus unchanged public source/test/config receipts; it was not rerun or described as a fresh test session. Existing user changes in the working tree are preserved. The final audit checks every protected history/public artifact, JSON, memory continuity and Git privacy.
+
+## Gate and decision
+
+```json
+{
+  "quality_pass": true,
+  "systems_pass": false,
+  "sources": 12,
+  "splits": 36,
+  "medians": {
+    "fit_s": 0.7515919836383333,
+    "serialized_bytes": 0.7903885170106852,
+    "deep_bytes": 0.4435418710470771,
+    "p50": 0.3940098307242714
+  },
+  "aggregation": "Mean paired ratios across three splits per source, then source median",
+  "primary_fit_clocks_valid": true,
+  "transfer": "NOT_TRIGGERED_SYSTEMS_GATE"
+}
+```
+
+Transfer **NOT_TRIGGERED_SYSTEMS_GATE**: zero new datasets/splits/downloads; this is not independent confirmation. Public integration **NO** on this evidence. A scientific Round79 is **not required solely for an exact wrapper**, but independent engineering transfer is still a prerequisite to a public claim. No Round79 was started.
+
+Keep the exact shared native OVR prototype private. Retain normalized sigmoid probabilities and native per-class fitting/admission. Do not start Round79. A separate engineering audit may test lossless persistence/metadata packing of these frozen heads, reporting model-load retained memory and raw artifact size separately; do not alter states, coefficients or probability link. Freeze a deployable implementation and require independent8-12source x3 transfer only after all declared complete fit, memory and inference targets pass. pairs25 stays REJECTED_FOR_NOW for training cost, reopening only for a genuinely distinct numerical/architectural principle.
+
+## Required final fields
+
+1. **Baseline:** K unchanged native binary classifiers, original external validation.
+2. **Shared objects:** Encoder/schema/vocabulary/missing,4/8/16codes/support, identical X-only masses/addresses/counts.
+3. **Independent objects:** Targets/responses/gains/selection/RNG/coefficients/regularization/admission.
+4. **Quality difference:** Logits mismatch0; probability maxerr0.
+5. **Logloss:** Median0.420339; relative delta0.
+6. **Accuracy:** Median0.907202.
+7. **Macro-F1:** Median0.763048.
+8. **Brier:** Median0.180171.
+9. **Probability contract:** Normalized native positive probabilities; softmax diagnostic only.
+10. **Fit ratio:** 0.751592×.
+11. **Serialized ratio:** 0.790389×.
+12. **Deep ratio:** 0.443542×.
+13. **Inference1/32/1k/100k:** {'1': 0.39662607171797093, '32': 0.4041761025811468, '1000': 0.3940098307242714, '100000': 0.6145215446244316}.
+14. **K scaling:** Cached K3/5/10/20/40 systems-only series, table above.
+15. **Large costs:** Letter/Sensorless/Connect4 completed; Covtype native guard reject.
+16. **Imbalance:** Original minority failures preserved; rare warnings/clear split guards.
+17. **Replay:** Exact historical/fresh head comparisons; private checkpoint/save/load tests.
+18. **Transfer datasets:** 0.
+19. **Transfer quality:** N/A.
+20. **Transfer fit:** N/A.
+21. **Transfer memory:** N/A.
+22. **Transfer inference:** N/A.
+23. **Verdict:** QUALITY_EQUIVALENT_COST_PARTIAL.
+24. **Public integration justified:** NO.
+25. **Round79 required:** NO for an exact engineering wrapper; transfer still required.
+26. **Next step:** Keep the exact shared native OVR prototype private. Retain normalized sigmoid probabilities and native per-class fitting/admission. Do not start Round79. A separate engineering audit may test lossless persistence/metadata packing of these frozen heads, reporting model-load retained memory and raw artifact size separately; do not alter states, coefficients or probability link. Freeze a deployable implementation and require independent8-12source x3 transfer only after all declared complete fit, memory and inference targets pass. pairs25 stays REJECTED_FOR_NOW for training cost, reopening only for a genuinely distinct numerical/architectural principle.
+
+
+## POST_R78_MULTICLASS_SHARED_OVR_ARTIFACT — completed2026-10-08
+
+SHARED_OVR_ARTIFACT_SIGNAL; transfer PASS on9UCI×3. Public integration justified=YES, not implemented. Exact logits/probabilities/decisions/metrics. Development ratios serialized/deep/composedfit/inference1k: {'serialized': 0.7291552994300681, 'deep': 0.2900795962234687, 'fit': 0.7736888099033717, 'inference1k': 0.42264340457737226, 'artifact_vs_shared': 0.9214887173234854, 'deep_vs_shared': 0.5271508255981158, 'inference_vs_shared': 0.987484295060418}. Fresh transfer: {'fit': 0.605003152575653, 'serialized': 0.6621457908321792, 'deep': 0.23158521329412393, 'inference1k': 0.3336973996979254}. Historical deep0.443542 used an incomplete owner counter; current comparators uniformly recounted with memoryview owners, old artifacts preserved. BreastTissue parser environmental rejection, no source replacement. Report: research_private/MULTICLASS_SHARED_OVR_ARTIFACT_AUDIT.md; audit: research_private/multiclass_shared_ovr_artifact/final_audit.json. Binary/regression/public version/API/default unchanged; pairs25 remains rejected for fit cost. Index78, no Round79.
+
+Perform a separate local productization/integration audit of the exact shared OVR backend within CodAdaptClassifier, with full parameter forwarding, common-validation semantics, sample weights, fitted attributes, sklearn cloning/refitting and portable persistence; retain the current binary path and normalized-sigmoid multiclass contract. No new scientific Round79 is needed for the exact wrapper.
+
+
+## POST_R78_MULTICLASS_PRODUCTIZATION — resumed/completed2026-10-08
+
+MULTICLASS_API_CONTRACT_BLOCKED: private43contracts PASS; cached36development+27transfer, all
+logits/probabilities/decisions/classes/metrics exact. Weighted native OVR, one
+validation/encoder, full parameter forwarding, sklearn contract, K20/K40 and
+pickle/joblib shared identity verified. Binary outputs/attributes unchanged.
+Private serialization prefreeze bug fixed by copying BaseEstimator getstate;
+completed checks/fits reused, no native algorithm/representation change.
+
+Six fixed case/split matched fresh systems medians product/independent:
+fit0.588746, serialized0.636707,
+owner-aware deep0.214473,
+inference1k0.316191.
+Versus original matched artifact global fit0.968940,
+inference1k1.007369; four >15% per-case
+flags remain, not established stable regressions and not hidden by medians/profiles.
+No optimization after measurements. Historical9×3 transfer remains PASS and is
+not interchangeable with these clocks. Private native contract/systems/smoke
+heads367; replay/teacher/scientific new fits0.
+
+Public409PASS/4knownXFAIL (nine temporary-environment failures repaired by rerunning
+only those units with task-local TEMP); RuffPASS. Python3.10–3.12 runtime and
+isolated blocked-teacher/legacy reload PASS. Python3.13/3.14 ENVIRONMENT_FAILURE,
+SciPy DLLs denied by Windows application control before fit; minimal retries and
+existing alternate3.13 environment did not resolve it. Syntax/metadata only PASS,
+not runtime validation. No reinstalls/security changes/downloads. Public
+integration clearance nowNO, pending modern-Python qualification; historical
+artifact signal unchanged. Exact public integration plan prepared, not applied.
+
+Reports: research_private/MULTICLASS_PRODUCTIZATION_AUDIT.md and
+research_private/MULTICLASS_PUBLIC_INTEGRATION_PLAN.md; final audit under
+research_private/multiclass_productization/. Index78/version0.2.0rc2 remain fixed;
+Round1–78 records preserved; no Round79, public core/API/default/compiler change
+or remote/commit/push/tag/release. Next: run only missing modern-Python qualification
+after authorized environment maintenance, plus separately frozen independent
+systems replication of flagged workloads before performance guarantees.
+
+
+## POST_R78_MULTICLASS_MODERN_PYTHON_QUALIFICATION — completed2026-10-08
+
+MULTICLASS_PRODUCTIZATION_READY; supersedes the earlier environment-only block.
+Official CPython3.13.16/3.14.8, fresh private Windows venvs, pinned modern numerical
+stack installed offline, installed currentRC2 wheel with exact public source hashes.
+Standalone imports/Cholesky and43 fixed contracts per minor PASS, binary exactness,
+weights/common validation/labels/K20/K40, clone/Pipeline/CV, pickle/joblib/shared
+identity and fresh blocked-teacher/legacy reload PASS. One3.14 sklearn import hit
+CodeIntegrity on scipy.optimize._moduleTNC; only that import plus optimize retried
+once, PASS. Initial error retained; DLL hashes match cached wheel/old/fresh bytes.
+No security changes. This recovered preflight is not an uninterrupted first pass.
+Local Windows PASS; WSL inventory only, no Linux modern-minor or remote CI claim.
+63 cached replay cases, old43 contracts,3.10–3.12, public409PASS/4knownXFAIL and
+systems reused; no scientific fit/solve/benchmark/replay repeated.86 small modern
+API contract tests are compatibility fixtures, not new quality evidence. Four
+systems flags remain unresolved before per-workload speed guarantees.
+Public integration justifiedYES, plan only, not applied. Private frozen prototype
+and public core/API/default/version unchanged; last_completed_round78, no Round79,
+commit/push/tag/release/remote. Report MULTICLASS_PRODUCTIZATION_AUDIT.md and
+multiclass_productization/environment_313.json/environment_314.json/dll_diagnostic.md.
+Next: separately authorized exact integration; no further scientific work here.
+
+
+## POST_R78_MULTICLASS_PUBLIC_INTEGRATION — completed2026-10-08
+
+**MULTICLASS_PUBLIC_INTEGRATION_READY**. Separately authorized exact port, not a new research round. CodAdaptClassifier/CodAdapt auto dispatch2positive-weight classes to the unchanged binary path and>2 to shared native OVR. One train-only encoder/common validation; original unscaled weights; independent target-specific fits; normalized sigmoid, not softmax; compact float64 artifact/shared identity. No new architecture/tuning/default flag. Regresor/SafeBlend/compiler/training/encoder hashes unchanged.
+
+36development+27transfer cached cases replayed exactly with zero prediction/parameter mismatch and no scientific refits; all3partitions and row IDs checked. Fresh six-case full-fit systems panel public/independent ratios:fit0.578513,serialized0.636495,deep0.214473,inference1/32/1k/100k0.318516/0.299759/0.322422/0.374406. Versus prototype fit0.985964,deep1.0,inference1k0.993176. Dry Bean original1.4956fit flag remains; three alternating diagnostic ratios1.0554/1.5713/1.3209,median1.3209. Profiled pair inverted and identical native np.unique path dominates: investigated, not proven resolved. Historical four flags retained. Single-host/no universal guarantees.
+
+Public450PASS/4knownXFAIL, private6PASS via minimal fixture repair, finalpackaging4PASS, Ruff/formatPASS. All5Python minors fresh dependency installs65contracts each; final installed-wheel module hashes/version and blocked-private/teacher persistence PASS.3.14SciPy I/O_mio5_utils policy denial before CodAdapt remains an environment note; core/linalg/native contracts PASS. Current self-contained NumPy CI example avoids unnecessary dataset I/O imports, no package or policy workaround. Wheel/sdist private-free; sdist rebuild16module bytes exact. Local checks only, no remote CI.
+
+All original rounds1–78 preserved; oldprototype/protected artifacts intact with only explicit public-change exclusions. Current state multclass=True supersedes old False/NOT_APPLIED snapshots without changing historical fields. Docs/API/algorithm/benchmarks/CI/current changelog and release notes aligned.0.2.0rc2 and last_completed_round78 unchanged; no commit/push/tag/release/remote/Round79. Full44-field handoff and exact public file list:research_private/MULTICLASS_PUBLIC_INTEGRATION_AUDIT.md and multiclass_public_integration/final_audit.json. Next:user manual source upload; no automatic publication.
+
+
+<!-- POST_R78_BINARY_BASE_FAILURE_TOMOGRAPHY_COMPLETE -->
+## POST-R78 — Binary Base failure tomography (not Round79)
+
+**COMPLETE; BINARY_NO_DOMINANT_MECHANISM.** Existing12development+12transfer x3,
+already observed diagnostic panels. Base test source-median LL.301697/.379123,
+AUC.925589/.803819. Frozen validation temperature +.831546%/+.079467%, affine
++.986915%/+.052842% NLL, neither complete transfer gate passes. Bounded test-affine
+oracle removes3.865312%/1.215467% Base NLL, explicitly NONDEPLOYABLE. Development
+Wine affine catastrophic−629.31%split; no rescue/clipping/threshold added.
+
+Transfer9/12descriptive ranking-limited flags (AUC<.85) versus1/12calibration-limited;
+these do not identify Bayes/teacher gap. Low-support rows account65.57%NLL, high-conf
+wrong4.33%median, top1%loss9.35%; observed shares overlap and are not causal fractions.
+Imbalance/rawLL association is entropy-confounded; normalized prior-skill CI includes0.
+Main/pair block removal harms NLL14.19%/1.26% in transfer, no retrained-main claim.
+
+13,913one-state train logistic native-L2 optima, never combined: tiny/unstable test
+effects; transfer validation-positive/test-negative40.76%. R52joint5 reused4x3,
+median−.570711%, no new joint solve or reopening. One-source matched raw/bin-mean
+linear representation control gives raw-coded AUC−.010900, finite scoped evidence.
+Whole representations/discovery/Bayes-noise shares remain unidentified.
+
+0newBase/teacher fits;432scalar diagnostics,6small matched readouts;1thread,
+peak.275GiB. Replay60,267fields,72Base logits bitwise;10private testsPASS, RuffPASS;
+public450PASS/4knownXFAIL valid-reused under exact source/test/package hashes.
+Six limited readout endpoint records retained; coefficient-level independent replay
+not claimed. Original feature duplicates cross historical split IDs, including KC1
+and mammographic; disclosed and unique-test sensitivity still shows no affine transfer.
+Validation also served Base stopping; no new independent confirmation claim.
+
+Close prior Rational32+alpha+safety general binary recipe explicitly as
+**REJECTED_FOR_NOW_GENERAL_BINARY_COMPLEMENT**. Keep Binary Base. No candidate,
+Round79justifiedNO/notstarted. Reopen only for a distinct, train-only causal witness
+that localizes recoverable loss and predicts transfer before observed outcomes; no
+further scalar/Rational/safety/global-joint tuning on these panels.
+
+Evidence: research_private/BINARY_BASE_TOMOGRAPHY.md and
+research_private/binary_base_tomography/{protocol,history,inventory,summary,
+failure_decomposition,verification,final_audit}. Public multiclass integration and
+Round78regression confirmation remain unchanged; memory round index1–78 preserved.
+
+
+## POST_R78_REGRESSION_RATIONAL_DIVERSITY_COMPRESSION — completed2026-10-09; notRound79
+
+Report `research_private/REGRESSION_DIVERSITY_COMPRESSION.md`; audit `research_private/regression_diversity_compression/final_audit.json`. Keep last_completed_round78, public0.2.0rc2, all public63file hashes unchanged. No commit/push/tag/release or remote Git action; only authorized public dataset GETs. Existing binary closure and historical standalone/Base-residual Rational65/66 closures unchanged.
+
+Actual Rational16 is one encoder with joint numerator/denominator coefficient sums and a global ratio, not multiresolution/pair/hash blocks. Zero-fit component diagnostics and54 valid R78 reference replays precede one new accepted-iterate trajectory/case; five frozen caps10/25/50/75/100, no new family or validation stopping. The public diagnostic callback redundantly recomputes the full objective+gradient to log scalar loss. Caching that already accepted scalar preserves every coefficient, trace and prediction. Development18known sources x3: lean100 gain2.230852% RMSE, retention100%,17/1/0, fit2.354932x Base reconstructed; no repeated Base fits. Truncated variants fail worst-source/safety gates despite often100% median retention; no post-hoc rescue.
+
+Independent transfer frozen13sources,12executable x3; raw CWUR strictUTF8 ingest failure before fit, no substitutions. Gain0.815219% RMSE, CI95[-4.690783073820389e-05, 2.2873788630360847], W/T/L7/4/1 at.10pp. Only8/12strictlypositive source means66.67%<70%: **NOT REGRESSION_COMPRESSED_DIVERSITY_TRANSFER**. Worstsource-0.163806%,worstsplit-0.875013%. Exactfull100theta/trace/predictions onall36newcases. Fit2.330475x Base vsfull3.174072x, pairedRational0.598828x original and total0.800789x.100%retention is exact engineering equivalence, not a new scientific quality finding.
+
+Systems vs current public SafeBlend: serialized1.000000x,deep0.997787x,inference1/32/1k/100k 0.986637/0.982819/0.988489/0.992502x. No material memory/inference change; fit diagnostics account for savings.162newscientificfits (54developmentRational+108transfer);54Base/54referenceRational and216prefixendpoints reused.26tinycontracttestsolves separately. Earlier private adapter/cost-scope receipts preserved, no scientific rerun; corrected public input path/cached metadata/serialization scopes explicit. One process/thread,8/12GiB budget; checkpoint highwater receipts. No leakage/test stopping; inherited IID clinical/temporal/duplicates and missingR17/18limits retained. RuffPASS,10privatePASS; public450PASS/4knownXFAIL hash-qualified reuse.
+
+Decision **COMPRESSED_DIVERSITY_SIGNAL**. Round79 justified **NO** (coverage gate fails). Separate engineering-only exact callback-cache port and supported-Python/SciPy qualification is justified; no iteration pruning/new recipe/default/public changes in this task. Stop. Native diversity public confirmed recipe and public multiclass integration remain unchanged.
+
+
+<!-- POST_R78_SAFEBLEND_EXACT_CALLBACK_OPTIMIZATION -->
+## POST-R78 — SafeBlend exact callback optimization (2026-10-09; not Round79)
+
+**COMPATIBILITY_BLOCKED** is an environment-only productization block, not observed numerical drift. The authorized minimal public Rational.fit closure caches the already evaluated loss and theta; its callback checks accepted theta and logs that scalar instead of recalculating the full gradient. Objective/encoder/predict/solver/initialization/100-iteration cap/ridge.001/alpha.30/split/safety unchanged. No instance/global/persisted cache. Base/binary/multiclass/compiler hashes unchanged. CHANGELOG and9 new targeted public tests added.
+
+Frozen90-case replay (54development+36transfer) has0mismatches,70BLEND/20BASE; zero new scientific fits. Fresh old/new solver fixtures and six-case engineering timing fits match coefficients/trace/predictions/branch/validation RMSE exactly. Paired Rational/new-old0.564509, SafeBlend0.727300, SafeBlend/Base2.970032; local six-case panel differs from historical12-source transfer2.330x. Serialized/deep1.0; inference1/32/1k/100k0.989601x/1.025183x/0.996639x/0.999118x. Two small-batch flags do not reproduce in51-repeat diagnostics. No new quality claim.
+
+Full public459PASS/4knownXFAIL, private3PASS, Ruff/formatPASS. Wheel/sdist private-free and byte-exact to source; clean offline3.10/3.11/3.12 installed-wheel both-branch/seeds/persistence PASS.3.13/3.14 fail standalone numerical imports before CodAdapt: SciPy DLL Windows application-control denial, including one isolated retry. No external DLL/security workaround. Initial stale-wheel launcher/harness/build-environment errors disclosed and not counted as new-code compatibility passes. Complete supported-Python clearance withheld.
+
+Report research_private/SAFEBLEND_EXACT_OPTIMIZATION_AUDIT.md; audit safeblend_exact_optimization/final_audit.json. Previous audit/artifact hashes preserved; scientific history1–78 unchanged; version0.2.0rc2, no Round79/commit/push/tag/release/remote/download. Next only missing3.13/3.14 qualification after environment maintenance; no completed replay/fit/benchmark re-execution. Stop here.
+
+
+## POST-R78 — SafeBlend exact optimization modern-Python qualification resume (2026-10-09)
+
+**SAFEBLEND_EXACT_OPTIMIZATION_READY**. One new requested root-local venv per minor; same modern numerical stack as the earlier multiclass audit: NumPy2.5.3/SciPy1.18.1/pandas2.3.3/sklearn1.9.0. Offline wheels, isolated-I, process-local minimal PATH, one numerical thread. Standalone imports including optimize/sparse plus matrix multiplication/Cholesky/solve/optimization before installing currentRC2 wheel. Retry counts {'313': 0, '314': 0}; CodeIntegrity reproduced False.
+
+Qualified successful minors run9existing callback tests each, frozen pre-port same-version coefficient/trace/iteration/prediction/validation/branch exactness, seeds7/42 and fresh-process pickle/joblib without teachers. No cross-version bitwise contract introduced. Prior application-control failures retained; no Windows policy/Defender/DLL workaround or public source change. Environment context difference not causally localized.
+
+54development/36transfer replays, zero mismatches,459public/4knownXFAIL,3private/Ruff/format,3.10–3.12 and wheel/sdist all VALID_REUSED. Rational43.55%/SafeBlend27.27%savings reused; no new benchmark/scientific fit/replay/build/download. Version0.2.0rc2 and rounds1–78 preserved. No Round79/commit/push/tag/release/remote.
+
+Evidence: SAFEBLEND_EXACT_OPTIMIZATION_AUDIT.md, safeblend_exact_optimization/qualification_resume.json, qualification_313.json, qualification_314.json, dll_diagnostic_resume.md and final_audit.json. Manual upload of prior three public files justified=True. User may upload the three previously prepared public source/test/changelog files manually; no automatic publication. Stop.

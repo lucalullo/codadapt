@@ -2,6 +2,8 @@
 
 ## Unreleased — current 0.2.0rc2 repository line
 
+- Removed redundant gradient recomputation in the native SafeBlend Rational
+  optimization path while preserving exact model outputs.
 - Redesigned experimental `SafeBlendRegressor` as fully native Base + Rational
   diversity blending, with frozen alpha 0.30 and internal validation fallback.
 - Removed the external LightGBM product dependency; no SafeBlend extra is needed.
@@ -12,7 +14,9 @@
 - Reduced fit/deployment cost relative to the superseded external-model design;
   the frozen native research panel still costs about 4.13× Base to fit.
 - Added standalone persistence, native-independence tests and Python 3.10–3.14 CI.
-- Native core/defaults, EBM compiler and version 0.2.0rc2 remain unchanged.
+- Native binary/regression defaults, EBM compiler and version 0.2.0rc2 remain unchanged.
+- Added automatic fully native single-label multiclass classification to CodAdaptClassifier/CodAdapt.
+- Shared OVR retains exact independent-native-OVR predictions with shared encoding, validation and compact artifact persistence; gains are panel-specific.
 - This is local experimental API integration, not a new release or research round.
 
 ## 0.2.0rc1 - Experimental release candidate

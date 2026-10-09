@@ -141,3 +141,46 @@ This supports compact standalone deployment within the verified contract, not
 compatibility with every future platform, package version or hardware configuration.
 Teacher training remains an upstream cost. See the [compiler contract](docs/EBM_COMPILER.md)
 for supported models, schemas, mandatory verification and explicit `REJECT` behavior.
+
+## Native multiclass Shared OVR — frozen engineering transfer
+
+Current working tree 0.2.0rc2 adds automatic single-label multiclass classification.
+The frozen transfer compared **9 real UCI datasets × 3 identical splits** against K
+independently fitted native CodAdapt binary heads, with the same parameters,
+training/validation rows and normalized-sigmoid probability contract.
+
+| Shared artifact / independent OVR | Transfer source median |
+|---|---:|
+| Complete fit including finalization | 0.605× |
+| Serialized model bytes | 0.662× |
+| Deep retained memory, deduplicated owners | 0.232× |
+| Inference latency, batch1k | 0.334× |
+
+Logits, probabilities, decisions and task metrics were exact-equivalent. These
+ratios describe this single-host, one-thread panel; they are not a claim of better
+quality than boosting, a speed guarantee or hardware-independent scaling. The
+separate productization panel contained four >15% workload timing flags relative
+to the earlier shared prototype. Fresh public-port timing is recorded separately;
+no historical training-only or composed fit clock is relabeled as a fresh fit.
+The binary and regression recipes, experimental EBM compiler and SafeBlend are unchanged.
+
+### Current public-port systems replication
+
+A fresh matched six-case panel (Iris, Car, Digits, Dry Bean, Hand Postures and
+Urban Land Cover; the same frozen train/validation/test rows) measured complete
+fit plus final dump and seven alternating warm prediction repeats. One thread
+was used on the local Windows host; batch100k uses labeled cyclic replay.
+
+| Public port / independent native OVR | Six-case median |
+|---|---:|
+| Complete fit | 0.579× |
+| Serialized bytes | 0.636× |
+| Owner-aware deep memory | 0.214× |
+| Inference latency, batch1 / 32 / 1k / 100k | 0.319× / 0.300× / 0.322× / 0.374× |
+
+Against the frozen shared prototype, fit was 0.986×, deep memory 1.000× and
+inference1k 0.993×. All three arms were prediction-equivalent. The original Dry
+Bean fit observation was 1.496× the prototype and remains an explicit >15% flag;
+its separate fixed-repeat cost investigation is not substituted into this table.
+Historical timing flags are retained. These results establish faithful engineering
+transfer on this panel, not universal workload or independent-hardware guarantees.

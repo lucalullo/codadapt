@@ -91,12 +91,23 @@ class Rational:
             counts = np.bincount(z[:, j], minlength=hi - lo)
             theta[1 + lo : 1 + hi] = sums / (counts + 5) / z.shape[1]
         self.trace = []
+        cached = None
+
+        def objective(v, *args):
+            nonlocal cached
+            value, gradient = self.objective(v, *args)
+            cached = (v.copy(), float(value))
+            return value, gradient
 
         def callback(v):
-            self.trace.append(float(self.objective(v, z, self.offsets, target, self.ridge)[0]))
+            # L-BFGS-B has already evaluated the accepted iterate. Keep this
+            # fit-local scalar instead of recomputing its full gradient to log it.
+            if cached is None or not np.array_equal(v, cached[0]):
+                raise RuntimeError("Diagnostic objective does not match the accepted iterate.")
+            self.trace.append(cached[1])
 
         result = minimize(
-            self.objective,
+            objective,
             theta,
             args=(z, self.offsets, target, self.ridge),
             jac=True,

@@ -2,7 +2,10 @@
 
 ## 0.2.0rc2 — current repository line
 
-The native CodAdapt classifier/regressor, their defaults and algorithms are unchanged.
+The current working tree adds native multiclass Shared OVR to CodAdaptClassifier
+and its CodAdapt alias. Binary/regression defaults and algorithms are unchanged.
+Shared encoding and compact artifacts preserve exact independent-OVR predictions;
+probabilities normalize native sigmoids, not softmax. No external learner is required.
 Python 3.10–3.14 is supported; core dependencies are NumPy, pandas, scikit-learn and
 SciPy. No external ML model is required for native fit, validation, prediction or reload.
 

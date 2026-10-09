@@ -97,12 +97,16 @@ unvalidated. These are panel-specific results, not universal performance bounds.
 
 Round 78 local medians versus Base were approximately **4.13× fit time**,
 **1.09× serialized size**, **1.08× deep retained memory** and **1.19–1.23× warm
-raw-input inference latency** for batches 1, 32, 1k and 100k. The 100k workloads
-repeated heldout rows. Fit includes both native estimators; the fallback branch
-does not avoid Rational's training cost. Public input validation adds overhead;
-these research-runtime ratios are reference measurements, not API latency promises.
+raw-input inference latency** for batches 1, 32, 1k and 100k. Those fit timings
+predate the later exact callback optimization. The current implementation reuses
+the already evaluated objective value for diagnostic tracing instead of recomputing
+the full gradient. Qualification preserved coefficients, trace, iterations, branch
+decisions and predictions bitwise-identically across the sealed replay. On a paired
+six-case engineering panel, Rational fit time fell by **43.55%** and total SafeBlend
+fit time by **27.27%**; serialized/deep memory and inference were effectively
+unchanged. These measurements are panel-specific, not API latency guarantees.
 
 The public port is checked against all 90 sealed cases for branch, Base, Rational,
-blend and final predictions and RMSE. Local package checks and prepared Python
-3.10–3.14 CI are distinct from an actual remote CI run. SafeBlend remains
+blend and final predictions and RMSE. Local qualification passed Python 3.10–3.14;
+actual remote CI remains a separate execution environment. SafeBlend remains
 experimental, opt-in and regression-only.

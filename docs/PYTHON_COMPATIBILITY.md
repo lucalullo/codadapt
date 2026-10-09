@@ -9,6 +9,14 @@ only. Optional extras may have narrower support without limiting the native core
 
 ## Current 0.2.0rc2 compatibility matrix
 
+The current multiclass public integration has also passed installed-wheel checks
+on all five Windows Python minors below. Each used a fresh virtual environment,
+locally installed numerical dependencies, 65 binary/multiclass contract tests,
+isolated pickle/joblib reload with external learners blocked, and the three CI
+examples. No remote CI run is claimed. Python3.10 numerical wheels were rebuilt
+locally from the previously qualified installed distributions with RECORD hashes
+verified; numerical dependency paths were not shared with those environments.
+
 The current repository declares `>=3.10,<3.15`. Compatibility work is incorporated
 into the existing version line; no new release is created. The older published
 `v0.2.0rc2` tag retains its original metadata and does not contain this update.

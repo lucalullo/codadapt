@@ -34,6 +34,7 @@ def test_native_fit_predict_reload_without_external_models():
         assert CodAdapt is CodAdaptClassifier
         for cls, target in [
             (CodAdaptClassifier, (value > 0).astype(int)),
+            (CodAdaptClassifier, np.arange(len(value)) % 3),
             (CodAdaptRegressor, value),
             (experimental.SafeBlendRegressor, value),
         ]:

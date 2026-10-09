@@ -82,7 +82,6 @@ def test_predict_requires_fit():
     "bad_y",
     [
         np.zeros(12),
-        np.arange(12) % 3,
         np.linspace(0, 1, 12),
         np.ones((12, 2)),
         [0, 1] * 5 + [0, np.nan],

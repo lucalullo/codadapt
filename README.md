@@ -1,13 +1,14 @@
 # CodAdapt
 
-CodAdapt is an experimental machine-learning library for tabular data. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary classification and single-target regression, while preserving a scikit-learn-style API.
+CodAdapt is an experimental machine-learning library for tabular data. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary and multiclass classification and single-target regression, while preserving a scikit-learn-style API.
 
-**CodAdapt 0.2.0rc2 keeps the native core and default behavior unchanged and adds a fully native experimental `SafeBlendRegressor`.** SafeBlend combines the unchanged native Base regressor with a compact native Rational estimator, a frozen blend weight, and validation-based fallback. It requires no LightGBM or other external ML model. The existing experimental EBM compiler remains available as a separate optional import/compilation tool.
+**CodAdapt 0.2.0rc2 keeps the native binary and regression defaults unchanged, adds automatic native single-label multiclass classification through shared OVR, and includes a fully native experimental `SafeBlendRegressor`.** SafeBlend combines the unchanged native Base regressor with a compact native Rational estimator, a frozen blend weight, and validation-based fallback. It requires no LightGBM or other external ML model. The existing experimental EBM compiler remains available as a separate optional import/compilation tool.
 
 CodAdapt remains a pre-1.0 experimental project. It is intended for controlled experiments, reproducible evaluation, and practical tabular workflows. It does not claim universal superiority over established tree-based models.
 
 ## Highlights
 
+- automatic native binary/multiclass detection with shared-OVR encoding and artifacts;
 - simple estimator API through `CodAdapt`, `CodAdaptClassifier`, and `CodAdaptRegressor`;
 - `fit`, `predict`, `predict_proba`, `get_params`, `set_params`, cloning, pipelines, and cross-validation compatibility;
 - automatic handling of numerical, string/object, categorical, boolean, nullable-boolean, and missing values in pandas DataFrames;
@@ -20,11 +21,10 @@ CodAdapt remains a pre-1.0 experimental project. It is intended for controlled e
 - sample weights, explicit validation sets, deterministic random states, and best-state restoration;
 - pickle/joblib persistence;
 - CPU-only NumPy runtime;
-- Python 3.10–3.14 compatibility gates;
-- fully native experimental `SafeBlendRegressor` under `codadapt.experimental`;
-- optional experimental EBM compilation under `codadapt.experimental`.
+- Python 3.10–3.14, with separate compatibility gates for the native core and optional extras;
+- optional fully native `SafeBlendRegressor` and EBM compilation in `codadapt.experimental`.
 
-The native CodAdapt default remains the architecture selected during the 0.1 development process. No experimental strategy flag is required.
+The native CodAdapt default remains the architecture selected during the 0.1 development process. No experimental strategy flag is required. The classifier detects multiclass targets automatically without changing binary defaults.
 
 ## Installation
 
@@ -35,6 +35,8 @@ The maintained repository line remains **0.2.0rc2**. Install the current reposit
 ```bash
 python -m pip install "git+https://github.com/lucalullo/codadapt.git@main"
 ```
+
+`CodAdapt` and `CodAdaptClassifier` detect binary or multiclass targets automatically. `CodAdaptRegressor` remains the scalar-regression estimator.
 
 `SafeBlendRegressor` uses the same standard installation. No LightGBM, XGBoost, CatBoost, or other external ML model is required for native fitting or prediction.
 
@@ -116,6 +118,24 @@ probabilities = model.predict_proba(X)[:, 1]
 ```
 
 `early_stopping=False` is used here only because the example is extremely small. On normal datasets the default `early_stopping=True` creates a deterministic internal validation split.
+
+### Multiclass classification
+
+```python
+from codadapt import CodAdaptClassifier
+
+model = CodAdaptClassifier(random_state=42, verbosity=0)
+model.fit(X_train, y_train)
+
+pred = model.predict(X_test)
+proba = model.predict_proba(X_test)
+```
+
+Multiclass targets are detected automatically; `CodAdapt` is the same classifier
+alias. For K classes, `proba` has shape `(n_samples, K)` in `classes_` order.
+Native sigmoid head probabilities are normalized across classes; ties select the
+first class. Encoding and validation rows are shared, while fitting remains
+independent per target class. See the [multiclass contract](docs/API.md#multiclass-shared-ovr).
 
 ### Regression
 
@@ -241,11 +261,7 @@ median RMSE gain of **+2.061%** versus Base, 95% CI **[+0.403%, +4.695%]**, and
 fallback reduces observed downside but does not guarantee improvement. These are
 panel-specific IID results, not a universal advantage.
 
-Round 78 local research-runtime medians were approximately **4.13× fit time**,
-**1.09× serialized memory**, **1.08× deep memory** and **1.19–1.23× inference
-latency** versus Base. Public schema validation adds overhead; results depend on
-hardware and workload. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md)
-for inputs, fitted diagnostics, persistence, costs and limitations.
+Round 78's frozen research recipe was originally measured at approximately **4.13× Base fit time** before the later exact callback optimization. The current implementation removes redundant diagnostic gradient recomputation while preserving coefficients, trace, branch decisions and predictions bitwise-identically in the qualification replay. On the paired six-case engineering panel, Rational fit time fell by **43.55%** and total SafeBlend fit time by **27.27%**; serialized/deep memory and inference were effectively unchanged. These are panel-specific implementation measurements, not universal speed guarantees. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md) for inputs, fitted diagnostics, persistence, costs and limitations.
 
 ## Main parameters
 
@@ -304,6 +320,11 @@ These are local experimental measurements, not universal performance claims. Har
 
 The 0.2.0rc2 EBM compiler has a separate performance profile. It is intended primarily as an experimental compact deployment path, not as a claim that compiled inference is faster for every batch size or workload.
 
+The frozen native multiclass transfer panel (9 datasets × 3 splits) was exactly
+equivalent to independent native OVR. Shared-OVR/independent ratios were about
+0.605× fit, 0.662× serialized size, 0.232× deep memory and 0.334× batch1k latency.
+These are panel-specific engineering comparisons, not superiority over boosting.
+
 See [BENCHMARKS.md](BENCHMARKS.md) for the public benchmark disclosure.
 
 A lightweight sanity benchmark can be run with:
@@ -314,15 +335,15 @@ python benchmarks/run_benchmarks.py --quick
 
 ## Persistence
 
-Native CodAdapt models and `SafeBlendRegressor` support pickle/joblib persistence. SafeBlend contains only native CodAdapt state; no external teacher model is retained or required for reload/prediction.
+Native CodAdapt models support pickle/joblib persistence.
 
-Compiled EBM models also retain no teacher. Loading and inference without interpret were verified in the frozen local Windows environment; this is not a guarantee across every platform or future dependency version.
+Compiled EBM models retain no teacher. Loading and inference without interpret were verified in the frozen local Windows environment; this is not a guarantee across every platform or future dependency version.
 
 As with any pickle/joblib artifact, load only trusted files and prefer matching dependency versions across environments.
 
 ## Documentation
 
-- [API reference](docs/API.md)
+- [API reference, including native multiclass Shared OVR](docs/API.md)
 - [Algorithm](docs/ALGORITHM.md)
 - [Python compatibility and release gate](docs/PYTHON_COMPATIBILITY.md)
 - [Experimental native SafeBlend](docs/SAFE_BLEND_EXPERIMENTAL.md)
@@ -343,16 +364,15 @@ These files are development documentation and are intentionally excluded from th
 
 ## Limitations
 
-- binary classification only for the native classifier;
+- single-label binary and multiclass classification;
 - single-target regression only;
-- no multiclass, multilabel, ranking, or multi-output interface;
+- no multilabel, ranking, or multi-output interface;
 - dense input only; sparse matrices are unsupported;
 - mixed NumPy object arrays are unsupported; use pandas DataFrames for heterogeneous data;
 - raw datetime, complex, and infinite-valued features are unsupported;
 - CPU only; no GPU or online/incremental training interface;
 - very high categorical cardinality is capped by `max_categories`, with rare and unseen categories handled through dedicated buckets;
 - early stopping reserves validation rows unless an external `eval_set` is provided;
-- `SafeBlendRegressor` is experimental, regression-only, uses a frozen internal validation fallback, exposes no sample weights or external validation set, and does not guarantee improvement on every dataset or split;
 - the EBM compiler supports only its documented additive binary/regression contract;
 - compiled EBM classification probabilities are numerically equivalent within tolerance, not guaranteed bitwise-identical;
 - compiled EBM runtime is workload- and environment-dependent, with no general speed advantage established or independent-hardware validation completed;
@@ -361,9 +381,9 @@ These files are development documentation and are intentionally excluded from th
 
 ## Status
 
-CodAdapt 0.2.0rc2 is an experimental pre-release. The native core remains unchanged from the validated 0.1 line. `SafeBlendRegressor` is a fully native, opt-in experimental regressor, while the EBM compiler remains a separate opt-in experimental import/compilation tool. Neither changes the native default.
+CodAdapt 0.2.0rc2 is an experimental pre-release. The binary and regression paths remain unchanged from the validated 0.1 line. Native multiclass shared OVR is included in the current repository line; SafeBlend and the EBM compiler remain opt-in and experimental. The published tag is not rewritten.
 
-The experimental APIs, compiler contracts, deployment behavior, and defaults may evolve as broader external validation continues.
+The public API, compiler contract, and defaults may evolve as broader external validation continues.
 
 ## License
 

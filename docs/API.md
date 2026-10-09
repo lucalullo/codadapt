@@ -64,7 +64,7 @@ I bucket nuovi non modificano il modello; il loro contributo è nullo come descr
 in [ALGORITHM.md](ALGORITHM.md).
 
 Date non trasformate, matrici sparse, numeri complessi e oggetti non supportati vengono
-rifiutati chiaramente. Nessun supporto a multiclasse, multilabel, ranking, GPU,
+rifiutati chiaramente. Nessun supporto a multilabel, ranking, GPU,
 training online o target multipli è dichiarato. Prima della previsione su dati nuovi
 occorrono gli stessi nomi di colonna: nomi duplicati, mancanti o aggiuntivi sono errori;
 un ordine diverso viene riallineato. Il fit su DataFrame non abilita la previsione su
@@ -75,7 +75,7 @@ array senza nomi.
 ### `fit(X, y, sample_weight=None, eval_set=None)`
 
 Restituisce `self`. `y` è monodimensionale, finito e senza mancanti. Il classificatore
-richiede due classi con peso positivo e preserva le etichette; il regressore richiede
+richiede almeno due classi con peso positivo e preserva le etichette; il regressore richiede
 valori numerici, inclusi target interi. Gli input non vengono modificati.
 
 `sample_weight` è un vettore finito non negativo con somma positiva. Righe a peso zero
@@ -102,9 +102,10 @@ di punteggi reali per il regressore. Non esegue fitting o ricerca dei codici.
 
 ### `predict_proba(X)` e `decision_function(X)`
 
-Disponibili nel classificatore. `predict_proba` ha forma `(n_rows, 2)`: colonne nello
+Disponibili nel classificatore. `predict_proba` ha forma `(n_rows, n_classes)`: colonne nello
 stesso ordine di `classes_`, valori finiti e somma di riga uno.
-`decision_function` restituisce `F`, con segno positivo a favore di `classes_[1]`.
+`decision_function` restituisce `F` con forma `(n_rows,)` nel caso binario, con segno
+positivo a favore di `classes_[1]`; nel multiclasse restituisce `(n_rows, K)`.
 
 ### `get_params(deep=True)`, `set_params(**params)`, `score(X, y, sample_weight=None)`
 
@@ -116,7 +117,8 @@ scientifici scegliere esplicitamente ROC-AUC/log-loss oppure RMSE/MAE.
 
 | Attributo | Contenuto |
 | --- | --- |
-| `classes_` | Due etichette ordinate, soltanto nel classificatore. |
+| `classes_` | Etichette ordinate (`np.unique`) delle classi a peso positivo. |
+| `n_classes_` | Numero di classi nel percorso multiclass; il binario conserva gli attributi precedenti. |
 | `n_features_in_` | Numero delle feature. |
 | `feature_names_in_` | Nomi delle colonne, quando appropriato. |
 | `n_iter_` | Numero di passaggi realmente eseguiti. |
@@ -154,3 +156,38 @@ packaging non significa che ogni sua combinazione sia stata provata.
 È possibile serializzare con pickle/joblib e caricare senza refit, preferibilmente
 nello stesso ambiente. Caricare file non attendibili può eseguire codice arbitrario.
 Conserva insieme al modello versione CodAdapt e versioni delle dipendenze.
+
+## Multiclass Shared OVR
+
+`CodAdapt` e `CodAdaptClassifier` rilevano automaticamente il target single-label:
+meno di due classi a peso positivo è un errore; due usano il percorso binario
+invariato; più di due usano K head binari nativi, senza modelli esterni.
+Interi, interi non contigui, stringhe ed etichette categorical-like comparabili
+seguono l'ordine `np.unique` in `classes_`.
+
+Schema, soglie, vocabolari, missing e codici finest/coarse sono condivisi. Ogni
+head mantiene valori, residuali, selezione e arresto specifici del proprio target.
+`predict_proba` normalizza le sigmoidi dei K score, non usa softmax; le righe sono
+finite, non negative e sommano a uno entro tolleranza numerica. `predict` usa
+l'argmax e in caso di parità sceglie la prima classe nell'ordine `classes_`.
+
+I pesi originali non vengono riscalati per classe. Righe a peso zero sono escluse
+prima dell'encoding. `eval_set` viene codificato una volta e ogni head usa
+`y_valid == classe`; label validation assenti dal training positivo sono errori.
+Senza `eval_set`, tutti gli head condividono un solo split stratificato train-only.
+Una classe con meno di cinque esempi TRAIN a peso positivo genera un warning.
+Uno split impossibile genera un errore: fornire un `eval_set` valido oppure
+`early_stopping=False`. Non viene introdotta una nuova euristica per classi rare.
+
+Nel multiclasse `encoder_` e `shared_encoder_` sono lo stesso oggetto; gli head
+compatti sono privati e non sono K estimator completi. `n_iter_` e
+`best_iteration_` riassumono il massimo numero di livelli conservati fra gli head;
+`lookup_count_per_sample_` somma i lookup degli head. `estimated_memory_bytes_`
+è la preflight estimate nativa, non una misura del picco RSS. `timings_` registra
+preprocessing e fit totale. Cronologie e cache di training non sono conservate;
+gli attributi per singolo head del percorso binario non vengono simulati.
+
+Refit binario→multiclasse o multiclasse→binario ripulisce lo stato precedente.
+Clone/Pipeline/CV e `score` (accuracy) valgono per entrambi. Pickle/joblib preservano
+predizioni e identità dell'encoding condiviso; nessun modulo di ricerca o teacher
+è richiesto al reload. Preferire lo stesso ambiente numerico.

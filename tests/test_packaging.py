@@ -40,6 +40,9 @@ def test_wheel_contains_package_and_distribution_metadata(wheel):
             "_base",
             "classifier",
             "regressor",
+            "_multiclass",
+            "_multiclass_artifact",
+            "_multiclass_packing",
         ):
             assert f"codadapt/{module}.py" in names
         assert any(name.endswith(".dist-info/METADATA") for name in names)
@@ -137,6 +140,24 @@ def test_installed_wheel_fit_predict_and_persistence_in_external_environment(
         "print('wheel import, mixed fit/predict and both persistence formats verified')\n",
         encoding="utf-8",
     )
+    with script.open("a", encoding="utf-8") as stream:
+        stream.write(
+            "target = np.arange(len(X)) % 3\n"
+            "if sys.argv[1] == 'fit':\n"
+            "    multi = CodAdaptClassifier(random_state=42).fit(X, target)\n"
+            "    np.save('multi_proba.npy', multi.predict_proba(X.iloc[:5]))\n"
+            "    np.save('multi_pred.npy', multi.predict(X.iloc[:5]))\n"
+            "    Path('multi.pickle').write_bytes(pickle.dumps(multi))\n"
+            "    joblib.dump(multi, 'multi.joblib')\n"
+            "else:\n"
+            "    for suffix in ['pickle', 'joblib']:\n"
+            "        m = pickle.loads(Path('multi.pickle').read_bytes()) if suffix == 'pickle' else joblib.load('multi.joblib')\n"
+            "        np.testing.assert_array_equal(m.predict_proba(X.iloc[:5]), np.load('multi_proba.npy'))\n"
+            "        np.testing.assert_array_equal(m.predict(X.iloc[:5]), np.load('multi_pred.npy'))\n"
+            "        assert m.encoder_ is m._ovr_artifact_.shared_state.encoder\n"
+            "        assert all(h.shared_state is m._ovr_artifact_.shared_state for h in m._heads_)\n"
+            "        assert not any(k.startswith('research_private') for k in sys.modules)\n"
+        )
     for phase in ("fit", "load"):
         completed = subprocess.run(
             [str(python), "-I", str(script), phase],
