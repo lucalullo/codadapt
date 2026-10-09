@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-10-09T12:35:07.341594+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "git_commit": "6f058d838077f693f810d4bf779c009bb7149a56",
+  "script_sha256": "42791b18f001749710cf4bd42752ec58710686a279841a4405086d46ef17c896",
+  "packages": {
+    "codadapt": "0.2.0rc2",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "protocol": {
+    "kind": "cross_validation_ripetuta",
+    "folds": 5,
+    "repeats": 3,
+    "cv_seed": 20261009,
+    "threads": 1,
+    "tuning": "nessuno",
+    "fit_timing": "una misura per fold",
+    "prediction_timing": "mediana di 5 dopo warm-up",
+    "limiti": "quattro piccoli dataset scikit-learn; confronto esplorativo, non validazione indipendente"
+  },
+  "datasets": [
+    {
+      "name": "breast_cancer",
+      "task": "classification",
+      "rows": 569,
+      "features": 30,
+      "sha256": "6036c91abb272c87260c875f19f790f8c1e384787a5750ce7d228a8eab62172e"
+    },
+    {
+      "name": "diabetes",
+      "task": "regression",
+      "rows": 442,
+      "features": 10,
+      "sha256": "5fb929081ec8fee8a858a8a698869f1c9f311e4b2e28f23d8c4bfa30b45a7788"
+    },
+    {
+      "name": "wine",
+      "task": "classification",
+      "rows": 178,
+      "features": 13,
+      "sha256": "395c6d481c429c3556af743d1dfec3c0316a837a8b4e3cba57b2ecd55c9490dd"
+    },
+    {
+      "name": "digits",
+      "task": "classification",
+      "rows": 1797,
+      "features": 64,
+      "sha256": "b4d43c643838a61f7c71ac3f46f6346ff85571f6f9fe248d3ad3b15ec5a4f045"
+    }
+  ]
+}
