@@ -350,7 +350,7 @@ python -m pip install lightgbm==4.7.0
 python benchmarks/reproducibility/benchmark_codadapt_cv.py
 ```
 
-These are author-run experiments with default model configurations and no hyperparameter tuning, **not independent validation**. The published CSV metadata records the SHA-256 of the original benchmark script, preserved in commit [`eae1950`](https://github.com/lucalullo/codadapt/blob/eae1950/benchmarks/reproducibility/benchmark_codadapt_cv.py); the current runner has formatting-only changes.
+These are author-run experiments with default model configurations and no hyperparameter tuning, **not independent validation**. The published JSON metadata records the SHA-256 of the original benchmark script, preserved in commit [`eae1950`](https://github.com/lucalullo/codadapt/blob/eae1950/benchmarks/reproducibility/benchmark_codadapt_cv.py); the current runner has formatting-only changes.
 
 ## Persistence
 
