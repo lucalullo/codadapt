@@ -1,8 +1,8 @@
 # CodAdapt
 
-CodAdapt is an experimental machine-learning library for tabular data. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary and multiclass classification and single-target regression, while preserving a scikit-learn-style API.
+CodAdapt is a compact native tabular model family with mixed predictive competitiveness across tasks. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary and multiclass classification and single-target regression, while preserving a scikit-learn-style API.
 
-**CodAdapt 0.2.0rc2 keeps the native binary and regression defaults unchanged, adds automatic native single-label multiclass classification through shared OVR, and includes a fully native experimental `SafeBlendRegressor`.** SafeBlend combines the unchanged native Base regressor with a compact native Rational estimator, a frozen blend weight, and validation-based fallback. It requires no LightGBM or other external ML model. The existing experimental EBM compiler remains available as a separate optional import/compilation tool.
+**CodAdapt 0.2.0rc2 keeps binary and regression defaults unchanged, adds automatic native multiclass support, and retains a fully native experimental SafeBlend regressor and an optional EBM compiler/import tool.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
 
 CodAdapt remains a pre-1.0 experimental project. It is intended for controlled experiments, reproducible evaluation, and practical tabular workflows. It does not claim universal superiority over established tree-based models.
 
@@ -18,6 +18,8 @@ CodAdapt remains a pre-1.0 experimental project. It is intended for controlled e
 - shared finest encoding with nested coarse-to-fine integer resolutions;
 - adaptive residual-memory levels with validation-based and feature-level stopping;
 - compact coded interaction tables controlled by a lookup budget;
+- compact serialized models are a consistently observed strength on the frozen blind panel;
+- promising SafeBlend regression quality/size trade-offs, with mixed predictive competitiveness across tasks;
 - sample weights, explicit validation sets, deterministic random states, and best-state restoration;
 - pickle/joblib persistence;
 - CPU-only NumPy runtime;
@@ -48,6 +50,8 @@ python -m pip install "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt
 
 The `ebm` extra is required only when explicitly compiling a supported fitted EBM teacher. Native CodAdapt and native SafeBlend do not use it.
 
+Python **3.10–3.14** is locally qualified; see the [compatibility matrix](docs/PYTHON_COMPATIBILITY.md). The version string alone does not identify every historical rc2 payload. For reproducible installation, pin the reviewed commit and retain the package/payload hashes. This reconciled snapshot is prepared locally; it does not create or rewrite a release or tag.
+
 ### Kaggle
 
 Native CodAdapt and native SafeBlend:
@@ -74,6 +78,8 @@ For the optional EBM compiler:
 
 Restart the notebook kernel only if the environment changes numerical packages during installation.
 
+Local Python qualification does not validate every Kaggle image or dependency combination. The actual Kaggle image remains independently unverified; an offline installation can use a reviewed local wheel with matching dependencies.
+
 ### Local checkout
 
 ```bash
@@ -91,7 +97,7 @@ python -m ruff format --check .
 python -m pytest
 ```
 
-Core runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.4+, and SciPy 1.8+. These are numerical/data dependencies, not external teacher models. `psutil` is optional for benchmarks, and `interpret-core==0.7.8` is available only through the explicit `ebm` extra.
+Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.4+, and SciPy 1.8+. Native training requires no external ML model. `psutil` is an optional benchmark dependency; the `ebm` extra is only an explicit compiler/import tool.
 
 ## Quick start
 
@@ -204,6 +210,38 @@ model.fit(X_train, y_train, sample_weight=weights)
 
 Rows with zero effective weight are removed before preprocessing and validation splitting.
 
+## Experimental native SafeBlend regression
+
+`SafeBlendRegressor` is an opt-in, regression-only **native Base + Rational** diversity
+blend. It uses the standard CodAdapt installation, with no external teacher or ML
+model dependency. Its internal weight is frozen at 0.30; validation fallback selects
+Base when the blend does not strictly improve internal validation RMSE. There is no
+final refit. `CodAdaptRegressor` remains the default.
+
+```python
+from codadapt.experimental import SafeBlendRegressor
+
+model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=4)
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+print(model.branch_, model.alpha_)
+```
+
+On the frozen blind regression benchmark, SafeBlend was slightly ahead of the
+preregistered baseline leader on median RMSE (**−0.67%**) with substantially smaller
+serialized models (**0.120×** the reference). It passed both preregistered regression
+quality/size gates, but the panel has **only five datasets** and the **95% confidence
+interval includes zero**. This is a promising trade-off, not general superiority
+or a guarantee of improvement. Measurements depend on hardware and protocol.
+
+Historical Round 78 local research-runtime medians were approximately **4.13× fit time**,
+**1.09× serialized memory**, **1.08× deep memory** and **1.19–1.23× inference
+latency** versus Base. Public schema validation adds overhead; results depend on
+hardware and workload. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md)
+for inputs, fitted diagnostics, persistence, costs and limitations.
+
+Round 78's frozen research recipe was originally measured at approximately **4.13× Base fit time** before the later exact callback optimization. The current implementation removes redundant diagnostic gradient recomputation while preserving coefficients, trace, branch decisions and predictions bitwise-identically in the qualification replay. On the paired six-case engineering panel, Rational fit time fell by **43.55%** and total SafeBlend fit time by **27.27%**; serialized/deep memory and inference were effectively unchanged. These are panel-specific implementation measurements, not universal speed guarantees. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md) for inputs, fitted diagnostics, persistence, costs and limitations.
+
 ## Experimental EBM compilation
 
 CodAdapt 0.2.0rc2 includes an **experimental, opt-in** compiler for supported additive `interpret-core==0.7.8` EBM models. Install the [optional `ebm` extra](#installation) when compiling a fitted teacher; the native CodAdapt installation remains independent of interpret.
@@ -237,31 +275,6 @@ In the frozen Windows/WSL validation panel (12 datasets × 3 splits, 36 cases pe
 Runtime performance is workload- and environment-dependent. **The historical single-row speed advantage did not replicate**, and a general inference-speed advantage has not been established. Independent-hardware validation remains pending. See the complete [compiler benchmark disclosure](BENCHMARKS.md#experimental-ebm-compiler--frozen-local-validation) for fidelity, memory and all measured batch sizes.
 
 See [docs/EBM_COMPILER.md](docs/EBM_COMPILER.md) before deployment.
-
-## Experimental SafeBlendRegressor
-
-`SafeBlendRegressor` is an opt-in, regression-only **native Base + Rational** diversity
-blend. It uses the standard CodAdapt installation, with no external teacher or ML
-model dependency. Its internal weight is frozen at 0.30; validation fallback selects
-Base when the blend does not strictly improve internal validation RMSE. There is no
-final refit. `CodAdaptRegressor` remains the default.
-
-```python
-from codadapt.experimental import SafeBlendRegressor
-
-model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=4)
-model.fit(X_train, y_train)
-predictions = model.predict(X_test)
-print(model.branch_, model.alpha_)
-```
-
-Independent confirmation on 18 new real regression datasets × 5 splits found a
-median RMSE gain of **+2.061%** versus Base, 95% CI **[+0.403%, +4.695%]**, and
-**17/1/0** dataset wins/ties/losses. The worst split lost **6.157%**: validation
-fallback reduces observed downside but does not guarantee improvement. These are
-panel-specific IID results, not a universal advantage.
-
-Round 78's frozen research recipe was originally measured at approximately **4.13× Base fit time** before the later exact callback optimization. The current implementation removes redundant diagnostic gradient recomputation while preserving coefficients, trace, branch decisions and predictions bitwise-identically in the qualification replay. On the paired six-case engineering panel, Rational fit time fell by **43.55%** and total SafeBlend fit time by **27.27%**; serialized/deep memory and inference were effectively unchanged. These are panel-specific implementation measurements, not universal speed guarantees. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md) for inputs, fitted diagnostics, persistence, costs and limitations.
 
 ## Main parameters
 
@@ -312,6 +325,41 @@ See [docs/ALGORITHM.md](docs/ALGORITHM.md) for the detailed formulation.
 
 ## Performance
 
+The [Frozen Blind External Benchmark](BENCHMARKS.md#frozen-blind-external-benchmark)
+is the primary evidence for current product positioning: **16 NEW_EXTERNAL primary
+datasets, 72 conditions and 381 frozen jobs**, with **380 SUCCESS** and one
+**MEMORY_GUARD_REJECT** coverage/system limitation. Dataset selection and the
+protocol preceded metrics; there was zero tuning and all baseline presets were fixed.
+
+| Task / model | Datasets | Median primary-loss delta vs preregistered baseline leader |
+| --- | ---: | ---: |
+| Regression / CodAdaptRegressor Base | 5 | +2.41% RMSE |
+| Regression / SafeBlendRegressor | 5 | −0.67% RMSE |
+| Binary / CodAdaptClassifier | 6 | +9.36% logloss |
+| Multiclass / CodAdaptClassifier | 5 | +22.03% logloss |
+
+Positive loss deltas mean worse quality. The baseline leader is defined per source
+by a preregistered rule across fixed HGB, LightGBM, CatBoost and XGBoost presets;
+it is not always HGB. Paired condition deltas are aggregated within each source,
+then by equal-source median. Base regression was slightly behind the reference;
+SafeBlend was slightly ahead and its median serialized ratio was **0.120×**, but
+**n=5 and a confidence interval including zero** limit the regression evidence.
+Base did not pass the overall compact-specialist gates; SafeBlend passed the
+separate regression gates. The overall verdict is **PRODUCT_POSITION_MIXED**.
+
+Binary remains a known competitive weakness on the current blind panel; its
+logloss gap is much less extreme than in the first small external pilot.
+Shared OVR is technically validated, compact and robust as an API, but its
+predictive competitiveness did not generalize uniformly to this blind panel.
+These are single-host, hardware- and protocol-dependent results; performance
+depends on domain. NEW_EXTERNAL is qualified against recoverable source history,
+with incomplete early research catalogs. See the public
+[methodology and limits](BENCHMARKS.md#blind-methodology-and-limits).
+
+Earlier external pilots are secondary/historical evidence; development and
+transfer panels are research evidence. They remain documented separately and
+do not override the blind panel for current product positioning.
+
 The frozen 0.1 engineering comparison used 12 datasets and five shared splits per dataset against budget-matched LightGBM. CodAdapt did **not** win mean predictive quality on those datasets. It did, however, win median raw-input inference latency on 10/12 datasets and retained-model memory on 12/12.
 
 With ratios defined as `LightGBM / CodAdapt`, the median fit-speed ratio was `0.887x`, the inference-speed ratio was `1.258x`, and the retained-model-memory ratio was `8.830x`.
@@ -325,6 +373,12 @@ equivalent to independent native OVR. Shared-OVR/independent ratios were about
 0.605× fit, 0.662× serialized size, 0.232× deep memory and 0.334× batch1k latency.
 These are panel-specific engineering comparisons, not superiority over boosting.
 
+The earlier leakage-audited external pilot covered **6 real datasets, 11 evaluation
+units and 36 valid fits** against fixed HGB and Dummy references. Technical checks
+passed while predictive results varied by task, source and metric. Its small-panel
+quality estimates are retained in the [historical external qualification disclosure](BENCHMARKS.md#external-leakage-audited-product-qualification),
+separately from the stronger blind evidence above.
+
 See [BENCHMARKS.md](BENCHMARKS.md) for the public benchmark disclosure.
 
 A lightweight sanity benchmark can be run with:
@@ -335,7 +389,7 @@ python benchmarks/run_benchmarks.py --quick
 
 ### Reproducible cross-validation benchmark
 
-An exploratory benchmark compares CodAdapt with LightGBM, Random Forest, and HistGradientBoosting on four public scikit-learn datasets, using 5-fold cross-validation repeated three times (240 evaluations).
+This secondary/historical exploratory panel does not override the frozen blind evidence above. An exploratory benchmark compares CodAdapt with LightGBM, Random Forest, and HistGradientBoosting on four public scikit-learn datasets, using 5-fold cross-validation repeated three times (240 evaluations).
 
 - [Methodology, results, and limitations](benchmarks/reproducibility/BENCHMARK_CV_REPORT.md)
 - [Benchmark runner](benchmarks/reproducibility/benchmark_codadapt_cv.py)
@@ -350,7 +404,7 @@ python -m pip install lightgbm==4.7.0
 python benchmarks/reproducibility/benchmark_codadapt_cv.py
 ```
 
-These are author-run experiments with default model configurations and no hyperparameter tuning, **not independent validation**. The published JSON metadata records the SHA-256 of the original benchmark script, preserved in commit [`eae1950`](https://github.com/lucalullo/codadapt/blob/eae1950/benchmarks/reproducibility/benchmark_codadapt_cv.py); the current runner has formatting-only changes.
+These are author-run experiments with default model configurations and no hyperparameter tuning, **not independent validation**. The published JSON metadata records the SHA-256 of the original benchmark script, preserved in commit [`eae1950`](https://github.com/lucalullo/codadapt/blob/eae1950/benchmarks/reproducibility/benchmark_codadapt_cv.py); the supplied runner has formatting and import-order changes. The archived results were not rerun during this documentary reconciliation; the report distinguishes the original run hash from the current runner hash.
 
 ## Persistence
 
@@ -396,11 +450,21 @@ These files are development documentation and are intentionally excluded from th
 - compiled EBM classification probabilities are numerically equivalent within tolerance, not guaranteed bitwise-identical;
 - compiled EBM runtime is workload- and environment-dependent, with no general speed advantage established or independent-hardware validation completed;
 - performance and memory results are hardware- and workload-specific;
+- binary classification has a +9.36% median blind logloss gap versus the preregistered baseline leader on six datasets;
+- multiclass has a +22.03% median blind logloss gap on five datasets, despite successful technical qualification of Shared OVR;
+- Base regression has a +2.41% median blind RMSE gap on five datasets;
+- SafeBlend's −0.67% median blind RMSE delta and 0.120× serialized ratio are promising, but the five-dataset panel and CI including zero leave substantial uncertainty;
+- Covtype-like large-N multiclass workloads remain excluded by the conservative safe-memory guard in the tested configuration; no actual out-of-memory event was measured;
+- the blind benchmark's single MEMORY_GUARD_REJECT is a coverage/system limitation; successful predictions do not guarantee every large-batch measurement fits the budget;
+- the blind benchmark covers only 16 datasets (5 regression, 6 binary, 5 multiclass); repeated conditions are not independent datasets, and performance depends on domain;
 - this release does not claim state-of-the-art accuracy or general superiority over established tree-based models.
 
 ## Status
 
-CodAdapt 0.2.0rc2 is an experimental pre-release. The binary and regression paths remain unchanged from the validated 0.1 line. Native multiclass shared OVR is included in the current repository line; SafeBlend and the EBM compiler remain opt-in and experimental. The published tag is not rewritten.
+CodAdapt 0.2.0rc2 is an experimental pre-release. The binary and regression paths remain unchanged from the validated 0.1 line. Native multiclass shared OVR is included in the current working tree; SafeBlend and the EBM compiler remain opt-in and experimental. The published tag is not rewritten.
+
+Current blind evidence supports compact serialized models and promising SafeBlend
+regression quality/size trade-offs, with mixed predictive competitiveness overall.
 
 The public API, compiler contract, and defaults may evolve as broader external validation continues.
 

@@ -1,3 +1,42 @@
+> **Latest release-documentation checkpoint — FINAL_PUBLIC_PAYLOAD_RECONCILIATION.**
+> Staged payload only, 2026-10-11: retain latest A research history and blind disclosures, preserve verified B benchmark support and exact-callback notes. Release handoff RELEASE_HANDOFF_READY; earlier ZIP comparison PAYLOAD_IDENTITY_MISMATCH. Runtime/tests unchanged; version 0.2.0rc2 / round 78. No final public commit, remote qualification or publication is asserted. Original source memories remain unchanged. Earlier banners are historical.
+
+> **Latest strategic checkpoint — POST_R78_POST_HARDENING_STRATEGIC_CHECKPOINT: PRODUCT_DEVELOPMENT_PREFERRED.**
+> Primary: RC2_RELEASE_EVIDENCE_AND_PERSISTENCE_CONTRACT. Technical hardening PASS; bounded evidence/persistence handoff before manual release review. Working rc2 differs from local HEAD0.1.0; remote CI PASS is user-reported. Version0.2.0rc2 / round78 unchanged. Earlier banners are historical.
+
+> **Latest engineering checkpoint — POST_R78_SAFEBLEND_PRODUCT_BLOCKER_FIX: PRODUCT_HARDENING_READY.**
+> Requested release-readiness gates PASS; fitted-state and documentation blockers closed. Version 0.2.0rc2 / round 78 unchanged. Earlier blockers/banners are historical; predictive positioning remains PRODUCT_POSITION_MIXED.
+
+> **Latest engineering checkpoint — POST_R78_PRODUCT_HARDENING_AUDIT: MULTIPLE_PRODUCT_BLOCKERS.**
+> Release readiness NO; API fitted-state blocker + two documentation items. Version 0.2.0rc2 / round 78 unchanged. Earlier banners are historical.
+
+> **Latest documentation checkpoint — POST_R78_BLIND_BENCHMARK_PUBLIC_DOCS: BLIND_BENCHMARK_PUBLIC_DOCS_READY.**
+> Frozen blind evidence is primary for external product positioning: PRODUCT_POSITION_MIXED. Documentation only; last_completed_round=78, version=0.2.0rc2. Earlier checkpoint banners are historical.
+
+> **Latest checkpoint — POST_R78_VNEXT_FUNCTION_CLASS_EXPANSION_AUDIT: NO_VNEXT_REPRESENTATION_IDENTIFIED.**
+> Theory/history only; 0 candidate fits/solves. last_completed_round=78, public version=0.2.0rc2. Earlier banners are historical.
+
+> **Latest checkpoint — POST_R78_CODED_REPRESENTATION_CEILING_AUDIT: HISTORICALLY_EQUIVALENT.**
+> Mandatory history-gate STOP; 0 new fits/solves/predictions. last_completed_round=78, version=0.2.0rc2. Earlier banners below are historical.
+
+> **Latest checkpoint — POST_R78_BUDGET_AWARE_MEMORY_FIRST_PRINCIPLE_AUDIT: NO_REAL_DATA_BUDGET_GAIN.**
+> last_completed_round78/version0.2.0rc2; no transfer orRound79. Earlier banners below are historical.
+
+> **Current causal checkpoint — POST_R78_BINARY_EARLY_SCREENING_CAUSAL_AUDIT:** EARLY_SCREENING_NOT_CAUSAL; B/C identical to Base; D primary medianAUCgain0, W/T/L1/2/1; no transfer/recipe promotion. last_completed_round78/version0.2.0rc2. Earlier checkpoint banners are historical.
+
+> **Current observational checkpoint — POST_R78_BINARY_EXTERNAL_CHECKPOINT_FORENSICS:** DOMAIN_REGIME_IDENTIFIED operativo; ranking weaknessYES/strongNO;0fit/solve; nessun meccanismo distinto/reopening;last_completed_round78/versione0.2.0rc2. Vedi ultima sezione e report privato.
+
+# Current observational checkpoint — POST_R78_EXTERNAL_BINARY_GAP_REPLICATION
+
+**DOMAIN_SPECIFIC_BINARY_GAP**; general/strong external binary logloss gap not replicated.
+Six new sources/11units/33fits,0failures:median+4.880670%LL,WTL3/0/3;
+AUC−.024405 with5/6negative remains a weakness. Domain label is operational at
+exactly50%competitive,not causal or a validated niche. No native recipe reopened.
+Index78/version0.2.0rc2/publiccore unchanged;noRound79. Earlier banners are historical.
+See final POST_R78_EXTERNAL_BINARY_GAP_REPLICATION section and private audit for evidence/limitations.
+
+---
+
 # Current engineering checkpoint — SAFEBLEND_EXACT_OPTIMIZATION_READY
 
 Index78/version0.2.0rc2. Compatibility-only resume: Python3.13.16/3.14.8 fresh isolated environments PASS/PASS; public code unchanged. All previous replay/timing/tests/packaging retained. Earlier blocked banners are history.
@@ -12659,3 +12698,1259 @@ Qualified successful minors run9existing callback tests each, frozen pre-port sa
 54development/36transfer replays, zero mismatches,459public/4knownXFAIL,3private/Ruff/format,3.10–3.12 and wheel/sdist all VALID_REUSED. Rational43.55%/SafeBlend27.27%savings reused; no new benchmark/scientific fit/replay/build/download. Version0.2.0rc2 and rounds1–78 preserved. No Round79/commit/push/tag/release/remote.
 
 Evidence: SAFEBLEND_EXACT_OPTIMIZATION_AUDIT.md, safeblend_exact_optimization/qualification_resume.json, qualification_313.json, qualification_314.json, dll_diagnostic_resume.md and final_audit.json. Manual upload of prior three public files justified=True. User may upload the three previously prepared public source/test/changelog files manually; no automatic publication. Stop.
+
+
+## POST-R78 — Public core large-scale memory & fit audit (2026-10-09)
+
+**NO_MATERIAL_SYSTEMS_GAIN**. Exact private systems fixtures, not Round79 or new predictive confirmation. Current authoritative public working bytes frozen at HEAD15a70c7b6923e5979b4617a57bbdf43efbeea110; version0.2.0rc2 and all rounds1–78 unchanged. Four candidates: identity-copy/early-release, fit-local narrow codes, surrogate workspace, frozen combined. Full22workload panel, Covtype explicitly rejected; no guard bypass.
+
+Combined paired total-RSS saving3.857%; incremental-fit-RSS saving26.764% reported separately; fit saving4.917%. Zero coefficient/prediction/probability/branch drift, persistence verified. Deep/serialized ratios1.000000/1.000000; inference ratios{'1': 1.0003797338056335, '32': 1.0004813871398377, '1000': 1.0001223334697016, '100000': 1.0024937458147052}. Covtype348606×54 remains above512MiB conservative estimate; no actual Covtype fit.
+
+Public integration justified=False; public source/API/default/compiler unchanged. Existing459PASS/4knownXFAIL hash-qualified reuse; fresh exact fixtures3.12–3.14, Ruff. Source-grounded allocation inventories, isolated RSS/tracemalloc, K/N/P scaling and known real results in research_private/public_systems_audit/ and PUBLIC_SYSTEMS_MEMORY_AUDIT.md. No scientific learner/closed-solver reopening, remote/download/commit/push/tag/release. Next:Keep public baseline and512MiB guard. Archive exact prototypes; do not promote small aggregate gains. Any future Covtype work must first prove a conservative complete allocation bound, including external validation and categorical payloads, without a guard bypass. Stop; no Round79.
+
+
+## POST_R78_PUBLIC_MEMORY_GUARD_FIDELITY — completed2026-10-09
+
+# POST-R78 — Public memory guard fidelity audit
+
+**GUARD_OVERCONSERVATIVE_BUT_COVTYPE_STILL_TOO_LARGE**. Public guard update justified: **NO**. Version0.2.0rc2; last_completed_round78.
+
+The current heuristic materially overestimates sampled incremental fit RSS near the numeric capacity boundary. It also underestimates several small fixtures, especially as K increases. It has no literal lifetime ledger, so the cause cannot be described as a proven sum of named disjoint arrays. Source inspection establishes avoidable overcount potential from phase-disjoint peaks, while finite samples do not certify a replacement. The proposed conservative phase envelope does NOT improve median error over the complete balanced panel. No guard integration or false-reject recovery is claimed.
+
+Covtype's final proposed bound460.294MiB exceeds the450MiB authorization gate. No full fit was run. The selected verdict's TOO_LARGE suffix refers only to this safety gate; **actual Covtype fit RSS>512MiB is NOT established**. The A/B question is resolved for tested admitted workloads (large numeric overestimation), but remains unmeasured for Covtype itself.
+
+## GIÀ VALID PRIMA DELL'INTERRUZIONE
+
+43 fresh RSS engineering fits on23 known/controlled workloads; 3 separate traced engineering fits;3 static near-guard rejects. 54 prior baseline fit checkpoints/hash receipts reused as secondary evidence without refitting them for scientific purposes. Fresh measurements are needed because those valid receipts omit before-load/after-load/after-fit lifecycle RSS and do not have a correctly scoped simultaneous-owner trace. No teacher/quality/algorithm fitting experiment was reopened. All default parameters, sequential heads, dtypes, validation, public code and guard are frozen. No test-based choice. One heavy process, one numerical thread,12GiB hard process abort,8GiB target; actual total RSS remains far lower. Static rejected jobs have no observed memory value, not zeros. All46 completed fits,3rejects, primary CSV and predictive replay evidence were VALID before the user's interruption.
+
+## COMPLETATO DOPO LA RIPRESA
+
+Read all mandatory memory and existing task text/checkpoints/logs; fully hash/read binary artifacts. Resume audit qualifies46saved models and3static rejects. LAST_VALID_STEP:43RSS+3trace profiles and57predictive replay checks PASS. INTERRUPTED_STEP:final findings/memory/audit closure. NEXT_STEP:metadata-only trace label correction and final bookkeeping. FIRST_MISSING_WORKLOAD:NONE. **0 new or repeated fits/solves/benchmarks/replays after resume.** Existing raw results, models, CSV and logs are preserved. The profiler fallback labeled post-artifact classifier snapshots as A; normalized_live_profiles.json and observed_live_sets.csv relabel only these explicit source sites to G. No genuine raw-input A peak was observed by these sparse snapshots; absent A/D snapshots are not assigned zero bytes. Complete phase accounting remains source-derived in live_sets.csv. Existing11private tests and public459PASS/4knownXFAIL reused; only2new metadata-normalization tests run. Report, controlled-run NOT_RUN_BY_PROTOCOL receipt, research-memory record and final audit completed now.
+
+## Formula, source lifetimes and ownership
+
+|term|bytes|MiB|lifetime|
+|---|---|---|---|
+|raw_codes_envelope|752988960|718.106232|unspecified envelope; not a physical live array|
+|address_envelope|5577696|5.319305|unspecified; actual XCache has a32MiB cap|
+|row_vectors_envelope|27888480|26.596527|unspecified; no class multiplicity|
+|metadata_envelope|245232|0.233871|fitted metadata plus statistics envelope|
+|tables_envelope|65536|0.062500|tables/statistics envelope|
+
+40NP is an undocumented composite allowance, not five physically identified float64 matrices. Public guard code is identical in Base and SharedOVR. There is no K factor to remove. It also omits explicit external-validation Nv and observed category/label payload. XCache charges some arrays twice for admission bookkeeping, but holds at most its32MiB charged cap; this does not mean two physical copies.
+
+The new accounting enumerates A raw conversion, B split/filter, C encoding, D shared construction, E single head, F finalization, G packing. C_train/C_valid and E_train/E_valid are mutually exclusive subphases. The maximum phase sum is used. Caller-owned input belongs to prefit RSS; its Prepared copies are attributed to fit. Numeric inputs tested are already NumPy/DataFrames; list conversions are outside the certified scope. Prepared keeps raw train/valid arrays through packing. Three uint16 levels coexist with them; finest arrays do not survive into head training. Only predictive state grows with K. Head residuals, gradients and score vectors are sequential. Packing occurs after fit_heads returns and releases codes/cache.
+
+Physical array volumes and conservative transient envelopes are explicitly labeled in live_sets.csv. These are not sums of per-site allocation maxima. Python object payload and allocator fragmentation are not equivalent to ndarray nbytes. The bounded-string categorical allowance intentionally overcounts potentially shared labels; it is not a precise claim that those payloads are newly allocated. This is a substantial source of error in the proposed mixed-input bound. Arbitrary pandas extensions, huge category/target labels, nondefault constructor limits and native workspace do not have a formal general certificate.
+
+## Covtype static phases
+
+|phase|structural_MiB|
+|---|---|
+|A|10.638611|
+|B|170.217773|
+|C_train|306.481308|
+|C_valid|311.205193|
+|D|327.690418|
+|E_train|370.244884|
+|E_valid|356.060131|
+|F|348.967663|
+|G|153.474838|
+
+Raw train copy plus three train/validation code levels alone total301195908bytes (287.242802MiB) during head fitting, before vectors/cache/retained heads. This is incremental physical buffer volume, not total RSS. The earlier guard-reject process prefit RSS was373.789063MiB; combining that historical baseline with written-buffer volume suggests total-RSS risk above512MiB, but it is not a new measured fit or an OS-residency proof. The controlled gate uses the final conservative incremental bound separately from the user's512MiB TOTAL RSS abort. Neither is bypassed.
+
+## Measurements
+
+|workload|repeats|current_MiB|structural_MiB|final_MiB|delta_max_MiB|total_max_MiB|range_MiB|
+|---|---|---|---|---|---|---|---|
+|N25000_P10_K5|1|11.990|16.932|36.319|12.820|146.535|0.000|
+|N50000_P10_K5|3|23.816|33.059|55.671|24.238|160.266|0.645|
+|N100000_P10_K5|1|47.467|57.903|85.484|40.711|181.359|0.000|
+|N200000_P10_K5|1|94.769|83.500|116.200|65.441|213.461|0.000|
+|N300000_P10_K5|1|142.071|109.097|146.916|88.738|245.055|0.000|
+|N400000_P10_K5|1|189.373|134.693|177.632|111.715|276.492|0.000|
+|N500000_P10_K5|3|236.676|160.290|208.348|136.312|309.410|1.301|
+|near256|1|256.001|121.983|162.380|112.273|294.617|0.000|
+|near384|1|384.001|175.520|226.625|159.250|367.211|0.000|
+|near450|1|450.001|200.148|256.178|183.426|404.746|0.000|
+|near500|3|500.001|218.805|278.566|201.879|432.973|1.195|
+|format_contiguous|3|52.471|43.132|67.758|35.152|176.535|0.684|
+|format_noncontiguous|3|52.471|43.132|67.758|34.973|176.535|0.219|
+|format_pandas_numeric|3|52.471|43.132|67.758|35.922|177.516|0.535|
+|format_pandas_mixed|3|52.471|116.384|155.660|35.629|182.484|1.016|
+|K3|1|4.895|5.394|22.472|4.934|136.984|0.000|
+|K5|1|4.895|7.256|24.707|5.543|137.672|0.000|
+|K10|1|4.895|11.913|30.296|7.586|139.840|0.000|
+|K20|1|4.895|21.227|41.472|12.312|144.734|0.000|
+|K40|1|4.895|36.946|60.335|15.613|147.984|0.000|
+|letter|3|8.605|37.280|60.736|18.383|152.484|0.852|
+|sensorless|3|67.772|63.501|92.201|40.543|189.660|0.453|
+|connect4|3|68.912|301.370|377.644|38.445|188.680|0.492|
+
+RSS is psutil Windows working set sampled in a dedicated thread. Requested1ms spacing is not guaranteed: GIL-held native work, Windows scheduling and timers can delay samples. Mean effective sample spacing appears in raw CSV; short peaks can be missed. Tracemalloc includes tracked NumPy buffers but can omit native allocations. The separate source-scoped trace deduplicates ndarray owners across all active public frames, excluding caller input; it does not retain frames/arrays or scan .venv internals. The first every-line diagnostic was interrupted for excessive measurement overhead, with all partial files preserved; no valid fit was repeated. The documented measurement-only amendment observes every100th public event plus lifecycle returns and records Windows peak_wset before/afterfit. A new kernel process high-water reached during fit is attributable to that instrumented fit; otherwise it remains an upper bound from the process lifetime. The trace observes Python-visible boundaries, not hidden C temporaries, and has its own measurement overhead. Trace clocks/peaks are excluded from primary estimation errors. Imports/interpreter baseline and dataset loading are explicitly separate fields; no minimum subtraction or tracemalloc-only safety claim.
+
+Current small-case underestimates: N25000_P10_K5, N50000_P10_K5, K3, K5, K10, K20, K40, letter. These do not breach512MiB, but refute treating the current heuristic as an exact upper bound on every fit. All new envelopes cover observed sampled deltas; that is empirical coverage, not proof of no dangerous unseen underestimation. The new margin was preregistered and not optimized after measurements. The small-case fixed margin/cache envelopes and conservative categorical payload allowance worsen the full-panel median.
+
+## Required30resume fields
+
+1. **VALID artifacts reused:** 43RSS fits,3completed v2 profiles,3static rejects,54prior baselines,57replay checks,6CSV, frozen formulas/protocol,11private tests and public459PASS/4knownXFAIL.
+
+2. **PARTIAL/INTERRUPTED artifacts:** Final report/memory/final audit were NOT_STARTED. One old every-line diagnostic INTERRUPTED and two old diagnostics NOT_STARTED were already superseded by VALID v2 profiles before this resume; no restart required.
+
+3. **Workloads actually rerun:** 0 fit/solve/replay/benchmark workloads after resume.
+
+4. **New workloads completed:** 0. Completed after resume: inventory/hash qualification, trace label metadata correction,2new bookkeeping tests, findings, research memory, final audit.
+
+5. **Current guard formula:** N(40P+2T+80)+24(P+T min(P,F)) max(B+1,C+3)+32TS; default T8,F3,B32,C128,S256; no K or external Nv term.
+
+6. **750.32MiB reproduction:** 752988960 +5577696 +27888480 +245232 +65536 =786765904bytes =750.318435669MiB.
+
+7. **Largest term:** 40NP =752988960bytes =718.106232MiB; heuristic envelope, not five identified float64 arrays.
+
+8. **Real simultaneous allocations:** Raw Prepared train/valid copies +three uint16 encoded levels for both splits +XCache +one head's vectors +previous heads' predictive state.
+
+9. **Non-simultaneous allocations:** Internal positive/split RHS overlap; finest+level encoding peak; head training/validation scratch; artifact packing. Finest disappears before heads; codes/cache disappear before packing. K head scratch is sequential.
+
+10. **Current estimate median error:** absolute 17.318MiB; signed relative 47.27% using max-repeat delta.
+
+11. **Current estimate worst error:** absolute 298.122MiB; worst absolute relative 147.67%. Small-case underestimates explicitly listed below.
+
+12. **New structural formula:** max_phase(raw copies +prepared vectors +encoding OR one-head scratch +capped cache +retained state); exact component CSV and frozen live_sets.py; default-only upper envelopes, not a general certificate.
+
+13. **Safety margin:** ceil(20% structural)+16MiB, frozen before observations. Covers allocator/platform/native workspace/noise provisionally; not a mathematical native-allocation bound.
+
+14. **New estimate median error:** absolute 44.773MiB; signed relative 109.98%; materially lower median error: NO.
+
+15. **New worst underestimate:** 0.000% of observed fresh sampled fit delta; no underestimates on this panel. No claim for unobserved short native peaks/arbitrary API inputs.
+
+16. **Run-to-run variance:** Largest 3-repeat delta range 1.301MiB; per-case std/range CSV. Evaluation uses maximum, never minimum.
+
+17. **Input format results:** delta max 35.152MiB; current 52.471; new 67.758; total max 176.535MiB; delta max 34.973MiB; current 52.471; new 67.758; total max 176.535MiB; delta max 35.922MiB; current 52.471; new 67.758; total max 177.516MiB; delta max 35.629MiB; current 52.471; new 155.660; total max 182.484MiB; bounded string/missing fixture only, no arbitrary-extension/payload certificate.
+
+18. **K scaling:** K3: delta max 4.934MiB; current 4.895; new 22.472; total max 136.984MiB; K5: delta max 5.543MiB; current 4.895; new 24.707; total max 137.672MiB; K10: delta max 7.586MiB; current 4.895; new 30.296; total max 139.840MiB; K20: delta max 12.312MiB; current 4.895; new 41.472; total max 144.734MiB; K40: delta max 15.613MiB; current 4.895; new 60.335; total max 147.984MiB
+
+19. **Near-guard synthetic results:** 256: delta max 112.273MiB; current 256.001; new 162.380; total max 294.617MiB; 384: delta max 159.250MiB; current 384.001; new 226.625; total max 367.211MiB; 450: delta max 183.426MiB; current 450.001; new 256.178; total max 404.746MiB; 500: delta max 201.879MiB; current 500.001; new 278.566; total max 432.973MiB;550/650/750 STATIC_REJECT, not fitted.
+
+20. **Covtype current estimate:** 750.318436MiB
+
+21. **Covtype structural estimate:** 370.244884MiB; phase E_train
+
+22. **Covtype safety margin:** 90.048977MiB
+
+23. **Covtype final estimate:** 460.293861MiB; above450MiB controlled-run headroom gate.
+
+24. **Covtype controlled run authorized:** NO — NOT_RUN_BY_PROTOCOL. Static gate fails, no general certificate, and unchanged public guard rejects.
+
+25. **Covtype actual fit peak:** NOT MEASURED; no full fit. Static rejection is not evidence of actual>512MiB incremental RSS.
+
+26. **False rejects identified:** 0 CERTIFIED. Near550/650/750 may be overconservative rejects but were not executed/bypassed; Covtype is not a demonstrated false reject.
+
+27. **Unsafe accepts identified:** 0 threshold breaches among observed admitted fixtures;0 proposed new admissions. Current small-case estimate underestimates do exist; not a universal safety guarantee.
+
+28. **Verdict:** GUARD_OVERCONSERVATIVE_BUT_COVTYPE_STILL_TOO_LARGE. TOO_LARGE means exceeds the conservative450MiB authorization gate, NOT a measured>512MiB Covtype fit. Covtype's true peak remains unresolved.
+
+29. **Public guard update justified:** NO; new proposal worsens overall median error, no certified false-reject recovery, no general allocation proof.
+
+30. **Precise next step:** Keep the public512MiB guard. Do not run Covtype or promote this estimator. Before any separately authorized guard change, prove a scoped upper bound for external validation, categorical/label payload, retained K state and allocator/native workspace; validate fit-only Windows high-water RSS independently of Python/GIL sampling. No Round79.
+
+## Original40fields
+
+1. **Current guard formula:** N(40P+2T+80)+24(P+T min(P,F)) max(B+1,C+3)+32TS; default T8,F3,B32,C128,S256; no K or external Nv term.
+
+2. **750.32MiB reproduction:** 752988960 +5577696 +27888480 +245232 +65536 =786765904bytes =750.318435669MiB.
+
+3. **Largest term:** 40NP =752988960bytes =718.106232MiB; heuristic envelope, not five identified float64 arrays.
+
+4. **Real simultaneous allocations:** Raw Prepared train/valid copies +three uint16 encoded levels for both splits +XCache +one head's vectors +previous heads' predictive state.
+
+5. **Non-simultaneous allocations:** Internal positive/split RHS overlap; finest+level encoding peak; head training/validation scratch; artifact packing. Finest disappears before heads; codes/cache disappear before packing. K head scratch is sequential.
+
+6. **Current estimate median error:** absolute 17.318MiB; signed relative 47.27% using max-repeat delta.
+
+7. **Current estimate worst error:** absolute 298.122MiB; worst absolute relative 147.67%. Small-case underestimates explicitly listed below.
+
+8. **New structural formula:** max_phase(raw copies +prepared vectors +encoding OR one-head scratch +capped cache +retained state); exact component CSV and frozen live_sets.py; default-only upper envelopes, not a general certificate.
+
+9. **Safety margin:** ceil(20% structural)+16MiB, frozen before observations. Covers allocator/platform/native workspace/noise provisionally; not a mathematical native-allocation bound.
+
+10. **New estimate median error:** absolute 44.773MiB; signed relative 109.98%; materially lower median error: NO.
+
+11. **New worst underestimate:** 0.000% of observed fresh sampled fit delta; no underestimates on this panel. No claim for unobserved short native peaks/arbitrary API inputs.
+
+12. **RSS measurement method:** Fresh Windows processes; before-load, after-load, prefit, sampled-fit-peak, after-fit; primary peak-prefit. Requested1ms sampler can be delayed by GIL/Windows timers; effective mean spacing is in CSV. Separate tracemalloc/source-scoped sparse owner profiles also record Windows peak_wset before/afterfit; native-counter attribution only if a new high-water occurs during fit. Primary untraced RSS remains sampled.
+
+13. **Run-to-run variance:** Largest 3-repeat delta range 1.301MiB; per-case std/range CSV. Evaluation uses maximum, never minimum.
+
+14. **NumPy contiguous:** delta max 35.152MiB; current 52.471; new 67.758; total max 176.535MiB
+
+15. **NumPy non-contiguous:** delta max 34.973MiB; current 52.471; new 67.758; total max 176.535MiB
+
+16. **pandas numeric:** delta max 35.922MiB; current 52.471; new 67.758; total max 177.516MiB
+
+17. **pandas mixed:** delta max 35.629MiB; current 52.471; new 155.660; total max 182.484MiB; bounded string/missing fixture only, no arbitrary-extension/payload certificate.
+
+18. **K=3:** delta max 4.934MiB; current 4.895; new 22.472; total max 136.984MiB; no K multiplication of temporary head state.
+
+19. **K=5:** delta max 5.543MiB; current 4.895; new 24.707; total max 137.672MiB; no K multiplication of temporary head state.
+
+20. **K=10:** delta max 7.586MiB; current 4.895; new 30.296; total max 139.840MiB; no K multiplication of temporary head state.
+
+21. **K=20:** delta max 12.312MiB; current 4.895; new 41.472; total max 144.734MiB; no K multiplication of temporary head state.
+
+22. **K=40:** delta max 15.613MiB; current 4.895; new 60.335; total max 147.984MiB; no K multiplication of temporary head state.
+
+23. **Near256MiB synthetic:** delta max 112.273MiB; current 256.001; new 162.380; total max 294.617MiB
+
+24. **Near384MiB synthetic:** delta max 159.250MiB; current 384.001; new 226.625; total max 367.211MiB
+
+25. **Near450MiB synthetic:** delta max 183.426MiB; current 450.001; new 256.178; total max 404.746MiB
+
+26. **Near500MiB synthetic:** delta max 201.879MiB; current 500.001; new 278.566; total max 432.973MiB
+
+27. **Near550MiB synthetic:** STATIC PUBLIC_GUARD_REJECT; no fit/observed peak. The650/750MiB cases are also static rejects.
+
+28. **Covtype current estimate:** 750.318436MiB
+
+29. **Covtype structural estimate:** 370.244884MiB; phase E_train
+
+30. **Covtype safety margin:** 90.048977MiB
+
+31. **Covtype final estimate:** 460.293861MiB; above450MiB controlled-run headroom gate.
+
+32. **Covtype controlled run authorized:** NO — NOT_RUN_BY_PROTOCOL. Static gate fails, no general certificate, and unchanged public guard rejects.
+
+33. **Covtype actual fit peak:** NOT MEASURED; no full fit. Static rejection is not evidence of actual>512MiB incremental RSS.
+
+34. **Public guard threshold:** 512MiB =536870912bytes, unchanged.450MiB is the separate controlled-run gate.
+
+35. **False rejects identified:** 0 CERTIFIED. Near550/650/750 may be overconservative rejects but were not executed/bypassed; Covtype is not a demonstrated false reject.
+
+36. **Unsafe accepts identified:** 0 threshold breaches among observed admitted fixtures;0 proposed new admissions. Current small-case estimate underestimates do exist; not a universal safety guarantee.
+
+37. **Verdict:** GUARD_OVERCONSERVATIVE_BUT_COVTYPE_STILL_TOO_LARGE. TOO_LARGE means exceeds the conservative450MiB authorization gate, NOT a measured>512MiB Covtype fit. Covtype's true peak remains unresolved.
+
+38. **Public guard update justified:** NO; new proposal worsens overall median error, no certified false-reject recovery, no general allocation proof.
+
+39. **Public files that WOULD change:** None authorized. A future proven formula would affect src/codadapt/_base.py, src/codadapt/_multiclass.py and guard tests; no changes made here.
+
+40. **Precise next step:** Keep the public512MiB guard. Do not run Covtype or promote this estimator. Before any separately authorized guard change, prove a scoped upper bound for external validation, categorical/label payload, retained K state and allocator/native workspace; validate fit-only Windows high-water RSS independently of Python/GIL sampling. No Round79.
+
+## Final checks
+
+All saved models replay predictive parameters/schemas, classes, decisions, probabilities and predictions; overlapping prior unpatched baselines match parameter digests. Public459PASS/4knownXFAIL evidence and11private accounting contracts are hash-qualified VALID_REUSED;2new metadata tests pass. Public/private correctness Ruff pass. No new scientific drift, no public change, no remote/download/commit/push/tag/release, no Round79. MASTER/STATE are updated only for this engineering record, preserving rounds1–78.
+
+
+## POST-R78 — EXACT CHUNKED PREPROCESSING / ENCODING AUDIT
+
+# POST-R78 — Exact chunked preprocessing / encoding audit
+
+Verdict: **NO_CHUNKED_ENCODING_GAIN**. Not Round 79; version 0.2.0rc2 and last_completed_round = 78. Public source, API, default and 512 MiB guard unchanged. Engineering development measurements, no new predictive evidence.
+
+## Frozen scope and historical distinction
+
+See exact_chunked_encoding/DESIGN.md, protocol.json and seal.json. Two implementations×three chunk sizes only. No previously closed dtype narrowing, workspace reuse, lifetime cleanup, raw-copy elimination or guard rewrite is used. Global cuts/RNG/vocabulary are identical; categorical normalization occurs globally, never per chunk. Head fitting and dense final arrays are unchanged. The two-case systems screen froze direct/8192 before evaluating the rest; screen winner is not evidence of a signal.
+
+## Baseline memory graph
+
+Caller-owned raw input is already in pre-fit RSS. Positive-row copy, train/validation copies, target/weight/index vectors are preserved. Global per-column float64/object conversion creates cuts/vocab, finest uint16 N×P codes; these coexist with up to three uint16 coarse/identity level matrices. Validation encoding retains the three train levels and builds finest plus three validation levels. Categorical codes occupy columns of these matrices, with temporary global normalization/mapped arrays. After encoding, Prepared retains raw train/valid while all six level matrices, cache and one active head's optimizer vectors coexist. K heads are sequential, not K parallel workspaces.
+
+Source-qualified prior normalized live traces are VALID_REUSED: N50k/P10 C8.147MiB versus E20.038MiB; mixed P25 C18.735 versus E30.667MiB; near500 C183.313 versus E196.759MiB (incremental physical ndarray owners). These are sparse illustrative snapshots, not complete native/RSS maxima. Their raw source/hash and phase-label correction remain preserved in memory_guard_fidelity/normalized_live_profiles.json. No trace fit is repeated. Current fresh paired fit RSS is primary; old fits are secondary only.
+
+Candidate direct avoids a full finest output during discovery and writes mapped chunk columns to three final uint16 C buffers. Row staging has a bounded 2D finest buffer and global categorical code cache. Neither reduces raw split copies, final levels, cache or head working set. Global discovery still needs a full column/sample, and support bincount remains full-column after encoding.
+
+## Measurements
+
+One heavy child at a time, one numerical thread, 12 GiB hard supervised RSS abort. Fresh isolated paired fits in alternating order; three repeats per evaluation workload. Primary is sampled peak_fit_RSS−pre_fit_RSS; workload aggregates use maximum of three RSS deltas and median paired fit ratios. No quality/test-based selection. 1 ms sampling is requested, not guaranteed under Windows/GIL; short native peaks may be missed. Windows lifetime high-water is recorded separately and only a new high-water can belong to fit. Ratios near 1 are not treated as meaningful wins. Deep/pickle/joblib/prediction and correctness scans occur after timing/RSS stops.
+
+| Workload | Baseline ΔRSS MiB | Chunked ΔRSS MiB | Saving | Fit ratio |
+|---|---:|---:|---:|---:|
+| N100000_P10_K5 | 40.918 | 41.375 | -1.12% | 1.020x |
+| N250000_P10_K5 | 76.176 | 77.586 | -1.85% | 0.964x |
+| N500000_P10_K5 | 136.473 | 135.578 | 0.66% | 1.029x |
+| N50000_P10_K5 | 23.555 | 23.293 | 1.11% | 0.979x |
+| binary | 0.828 | 0.781 | 5.66% | 0.968x |
+| connect4 | 38.445 | 38.840 | -1.03% | 1.248x |
+| format_contiguous | 33.789 | 33.980 | -0.57% | 1.039x |
+| format_noncontiguous | 33.633 | 33.781 | -0.44% | 1.083x |
+| format_pandas_mixed | 34.551 | 35.273 | -2.09% | 1.054x |
+| format_pandas_numeric | 34.848 | 34.984 | -0.39% | 0.937x |
+| letter | 17.375 | 17.461 | -0.49% | 1.003x |
+| regression | 0.609 | 0.688 | -12.82% | 1.439x |
+| safeblend | 1.422 | 1.172 | 17.58% | 0.868x |
+| sensorless | 40.805 | 40.641 | 0.40% | 1.050x |
+
+These are fit increments, not total process RSS. Raw repeats, pre-fit/total RSS, variance, timing and kernel counters are in memory_results.csv and scaling_results.csv. Median workload deltas and median workload ratios are different summaries; ratios are not calculated by dividing unrelated medians.
+
+Connect4 fit is 1.248x despite no RAM gain. Secondary binary/regression/SafeBlend are single small fixtures for applicability/exactness only: SafeBlend's apparent 17.6% saving is about 0.25 MiB and is not a replicated performance signal. No post-hoc activation threshold is proposed.
+
+## Operational interruption and measurement limitations
+
+The first pandas-mixed baseline fit finished but its joblib check stopped before system measurements were checkpointed. Its fitted joblib, log and started/supervisor records are preserved in interrupted_persistence_baseline/. Against the prior frozen baseline, all coefficients/support/maps/classes/decision/probability/predictions and schema VALUES match. Only hashing raw pickle bytes of schemas differs: joblib changes repeated-string alias/memo topology. A typed semantic schema digest now checks the same exact values and distinguishes bool/number identity; no tolerance or prediction check is relaxed. Two new tests prove alias invariance and rejection of changed values. This amends private diagnostics only. All 74 valid fit checkpoints were reused; only one missing system-measurement unit was repeated. There are 86 valid fit checkpoints plus 1 preserved incomplete-measurement attempt; no scientific choice changed.
+
+The Windows venv redirector made the original outer supervisor counter measure only the launcher (about 4 MiB). Those counters are invalid as worker RSS and are not used. Primary RSS is measured INSIDE the actual fit worker and remains valid; maximum recorded process kernel lifetime high-water is 310.129 MiB among 86 valid jobs, with no observed research-budget breach. The incomplete attempt did not checkpoint its system counters. Remaining jobs use recursive child-tree supervision. Earlier jobs lacked a correctly targeted outer hard-abort monitor; this resource-enforcement limitation is recorded, not claimed away or repaired by redundant fits. Frozen fit/encoding/timing/RSS code stayed unchanged. See operational_amendment.json and persistence_diagnosis.json.
+
+All 66 primary evaluation fits establish a new kernel high-water during the fit measurement interval. As a secondary check using those existing counters, median workload RAM saving is−0.533%, also below the 15% gate; kernel_sensitivity.json records the 11 workloads. No additional fit or trace was run. Kernel counters are not substituted for the preregistered sampled-RSS primary metric.
+
+## Required 40 fields
+
+1. **Baseline preprocessing pipeline:** positive raw copy → frozen split → global discovery → finest uint16 → 3 levels → validation levels → unchanged OVR/cache/head fit
+
+2. **Largest simultaneous buffers:** raw train/valid +3 train/valid levels + XCache + single-head vectors; baseline additionally full finest during encoding
+
+3. **Candidate implementations:** row-block staging/global categorical code cache; direct per-feature row chunks into final buffers
+
+4. **Selected chunk size:** 8192 rows; direct (systems screen only)
+
+5. **Finest-code mismatches:** 0
+
+6. **Coarse-code mismatches:** 0
+
+7. **Categorical mismatches:** 0
+
+8. **Validation mismatches:** 0
+
+9. **Coefficient mismatches:** 0
+
+10. **Prediction mismatches:** 0
+
+11. **Probability mismatches:** 0
+
+12. **Baseline peak RAM:** median workload max fit increment 34.848MiB; total RSS separately recorded
+
+13. **Chunked peak RAM:** median workload max fit increment 35.273MiB
+
+14. **RAM saving:** -0.495% median workload worst-repeat saving; 15% gate
+
+15. **Baseline fit:** 2.2076s median workload median fit
+
+16. **Chunked fit:** 2.3544s median workload median fit
+
+17. **Fit overhead/saving:** 1.0293x; +2.93%
+
+18. **N=50k:** 23.555→23.293MiB ΔRSS; +1.11% saving; fit0.979x; exact
+
+19. **N=100k:** 40.918→41.375MiB ΔRSS; -1.12% saving; fit1.020x; exact
+
+20. **N=250k:** 76.176→77.586MiB ΔRSS; -1.85% saving; fit0.964x; exact
+
+21. **N=500k:** 136.473→135.578MiB ΔRSS; +0.66% saving; fit1.029x; exact
+
+22. **Letter:** 17.375→17.461MiB ΔRSS; -0.49% saving; fit1.003x; exact
+
+23. **Sensorless:** 40.805→40.641MiB ΔRSS; +0.40% saving; fit1.050x; exact
+
+24. **Connect4:** 38.445→38.840MiB ΔRSS; -1.03% saving; fit1.248x; exact
+
+25. **Covtype baseline estimate:** 750.318436MiB public heuristic; prior scoped conservative 460.293861MiB
+
+26. **Covtype chunked structural estimate:** 370.244884 MiB; dominant E_train unchanged
+
+27. **Covtype safety margin:** 90.048977MiB; unchanged 20% + 16 MiB
+
+28. **Covtype final estimate:** 460.293861MiB; >450MiB
+
+29. **Covtype run authorized:** NO — NOT_RUN_BY_PROTOCOL; no bypass
+
+30. **Covtype actual peak:** NOT MEASURED; static gate rejection is not measured actual>512MiB
+
+31. **Serialized delta:** maximum absolute paired delta 0.000000%
+
+32. **Deep delta:** maximum absolute paired delta 0.091523%
+
+33. **Binary applicability:** shared BucketEncoder; exact secondary replay, no integration benefit established
+
+34. **Regression applicability:** shared BucketEncoder; exact secondary replay, no integration benefit established
+
+35. **SafeBlend applicability:** Base encoder only; Rational untouched, branch and final prediction exact
+
+36. **Exact public files that WOULD change:** src/codadapt/preprocessing.py, tests/test_preprocessing.py, tests/test_shared_encoder.py if justified; NONE changed or proposed for integration here
+
+37. **Verdict:** NO_CHUNKED_ENCODING_GAIN
+
+38. **Public integration justified:** NO
+
+39. **Round 79 justified:** NO
+
+40. **Precise next step:** Keep current public path and guard; close this chunk-size/construction line. Any future memory work needs separate authorization and an exact lifetime/working-set argument for the unchanged dominant head phase; no more chunk micro-variants or Covtype fit under this protocol.
+
+## Replay and closure
+
+78 complete encoding comparisons; 86 valid fresh-fit checkpoints including screen; 36 paired model receipt comparisons. Every timed model has predictive-state/schema/support/maps receipt and pickle/joblib checks. verify.py additionally reloads both evaluation models per workload; no refit. Shuffled/test/oracle selection is absent; only train/validation preprocessing semantics are examined. No new architecture, no scientific drift, no inference changes.
+
+Public: 459 PASS / 4 known XFAIL results are source-hash-qualified VALID_REUSED, not claimed newly run. New private contracts: 14 PASS (12 earlier contracts VALID_REUSED at final check,2 new diagnostic contractsPASS); public full Ruff and private correctness Ruff pass (private E731/E741 style exclusions documented). Existing partial/pre-task artifacts remain preserved. MASTER/STATE receive only this engineering closure, preserving round records 1–78 and version 0.2.0rc2. No remote/commit/push/tag/release, no Round 79.
+
+
+
+# Post-R78 — OVR head workspace / bounded-memory feasibility audit
+
+Status COMPLETE. **LARGE_N_BOUNDED_MEMORY_SIGNAL** — cold first active head only; this is NOT Round79. Version0.2.0rc2 and last_completed_round78 remain fixed. Public58-file hashes unchanged.
+
+Native SharedOVR uses incremental coded allocation, not the closed pairs25 L-BFGS softmax objective. The observed baseline head peak is interaction surrogate/sigmoid: physical owners about77.9bytes/TRAIN row at500k input rows, with multiple8Nt vectors and cached2Nt addresses. Single-head physical bytes remain roughly80–82/TRAIN row at K3/10/20/40; no NxK temporary workspace. Round1–78 and all closed directions are preserved.
+
+Three strategies were fixed: A blocked surrogate outputs; B lazy surrogate + row-order np.add.at statistics; C exact recomputation of addresses/masses while keeping combination counts. All registered small candidate coefficients, iteration/admission/loss traces, logits, normalized OVR probabilities and labels match bitwise. Block-bincount partial sums are non-exact negative controls. Full objective/diagnostic/validation reductions remain unchanged.
+
+A does not meet the small memory continuation screen. B reduces the N20k isolated allocation proxy27.04%, but at500k its max sampled head-phase RSS increment changes by -0.39% (no gain): bypassing mass admission retains36addresses rather than20under the same charged cache cap. This is a measured cache coupling, preserved without post-hoc correction.
+
+C removes retained addresses/masses exactly. At500k/P10/K5 the max-of3 first-head RSS increment is 51.301→34.137MiB (33.46% saving). Total process peak falls only 6.63%; these are NOT full-model fit savings. Median paired head fit is 1.037942x, with repeats [1.187957809960909, 1.0379423365893845, 0.9660829715000493]. Worst repeat exceeds15% overhead and descriptive95% interval [0.7827691104350256, 1.3452196349318695] crosses1.15: robust cost qualification is NOT passed. Later-head warm-cache/full-K behavior remains unknown. No public integration justified.
+
+Covtype remains static-only: prior conservative460.294MiB; C421.894MiB, above the400MiB gate. No actual Covtype RSS measurement or guard bypass. Binary/regression applicability is source-level only; SafeBlend Rational has a different L-BFGS workspace/reduction contract and is untouched.
+
+11valid full-K models/encoders are reused. New work measures missing head internals and fixed private prototypes only. Replay regenerates outputs byte-identically with0fits/solves.7private tests PASS; public459PASS/4knownXFAIL are hash-qualified VALID_REUSED, not newly run. Public full Ruff and private correctness Ruff PASS. Original partial/pre-fit attempt receipts and v1 diagnostic source are preserved; invalid v1 isolated transient subtraction fields are excluded without redundant fits. Observed recursive process-tree peak271.172MiB; one worker/one numerical thread,12GiB hard policy.
+
+Report: `research_private/OVR_HEAD_MEMORY_FEASIBILITY_AUDIT.md`; SHA256 `a70aebd15b8ecf88ea2e8a5f4aaf74ef4e8f95f4cfeaf0dcea2773a068411098`. Receipts and final audit: `research_private/ovr_head_memory/`.
+
+Precise next step (separate authorization only): Separate authorization for C with fixed encoding/combination-count caching: qualify later-head/warm-cache and complete-K memory/cost on Letter, Sensorless, Connect4 plus controlled K before integration; require stable <=15% cost. Preserve B's cache-admission coupling as a negative diagnostic. No new chunk-size/dtype/scratch sweep, no Covtype fit, no Round79.
+
+No commit/push/tag/release/remote operation; no public changes; stop here.
+
+
+# Post-R78 — OVR recompute-C full-fit qualification
+
+Status COMPLETE. **EXACT_BUT_TOO_SLOW**. Version0.2.0rc2 and last_completed_round78 unchanged; not Round79. Public58-file hashes unchanged; no remote/commit/push/tag/release.
+
+This closes the previously unknown complete-K/warm-head question for frozen C, not a new architecture.10workloads,3repeats/arm,60 fresh-process whole fits from public fit entry through final artifact assembly; N100k/250k/500k P10K5, K3/5/10/20/40 at N100kP10, Letter/Sensorless/Connect4 local frozen splits. Six valid original public full-model references reused; no closed scientific fits repeated. One worker and one numerical thread, recursive Windows supervision.
+
+Primary RSS is entire-fit peak minus pre-fitRSS, conservative max-of3 per arm; absolute peak separate. Large-N median saving 38.58% and positive7/7, with no>5%regression. But N500k improves only136.195→120.430MiB incremental (11.58%), not the earlier cold-head33.46%. Absolute peak308.980→293.285MiB. N100k/K5 saves38.69%; N250k/K5 saves22.18%. All-large-N20%gate FAIL.
+
+Median paired fit ratio across workloads 1.088201x; worst 1.396930x. K20 median1.220617x and K40 median1.176217x; Sensorless1.157764x. K40 and Sensorless timing are unstable. Repeated address/mass work is structural, but observed cost also includes timing variance and observer overhead; no universal>15%cost claim. Worst-repeat1.15xgate FAIL, no extra repeats or post-hoc threshold. CPU and per-head telemetry in CSV.
+
+Preregistered cold/warm classification: **IMPROVING_ACROSS_HEADS**, based on head peak above pre-fitRSS including accumulated shared cache. Head-local peak-start savings are different: cold42.26%, head1 34.86%, warm median -4.93%, last -3.31%. C preserves a lower residency baseline by avoiding cached addresses/masses, but does not shrink active warm-head temporaries. Zero retained address/mass bytes for C; scalar combination counts remain warm. A zero-fit construction probe proves the original fitter's function/global cycle can delay cache and borrowed-weight release; residual RSS is not all allocator retention. Final serialized artifact has no workspace.
+
+All coefficients, traces, iteration/validation decisions, encoder state, logits, probabilities, classes and predictions are exact on all60 models; all-head state and across-repeat replay match. All pickle/joblib checks and same-instance C refit pass; paired serialized/deep deltas0. No binary/regression/SafeBlend substitution, hence secondary benchmark not applicable.
+
+Covtype remains STATIC ONLY: structural338.244884MiB + native/allocator67.648977MiB + explicit16MiB =421.893862MiB, above unchanged400MiBgate. No guard bypass, fit or measured actual Covtype RSS. Retained all-head and single-active-head source envelopes preserved; no fitted downward margin.
+
+Public integration **NO**. Current public SharedOVR cache and memory guard remain reference. Private4tests PASS (small observer/refit1valid reused,3new no-fit receipt checks); public459PASS/4knownXFAIL hash-qualified VALID_REUSED. Fresh public/private correctness Ruff PASS, two frozen harmless unused imports narrowly excluded. Replay outputs byte-identical with0fits/solves; source seals, JSON, continuity1–78 and privacy verified.
+
+Report: `research_private/OVR_RECOMPUTE_FULLFIT_AUDIT.md`; SHA256 `63b3bbe020e89dc43f0545597d772b7260bc96dd47c57ffae54d911af703b737`. Audit and frozen receipts: `research_private/ovr_recompute_fullfit/`.
+
+Next step: Retain the public SharedOVR cache and unchanged guard. Close unconditional frozen C for integration: its fixed cache saving does not meet the full-fit large-N/cost gates. Reopen only under a separately authorized, preregistered full-fit resource tradeoff or a distinct source-backed mechanism; no more repeats or threshold selection from this panel.
+
+No public conditional path frozen. Stop here; no Round79.
+
+
+## POST_R78_STRATEGIC_RESEARCH_FRONTIER_AUDIT — 2026-10-09
+
+Not Round79. last_completed_round=78; public version0.2.0rc2. Zero new fits,
+solves or benchmarks, no public/core/API/default/compiler/guard edits, no remote
+operation or release. All original round1–78 records and prior branches preserved.
+
+**PRODUCT_HARDENING_PREFERRED**.
+**PRIMARY_NEXT_FRONTIER: LEAKAGE_AUDITED_EXTERNAL_PRODUCT_QUALIFICATION**.
+Read complete authoritative memory, mechanism knowledge base and pertinent audits;
+baseline/full-read manifest and reproducible tables are sealed privately.
+Report: research_private/STRATEGIC_RESEARCH_FRONTIER_AUDIT.md.
+Audit: research_private/strategic_frontier/final_audit.json.
+
+Current product: native CodAdaptRegressor default; opt-in native SafeBlend confirmed
+R78 (+2.061069%RMSE, CI[0.403189,4.694716]%, worstsplit-6.157465%). Later12source
+transfer +0.815219%, CI includes0,8/12positive below coverage gate. Exact callback
+optimization qualified, fit0.727300x oldSafeBlend; current6case fit/Base2.970032x.
+Binary retains Base: Rational complement transfer0% median, fixedblend-8.130934%,
+BINARY_NO_DOMINANT_MECHANISM. Current public multiclass is automatic exact SharedOVR,
+not historical private-only/vector-softmax snapshots. Python3.10–3.14, sklearn,
+persistence/package qualification reused; remoteCI/secondphysicalhost not certified.
+
+16 idea-family recipe closures plus8 explicit large-N exact sublines; no universal
+impossibility claims. Generic copy removal, narrowing, workspace/lifetime, guard
+rewrite, chunked encoding, address/mass recompute and bounded-memory exact OVR head
+are CLOSED_WITH_STRONG_EVIDENCE_SCOPED_RECIPE. Full-fit C500k incremental saving
+11.575747%; medianfit1.088201x/worst1.396930x fails complete gates; warm head-local
+incremental saving-4.9337%. Covtype remains NOT CURRENTLY SUPPORTED BY SAFE MEMORY
+GUARD, not measured OOM. Do not retry equivalent microvariants.
+
+EBM compiler positive scope is compact standalone additive export: deep0.194802x/
+serialized0.236125x frozen multi-env. Historical single-row speed did NOT replicate
+(2.702544xWindows/2.532579xWSL vsEBM). Software environments share one host. SAFE
+means verified fidelity, not faster inference; no default or broad strong-teacher
+compiler promotion.
+
+Three conditional contracts screened: true out-of-core(C1score2), observed-environment
+risk(C2score7), exogenous related-task sharing(C3score-2, alreadyX006/L51). None
+has a new specified mechanism+causal witness; threshold12 plus prerequisites,
+0admitted architectures. Detailed falsification plans<=6datasets×2splits are proposals
+only. Primary alternative is external frozen product qualification with provenance,
+entity/time/duplicate controls and complete resource/downside reporting; first phase
+zero-fit, later pilot requires separate authorization. No new datasets acquired.
+
+Retry conditions and gaps in closed_lines/retry_conditions/product_gaps/frontier_scores
+CSVs are scoped checkpoints. R17/18 algebra remains missing; knowledge-base older
+snapshots preserved, not rewritten as current product status. Closed standalone
+Rational/direct additive/pair/Joint/Oblique/Context/TT/vector/pairs25 recipes are not
+reopened by this report. Round79 requires a genuinely distinct principle, strong
+controlled development, independent frozen transfer, acceptable downside and costs.
+Do not start Round79. Public tests459PASS/4knownXFAIL are hash-qualified VALID_REUSED,
+not a fresh fit-based run. New audit verification/Ruff/tests are zero-fit.
+
+
+## POST_R78_EXTERNAL_PRODUCT_QUALIFICATION — 2026-10-09
+
+Not Round79; last_completed_round=78, public0.2.0rc2. **INSUFFICIENT_EXTERNAL_QUALIFICATION_DATA**.
+PhaseA completed with19 candidates (7regression/6binary/6multiclass), provenance/license/history/raw-risk audits.
+Strict pilot gate FAILED: only1NEW_EXTERNAL regression +2binary +2multiclass eligible.
+Entire pilot stopped before outcomes:0model fits/solves/tuning/evaluation units; no product quality or systems pass/fail inferred.
+
+Temperature UCI514 was found in R76/77 and diversity transfer, excluded premetric.
+Slump UCI182 has a distinct target and no name/ID history hits, but1/103 seven-component
+mixtures exactly matches historical UCI165. This does not prove prior Slump labels/fit;
+strict primary independence remains AMBIGUOUS. Whole source excluded before metrics, no row deletion.
+4seen science +3ambiguous sources excluded; early original-history gaps remain explicit.
+
+Five prospective eligible inputs: Micro Gas Turbine UCI994 official6train/2test experiment split,
+DARWIN UCI732 unique-person stratified holdouts, Iranian Churn UCI563 grouped repeated profiles,
+CNAE-9 UCI233 grouped word-count profiles, Mice Protein UCI342 whole-animal holdouts.
+Mice Genotype/Treatment/Behavior encode label and are removed with MouseID;77protein inputs/nativeNaNs retained.
+Iranian inputs are provider-dated months1–9 vs month12label,3monthgap; hidden IDs remain unverified.
+CNAE scope is provider feature matrix, not a train-only raw-text pipeline.
+Turbine voltage-only static model cannot claim complete dynamics; official experiments preserved.
+Nine split contracts are frozen and row/group aligned but NOT evaluated. No per-source competitive label assigned.
+
+Current64public/package/doc/test files unchanged;16wheel module bytes exact. Fresh isolated3.12.14
+offline wheel install/import/default inspection PASS, no research module or teacher dependency.
+One3x3identity Cholesky is numerical environment smoke, not model solve. Initial installer
+PYTHONPATH/egg-info false-present issue fixed in private harness; initial logs preserved, not product/DLL failure.
+Private data/split/report tests and Ruff/replay audited; prior459PASS/4knownXFAIL public suite hash-qualified reused.
+No public fix justified and no public documentation performance claim changed. No remoteGit/commit/tag/release.
+
+Report: research_private/EXTERNAL_PRODUCT_QUALIFICATION.md.
+Audit: research_private/external_product_qualification/final_audit.json.
+Next: a separately authorized zero-fit provenance extension must add at least one independent
+real regression source with acceptable raw leakage/split contract. Reuse valid five inputs/splits
+and exact wheel; only then freeze<=6sources/<=12units before any outcome. No new architecture or Round79.
+
+
+## POST_R78_EXTERNAL_QUALIFICATION_DATASET_EXPANSION — 2026-10-09
+
+Not Round79; last_completed_round=78; public0.2.0rc2 unchanged.
+**EXTERNAL_PILOT_DATA_GATE_READY**, data qualification only,0fits/solves/benchmarks/metrics.
+Original19candidates/5inputs/9splits and prior audit/wheel byte-reused, no reclassification.
+5new regression candidates screened:2NEW_EXTERNAL,3SEEN_FOR_SCIENCE(CT/SkillCraft/Communities).
+Communities alias resolved against R53us_crime target/schema/results; initial ambiguity archived.
+1raw acquired/5metadata;1new admitted.
+UCI913 Forty Soybean Cultivars:320plots,40cultivars x2sowing treatments x4replicates,
+continuous GYkg/ha. Retain PH/IFP/NS/NLP+Season; remove IDs and grain-count/ratio/weight.
+Whole-cultivar GROUP_SPLIT2conditions240/80rows, hash seeds789101/789102. R8harvest-time
+phenotype-to-plot-yield estimation in same experiment, not early/future-year/farm transfer.
+Paper sowing years contradict harvest/publication; no dates invented, no TIME claim.
+UCI shifted variable descriptions resolved against primary paper. Data CC BY4.0,
+article CC BY-NC-SA4.0 separately recorded. Provenance/no-leakage scope explicit, not absolute proof.
+NYC LL84 backup metadata only, license/licenseId absent; general city terms not an
+explicit data grant ->not admitted. No raw/time/entity audit claimed; no backup forced.
+Current total2regression/2binary/2multiclass;6sources/11prospective conditions,0evaluated.
+History scope all recoverable1–78/post-round; missing early catalogs remain a limitation.
+Old phase_a gate=false preserved historically; new data gate/protocol sealed separately.
+Public tests459PASS/4knownXFAIL and clean install VALID_REUSED, no new fit tests.
+Report: research_private/EXTERNAL_PRODUCT_QUALIFICATION.md (appended current decision).
+Protocol: research_private/external_product_qualification/expansion/future_pilot_protocol.json.
+Audit: research_private/external_product_qualification/expansion_final_audit.json.
+Next: separate explicitly authorized frozen pilot, no tuning/source substitution.
+STOP here: no pilot, public change, remote operation or Round79.
+
+
+## POST_R78_FROZEN_EXTERNAL_PRODUCT_PILOT — 2026-10-09
+
+Not Round79; last_completed_round=78, public0.2.0rc2 unchanged.
+**EXTERNAL_PRODUCT_QUALIFICATION_MIXED**, incomplete frozen-panel coverage:9/11units,30/36validmodeljobs.
+1CNAEpreflight failure,5modeljobs notstarted; no source invalidated/replaced onquality.
+Protocol SHA256aa208c4db7187b40f98de528cfd1179e90438c6f2748345b91d6da5097134d2d; settings/order/4threads immutable.
+Isolated exact installedwheel16modules;1heavy process,hard12GiB,maxRSS0.171GiB.
+CNAE target-name np.int64(0) serialized to string0 by private JSONreceipt; hashes intact.
+Literal schema mismatch ->STOP dataset,0CNAEfits. Not publicAPI/provenance/leakage failure.
+No fix inthis task; don't rerun30valid public fits. Original data/index/provenance receipts preserved.
+RegressionBase median sourceRMSEdelta vsHGB-1.089803%;
+SafeBlend-2.342895%;negativebetter.
+BinaryBase loglossdelta121.358260%;bothsources weak.
+Mice-only multiclass delta-48.473094%;1/2sources,not full-task evidence.
+Turbine nearHGB; soybean weak vsDummy atheldoutcultivar harvest-time contract;Mice logloss betterthanHGB, macroF1 slightlyworse; no metricdominance.
+SafeBlendBASE1/BLEND2;finalworsethanstandaloneBase1/3. Discarded Rational and mixed-input
+internalBase counterfactuals notobservable bypublicAPI; no fabricated harmful-admission/rejection counts.
+Persistence bitwisePASS4models(regBase/Safe,binary,multiclass);deterministicreplayPASS3tasks,
+3additionalfits,notqualityunits. OriginalCNAErepresentative unavailable; supplementaryMice0
+firstvalidpublicBase in frozenorder documentedtechnicalcoverage addendum, not panelreplacement.
+Zero actual publicAPI failures; nativecategories/NaNs/stringlabels observed. No full6source qualification.
+Publiccode fixNO; scoped docs caveatsYES proposedonly; no architecture/researchreopening.
+Report:research_private/EXTERNAL_PRODUCT_QUALIFICATION.md.
+Audit:research_private/external_product_qualification/pilot_final_audit.json.
+Next:separate authorized private receipt canonicalization, preserveprotocol/30validfits,
+then onlymissingCNAE6jobs viaaudited amendedreceipt. No publicchange/tuning/remote/Round79.
+
+
+## POST_R78_EXTERNAL_CNAE_RECEIPT_COMPLETION — 2026-10-10 (not Round79)
+
+
+Current external pilot record supersedes the provisional CNAE-blocked coverage only; all earlier branches and their evidence retained. last_completed_round78/public0.2.0rc2 unchanged.
+
+Private typed receipt canonicalization only: NumPy integer target name0 had become string0 under JSON default=str. Hash-bound original pickle and source CSV prove integer identity. Derived CNAE_RECEIPT_CANONICALIZATION_FIX preserves type+value; no int/string alias. Original protocol SHA256 aa208c4db7187b40f98de528cfd1179e90438c6f2748345b91d6da5097134d2d and both splits remain byte-identical.
+
+Completed only the6 originally unfitted CNAE jobs in original order,4threads,1heavy process,12GiB hard limit.30valid original fits,3replays,4persistence checks reused;0reruns. Original prefit failure and draft inventory correction retained. No public runtime/API/default/docs change, tuning, new source/split/metric, remote operation or Round79.
+
+All11/11units and36/36pilot fits now complete. CNAE logloss delta +67.082502% vsHGB, accuracy -0.184720997, macroF1 -0.175050772; loses both splits. Mice retained -48.473094% logloss, with macroF1 tradeoff. Equal-source multiclass median +9.304704%; two sources, no general superiority claim.
+
+RegressionBase -1.089803%RMSE andSafeBlend -2.342895% retained. Binary +121.358260%logloss retained; BINARY_EXTERNAL_QUALITY_GAP=YES. Both binary sources weak; no automatic research reopening.
+
+Verdict recalculated using frozen pilot rules: EXTERNAL_PRODUCT_QUALIFICATION_MIXED. Zero public API/data-handling failures; quality gaps are real scoped pilot observations. CNAE representation/word-count limitation is descriptive, not a proved cause. SafeBlend safety counterfactual caveat remains.
+
+Public code fix justifiedNO; scoped docs caveatsYES, proposed only. Separate strategic task required for binary diagnosis/reopening; no new candidate. Report research_private/EXTERNAL_PRODUCT_QUALIFICATION.md, audit research_private/external_product_qualification/pilot_final_audit.json. Historical rounds1–78 remain unchanged and continuous.
+
+
+## POST_R78_EXTERNAL_BINARY_GAP_REPLICATION — completed2026-10-10; notRound79
+
+**DOMAIN_SPECIFIC_BINARY_GAP**, operational weak/domain-heterogeneous label, not a causal domain explanation.
+last_completed_round78/public0.2.0rc2 unchanged; rounds1–78 and prior closed directions retained.
+10pre-outcome candidates:8NEW_EXTERNAL scoped to692recoverable files/132068118bytes,
+1SEEN_FOR_SCIENCE(Appendicitis),1AMBIGUOUS(Pistachio proposed UCI958404).
+Messidor and Musk2excluded before fit for leakage/ordinary-vs-MIL contract qualification.
+Six final sources Rice/HTRU2/Thoracic/SPECT/QSARbiodegradation/Fertility;11units,33public
+Base/Dummy/HGBfits;0failures/0tuning/0prior-refits. HGB exact earlier-pilot preset.
+Dataset/targets/features/splits/seed/params/metrics/runorder frozen before fits.
+Protocol SHA25616c338287b7585d2a4459c912caac3d121e39e4b7dfc84a1af27900290113951.
+
+New paired source median LLdelta+4.880670%,WTL3/0/3,CI95descriptive[-25.166688,+21.190939]%,
+sign worse3/6;remove largest gap−1.621206%. GENERAL/STRONG gate fails.
+Domain-specific preregistered>=50%competitive clause passes at exactly3/6;
+only SPECT>20%new LLgap, not proof of domain causality or ex-ante niche.
+AUCmedian−.024405(5/6negative),PR-AUC−.037708,Brier+.005691(4/6worse).
+Rice−25.521782%LL,Thoracic−24.811595%,QSAR−1.621206%,Fertility+11.382546%,
+HTRU+18.095147%,SPECT+24.286731%. Clinical sources discordant;Thoracic nearDummy.
+SPECT official80/187 retained,Base0acceptedlevels/prior.5;24feature-profile overlaps.
+Novel-profile sensitivity+32.390982%LL withoutrefit. Published feature matrix only,
+raw extractor provenance/hidden entity IDs/time/missing coverage not verified.
+
+Old2source/12fits reused:LL+121.358260% remains valid scoped prior evidence.
+Combined8sources/15units LL+14.738847%,WTL3/0/5;new-only gate remains primary.
+Lightweight Base/HGB source-medians fit.337085x,predict_proba.778798x,pickle.127617x.
+Windows supervisor sampled venv redirector,not descendant worker:actualRSS/hardcap
+unqualified;do not interpret4.4MBlauncher asfitRAM.1heavyprocess/4workerthreads retained.
+Replay198new+72prior metric fields exact,17private tests/RuffPASS;459publicPASS/4knownXFAIL
+hash-qualified reused,not rerun.64public files/16wheel modules unchanged.
+research_private ignored;research memory tracked;no Gitremote/commit/tag/release.
+Binary architecture reopeningNO,Round79NO. Next:Preserve Base and the closed binary learner recipes. A separately authorized zero-fit frontier review may examine saved ranking errors and the prior-only SPECT stopping outcome; any broader gap claim needs a larger prospectively qualified independent panel. No calibration fitting, new mechanism, tuning or Round79 is justified here.
+Report:research_private/EXTERNAL_BINARY_GAP_REPLICATION.md.
+Audit:research_private/external_binary_gap/final_audit.json.
+
+
+## POST-R78 — Binary external checkpoint forensics (2026-10-10)
+
+**DOMAIN_REGIME_IDENTIFIED — descrittivo/operativo; non Round79.**
+8fonti/15unità esterne e24fonti/72unità interne,117vettori persistiti;
+0fit/0solve/0nuove prediction. LLmedianaBase/HGB+14.738847%,AUC−.026798 (7/8negative),
+AP−.058680,Brier+.008780. Ranking weaknessYES;strongNO:solo4/7failure con
+più inversioni high-confidence Base (gate>=75%). LL/-AUC rho+.523810;
+AUC resta negativa eliminando qualsiasi2source.
+
+RegimeA congelatoNtrain/P<=20:4fonti (Fertility,QSAR,SPECT,DARWIN),3/4perdite
+congiunte;LL+17.834638%,AUC−.155989. Regime operativo, noncausalità o nicchia
+train-only. B2/3losses,C2/3,D1source,E2source:nonpassano. A mescola3contratti
+di split; QSARvinceLL, tutti4perdonoAUC. Nessun tuning della soglia (Thoracic22fuori).
+Interno5fontiA,solo2AUC<.85; HGBallineato NONdisponibile,nessun gap interno inventato.
+SoloRice ha analogue coverage congiunta secondo le soglie dichiarate; closestanalogs
+non sono matchedexperiments. Le codeHGB sono più concentrate:top1/5/10%LL
+24.64/57.62/78.67%,Base15.14/37.12/53.37%. Non attribuzione causale delgap.
+
+Ranking/support già osservati,calibration/localvalues/supporttail/Rational restanochiusi.
+Nessun meccanismo distinto identificato;**research reopeningNO,Round79NO**.
+Base/API/default/versione0.2.0rc2 invariati,last_completed_round78.
+Report: `research_private/BINARY_EXTERNAL_CHECKPOINT_FORENSICS.md`; protocollo e1719inputhash sigillati,
+10tabelle replay,publicsuite459PASS/4XFAILhash-qualified VALID_REUSED senzafit.
+Limiti:8source,splitcorrelati,noHGBinterno,nomissing/time/alta-cardinalità esterni,
+duplicatistorici eunknownentity/upstream;nessuna universalityclaim.
+Next: Keep Binary Base and closed recipes frozen. No mechanism or ex-ante failure selector identified. Any separately authorized follow-up must first preregister a distinct train-only causal witness and prospectively test its predicted ranking failure on a larger source-qualified panel; no fit, fix, calibration or Round79 begins here.
+
+Equivalence scope: ranking weakness was previously observed; causal equivalence between the N/P association and closed calibration/local-values/support-tail/Rational mechanisms is NOT demonstrated. This audit neither attributes that cause nor reopens those recipes.
+
+
+# POST_R78_BINARY_EARLY_SCREENING_CAUSAL_AUDIT — completed 2026-10-10
+
+**EARLY_SCREENING_NOT_CAUSAL**. Not Round79; last_completed_round=78, public0.2.0rc2 unchanged.
+History MATERIAL_VARIANT: R44 named screening but tested redundancy; R45 family quotas;
+R46 laboratory coverage had no native validation stop and retained a useful-admission
+retry condition; R61 oblique and post-R78 multiclass interaction screening differ.
+This audit satisfies that narrow causal-test distinction, not architecture reopening.
+
+Exposed mechanism-development: Fertility, QSAR biodegradation, SPECT, DARWIN primary;
+Rice and HTRU2 controls fixed pre-fit. Eleven original units, SPECT official one only.
+32 new native fits, including11 A telemetry/parity fits;12 proven identity reuses;
+44 logical comparisons. No HGB fit, new data, scientific tuning, remote or release.
+
+A/B/C primary medianAUC .747929607; D .746376812. All B/C predictions equal A.
+Primary paired medianAUCdelta0 for B/C/D; D W/T/L1/2/1. QSAR D+.009737791 AUC,
+relativeLLgain3.093554%; DARWIN D-.003105590 AUC, LLloss2.809986% (>2% safeguard).
+D controls2/0/0, but does not meet3/4 primary consistency. Source medians are not
+median differences; report the paired deltas separately. D primary PR-AP+.005336557,
+medianBrierdelta0. B/C rank Spearman unit medians1/.977640845 (min .738095/.547619).
+Final first-level main selections remain identical for B/C despite ranking changes.
+
+D restores976 feature-unit eligibility occurrences, admits20 A-excluded main
+feature-unit occurrences with newly nonzero final contribution. Recovery is not
+automatically benefit: adverse DARWIN heldout effect within this exposed panel remains.
+Mask controls main eligibility, not an absolute ban from all pair proposals.
+Three primary sources already use every inner TRAIN row; B/C cannot change them.
+Fertility0/SPECT reject first level; D cannot bypass native validation or add levels.
+
+Median source-mean fit ratios B1.000/C1.000/D.999218; D HTRU2 source1.528457,
+max unit2.298648. One timing per actual fit, A first; no precision benchmark claim.
+Serialized median ratio1 for all variants; no memory/system optimization attempted.
+
+Close EARLY_SCREENING_INFORMATION_LOSS as dominant explanation under this panel gate,
+not a universal theorem about feature exclusion. No transfer justified; no Round79.
+Reopen only with a distinct preregistered causal reason predicting multi-source useful
+admission and resolving native validation/slot constraints before outcomes; isolated
+QSAR improvement or another sampling sweep insufficient. Keep public trainer unchanged.
+
+Artifacts: research_private/BINARY_EARLY_SCREENING_CAUSAL_AUDIT.md and
+research_private/binary_early_screening/{protocol,history_check,results,feature_rankings,
+selection_overlap,telemetry,sample_adequacy,adequacy_associations,source_results,summary,
+verification,final_audit}. Exact checkpoint/prediction/initial-score replay and public
+source invariance checked. Public459PASS/4knownXFAIL reused from sealed same-code
+evidence;18 private pure tests fresh. No completed audit job repeated;11 historical
+A telemetry/parity refits are explicitly counted among the32 new fits.
+
+
+# POST_R78_SUPERVISED_ADAPTIVE_ADDRESSING_FIRST_PRINCIPLE_AUDIT — completed 2026-10-10
+
+**HISTORICALLY_EQUIVALENT — mandatory history-gate STOP before implementation.**
+Not Round79; last_completed_round=78, public0.2.0rc2, rounds1–78 unchanged.
+
+The proposed (table,feature,state) code-entry modular shift, fixed buckets/M,
+train-only ridge optimum B/(A+l2), gain0.5*sum B²/(A+l2), and incremental
+A-D+roll(D,delta)/B-E+roll(E,delta) match legacy docs/ALGORITHM.md exactly at
+mechanism level. The retained _core.py math and its pure tests support that
+specific correspondence. MASTER/STATE plus the original user history report
+R1–2 full scan/residual-guided code search rejected for cost.
+
+Important limit: original R1–2 trainer snapshots, raw quality/timing and manifests
+are missing. Their outcome remains HISTORICAL_UNVERIFIED. No claim that the exact
+new FixedM/AdaptiveM/Fixed2M/RandomM protocol previously ran, no empirical negative
+quality result, and no impossibility theorem are inferred. Current public trainer
+draws codes once and does not adapt them; legacy prose and retained kernels are
+not current runtime behavior. Existing STATE discrepancy is preserved.
+
+The stored reopen conditions are unchanged: demonstrated search complexity
+reduction / new verifiable cost bound with identical baseline; KB HISTORY_F01
+requires analytic or no-fit replay operation evidence at Base budget, unchanged
+candidate space and total fit<=1.5xBase before new fits. Three-pass limits, a5x
+prototype allowance and better controls do not meet that condition; incremental
+aggregation is already part of the historical mechanism.
+
+0 new fits,0 new solves,0 optimizer implementations/proposals,0 new datasets.
+Synthetic and real phases NOT_STARTED_HISTORY_GATE_STOP; header-only CSVs are
+not results. All64 public files frozen and unchanged; existing private evidence
+preserved. Fresh checks cover retained pure math and evidence integrity only;
+the public459PASS/4knownXFAIL suite is hash-qualified reused, not refit/rerun.
+No scientific novelty claim, remote operation, release, binary follow-up or transfer.
+Git discrepancy: both docs/research memory files are not ignored and are trackable,
+but neither is in the current Git index. No staging or index change performed.
+
+Report: research_private/SUPERVISED_ADAPTIVE_ADDRESSING_FIRST_PRINCIPLE_AUDIT.md.
+Evidence/history: research_private/adaptive_addressing/HISTORY.md and
+input_manifest.json; final_audit.json records test receipts and immutable hashes.
+Next: STOP. Only separately authorized analytic/zero-fit evidence satisfying the
+existing cost condition, or a genuinely non-equivalent falsifiable mechanism,
+could justify reconsideration. No automatic new task or Round79.
+
+
+# POST_R78_LEGACY_ADAPTIVE_ADDRESSING_EVIDENCE_RECONSTRUCTION — completed 2026-10-10
+
+**HISTORICAL_EVIDENCE_TOO_INCOMPLETE. HISTORICAL_MECHANISM_KNOWN /
+EMPIRICAL_EVIDENCE_INCOMPLETE. Adaptive addressing is NOT empirically CLOSED.**
+Not Round79; last_completed_round=78, public0.2.0rc2, numbered history1–78 unchanged.
+The earlier HISTORICALLY_EQUIVALENT mechanism gate is preserved; it did not establish
+ADAPTIVE_ADDRESSING_FAILED and is not converted into a negative empirical result.
+
+Zero-fit archaeology: two local Git stores, including unreachable blobs,
+531 blob occurrences and9317 project/
+attachment/session sources, 131 frozen project-session
+prefixes. Explicit environment/depth/large-file/access exclusions; no remote or
+universal absence claim. Earliest tag/upload v0.1.0 already contains the current
+fixed-code regression trainer source after LF/CRLF normalization (raw hashes differ);
+no pre-upload adaptive-removal commit
+or complete original optimizer recovered. Retained math and legacy specification
+are recoverable; original R1/R2 baseline, data, split, seeds, metrics and raw values
+are not. Titanic demos, later public CV/release tables, static strategic proposals
+and repeated memory/session claims are not original address-ablation evidence.
+
+Important qualification: surviving prose specifies bounded random candidates;
+the original user history jointly reports full scan/residual-guided search for
+R1–2. Separate round assignment is the existing continuity convention, not newly
+recovered per-round evidence. Do not synthesize an exact old recipe from those
+different proposal descriptions or infer original settings from inactive defaults.
+TOO_SLOW is historically reported, no raw time; simpler-core replacement inferred;
+exact transition UNKNOWN. No quality, bug or generalization failure established.
+
+Ledger8direct-report/source observations,
+8code inferences,
+9doc inferences,
+56missing records; not independent empirical replications.
+144 realized code-entry moves PASS incremental versus full statistics/gain at
+rtol/atol1e-12; max gain discrepancy7.105427357601002e-15. Previous33 same-core
+math tests and full public459PASS/4knownXFAIL are reused, not model-fit reruns.
+0 new fits,0 scientific solves,0 benchmarks,0 new datasets, no optimizer built.
+
+Exact scientific replayNO; partial sufficiently frozen scientific recipeNO;
+partial mathematical replayYES. Overall LEGACY_INCONCLUSIVE, not negative signal.
+Keep RETRY_IF(faithful replay can be executed under a reconstructed historical
+contract), currently unmet. Historical cost closures remain reported engineering
+constraints; no new empirical closure or automatic costly reopening.
+Conditional design only: legacy fixed/adaptive within one recovered contract first;
+separately modern fixed/adaptive later, matching memory/lookups/representation/
+value optimizer/data/splits within each pair. No executable fit protocol prepared.
+
+Report: research_private/LEGACY_ADAPTIVE_ADDRESSING_RECONSTRUCTION.md.
+Artifacts: research_private/legacy_adaptive_reconstruction/ including evidence,
+implementation_components, protocol, recovered_results, missing_evidence,
+gain_verification, replay_assessment and final_audit. Public64files unchanged;
+private directory ignored, memory trackable but absent from current Git index;
+no staging, commit, push, tag, release, remote operation or Round79.
+Next: recover pre-upload trainer/config and baseline/data/split manifests. If
+unavailable, any separately authorized specification reimplementation must be
+labeled a new qualified experiment, never original faithful replay. STOP here.
+
+
+# POST_R78_LEGACY_R1_R2_ARTIFACT_RECOVERY — completed2026-10-10; notRound79
+
+**LEGACY_ARTIFACTS_NOT_RECOVERABLE** within the documented authorized local scope.
+last_completed_round78/public0.2.0rc2; numbered rounds1–78 preserved.
+Final artifact sweep, not a new empirical adaptive-addressing experiment.
+
+Previous531Gitblob/9317source/131session-prefix scans and144mathPASS reused;0priorbody rescans.
+New metadata486trees/24commits;0newcommits. Two new blobs are derived MASTER/STATE snapshots.
+Dangling commits/blobs0/0;119danglingtrees;307unreachableblobs/385unreachabletrees,
+not synonymous with dangling. Both stores have only the known fixed _training.py blob.
+32package containers/25unique bytes (7rc1/20rc2/5historicalstagingrc3),148member occurrences
++15newtargetfiles;165body occurrences/30unique hashes.38trainercopies all fixed/source-identical.
+10editor-historyroots absent;no matching Storeeditor.114dependencywheels filename-excluded.
+Timeboxed bounded local scope/exclusions explicit; no universal deleted/cloud/storage absence claim.
+Read-only Git;--lost-found omitted to honor no.git writes; no checkout/stage/remote.
+
+Original trainer/protocol/results gates allFAIL; exact/partial historical replayNO.
+Dataset/split/seeds/fair baseline/metric identity and original search/order/stopping remainMISSING.
+Known legacy specification/math is not an original experimental recipe. Later release/demo/memory
+copies are not independent evidence. Preserve HISTORICAL_MECHANISM_KNOWN/EMPIRICAL_EVIDENCE_INCOMPLETE,
+LEGACY_INCONCLUSIVE; adaptive addressing is NOT empiricallyCLOSED. Earlier mechanism equivalence
+and reported engineering cost closures remain scoped; no quality/bug failure fabricated.
+
+Archaeology is exhausted and MUSTNOT continue unless user supplies new material.
+Next conditional direction: SPECIFICATION_DERIVED_ADAPTIVE_ADDRESSING_REPLICATION,
+a new modern experiment, explicitly NOT R1/R2 replay. First freeze choices/matchedfixedadaptive
+controls and analytic/zero-fitcost justification under preserved engineering reopen conditions.
+No optimizer/fitprotocol/fit/solve/benchmark/legacyexecution begins now; noRound79.
+
+0fit/0solve/0benchmark;public64files/API/default unchanged;privateignored, memorytrackable
+but still absent fromindex (pre-existing),nostaging. Fresh pure-evidence tests/Ruff receipts
+and sealed integrity audit;fullpublic459PASS/4knownXFAIL same-source evidence reused.
+Report:research_private/LEGACY_R1_R2_ARTIFACT_RECOVERY.md.
+Audit:research_private/legacy_r1_r2_recovery/final_audit.json. STOP.
+
+
+# POST_R78_SPECIFICATION_DERIVED_ADAPTIVE_ADDRESSING_REPLICATION — completed 2026-10-10; not Round79
+
+**NO_REAL_DATA_ADDRESSING_GAIN**. New modern development experiment explicitly authorized by the
+user, derived from surviving legacy mathematics; NOT an original R1/R2 replay,
+NOT a novelty claim. last_completed_round=78, public version0.2.0rc2 unchanged.
+Historical archaeology remains CLOSED unless the user supplies new material;
+legacy empirical evidence remains INCONCLUSIVE. The old engineering1.5x cost
+condition is preserved, not claimed satisfied by this separately authorized5x prototype.
+
+Same cached Base encoders/features/interactions/levels/order/initial prediction,
+M256/lambda5, cells and lookup budget. Two main-then-interaction block passes in
+all four arms: FIXED_M, ADAPTIVE_M, FIXED_2M and RANDOM_MOVE_M. Adaptive changes
+one table/feature/state code only, four deterministic noncurrent candidates,
+exact TRAIN ridge profile gain, no heldout search. Random matches configured
+coordinate/proposal/change caps, not actual supervised acceptances. Fixed2M
+doubles interaction cells only via deterministic lift, preserving initial predictions.
+
+400 fresh mathematical moves (100/scenario) versus independent full explicit
+quadratic loss PASS at absolute1e-12; max objective discrepancy2.220446049250313e-14.
+Synthetic S1/S4 RMSE recovery99.5025%, conflict removed; S2/S3 zero spurious gain.
+12 valid historical Base checkpoints reused, 0 new Base fits;48 new arm optimizations.
+Exposed regression development bodyfat, diabetes, wine_quality, california,
+superconduct and diamonds ×44001/44002; no new/external holdout dataset consumed.
+
+Paired unit-median RMSE improvement 0.186180% TEST,
+0.271984% validation, 0.886048% TRAIN.
+W/T/L units7/1/4 and source means3/0/3: fail required8/12 and4/6 consistency.
+California/diamonds/superconduct source gains1.0944%/0.9216%/2.5900%; bodyfat/
+diabetes/wine_quality lose1.2730%/0.3070%/0.0617%. Worst split bodyfat44002 loses
+2.5460% TEST despite TRAIN gain21.1156% and validation gain3.0921%; fallback keeps it.
+Conditional capacity recovery median1.124679 in8/12 eligible units does not
+override the failed generalization gate. Adaptive-minus-Random median0.218030
+percentage points RMSE; not merely random perturbation, but insufficient consistency.
+
+16,728 proposals/759 accepted (4.5373%); frozen-residual conflict delta median
+-1.183917 and occupancy +2.787879 cells/table. Label-invariant matched-block
+ARI medians B.802330/A.764387/Random.766177; median B-minus-Random.041351,
+below the frozen strong structural threshold. TRAIN/test gain Pearson-.412478;
+validation/test sign disagreement25%. Fallback keeps8/12, median gain0.131875%.
+
+Serialized and persistent-array ratio1.000x, lookup1.000x; same prediction code.
+Warm predict median1.002195x (max1.088456x); fresh stage fit median2.498893x
+(max14.304624x). Hybrid total including explicitly historical common Base timing
+median1.275946x (max4.926775x), not a fresh cross-hardware total-fit benchmark.
+One process/thread; observed process peak working set0.178005GiB. No cost breakthrough claimed.
+
+144 metric rows/48 pickle roundtrips/288 arm artifacts replay PASS without refits.
+18 private tests fresh PASS; public/private Ruff PASS; public459PASS/4knownXFAIL
+sealed same-source receipt reused.64 public files and88 prior sealed artifacts
+unchanged; JSON valid, numbered rounds1–78 unchanged, private ignored, memory
+trackable. No src/API/default/compiler change, no commit/push/tag/release/remote.
+
+Useful learned addressing and capacity efficiency are NOT demonstrated under
+the preregistered real-development gate. No transfer, binary extension or Round79.
+Scope closure: this two-pass deterministic-bank recipe is not promoted; not an
+impossibility theorem for every learned-addressing construction. Reopen only
+with a distinct preregistered source-generalization/downside reason and matched
+controls/cost justification; no post-hoc bank/pass/ridge sweep. STOP here.
+
+Report: research_private/SPECIFICATION_DERIVED_ADAPTIVE_ADDRESSING_REPLICATION.md.
+Artifacts: research_private/spec_adaptive_addressing/ (protocol, per-unit freezes/
+models/predictions/receipts, mathematical_moves, synthetic_results, real_results,
+paired_results, move_trace, cumulative_gain, collision_metrics, stability, costs,
+verification, summary and final_audit). Existing historical evidence preserved.
+
+
+# POST_R78_BUDGET_AWARE_MEMORY_FIRST_PRINCIPLE_AUDIT — completed2026-10-10; notRound79
+
+**NO_REAL_DATA_BUDGET_GAIN**. last_completed_round78/public0.2.0rc2; numbered1–78 preserved.
+History MATERIAL_VARIANT, not new: R7 IdeaC proposed the same principle but its original
+individual empirical C evidence is unavailable; no fabricated closure/replay. R51B regional
+allocation sweeps stay closed; current native fixed-code cross-table intervention differs.
+Teacher/S7 cut-location allocation and multiclass state dedup are different mechanisms.
+
+Preregistered3moves max,128/256/384/512table grid,q128,train-only profiled ridge utility;
+one exact same2-pass value solve per top move, reject stops. Codes/encoder/selectedset/order/
+ridge/lookupcount fixed; no addressing learning. Full budget conserved; only interaction
+cells eligible, direct main states unchanged.2B physically doubles all arrays; main upper
+halves are unreachable padding, NOT new main resolution. Current A is prior FIXED_M matched
+value-fit control, not relabelled public Base; original public Base metrics separate.
+
+Synthetic3seeds: unequalcomplexity~99.76%gain, equal0, capacitylimited~92.65%/100%2B
+recovery. Noise control1/3receivescapacity; no universal robustness claim. GatePASS.
+Same6exposed×2: test RMSEmedian+0.058300%, splitWTL7/4/1,datasetWTL5/1/0;
+worstsplitwine44001−.007050%,worstdatasetbodyfat0. Trainmedian+.095738%,validation0.
+2Brecovery39.3088%defined8/12; B−Random+.040681ppmedian.15movesaccepted/19exactchecks,
+2532scalarpair proposals. FinalM128×15/256×81/384×15. GateFAIL:7<8positive splits.
+No useful allocation/strongcapacityefficiency demonstrated; not a universal impossibility.
+
+Predictmedian1.001359x,max1.156995x; serialized.999965/deep1/cells1/lookups1.
+Hybridfit/publicBase1.545799x median,max3.153624x, includeshistorical sharedcost;
+versusCURRENT_B1.324406x; newallocation/priorvaluefit2.206878x. Not fresh pairedfullfit.
+Peakprocess.178GiB,1process/thread. TwelveBase+12currentA fitsreused;0newBasefits;
+43newrealvaluesolves(4zero-moveRandomduplicatesavoidable,disclosed),47syntheticsolves.
+Donor/recipientJaccard.125,matchedcoverage47.73%; utilitysign15/19correct, notstableuniversalranking.
+
+Replay252metricrows+36historicalApartitionpredictions;36newmodelsroundtrip,450previous
+artifactsunchanged;10privatePASS,RuffPASS;459publicPASS/4knownXFAILhash-qualifiedVALID_REUSED,
+notrerun.64publicfilesunchanged;privateignored,memorytrackablebutunindexedpre-existing.
+No new source, transfer, tuning, remoteGit/commit/tag/release/API/default/compiler change.
+
+Standalone allocation recipe REJECTED_FOR_NOW. Adaptive addressing remains
+REJECTED_FOR_NOW_STANDALONE, retry only after independently useful genuinely distinct
+capacity allocation; this task does NOT satisfy it. No combination, transfer or Round79.
+Reopen only on a distinct train-only capacity-conflict causal witness predicting independent
+multi-source benefit, with matched optimizer/random/budget controls; no utility/quantum/pass
+sweep on this exposed panel. Next:STOP; preserve existing compiler/deployment evidence.
+Report:research_private/BUDGET_AWARE_MEMORY_FIRST_PRINCIPLE_AUDIT.md.
+Audit:research_private/budget_aware_memory/final_audit.json.
+
+
+# POST_R78_CODED_REPRESENTATION_CEILING_AUDIT — completed 2026-10-10; not Round79
+
+**HISTORICALLY_EQUIVALENT — mandatory user section 3 STOP before numerical implementation.**
+Central current-coded versus collision-free intervention was already executed in R19:
+MASTER lists collision-free control and summarized +0.452% gain, KB round map marks R19
+HISTORICAL_COMPLETED, STATE DIAGNOSTIC ONLY/EXPLORATORY. New 2M/4M curve and richer
+unseen/support telemetry are more specific protocol, not a distinct central mechanism.
+R19 original report/CSV/ceiling map unavailable: exact membership/dictionary/unseen fallback/
+initialization/solver/ridge recipe equivalence NOT_DEMONSTRATED. Semantic stop is NOT
+exact historical replay, a new empirical rejection or proof of a universal ceiling.
+Historical +0.452% is NOT a new 6×2 panel measurement. HISTORY_F12 remains PARTIAL.
+
+0 new fits/solves/predictions/benchmarks/datasets; no dictionary/4M/synthetic/real job run.
+Six requested CSV schemas have 0 observations, not zero effects. Execution modules intentionally
+not created after gate; only evidence freeze/verification/theory/audit/tests. D/E proposed
+observed-tuple dictionary/direct state table are semantically identical, not duplicated.
+Previous budget/addressing decisions preserved; no allocator/addressing/Joint/TT/Context/
+pair/public compiler recipe reopened. Round51 remains INCOMPLETE_WITH_EXPLICIT_REMAINDER.
+
+Analytic warning: observed-TRAIN dictionary function-class nesting does not bound TEST
+risk. Constant per-cell ridge changes function norm when one hashed value is replicated
+across distinct states; finite solver and unseen fallback also matter. Failure to improve
+TEST alone cannot prove function-class bottleneck or justify new representation.
+Primary bottleneck: NOT_IDENTIFIED_BY_THIS_STOPPED_AUDIT. New coded representation: NO. Round79: NO.
+
+All 64 public files / 315 previous budget artifacts unchanged; evidence private tests/Ruff PASS;
+public 459 PASS / 4 known XFAIL hash-qualified VALID_REUSED, not rerun. JSON/numbered 1–78 records/
+MASTER/STATE coherent; private ignored, memory trackable but unindexed pre-existing. No src/API/
+default/compiler/version change, staging, commit, push, tag, release or remote operation.
+Next: STOP; any separate follow-up must identify a non-equivalent causal question or be
+explicitly authorized as a qualified historical replication, acknowledging missing protocol.
+Report: research_private/CODED_REPRESENTATION_CEILING_AUDIT.md.
+Audit: research_private/representation_ceiling/final_audit.json.
+
+
+# POST_R78_VNEXT_FUNCTION_CLASS_EXPANSION_AUDIT — completed 2026-10-10; not Round79
+
+**NO_VNEXT_REPRESENTATION_IDENTIFIED**. Three explicit seed representations reviewed, none admitted.
+A deterministic state chain is HISTORICALLY_EQUIVALENT to a fixed-order TT
+restriction; archived grand cycle02 embedding receipt reused, not rerun.
+B interaction-memory bilinear readout and C product-decoded bank codeword are
+MATERIAL_VARIANT. Multiplying pair outputs really can create fourth-order effects,
+so B is NOT dismissed as the raw-code FM of R14. Their extra algebra nevertheless
+overlaps the known tensor/product route; no new internal principle/reopen witness
+is established. Exact historical trainer equality for B/C NOT_DEMONSTRATED.
+Subset embedding does not empirically close every estimator or prove equal ranks/
+costs. X024/X039/other partial families remain conditional; no KB closure rewritten.
+
+Active Base raw score is a multiresolution supported sum of main and pair tables.
+Runtime discrepancy documented: features_per_table=3 exists but _selected_groups
+emits pairs; generic addresses supports larger groups, active fitting does not.
+No public correction made. Exact indistinguishability includes support masks;
+addresses alone can differ in zero-versus-cell contribution. Injective input codes
+do not make additive readout universal. Scope: scalar Base regression/raw binary,
+not normalized multiclass probability or optional SafeBlend.
+
+Four exact Fraction/Walsh certificates (parity3,parity4,conditional multiplexer,
+gated pair) prove best unrestricted pair-sum MSE lower bounds 1,1,1/2,3/16 on full
+Cartesian domains, regardless of pair-cell/lookup budget. These are analytic
+certificates, NOT fitted current/candidate errors, new synthetic gate wins or
+evidence of real target relevance. Known historical witness types remain known.
+B oracle construction uses 112 versus104 packed-array bytes (1.076923x) and the
+same2gathers; extra scalar and products disclosed, no deep/serialized/timing claim.
+A/C core counts exclude retained Base; no misleading whole-model ratio.
+
+0 new prototypes/scientific fits/solves/real data/benchmarks. 3/4 synthetic gate,
+0.5B/B/2B fitted curves, toy optimizer and real panel NOT_STARTED_GATE_FAILED.
+synthetic_results.csv schema only; separation/resource CSVs explicitly analytic.
+36 candidate-by-history-family comparisons; all13 prior-art categories recorded
+for later review, HIGH risk, no novelty claim or remote search. Strict separation
+from current Base YES analytically; history-cleared candidate NO, trainability NO.
+
+Fresh evidence-only private tests and Ruff PASS; public459PASS/4knownXFAIL receipt
+hash-qualified VALID_REUSED, not rerun. Public64files and both recent audits' sealed
+artifacts unchanged; JSON/round index1–78/MASTERSTATE/privacy verified. Round51's
+historical incomplete remainder preserved. No src/API/default/compiler/version/
+Git-control changes, commit,push,tag,release or remote operation.
+Next:STOP native architecture audit; product/benchmark work only when separately
+requested. A precise distinct decoder/learning principle with a history-cleared
+matched witness would be required for a different future research task.
+No real-data development or Round79 justified.
+Report:research_private/VNEXT_FUNCTION_CLASS_EXPANSION_AUDIT.md.
+Audit:research_private/vnext_representation/final_audit.json.
+
+
+# POST_R78_BROAD_EXTERNAL_BENCHMARK_AUDIT — completed; not Round79
+
+**INSUFFICIENT_BENCHMARK_COVERAGE** for independent generalization. last_completed_round78/public0.2.0rc2.
+Broad local historical product audit completed:29real sources(10regression/10binary/9multiclass),54outer conditions,
+179/179 jobs;0 estimator failures.44valid public Base/HGB fits reused and bitwise
+re-predicted;135 new public-default fits,0tuning/architecture/remote operations. SafeBlend public n_jobs1,
+not old4thread recipe; HGB/LightGBM frozen train-only baselines. All29sources SEEN_FOR_SCIENCE,
+NEW_EXTERNAL0; missing old catalogs do not create novelty. No primary independent quality aggregate.
+
+Frozen group/time/official contracts, metadata-only source selection, dataset-first paired summaries;
+historical bootstrap intervals descriptive only. Fresh1/32/1k/100k public latency/deep/serialized/peak measurements;
+100k uses cycled heldout rows, historical-fit and fresh-only-fit ratios separate. CatBoost/XGBoost unavailable;
+WSL/E_ACCESSDENIED, no Linux/macOS or second-hardware claim. External-binary archives lack label predictions:
+receipt supplement derives public argmax from sealed classes/probabilities, preserves failed receipts,0refits.
+
+Observed provisional identity:COMPACT_MODEL_SPECIALIST on exposed local panel, NOT an independent confirmed niche.
+Regime gate≥4NEW_EXTERNAL is never satisfied; no causal explanation/reopening/new architecture or Round79.
+SafeBlend admission/discarded-component counterfactual limits explicit. Mice/CNAE compared with7more seen
+multiclass sources, no class-count causal conclusion. Core/API/default/compiler/version/public docs unchanged.
+
+Base historical paired median loss deltas vsHGB: regression1.407563%RMSE;
+binary14.738847%logloss;
+multiclass-14.010288%logloss.
+SafeBlend-0.234158%RMSE vsHGB.
+Not new confirmation; broad-advantage claims remain unsupported. Numbered1–78 unchanged,
+Round51 INCOMPLETE_WITH_EXPLICIT_REMAINDER preserved. Fresh replay/persistence/private checks plus
+hash-qualified459publicPASS/4knownXFAIL receipt reused. Privacy/JSON/integrity sealed in final audit.
+
+Next:Prospective zero-fit source qualification for a genuinely NEW_EXTERNAL balanced panel with explicit public-download authorization; freeze group/time contracts and repeat unchanged public defaults. No architecture reopening from historical associations. STOP.
+Report:research_private/BROAD_EXTERNAL_BENCHMARK_AUDIT.md.
+Audit:research_private/broad_benchmark/final_audit.json.
+
+## POST-R78 — BLIND EXTERNAL BENCHMARK DATASET RESERVE
+
+COMPLETE_DATA_RESERVE_ONLY — BLIND_BENCHMARK_RESERVE_READY. NOT Round79.
+last_completed_round=78; public version0.2.0rc2; numbered1–78 unchanged,
+Round51 INCOMPLETE_WITH_EXPLICIT_REMAINDER retained. Core/API/default/compiler unchanged.
+
+Initial60source candidates(20/task),4supplemental regression provenance reviews:64total.
+19qualified NEW_EXTERNAL sources:6regression/7binary/6multiclass, comprising
+16primary(5/6/5) and3backup(1/task).72primary evaluation conditions,15backup conditions;
+381future primary model jobs planned, NONE run.0FIT/0SOLVE/0PREDICTION/0new predictive metrics.
+Selection used source/domain/product diversity, schema/license/target validity and leakage controls only.
+
+Historical scan169639inventoried files,2141hashed identity/catalog/prose bodies, all
+recoverable MASTER/STATE/KB/source archives and CSV identity columns; aliases supplemented.
+NEW_EXTERNAL remains conditional on recoverable history: original early catalogs, notably
+R17/R18, are missing. No unresolved hit admitted, later demonstrated overlap invalidates source.
+Coimbra university-name collision resolved; Five Cities excluded for Beijing source overlap.
+Badly documented normalized targets/Avila normalization/meter units and duplicate PIR files
+excluded rather than used to fill quotas. Partial parsed data receipts preserved, not admitted.
+
+Regprimary:QSAR BCF511,Sao Paulo Traffic483,PGCB1175,Dow Jones312,Cargo2000 382.
+Binaryprimary:Gallstone1150,Thyroid915,PhiUSIIL967,Glioma759,QSAR Oral508,Coimbra451.
+Multiprimary:MicroMass253,ForestType333,AReM366,LandMines763,TurkishMusic862.
+Backups:ImageRecognitionRuntime859,Immunotherapy428,RobotExecutionLP1 138.
+Every source has explicit feature allowlist, exclusions, population limits and group/time/official
+row-index/seed contracts. Official splits count once, not five fake independent replications.
+
+Raw/source/schema/data-only row IDs and all split indices frozen before any outcomes.
+Protocol SHA256:ac9f75d1ce64cd559f2a17224704dd92c9558bb0e3ccd2d8103096b8ee80b075
+Future defaults/presets:HGB100/.1/31,LGB100/.1/31,CB300/.05/d6,XGB300/.05/d6/hist;
+public Base/Classifier/SafeBlend unchanged, seed only. Missing CB/XGB must be pinned/qualified
+before predictive execution; no tuning, no quality-based dataset replacement. RMSE/logloss
+primary; paired equal-source aggregation and full-pipeline storage/system costs.
+Compact gate:storage≤.35,loss≤+5%,≥70%sources within10%,every task competitive.
+Strong gate:storage≤.25,loss≤+3%,≥75%within5%,every task competitive.
+No result yet tests these gates. COMPACT_MODEL_SPECIALIST remains provisional historical evidence.
+
+Fresh data-only verification/private tests/Ruff; public459PASS/4knownXFAIL reused on64same
+public-source hashes (public pytest would violate0FIT). Research private ignored; memory trackable.
+No remote/commit/push/tag/release. No architecture reopened, no Round79.
+Report:research_private/BLIND_EXTERNAL_BENCHMARK_RESERVE.md.
+Audit:research_private/blind_benchmark/final_audit.json.
+Next:Separate user-authorized future benchmark only: qualify/pin missing CatBoost/XGBoost environments without predictive execution; then implement and audit the frozen harness before running the72 frozen primary conditions (381 planned model jobs). No tuning or panel changes based on quality; do not start Round79 automatically. STOP after reserve.
+
+
+## POST-R78 — BLIND BENCHMARK EXECUTION READINESS AUDIT
+
+COMPLETE_READINESS_ONLY — BLIND_BENCHMARK_EXECUTION_READY. NOT Round79.
+last_completed_round=78/public0.2.0rc2; public64files/core/API/default/compiler unchanged.
+All numbered1–78 records preserved; Round51 INCOMPLETE_WITH_EXPLICIT_REMAINDER retained.
+
+Protocol byte SHA256 remains ac9f75d1ce64cd559f2a17224704dd92c9558bb0e3ccd2d8103096b8ee80b075.
+383sealed reserve artifacts unchanged;19/19 data receipts and72primary+15backup
+split contracts PASS, including source/target/row/group/time/official alignment.
+Future381jobs frozen, allNOT_STARTED/execution_authorized=False;0primaryfits/solves/
+predictions/metrics. No primary results inspected, no new quality claim or architecture.
+
+Single clean offline wheel environment:Python3.12.14 Windows AMD64;
+NumPy2.3.5/SciPy1.16.2/pandas2.2.3/sklearn1.8.0/LGB4.7.0/CB1.2.10/XGB3.4.1;
+joblib1.6.0/threadpoolctl3.7.0. Local wheel/cache recovery,0networkoperations.
+Imports/pipcheck/Cholesky/16constructors/train-only preprocessing/17tiny synthetic
+model smokes PASS, with both real SafeBlend BASE/BLEND outcomes and pickle/joblib
+bitwise persistence. Successful smoke artifacts reused; failed fixture attempts preserved.
+No primary/scientific fits; additional48-row Dummy fixture tests instrumentation only.
+
+Explicit user resolution preserves frozen6threads for LGB/CB/XGB; accessory checks<=4.
+One heavy process, no nested pools; public SafeBlend n_jobs1 unchanged. Target10GiB/
+hard12GiB RSS with Windows JobObject backstop is within original16/20GiB upper ceilings;
+3600s wall/model-condition unchanged. Resource abort/timeout/atomic checkpoint/resume
+toy checks PASS. Cold-cache pressure is a labeled proxy; native deep bytes lower-bound.
+381primaryjobs:Base21/SafeBlend21/Classifier51,HGB72/LGB72/CB72/XGB72,Dummy0.
+Waves191/30/160 derive only from N/P; deterministic model rotation; no partial leaderboard.
+Planning1.59–63.5fit-hours plus systems/startup; unknown primary costs, not measured forecast.
+Backups only provenance/corruption/loader invalidity, never model quality/speed/failure.
+
+Manifest CSV SHA256:f579d78baf0b4761b436b7a618a24e72a1be6c1c1c72405a13523ab4e0a6b1b2.
+Environment SHA256:5a9851844941dcd5d480bff497d5edcaef184f33f2ec4c5d54b0b0aeb1919c7c.
+Fresh15privatePASS and public/private Ruff; public459PASS/4knownXFAIL receipt reused on
+unchanged64public hashes. JSON/privacy/MASTERSTATE/round continuity audited; memory
+trackable, research_private ignored. No remote/commit/push/tag/release or Round79.
+No Linux/second-hardware/Python3.13/3.14 benchmark claim. Reserve's missing early catalog
+limits remain; previous compact-specialist status remains provisional.
+
+Report:research_private/BLIND_BENCHMARK_EXECUTION_READINESS.md.
+Audit:research_private/blind_benchmark_execution/final_audit.json.
+Next:STOP. Await a separate explicit instruction authorizing the frozen blind benchmark. That future task may implement the thin primary executor around this sealed manifest and guards, preserving protocol, presets, 6-thread LGB/CB/XGB contract, source/split hashes, wave order and failure denominator. No tuning, primary metric inspection, new representation or Round79 is authorized here.
+
+## POST-R78 — BLIND BENCHMARK EXECUTION AUTHORIZED / IN PROGRESS
+
+Historical start checkpoint only: user authorized all381 frozen primary jobs.
+Not Round79; last_completed_round78/public0.2.0rc2. Original protocol/manifest unchanged.
+No primary quality inspected or aggregated. Current status is authoritative in
+research_private/blind_benchmark_execution/execution_status.json.
+Resume execute.py in the qualified clean environment; reuse all VALID terminal receipts
+and persisted fit/prediction stages. No alternate configurations, replacement for model
+failure, tuning, public changes or remote operations. Freeze all terminal raw results
+before running finalize.py. Completion will be recorded in a later final section.
+
+## POST-R78 — FROZEN BLIND BENCHMARK RESUME 2026-10-11
+
+Status-only integrity audit:230 VALID SUCCESS reused,1 INTERRUPTED,150 NOT_STARTED,0 PARTIAL/INVALID. Waves1/2 complete; resume Wave3 at uci253_c1_HistGradientBoosting. Persisted fit and heldout predictions verified and reused; only unfinished systems measurement repeated. Qualified environment/protocol/manifest/64 public hashes unchanged. Original scientific executor and analysis implementation unchanged; accessory wrapper adds incremental resume_state.json and single-owner finalization. No intermediate quality analysis. All mutable prior interrupted artifacts preserved in resume_sessions/. last_completed_round78/public0.2.0rc2; no Round79 or remote operation. Resume with research_private/blind_benchmark_execution/resume_execution.py; status and every-job inventory in latest_resume_audit.json/resume_state.json. This is IN_PROGRESS, not a final outcome.
+
+## POST-R78 — FROZEN BLIND EXTERNAL BENCHMARK EXECUTION
+
+COMPLETE_FROZEN_BLIND_BENCHMARK — PRODUCT_POSITION_MIXED; position:MIXED_NICHE_MODEL.
+NOT Round79;last_completed_round78/public0.2.0rc2. All381primaryjobs terminal,
+status counts:{"MEMORY_GUARD_REJECT": 1, "SUCCESS": 380};16NEW_EXTERNAL primary
+sources(5reg/6binary/5multi),21/30/21conditions;0backupsactivated.
+No intermediate quality analysis; raw receipts frozen before source-first paired analysis.
+Protocol SHA256:ac9f75d1ce64cd559f2a17224704dd92c9558bb0e3ccd2d8103096b8ee80b075;manifest:f579d78baf0b4761b436b7a618a24e72a1be6c1c1c72405a13523ab4e0a6b1b2.
+Results freeze:32327f640777b9910b47f6edaaca610cfef50bfd9f85e24a5c338dcec92ca697.
+Same public constructors/seed-only overrides, baseline presets6threads, train-only preprocessing,
+fixed source/split hashes,1heavyprocess,qualified10GiBtarget/12GiBhard and3600s guard.
+Failures stay denominator; no opportunistic rerun/replacement/tuning. Fit/prediction checkpoints
+persisted before systems; pickle/joblib fidelity and row alignment replay audited.
+
+Independent task summaries and every source/model are in the report; no historical pooling
+or universal marketing score. Gate results:{"Base": {"compact_gate": {"coverage_pass": true, "every_task_competitive": false, "fraction_within_tolerance": 0.5, "median_loss_degradation": 0.11227376684134849, "median_serialized_ratio": 0.1311189291002114, "pass_gate": false, "thresholds": {"every_task_competitive": true, "label": "COMPACT_MODEL_SPECIALIST_CONFIRMED", "median_loss_degradation_max": 0.05, "median_serialized_ratio_max": 0.35, "minimum_fraction_within": 0.7, "within_loss_tolerance": 0.1}}, "primary_sources": 16, "strong_gate": {"coverage_pass": true, "every_task_competitive": false, "fraction_within_tolerance": 0.375, "median_loss_degradation": 0.11227376684134849, "median_serialized_ratio": 0.1311189291002114, "pass_gate": false, "thresholds": {"every_task_competitive": true, "label": "STRONG_COMPACT_MODEL_SPECIALIST", "median_loss_degradation_max": 0.03, "median_serialized_ratio_max": 0.25, "minimum_fraction_within": 0.75, "within_loss_tolerance": 0.05}}, "task_checks": {"binary": {"candidate_failure_fraction": 0.0, "competitive": true, "fraction_within10": 0.5, "median_loss_degradation": 0.09364319944161126, "sources": 6}, "multiclass": {"candidate_failure_fraction": 0.0, "competitive": false, "fraction_within10": 0.2, "median_loss_degradation": 0.22031307908338582, "sources": 5}, "regression": {"candidate_failure_fraction": 0.0, "competitive": true, "fraction_within10": 0.8, "median_loss_degradation": 0.024129759823650065, "sources": 5}}}, "SafeBlend": {"compact_gate": {"coverage_pass": true, "every_task_competitive": true, "fraction_within_tolerance": 0.8, "median_loss_degradation": -0.006655363332313091, "median_serialized_ratio": 0.1204523324125474, "pass_gate": true, "thresholds": {"every_task_competitive": true, "label": "COMPACT_MODEL_SPECIALIST_CONFIRMED", "median_loss_degradation_max": 0.05, "median_serialized_ratio_max": 0.35, "minimum_fraction_within": 0.7, "within_loss_tolerance": 0.1}}, "primary_sources": 5, "strong_gate": {"coverage_pass": true, "every_task_competitive": true, "fraction_within_tolerance": 0.8, "median_loss_degradation": -0.006655363332313091, "median_serialized_ratio": 0.1204523324125474, "pass_gate": true, "thresholds": {"every_task_competitive": true, "label": "STRONG_COMPACT_MODEL_SPECIALIST", "median_loss_degradation_max": 0.03, "median_serialized_ratio_max": 0.25, "minimum_fraction_within": 0.75, "within_loss_tolerance": 0.05}}, "task_checks": {"regression": {"candidate_failure_fraction": 0.0, "competitive": true, "fraction_within10": 0.8, "median_loss_degradation": -0.006655363332313091, "sources": 5}}}}
+Original protocol has no Pareto axes/tolerances, scalar quality-per-byte formula or regime
+support threshold:NOT_PREREGISTERED, not retrofitted or called zero. No confirmed niche
+or distinct causal native mechanism is inferred from post-hoc subgroups.
+SingleWindows3.12.14/Ryzen7 255 only; missing early catalogs,smallsourcecounts5/6/5,
+overlapping conditions,nativeheap deep-size caveat and cache-pressure proxy limits preserved.
+All64publicfiles/core/API/default/compiler/version/docs unchanged, readiness evidence retained;
+numbered1–78 and Round51 incomplete remainder preserved. JSON/privacy/tests/Ruff/replay sealed
+in benchmark_final_audit.json. No remote/commit/push/tag/release or Round79.
+Research reopening:NO. Public docs factual update justified:YES as a separate task only.
+Report:research_private/BLIND_EXTERNAL_BENCHMARK_RESULTS.md.
+Next:STOP; preserve frozen benchmark; no automatic architecture or publication work.
+
+
+## POST-R78 — BLIND BENCHMARK PUBLIC DOCUMENTATION ALIGNMENT
+
+Authorized documentation-only update; not Round79. README heading order and examples preserved. Public changes limited to README.md, BENCHMARKS.md, CHANGELOG.md and docs/SAFE_BLEND_EXPERIMENTAL.md. RELEASE_NOTES.md and every code/API/default/compiler file remain unchanged. No new fit, solve, prediction, release or remote operation.
+
+The 16-source, 72-condition frozen blind panel (381 terminal jobs, 380 SUCCESS and one MEMORY_GUARD_REJECT coverage/system limitation) is the primary product evidence. Earlier external pilots remain secondary/historical; development/transfer is research evidence. Source novelty remains conditional on recoverable history.
+
+Paired source-median relative loss versus the preregistered baseline leader: Base regression +2.412976% RMSE; SafeBlend −0.665536% RMSE; binary +9.364320% logloss; multiclass +22.031308% logloss. SafeBlend serialized ratio 0.120452. Its regression gates pass on only five sources, with relative RMSE delta 95%CI[−4.661698%,+27.999900%] including zero. No general superiority claim. Base overall gates fail; positioning remains PRODUCT_POSITION_MIXED.
+
+Compact serialized models are an observed panel strength, not a promise for deep RAM or latency. Hardware/protocol/domain, large-N guard and small panels remain explicit caveats. Pareto counts stay NOT_PREREGISTERED/NA. The old +121.358260% pilot binary estimate remains historical and is no longer the README headline.
+
+Ruff, local Markdown/link/anchor, exact final-CSV numeric, version and privacy checks PASS; public pytest reused through unchanged code/test hashes (459PASS/4knownXFAIL). All prior memory records retained, JSON valid, index1–78 unchanged.
+Audit: research_private/BLIND_BENCHMARK_PUBLIC_DOCS_AUDIT.md. Receipt: research_private/blind_benchmark_public_docs/validation.json. Next: STOP; manual documentation upload only, no algorithmic reopening.
+
+
+## POST-R78 — PRODUCT HARDENING AND RELEASE READINESS AUDIT
+
+Engineering audit only; no public core/product-doc change or predictive research. Windows and Linux WSL public suites 459 PASS / 4 known XFAIL each; private 12 PASS / 1 genuine FAIL. API1: SafeBlend after late feature-validation failure passes generic check_is_fitted on partial attributes; predict still rejects. Proposed successful-fit hook + public regression test, not applied. DOC1: lookup_budget absent from API table; DOC2: SECURITY still names only 0.1.x. Five fresh offline Windows Python 3.10–3.14 numerical/import/clone/CV/persistence smokes PASS. Linux package current-wheel provenance PASS, numerical dependencies reused, same physical hardware; macOS unavailable, remote CI not executed. Wheel/sdist/rebuilt payload/direct-sdist/editable/exclusions/examples PASS. Extreme 1e200 target scale rejects explicitly with rescaling guidance. Trusted-source internal exec noted for separate refactor; no arbitrary user-input execution identified or online CVE attestation claimed. Cross-version pickle not guaranteed. Blind PRODUCT_POSITION_MIXED evidence unchanged.
+
+Audit: research_private/PRODUCT_HARDENING_AUDIT.md; receipt: research_private/product_hardening/final_audit.json. Next: separate minimal API/docs hardening and requalification. No version, remote, tag, release, algorithmic reopening or Round79.
+
+
+## POST-R78 — SAFEBLEND FITTED-STATE AND DOCUMENTATION HARDENING
+
+Authorized minimal lifecycle/docs fix, not Round79. The pre-fix public regression fails on both fresh and refit numeric-infinity cases. SafeBlend now exposes its existing final success marker through __sklearn_is_fitted__ and clears all partial/old fitted attrs on failure or interruption. Original exceptions propagate; failed refit leaves the estimator unfitted. Numerical fit body, constructor, prediction, Base/Rational recipes, alpha, split, fallback, optimizer, seed use and persistence format unchanged. Actual BASE, BLEND and mixed-pandas pre/post predictions are bitwise identical; fitted attrs/nested state equivalent except timing measurements. Old valid pickle/joblib artifacts and new installed isolated reloads pass.
+
+Public files changed: src/codadapt/experimental/_safe_blend.py, tests/test_safe_blend.py, docs/API.md, SECURITY.md. API docs cover lookup_budget type/default24/bounds1–4096, cumulative per-head lookup semantics, native numeric boundaries, SafeBlend weight/eval_set exclusion and failed-fit policy. SECURITY describes experimental 0.2.0rc2 / Python>=3.10,<3.15 without support-duration/SLA promises. Public tests 468 PASS / 4 known scope XFAIL; targeted41 PASS; private5 PASS. Wheel/sdist/rebuilt payload/Twine/privacy and new-wheel installed SafeBlend smoke on Windows Python3.10–3.14 PASS, using the prior fresh dependency environments. Public/private Ruff and format PASS. No new Linux/macOS qualification or remote CI claim; macOS caveat retained. Trusted-source exec remains SEPARATE_REFACTOR_RECOMMENDED and unchanged.
+
+Verdict PRODUCT_HARDENING_READY; release readiness YES only for requested engineering gates. API1/DOC1/DOC2 closed; historical negative evidence retained. Blind PRODUCT_POSITION_MIXED artifacts unchanged. No predictive research, version change, commit, tag, release, remote operation or Round79. Audit: research_private/SAFEBLEND_PRODUCT_BLOCKER_FIX_AUDIT.md; receipt: research_private/safeblend_product_fix/final_audit.json. Next: STOP; manual release review only.
+
+
+## POST_R78_POST_HARDENING_STRATEGIC_CHECKPOINT
+
+Documentary only; last_completed_round=78, public_version=0.2.0rc2.
+PRIMARY_NEXT_TASK=RC2_RELEASE_EVIDENCE_AND_PERSISTENCE_CONTRACT; PRODUCT_DEVELOPMENT_PREFERRED.
+
+Technical gates remain PRODUCT_HARDENING_READY (468 public PASS/4 existing scope XFAIL; five Python minors; packaging/persistence). CI/main updated is human-reported, no remote verification. Local HEAD `15a70c7b6923e5979b4617a57bbdf43efbeea110` contains0.1.0, while current qualified payload isrc2; manifest `d65da70045948b1f3d12ff11ebc3f71688e8a6feca5ada98e5c23bb964acd4d2` identifies58 Git-visible public files (38tracked+20untracked). Protected inventory64 includes AGENTS+five generated metadata files. Memory not ignored but locally untracked. No inference about remote contents.
+
+18 requested families remain scoped RETRY_IF with no newly met condition; no new native principle. Native SafeBlend is the most promising specialization (blind -0.665536% RMSE,0.120452x serialized on5sources; CI includeszero), not universal superiority. Base regression+2.412976%,binary+9.364320%LL,multiclass+22.031308%LL vs preregistered leader. Preserve denominators and frozen evidence.
+
+Three tracks: T1 bounded release evidence/persistence contract (score14), T2 frozen SafeBlend external regression qualification (10), T3 conditional macOS portability (1). Scores are subjective ordinal heuristics, not empirical. Release recommendation WAIT_AND_HARDEN_MORE limited to T1 handoff; additional external validation is required for stronger claims, not mandatory for an accurately scoped experimental release. No rc3 automatic. Trusted exec refactor/API polish remain deferred.
+
+Top-level engineering label was stale relative to the completed hardening event; restored PRODUCT_HARDENING_READY. Old global next-step/engineering values are retained in the new STATE event; historical entries and all1–78 round records unchanged. No code/API/default change, no fits/solves/benchmark/remote/commit/tag/release. Round79 unjustified and not started.
+
+Full25-point report: `research_private/POST_HARDENING_STRATEGIC_CHECKPOINT.md`. Audit: `research_private/post_hardening_strategy/final_audit.json`. STOP after this audit; proposed next task not executed.
+
+
+## POST_R78_FINAL_PUBLIC_PAYLOAD_RECONCILIATION — 2026-10-11
+
+This is release-documentation preparation, not Round 79. The complete Round 1–78 and post-R78 A history remains authoritative; B's older memory snapshot is not substituted. The release/persistence handoff completed with RELEASE_HANDOFF_READY, scoped to a local auditable handoff. Its qualified A payload was 62057a02b1cf69fcfd58b29bd93b35f116dfea82ba9b400888a169ab638a9982. The supplied GitHub ZIP represented archived HEAD 0eb30ee7b3d22b3b4161e99d84becdc76c9b6665, with identical runtime/tests but older blind disclosures and research memory, plus four intentional exploratory-CV support files.
+
+The recommended separate payload merges current blind positioning (PRODUCT_POSITION_MIXED) with useful B deployment/optimization prose, and preserves CSV/metadata as historical support, not independent confirmation. The 468 PASS / 4 known XFAIL / 0 FAIL receipt is reusable only because src/tests are byte-identical. No scientific fits, solves or benchmark reruns were performed. User-confirmed green remote CI belongs to the supplied B snapshot, not to this new documentary digest.
+
+Final file/aggregate identities live in the external handoff manifest and JSON, avoiding a self-referential payload hash. A qualified public commit, fresh distribution identities and any publication remain manual future steps. No source original, version, default, API, algorithm, tag or release changed. last_completed_round remains 78.

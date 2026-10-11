@@ -2,6 +2,23 @@
 
 ## Unreleased — current 0.2.0rc2 repository line
 
+- Prepared a reconciled public documentation snapshot with current blind evidence, later exact-callback engineering notes and intentional author-run reproducibility support; runtime/tests remain unchanged.
+- Kept the exploratory repeated-CV report and historical CSV/metadata separate from independent blind evidence, with explicit original/current runner provenance. No new benchmark or release was created.
+
+- Completed the frozen blind external benchmark: 16 NEW_EXTERNAL primary datasets,
+  72 conditions, zero tuning and 381 terminal jobs (380 SUCCESS, one memory-guard
+  coverage/system rejection). Protocol and baselines were frozen before fitting.
+- Updated product positioning to mixed predictive competitiveness with consistently
+  compact serialized models. SafeBlend passed the separate regression quality/size
+  gates; its five-dataset panel and confidence interval including zero limit the claim.
+- Refined Base regression, binary and multiclass quality caveats using the blind
+  evidence; retained earlier external pilots and research panels as historical evidence.
+- Documented the external leakage-audited product qualification: six datasets,
+  eleven evaluation units, no tuning and mixed predictive results versus fixed HGB.
+- Disclosed the known binary competitiveness limitation and multiclass variability
+  across domains and metrics, separately from successful technical qualification.
+- Clarified separate Base/SafeBlend regression results and the tested conservative
+  safe-memory exclusion of Covtype-like workloads; no actual OOM was measured.
 - Removed redundant gradient recomputation in the native SafeBlend Rational
   optimization path while preserving exact model outputs.
 - Redesigned experimental `SafeBlendRegressor` as fully native Base + Rational
@@ -9,7 +26,7 @@
 - Removed the external LightGBM product dependency; no SafeBlend extra is needed.
 - Ported the independently confirmed Round 78 recipe without changing scientific
   capacity, preprocessing, stopping or prediction semantics.
-- Confirmed +2.061% median RMSE gain on 18 new regression datasets × five splits;
+- Round 78 independent research confirmation found +2.061% median RMSE gain on 18 new regression datasets × five splits;
   improvement is not guaranteed on individual datasets or splits.
 - Reduced fit/deployment cost relative to the superseded external-model design;
   the frozen native research panel still costs about 4.13× Base to fit.

@@ -84,7 +84,17 @@ Cross-version bitwise fitting equivalence is not guaranteed.
 
 ## Confirmed evidence and limits
 
-Round 78 froze the recipe before evaluating **18 new real regression datasets ×
+The [frozen blind external benchmark](../BENCHMARKS.md#frozen-blind-external-benchmark)
+is the primary evidence for current product positioning. On **five NEW_EXTERNAL
+regression datasets**, SafeBlend's median relative RMSE delta was **−0.67%** versus
+the preregistered baseline leader, with median serialized size **0.120×** that
+reference. Both preregistered regression quality/size gates passed. The **95% CI
+includes zero** (relative RMSE delta **[−4.66%, +28.00%]**), so this is a promising
+compact regression trade-off, not general superiority. Hardware, protocol and
+domain matter; NEW_EXTERNAL is conditional on recoverable historical catalogs.
+The library's overall blind verdict is **PRODUCT_POSITION_MIXED**.
+
+Historical research evidence remains separate: Round 78 froze the recipe before evaluating **18 new real regression datasets ×
 5 splits**. The median dataset RMSE gain versus Base was **+2.061%**, with a
 dataset-bootstrap 95% CI of **[+0.403%, +4.695%]** and dataset wins/ties/losses
 **17/1/0** under the preregistered tie tolerance. The worst individual split
@@ -106,7 +116,10 @@ six-case engineering panel, Rational fit time fell by **43.55%** and total SafeB
 fit time by **27.27%**; serialized/deep memory and inference were effectively
 unchanged. These measurements are panel-specific, not API latency guarantees.
 
+The 100k workloads repeated heldout rows. Fit includes both native estimators; fallback does not avoid Rational training cost. Public schema validation adds overhead. These engineering results are separate from the primary blind performance table above.
+
 The public port is checked against all 90 sealed cases for branch, Base, Rational,
-blend and final predictions and RMSE. Local qualification passed Python 3.10–3.14;
-actual remote CI remains a separate execution environment. SafeBlend remains
+blend and final predictions and RMSE. Local package qualification passed Python
+3.10–3.14. A remote CI receipt for an earlier snapshot does not identify this
+reconciled documentation payload; its final manifest is recorded separately. SafeBlend remains
 experimental, opt-in and regression-only.

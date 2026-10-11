@@ -2,6 +2,8 @@
 
 **Date:** 9 October 2026  |  **Status:** Author-run exploratory experiment, **not** independent validation.
 
+This historical author-run panel is secondary evidence. The [frozen blind benchmark](../../BENCHMARKS.md#frozen-blind-external-benchmark) is primary for current product positioning.
+
 ## Scope and protocol
 
 - Models: CodAdapt, LightGBM, Random Forest, scikit-learn HistGradientBoosting.
@@ -55,7 +57,9 @@ Timing is strongly hardware/software dependent and especially noisy for very sho
 
 ## Reproduction
 
-The public repository must include **the exact script used**, `benchmarks/reproducibility/benchmark_codadapt_cv.py`, as well as its raw CSV and JSON metadata. Run from the repository root.
+The repository retains the current runner [`benchmark_codadapt_cv.py`](benchmark_codadapt_cv.py), the archived [CSV](benchmark_cv_full.csv) and [JSON metadata](benchmark_cv_full.json). Run from the repository root. The current runner is not byte-identical to the historical script used for the archived measurements.
+
+The original script is preserved in Git commit [`eae1950b99fbc030ceca932da3d9f279de80419b`](https://github.com/lucalullo/codadapt/blob/eae1950b99fbc030ceca932da3d9f279de80419b/benchmarks/reproducibility/benchmark_codadapt_cv.py). Its verified SHA256 is `42791b18f001749710cf4bd42752ec58710686a279841a4405086d46ef17c896`, matching the historical metadata. The supplied runner SHA256 is `faf5004e4215dd8ab0d9db099183a4d22d2e8e109c23621f6ee94fc3cebd3f0d`. Static comparison verified identical non-import AST and import bindings; formatting and import order differ. This does not establish identical timing or a fresh independent rerun. Exact historical-byte reproduction requires the original script and recorded environment. Historical CSV/metadata are unchanged; no fit was rerun for this reconciliation.
 
 ```bash
 python -m pip install -e ".[dev,benchmark]"
