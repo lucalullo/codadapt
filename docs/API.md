@@ -15,13 +15,14 @@ Il costruttore memorizza i parametri; il primo `fit` crea lo stato appreso.
 
 | Parametro | Default | Significato |
 | --- | --- | --- |
-| `n_bins` | `32` | Numero massimo di intervalli numerici, escluso il bucket mancante; da 2 a 4096. |
+| `n_bins` | `32` | Intero da 2 a 4096; il percorso nativo corrente limita la risoluzione numerica più fine a `min(16, n_bins)`, escluso il bucket mancante. |
 | `max_categories` | `128` | Categorie frequenti conservate separatamente per feature. |
 | `quantile_sample_size` | `20000` | Campione massimo per costruire quantili riproducibili. |
 | `n_tables` | `8` | Numero di tabelle di interazione, da 0 a 128; `0` le disattiva. |
 | `features_per_table` | `3` | Feature distinte per gruppo, da 1 a 32; ridotte se le feature totali sono meno. |
 | `table_size` | `256` | Celle per tabella: potenza di due da 16 a 4096. |
 | `main_effects` | `True` | Attiva gli effetti monovariati. |
+| `lookup_budget` | `24` | Intero da 1 a 4096: limite totale dei lookup per campione, sommando tabelle monovariate e di interazione sui livelli conservati. Il modello può usarne meno; non sostituisce il limite `n_tables`. Nel multiclasse vale per ciascun head. |
 | `max_iter` | `20` | Massimo numero di passaggi completi di training. |
 | `l2` | `5.0` | Penalità positiva dei punteggi; l'intercetta è esclusa. |
 | `adapt_codes` | `True` | Abilita la ricerca discreta dei codici. |
@@ -81,6 +82,8 @@ valori numerici, inclusi target interi. Gli input non vengono modificati.
 `sample_weight` è un vettore finito non negativo con somma positiva. Righe a peso zero
 sono escluse prima di imparare preprocessing e codici. La loss di training è una somma
 pesata: riscalare tutti i pesi cambia l'effetto di `l2`.
+Target o pesi di magnitudine estrema possono causare overflow della loss quadratica
+anche se finiti: un `FloatingPointError` richiede di riscalare target o pesi.
 
 `eval_set=(X_valid, y_valid)` fornisce una validation esplicita. La sua loss è non
 pesata e senza penalità L2: MSE per regressione, log-loss per classificazione.
@@ -191,3 +194,14 @@ Refit binario→multiclasse o multiclasse→binario ripulisce lo stato precedent
 Clone/Pipeline/CV e `score` (accuracy) valgono per entrambi. Pickle/joblib preservano
 predizioni e identità dell'encoding condiviso; nessun modulo di ricerca o teacher
 è richiesto al reload. Preferire lo stesso ambiente numerico.
+
+## SafeBlendRegressor sperimentale
+
+`codadapt.experimental.SafeBlendRegressor` espone `fit(X, y)`: non supporta
+`sample_weight` né `eval_set`. I parametri comuni della tabella precedente
+appartengono agli estimator Base, non al costruttore minimale SafeBlend.
+Il contratto completo è in [SAFE_BLEND_EXPERIMENTAL.md](SAFE_BLEND_EXPERIMENTAL.md).
+
+Un fit fallito, anche durante un refit, elimina lo stato appreso e quello parziale:
+`check_is_fitted` e `predict` sollevano `NotFittedError`. Il modello precedente
+non rimane utilizzabile; occorre completare un nuovo fit valido.

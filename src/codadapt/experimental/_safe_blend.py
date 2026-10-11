@@ -124,12 +124,26 @@ class SafeBlendRegressor(RegressorMixin, BaseEstimator):
                 BucketEncoder._numeric_values(series, self._columns_[j])
         return X.astype(np.float64)
 
-    def fit(self, X, y):
-        """Fit the frozen native recipe using training-only preprocessing and holdout."""
-        # A failed/refallback fit cannot leave an old fitted branch accessible.
+    def __sklearn_is_fitted__(self):
+        return getattr(self, "_is_fitted_", False)
+
+    def _clear_fitted_state(self):
         for name in list(vars(self)):
             if name.endswith("_"):
                 delattr(self, name)
+
+    def fit(self, X, y):
+        """Fit the frozen recipe; a failed fit leaves the estimator unfitted."""
+        self._clear_fitted_state()
+        try:
+            return self._fit(X, y)
+        except BaseException:
+            # Discard partial schema/model state, including an interrupted refit,
+            # and propagate the original failure without changing its type.
+            self._clear_fitted_state()
+            raise
+
+    def _fit(self, X, y):
         seed = self._validate_parameters()
         X = BucketEncoder._validate_input(X)
         target = self._target(y, len(X))

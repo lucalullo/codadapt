@@ -10,6 +10,9 @@ from scipy import sparse
 from sklearn.base import clone
 from sklearn.exceptions import NotFittedError
 from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.utils.validation import check_is_fitted
 
 from codadapt import CodAdaptRegressor
 from codadapt.experimental import SafeBlendRegressor
@@ -38,6 +41,8 @@ def test_deterministic_fit_attributes_and_no_refit(regression_data):
     x, y = regression_data
     a = SafeBlendRegressor(random_state=42).fit(x, y)
     b = clone(a).fit(x, y)
+    check_is_fitted(a)
+    check_is_fitted(b)
     np.testing.assert_array_equal(a.predict(x), b.predict(x))
     assert a.branch_ == b.branch_
     assert a.alpha_ == (0.3 if a.branch_ == "BLEND" else 0.0)
@@ -58,6 +63,7 @@ def test_deterministic_fit_attributes_and_no_refit(regression_data):
 def test_tie_chooses_base_and_discards_rational():
     x = np.zeros((40, 2))
     model = SafeBlendRegressor(random_state=7).fit(x, np.full(40, 3.5))
+    check_is_fitted(model)
     assert model.branch_ == "BASE"
     assert model.alpha_ == 0
     assert model.rational_ is None
@@ -84,6 +90,7 @@ def test_strict_improvement_retains_blend(monkeypatch, regression_data):
 
     monkeypatch.setattr(Rational, "predict", validation_fixture)
     model = SafeBlendRegressor(random_state=42).fit(x, y)
+    check_is_fitted(model)
     assert model.branch_ == "BLEND" and model.rational_ is not None
     assert model.alpha_ == 0.3
     assert model.validation_blend_rmse_ < model.validation_base_rmse_
@@ -212,3 +219,71 @@ def test_unseeded_fit_and_random_state_instance(regression_data):
     for seed in (None, np.random.RandomState(4)):
         model = SafeBlendRegressor(random_state=seed).fit(x, y)
         assert np.isfinite(model.predict(x)).all()
+
+
+@pytest.mark.parametrize("refit", [False, True], ids=["fresh", "refit"])
+@pytest.mark.parametrize("stage", ["target", "numeric", "optimizer"])
+def test_failed_fit_clears_partial_state(stage, refit, monkeypatch, regression_data):
+    from codadapt.experimental._rational import Rational
+
+    values, y = regression_data
+    x = pd.DataFrame(values, columns=["a", "b", "c"])
+    model = SafeBlendRegressor(random_state=42)
+    if refit:
+        model.fit(x, y)
+        check_is_fitted(model)
+    bad_x, bad_y = x.copy(), y.copy()
+    error = ValueError
+    if stage == "target":
+        bad_y[0] = np.nan
+    elif stage == "numeric":
+        bad_x.iloc[0, 0] = np.inf
+    else:
+        error = RuntimeError
+
+        def failed_optimizer(*args, **kwargs):
+            raise RuntimeError("Injected native fit failure")
+
+        monkeypatch.setattr(Rational, "fit", failed_optimizer)
+    with pytest.raises(error):
+        model.fit(bad_x, bad_y)
+    with pytest.raises(NotFittedError):
+        check_is_fitted(model)
+    with pytest.raises(NotFittedError):
+        model.predict(x)
+    assert vars(model) == model.get_params(deep=False)
+
+
+def test_pipeline_and_clone_fitted_contract(regression_data):
+    x, y = regression_data
+    model = SafeBlendRegressor(random_state=42)
+    with pytest.raises(NotFittedError):
+        check_is_fitted(model)
+    pipeline = Pipeline([("scale", StandardScaler()), ("model", model)]).fit(x, y)
+    check_is_fitted(pipeline.named_steps["model"])
+    assert np.isfinite(pipeline.predict(x)).all()
+    copied = clone(pipeline)
+    with pytest.raises(NotFittedError):
+        check_is_fitted(copied.named_steps["model"])
+
+
+@pytest.mark.parametrize("branch", ["BASE", "BLEND"])
+def test_successful_branch_persistence_and_fitted_state(branch, tmp_path):
+    if branch == "BASE":
+        x, y, seed = np.zeros((40, 2)), np.full(40, 3.5), 7
+    else:
+        rng = np.random.default_rng(82)
+        x = rng.normal(size=(160, 4))
+        y = 2 * x[:, 0] + x[:, 1] ** 2 + 0.01 * rng.normal(size=len(x))
+        seed = 82
+    model = SafeBlendRegressor(random_state=seed).fit(x, y)
+    check_is_fitted(model)
+    assert model.branch_ == branch
+    expected = model.predict(x)
+    np.testing.assert_array_equal(clone(model).fit(x, y).predict(x), expected)
+    path = tmp_path / "safe.joblib"
+    joblib.dump(model, path)
+    for restored in (pickle.loads(pickle.dumps(model)), joblib.load(path)):
+        check_is_fitted(restored)
+        assert restored.branch_ == branch
+        np.testing.assert_array_equal(restored.predict(x), expected)
