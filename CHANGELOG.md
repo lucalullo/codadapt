@@ -2,15 +2,20 @@
 
 ## Unreleased — current 0.2.0rc2 repository line
 
-- Prepared a reconciled public documentation snapshot with current blind evidence, later exact-callback engineering notes and intentional author-run reproducibility support; runtime/tests remain unchanged.
-- Kept the exploratory repeated-CV report and historical CSV/metadata separate from independent blind evidence, with explicit original/current runner provenance. No new benchmark or release was created.
-
+- Completed independent SafeBlend regression qualification: nine NEW_EXTERNAL
+  datasets, 45 frozen group/time splits, zero tuning and 270/270 SUCCESS jobs.
+- Refined SafeBlend positioning to an experimental compact regression specialist:
+  serialized compactness independently replicated (0.129× the external leader),
+  while predictive quality leadership was not confirmed (+4.62% median RMSE).
+  The earlier five-dataset −0.67% quality advantage did not replicate; no deep-RAM
+  advantage was demonstrated. Algorithm, API, defaults and version are unchanged.
 - Completed the frozen blind external benchmark: 16 NEW_EXTERNAL primary datasets,
   72 conditions, zero tuning and 381 terminal jobs (380 SUCCESS, one memory-guard
   coverage/system rejection). Protocol and baselines were frozen before fitting.
-- Updated product positioning to mixed predictive competitiveness with consistently
-  compact serialized models. SafeBlend passed the separate regression quality/size
-  gates; its five-dataset panel and confidence interval including zero limit the claim.
+- Updated product positioning using the earlier blind panel to mixed predictive
+  competitiveness with consistently compact serialized models. SafeBlend passed
+  that panel's separate regression size/quality gates; the later independent
+  qualification above supersedes its predictive positioning.
 - Refined Base regression, binary and multiclass quality caveats using the blind
   evidence; retained earlier external pilots and research panels as historical evidence.
 - Documented the external leakage-audited product qualification: six datasets,

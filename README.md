@@ -19,7 +19,7 @@ CodAdapt remains a pre-1.0 experimental project. It is intended for controlled e
 - adaptive residual-memory levels with validation-based and feature-level stopping;
 - compact coded interaction tables controlled by a lookup budget;
 - compact serialized models are a consistently observed strength on the frozen blind panel;
-- promising SafeBlend regression quality/size trade-offs, with mixed predictive competitiveness across tasks;
+- an opt-in compact native SafeBlend regression option, with independently replicated serialized compactness and mixed predictive competitiveness;
 - sample weights, explicit validation sets, deterministic random states, and best-state restoration;
 - pickle/joblib persistence;
 - CPU-only NumPy runtime;
@@ -32,53 +32,52 @@ The native CodAdapt default remains the architecture selected during the 0.1 dev
 
 ### From GitHub
 
-The maintained repository line remains **0.2.0rc2**. Install the current repository from `main`:
+The current repository line is **0.2.0rc2**, with verified Python **3.10–3.14**
+support. Use `main` for the compatibility update once these local changes have been
+uploaded manually. The published `v0.2.0rc2` tag points to the older commit and is
+not being rewritten; it does not include this update.
 
 ```bash
 python -m pip install "git+https://github.com/lucalullo/codadapt.git@main"
 ```
 
-`CodAdapt` and `CodAdaptClassifier` detect binary or multiclass targets automatically. `CodAdaptRegressor` remains the scalar-regression estimator.
-
-`SafeBlendRegressor` uses the same standard installation. No LightGBM, XGBoost, CatBoost, or other external ML model is required for native fitting or prediction.
-
-For the separate optional EBM compiler:
+For the optional experimental EBM compiler:
 
 ```bash
 python -m pip install "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@main"
 ```
 
-The `ebm` extra is required only when explicitly compiling a supported fitted EBM teacher. Native CodAdapt and native SafeBlend do not use it.
-
-Python **3.10–3.14** is locally qualified; see the [compatibility matrix](docs/PYTHON_COMPATIBILITY.md). The version string alone does not identify every historical rc2 payload. For reproducible installation, pin the reviewed commit and retain the package/payload hashes. This reconciled snapshot is prepared locally; it does not create or rewrite a release or tag.
+Native fit, validation, prediction and persistence use only CodAdapt and numerical
+infrastructure. The optional EBM extra is solely for explicit import/compilation of
+an externally fitted model; it is not part of native training.
 
 ### Kaggle
 
-Native CodAdapt and native SafeBlend:
+Current `main` supports Python **3.10–3.14** after the compatibility update is
+uploaded. Core and EBM previously passed local validation separately; see
+[the compatibility matrix](docs/PYTHON_COMPATIBILITY.md). Remote GitHub CI and
+the actual Kaggle image remain pending. Do not use the historical tag for this fix.
+
+Native installation:
 
 ```python
-!pip install -qq --no-cache-dir git+https://github.com/lucalullo/codadapt.git@main
+!pip install -qq git+https://github.com/lucalullo/codadapt.git@main
 ```
 
-Then:
+EBM compilation:
 
 ```python
-from codadapt.experimental import SafeBlendRegressor
-
-model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=4)
-model.fit(X_train, y_train)
-predictions = model.predict(X_test)
+!pip install -qq "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@main"
 ```
 
-For the optional EBM compiler:
+Use network-enabled Kaggle only for this manual installation. Restart the kernel
+if numerical dependencies changed. Offline use can instead install the updated
+local `codadapt-0.2.0rc2-py3-none-any.whl` with compatible dependencies available.
+The same version name does not identify whether an older wheel contains this fix.
 
-```python
-!pip install -qq --no-cache-dir "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@main"
-```
-
-Restart the notebook kernel only if the environment changes numerical packages during installation.
-
-Local Python qualification does not validate every Kaggle image or dependency combination. The actual Kaggle image remains independently unverified; an offline installation can use a reviewed local wheel with matching dependencies.
+**KAGGLE_REMOTE_CONFIRMATION_PENDING = YES.** Local Python 3.13.16/3.14.8 checks
+do not validate the reported Kaggle 3.13.15 image. No remote command above was run
+by this task. The binary/regression defaults and EBM compiler are unchanged; multiclass uses the native shared OVR backend. SafeBlend uses the core installation.
 
 ### Local checkout
 
@@ -227,20 +226,30 @@ predictions = model.predict(X_test)
 print(model.branch_, model.alpha_)
 ```
 
-On the frozen blind regression benchmark, SafeBlend was slightly ahead of the
-preregistered baseline leader on median RMSE (**−0.67%**) with substantially smaller
-serialized models (**0.120×** the reference). It passed both preregistered regression
-quality/size gates, but the panel has **only five datasets** and the **95% confidence
-interval includes zero**. This is a promising trade-off, not general superiority
-or a guarantee of improvement. Measurements depend on hardware and protocol.
+The later [independent regression qualification](BENCHMARKS.md#independent-safeblend-regression-qualification)
+supports SafeBlend as an experimental **compact regression specialist**. Across
+**nine NEW_EXTERNAL datasets and 45 frozen group/time splits**, median RMSE was
+**+4.62% worse** than the preregistered external leader (Base: **+4.65%**), with
+dataset wins/ties/losses **2/0/7**. The worst dataset mean degradation was **+30.85%**
+and the worst split **+116.29%**. Predictive quality leadership was not confirmed.
+
+Serialized size was **0.129×** the leader; a deep-RAM advantage was **not demonstrated**.
+Warm inference latency ratios for batches 1/32/1k/100k were
+**0.765× / 0.765× / 0.684× / 0.807×**, while fit cost was **1.210×** the leader.
+These are hardware- and protocol-specific measurements. Validation fallback reduces
+risk but does not eliminate harmful admissions on unseen domains: **32 BLEND / 13
+BASE** selections included **9 harmful admissions out of 32 BLEND** selections.
+
+The earlier five-dataset blind result (**−0.67% RMSE**, **0.120× serialized size**)
+remains historical evidence: its quality advantage **did not replicate** on the
+larger independent panel; serialized compactness **did replicate**. The panels use
+different leader rules and are not pooled.
 
 Historical Round 78 local research-runtime medians were approximately **4.13× fit time**,
 **1.09× serialized memory**, **1.08× deep memory** and **1.19–1.23× inference
 latency** versus Base. Public schema validation adds overhead; results depend on
 hardware and workload. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md)
 for inputs, fitted diagnostics, persistence, costs and limitations.
-
-Round 78's frozen research recipe was originally measured at approximately **4.13× Base fit time** before the later exact callback optimization. The current implementation removes redundant diagnostic gradient recomputation while preserving coefficients, trace, branch decisions and predictions bitwise-identically in the qualification replay. On the paired six-case engineering panel, Rational fit time fell by **43.55%** and total SafeBlend fit time by **27.27%**; serialized/deep memory and inference were effectively unchanged. These are panel-specific implementation measurements, not universal speed guarantees. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md) for inputs, fitted diagnostics, persistence, costs and limitations.
 
 ## Experimental EBM compilation
 
@@ -325,13 +334,18 @@ See [docs/ALGORITHM.md](docs/ALGORITHM.md) for the detailed formulation.
 
 ## Performance
 
-The [Frozen Blind External Benchmark](BENCHMARKS.md#frozen-blind-external-benchmark)
-is the primary evidence for current product positioning: **16 NEW_EXTERNAL primary
+The [independent regression qualification](BENCHMARKS.md#independent-safeblend-regression-qualification)
+takes precedence for SafeBlend positioning: **nine NEW_EXTERNAL datasets, 45 frozen
+splits, zero tuning and 270/270 SUCCESS jobs**. It confirms serialized compactness,
+with weaker predictive quality than the external leader on median RMSE.
+
+The earlier [Frozen Blind External Benchmark](BENCHMARKS.md#frozen-blind-external-benchmark)
+remains the primary binary/multiclass evidence: **16 NEW_EXTERNAL primary
 datasets, 72 conditions and 381 frozen jobs**, with **380 SUCCESS** and one
 **MEMORY_GUARD_REJECT** coverage/system limitation. Dataset selection and the
 protocol preceded metrics; there was zero tuning and all baseline presets were fixed.
 
-| Task / model | Datasets | Median primary-loss delta vs preregistered baseline leader |
+| Earlier blind task / model | Datasets | Median primary-loss delta vs preregistered baseline leader |
 | --- | ---: | ---: |
 | Regression / CodAdaptRegressor Base | 5 | +2.41% RMSE |
 | Regression / SafeBlendRegressor | 5 | −0.67% RMSE |
@@ -341,11 +355,12 @@ protocol preceded metrics; there was zero tuning and all baseline presets were f
 Positive loss deltas mean worse quality. The baseline leader is defined per source
 by a preregistered rule across fixed HGB, LightGBM, CatBoost and XGBoost presets;
 it is not always HGB. Paired condition deltas are aggregated within each source,
-then by equal-source median. Base regression was slightly behind the reference;
-SafeBlend was slightly ahead and its median serialized ratio was **0.120×**, but
-**n=5 and a confidence interval including zero** limit the regression evidence.
-Base did not pass the overall compact-specialist gates; SafeBlend passed the
-separate regression gates. The overall verdict is **PRODUCT_POSITION_MIXED**.
+then by equal-source median. The earlier five-source SafeBlend quality advantage
+did not replicate: the later independent panel measured **+4.62% RMSE** for SafeBlend
+and **+4.65%** for Base. Its serialized ratio remained small (**0.120× → 0.129×**).
+The independent verdict is **COMPACT_REGRESSION_SPECIALIST_CONFIRMED**, with the
+quality-specialist gate unmet. The earlier blind library-wide verdict remains
+**PRODUCT_POSITION_MIXED**; the two panels are not pooled.
 
 Binary remains a known competitive weakness on the current blind panel; its
 logloss gap is much less extreme than in the first small external pilot.
@@ -358,7 +373,8 @@ with incomplete early research catalogs. See the public
 
 Earlier external pilots are secondary/historical evidence; development and
 transfer panels are research evidence. They remain documented separately and
-do not override the blind panel for current product positioning.
+do not override the independent regression qualification or the blind
+binary/multiclass panel for current product positioning.
 
 The frozen 0.1 engineering comparison used 12 datasets and five shared splits per dataset against budget-matched LightGBM. CodAdapt did **not** win mean predictive quality on those datasets. It did, however, win median raw-input inference latency on 10/12 datasets and retained-model memory on 12/12.
 
@@ -386,25 +402,6 @@ A lightweight sanity benchmark can be run with:
 ```bash
 python benchmarks/run_benchmarks.py --quick
 ```
-
-### Reproducible cross-validation benchmark
-
-This secondary/historical exploratory panel does not override the frozen blind evidence above. An exploratory benchmark compares CodAdapt with LightGBM, Random Forest, and HistGradientBoosting on four public scikit-learn datasets, using 5-fold cross-validation repeated three times (240 evaluations).
-
-- [Methodology, results, and limitations](benchmarks/reproducibility/BENCHMARK_CV_REPORT.md)
-- [Benchmark runner](benchmarks/reproducibility/benchmark_codadapt_cv.py)
-- [Full results (CSV)](benchmarks/reproducibility/benchmark_cv_full.csv)
-- [Environment and experimental metadata (JSON)](benchmarks/reproducibility/benchmark_cv_full.json)
-
-To rerun the full benchmark from the repository root, install the benchmark dependencies and LightGBM, then run:
-
-```bash
-python -m pip install -e ".[dev,benchmark]"
-python -m pip install lightgbm==4.7.0
-python benchmarks/reproducibility/benchmark_codadapt_cv.py
-```
-
-These are author-run experiments with default model configurations and no hyperparameter tuning, **not independent validation**. The published JSON metadata records the SHA-256 of the original benchmark script, preserved in commit [`eae1950`](https://github.com/lucalullo/codadapt/blob/eae1950/benchmarks/reproducibility/benchmark_codadapt_cv.py); the supplied runner has formatting and import-order changes. The archived results were not rerun during this documentary reconciliation; the report distinguishes the original run hash from the current runner hash.
 
 ## Persistence
 
@@ -453,7 +450,10 @@ These files are development documentation and are intentionally excluded from th
 - binary classification has a +9.36% median blind logloss gap versus the preregistered baseline leader on six datasets;
 - multiclass has a +22.03% median blind logloss gap on five datasets, despite successful technical qualification of Shared OVR;
 - Base regression has a +2.41% median blind RMSE gap on five datasets;
-- SafeBlend's −0.67% median blind RMSE delta and 0.120× serialized ratio are promising, but the five-dataset panel and CI including zero leave substantial uncertainty;
+- SafeBlend's later independent panel was weaker than external leaders: +4.62% median RMSE, 2/0/7 dataset wins/ties/losses, worst dataset mean +30.85% and worst split +116.29%; predictive quality varies by domain;
+- validation fallback does not eliminate downside: 9 of 32 admitted blends harmed test RMSE relative to their internal Base;
+- independently replicated serialized compactness (0.129× the leader) is stronger evidence than predictive quality leadership; no deep-RAM advantage was demonstrated;
+- the earlier five-dataset −0.67% RMSE advantage did not replicate; neither repeated splits nor the separate historical panel enlarge the nine-source independent sample;
 - Covtype-like large-N multiclass workloads remain excluded by the conservative safe-memory guard in the tested configuration; no actual out-of-memory event was measured;
 - the blind benchmark's single MEMORY_GUARD_REJECT is a coverage/system limitation; successful predictions do not guarantee every large-batch measurement fits the budget;
 - the blind benchmark covers only 16 datasets (5 regression, 6 binary, 5 multiclass); repeated conditions are not independent datasets, and performance depends on domain;
@@ -463,8 +463,10 @@ These files are development documentation and are intentionally excluded from th
 
 CodAdapt 0.2.0rc2 is an experimental pre-release. The binary and regression paths remain unchanged from the validated 0.1 line. Native multiclass shared OVR is included in the current working tree; SafeBlend and the EBM compiler remain opt-in and experimental. The published tag is not rewritten.
 
-Current blind evidence supports compact serialized models and promising SafeBlend
-regression quality/size trade-offs, with mixed predictive competitiveness overall.
+Current independent evidence supports SafeBlend as a **compact regression specialist**,
+with strong serialized-size savings and faster inference on the tested hardware,
+but weaker median predictive quality than the external leader. Classification
+competitiveness remains mixed on the earlier blind panel.
 
 The public API, compiler contract, and defaults may evolve as broader external validation continues.
 

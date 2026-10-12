@@ -1,12 +1,160 @@
 # Benchmark Disclosure
 
-The frozen blind NEW_EXTERNAL benchmark is the primary evidence for current
-**0.2.0rc2** product positioning. Earlier external pilots are secondary/historical
-evidence; development and transfer panels are research evidence. The library's
-overall verdict is **PRODUCT_POSITION_MIXED**. Historical measurements below remain
-available, but do not override the blind panel for current external claims.
+The later independent SafeBlend regression qualification takes precedence for
+current **0.2.0rc2 SafeBlend positioning**: compact serialized models were confirmed,
+while predictive quality leadership was not. The frozen blind NEW_EXTERNAL panel
+remains the primary binary/multiclass evidence and its library-wide verdict remains
+**PRODUCT_POSITION_MIXED**. Earlier external pilots are secondary/historical evidence;
+development and transfer panels are research evidence. The panels below remain
+separate; historical measurements do not override the later regression qualification.
+
+## Independent SafeBlend Regression Qualification
+
+This later qualification used **nine NEW_EXTERNAL real regression datasets**, all
+primary, **45 frozen splits** and **270 model jobs**: **270 SUCCESS, zero terminal
+failures**. Five sources used **GROUP_SPLIT** (25 conditions); four used
+**TIME_SPLIT** (20 conditions), including UCI859's previously frozen forward-time
+contract. The source/target/feature allowlists, exact split indices, seeds, presets,
+versions, threads and resource limits were frozen before the first fit. There was
+**zero tuning**, no outcome-based source substitution and no intermediate aggregate
+analysis before terminal results were frozen.
+
+Each unit compared public-default CodAdaptRegressor Base and SafeBlendRegressor
+with fixed HistGradientBoosting, LightGBM, CatBoost and XGBoost baselines. Recipes,
+train-only baseline adapters and versions were those of the earlier
+[blind protocol](#blind-methodology-and-limits): boosting retained six threads,
+accessories at most four, and public SafeBlend retained its one-thread default.
+One heavy process ran at a time. Two separately counted deterministic refits checked
+observer parity and persistence; they are additional to the 270 primary jobs.
+
+Frozen protocol SHA256:
+
+```text
+349a025c290168c06e4a58ec5be6d0232e5e8aaa73bd57cd12cb2c941ab1b665
+```
+
+Raw-results freeze receipt SHA256:
+
+```text
+059739d004179c47e5058885d1f53325aa5b63a0b78b170b60eac35044c8c107
+```
+
+### Independent quality and downside
+
+The **preregistered external leader** is the best RMSE among the four fixed
+baselines **per evaluation unit**. Its identity is determined after evaluation;
+it is a descriptive reference, not a test-selected deployable model or an input
+to SafeBlend selection. This differs from the earlier blind **per-source** leader.
+Relative RMSE delta is `100 × (candidate / leader − 1)`; positive means worse.
+Paired unit deltas are reduced by within-source median, then equal-source median.
+
+Absolute RMSE values below are within-source medians in each target's natural
+units; the leader column summarizes the per-unit leader. The paired-delta column
+is **not** a ratio of these separately summarized RMSE columns. Target scales
+must not be pooled. Each source has five complete conditions.
+
+| Source / target | Split | Base RMSE | SafeBlend RMSE | Leader RMSE | SafeBlend paired median delta |
+| --- | --- | ---: | ---: | ---: | ---: |
+| UCI859 / measured execution time | TIME | 0.187011 | 0.184826 | 0.138509 | +0.14% |
+| SteelStrength, Figshare 7250453 / yield strength (MPa) | GROUP | 187.891 | 181.137 | 117.802 | +29.98% |
+| CitrineThermal, Figshare 7231202 / thermal conductivity (W/mK) | GROUP | 42.8523 | 41.625 | 39.092 | +6.48% |
+| Rifugio Boe, Zenodo 17473383 / room temperature (°C) | TIME | 4.49584 | 4.45897 | 4.35791 | +4.62% |
+| Cyprus PV, Zenodo 17775544 / inverter power (W) | TIME | 1161.68 | 1201.06 | 1036.39 | +6.69% |
+| BLS QCEW 2024 / weekly industry wage (USD) | GROUP | 727.922 | 723.998 | 817.766 | −11.47% |
+| NOAA NDBC 46042 / significant wave height (m) | TIME | 0.776111 | 0.764086 | 0.698192 | +6.55% |
+| BigSolDB nonaqueous, Zenodo 22648301 / mole-fraction solubility | GROUP | 0.106517 | 0.106417 | 0.107372 | −0.55% |
+| WeldFatigue, Figshare 29254265 / fatigue life (cycles) | GROUP | 9.7621e+07 | 9.76339e+07 | 9.97056e+07 | +0.15% |
+
+| Equal-source aggregate | Base | SafeBlend |
+| --- | ---: | ---: |
+| Median relative RMSE delta vs external leader | +4.65% | +4.62% |
+| Median serialized-size ratio vs external leader | 0.110× | 0.129× |
+
+SafeBlend's dataset wins/ties/losses were **2/0/7**; only **2/9** source medians
+were favorable. Its diagnostic source-bootstrap 95% median-delta interval was
+**[−0.55%, +6.69%]**, from 10,000 draws with seed 785299. The median RMSE improvement
+versus standalone Base was only **0.094%**. These results do not confirm a predictive
+quality advantage. Repeated group/time conditions are not 45 independent datasets.
+
+The **worst dataset mean degradation was +30.85%** (SteelStrength). Its paired
+median above is a different statistic. The **worst split was +116.29%**, UCI859
+condition 0 versus CatBoost. All fits succeeded; severe predictive downside is
+not a technical failure and is not hidden by successful execution or the medians.
+The frozen catastrophic flag used source-mean degradation above 50% or model/
+nonfinite failures; its absence does not imply absence of severe split downside.
+
+Group-source median RMSE delta was **+0.15%** (five sources); time-source median
+was **+5.58%** (four). These observed blocks do not define a validated deployment
+niche or a rule for choosing SafeBlend before results are known.
+
+### Independent compactness and systems
+
+All ratios are **SafeBlend / the same per-unit RMSE leader**, aggregated within
+source then across sources. They are not SafeBlend/Base ratios. Warm latency
+includes raw-input preprocessing through the complete fitted pipeline.
+
+| Measure | Source-balanced median ratio |
+| --- | ---: |
+| Serialized model size | 0.129× |
+| Reachable deep retained memory | 3.368× |
+| Fit time | 1.210× |
+| Warm inference latency, batch 1 | 0.765× |
+| Warm inference latency, batch 32 | 0.765× |
+| Warm inference latency, batch 1k | 0.684× |
+| Warm inference latency, batch 100k | 0.807× |
+| Sampled process-tree peak RSS | 0.980× |
+
+**Serialized compactness is independently replicated; a deep-RAM advantage is
+not demonstrated.** Deep accounting covers reachable Python/NumPy/pandas objects
+and omits opaque native baseline heaps, so its ratio is an incomplete RAM
+comparison. Process-tree peak RSS includes inputs and runtime state, not only the
+model; the SafeBlend source-median peak was 179,916,800 bytes. Neither measure is
+interchangeable with serialized size. Base was smaller than SafeBlend on this panel.
+
+SafeBlend showed faster inference than the quality leader on this tested panel,
+but was **not a fit-speed specialist**. The environment was one Windows host,
+AMD Ryzen 7 255, 32 GB RAM, Python 3.12.14 and the package versions listed in the
+blind methodology. Timing used 20 alternating repetitions per batch; cache pressure
+was a proxy, and oversized batches cycled heldout rows. Ratios are **hardware- and
+protocol-specific**; independent-hardware replication is not established.
+
+### Independent safety and positioning
+
+Internal validation selected **32 BLEND / 13 BASE** branches. There were **9 harmful
+admissions out of 32 BLEND selections (28.125%)**: test RMSE exceeded that of the
+retained internal Base. Six of the 13 rejected blends would have improved test
+RMSE; these are diagnostic counterfactuals, never used for selection. The internal
+Base has a different training/validation split from standalone Base. Validation
+fallback reduces risk but **does not eliminate harmful admissions on unseen domains**.
+
+The verdict is **COMPACT_REGRESSION_SPECIALIST_CONFIRMED**: serialized ratio ≤0.35×
+and median RMSE degradation ≤5% passed. The strong compact gate (≤0.20× and ≤3%)
+failed, as did the quality-specialist gate (median delta ≤0, at least 60% nonworse
+sources, improvement over Base, worst dataset mean ≤5%, no catastrophic failure).
+SafeBlend offers a strong model-size and inference-efficiency trade-off on this
+panel, but its predictive quality was weaker than the preregistered external leader.
+It remains an opt-in, experimental **compact regression specialist**.
+
+**QUALITY DID NOT REPLICATE**: the earlier five-dataset blind median was **−0.67%
+RMSE**, versus **+4.62%** here. **COMPACTNESS DID REPLICATE: 0.120× → 0.129×**
+serialized size. The earlier evidence remains below, with its own uncertainty and
+different leader rule; the panels are not pooled. This later qualification takes
+precedence for current SafeBlend positioning.
+
+NEW_EXTERNAL remains conditional on recoverable history, with missing early
+catalogs. Frozen outer group/time isolation and TRAIN-only preprocessing were
+preserved; unchanged internal validation is not group/time-aware. Temporal sources
+evaluate future observations of known hosts/sites, not unseen-site or operational
+forecasting performance. Original feature exclusions, missing values and natural
+target tails were retained. No algorithm, safety rule, public default or version
+changed as a result of this qualification.
 
 ## Frozen Blind External Benchmark
+
+This earlier panel remains primary for binary/multiclass. Its five-source
+SafeBlend quality advantage did not replicate in the later independent
+qualification above; serialized compactness did. Historical gates and values
+below describe only this earlier protocol.
 
 Dataset selection preceded metrics, and the protocol, source/row contracts,
 splits, seeds, public constructors, baseline presets and resource limits were
@@ -39,7 +187,7 @@ median. They are not ratios of pooled raw losses.
 | Task | Model | Datasets | Median primary-loss delta | Median serialized ratio | Interpretation |
 | --- | --- | ---: | ---: | ---: | --- |
 | Regression | CodAdaptRegressor Base | 5 | +2.412976% RMSE | 0.125392× | Slightly behind the reference on median RMSE |
-| Regression | SafeBlendRegressor | 5 | −0.665536% RMSE | 0.120452× | Promising compact regression trade-off; uncertainty remains |
+| Regression | SafeBlendRegressor | 5 | −0.665536% RMSE | 0.120452× | Earlier quality advantage did not replicate; compactness did |
 | Binary | CodAdaptClassifier | 6 | +9.364320% logloss | 0.111256× | Current blind quality gap |
 | Multiclass | CodAdaptClassifier | 5 | +22.031308% logloss | 0.146041× | Current blind quality gap despite technical Shared-OVR validation |
 
@@ -50,7 +198,7 @@ primary loss among HistGradientBoosting, LightGBM, CatBoost and XGBoost. Ties wi
 after evaluation. It is a descriptive benchmark reference and may differ by dataset;
 it was not used to tune or choose CodAdapt predictions. It is not necessarily HGB.
 
-SafeBlend passed both the compact and strong compact **regression** gates, with
+On this earlier panel, SafeBlend passed both the compact and strong compact **regression** gates, with
 **n=5 datasets and a 95% confidence interval including zero**. Its relative RMSE
 delta CI is **[−4.661698%, +27.999900%]**. The corresponding gain interval also
 includes zero; a general regression advantage is not established. Base regression's
@@ -60,7 +208,8 @@ The compact gate requires median serialized ratio ≤0.35, median relative loss
 degradation ≤5%, at least 70% of sources within 10%, and competitiveness in every
 covered task. The strong gate requires ≤0.25, ≤3%, at least 75% within 5%, and the
 same task condition. Base covers all 16 sources and **fails both overall gates**;
-SafeBlend is a separate five-source regression candidate and **passes both**.
+SafeBlend was a separate five-source regression candidate and **passed both**
+under this earlier protocol, not under the later independent quality gates.
 Task competitiveness requires median relative loss degradation ≤10%, at least
 half of sources within 10%, and a candidate failure fraction ≤10%. Coverage must
 reach 95% overall and 90% in each task. Missing comparisons retain the frozen
@@ -336,7 +485,8 @@ transfer on this panel, not universal workload or independent-hardware guarantee
 ## External leakage-audited product qualification
 
 This earlier pilot is secondary/historical evidence. Current product positioning
-uses the [frozen blind panel](#frozen-blind-external-benchmark) above; the pilot's
+uses the [independent SafeBlend regression qualification](#independent-safeblend-regression-qualification)
+and the [blind binary/multiclass evidence](#frozen-blind-external-benchmark) above; the pilot's
 two-source binary estimate is not the current headline. Its results are retained
 without changing their original HGB reference or aggregation.
 
@@ -442,11 +592,3 @@ configuration**. The full fit was not authorized under that guard; **no actual
 out-of-memory event or Covtype fit peak was measured**. This is a tested deployment
 boundary, not a predictive loss, and Covtype is not one of this six-dataset pilot's
 evaluation units. The guard and predictive implementation are unchanged.
-
-## Additional author-run reproducibility support
-
-The [exploratory repeated-CV report](benchmarks/reproducibility/BENCHMARK_CV_REPORT.md), [runner](benchmarks/reproducibility/benchmark_codadapt_cv.py), [240 archived result rows](benchmarks/reproducibility/benchmark_cv_full.csv) and [historical metadata](benchmarks/reproducibility/benchmark_cv_full.json) are retained as intentional public support. This four-small-dataset, author-run experiment is secondary/historical evidence, not independent validation and not a replacement for the frozen blind panel. Its original run script hash is distinct from the formatted/import-sorted supplied runner; see the report's provenance note. No benchmark was rerun here.
-
-## Exact SafeBlend callback engineering measurement
-
-The later exact callback optimization removes redundant diagnostic gradient computation. The paired six-case engineering panel reported **43.55%** lower Rational fit time and **27.27%** lower total SafeBlend fit time, with serialized/deep memory and inference effectively unchanged. The qualification replay preserved coefficients, trace, branch decisions and predictions bitwise. These panel-specific implementation measurements do not change the frozen scientific recipe, blind quality figures or hardware/workload caveats. Round 78's approximately 4.13× Base fit ratio predates this callback optimization. See the [SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md).

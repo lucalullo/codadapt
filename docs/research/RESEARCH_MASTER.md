@@ -1,6 +1,3 @@
-> **Latest release-documentation checkpoint — FINAL_PUBLIC_PAYLOAD_RECONCILIATION.**
-> Staged payload only, 2026-10-11: retain latest A research history and blind disclosures, preserve verified B benchmark support and exact-callback notes. Release handoff RELEASE_HANDOFF_READY; earlier ZIP comparison PAYLOAD_IDENTITY_MISMATCH. Runtime/tests unchanged; version 0.2.0rc2 / round 78. No final public commit, remote qualification or publication is asserted. Original source memories remain unchanged. Earlier banners are historical.
-
 > **Latest strategic checkpoint — POST_R78_POST_HARDENING_STRATEGIC_CHECKPOINT: PRODUCT_DEVELOPMENT_PREFERRED.**
 > Primary: RC2_RELEASE_EVIDENCE_AND_PERSISTENCE_CONTRACT. Technical hardening PASS; bounded evidence/persistence handoff before manual release review. Working rc2 differs from local HEAD0.1.0; remote CI PASS is user-reported. Version0.2.0rc2 / round78 unchanged. Earlier banners are historical.
 
@@ -13947,10 +13944,246 @@ Top-level engineering label was stale relative to the completed hardening event;
 Full25-point report: `research_private/POST_HARDENING_STRATEGIC_CHECKPOINT.md`. Audit: `research_private/post_hardening_strategy/final_audit.json`. STOP after this audit; proposed next task not executed.
 
 
-## POST_R78_FINAL_PUBLIC_PAYLOAD_RECONCILIATION — 2026-10-11
+## POST_R78_SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION
 
-This is release-documentation preparation, not Round 79. The complete Round 1–78 and post-R78 A history remains authoritative; B's older memory snapshot is not substituted. The release/persistence handoff completed with RELEASE_HANDOFF_READY, scoped to a local auditable handoff. Its qualified A payload was 62057a02b1cf69fcfd58b29bd93b35f116dfea82ba9b400888a169ab638a9982. The supplied GitHub ZIP represented archived HEAD 0eb30ee7b3d22b3b4161e99d84becdc76c9b6665, with identical runtime/tests but older blind disclosures and research memory, plus four intentional exploratory-CV support files.
+Completed 2026-10-11; not Round 79. **INSUFFICIENT_INDEPENDENT_REGRESSION_DATA**.
+Phase A COMPLETE, Phase B NOT_STARTED: 51 archived candidate sources; 1 admissible
+NEW_EXTERNAL (UCI859, unused blind backup), below minimum 8. Five existing forward
+split/data hashes reverified, no model jobs executed. 28 overlap exclusions
+(26 science / 2 ambiguous), 13 provenance/local availability, 9 leakage/target-contract
+issues. No unresolved source is silently promoted to meet quota. 170032 recoverable
+history entries reviewed; missing early catalogs, especially R17/R18, remain an
+explicit novelty limitation. Public-only downloads not attempted under current
+no-remote instruction. Insufficient local data is not an algorithm failure.
 
-The recommended separate payload merges current blind positioning (PRODUCT_POSITION_MIXED) with useful B deployment/optimization prose, and preserves CSV/metadata as historical support, not independent confirmation. The 468 PASS / 4 known XFAIL / 0 FAIL receipt is reusable only because src/tests are byte-identical. No scientific fits, solves or benchmark reruns were performed. User-confirmed green remote CI belongs to the supplied B snapshot, not to this new documentary digest.
+Canonical working 0.2.0rc2 payload initial SHA256: 62057a02b1cf69fcfd58b29bd93b35f116dfea82ba9b400888a169ab638a9982;
+local HEAD: 15a70c7b6923e5979b4617a57bbdf43efbeea110, branch main. Remote main/CI green
+is USER_REPORTED, not verified. Earlier staged reconciliation/handoff files were
+not substituted for this canonical source. Public scientific defaults, SafeBlend
+alpha 0.30 / Rational16 / ridge 0.001 / maxiter 100 / internal 25% validation / fallback unchanged.
+Blind boosting presets remain 6 threads; accessories <=4. No fit/solve/prediction,
+systems benchmark, tuning, new architecture or remote operation. No commit/push/tag/
+release. Public core/API/compiler/default/product docs/version unchanged.
 
-Final file/aggregate identities live in the external handoff manifest and JSON, avoiding a self-referential payload hash. A qualified public commit, fresh distribution identities and any publication remain manual future steps. No source original, version, default, API, algorithm, tag or release changed. last_completed_round remains 78.
+Results/system/safety/Pareto/failure CSVs have 0 observations, not zero effects.
+New persistence/determinism and quality/compactness gates NOT_EVALUATED. Existing
+public 468 PASS / 4 known XFAIL receipt reused with 37 runtime/test hashes; private data-gate
+tests/Ruff/replay verified in final_audit.json. Safety's user-named useful rejection
+means missed benefit; internal Base and standalone Base remain distinct.
+
+Previous blind 5-source −0.665536% RMSE / 0.120452x serialized, CI includes zero, is preserved,
+not pooled or newly replicated. No stronger product claim/docs update justified.
+Numbered 1–78 / state JSON / privacy validated; last_completed_round = 78 remains.
+Report: research_private/SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION.md.
+STOP. Separately authorize a data-only follow-up or supply local sources to reach
+>=8 independent audited regression datasets before fits; prefer 10–12 plus 2 backups.
+No recipe rescue or Round 79.
+
+
+## POST_R78_FINAL_INDEPENDENT_REGRESSION_DATA_SOURCE_EXPANSION
+
+Completed 2026-10-11T20:09:22.772220+00:00; data qualification only, not Round79.
+**INDEPENDENT_REGRESSION_PANEL_READY**:19 new candidates,17 conditionally NEW_EXTERNAL,
+8 newly admitted plus existing UCI859=9 total. Eight-source primary panel plus1
+backup(BigSolDB), fixed by candidate registration order, not model outcomes.
+Early stop at8 new admissions, gate remains>=8. No previous51 source reopened.
+Exclusions:2 overlap(1 scientifically seen NHANES,1 ambiguous quake lineage),
+6 provenance/access/rights,3 target/minimum-size contract. No extra leakage-only
+reject; hazardous covariates excluded under frozen allowlists.10 data-source
+payloads acquired,8 qualified;155-row catalyst workbook and NASA1000-row legacy
+slice excluded. Primary public metadata/download authorization is new for this
+task; previous no-download stop remains valid historical evidence. No Git remote.
+
+New sources:SteelStrength,CitrineThermalConductivity,RifugioBoe,CyprusPV,
+WeldFatigue,BLSQCEW2024,NOAA_NDBC46042_2023,BigSolDB_nonwater. Five group and3 time
+contracts; all40 new split indices/row IDs/group/time keys/hash receipts frozen,
+plus5 valid previous UCI859 forward splits reused. Time contracts test future
+observations of known sites,24h purge; no unseen-site/operational-weather forecast
+claim. Group components isolate publications/compounds where available. Native
+categorical identities remain categories; no descriptor or representation change.
+Missing early catalogs(R17/R18 especially) remain explicit:NEW_EXTERNAL is
+conditional on recoverable history, not absolute proof.170068 identity entries,
+0 scan errors; self-generated receipts and a numeric46042 row-index false hit
+excluded. Prior protocol/audit/CSV/cache hashes preserved; appended report's
+original version archived to keep the prior final-audit binding verifiable.
+
+Data gate PASS does NOT confirm SafeBlend quality. Scientific status remains
+PROMISING_BUT_NOT_INDEPENDENTLY_CONFIRMED. Fits=0,solves=0,predictions=0,
+predictive metrics=0; qualification NOT_STARTED/execution_authorized=false.
+Public core/API/default/recipe/preprocessing/version/product docs unchanged;
+only these research-memory files updated. Source-gate replay/private tests/Ruff,
+JSON/index continuity/privacy verified in final_expansion_audit.json. Public
+468PASS/4knownXFAIL evidence reused under37 unchanged code/test hashes, no new fit.
+
+Report:research_private/SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION.md.
+STOP. Separate authorized task may freeze an execution manifest using this
+panel and unchanged original presets(6-thread boosting); no automatic fits,
+release,tag,push,remote Git operation or Round79.
+
+
+## POST_R78_SAFEBLEND_INDEPENDENT_REGRESSION_EXECUTION
+
+{
+  "status": "COMPLETE_FROZEN_INDEPENDENT_QUALIFICATION",
+  "completed_at": "2026-10-12T06:49:07.700901+00:00",
+  "last_completed_round": 78,
+  "public_version": "0.2.0rc2",
+  "verdict": "COMPACT_REGRESSION_SPECIALIST_CONFIRMED",
+  "protocol_sha256": "349a025c290168c06e4a58ec5be6d0232e5e8aaa73bd57cd12cb2c941ab1b665",
+  "results_freeze_sha256": "059739d004179c47e5058885d1f53325aa5b63a0b78b170b60eac35044c8c107",
+  "primary_sources": 9,
+  "splits": 45,
+  "primary_jobs": 270,
+  "status_counts": {
+    "SUCCESS": 270
+  },
+  "ancillary_determinism_jobs": 2,
+  "quality_replication": false,
+  "compactness_replication": true,
+  "gates": {
+    "coverage": true,
+    "quality": false,
+    "strong_quality": false,
+    "compact": true,
+    "strong_compact": false,
+    "catastrophic": false
+  },
+  "SafeBlend": {
+    "delta_vs_leader": 0.046160632825270616,
+    "delta_vs_standalone_base": -0.0009371984457449603,
+    "serialized_ratio": 0.12900408285289713,
+    "deep_ratio": 3.367615727290335,
+    "fit_ratio": 1.2097880292532992,
+    "peak_rss_ratio": 0.9799321711705874,
+    "peak_rss_bytes": 179916800.0,
+    "batch1_ratio": 0.7652910268836404,
+    "batch32_ratio": 0.7647486741446473,
+    "batch1000_ratio": 0.6839307166043298,
+    "batch100000_ratio": 0.806903138840544,
+    "pareto": {
+      "quality_pareto": 3,
+      "size_pareto": 0,
+      "quality_size_pareto": 7
+    }
+  },
+  "Base": {
+    "delta_vs_leader": 0.04651705334841576,
+    "delta_vs_standalone_base": 0.0,
+    "serialized_ratio": 0.10995598836104166,
+    "deep_ratio": 2.9951578539608756,
+    "fit_ratio": 0.16101547704551228,
+    "peak_rss_ratio": 0.9384225092250923,
+    "peak_rss_bytes": 173953024.0,
+    "batch1_ratio": 0.43772738091190366,
+    "batch32_ratio": 0.43719446901624837,
+    "batch1000_ratio": 0.4057683019388671,
+    "batch100000_ratio": 0.31328423744715433,
+    "pareto": {
+      "quality_pareto": 1,
+      "size_pareto": 9,
+      "quality_size_pareto": 9
+    }
+  },
+  "CI95": [
+    -0.005519236913061802,
+    0.06691893607089337
+  ],
+  "WTL": {
+    "win": 2,
+    "tie": 0,
+    "loss": 7,
+    "missing": 0
+  },
+  "group_time": {
+    "GROUP_SPLIT": {
+      "sources": 5,
+      "median_delta": 0.0014562622165724326,
+      "median_serialized_ratio": 0.18742527041681728
+    },
+    "TIME_SPLIT": {
+      "sources": 4,
+      "median_delta": 0.055822679149236124,
+      "median_serialized_ratio": 0.12086588004970175
+    }
+  },
+  "worst_dataset": "figshare_7250453",
+  "worst_dataset_mean_delta": 0.30845435424817874,
+  "branch_counts": {
+    "BLEND": 32,
+    "BASE": 13
+  },
+  "harmful_admissions": 9,
+  "useful_rejections": 6,
+  "public_docs_update_justified": true,
+  "public_core_unchanged": true,
+  "report": "research_private/SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION.md",
+  "audit": "research_private/safeblend_independent/execution/qualification_final_audit.json",
+  "next_step": "STOP. Separate factual documentation review; no recipe/tuning/architecture/release/remote or Round79.",
+  "round79": false
+}
+
+Dataset-first results and limitations in the private report. The9 sources/45 original group/time splits are unchanged; current explicit instruction makes all9 primary. No intermediate aggregate analysis; raw terminal receipts frozen first. Per-unit best-of-four external comparator differs from previous blind per-source leader; no pooling. Safety telemetry is relative to internal Base; standalone Base distinct. Observer-only retention never changes admission; two unobserved deterministic refits pass. Missing early catalogs condition source novelty; inner validation remains train-only but not group/time-aware. Public468PASS/4knownXFAIL evidence reused through37 identical code/test hashes; private tests/Ruff/replay audited. Protected public payload and product docs unchanged; memory only updated. Numbered1–78 continuous and historical incomplete remainder retained. No commit/remote/tag/release or Round79. STOP.
+
+Final qualification clarification: serialized compactness confirmed; quality-specialist gate NOT confirmed.
+{
+  "quality_specialist_confirmed": false,
+  "compact_specialist_confirmed": true,
+  "strong_compactness_confirmed": false,
+  "median_RMSE_degradation_percent": 4.616063282527062,
+  "worst_split_degradation_percent": 116.28548403693426,
+  "deep_memory_advantage_confirmed": false,
+  "deep_memory_caveat": "Opaque native baseline heaps are absent from reachable-Python deep bytes; serialized compactness is not a deep-RAM guarantee",
+  "precision_sensitivity": {
+    "scope": "POST_FREEZE_NUMERICAL_SENSITIVITY_ONLY",
+    "reason": "sklearn1.8 metric validation can retain float32 XGBoost prediction precision; original blind helper explicitly cast prediction to float64. Primary frozen results are not rewritten. Audit quantifies roundoff and gate/leader stability using the original float64 arithmetic.",
+    "new_fits": 0,
+    "new_predictions": 0,
+    "raw_freeze_unchanged": true,
+    "prediction_dtypes": {
+      "float64": 225,
+      "float32": 45
+    },
+    "max_absolute_RMSE_relative_rounding_difference": 6.060683033215497e-08,
+    "leader_changes": 0,
+    "float64_source_median_delta": 0.04616063282527061,
+    "primary_source_median_delta": 0.046160632825270616,
+    "float64_WTL": {
+      "win": 2,
+      "tie": 0,
+      "loss": 7
+    },
+    "float64_worst_source_mean_delta": 0.30845435424817874,
+    "compact_gate_stable": true,
+    "quality_gate_stable": true
+  },
+  "scientific_drift": false,
+  "public_integration_or_default_change": false
+}
+No new fit/solve/prediction; float64 cached sensitivity leaves leaders/gates unchanged and raw freeze intact. Source worst mean+30.845435%, split worst+116.285484%; do not hide downside. Deep ratio3.367616 is not evidence of lower deep RAM. Stop; noRound79 or public product-doc/runtime changes.
+
+
+## POST_R78_SAFEBLEND_INDEPENDENT_PUBLIC_DOCS
+
+Completed 2026-10-12. **SAFEBLEND_INDEPENDENT_DOCS_READY**. Documentation-only,
+not Round79; last_completed_round=78 and version0.2.0rc2 unchanged. The nine-source
+independent qualification takes precedence for SafeBlend positioning: compact
+regression specialist, not a predictive quality leader. RMSE delta+4.62% versus
+external leader (Base+4.65%), W/T/L2/0/7; worst-source mean+30.85%, worst-split
++116.29%. Serialized ratio0.129x independently replicates small artifacts; no
+deep-RAM advantage demonstrated. Fit1.210x; warm batch1/32/1k/100k latency
+0.765/0.765/0.684/0.807x, one-host protocol-specific. BLEND32/BASE13, harmful
+admissions9/32 relative to internal Base; fallback is not a no-harm guarantee.
+Earlier five-source blind -0.67% RMSE remains historical, did not replicate as a
+quality advantage; serialized compactness0.120x ->0.129x did. Per-source old and
+per-unit new leaders differ; panels are not pooled. Blind binary/multiclass
+evidence and all frozen qualification artifacts remain unchanged.
+
+README headings preserved; scoped edits to README, BENCHMARKS, current-working-tree
+CHANGELOG section and docs/SAFE_BLEND_EXPERIMENTAL.md. No src/tests/API/compiler/
+default/version change. Offline numeric/Markdown/local-link/version/hash checks
+PASS; public pytest468PASS/4knownXFAIL receipt reused under37 unchanged code/test
+hashes; RuffPASS. All previous STATE values and numbered1-78 records preserved.
+Private audit:research_private/SAFEBLEND_INDEPENDENT_DOCS_AUDIT.md; machine checks
+in research_private/safeblend_independent/docs_update/final_audit.json.
+No new fit/solve/prediction/benchmark, remote operation, commit, tag or release.
+STOP; no Round79.

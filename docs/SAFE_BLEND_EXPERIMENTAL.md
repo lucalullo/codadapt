@@ -84,15 +84,46 @@ Cross-version bitwise fitting equivalence is not guaranteed.
 
 ## Confirmed evidence and limits
 
-The [frozen blind external benchmark](../BENCHMARKS.md#frozen-blind-external-benchmark)
-is the primary evidence for current product positioning. On **five NEW_EXTERNAL
-regression datasets**, SafeBlend's median relative RMSE delta was **−0.67%** versus
-the preregistered baseline leader, with median serialized size **0.120×** that
-reference. Both preregistered regression quality/size gates passed. The **95% CI
-includes zero** (relative RMSE delta **[−4.66%, +28.00%]**), so this is a promising
-compact regression trade-off, not general superiority. Hardware, protocol and
-domain matter; NEW_EXTERNAL is conditional on recoverable historical catalogs.
-The library's overall blind verdict is **PRODUCT_POSITION_MIXED**.
+The [independent SafeBlend regression qualification](../BENCHMARKS.md#independent-safeblend-regression-qualification)
+is the primary evidence for current SafeBlend positioning: **nine NEW_EXTERNAL
+datasets, 45 frozen splits and 270/270 SUCCESS jobs**, with zero tuning. Five
+sources used group splits (25 conditions); four used forward-time splits (20).
+The preregistered external leader is the best RMSE among fixed HGB, LightGBM,
+CatBoost and XGBoost baselines separately per evaluation unit. Paired deltas are
+reduced within each source before taking the equal-source median.
+
+SafeBlend's median RMSE delta was **+4.62%** (worse than the leader), versus
+**+4.65%** for standalone Base; dataset wins/ties/losses were **2/0/7**. The
+diagnostic source-bootstrap 95% CI was **[−0.55%, +6.69%]**. Worst dataset mean
+degradation was **+30.85%** (SteelStrength), and the worst split was **+116.29%**
+(UCI859). Predictive quality leadership was **not confirmed**.
+
+The verdict **COMPACT_REGRESSION_SPECIALIST_CONFIRMED** means the frozen compact
+gate passed: median serialized size **0.129×** the leader and median RMSE
+degradation within 5%. The strong compact gate and quality-specialist gates failed.
+This is an experimental **compact regression specialist**, not a general accuracy
+advantage. A deep-RAM advantage was **not demonstrated**; reachable Python memory
+omits opaque native baseline heaps, so serialized size is not a RAM guarantee.
+
+Fit cost was **1.210×** the leader; SafeBlend is not a fit-speed specialist. Warm
+raw-input inference latency ratios for batches 1/32/1k/100k were
+**0.765× / 0.765× / 0.684× / 0.807×**. These describe one Windows Ryzen 7 255 host
+and the frozen protocol, not a hardware-independent speed guarantee.
+
+Validation selected **32 BLEND / 13 BASE** branches. **9/32 BLEND** admissions
+(28.125%) worsened test RMSE relative to the retained internal Base. Six rejected
+blends would have improved test RMSE; these are diagnostic counterfactuals, never
+selection inputs. The internal Base differs from standalone Base. Validation
+fallback reduces risk but does not eliminate harmful admissions on unseen domains.
+Outer group/time isolation was preserved, while the unchanged internal validation
+is TRAIN-only and is not group/time-aware.
+
+The earlier [five-dataset blind panel](../BENCHMARKS.md#frozen-blind-external-benchmark)
+measured **−0.67% RMSE** and **0.120×** serialized size; its 95% CI included zero.
+**Quality did not replicate** in the larger independent qualification;
+**serialized compactness did replicate** (0.120× → 0.129×). The historical blind
+reference was fixed per source, unlike the new per-unit leader; panels are not
+pooled. NEW_EXTERNAL remains conditional on recoverable historical catalogs.
 
 Historical research evidence remains separate: Round 78 froze the recipe before evaluating **18 new real regression datasets ×
 5 splits**. The median dataset RMSE gain versus Base was **+2.061%**, with a
@@ -101,25 +132,20 @@ dataset-bootstrap 95% CI of **[+0.403%, +4.695%]** and dataset wins/ties/losses
 was **−6.157%**. Validation fallback reduces observed downside but **does not
 guarantee improvement** on new data.
 
-The inherited IID row protocol and recoverable historical novelty audit limit
-these claims; temporal/grouped extrapolation and independent hardware remain
-unvalidated. These are panel-specific results, not universal performance bounds.
+The historical Round 78 IID row protocol and recoverable novelty audit limit
+those research claims. The later independent qualification includes the frozen
+group/time contracts above, but does not establish general temporal/grouped
+competitiveness, unseen-site or operational forecasting performance. Independent
+hardware remains unvalidated. These are panel-specific results, not universal bounds.
 
 Round 78 local medians versus Base were approximately **4.13× fit time**,
 **1.09× serialized size**, **1.08× deep retained memory** and **1.19–1.23× warm
-raw-input inference latency** for batches 1, 32, 1k and 100k. Those fit timings
-predate the later exact callback optimization. The current implementation reuses
-the already evaluated objective value for diagnostic tracing instead of recomputing
-the full gradient. Qualification preserved coefficients, trace, iterations, branch
-decisions and predictions bitwise-identically across the sealed replay. On a paired
-six-case engineering panel, Rational fit time fell by **43.55%** and total SafeBlend
-fit time by **27.27%**; serialized/deep memory and inference were effectively
-unchanged. These measurements are panel-specific, not API latency guarantees.
-
-The 100k workloads repeated heldout rows. Fit includes both native estimators; fallback does not avoid Rational training cost. Public schema validation adds overhead. These engineering results are separate from the primary blind performance table above.
+raw-input inference latency** for batches 1, 32, 1k and 100k. The 100k workloads
+repeated heldout rows. Fit includes both native estimators; the fallback branch
+does not avoid Rational's training cost. Public input validation adds overhead;
+these research-runtime ratios are reference measurements, not API latency promises.
 
 The public port is checked against all 90 sealed cases for branch, Base, Rational,
-blend and final predictions and RMSE. Local package qualification passed Python
-3.10–3.14. A remote CI receipt for an earlier snapshot does not identify this
-reconciled documentation payload; its final manifest is recorded separately. SafeBlend remains
+blend and final predictions and RMSE. Local package checks and prepared Python
+3.10–3.14 CI are distinct from an actual remote CI run. SafeBlend remains
 experimental, opt-in and regression-only.

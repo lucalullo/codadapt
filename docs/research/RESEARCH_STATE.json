@@ -78470,32 +78470,276 @@
     "next_step": "Separately authorize bounded rc2 release evidence/persistence handoff; no execution by this audit. Then human experimental-release review; optional frozen regression qualification. No Round79."
   },
   "current_strategic_checkpoint": "POST_R78_POST_HARDENING_STRATEGIC_CHECKPOINT",
-  "POST_R78_FINAL_PUBLIC_PAYLOAD_RECONCILIATION": {
-    "activity": "FINAL_PUBLIC_PAYLOAD_RECONCILIATION_NOT_A_ROUND",
-    "date": "2026-10-11",
-    "status": "COMPLETE_LOCAL_DOCUMENTARY_RECONCILIATION",
+  "POST_R78_SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION": {
+    "activity": "DATA_QUALIFICATION_NOT_ROUND79",
+    "phase_a": "COMPLETE",
+    "phase_b": "NOT_STARTED_MANDATORY_MINIMUM_SOURCE_GATE",
+    "verdict": "INSUFFICIENT_INDEPENDENT_REGRESSION_DATA",
     "last_completed_round": 78,
-    "public_version": "0.2.0rc2",
-    "release_handoff_verdict": "RELEASE_HANDOFF_READY",
-    "qualified_source_a_payload": "62057a02b1cf69fcfd58b29bd93b35f116dfea82ba9b400888a169ab638a9982",
-    "source_b_payload": "71b6b8f8b7b296e5c5ca3e12b3f2cbba7fca1866daabca50da37381129c0a55c",
-    "source_b_archived_head": "0eb30ee7b3d22b3b4161e99d84becdc76c9b6665",
-    "source_b_relation": "Runtime/tests match; four public docs and two memories differ; four benchmark support extras",
-    "source_b_bytes_recovered_from_hash_verified_local_cache": "C:\\Users\\lucal\\Documents\\GitHub\\codadapt",
-    "source_b_file_hashes_verified": 65,
-    "ci_evidence": "USER_CONFIRMED_REMOTE_CI for B; reconciled payload not remotely checked",
-    "public_test_receipt": "468 PASS / 4 known XFAIL / 0 FAIL; reusable for unchanged src/tests only",
-    "memory_authority": "Latest A history retained; release/handoff/reconciliation note added only to staged copy",
-    "final_identity_location": "External final_public_manifest.csv and final_public_payload.json; no self-referential embedded digest",
-    "scientific_drift": false,
+    "version": "0.2.0rc2",
+    "candidate_sources": 51,
+    "admissible_new_external": 1,
+    "minimum_required": 8,
+    "source": "UCI859 unused prior blind backup; 5 forward units verified, 0 executed",
+    "exclusion_counts": {
+      "PROVENANCE": 13,
+      "LEAKAGE_OR_TARGET_CONTRACT": 9,
+      "OVERLAP": 28,
+      "NONE": 1
+    },
+    "history_counts": {
+      "NEW_EXTERNAL": 23,
+      "SEEN_FOR_SCIENCE": 26,
+      "AMBIGUOUS": 2
+    },
     "new_fits": 0,
     "new_solves": 0,
+    "new_predictions": 0,
     "new_benchmarks": 0,
-    "source_originals_changed": false,
-    "remote_operations": false,
-    "commit_push_pull_tag_release": false,
-    "round79_started": false,
-    "next_step": "Human review/manual copy of the declared payload; future commit/CI/distribution identity remains owner-controlled"
+    "remote_operations": 0,
+    "scientific_drift": false,
+    "public_core_changed": false,
+    "public_docs_update_justified": false,
+    "round79": false,
+    "source_head": "15a70c7b6923e5979b4617a57bbdf43efbeea110",
+    "source_payload_sha256": "62057a02b1cf69fcfd58b29bd93b35f116dfea82ba9b400888a169ab638a9982",
+    "remote_ci_status": "PASS_USER_REPORTED_NOT_REMOTELY_VERIFIED",
+    "evidence": "DATA_COVERAGE_STOP_NOT_A_PREDICTIVE_FAILURE",
+    "previous_blind": "Five sources; −0.665536% RMSE, 0.120452x serialized, CI includes zero; unchanged, not pooled",
+    "report": "research_private/SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION.md",
+    "audit": "research_private/safeblend_independent/final_audit.json",
+    "next_step": "STOP. Separately authorize data-only acquisition or provide local data for >=7 further independent auditable regression sources; freeze >=8 before any fit. No recipe research or Round79",
+    "memory_scope_note": "Earlier handoff/reconciliation updated staging-only memory, not canonical files. Historical records preserved; no silent assertion about remote payload identity"
   },
-  "current_release_handoff_checkpoint": "POST_R78_FINAL_PUBLIC_PAYLOAD_RECONCILIATION"
+  "current_qualification_checkpoint": "POST_R78_SAFEBLEND_INDEPENDENT_REGRESSION_EXECUTION",
+  "current_qualification_status": "COMPACT_REGRESSION_SPECIALIST_CONFIRMED",
+  "POST_R78_FINAL_INDEPENDENT_REGRESSION_DATA_SOURCE_EXPANSION": {
+    "status": "COMPLETE_DATA_ONLY_MANDATORY_STOP",
+    "verdict": "INDEPENDENT_REGRESSION_PANEL_READY",
+    "completed_at": "2026-10-11T20:09:22.772220+00:00",
+    "last_completed_round": 78,
+    "public_version": "0.2.0rc2",
+    "candidates": 19,
+    "NEW_EXTERNAL_found": 17,
+    "new_admitted": 8,
+    "previous_admitted": 1,
+    "total_NEW_EXTERNAL": 9,
+    "primary_panel": [
+      "uci_859",
+      "figshare_7250453",
+      "zenodo_17473383",
+      "figshare_29254265",
+      "zenodo_17775544",
+      "figshare_7231202",
+      "noaa_ndbc_46042",
+      "bls_qcew_2024"
+    ],
+    "backups": [
+      "zenodo_22648301"
+    ],
+    "exclusions": {
+      "PROVENANCE": 6,
+      "NONE": 8,
+      "OVERLAP": 2,
+      "TARGET_CONTRACT": 3
+    },
+    "group_sources": 5,
+    "time_sources": 3,
+    "frozen_splits_including_previous": 45,
+    "fit_solve_prediction_count": 0,
+    "qualification_execution_authorized": false,
+    "scientific_status": "PROMISING_BUT_NOT_INDEPENDENTLY_CONFIRMED",
+    "novelty_limitations": "Original early-round catalogs/reports, particularly R17/R18, are absent. NEW_EXTERNAL is conditional on recoverable history, not an absolute never-used proof. Catalog/provenance mentions are not scientific exposure.",
+    "public_core_API_defaults_recipe_preprocessing_unchanged": true,
+    "prior_protocol_and_51_candidate_audit_preserved": true,
+    "download_policy": "Current prompt explicitly authorizes public metadata and screened data downloads; Git remote operations remain forbidden. No credential/access bypass.",
+    "report": "research_private/SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION.md",
+    "audit": "research_private/safeblend_independent/final_expansion_audit.json",
+    "panel_manifest": "research_private/safeblend_independent/final_expansion/panel_manifest.json",
+    "prior_current_qualification_checkpoint": "POST_R78_SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION",
+    "prior_current_qualification_status": "INSUFFICIENT_INDEPENDENT_REGRESSION_DATA",
+    "next_step": "STOP. A separate authorized task may freeze a new qualification execution manifest referencing this data panel and unchanged prior scientific presets, then run qualification; no fits in this task. No Round79 or stronger product claim."
+  },
+  "POST_R78_SAFEBLEND_INDEPENDENT_REGRESSION_EXECUTION": {
+    "status": "COMPLETE_FROZEN_INDEPENDENT_QUALIFICATION",
+    "completed_at": "2026-10-12T06:49:07.700901+00:00",
+    "last_completed_round": 78,
+    "public_version": "0.2.0rc2",
+    "verdict": "COMPACT_REGRESSION_SPECIALIST_CONFIRMED",
+    "protocol_sha256": "349a025c290168c06e4a58ec5be6d0232e5e8aaa73bd57cd12cb2c941ab1b665",
+    "results_freeze_sha256": "059739d004179c47e5058885d1f53325aa5b63a0b78b170b60eac35044c8c107",
+    "primary_sources": 9,
+    "splits": 45,
+    "primary_jobs": 270,
+    "status_counts": {
+      "SUCCESS": 270
+    },
+    "ancillary_determinism_jobs": 2,
+    "quality_replication": false,
+    "compactness_replication": true,
+    "gates": {
+      "coverage": true,
+      "quality": false,
+      "strong_quality": false,
+      "compact": true,
+      "strong_compact": false,
+      "catastrophic": false
+    },
+    "SafeBlend": {
+      "delta_vs_leader": 0.046160632825270616,
+      "delta_vs_standalone_base": -0.0009371984457449603,
+      "serialized_ratio": 0.12900408285289713,
+      "deep_ratio": 3.367615727290335,
+      "fit_ratio": 1.2097880292532992,
+      "peak_rss_ratio": 0.9799321711705874,
+      "peak_rss_bytes": 179916800.0,
+      "batch1_ratio": 0.7652910268836404,
+      "batch32_ratio": 0.7647486741446473,
+      "batch1000_ratio": 0.6839307166043298,
+      "batch100000_ratio": 0.806903138840544,
+      "pareto": {
+        "quality_pareto": 3,
+        "size_pareto": 0,
+        "quality_size_pareto": 7
+      }
+    },
+    "Base": {
+      "delta_vs_leader": 0.04651705334841576,
+      "delta_vs_standalone_base": 0.0,
+      "serialized_ratio": 0.10995598836104166,
+      "deep_ratio": 2.9951578539608756,
+      "fit_ratio": 0.16101547704551228,
+      "peak_rss_ratio": 0.9384225092250923,
+      "peak_rss_bytes": 173953024.0,
+      "batch1_ratio": 0.43772738091190366,
+      "batch32_ratio": 0.43719446901624837,
+      "batch1000_ratio": 0.4057683019388671,
+      "batch100000_ratio": 0.31328423744715433,
+      "pareto": {
+        "quality_pareto": 1,
+        "size_pareto": 9,
+        "quality_size_pareto": 9
+      }
+    },
+    "CI95": [
+      -0.005519236913061802,
+      0.06691893607089337
+    ],
+    "WTL": {
+      "win": 2,
+      "tie": 0,
+      "loss": 7,
+      "missing": 0
+    },
+    "group_time": {
+      "GROUP_SPLIT": {
+        "sources": 5,
+        "median_delta": 0.0014562622165724326,
+        "median_serialized_ratio": 0.18742527041681728
+      },
+      "TIME_SPLIT": {
+        "sources": 4,
+        "median_delta": 0.055822679149236124,
+        "median_serialized_ratio": 0.12086588004970175
+      }
+    },
+    "worst_dataset": "figshare_7250453",
+    "worst_dataset_mean_delta": 0.30845435424817874,
+    "branch_counts": {
+      "BLEND": 32,
+      "BASE": 13
+    },
+    "harmful_admissions": 9,
+    "useful_rejections": 6,
+    "public_docs_update_justified": true,
+    "public_core_unchanged": true,
+    "report": "research_private/SAFEBLEND_INDEPENDENT_REGRESSION_QUALIFICATION.md",
+    "audit": "research_private/safeblend_independent/execution/qualification_final_audit.json",
+    "next_step": "STOP. Separate factual documentation review; no recipe/tuning/architecture/release/remote or Round79.",
+    "round79": false,
+    "final_interpretation": {
+      "quality_specialist_confirmed": false,
+      "compact_specialist_confirmed": true,
+      "strong_compactness_confirmed": false,
+      "median_RMSE_degradation_percent": 4.616063282527062,
+      "worst_split_degradation_percent": 116.28548403693426,
+      "deep_memory_advantage_confirmed": false,
+      "deep_memory_caveat": "Opaque native baseline heaps are absent from reachable-Python deep bytes; serialized compactness is not a deep-RAM guarantee",
+      "precision_sensitivity": {
+        "scope": "POST_FREEZE_NUMERICAL_SENSITIVITY_ONLY",
+        "reason": "sklearn1.8 metric validation can retain float32 XGBoost prediction precision; original blind helper explicitly cast prediction to float64. Primary frozen results are not rewritten. Audit quantifies roundoff and gate/leader stability using the original float64 arithmetic.",
+        "new_fits": 0,
+        "new_predictions": 0,
+        "raw_freeze_unchanged": true,
+        "prediction_dtypes": {
+          "float64": 225,
+          "float32": 45
+        },
+        "max_absolute_RMSE_relative_rounding_difference": 6.060683033215497e-08,
+        "leader_changes": 0,
+        "float64_source_median_delta": 0.04616063282527061,
+        "primary_source_median_delta": 0.046160632825270616,
+        "float64_WTL": {
+          "win": 2,
+          "tie": 0,
+          "loss": 7
+        },
+        "float64_worst_source_mean_delta": 0.30845435424817874,
+        "compact_gate_stable": true,
+        "quality_gate_stable": true
+      },
+      "scientific_drift": false,
+      "public_integration_or_default_change": false
+    }
+  },
+  "POST_R78_SAFEBLEND_INDEPENDENT_PUBLIC_DOCS": {
+    "status": "COMPLETE_DOCUMENTATION_ONLY",
+    "completed_at": "2026-10-12T07:19:59.874715+00:00",
+    "verdict": "SAFEBLEND_INDEPENDENT_DOCS_READY",
+    "last_completed_round": 78,
+    "public_version": "0.2.0rc2",
+    "evidence_event": "POST_R78_SAFEBLEND_INDEPENDENT_REGRESSION_EXECUTION",
+    "qualification_verdict": "COMPACT_REGRESSION_SPECIALIST_CONFIRMED",
+    "quality_replication": false,
+    "serialized_compactness_replication": true,
+    "deep_RAM_advantage_demonstrated": false,
+    "SafeBlend_RMSE_delta_vs_leader": 0.046160632825270616,
+    "Base_RMSE_delta_vs_leader": 0.04651705334841576,
+    "WTL": {
+      "win": 2,
+      "tie": 0,
+      "loss": 7,
+      "missing": 0
+    },
+    "worst_dataset_mean_degradation": 0.30845435424817874,
+    "worst_split_degradation": 1.1628548403693426,
+    "serialized_ratio": 0.12900408285289713,
+    "positioning": "Experimental compact regression specialist; weaker independent median quality versus external leader, hardware/protocol-specific inference; no predictive quality leadership or no-harm guarantee",
+    "previous_blind_quality_advantage_replicated": false,
+    "evidence_hierarchy": "Independent nine-source regression qualification takes precedence for SafeBlend; earlier five-source blind evidence retained separately, per-source and per-unit leader rules not pooled",
+    "public_product_docs_modified": [
+      "README.md",
+      "BENCHMARKS.md",
+      "CHANGELOG.md",
+      "docs/SAFE_BLEND_EXPERIMENTAL.md"
+    ],
+    "public_product_doc_sha256": {
+      "README.md": "dda9cc7a97d87a9c57fad42c163e89b870542d3acc430497c048e3ce88b6efb2",
+      "BENCHMARKS.md": "921ff8c299a3206d81618b7a1e2837afa14418af054b7f87a3407cc7ba4f3064",
+      "CHANGELOG.md": "4005a5a58b7120672e79b1098beba22ff0a8dd00c0e81acfd8261adf2664ef7e",
+      "docs/SAFE_BLEND_EXPERIMENTAL.md": "f103e80c921cc90ec585fec0abab92919136aeb8fb049930659865864eabd6a3"
+    },
+    "qualification_audit_sha256": "57d2797a3e1eddcf1bf92b83ddd4b91cedd8fce6f52a76cfa24d589a6d486223",
+    "protocol_sha256": "349a025c290168c06e4a58ec5be6d0232e5e8aaa73bd57cd12cb2c941ab1b665",
+    "results_freeze_sha256": "059739d004179c47e5058885d1f53325aa5b63a0b78b170b60eac35044c8c107",
+    "private_report": "research_private/SAFEBLEND_INDEPENDENT_DOCS_AUDIT.md",
+    "private_audit": "research_private/safeblend_independent/docs_update/final_audit.json",
+    "checks": "Offline structural Markdown/local links/numeric consistency/version/source hashes PASS; public pytest reused 468 PASS/4 known XFAIL/0 FAIL under 37 unchanged runtime/test hashes; Ruff PASS",
+    "public_core_changed": false,
+    "new_fits_solves_predictions": 0,
+    "remote_operations": 0,
+    "release_tag": false,
+    "round79": false,
+    "next_step": "STOP. No automatic new experiment, release, architecture or Round79."
+  }
 }
