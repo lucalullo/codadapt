@@ -53,6 +53,7 @@ class _BaseCodAdapt(BaseEstimator):
 
     def __init__(
         self,
+        *,
         n_bins=32,
         max_categories=128,
         quantile_sample_size=20000,
@@ -60,17 +61,10 @@ class _BaseCodAdapt(BaseEstimator):
         features_per_table=3,
         table_size=256,
         main_effects=True,
-        max_iter=20,
         l2=5.0,
-        adapt_codes=True,
-        adapt_every=2,
-        max_code_updates=64,
-        n_candidates=4,
-        min_code_count=5,
         categorical_features=None,
         early_stopping=True,
         validation_fraction=0.15,
-        patience=4,
         tol=1e-5,
         random_state=None,
         verbosity=0,
@@ -83,17 +77,10 @@ class _BaseCodAdapt(BaseEstimator):
         self.features_per_table = features_per_table
         self.table_size = table_size
         self.main_effects = main_effects
-        self.max_iter = max_iter
         self.l2 = l2
-        self.adapt_codes = adapt_codes
-        self.adapt_every = adapt_every
-        self.max_code_updates = max_code_updates
-        self.n_candidates = n_candidates
-        self.min_code_count = min_code_count
         self.categorical_features = categorical_features
         self.early_stopping = early_stopping
         self.validation_fraction = validation_fraction
-        self.patience = patience
         self.tol = tol
         self.random_state = random_state
         self.verbosity = verbosity
@@ -107,12 +94,6 @@ class _BaseCodAdapt(BaseEstimator):
             "n_tables": (0, 128),
             "features_per_table": (1, 32),
             "table_size": (16, 4096),
-            "max_iter": (1, 1000),
-            "adapt_every": (1, 1000),
-            "max_code_updates": (0, 4096),
-            "n_candidates": (1, 64),
-            "min_code_count": (1, 1000000000),
-            "patience": (1, 1000),
             "verbosity": (0, 2),
             "lookup_budget": (1, 4096),
         }
@@ -124,9 +105,7 @@ class _BaseCodAdapt(BaseEstimator):
                 raise ValueError(f"{name} must be in [{low}, {high}].")
         if self.table_size & (self.table_size - 1):
             raise ValueError("table_size must be a power of two from 16 through 4096.")
-        if self.n_candidates >= self.table_size:
-            raise ValueError("n_candidates must be smaller than table_size.")
-        for name in ("main_effects", "adapt_codes", "early_stopping"):
+        for name in ("main_effects", "early_stopping"):
             if not isinstance(getattr(self, name), (bool, np.bool_)):
                 raise ValueError(f"{name} must be boolean.")
         for name in ("l2", "tol", "validation_fraction"):
@@ -255,9 +234,18 @@ class _BaseCodAdapt(BaseEstimator):
                     "Sparse validation input is not supported; provide a dense numeric array."
                 )
             if not isinstance(X_valid, pd.DataFrame):
-                X_valid = np.asarray(X_valid)
+                try:
+                    X_valid = np.asarray(X_valid)
+                except (TypeError, ValueError) as error:
+                    raise ValueError(
+                        "Validation X must be a 2D dense array or DataFrame."
+                    ) from error
+            if X_valid.ndim != 2:
+                raise ValueError(
+                    "Validation X must be a 2D array with shape (n_samples, n_features)."
+                )
             y_valid = self._encode_target(_target(y_valid))
-            if not hasattr(X_valid, "shape") or len(y_valid) != X_valid.shape[0]:
+            if len(y_valid) != X_valid.shape[0]:
                 raise ValueError("Validation X and y have inconsistent numbers of samples.")
         elif self.early_stopping:
             indices = np.arange(len(y_train))
@@ -313,11 +301,11 @@ class _BaseCodAdapt(BaseEstimator):
             rng,
         )
         self.timings_["fit_total"] = perf_counter() - started
-        self._is_fitted_ = True
         if self.verbosity:
             print(
                 f"CodAdapt fitted {self.n_iter_} iterations; restored={self.best_iteration_}; moves={self.accepted_moves_}; fit={self.timings_['fit_total']:.3f}s"
             )
+        self._is_fitted_ = True
         return self
 
     def _raw_predict_buckets(self, Z):

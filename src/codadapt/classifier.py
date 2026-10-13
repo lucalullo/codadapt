@@ -41,11 +41,11 @@ class CodAdaptClassifier(ClassifierMixin, _BaseCodAdapt):
         self._restore_aliases()
         self.estimated_memory_bytes_ = data.estimated_bytes
         self.timings_ = {"preprocessing": preprocessing_s, "fit_total": perf_counter() - tick}
-        self._is_fitted_ = True
         if self.verbosity:
             print(
                 f"CodAdapt multiclass fitted {self.n_classes_} unchanged native heads; fit={self.timings_['fit_total']:.3f}s"
             )
+        self._is_fitted_ = True
         return self
 
     def _restore_aliases(self):

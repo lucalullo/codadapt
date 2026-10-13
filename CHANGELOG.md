@@ -1,7 +1,40 @@
 # Changelog
 
+## Unreleased — pre-1.0 API cleanup (version unchanged)
+
+- **Breaking constructor cleanup:** remove the inactive `max_iter`, `adapt_codes`,
+  `adapt_every`, `max_code_updates`, `n_candidates`, `min_code_count` and `patience`
+  parameters from the native classifier/regressor. Remove these keys from saved
+  configuration and parameter-search dictionaries; `set_params` now rejects them.
+- Native estimator constructors are keyword-only, so old positional calls fail
+  explicitly instead of silently shifting the meanings of remaining arguments.
+  Retained parameter defaults, fitting and prediction arithmetic are unchanged.
+- Keep `features_per_table` as a documented resource-estimate control; it does not
+  change interaction order. No inactive control is reactivated.
+- Define `codadapt.preprocessing.BucketEncoder` as a private implementation detail,
+  keeping its physical import/pickle path for native model persistence. No standalone
+  encoder API is stabilized or moved to the experimental namespace.
+- Record the future 1.x semantic-version/deprecation policy and pre-1.0 migration.
+  Source version remains 0.2.0rc2; no release is implied by this entry.
+
+
+## Unreleased — release engineering (version unchanged)
+
+- Preserve explicit shared classifier training without dynamic source execution.
+- Give malformed validation arrays clear public errors and mark a fit successful
+  only after final logging; interrupted logging cannot leave a valid fitted marker.
+- Avoid an out-of-range integer cast in SafeBlend target validation.
+- Add focused lifecycle/concurrency/memory/schema contracts and strengthen an OVR assertion.
+- Declare the existing lightweight threadpoolctl runtime dependency explicitly.
+- Correct legacy parameter/trainer documentation, add stability/persistence and
+  manual release policies, runnable examples and installed-package OS qualification CI.
+- Keep scientific recipes/defaults, persistence layout and version 0.2.0rc2 unchanged.
+
 ## Unreleased — current 0.2.0rc2 repository line
 
+- Refactored classifier training to remove internal dynamic source execution while
+  preserving binary and multiclass model outputs. Public API, defaults and
+  persistence format are unchanged.
 - Completed independent SafeBlend regression qualification: nine NEW_EXTERNAL
   datasets, 45 frozen group/time splits, zero tuning and 270/270 SUCCESS jobs.
 - Refined SafeBlend positioning to an experimental compact regression specialist:

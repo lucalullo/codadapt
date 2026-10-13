@@ -8,7 +8,11 @@ a separate tool and is not used by SafeBlend.
 
 ```python
 from codadapt.experimental import SafeBlendRegressor
+from sklearn.datasets import make_regression
+from sklearn.model_selection import train_test_split
 
+X, y = make_regression(n_samples=240, n_features=6, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=4)
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)

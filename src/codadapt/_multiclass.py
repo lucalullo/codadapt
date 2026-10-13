@@ -1,7 +1,6 @@
 """Exact native multiclass preparation and fit-local X-only reuse."""
 
 import copy
-import inspect
 import warnings
 from dataclasses import dataclass
 from time import perf_counter
@@ -199,28 +198,6 @@ class XCache:
         return self.combinations[key]
 
 
-def fitter(cache):
-    text = inspect.getsource(train_coded_memory)
-    old = "int(np.unique(z[:, features], axis=0).shape[0])"
-    assert text.count(old) == 1
-    namespace = dict(train_coded_memory.__globals__)
-    namespace.update(
-        addresses=cache.address,
-        aggregate=cache.aggregate,
-        _surrogate=cache.surrogate,
-        shared_combination_count=cache.combination_count,
-    )
-    exec(
-        compile(
-            text.replace(old, "shared_combination_count(z, features)"),
-            "<private exact native OVR reuse>",
-            "exec",
-        ),
-        namespace,
-    )
-    return namespace["train_coded_memory"]
-
-
 def fit_heads(model, d):
     tick = perf_counter()
     rng = copy.deepcopy(d.rng)
@@ -238,7 +215,6 @@ def fit_heads(model, d):
     zv = encoder.transform_levels(d.xv) if d.xv is not None else None
     preprocessing_s = perf_counter() - tick
     cache = XCache(d.weight)
-    fit = fitter(cache)
     heads = []
     # Local native head models are discarded; only predictive state survives.
     from codadapt import CodAdaptClassifier
@@ -249,7 +225,7 @@ def fit_heads(model, d):
         head.shared_encoder_ = head.encoder_ = encoder
         head.encoders_, head.resolution_bins_ = encoder.level_views_, resolutions
         head.n_features_in_, head.timings_ = d.x.shape[1], {"preprocessing": 0.0}
-        fit(
+        train_coded_memory(
             head,
             z,
             (d.y == label).astype(float),
@@ -257,6 +233,7 @@ def fit_heads(model, d):
             zv,
             (d.yv == label).astype(float) if d.yv is not None else None,
             copy.deepcopy(rng),
+            cache=cache,
         )
         heads.append(NativeHead(head.intercept_, head.levels_, head.table_size))
     return encoder, heads, preprocessing_s

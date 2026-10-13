@@ -1,193 +1,96 @@
-# Algoritmo di CodAdapt 0.1.0
+# Current native CodAdapt algorithm (0.2.0rc2)
 
-## Modello e rappresentazione
+This describes the explicit shared trainer in `_training.py`. Historical
+coordinate-wise code-move experiments do not describe this public runtime.
+The binary/regression learning arithmetic is unchanged by the release hardening.
 
-Per il bucket `z_j(x)` della feature `j`:
+## Train-only encoding
 
-```text
-F(x) = intercept + Σ_j U_j[z_j(x)] + Σ_t V_t[address_t(x)]
-address_t(x) = (Σ_{j in S_t} C_tj[z_j(x)]) mod M
-```
+Positive-weight training rows determine quantiles, vocabularies and support. An
+internal validation split, when requested, is made before encoding. The finest
+numeric resolution is `max(2, min(16, n_bins))`, with three nested resolutions
+`[max(2, finest//4), max(2, finest//2), finest]`. Codes are computed once and mapped
+to coarser levels. Quantile sampling is limited by `quantile_sample_size`.
 
-`U` sono gli effetti monovariati, `C` codici interi in `[0, M-1]`, `V` punteggi reali.
-`M=table_size` è una potenza di due fra 16 e 4096. I gruppi pseudocasuali contengono
-`min(features_per_table, n_features)` variabili distinte; tabelle diverse possono
-condividere lo stesso gruppo, con codici indipendenti. La somma dei codici avviene
-in interi sufficientemente ampi prima del modulo.
+Numeric buckets use `searchsorted(cuts, value, side="right")`: equality goes right;
+NaN has a separate bucket and infinities are rejected. Duplicate cuts and cuts at
+the minimum are removed. Categorical buckets distinguish missing, rare observed,
+unseen and frequent values. Supported categorical scalars include strings, booleans,
+integers and finite reals; `"1"`, `1` and `True` are distinct, while `1` and `1.0`
+represent the same numeric category. Vocabularies use observed training values,
+not unused pandas categorical levels. Schema and support remain frozen at prediction.
 
-Il regressore restituisce `F`. Il classificatore restituisce la sigmoide stabile
-`sigmoid(F)` come probabilità di `classes_[1]`, preservando le etichette originali.
-Non si usano `hash()` Python, alberi o modelli predittivi esterni.
-
-Quantili e vocabolari sono appresi soltanto dal training effettivo, dopo esclusione
-delle righe a peso zero ed eventuale split interno. Sono poi fissi. Bucket compatti
-vengono calcolati una volta per training o batch; i codici sono la parte che cambia.
-Per numeriche si eliminano soglie duplicate e si riserva il bucket dei mancanti.
-Le categorie frequenti conservano bucket distinti; rare osservate, nuove e mancanti
-sono tre casi diversi. I quantili non convertono preventivamente in `float32`.
-
-La convenzione numerica è `searchsorted(thresholds, value, side="right")`: un valore
-uguale a una soglia va nell'intervallo a destra. I bucket finiti sono `0..len(thresholds)`;
-il mancante è `len(thresholds)+1`. Si eliminano soglie duplicate e soglie uguali al
-minimo; una soglia uguale al massimo rimane se compare fra i quantili, così può
-separare anche valori discreti come 0 e 1. I quantili usano interpolazione lineare
-in `float64`. Categoriche: `0` mancante, `1` rara osservata, `2` nuova, frequenti da `3`.
-A parità di frequenza prevale la prima osservazione nel training. Sono supportati
-stringhe, booleani, interi e reali finiti: `"1"`, `1` e `True` sono distinti; `1` e
-`1.0` rappresentano la stessa categoria numerica.
-
-Un bucket senza supporto nel training dà effetto monovariato zero. Se un'interazione
-contiene almeno un bucket senza supporto, l'intera tabella contribuisce zero per
-quella riga: nessuna collisione restituisce un valore appreso da righe estranee.
-Le celle di memoria vuote hanno punteggio zero.
-
-## Obiettivi e aggiornamento dei blocchi
-
-La penalità riguarda `U` e `V`, mai l'intercetta:
+## Compact residual memories
 
 ```text
-regressione = 0.5 Σ_i w_i (y_i-F_i)² + 0.5 l2 (Σ U² + Σ V²)
-binaria     = Σ_i w_i [logaddexp(0,F_i)-y_i F_i] + 0.5 l2 (Σ U² + Σ V²)
+F(x) = intercept + sum over accepted levels of:
+       sum main_value[feature_bucket] + sum interaction_value[address]
+address = sum(feature_code[feature_bucket]) mod table_size
 ```
 
-`l2>0`; i pesi sono finiti, non negativi e con somma positiva. Sono somme di loss,
-quindi moltiplicare tutti i pesi modifica il rapporto fra fit e regolarizzazione.
-L'intercetta iniziale è la media pesata, oppure il logit della frequenza pesata.
-Codici e gruppi vengono inizializzati da un RNG locale; i punteggi iniziano a zero.
-Due passaggi aggiornano i punteggi prima della prima ricerca dei codici. Con iterazioni
-numerate da 1, l'adattamento avviene quando `iteration>2` e
-`(iteration-3) % adapt_every == 0`: ai default nei passaggi 3, 5, 7, e così via.
+`table_size` is a power of two. The regressor returns F; the binary classifier
+returns a stable sigmoid and preserves class labels. Initial intercept is the
+weighted target mean or weighted class log-odds. A missing/unseen bucket without
+training support contributes zero. An interaction containing an unsupported bucket
+contributes zero; empty memory cells are zero. Python's randomized `hash()` is not used.
 
-Si visitano intercetta, effetti monovariati e interazioni mantenendo fissi gli altri
-contributi. Per una tabella, `q=F_old-v_old[address_old]`:
+Each level receives a share of the remaining `lookup_budget`. Cheap screening on at
+most 512 training rows precedes full feature scoring. Main effects are selected by
+residual gain, fitted sequentially and can be dropped at later levels when weak.
+The bounded interaction proposal uses feature-gain-ranked pairs, train-only random
+integer codes and collision-aware utility. It does not enumerate all pairs over the
+entire dataset. Groups have two features, or one when p=1. Selected interaction
+memories are then fitted sequentially to the current residual surrogate.
 
-| Task | `h_i` | `r_i` | Significato |
-| --- | --- | --- | --- |
-| Regressione | `w_i` | `y_i-q_i` | Quadratico esatto. |
-| Binaria | `w_i/4` | `v_old[address_old_i]+4(y_i-sigmoid(F_old_i))` | Maggiorazione logistica con curvatura globale `1/4`. |
-
-`h` e `r` rimangono congelati durante l'intera ottimizzazione del blocco, comprese
-le mosse dei codici. Si ricalcolano entrando nel blocco seguente. La formula binaria
-deriva da `sigmoid(F)(1-sigmoid(F)) <= 1/4`; non è l'Hessiano esatto.
-
-Per ogni cella si aggregano in `float64`:
+For cell address m, aggregate float64 statistics with `np.bincount`:
 
 ```text
-A[m] = Σ_{i: address_i=m} h_i
-B[m] = Σ_{i: address_i=m} h_i r_i
-V[m] = B[m] / (A[m] + l2)
-G = 0.5 Σ_m B[m]² / (A[m] + l2)
+A[m] = sum h_i; B[m] = sum h_i * residual_target_i
+value[m] = B[m] / (A[m] + l2)
+gain = 0.5 * sum B[m]^2 / (A[m] + l2)
+regression: h = sample_weight; residual_target = y - current_prediction
+binary: h = sample_weight / 4; residual_target = 4 * (y - sigmoid(current_score))
 ```
 
-Le aggregazioni usano `np.bincount`. Massimizzare `G` minimizza il quadratico
-regolarizzato a meno di una costante. Gli effetti monovariati hanno indirizzo uguale
-al bucket e non adattano codici. L'intercetta usa l'aggiornamento scalare senza L2.
-I valori della tabella vengono sostituiti, non aggiunti ripetutamente al vecchio stato.
+The binary update is a global-curvature quadratic surrogate, not the exact logistic
+Hessian. L2 penalizes memory values, not the intercept. Losses are weighted sums;
+rescaling all weights changes regularization strength. Zero-weight rows are removed
+before discovery. Target or weight scales causing numerical overflow must be rescaled.
 
-## Riindirizzamento incrementale
+## Validation and stopping
 
-Una coordinata `(t,j,b)` riguarda soltanto le righe con `z_j=b`. Per passare da `c`
-a `c_new`, definisci `delta=(c_new-c) mod M`. Le righe del gruppo si spostano a
-`(address_old+delta) mod M`. Una volta per coordinata:
+Validation uses unweighted MSE or logloss. A candidate level is accepted when its
+validation reduction exceeds `tol * max(1, abs(previous_validation_loss))`.
+The first rejected level stops fitting and is discarded, preserving earlier levels.
+There are at most three accepted levels. With `early_stopping=False`, explicit
+validation loss is diagnostic only. There is no hidden final refit.
 
-```text
-D[m] = Σ_{i nel gruppo, address_i=m} h_i
-E[m] = Σ_{i nel gruppo, address_i=m} h_i r_i
-A_new = A - D + roll(D, delta)
-B_new = B - E + roll(E, delta)
-gain = G(A_new, B_new) - G(A, B)
-```
+`n_iter_ == best_iteration_` is the accepted-level count. `accepted_moves_` is zero.
+Inactive legacy controls were removed from the constructor in the pre-1.0 API
+cleanup; see the migration section in [API.md](API.md). `features_per_table` remains
+a resource-estimate control only. The learning updates, memory selection, stopping,
+encoding and prediction arithmetic are unchanged by that cleanup.
 
-`roll(D, delta)[m]` porta nella cella `m` il contributo proveniente da
-`(m-delta) mod M`. Gli indici dei gruppi sono preparati una volta e riutilizzati:
-non si scansiona l'intero dataset per candidato. I candidati sono nuovi codici
-distinti generati dal RNG del modello; lo stato invariato è sempre ammissibile.
+Training rows, residuals, buckets, addresses and fit caches are discarded. The model
+retains frozen encoding and compact tables. For each accepted level inference costs
+roughly O(n*(selected main features + 2*interactions)), plus input validation/encoding.
+Numerical encoding uses binary search over cuts; categorical mapping cost depends on
+cardinality and values. Neither constant latency nor a hard RSS bound is promised.
 
-Si accetta soltanto il candidato migliore quando
-`G_new-G_old > 1e-12*max(1, abs(G_old))`. Nella sottrazione `A-D` si ammettono residui
-negativi soltanto entro `64*eps*max(1, abs(A[m]), abs(D[m]))` per cella, con `eps` di
-`float64`: questi residui sono azzerati; negatività significativa solleva
-`FloatingPointError`. Non si corregge indiscriminatamente qualunque massa con clipping.
+The conservative preflight fit allocation and bucket-matrix limits are each 512 MiB;
+input arrays, the interpreter, vocabularies and other temporaries add RSS. Observed
+categorical membership is limited to one million categories per feature. Oversized
+workloads are rejected before primary allocations rather than routed to another model.
 
-Una mossa accettata aggiorna codici, statistiche e indirizzi del gruppo. Le coordinate
-seguenti vedono gli indirizzi aggiornati. Dopo mosse accettate si riaggregano `A,B`
-una volta a fine blocco in `O(n)`, evitando deriva e mantenendo zero le celle vuote.
-Alla fine del blocco si ricalcola `V` e
-`F=q+V[address]` su tutte le righe: cambiare le medie delle celle può modificare anche
-righe esterne al gruppo. Per la binaria il guadagno è quello del surrogato congelato,
-non il miglioramento esatto della log-loss.
+## Multiclass Shared OVR
 
-`max_code_updates` limita le **coordinate valutate per tabella e passaggio adattivo**,
-non le mosse accettate. `min_code_count` conta righe a peso positivo, non la somma dei
-pesi. La visita delle coordinate ammissibili è a rotazione riproducibile.
+For K classes, encoding, schema, resolution maps and validation rows are shared.
+Each target `y == class` uses the same explicit native trainer with unchanged weights,
+but its own residuals, selection and stopping. Fit-local caches reuse only X-dependent
+addresses/counts/masses. No source text is reconstructed or executed.
 
-## Validation, arresto e persistenza
-
-Con `eval_set` si usa la validation passata dall'utente; altrimenti l'early stopping
-crea uno split riproducibile e stratificato per la classificazione. Dati insufficienti
-producono un errore che indica come disabilitare lo split. Non si usa il training come
-validation implicita. La validation non propone e non accetta mosse dei codici.
-
-L'arresto usa MSE non pesata o log-loss non pesata, senza L2, e richiede miglioramento
-assoluto superiore a `tol`. Con `early_stopping=False` ed `eval_set` la loss è registrata,
-ma non si interrompe o ripristina lo stato sulla validation. Il miglior stato include
-intercetta, tabelle monovariate, tabelle di interazione e codici. Dopo mosse dei codici
-si ricomputano correttamente gli indirizzi di validation. `n_iter_` conta i passaggi
-eseguiti; `best_iteration_` identifica lo stato selezionato. La cronologia non viene
-troncata quando lo stato migliore viene ripristinato.
-
-Alla fine vengono liberati target, bucket, indirizzi, indici dei gruppi e cache del
-training. La previsione dipende dal modello e dal nuovo batch, non da righe conservate.
-Vocabolari e soglie, in quanto parametri del preprocessing, rimangono nel modello.
-
-## Costi dell'implementazione
-
-Siano `n` righe, `p` feature, `T` tabelle, `s` feature per tabella, `M` celle, `U`
-coordinate visitate per tabella/passaggio e `C` candidati per coordinata. Sia `K_j`
-il numero di bucket della feature `j`.
-
-| Operazione | Costo e componenti |
-| --- | --- |
-| Kernel di previsione | `O(n(p+T*s))`, più maschere di supporto; nessuna ricerca di codici. |
-| Trasformazione numerica | Circa `O(n*p_num*log(n_bins))`, oltre a conversione e controlli. |
-| Preparazione numerica | Quantili su un campione limitato per feature, soglie uniche e trasformazione del training. |
-| Trasformazione categorica | Mappatura tramite strutture native/pandas; dipende anche da lunghezza delle stringhe e cardinalità. |
-| Aggiornamenti dei punteggi | Circa `O(n(p+T)+Σ K_j+T*M)` per passaggio, oltre al calcolo degli indirizzi. |
-| Ricerca dei candidati | `O(T*U*C*M)` per passaggio adattivo, oltre ad aggregazioni dei gruppi e aggiornamenti degli indirizzi. |
-| Statistiche di un gruppo | `O(n_gruppo+M)` per coordinata; non viene ripetuta per ciascun candidato. |
-| Memoria del modello | `O(Σ K_j+T*M+Σ_t Σ_{j in S_t} K_j)`, più soglie, vocabolari e cronologia. |
-| Memoria temporanea di fit | Bucket `O(n*p)`, indirizzi e indici, vettori reali `O(n)` e statistiche `O(M)`; dipende dalle cache effettive. |
-
-Le strutture dei gruppi e la gestione dei DataFrame hanno costi ulteriori. La memoria
-dei vocabolari rari può dipendere dalle categorie osservate necessarie a distinguere
-rare e sconosciute. Non è garantito che la ricerca discreta sia economica su tutti i
-dataset. I limiti vengono verificati prima delle allocazioni principali. La stima
-conservativa del fit viene rifiutata oltre 512 MiB; il limite della sola matrice bucket
-è anch'esso 512 MiB. Questo non costituisce un limite rigido del picco RSS del processo,
-perché interprete, input, vocabolari e temporanei introducono memoria aggiuntiva. Il
-vocabolario di membership è limitato a un milione di categorie osservate per feature.
-
-Queste formule non sono promesse di latenza costante. Il profilo separa preprocessing,
-indici, punteggi, ricerca, validation, ripristino e `fit` completo. Per confronti
-pratici usare latenza end-to-end, RSS e dimensione serializzata insieme alla qualità.
-I riferimenti matematici brute-force nei test servono a verificare il percorso
-incrementale su shift, collisioni, masse vuote, pesi e mosse successive.
-
-## Multiclass Shared OVR (working tree 0.2.0rc2)
-
-Per K classi, un solo encoder train-only produce codici finest e mappe coarse.
-Il runtime nativo usa finest `max(2, min(16, n_bins))` e le tre risoluzioni annidate.
-Tutti gli head condividono schema, soglie, vocabolari, supporto e righe validation.
-Gli aggiornamenti dei K target binari `y == classe` restano quelli nativi: valori,
-residuali, ranking e arresto non vengono condivisi. I pesi originali sono invariati.
-
-Le cache fit-local riusano solo indirizzi, masse X-only identiche e conteggi dei
-codici. Il fitting usa una copia isolata della funzione nativa con callback di
-cache; non muta i globali del training binario. A prediction time si codifica una
-volta, si valutano i K head e si normalizzano le sigmoidi (non softmax).
-
-Un artifact compatto conserva un encoder, metadata immutable deduplicate, indici
-interi ridotti senza perdita e coefficienti float64 identici. Nessun merging o
-compressione numerica modifica celle o codici. Pickle/joblib ricostruiscono la
-stessa condivisione; dati, target, cache e estimator temporanei vengono eliminati.
-Il percorso binario originale e quello regressivo non cambiano.
+Inference encodes once and evaluates K native heads. Sigmoid scores are normalized
+across classes, not softmax; ties select the first label in `np.unique` order.
+A compact artifact deduplicates shared metadata and preserves float64 coefficients.
+Pickle/joblib restore sharing. No external teacher or private research module is
+required. See [STABILITY.md](STABILITY.md) for persistence and concurrency limits.

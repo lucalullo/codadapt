@@ -9,9 +9,7 @@ from codadapt import CodAdaptRegressor
 
 
 def regressor(**kwargs):
-    params = dict(
-        n_bins=16, n_tables=2, table_size=32, max_iter=10, early_stopping=False, random_state=19
-    )
+    params = dict(n_bins=16, n_tables=2, table_size=32, early_stopping=False, random_state=19)
     return CodAdaptRegressor(**(params | kwargs))
 
 
@@ -48,7 +46,7 @@ def test_weighted_objective_decreases():
     rng = np.random.default_rng(128)
     X = rng.normal(size=(160, 4))
     y, weights = X[:, 0] * X[:, 1], rng.uniform(0.1, 3, 160)
-    model = regressor(max_iter=8).fit(X, y, sample_weight=weights)
+    model = regressor().fit(X, y, sample_weight=weights)
     objectives = np.array([step["objective"] for step in model.training_history_])
     assert np.isfinite(objectives).all()
     assert np.all(np.diff(objectives) <= 1e-8 * np.maximum(1, np.abs(objectives[:-1])))

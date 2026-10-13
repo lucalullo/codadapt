@@ -1,4 +1,8 @@
-"""Training-only quantile and categorical buckets, separate from learned codes."""
+"""Private train-only encoder implementation; not a standalone public transformer API.
+
+The historical module/class path is retained for internal imports and trusted
+model persistence. Importability does not imply a supported standalone contract.
+"""
 
 from enum import Enum
 from numbers import Integral, Real
@@ -20,6 +24,8 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.utils import check_random_state
 from sklearn.utils.validation import check_is_fitted
 
+__all__ = []
+
 
 class _BooleanKey(Enum):
     """Avoid Python's equality collision between True/1 and False/0."""
@@ -37,7 +43,10 @@ class _ResolutionView:
 
 
 class BucketEncoder(TransformerMixin, BaseEstimator):
-    """Encode supported features into compact, deterministic integer buckets.
+    """Internal encoder for compact, deterministic integer buckets.
+
+    Not a public standalone transformer. Its sklearn base classes support native
+    estimator internals and tests; no independent stable API is promised.
 
     Numeric thresholds use linear training quantiles in float64. Values equal
     to a threshold enter the interval on its right; finite extremes enter the

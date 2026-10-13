@@ -19,24 +19,17 @@ Il costruttore memorizza i parametri; il primo `fit` crea lo stato appreso.
 | `max_categories` | `128` | Categorie frequenti conservate separatamente per feature. |
 | `quantile_sample_size` | `20000` | Campione massimo per costruire quantili riproducibili. |
 | `n_tables` | `8` | Numero di tabelle di interazione, da 0 a 128; `0` le disattiva. |
-| `features_per_table` | `3` | Feature distinte per gruppo, da 1 a 32; ridotte se le feature totali sono meno. |
+| `features_per_table` | `3` | Solo stima memoria; gruppi correnti di due feature (una se p=1). |
 | `table_size` | `256` | Celle per tabella: potenza di due da 16 a 4096. |
 | `main_effects` | `True` | Attiva gli effetti monovariati. |
 | `lookup_budget` | `24` | Intero da 1 a 4096: limite totale dei lookup per campione, sommando tabelle monovariate e di interazione sui livelli conservati. Il modello può usarne meno; non sostituisce il limite `n_tables`. Nel multiclasse vale per ciascun head. |
-| `max_iter` | `20` | Massimo numero di passaggi completi di training. |
 | `l2` | `5.0` | Penalità positiva dei punteggi; l'intercetta è esclusa. |
-| `adapt_codes` | `True` | Abilita la ricerca discreta dei codici. |
-| `adapt_every` | `2` | Frequenza dei passaggi adattivi, dopo il riscaldamento. |
-| `max_code_updates` | `64` | Coordinate massime valutate per tabella/passaggio adattivo. |
-| `n_candidates` | `4` | Nuovi codici distinti proposti per coordinata; da 1 a `min(64, table_size-1)`. |
-| `min_code_count` | `5` | Righe a peso positivo minime per rendere adattabile un bucket. |
 | `categorical_features` | `None` | Riconoscimento automatico nei DataFrame; nomi o indici per dichiarazioni esplicite. |
 | `early_stopping` | `True` | Arresto e ripristino sulla validation. |
 | `validation_fraction` | `0.15` | Quota riservata se non viene fornito `eval_set`. |
-| `patience` | `4` | Passaggi consecutivi senza miglioramento sufficiente prima dell'arresto. |
-| `tol` | `1e-5` | Tolleranza assoluta non negativa per il miglioramento della loss di validation. |
+| `tol` | `1e-5` | Soglia relativa: gain > tol × max(1, abs(previous_validation_loss)). |
 | `random_state` | `None` | `None`, intero `[0, 2**32-1]` o `np.random.RandomState`; usa un intero per riprodurre il fit. |
-| `verbosity` | `0` | `0`: silenzioso; `1`: riepilogo; `2`: dettagli per iterazione. |
+| `verbosity` | `0` | 0 silenzioso; 1–2 riepilogo del fit corrente. |
 
 Non esiste un parametro pubblico `verbose`. Nessun livello di `verbosity` sopprime
 globalmente warning o eccezioni. I default non lanciano l'esplorazione dei candidati
@@ -45,7 +38,34 @@ di architettura: quella appartiene al runner sperimentale.
 `n_tables=0, main_effects=True` dà una baseline monovariata;
 `main_effects=False` conserva solo le interazioni;
 `n_tables=0, main_effects=False` conserva soltanto l'intercetta.
-`adapt_codes=False` conserva codici e gruppi iniziali, continuando ad apprendere punteggi.
+
+## Migrazione pre-1.0 e contratto del trainer corrente
+
+I costruttori nativi sono **keyword-only**: usare `CodAdapt(n_bins=8, l2=5.0)`,
+non argomenti posizionali. I default dei parametri rimasti sono invariati.
+
+Sono stati rimossi sette controlli inattivi: `max_iter`, `adapt_codes`,
+`adapt_every`, `max_code_updates`, `n_candidates`, `min_code_count` e `patience`.
+Non avevano effetto sul trainer; non vengono sostituiti da una nuova euristica.
+Eliminarli dalle chiamate al costruttore, da `set_params`, dai dizionari salvati di
+configurazione e dalle griglie di ricerca. Il costruttore ora rifiuta questi nomi
+con `TypeError`, `set_params` con `ValueError`; non vengono ignorati silenziosamente.
+Questa modifica prerelease è deliberatamente incompatibile a livello di firma,
+ma conserva il fitting e le predizioni per configurazioni equivalenti.
+
+`features_per_table` resta un parametro funzionale **solo per la stima preventiva
+memoria**: il selettore propone coppie, o un gruppo singolo se p=1, indipendentemente
+da questo valore. Cambiarlo può modificare `estimated_memory_bytes_` e l'ammissione
+al budget, non la capacità predittiva. `n_bins` viene limitato a
+`max(2, min(16, n_bins))` per l'encoding condiviso, con tre risoluzioni annidate;
+aumentarlo oltre 16 non aumenta la risoluzione corrente.
+
+Gli import root e `CodAdapt is CodAdaptClassifier` restano invariati. Il modulo
+`codadapt.preprocessing` e `BucketEncoder` sono dettagli interni, non un'API
+standalone supportata. Il percorso resta disponibile per gli import interni e
+la persistenza dei modelli; nessun helper viene promosso a experimental.
+La compatibilità dei vecchi pickle prerelease non è garantita: conservarne
+l'ambiente originale. Un load riuscito non rende nuovamente validi i parametri rimossi.
 
 ## Input
 
@@ -124,26 +144,25 @@ scientifici scegliere esplicitamente ROC-AUC/log-loss oppure RMSE/MAE.
 | `n_classes_` | Numero di classi nel percorso multiclass; il binario conserva gli attributi precedenti. |
 | `n_features_in_` | Numero delle feature. |
 | `feature_names_in_` | Nomi delle colonne, quando appropriato. |
-| `n_iter_` | Numero di passaggi realmente eseguiti. |
-| `best_iteration_` | Iterazione corrispondente allo stato selezionato. |
-| `training_history_` | Loss, coordinate esaminate e mosse accettate per iterazione. |
+| `n_iter_` | Numero di livelli conservati, da zero a tre. |
+| `best_iteration_` | Uguale a `n_iter_` nel trainer corrente. |
+| `training_history_` | Loss dei livelli accettati; coordinate e mosse adattive sono zero. |
 | `timings_` | Tempi in secondi delle componenti e del fit completo. |
 | `encoder_` | Soglie, vocabolari e supporti appresi soltanto dal training. |
 | `groups_`, `codes_` | Gruppi di feature e codici adattivi delle interazioni. |
 | `main_tables_`, `tables_` | Tabelle monovariate e di interazione. |
 | `intercept_` | Intercetta scalare. |
-| `accepted_moves_` | Mosse accettate nell'intera storia eseguita, anche oltre lo stato poi ripristinato. |
+| `accepted_moves_` | Zero: il trainer corrente non effettua mosse iterative dei codici. |
 | `estimated_memory_bytes_` | Stima conservativa delle allocazioni controllata prima del training. |
 
-`timings_` contiene `preprocessing`, `index_build`, `score_updates`, `code_search`,
-`validation`, `restore` e `fit_total`; `validation` comprende anche le copie degli stati
-migliori. I tempi di trasformazione e inferenza sui nuovi batch sono misurati dai
-runner, non aggiunti retroattivamente ai tempi di `fit`.
-
-`n_iter_` può superare `best_iteration_`: la cronologia conserva i passaggi eseguiti,
-mentre codici, tabelle e intercetta contengono l'intero stato migliore ripristinato.
-Gli attributi interni di rappresentazione servono all'ispezione, non vanno mutati
-manualmente per alterare il modello. Non sono conservati target o copie del dataset.
+`timings_` riporta preprocessing, validation e fit totale insieme a contatori interni
+del trainer. Alcune chiavi legacy possono valere zero; non costituiscono un profiler
+completo. `n_iter_ == best_iteration_` conta i livelli conservati. Il primo livello
+rifiutato compare in `allocation_history_`, non in `training_history_`.
+Gli attributi di rappresentazione e le chiavi diagnostiche sono dettagli di
+implementazione per ispezione, non un'interfaccia per modificare il modello.
+Non sono conservati target o copie del dataset. Il contratto di stabilità e
+persistenza è in [STABILITY.md](STABILITY.md).
 
 ## Errori, compatibilità e persistenza
 

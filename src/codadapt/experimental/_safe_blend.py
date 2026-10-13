@@ -69,7 +69,11 @@ class SafeBlendRegressor(RegressorMixin, BaseEstimator):
                 "y must contain finite regression values; missing/infinity are invalid."
             )
         labels = np.unique(target)
-        if 2 <= len(labels) <= 20 and np.array_equal(labels, labels.astype(np.int64)):
+        if (
+            2 <= len(labels) <= 20
+            and np.all((labels >= -(2**63)) & (labels < 2**63))
+            and np.array_equal(labels, np.floor(labels))
+        ):
             if len(labels) == 2 or np.array_equal(labels, np.arange(len(labels))):
                 raise ValueError(
                     "Classification labels are unsupported; use CodAdaptClassifier. "

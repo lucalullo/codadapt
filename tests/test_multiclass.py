@@ -84,7 +84,7 @@ def test_weights_exact(kind):
     p = sigmoid(expected)
     exact(p / p.sum(1, keepdims=True), m.predict_proba(x))
     assert shared_identity(m)
-    assert len(d.train_ids) + len(d.valid_ids) == np.count_nonzero(w) if w is not None else len(y)
+    assert len(d.train_ids) + len(d.valid_ids) == (np.count_nonzero(w) if w is not None else len(y))
 
 
 @pytest.mark.parametrize("kind", ["negative", "length", "nan", "infinity", "allzero", "matrix"])
@@ -283,14 +283,8 @@ def test_large_K(k):
     [
         dict(n_bins=8, n_tables=0),
         dict(table_size=64, lookup_budget=8, max_categories=8, quantile_sample_size=30),
-        dict(main_effects=False, l2=2, patience=2, tol=1e-4),
+        dict(main_effects=False, l2=2, tol=1e-4),
         dict(
-            max_iter=1,
-            adapt_codes=False,
-            adapt_every=1,
-            n_candidates=2,
-            min_code_count=2,
-            max_code_updates=0,
             features_per_table=2,
         ),
     ],

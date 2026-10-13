@@ -1,5 +1,15 @@
 # Release notes
 
+## Unreleased pre-1.0 API cleanup
+
+Native classifier/regressor construction is keyword-only and no longer accepts
+the seven inactive controls listed in the [API migration guide](docs/API.md).
+Remove those keys from application/search configurations. Existing root imports,
+alias identity, retained defaults and prediction behavior are unchanged.
+`features_per_table` remains an explicit resource-estimate control.
+`BucketEncoder` is a private helper with its import/pickle path retained; it is
+not a supported standalone public transformer. Source version stays 0.2.0rc2.
+
 ## 0.2.0rc2 — current repository line
 
 The current working tree adds native multiclass Shared OVR to CodAdaptClassifier
@@ -7,15 +17,25 @@ and its CodAdapt alias. Binary/regression defaults and algorithms are unchanged.
 Shared encoding and compact artifacts preserve exact independent-OVR predictions;
 probabilities normalize native sigmoids, not softmax. No external learner is required.
 Python 3.10–3.14 is supported; core dependencies are NumPy, pandas, scikit-learn and
-SciPy. No external ML model is required for native fit, validation, prediction or reload.
+SciPy and threadpoolctl. No external ML model is required for native fit, validation, prediction or reload.
 
 The experimental `SafeBlendRegressor` is fully native: unchanged Base plus a
 complementary Rational estimator, frozen weight 0.30 and internal validation fallback.
-It uses the normal core install with no external model dependency. Round 78 independent
+It uses the normal core install with no external model dependency. Historical Round 78 independent
 confirmation found +2.061% median RMSE gain, CI [+0.403%, +4.695%], on 18 new datasets
 × five splits; the worst split lost 6.157%. This is panel-specific evidence, not a
 no-harm guarantee. Fit remains about 4.13× Base in the frozen research panel.
-See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md).
+The later independent external qualification did not replicate quality leadership:
+nine datasets/45 splits gave +4.62% median RMSE versus the fixed external leader,
+but serialized compactness replicated at 0.129×. Current positioning is **compact
+regression specialist**, not a general quality leader. See [BENCHMARKS.md](BENCHMARKS.md)
+and [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md).
+
+Local release hardening preserves the explicit shared trainer and successful-fit
+arithmetic, clarifies malformed validation errors and incomplete-fit state, and
+removes inactive legacy controls in the subsequent pre-1.0 API cleanup. No version
+bump or stable release is implied.
+See [STABILITY.md](docs/STABILITY.md) and [RELEASING.md](docs/RELEASING.md).
 
 The optional `ebm` extra remains solely an explicit experimental compiler/import tool
 for already fitted additive interpret-core 0.7.8 models. It is not a native trainer,

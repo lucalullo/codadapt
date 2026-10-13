@@ -19,7 +19,7 @@ def fitted(binary=True, n=193):
     y = (X[:, 0] > 0).astype(int) if binary else X[:, 0] - X[:, 1]
     estimator = CodAdaptClassifier if binary else CodAdaptRegressor
     model = estimator(
-        n_bins=8, n_tables=2, table_size=32, max_iter=4, early_stopping=False, random_state=8
+        n_bins=8, n_tables=2, table_size=32, early_stopping=False, random_state=8
     ).fit(X, y)
     return model, X
 

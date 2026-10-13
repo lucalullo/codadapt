@@ -11,9 +11,7 @@ from codadapt import CodAdaptClassifier
 
 
 def classifier(**kwargs):
-    params = dict(
-        n_bins=12, n_tables=2, table_size=32, max_iter=10, early_stopping=False, random_state=17
-    )
+    params = dict(n_bins=12, n_tables=2, table_size=32, early_stopping=False, random_state=17)
     return CodAdaptClassifier(**(params | kwargs))
 
 
@@ -46,9 +44,11 @@ def test_xor_holdout_learns_controlled_interaction():
     rng = np.random.default_rng(916)
     X = rng.integers(0, 2, size=(640, 2))
     y = np.logical_xor(X[:, 0], X[:, 1]).astype(int)
-    model = classifier(n_tables=4, features_per_table=2, main_effects=False, max_iter=14).fit(
-        X[:480], y[:480]
-    )
+    model = classifier(
+        n_tables=4,
+        features_per_table=2,
+        main_effects=False,
+    ).fit(X[:480], y[:480])
     assert all(len(group) == 2 and len(np.unique(group)) == 2 for group in model.groups_)
     assert accuracy_score(y[480:], model.predict(X[480:])) > 0.9
 
@@ -63,7 +63,7 @@ def test_weighted_intercept_baseline():
 
 def test_default_coded_memory_records_bounded_history_and_profiles_screening():
     X, y = binary_data()
-    model = classifier(max_iter=8).fit(X, y)
+    model = classifier().fit(X, y)
     objective = np.array([step["objective"] for step in model.training_history_])
     assert len(model.training_history_) == model.n_iter_ <= 3
     assert np.all(np.diff(objective) <= 1e-10 * np.maximum(1, np.abs(objective[:-1])))

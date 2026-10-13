@@ -10,14 +10,21 @@ python -m pip install ".[ebm]"  # from this checkout
 
 The optional extra is required to compile the fitted teacher. Loading and using a
 compiled artifact requires CodAdapt and its normal runtime dependencies, not interpret.
-For the tagged GitHub installation commands, see the [README](../README.md#installation).
+For local artifact installation, see the [README](../README.md#installation).
 
 ```python
 from interpret.glassbox import ExplainableBoostingClassifier
 from codadapt.experimental import compile_ebm
+import pandas as pd
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
 
-# X_train and X_verify are separate DataFrames with the same named columns.
-teacher = ExplainableBoostingClassifier(interactions=0, n_jobs=1)
+X, y = make_classification(n_samples=240, n_features=6, random_state=42)
+X = pd.DataFrame(X, columns=[f"feature_{j}" for j in range(X.shape[1])])
+X_train, X_verify, y_train, _ = train_test_split(X, y, stratify=y, random_state=42)
+teacher = ExplainableBoostingClassifier(
+    interactions=0, outer_bags=2, max_rounds=100, n_jobs=1, random_state=42
+)
 teacher.fit(X_train, y_train)
 compiled = compile_ebm(teacher, X_verify=X_verify, max_states=8192)
 logits = compiled.decision_function(X_verify)

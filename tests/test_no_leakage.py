@@ -38,9 +38,7 @@ def mixed_training(n=160):
 def test_validation_features_and_labels_do_not_change_training_decisions(estimator, target_index):
     data = mixed_training()
     X, y = data[0], data[target_index]
-    params = dict(
-        n_bins=8, n_tables=3, table_size=32, max_iter=7, early_stopping=False, random_state=7
-    )
+    params = dict(n_bins=8, n_tables=3, table_size=32, early_stopping=False, random_state=7)
     valid = pd.DataFrame(
         {"value": np.linspace(-1e9, 1e9, 40), "category": ["validation-only"] * 40}
     )
@@ -74,7 +72,7 @@ def test_zero_weight_rows_removed_before_internal_split_and_encoding(estimator, 
     weights[excluded] = 0
     X.loc[excluded, "value"] = 1e25
     X.loc[excluded, "category"] = "zero-weight-only"
-    params = dict(n_tables=1, table_size=32, max_iter=4, early_stopping=True, random_state=31)
+    params = dict(n_tables=1, table_size=32, early_stopping=True, random_state=31)
     first = estimator(**params).fit(X, y, sample_weight=weights)
     keep = weights > 0
     second = estimator(**params).fit(X.loc[keep], y[keep], sample_weight=weights[keep])
@@ -87,7 +85,7 @@ def test_internal_validation_is_split_before_quantiles_and_category_vocabulary()
     train, valid = train_test_split(np.arange(len(y)), test_size=0.2, random_state=29, stratify=y)
     X.loc[valid, "value"] = 1e20
     X.loc[valid, "category"] = "internal-validation-only"
-    params = dict(n_tables=2, table_size=32, max_iter=5, random_state=29, validation_fraction=0.2)
+    params = dict(n_tables=2, table_size=32, random_state=29, validation_fraction=0.2)
     internal = CodAdaptClassifier(**params).fit(X, y)
     explicit = CodAdaptClassifier(**params).fit(
         X.iloc[train], y[train], eval_set=(X.iloc[valid], y[valid])
@@ -106,7 +104,7 @@ def test_early_stopping_restores_complete_best_state(estimator, binary):
     X_train, X_valid = X[:200], X[200:]
     y_train = y[:200]
     y_valid = 1 - y[200:] if binary else -y[200:]
-    model = estimator(n_tables=3, n_bins=8, table_size=32, patience=2, tol=0, random_state=44).fit(
+    model = estimator(n_tables=3, n_bins=8, table_size=32, tol=0, random_state=44).fit(
         X_train, y_train, eval_set=(X_valid, y_valid)
     )
 
@@ -127,9 +125,7 @@ def test_early_stopping_restores_complete_best_state(estimator, binary):
 
 def test_predictions_do_not_refit_or_update_encoder():
     X, y, _ = mixed_training()
-    model = CodAdaptClassifier(n_tables=1, max_iter=3, early_stopping=False, random_state=9).fit(
-        X, y
-    )
+    model = CodAdaptClassifier(n_tables=1, early_stopping=False, random_state=9).fit(X, y)
     state = pickle.dumps(
         (model.encoder_, model.codes_, model.main_tables_, model.tables_, model.intercept_)
     )

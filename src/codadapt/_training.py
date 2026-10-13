@@ -60,8 +60,20 @@ def predict_coded_memory_buckets(levels, encoders, z_levels, intercept, table_si
     return result
 
 
-def train_coded_memory(model, z_levels, y, weight, z_valid_levels, y_valid, rng):
-    """Allocate a fixed lookup budget to residual feature and interaction memories."""
+def _combination_count(z, features):
+    return int(np.unique(z[:, features], axis=0).shape[0])
+
+
+def train_coded_memory(model, z_levels, y, weight, z_valid_levels, y_valid, rng, *, cache=None):
+    """Train the shared memory engine, optionally reusing fit-local OVR statistics.
+
+    The cache supplies the same primitives with X-only reuse across binary heads.
+    It is never retained in the fitted estimator or used during prediction.
+    """
+    address = addresses if cache is None else cache.address
+    reduce = aggregate if cache is None else cache.aggregate
+    surrogate = _surrogate if cache is None else cache.surrogate
+    combination_count = _combination_count if cache is None else cache.combination_count
     binary = model._task == "classification"
     n, p = z_levels[0].shape
     mean = float(np.average(y, weights=weight))
@@ -117,7 +129,7 @@ def train_coded_memory(model, z_levels, y, weight, z_valid_levels, y_valid, rng)
 
         screening_started = perf_counter()
         candidate_features = np.flatnonzero(active_feature_mask)
-        h, residual_target = _surrogate(y, score, np.zeros(n), weight, binary)
+        h, residual_target = surrogate(y, score, np.zeros(n), weight, binary)
         screened_features = candidate_features
         if shared_screening and len(candidate_features):
             sample_step = max(1, n // 512)
@@ -140,7 +152,7 @@ def train_coded_memory(model, z_levels, y, weight, z_valid_levels, y_valid, rng)
             prefilter_discarded += len(discarded)
         feature_gains = np.zeros(p, dtype=np.float64)
         for feature in screened_features:
-            a, b = aggregate(z[:, feature], h, residual_target, encoder.n_buckets_[feature])
+            a, b = reduce(z[:, feature], h, residual_target, encoder.n_buckets_[feature])
             feature_gains[feature] = gain(a, b, model.l2)
         fully_screened += len(screened_features)
         order = screened_features[np.argsort(-feature_gains[screened_features], kind="stable")]
@@ -171,8 +183,8 @@ def train_coded_memory(model, z_levels, y, weight, z_valid_levels, y_valid, rng)
 
         main_tables = []
         for feature in selected_features:
-            h, residual_target = _surrogate(y, score, np.zeros(n, dtype=np.float64), weight, binary)
-            a, b = aggregate(z[:, feature], h, residual_target, encoder.n_buckets_[feature])
+            h, residual_target = surrogate(y, score, np.zeros(n, dtype=np.float64), weight, binary)
+            a, b = reduce(z[:, feature], h, residual_target, encoder.n_buckets_[feature])
             values = b / (a + model.l2)
             score += values[z[:, feature]]
             cumulative_penalty += float(np.dot(values, values))
@@ -189,13 +201,13 @@ def train_coded_memory(model, z_levels, y, weight, z_valid_levels, y_valid, rng)
                     )
                     for feature in features
                 ]
-                index = addresses(z, features, group_codes, model.table_size)
-                h, residual_target = _surrogate(
+                index = address(z, features, group_codes, model.table_size)
+                h, residual_target = surrogate(
                     y, score, np.zeros(n, dtype=np.float64), weight, binary
                 )
-                a, b = aggregate(index, h, residual_target, model.table_size)
+                a, b = reduce(index, h, residual_target, model.table_size)
                 candidate_gain = gain(a, b, model.l2)
-                combinations = int(np.unique(z[:, features], axis=0).shape[0])
+                combinations = combination_count(z, features)
                 occupied = int(np.unique(index).size)
                 collisions = max(0, combinations - occupied)
                 collision_rate = collisions / combinations if combinations else 0.0
@@ -236,9 +248,9 @@ def train_coded_memory(model, z_levels, y, weight, z_valid_levels, y_valid, rng)
                 and candidate_gain < 0.5 * top_interaction_gain
             ):
                 continue
-            index = addresses(z, features, group_codes, model.table_size)
-            h, residual_target = _surrogate(y, score, np.zeros(n, dtype=np.float64), weight, binary)
-            a, b = aggregate(index, h, residual_target, model.table_size)
+            index = address(z, features, group_codes, model.table_size)
+            h, residual_target = surrogate(y, score, np.zeros(n, dtype=np.float64), weight, binary)
+            a, b = reduce(index, h, residual_target, model.table_size)
             values = b / (a + model.l2)
             score += values[index]
             cumulative_penalty += float(np.dot(values, values))

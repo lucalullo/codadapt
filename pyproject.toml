@@ -23,7 +23,7 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
-dependencies = ["numpy>=1.24", "pandas>=2.0", "scikit-learn>=1.4", "scipy>=1.8"]
+dependencies = ["numpy>=1.24", "pandas>=2.0", "scikit-learn>=1.4", "scipy>=1.8", "threadpoolctl>=3.1"]
 
 [project.urls]
 Homepage = "https://github.com/lucalullo/codadapt"

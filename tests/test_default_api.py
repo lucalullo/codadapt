@@ -83,7 +83,7 @@ def test_exact_minimum_api_handles_mixed_missing_and_unseen_data(binary, capsys)
 
 def test_dataframe_names_realign_and_reject_invalid_schema():
     X, y, _ = default_frame()
-    model = CodAdapt(n_tables=1, max_iter=3, random_state=42, verbosity=0).fit(X, y)
+    model = CodAdapt(n_tables=1, random_state=42, verbosity=0).fit(X, y)
     assert_array_equal(model.feature_names_in_, X.columns.to_numpy())
     assert_array_equal(model.predict(X), model.predict(X[X.columns[::-1]]))
     invalid = [X.drop(columns=["text"]), X.assign(extra=1), X.to_numpy()]

@@ -30,54 +30,34 @@ The native CodAdapt default remains the architecture selected during the 0.1 dev
 
 ## Installation
 
-### From GitHub
+### From a locally built wheel
 
-The current repository line is **0.2.0rc2**, with verified Python **3.10–3.14**
-support. Use `main` for the compatibility update once these local changes have been
-uploaded manually. The published `v0.2.0rc2` tag points to the older commit and is
-not being rewritten; it does not include this update.
+Use Python **3.10–3.14** in a virtual environment. Activate that environment using
+your platform's normal command, then install the artifact you have built or received:
 
 ```bash
-python -m pip install "git+https://github.com/lucalullo/codadapt.git@main"
+python -m venv .venv
+python -m pip install ./dist/codadapt-0.2.0rc2-py3-none-any.whl
+python -c "import codadapt; print(codadapt.__version__)"
 ```
 
-For the optional experimental EBM compiler:
+The current source version is **0.2.0rc2**. This documentation does not announce a
+PyPI release. A filename alone does not distinguish historical and rebuilt RC2
+artifacts; retain the artifact SHA256 and dependency versions. See the
+[compatibility policy](https://github.com/lucalullo/codadapt/blob/main/docs/PYTHON_COMPATIBILITY.md) for executed evidence and
+remaining platform gates, and [release procedure](https://github.com/lucalullo/codadapt/blob/main/docs/RELEASING.md) for qualification.
+
+To compile an already fitted supported EBM teacher, install the optional dependency:
 
 ```bash
-python -m pip install "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@main"
+python -m pip install "interpret-core==0.7.8"
 ```
 
-Native fit, validation, prediction and persistence use only CodAdapt and numerical
-infrastructure. The optional EBM extra is solely for explicit import/compilation of
-an externally fitted model; it is not part of native training.
-
-### Kaggle
-
-Current `main` supports Python **3.10–3.14** after the compatibility update is
-uploaded. Core and EBM previously passed local validation separately; see
-[the compatibility matrix](docs/PYTHON_COMPATIBILITY.md). Remote GitHub CI and
-the actual Kaggle image remain pending. Do not use the historical tag for this fix.
-
-Native installation:
-
-```python
-!pip install -qq git+https://github.com/lucalullo/codadapt.git@main
-```
-
-EBM compilation:
-
-```python
-!pip install -qq "codadapt[ebm] @ git+https://github.com/lucalullo/codadapt.git@main"
-```
-
-Use network-enabled Kaggle only for this manual installation. Restart the kernel
-if numerical dependencies changed. Offline use can instead install the updated
-local `codadapt-0.2.0rc2-py3-none-any.whl` with compatible dependencies available.
-The same version name does not identify whether an older wheel contains this fix.
-
-**KAGGLE_REMOTE_CONFIRMATION_PENDING = YES.** Local Python 3.13.16/3.14.8 checks
-do not validate the reported Kaggle 3.13.15 image. No remote command above was run
-by this task. The binary/regression defaults and EBM compiler are unchanged; multiclass uses the native shared OVR backend. SafeBlend uses the core installation.
+Native fit, validation, prediction and persistence require only CodAdapt and its
+numerical dependencies. The EBM dependency is needed only for explicit compilation,
+and is not retained or required by the compiled model. Native SafeBlend needs no
+external learner. Kaggle/other hosted images require their own smoke test; local
+Windows checks do not qualify those images.
 
 ### Local checkout
 
@@ -96,7 +76,7 @@ python -m ruff format --check .
 python -m pytest
 ```
 
-Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.4+, and SciPy 1.8+. Native training requires no external ML model. `psutil` is an optional benchmark dependency; the `ebm` extra is only an explicit compiler/import tool.
+Runtime requirements are NumPy 1.24+, pandas 2.0+, scikit-learn 1.4+, SciPy 1.8+, and threadpoolctl 3.1+. Native training requires no external ML model. `psutil` is an optional benchmark dependency; the `ebm` extra is only an explicit compiler/import tool.
 
 ## Quick start
 
@@ -128,7 +108,13 @@ probabilities = model.predict_proba(X)[:, 1]
 
 ```python
 from codadapt import CodAdaptClassifier
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
 
+X, y = make_classification(
+    n_samples=240, n_features=6, n_informative=4, n_redundant=0, n_classes=3, random_state=42
+)
+X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=42)
 model = CodAdaptClassifier(random_state=42, verbosity=0)
 model.fit(X_train, y_train)
 
@@ -140,13 +126,17 @@ Multiclass targets are detected automatically; `CodAdapt` is the same classifier
 alias. For K classes, `proba` has shape `(n_samples, K)` in `classes_` order.
 Native sigmoid head probabilities are normalized across classes; ties select the
 first class. Encoding and validation rows are shared, while fitting remains
-independent per target class. See the [multiclass contract](docs/API.md#multiclass-shared-ovr).
+independent per target class. See the [multiclass contract](https://github.com/lucalullo/codadapt/blob/main/docs/API.md#multiclass-shared-ovr).
 
 ### Regression
 
 ```python
 from codadapt import CodAdaptRegressor
+from sklearn.datasets import make_regression
+from sklearn.model_selection import train_test_split
 
+X, y = make_regression(n_samples=240, n_features=6, noise=1.0, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 model = CodAdaptRegressor(random_state=42, verbosity=0)
 model.fit(X_train, y_train)
 
@@ -160,8 +150,10 @@ CodAdapt follows the scikit-learn estimator protocol:
 ```python
 import numpy as np
 from codadapt import CodAdaptClassifier
+from sklearn.datasets import make_classification
 from sklearn.model_selection import cross_val_score
 
+X, y = make_classification(n_samples=240, n_features=6, random_state=42)
 model = CodAdaptClassifier(random_state=42, verbosity=0)
 scores = cross_val_score(model, X, y, cv=5, scoring="roc_auc")
 
@@ -192,11 +184,13 @@ Without an explicit validation set, CodAdapt creates an internal validation spli
 For a user-controlled holdout:
 
 ```python
-model.fit(
-    X_train,
-    y_train,
-    eval_set=(X_valid, y_valid),
-)
+from codadapt import CodAdaptRegressor
+from sklearn.datasets import make_regression
+from sklearn.model_selection import train_test_split
+
+X, y = make_regression(n_samples=240, n_features=6, random_state=42)
+X_train, X_valid, y_train, y_valid = train_test_split(X, y, random_state=42)
+model = CodAdaptRegressor(random_state=42).fit(X_train, y_train, eval_set=(X_valid, y_valid))
 ```
 
 Preprocessing is fitted only on the effective training rows. Validation data does not determine quantile thresholds or categorical vocabularies.
@@ -204,7 +198,13 @@ Preprocessing is fitted only on the effective training rows. Validation data doe
 Per-row non-negative sample weights are supported:
 
 ```python
-model.fit(X_train, y_train, sample_weight=weights)
+import numpy as np
+from codadapt import CodAdaptRegressor
+from sklearn.datasets import make_regression
+
+X_train, y_train = make_regression(n_samples=240, n_features=6, random_state=42)
+weights = np.linspace(0.5, 1.5, len(y_train))
+model = CodAdaptRegressor(random_state=42).fit(X_train, y_train, sample_weight=weights)
 ```
 
 Rows with zero effective weight are removed before preprocessing and validation splitting.
@@ -219,14 +219,18 @@ final refit. `CodAdaptRegressor` remains the default.
 
 ```python
 from codadapt.experimental import SafeBlendRegressor
+from sklearn.datasets import make_regression
+from sklearn.model_selection import train_test_split
 
+X, y = make_regression(n_samples=240, n_features=6, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 model = SafeBlendRegressor(random_state=42, verbosity=0, n_jobs=4)
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 print(model.branch_, model.alpha_)
 ```
 
-The later [independent regression qualification](BENCHMARKS.md#independent-safeblend-regression-qualification)
+The later [independent regression qualification](https://github.com/lucalullo/codadapt/blob/main/BENCHMARKS.md#independent-safeblend-regression-qualification)
 supports SafeBlend as an experimental **compact regression specialist**. Across
 **nine NEW_EXTERNAL datasets and 45 frozen group/time splits**, median RMSE was
 **+4.62% worse** than the preregistered external leader (Base: **+4.65%**), with
@@ -248,7 +252,7 @@ different leader rules and are not pooled.
 Historical Round 78 local research-runtime medians were approximately **4.13× fit time**,
 **1.09× serialized memory**, **1.08× deep memory** and **1.19–1.23× inference
 latency** versus Base. Public schema validation adds overhead; results depend on
-hardware and workload. See [the native SafeBlend contract](docs/SAFE_BLEND_EXPERIMENTAL.md)
+hardware and workload. See [the native SafeBlend contract](https://github.com/lucalullo/codadapt/blob/main/docs/SAFE_BLEND_EXPERIMENTAL.md)
 for inputs, fitted diagnostics, persistence, costs and limitations.
 
 ## Experimental EBM compilation
@@ -257,7 +261,19 @@ CodAdapt 0.2.0rc2 includes an **experimental, opt-in** compiler for supported ad
 
 ```python
 from codadapt.experimental import compile_ebm
+import pandas as pd
+from interpret.glassbox import ExplainableBoostingClassifier
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
 
+X, y = make_classification(n_samples=240, n_features=6, random_state=42)
+X = pd.DataFrame(X, columns=[f"feature_{j}" for j in range(X.shape[1])])
+X_train, X_valid, y_train, y_valid = train_test_split(X, y, stratify=y, random_state=42)
+X_test = X_valid
+teacher = ExplainableBoostingClassifier(
+    interactions=0, outer_bags=2, max_rounds=100, n_jobs=1, random_state=42
+)
+teacher.fit(X_train, y_train)
 compiled = compile_ebm(
     teacher,
     X_verify=X_valid,
@@ -281,9 +297,9 @@ For the verified contract:
 
 In the frozen Windows/WSL validation panel (12 datasets × 3 splits, 36 cases per environment, one thread on the same physical host), median compiled/EBM memory ratios were **0.195× deep retained memory** and **0.236× serialized size**. These are panel measurements, not universal memory bounds.
 
-Runtime performance is workload- and environment-dependent. **The historical single-row speed advantage did not replicate**, and a general inference-speed advantage has not been established. Independent-hardware validation remains pending. See the complete [compiler benchmark disclosure](BENCHMARKS.md#experimental-ebm-compiler--frozen-local-validation) for fidelity, memory and all measured batch sizes.
+Runtime performance is workload- and environment-dependent. **The historical single-row speed advantage did not replicate**, and a general inference-speed advantage has not been established. Independent-hardware validation remains pending. See the complete [compiler benchmark disclosure](https://github.com/lucalullo/codadapt/blob/main/BENCHMARKS.md#experimental-ebm-compiler--frozen-local-validation) for fidelity, memory and all measured batch sizes.
 
-See [docs/EBM_COMPILER.md](docs/EBM_COMPILER.md) before deployment.
+See [docs/EBM_COMPILER.md](https://github.com/lucalullo/codadapt/blob/main/docs/EBM_COMPILER.md) before deployment.
 
 ## Main parameters
 
@@ -295,7 +311,6 @@ model = CodAdapt(
     n_tables=8,
     features_per_table=3,
     table_size=256,
-    max_iter=20,
     lookup_budget=24,
     l2=5.0,
     early_stopping=True,
@@ -304,7 +319,10 @@ model = CodAdapt(
 )
 ```
 
-See [docs/API.md](docs/API.md) for the complete parameter contract.
+Estimator constructor parameters are keyword-only. The pre-1.0 API cleanup removes
+seven inactive legacy controls; existing configurations must drop those arguments.
+`features_per_table` controls only the conservative memory estimate, not interaction
+order. See the [API and migration guide](https://github.com/lucalullo/codadapt/blob/main/docs/API.md).
 
 ## How CodAdapt works
 
@@ -330,16 +348,16 @@ Numeric features are discretized from train-only quantiles. Categorical features
 
 Prediction is dominated by integer addressing, table lookups, and additions rather than tree traversal or neural-network layers.
 
-See [docs/ALGORITHM.md](docs/ALGORITHM.md) for the detailed formulation.
+See [docs/ALGORITHM.md](https://github.com/lucalullo/codadapt/blob/main/docs/ALGORITHM.md) for the detailed formulation.
 
 ## Performance
 
-The [independent regression qualification](BENCHMARKS.md#independent-safeblend-regression-qualification)
+The [independent regression qualification](https://github.com/lucalullo/codadapt/blob/main/BENCHMARKS.md#independent-safeblend-regression-qualification)
 takes precedence for SafeBlend positioning: **nine NEW_EXTERNAL datasets, 45 frozen
 splits, zero tuning and 270/270 SUCCESS jobs**. It confirms serialized compactness,
 with weaker predictive quality than the external leader on median RMSE.
 
-The earlier [Frozen Blind External Benchmark](BENCHMARKS.md#frozen-blind-external-benchmark)
+The earlier [Frozen Blind External Benchmark](https://github.com/lucalullo/codadapt/blob/main/BENCHMARKS.md#frozen-blind-external-benchmark)
 remains the primary binary/multiclass evidence: **16 NEW_EXTERNAL primary
 datasets, 72 conditions and 381 frozen jobs**, with **380 SUCCESS** and one
 **MEMORY_GUARD_REJECT** coverage/system limitation. Dataset selection and the
@@ -369,7 +387,7 @@ predictive competitiveness did not generalize uniformly to this blind panel.
 These are single-host, hardware- and protocol-dependent results; performance
 depends on domain. NEW_EXTERNAL is qualified against recoverable source history,
 with incomplete early research catalogs. See the public
-[methodology and limits](BENCHMARKS.md#blind-methodology-and-limits).
+[methodology and limits](https://github.com/lucalullo/codadapt/blob/main/BENCHMARKS.md#blind-methodology-and-limits).
 
 Earlier external pilots are secondary/historical evidence; development and
 transfer panels are research evidence. They remain documented separately and
@@ -392,10 +410,10 @@ These are panel-specific engineering comparisons, not superiority over boosting.
 The earlier leakage-audited external pilot covered **6 real datasets, 11 evaluation
 units and 36 valid fits** against fixed HGB and Dummy references. Technical checks
 passed while predictive results varied by task, source and metric. Its small-panel
-quality estimates are retained in the [historical external qualification disclosure](BENCHMARKS.md#external-leakage-audited-product-qualification),
+quality estimates are retained in the [historical external qualification disclosure](https://github.com/lucalullo/codadapt/blob/main/BENCHMARKS.md#external-leakage-audited-product-qualification),
 separately from the stronger blind evidence above.
 
-See [BENCHMARKS.md](BENCHMARKS.md) for the public benchmark disclosure.
+See [BENCHMARKS.md](https://github.com/lucalullo/codadapt/blob/main/BENCHMARKS.md) for the public benchmark disclosure.
 
 A lightweight sanity benchmark can be run with:
 
@@ -405,7 +423,23 @@ python benchmarks/run_benchmarks.py --quick
 
 ## Persistence
 
-Native CodAdapt models support pickle/joblib persistence.
+Native CodAdapt models support pickle/joblib persistence in matching environments.
+Cross-version, cross-Python and cross-dependency loading is not guaranteed. See
+[the stability and persistence contract](https://github.com/lucalullo/codadapt/blob/main/docs/STABILITY.md).
+
+```python
+import pickle
+import numpy as np
+from codadapt import CodAdaptClassifier
+from sklearn.datasets import make_classification
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+
+X, y = make_classification(n_samples=160, n_features=4, random_state=42)
+model = make_pipeline(StandardScaler(), CodAdaptClassifier(random_state=42)).fit(X, y)
+restored = pickle.loads(pickle.dumps(model))  # only trusted, locally created bytes
+np.testing.assert_array_equal(model.predict_proba(X), restored.predict_proba(X))
+```
 
 Compiled EBM models retain no teacher. Loading and inference without interpret were verified in the frozen local Windows environment; this is not a guarantee across every platform or future dependency version.
 
@@ -413,18 +447,20 @@ As with any pickle/joblib artifact, load only trusted files and prefer matching 
 
 ## Documentation
 
-- [API reference, including native multiclass Shared OVR](docs/API.md)
-- [Algorithm](docs/ALGORITHM.md)
-- [Python compatibility and release gate](docs/PYTHON_COMPATIBILITY.md)
-- [Experimental native SafeBlend](docs/SAFE_BLEND_EXPERIMENTAL.md)
-- [Experimental EBM compiler](docs/EBM_COMPILER.md)
-- [Research master](docs/research/RESEARCH_MASTER.md)
-- [Research state](docs/research/RESEARCH_STATE.json)
-- [Benchmark disclosure](BENCHMARKS.md)
-- [Release notes](RELEASE_NOTES.md)
-- [Changelog](CHANGELOG.md)
-- [Contributing](CONTRIBUTING.md)
-- [Security](SECURITY.md)
+- [Stability and persistence contract](https://github.com/lucalullo/codadapt/blob/main/docs/STABILITY.md)
+- [Release qualification procedure](https://github.com/lucalullo/codadapt/blob/main/docs/RELEASING.md)
+- [API reference, including native multiclass Shared OVR](https://github.com/lucalullo/codadapt/blob/main/docs/API.md)
+- [Algorithm](https://github.com/lucalullo/codadapt/blob/main/docs/ALGORITHM.md)
+- [Python compatibility and release gate](https://github.com/lucalullo/codadapt/blob/main/docs/PYTHON_COMPATIBILITY.md)
+- [Experimental native SafeBlend](https://github.com/lucalullo/codadapt/blob/main/docs/SAFE_BLEND_EXPERIMENTAL.md)
+- [Experimental EBM compiler](https://github.com/lucalullo/codadapt/blob/main/docs/EBM_COMPILER.md)
+- [Research master](https://github.com/lucalullo/codadapt/blob/main/docs/research/RESEARCH_MASTER.md)
+- [Research state](https://github.com/lucalullo/codadapt/blob/main/docs/research/RESEARCH_STATE.json)
+- [Benchmark disclosure](https://github.com/lucalullo/codadapt/blob/main/BENCHMARKS.md)
+- [Release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md)
+- [Changelog](https://github.com/lucalullo/codadapt/blob/main/CHANGELOG.md)
+- [Contributing](https://github.com/lucalullo/codadapt/blob/main/CONTRIBUTING.md)
+- [Security](https://github.com/lucalullo/codadapt/blob/main/SECURITY.md)
 
 ## Research continuity
 
@@ -434,6 +470,7 @@ These files are development documentation and are intentionally excluded from th
 
 ## Limitations
 
+- `features_per_table` affects only the memory estimate; numeric resolution is capped at 16 bins;
 - single-label binary and multiclass classification;
 - single-target regression only;
 - no multilabel, ranking, or multi-output interface;
@@ -472,7 +509,7 @@ The public API, compiler contract, and defaults may evolve as broader external v
 
 ## License
 
-CodAdapt is created by Luca Lullo and released under the [MIT License](LICENSE).
+CodAdapt is created by Luca Lullo and released under the [MIT License](https://github.com/lucalullo/codadapt/blob/main/LICENSE).
 
 ## Author
 

@@ -34,10 +34,10 @@ OFFICIAL_SCOPE_EXCEPTIONS = {
 def official_cases():
     models = [
         CodAdaptClassifier(
-            n_bins=8, n_tables=2, table_size=32, max_iter=8, early_stopping=False, random_state=0
+            n_bins=8, n_tables=2, table_size=32, early_stopping=False, random_state=0
         ),
         CodAdaptRegressor(
-            n_bins=8, n_tables=2, table_size=32, max_iter=8, early_stopping=False, random_state=0
+            n_bins=8, n_tables=2, table_size=32, early_stopping=False, random_state=0
         ),
     ]
     cases = []
@@ -77,7 +77,7 @@ def test_pipeline_cross_validation_scoring_and_clone(binary):
     X = rng.normal(size=(240, 3))
     y = (X[:, 0] > 0).astype(int) if binary else 3 * X[:, 0]
     estimator = CodAdaptClassifier if binary else CodAdaptRegressor
-    model = estimator(n_tables=1, table_size=32, max_iter=6, early_stopping=False, random_state=42)
+    model = estimator(n_tables=1, table_size=32, early_stopping=False, random_state=42)
     assert is_classifier(model) == binary
     assert is_regressor(model) != binary
     pipeline = Pipeline([("scale", StandardScaler()), ("model", model)])
