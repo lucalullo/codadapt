@@ -1,8 +1,10 @@
 # Release qualification and manual publishing
 
-This is a procedure, not an announcement. The current candidate is **1.0.0rc1**,
-not stable 1.0.0. No workflow publishes packages or creates a tag/release. The
-maintainer controls publication; no remote action is implied by local preparation.
+This is a procedure, not an announcement. The current candidate is **1.0.0rc2**,
+not stable 1.0.0. Qualification workflows do not publish or create tags/releases. Separate
+manual-only publishing workflows target the `testpypi` and `pypi` environments
+using Trusted Publishing. Only the maintainer runs them after the gates pass;
+local preparation triggers no remote action.
 
 ## Local candidate checks
 
@@ -34,17 +36,21 @@ Inspect archives for private research/data/cache/environment files and secrets.
    Keep core physically independent of external learners. Test optional EBM separately.
    A previous commit's CI does not qualify newly copied files.
 
-## Qualifying the 1.0.0rc1 candidate
+## Qualifying the 1.0.0rc2 candidate
 
-The pre-1.0 cleanup removes seven inactive controls, makes native construction
+RC2 adds the explicit native `memory_budget_mb=512` contract and accounts for
+external validation rows. Review [LARGE_DATASETS.md](LARGE_DATASETS.md); the budget
+is a heuristic admission limit, not a total RSS cap. Published RC1 is immutable.
+
+The pre-1.0 cleanup retained from RC1 removes seven inactive controls, makes native construction
 keyword-only and keeps BucketEncoder private with its import/pickle path retained.
 Review the migration in [API.md](API.md) and the future stable contract in
 [STABILITY.md](STABILITY.md) when integrating this candidate.
 Review platform results, documentation, license/ownership, scientific limitations and
-persistence policy. The RC1 source version is already prepared; qualify this exact
+persistence policy. The RC2 source version is prepared locally; qualify this exact
 version/payload, integrate manually, and obtain push CI plus the manual full release
-matrix before TestPyPI/index checks. Recommended sequence: **1.0.0rc1 candidate** →
-qualified RC1 publication → observation → separately qualified **1.0.0**. Any later
+matrix before TestPyPI/index checks. Recommended sequence: **1.0.0rc2 candidate** →
+qualified RC2 publication → observation → separately qualified **1.0.0**. Any later
 correction needs a new unique candidate version and qualification; never overwrite
 RC2 or RC1 index artifacts. The Beta classifier describes the prerelease candidate,
 not a stable release or stronger benchmark result.

@@ -82,17 +82,7 @@ def prepare(model, X, y, sample_weight, eval_set):
     if len(y) != n:
         raise ValueError("X and y have inconsistent numbers of samples.")
     weight = validate_weights(sample_weight, n)
-    estimate = n * (40 * p + 2 * model.n_tables + 80)
-    estimate += (
-        24
-        * (p + model.n_tables * min(p, model.features_per_table))
-        * max(model.n_bins + 1, model.max_categories + 3)
-    )
-    estimate += 32 * model.n_tables * model.table_size
-    if estimate > 512 * 1024**2:
-        raise ValueError(
-            "Estimated working allocation exceeds the 512 MiB budget; reduce rows/features/model size."
-        )
+    estimate = model._check_memory_budget(n, p, eval_set)
     keep = np.flatnonzero(weight > 0)
     x, y, w = _rows(X, keep), y[keep], weight[keep].copy()
     try:

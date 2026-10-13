@@ -69,6 +69,7 @@ class _BaseCodAdapt(BaseEstimator):
         random_state=None,
         verbosity=0,
         lookup_budget=24,
+        memory_budget_mb=512,
     ):
         self.n_bins = n_bins
         self.max_categories = max_categories
@@ -85,8 +86,15 @@ class _BaseCodAdapt(BaseEstimator):
         self.random_state = random_state
         self.verbosity = verbosity
         self.lookup_budget = lookup_budget
+        self.memory_budget_mb = memory_budget_mb
 
     def _validate_parameters(self):
+        if (
+            isinstance(self.memory_budget_mb, (bool, np.bool_))
+            or not isinstance(self.memory_budget_mb, numbers.Integral)
+            or self.memory_budget_mb < 1
+        ):
+            raise ValueError("memory_budget_mb must be a positive integer in MiB.")
         bounds = {
             "n_bins": (2, 4096),
             "max_categories": (1, 4096),
@@ -123,6 +131,47 @@ class _BaseCodAdapt(BaseEstimator):
             raise ValueError("random_state must be None, an integer, or a NumPy RandomState.")
         if isinstance(state, numbers.Integral) and not 0 <= state <= 2**32 - 1:
             raise ValueError("random_state integer must lie in [0, 2**32 - 1].")
+
+    def _check_memory_budget(self, n, p, eval_set=None):
+        """Apply the deterministic working-allocation heuristic, not an RSS cap."""
+        validation_rows = 0
+        if eval_set is not None:
+            if not isinstance(eval_set, (tuple, list)) or len(eval_set) != 2:
+                raise ValueError("eval_set must be the pair (X_valid, y_valid).")
+            if sparse.issparse(eval_set[0]):
+                raise TypeError(
+                    "Sparse validation input is not supported; provide a dense numeric array."
+                )
+            # Read only the row count before copies/encoding; detailed validation
+            # remains in preparation. External validation is live during fit too.
+            try:
+                validation_rows = len(eval_set[0])
+            except TypeError as error:
+                raise ValueError("Validation X must be a 2D array or DataFrame.") from error
+        estimate = (int(n) + int(validation_rows)) * (40 * int(p) + 2 * self.n_tables + 80)
+        estimate += (
+            24
+            * (p + self.n_tables * min(p, self.features_per_table))
+            * max(self.n_bins + 1, self.max_categories + 3)
+        )
+        estimate += 32 * self.n_tables * self.table_size
+        budget = int(self.memory_budget_mb) * 1024**2
+        if estimate > budget:
+            raise ValueError(
+                f"Estimated working allocation {estimate / 1024**2:.2f} MiB exceeds "
+                f"the {self.memory_budget_mb} MiB memory_budget_mb budget "
+                f"({n} training rows, {validation_rows} external validation rows, "
+                f"{p} features). Use fewer rows/features or explicitly raise "
+                "memory_budget_mb only with sufficient RAM headroom. This heuristic "
+                "is not a total process RSS limit or an out-of-memory guarantee."
+            )
+        return int(estimate)
+
+    def __setstate__(self, state):
+        # Trusted RC1 artifacts predate the explicit resource-only parameter.
+        state = state.copy()
+        state.setdefault("memory_budget_mb", 512)
+        super().__setstate__(state)
 
     def _encode_target(self, y, fitting=False):
         if self._task == "regression":
@@ -203,19 +252,7 @@ class _BaseCodAdapt(BaseEstimator):
             raise ValueError(
                 "sample_weight must contain at least one non-zero value and have a finite positive sum."
             )
-        # Conservative bound includes bucket arrays, indices, temporary vectors and categorical metadata.
-        estimate = n * (40 * p + 2 * self.n_tables + 80)
-        estimate += (
-            24
-            * (p + self.n_tables * min(p, self.features_per_table))
-            * (max(self.n_bins + 1, self.max_categories + 3))
-        )
-        estimate += 32 * self.n_tables * self.table_size
-        if estimate > 512 * 1024**2:
-            raise ValueError(
-                "Estimated working allocation exceeds the 512 MiB budget; reduce rows/features/model size."
-            )
-        self.estimated_memory_bytes_ = int(estimate)
+        self.estimated_memory_bytes_ = self._check_memory_budget(n, p, eval_set)
         keep = np.flatnonzero(weight > 0)
         X_train, y_train, weight = _rows(X, keep), y[keep], weight[keep].copy()
         y_train = self._encode_target(y_train, fitting=True)

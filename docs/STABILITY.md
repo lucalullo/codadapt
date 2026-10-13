@@ -2,9 +2,9 @@
 
 ## Current prerelease
 
-The candidate source version is **1.0.0rc1**, a prerelease for the future stable
+The candidate source version is **1.0.0rc2**, a prerelease for the future stable
 native API. It is **not stable 1.0.0**; no publication or stable compatibility
-promise is created by candidate preparation. Historical RC2 artifacts/tags remain
+promise is created by candidate preparation. Historical 0.2.0rc2 and published 1.0.0rc1 artifacts/tags remain
 unchanged. Record the exact candidate source and artifact SHA256s.
 
 The intentional native API is `codadapt.CodAdaptClassifier`, its exact alias
@@ -25,6 +25,13 @@ historical module/class path stays importable for internal use and trusted model
 persistence; no physical rename or serialized-layout change accompanies this decision.
 
 ## 1.x policy — effective when a stable release is published
+
+The 1.0.0rc2 candidate introduces `memory_budget_mb=512` on native
+estimators and includes external validation rows in preflight admission. This is
+not in published RC1 and requires RC2 observation before stable 1.0. The scientific
+recipe, default budget and arithmetic precision are unchanged. See
+[LARGE_DATASETS.md](LARGE_DATASETS.md). Do not upload this changed working payload
+under the already published RC1 version.
 
 Stabilize the root estimator names, constructor defaults/active parameter meanings,
 method signatures, target/prediction shapes, class ordering, supported input contract

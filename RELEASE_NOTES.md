@@ -1,5 +1,31 @@
 # Release notes
 
+## 1.0.0rc2 candidate — prepared locally, not published
+
+The 1.0.0rc2 candidate adds native `memory_budget_mb=512` and accounts for external
+validation rows before training allocations. This is a resource/API change that
+requires **RC2 before stable 1.0**, with fresh platform qualification and public
+observation. It does not change predictive training or internal precision. Published
+RC1 remains unchanged; these additions are not available by installing RC1.
+
+```python
+from codadapt import CodAdaptClassifier
+
+model = CodAdaptClassifier(memory_budget_mb=1024, random_state=42)
+```
+
+The parameter is a positive integer in MiB (2**20 bytes), with default 512.
+Increasing it only raises the guard's admission budget: it does not reduce
+memory usage or change learned predictions. Choose it with sufficient RAM
+headroom for input, validation, other processes and the OS. This heuristic
+is not a total RSS cap or a universal guarantee against OOM. SafeBlend does
+not expose this parameter; see [the large-data guide](docs/LARGE_DATASETS.md).
+
+No new algorithm, scientific recipe, precision change or predictive claim
+is introduced. RC2 requires its own manual remote qualification and
+observation before stable 1.0; preparation performs no publication.
+See [LARGE_DATASETS.md](docs/LARGE_DATASETS.md) for configuration and limitations.
+
 ## 1.0.0rc1 candidate — not stable, not published by this preparation
 
 CodAdapt is a compact native tabular model family with a scikit-learn-style API

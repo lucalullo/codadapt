@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.0rc2 — prepared locally, not published
+
+- Add native `memory_budget_mb=512` as a positive integer MiB admission budget.
+  Preserve default budget, encoder, fitted values and training precision.
+- Count external validation rows in preflight allocation estimates, before row
+  copies and encoding. Explain the estimated/requested budget in resource errors.
+- Load trusted RC1 native objects with the historical 512 MiB parameter default;
+  tested loads do not promise general cross-version persistence.
+- Document large-data scaling, dtype effects and SafeBlend's separate resource
+  limitations. The guard is a heuristic, not an RSS cap or OOM guarantee.
+- Published 1.0.0rc1 is unchanged. This RC2 payload requires fresh
+  qualification/observation before stable release; do not republish it as RC1.
+
 ## 1.0.0rc1 candidate — prepared, not published
 
 - Prepare the native `CodAdapt` / `CodAdaptClassifier` and `CodAdaptRegressor`
@@ -23,7 +36,7 @@
   historical; the version bump makes no new performance claim.
 
 The entries below record preparation of the historical 0.2.0rc2 line. Their
-version statements describe that earlier work, not the current RC1 candidate.
+version statements describe that earlier work, not the current 1.0.0rc2 candidate.
 
 ## Historical 0.2.0rc2 preparation — pre-1.0 API cleanup
 

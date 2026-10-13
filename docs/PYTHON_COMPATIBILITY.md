@@ -74,7 +74,7 @@ inferred from one successful transfer.
 Compatibility work does not alter native fitting, prediction semantics, compiler
 cells or native validation protocols. SafeBlend is a separate fully native, opt-in
 experimental regression estimator. The current candidate source version is
-**1.0.0rc1**, not stable 1.0.0. Candidate preparation creates no tag, publication or
-remote release. RC1 artifacts require fresh version/provenance/install checks on
+**1.0.0rc2**, not stable 1.0.0. Candidate preparation creates no tag, publication or
+remote release. RC2 artifacts require fresh version/provenance/install checks on
 each available minor; old commit CI does not qualify this new candidate. The full
 remote release matrix, including macOS, remains a maintainer-only external gate.
