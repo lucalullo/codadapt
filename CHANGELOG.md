@@ -1,6 +1,31 @@
 # Changelog
 
-## Unreleased — pre-1.0 API cleanup (version unchanged)
+## 1.0.0rc1 candidate — prepared, not published
+
+- Prepare the native `CodAdapt` / `CodAdaptClassifier` and `CodAdaptRegressor`
+  API for a future stable 1.x contract. This is a prerelease candidate; no PyPI
+  release, tag or stable compatibility guarantee is announced.
+- Retain native binary classification, shared-encoding Shared OVR multiclass and
+  single-target regression without changing their algorithms or active defaults.
+- Keep fully native `SafeBlendRegressor` and the additive EBM compiler explicitly
+  experimental and opt-in. SafeBlend is a compact regression specialist, not a
+  general predictive-quality leader.
+- Carry forward explicit classifier training without internal `exec`/source
+  reconstruction, input validation and fitted-state/failed-refit hardening.
+- Freeze keyword-only native constructors after removing seven inactive legacy
+  controls; retain `features_per_table` solely as a resource-estimate control.
+- Keep `BucketEncoder` private while preserving its internal import/pickle path.
+- Retain Python 3.10–3.14 support and matching-environment trusted persistence.
+  Qualify fresh RC1 wheel/sdist artifacts, installed APIs and package metadata;
+  full remote platform qualification and index checks remain manual gates.
+- Update current-version documentation and notebook checks to `1.0.0rc1`, with
+  Beta prerelease metadata. Historical versions and scientific evidence remain
+  historical; the version bump makes no new performance claim.
+
+The entries below record preparation of the historical 0.2.0rc2 line. Their
+version statements describe that earlier work, not the current RC1 candidate.
+
+## Historical 0.2.0rc2 preparation — pre-1.0 API cleanup
 
 - **Breaking constructor cleanup:** remove the inactive `max_iter`, `adapt_codes`,
   `adapt_every`, `max_code_updates`, `n_candidates`, `min_code_count` and `patience`
@@ -18,7 +43,7 @@
   Source version remains 0.2.0rc2; no release is implied by this entry.
 
 
-## Unreleased — release engineering (version unchanged)
+## Historical 0.2.0rc2 preparation — release engineering
 
 - Preserve explicit shared classifier training without dynamic source execution.
 - Give malformed validation arrays clear public errors and mark a fit successful
@@ -30,7 +55,7 @@
   manual release policies, runnable examples and installed-package OS qualification CI.
 - Keep scientific recipes/defaults, persistence layout and version 0.2.0rc2 unchanged.
 
-## Unreleased — current 0.2.0rc2 repository line
+## 0.2.0rc2 — historical repository line
 
 - Refactored classifier training to remove internal dynamic source execution while
   preserving binary and multiclass model outputs. Public API, defaults and

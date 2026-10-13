@@ -72,5 +72,9 @@ Teacher-free inference remains supported; cross-minor compatibility cannot be
 inferred from one successful transfer.
 
 Compatibility work does not alter native fitting, prediction semantics, compiler
-cells or native validation protocols. SafeBlend is a separate fully native, opt-in experimental regression estimator. The public version
-remains 0.2.0rc2; this update creates no tag, publication or remote release.
+cells or native validation protocols. SafeBlend is a separate fully native, opt-in
+experimental regression estimator. The current candidate source version is
+**1.0.0rc1**, not stable 1.0.0. Candidate preparation creates no tag, publication or
+remote release. RC1 artifacts require fresh version/provenance/install checks on
+each available minor; old commit CI does not qualify this new candidate. The full
+remote release matrix, including macOS, remains a maintainer-only external gate.

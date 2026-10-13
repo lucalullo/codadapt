@@ -1,7 +1,7 @@
 # Benchmark Disclosure
 
 The later independent SafeBlend regression qualification takes precedence for
-current **0.2.0rc2 SafeBlend positioning**: compact serialized models were confirmed,
+current **1.0.0rc1 candidate SafeBlend positioning**: compact serialized models were confirmed,
 while predictive quality leadership was not. The frozen blind NEW_EXTERNAL panel
 remains the primary binary/multiclass evidence and its library-wide verdict remains
 **PRODUCT_POSITION_MIXED**. Earlier external pilots are secondary/historical evidence;
@@ -441,7 +441,7 @@ for supported models, schemas, mandatory verification and explicit `REJECT` beha
 
 ## Native multiclass Shared OVR — frozen engineering transfer
 
-Current working tree 0.2.0rc2 adds automatic single-label multiclass classification.
+The current 1.0.0rc1 candidate retains the automatic single-label multiclass classification added in the 0.2.0rc2 line.
 The frozen transfer compared9 real UCI datasets ×3 identical splits against K
 independently fitted native CodAdapt binary heads, with the same parameters,
 training/validation rows and normalized-sigmoid probability contract.
@@ -490,7 +490,7 @@ and the [blind binary/multiclass evidence](#frozen-blind-external-benchmark) abo
 two-source binary estimate is not the current headline. Its results are retained
 without changing their original HGB reference or aggregation.
 
-This separate frozen product pilot evaluated the current **0.2.0rc2** public
+This separate frozen product pilot evaluated the historical **0.2.0rc2** public
 estimators on **6 real datasets, 11 evaluation units and 36 valid fitted runs**.
 Source provenance, feature/target contracts, seeds and train/test row indices
 were frozen before fitting. There was **no tuning** or test-based model selection.

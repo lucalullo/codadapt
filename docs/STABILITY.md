@@ -2,9 +2,10 @@
 
 ## Current prerelease
 
-The source version remains **0.2.0rc2**, an experimental prerelease. No 1.0 release
-or compatibility promise is created by this document. Published historical RC2
-artifacts and rebuilt local RC2 artifacts must be distinguished by SHA256.
+The candidate source version is **1.0.0rc1**, a prerelease for the future stable
+native API. It is **not stable 1.0.0**; no publication or stable compatibility
+promise is created by candidate preparation. Historical RC2 artifacts/tags remain
+unchanged. Record the exact candidate source and artifact SHA256s.
 
 The intentional native API is `codadapt.CodAdaptClassifier`, its exact alias
 `codadapt.CodAdapt`, `codadapt.CodAdaptRegressor`, and `codadapt.__version__`.
@@ -37,7 +38,7 @@ emit `FutureWarning` at the public call site, document a migration in the API gu
 and changelog, and remain for at least two minor releases before removal in a major
 release. Experimental/private surfaces are excluded from this stable contract.
 This policy is not a retroactive compatibility guarantee for RC artifacts.
-The pre-1.0 cleanup removes seven inactive constructor controls and makes native
+The pre-1.0 cleanup retained in this candidate removes seven inactive constructor controls and makes native
 estimator construction keyword-only; see [API.md](API.md) for migration. All
 remaining defaults and active parameter meanings are unchanged. In particular,
 `features_per_table` is explicitly a memory-estimate control, not interaction order.

@@ -1,7 +1,8 @@
 # Release qualification and manual publishing
 
-This is a procedure, not an announcement. Version remains 0.2.0rc2. No workflow
-publishes packages or creates a tag/release. The maintainer controls publication.
+This is a procedure, not an announcement. The current candidate is **1.0.0rc1**,
+not stable 1.0.0. No workflow publishes packages or creates a tag/release. The
+maintainer controls publication; no remote action is implied by local preparation.
 
 ## Local candidate checks
 
@@ -33,18 +34,20 @@ Inspect archives for private research/data/cache/environment files and secrets.
    Keep core physically independent of external learners. Test optional EBM separately.
    A previous commit's CI does not qualify newly copied files.
 
-## Before a 1.0 RC
+## Qualifying the 1.0.0rc1 candidate
 
-The local pre-1.0 cleanup removes seven inactive controls, makes native construction
+The pre-1.0 cleanup removes seven inactive controls, makes native construction
 keyword-only and keeps BucketEncoder private with its import/pickle path retained.
 Review the migration in [API.md](API.md) and the future stable contract in
 [STABILITY.md](STABILITY.md) when integrating this candidate.
 Review platform results, documentation, license/ownership, scientific limitations and
-persistence policy. Only then select a new unique version, update `_version.py` and
-release notes/metadata/docs, and repeat qualification on that exact version/payload.
-Recommended sequence: current engineering candidate → **1.0.0rc1** → **1.0.0**,
-provided the integrated candidate passes release gates. Do not overwrite existing RC2
-artifacts on an index. Packaging classifiers must reflect actual maturity.
+persistence policy. The RC1 source version is already prepared; qualify this exact
+version/payload, integrate manually, and obtain push CI plus the manual full release
+matrix before TestPyPI/index checks. Recommended sequence: **1.0.0rc1 candidate** →
+qualified RC1 publication → observation → separately qualified **1.0.0**. Any later
+correction needs a new unique candidate version and qualification; never overwrite
+RC2 or RC1 index artifacts. The Beta classifier describes the prerelease candidate,
+not a stable release or stronger benchmark result.
 
 ## Manual TestPyPI and stable release checklist
 

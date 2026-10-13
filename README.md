@@ -2,9 +2,9 @@
 
 CodAdapt is a compact native tabular model family with mixed predictive competitiveness across tasks. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary and multiclass classification and single-target regression, while preserving a scikit-learn-style API.
 
-**CodAdapt 0.2.0rc2 keeps binary and regression defaults unchanged, adds automatic native multiclass support, and retains a fully native experimental SafeBlend regressor and an optional EBM compiler/import tool.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
+**CodAdapt 1.0.0rc1 is a prerelease candidate with native binary classification, Shared OVR multiclass and regression, a fully native experimental SafeBlend regressor and an optional EBM compiler/import tool.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
 
-CodAdapt remains a pre-1.0 experimental project. It is intended for controlled experiments, reproducible evaluation, and practical tabular workflows. It does not claim universal superiority over established tree-based models.
+This candidate prepares product and API stability; it is **not stable 1.0.0** and this documentation does not announce publication. It is intended for reproducible evaluation and practical tabular workflows. It does not claim universal superiority over established tree-based models.
 
 ## Highlights
 
@@ -37,13 +37,13 @@ your platform's normal command, then install the artifact you have built or rece
 
 ```bash
 python -m venv .venv
-python -m pip install ./dist/codadapt-0.2.0rc2-py3-none-any.whl
+python -m pip install ./dist/codadapt-1.0.0rc1-py3-none-any.whl
 python -c "import codadapt; print(codadapt.__version__)"
 ```
 
-The current source version is **0.2.0rc2**. This documentation does not announce a
-PyPI release. A filename alone does not distinguish historical and rebuilt RC2
-artifacts; retain the artifact SHA256 and dependency versions. See the
+The current candidate source version is **1.0.0rc1**, a PEP 440 prerelease, not
+stable 1.0.0 or an announcement of a PyPI release. Historical RC2 artifacts and
+tags remain unchanged. Retain artifact SHA256 and dependency versions. See the
 [compatibility policy](https://github.com/lucalullo/codadapt/blob/main/docs/PYTHON_COMPATIBILITY.md) for executed evidence and
 remaining platform gates, and [release procedure](https://github.com/lucalullo/codadapt/blob/main/docs/RELEASING.md) for qualification.
 
@@ -257,7 +257,7 @@ for inputs, fitted diagnostics, persistence, costs and limitations.
 
 ## Experimental EBM compilation
 
-CodAdapt 0.2.0rc2 includes an **experimental, opt-in** compiler for supported additive `interpret-core==0.7.8` EBM models. Install the [optional `ebm` extra](#installation) when compiling a fitted teacher; the native CodAdapt installation remains independent of interpret.
+CodAdapt 1.0.0rc1 retains an **experimental, opt-in** compiler for supported additive `interpret-core==0.7.8` EBM models. Install the [optional `ebm` extra](#installation) when compiling a fitted teacher; the native CodAdapt installation remains independent of interpret.
 
 ```python
 from codadapt.experimental import compile_ebm
@@ -400,7 +400,7 @@ With ratios defined as `LightGBM / CodAdapt`, the median fit-speed ratio was `0.
 
 These are local experimental measurements, not universal performance claims. Hardware, dataset, package versions, thread settings, split choice, and workload can change the result.
 
-The 0.2.0rc2 EBM compiler has a separate performance profile. It is intended primarily as an experimental compact deployment path, not as a claim that compiled inference is faster for every batch size or workload.
+The experimental EBM compiler has a separate performance profile. It is intended primarily as a compact deployment path, not as a claim that compiled inference is faster for every batch size or workload.
 
 The frozen native multiclass transfer panel (9 datasets × 3 splits) was exactly
 equivalent to independent native OVR. Shared-OVR/independent ratios were about
@@ -498,14 +498,18 @@ These files are development documentation and are intentionally excluded from th
 
 ## Status
 
-CodAdapt 0.2.0rc2 is an experimental pre-release. The binary and regression paths remain unchanged from the validated 0.1 line. Native multiclass shared OVR is included in the current working tree; SafeBlend and the EBM compiler remain opt-in and experimental. The published tag is not rewritten.
+CodAdapt 1.0.0rc1 is a **prerelease candidate**, not stable 1.0.0. The binary and regression algorithms remain unchanged from the validated 0.1 line. Native multiclass Shared OVR is included; SafeBlend and the EBM compiler remain opt-in and experimental. No publication or tag is created by candidate preparation.
 
 Current independent evidence supports SafeBlend as a **compact regression specialist**,
 with strong serialized-size savings and faster inference on the tested hardware,
 but weaker median predictive quality than the external leader. Classification
 competitiveness remains mixed on the earlier blind panel.
 
-The public API, compiler contract, and defaults may evolve as broader external validation continues.
+The native API is frozen as a candidate for the future 1.x contract described in
+[STABILITY.md](https://github.com/lucalullo/codadapt/blob/main/docs/STABILITY.md).
+Stable guarantees take effect only when stable 1.0 is published; experimental and
+private components are excluded. See the [release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md)
+for migration, known limitations and persistence scope.
 
 ## License
 

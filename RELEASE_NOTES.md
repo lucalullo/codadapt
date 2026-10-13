@@ -1,6 +1,79 @@
 # Release notes
 
-## Unreleased pre-1.0 API cleanup
+## 1.0.0rc1 candidate — not stable, not published by this preparation
+
+CodAdapt is a compact native tabular model family with a scikit-learn-style API
+and mixed predictive competitiveness. RC1 prepares product and API stability;
+it does not claim benchmark supremacy or announce an index release.
+
+### Native API and tasks
+
+The intended native API is `CodAdaptClassifier`, its exact alias `CodAdapt`,
+`CodAdaptRegressor` and `__version__`. Binary classification uses the native
+coded-memory path. Single-label multiclass uses Shared OVR with shared encoding,
+ordered original labels and normalized sigmoid probabilities, not softmax.
+Regression supports a single target. No external learner is needed for native
+fit, validation, prediction or reload. Active defaults and predictive algorithms
+are unchanged from the qualified pre-RC payload.
+
+Native constructors are keyword-only. Remove `max_iter`, `adapt_codes`,
+`adapt_every`, `max_code_updates`, `n_candidates`, `min_code_count` and `patience`
+from constructors, `set_params`, saved configuration and search grids; these
+inactive controls are rejected explicitly. `features_per_table` remains a
+resource-estimate control, not an interaction-order setting. `BucketEncoder` and
+the preprocessing helper module remain private, with their internal import and
+trusted-pickle path preserved. See [the API guide](docs/API.md).
+
+### Experimental components and scientific positioning
+
+`codadapt.experimental.SafeBlendRegressor` remains a fully native, opt-in Base +
+Rational blend with frozen alpha 0.30 and internal validation fallback. Independent
+qualification supports a **compact regression specialist**, not a general accuracy
+leader: nine datasets / 45 splits gave +4.62% median RMSE versus the external
+leader and 0.129× serialized size. A deep-RAM advantage was not demonstrated.
+Binary/multiclass quality leadership is non-uniform; the frozen blind benchmark
+supports mixed product positioning. Historical gains do not become new RC1 claims.
+See [BENCHMARKS.md](BENCHMARKS.md) for panels, limitations and superseded evidence.
+
+The optional EBM compiler remains experimental and limited to supported additive
+binary/regression teachers from `interpret-core==0.7.8`. The teacher is required
+only for compilation, not standalone compiled inference. No teacher, compiler
+recipe, fidelity contract or runtime optimization changes in this candidate.
+
+### Compatibility, hardening and known limitations
+
+Python **3.10–3.14** is the declared qualification matrix. Core dependencies remain
+NumPy, pandas, scikit-learn, SciPy and threadpoolctl. Explicit shared training has
+no dynamic source execution. Input validation and successful/failed-fit lifecycle
+hardening from the pre-RC payload are retained without scientific changes.
+
+Dense numeric NumPy and mixed pandas inputs are supported; sparse data, mixed
+NumPy object arrays, multioutput targets and multilabel classification are outside
+the documented contract. Four known strict expected failures in the modern
+sklearn checks reflect two scope limits for each native estimator: NumPy object
+input and invariance to replacing sample weights with repeated rows. Quantiles
+and support counts are unweighted; supported sample-weight behavior and exclusion
+of zero-weight rows have separate passing contracts. These XFAIL are disclosed
+scope limits, not newly hidden failures or full sklearn certification.
+
+Pickle/joblib persistence is qualified in matching CodAdapt/Python/dependency
+environments and fresh processes. Load only trusted artifacts. Cross-version,
+cross-Python and cross-platform pickle portability is not guaranteed. Large/wide
+workloads can be rejected by conservative memory guards; those guards are not a
+hard process-RSS limit. Performance depends on workload and environment.
+
+Native names, active meanings/defaults and documented methods/input/output
+contracts are frozen as the candidate for future 1.x stability. Stable guarantees
+take effect only with actual stable publication; SafeBlend, the compiler and
+private helpers remain outside that stable surface. See [STABILITY.md](docs/STABILITY.md).
+
+RC1 wheel/sdist builds, clean installs, API, persistence, examples/notebook and
+local Python qualification are release gates. macOS and the full remote release
+workflow remain **EXTERNAL_MANUAL_GATE**; no workflow run, upload, tag or release
+is performed by local preparation. See [RELEASING.md](docs/RELEASING.md). Stable
+1.0.0 requires RC feedback/index installs and its own final qualification.
+
+## Historical 0.2.0rc2 preparation — pre-1.0 API cleanup
 
 Native classifier/regressor construction is keyword-only and no longer accepts
 the seven inactive controls listed in the [API migration guide](docs/API.md).
@@ -10,7 +83,7 @@ alias identity, retained defaults and prediction behavior are unchanged.
 `BucketEncoder` is a private helper with its import/pickle path retained; it is
 not a supported standalone public transformer. Source version stays 0.2.0rc2.
 
-## 0.2.0rc2 — current repository line
+## 0.2.0rc2 — historical repository line
 
 The current working tree adds native multiclass Shared OVR to CodAdaptClassifier
 and its CodAdapt alias. Binary/regression defaults and algorithms are unchanged.
