@@ -1,3 +1,17 @@
+# Post-1.0 grand research program — terminal strategic audit
+
+**GRAND_RESEARCH_NO_JUSTIFIED_FRONTIER.** No Round83 opened; last_completed_round remains82. Stable baseline1.0.0, clean local public HEAD `72a67464efbf1cd63e4c234183449f2e14c1f2ba`; publication is user-reported, no remote verification. Public clone/src/API/version unchanged.
+
+Scientific question: which material weakness has a distinct target-aligned coded-memory mechanism? Full-file ingestion/indexing of278 historical reports/memories,37 overlapping family contracts+128 prior cards,21 weakness axes,181 historical tables and13 primary literature sources. Atlas243091 overlapping source-linked rows includes347 canonical model rows/139 already-exposed units/37 sources; it is not243091 independent replications. Source versions/cohorts/leader conventions and oracle diagnostics stay separate. Missing metrics stay unavailable. No unused reserve or new raw dataset opened.
+
+Twenty offered specifications:14 HISTORICALLY_EQUIVALENT at the offered-principle level;6 conditional premises not established, not empirically disproven.0 novelty certificates pass,0 shortlisted,0 model fits/solves/predictions/benchmarks. Synthetic/development/transfer/systems/productization NOT_STARTED_BY_NOVELTY_GATE. Existing broad ranking deficit is real but causal root UNKNOWN; support alone is not necessary, multiclass link effects heterogeneous, SafeBlend quality not independently replicated. Serialized compactness does not imply deep-RAM superiority. No new positive quality claim or stable bug.
+
+Protocol and per-idea signatures/hash/retry conditions, full58-field report, table receipts and final integrity audit: `research_private/GRAND_RESEARCH_MASTER_REPORT.md`, `research_private/grand_research/`. Old post-R74 grand namespace/cycles and negative evidence preserved. Retrospective diagnostic-process RSS is explicitly not fit peak RSS; initial normalization evidence preserved and corrected without rerunning scientific jobs. Private integrity tests and public Ruff required before closure; prior575PASS/4XFAIL/0FAIL public test receipt reused only on exact stable runtime/test hashes. No scientific changes.
+
+Reopen only: Supply independent target-aligned information/structure or a new source-backed exact work bound; satisfy the linked historical RETRY_IF before any synthetic/model fit. No new loss/rank/solver/gate sweep. Research pause and all previous Round1–82 evidence/retry contracts remain unchanged. This current baseline supersedes stale top-level public_version=RC2 only for release identity; historical round records are not rewritten. STOP.
+
+---
+
 # Release engineering checkpoint — stable1.0.0 candidate
 
 Local qualification completed2026-10-14: STABLE_1_0_CANDIDATE_PREPARED_EXTERNAL_GATES_PENDING.575PASS/4knownXFAIL/0FAIL; Windows3.10–3.14 and installed WSL PASS, fresh wheel/sdist, API/persistence/resource contracts qualified. Only version/docs/metadata changed; remote stable/macOS/index gates remain manual.

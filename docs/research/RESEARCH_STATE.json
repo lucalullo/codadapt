@@ -1,6 +1,6 @@
 {
   "project": "CodAdapt",
-  "public_version": "1.0.0rc2",
+  "public_version": "1.0.0",
   "research_state_version": 34,
   "last_completed_round": 82,
   "current_date": "2026-10-13",
@@ -79942,5 +79942,53 @@
     "action": "Maintainer review/manual integration only; no remote action executed",
     "publication": false
   },
-  "STABLE_1_0_PRIOR_ENGINEERING_STATUS": "PRODUCT_HARDENING_READY"
+  "STABLE_1_0_PRIOR_ENGINEERING_STATUS": "PRODUCT_HARDENING_READY",
+  "POST_1_0_GRAND_RESEARCH_PROGRAM": {
+    "status": "COMPLETE_NOVELTY_GATE_STOP",
+    "terminal_verdict": "GRAND_RESEARCH_NO_JUSTIFIED_FRONTIER",
+    "public_version": "1.0.0",
+    "baseline_HEAD": "72a67464efbf1cd63e4c234183449f2e14c1f2ba",
+    "public_payload_sha256": "ce52681f83ef951db11c7ff84e1684077be4f16782520c5ef244528755b1141e",
+    "scientific_question": "Which material stable weakness admits a genuinely distinct, causally justified coded-memory improvement?",
+    "hypothesis": "A history-deduplicated mechanism with a target-aligned reopen witness can justify conditional Round83; broad strategy alone cannot.",
+    "semantic_signature": "GLOBAL_FAILURE_ATLAS + SOURCE_LINKED_SEMANTIC_DEDUP + CAUSAL_PREREQUISITE_GATE; no native learner",
+    "protocol_sha256": "4ee5493daa8df3dd7687823acde63ac3fc66e1c97c33d6c87cc5749a728f4f70",
+    "evidence_scope": "Retrospective historical synthesis, primary-source scouting and fit-free integrity replay; not new confirmation",
+    "datasets": {
+      "exposed_canonical_sources": 37,
+      "original_units": 139,
+      "all_atlas_rows": 243091,
+      "rows_are_overlapping_not_independent": true
+    },
+    "split": "Original frozen source/time/group/IID contracts retained; no new split or reserve",
+    "configurations": {
+      "offered_specifications": 20,
+      "implemented": 0,
+      "novelty_pass": 0,
+      "historically_equivalent": 14,
+      "conditional_unadmitted": 6
+    },
+    "metrics": "Original AUC/PR-AUC/logloss/Brier/RMSE/MAE/meta/systems recorded; unavailable fields left missing",
+    "positive_result": "Existing serialized compactness/shared OVR/native API strengths preserved; no new candidate gain",
+    "negative_result": "No offered principle satisfies novelty plus historical reopen witness; not empirical falsification of conditional families",
+    "failures": {
+      "synthetic": 0,
+      "development": 0,
+      "transfer": 0,
+      "rejected_before_fit": 20
+    },
+    "transfer": "NOT_STARTED_BY_NOVELTY_GATE; reserve unopened",
+    "systems": "No new learner benchmark; historical costs kept separate",
+    "new_fits": 0,
+    "new_solves": 0,
+    "new_predictions": 0,
+    "public_core_modified": false,
+    "external_dependency_added": false,
+    "retry_condition": "Supply independent target-aligned information/structure or a new source-backed exact work bound; satisfy the linked historical RETRY_IF before any synthetic/model fit. No new loss/rank/solver/gate sweep.",
+    "next_step": "STOP; obtain specified new information or work-bound witness before conditional Round83",
+    "report": "research_private/GRAND_RESEARCH_MASTER_REPORT.md",
+    "source_gaps": "Original early rounds/R17–18 remain missing where recorded; Round51 remainder preserved",
+    "release_identity_note": "Top-level public_version refreshed from local clean stable clone; old RC2 round and release evidence retained verbatim",
+    "previous_public_version": "1.0.0rc2"
+  }
 }
