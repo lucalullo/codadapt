@@ -1,4 +1,4 @@
-# Current native CodAdapt algorithm (1.0.0rc2 candidate)
+# Current native CodAdapt algorithm (1.0.0)
 
 This describes the explicit shared trainer in `_training.py`. Historical
 coordinate-wise code-move experiments do not describe this public runtime.

@@ -1,3 +1,132 @@
+# Release engineering checkpoint — stable1.0.0 candidate
+
+Local qualification completed2026-10-14: STABLE_1_0_CANDIDATE_PREPARED_EXTERNAL_GATES_PENDING.575PASS/4knownXFAIL/0FAIL; Windows3.10–3.14 and installed WSL PASS, fresh wheel/sdist, API/persistence/resource contracts qualified. Only version/docs/metadata changed; remote stable/macOS/index gates remain manual.
+
+This is not Round83. last_completed_round remains82; ROUND79–82 outcomes,
+negative evidence, retry conditions and ALGORITHMIC_RESEARCH_PAUSE are preserved.
+Workspace candidate1.0.0 finalizes version/docs/metadata only from publicRC2
+HEAD296c69ba4cb7b06344aac789d195344a1d9c5dae. Published baseline remains1.0.0rc2
+until manual integration/publication. RC2 remote CI/platform/index successes are
+USER_REPORTED. Stable macOS, integrated-commit CI/manual matrix and publication
+are EXTERNAL_MANUAL_GATE, never locally simulated or automatically executed.
+Qualification report:research_private/STABLE_1_0_CANDIDATE_QUALIFICATION.md.
+The research checkpoint below remains authoritative scientific history.
+
+---
+
+# Current research checkpoint — Round82
+
+last_completed_round =82; public version1.0.0rc2. **ROUND82_NO_JUSTIFIED_NEW_FRONTIER; ALGORITHMIC_RESEARCH_PAUSE.**
+
+37 external sources/139 historical units:14 binary/45,7 multiclass/25,16 regression/69.70 saved classifiers replay bitwise under current RC2;0 mismatch,0 new fits/solves.37 coverage records (26 inherited family/subline contracts plus11 explicit overlaps),205 reread reports and620 verified prior full-text reads. Five unresolved gaps lead to five concepts,0 novelty PASS. No candidate admitted; synthetic/development/transfer/systems not started by gate.
+
+Binary:9/14 material AUC deficits; source exploratory median−.023088 versus fixed HGB. Taxonomy2 ranking-only,7 mixed,1 calibration-proxy-only,4 neither; no dominant calibration cause identified. Multiclass same-logit softmax helps4/7, harms3/7, changes0 argmax; native normalization improves raw head macroAUC on7/7 source means. No universal link/head-scale remedy. Sparse support is not necessary; raw-head/representation/optimization causal allocation remains unidentified. Published frozen-leader gaps and one guard rejection remain unchanged, separate from the new fixed-HGB diagnostics. Independent regression SafeBlend remains a compact specialist, not universal predictive superiority.
+
+Final report:research_private/ROUND82_MASTER_REPORT.md; audit:research_private/round82/final_audit.json. RAW Parquet/CSV and canonical source/artifact registry retained. Public baseline HEAD296c69ba4cb7b06344aac789d195344a1d9c5dae, clone read-only. User-reported RC2 publication/platform CI supersedes older dated preparation language only at current checkpoint; no remote verification. Public runtime/version/default/API unchanged. Existing575PASS/4XFAIL/0FAIL receipt reused with41 matching runtime/test hashes.
+
+Reopen only for an independently supplied distinct information/function principle and matching >=3-source train-only mechanism witness, or a new matched causal intervention satisfying the cited family retry contract. Conditional exogenous-environment/generative/related-task hypotheses are not empirically closed; their prerequisites are not established here. No repeated loss/temperature/support/ridge/solver/capacity sweep. STOP; no Round83 or stable preparation. Round51 remains INCOMPLETE_WITH_EXPLICIT_REMAINDER; early source gaps remain explicit.
+
+## Authoritative round index 1–82
+
+| Round | Title | Original status | Decision |
+|---|---|---|---|
+| 1 | Full code scan â€” attribuzione storica congiunta R1â€“2 | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 2 | Residual-guided search â€” attribuzione storica congiunta R1â€“2 | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 3 | Multi-resolution residual memory | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 4 | Adaptive resolution and validation stopping | HISTORICAL_STATUS_AS_RECORDED | ACCEPT |
+| 5 | Shared encoding | HISTORICAL_STATUS_AS_RECORDED | ACCEPT |
+| 6 | Frozen release benchmark | HISTORICAL_STATUS_AS_RECORDED | DIAGNOSTIC ONLY |
+| 7 | Numeric interpolation / residual proposal / capacity | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 8 | Interaction refit after interpolation | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 9 | Adaptive optional modules | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 10 | Classifier freeze / local-linear cells | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 11 | Pair-memory and nonlinear refinement | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 12 | Proposal coverage and transfer | HISTORICAL_STATUS_AS_RECORDED | DIAGNOSTIC ONLY |
+| 13 | Independent admission validation | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 14 | Shared low-rank coded interactions | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 15 | Frozen core external validation | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 16 | Quality-matched Pareto frontier | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 17 | Algorithm discovery lab | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 18 | Unexplored algorithms and auto preprocessing | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 19 | Capacity ceiling / oracle diagnosis | HISTORICAL_STATUS_AS_RECORDED | DIAGNOSTIC ONLY |
+| 20 | Fast backfitting | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 21 | Joint memory optimization | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 22 | Paradigm break | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 23 | Strong additive control | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 24 | Native additive core | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 25 | Additive shape distillation | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 26 | Additive compression diagnosis | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 27 | Direct adaptive additive learning | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 28 | Direct training diagnosis | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 29 | Feature shape transfer diagnosis | HISTORICAL_STATUS_AS_RECORDED | DIAGNOSTIC ONLY |
+| 30 | Support-aware shape learning | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 31 | Fixed states, value estimation | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 32 | Global shape optimization | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 33 | Model compilation into coded memory | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 34 | Compiled deployment validation | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 35 | Safe compiler and capacity | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 36 | Fast compiled runtime | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 37 | Fast numeric discretizer | HISTORICAL_STATUS_AS_RECORDED | PARTIAL |
+| 38 | Exact native numeric kernel | HISTORICAL_STATUS_AS_RECORDED | REJECT |
+| 39 | Feature-major zero-copy runtime | HISTORICAL_STATUS_AS_RECORDED | PARTIAL_SYSTEMS_GATE_PASS |
+| 40 | Independent runtime replication | HISTORICAL_STATUS_AS_RECORDED | R37_REFERENCE_RETAINED_REPLICATION_GATE_FAIL |
+| 41 | Deployment envelope validation | HISTORICAL_STATUS_AS_RECORDED | SCOPED_EXPERIMENTAL_RECOMMENDED_EXTERNAL_HARDWARE_PENDING |
+| 42 | v0.2 compiler integration | HISTORICAL_STATUS_AS_RECORDED | INTERNAL_RC_READY |
+| 43 | Release candidate validation, local-only scope | HISTORICAL_STATUS_AS_RECORDED | LOCAL_HANDOFF_READY_EXTERNAL_VALIDATION_EXCLUDED |
+| 44 | Redundancy and allocation invariance | HISTORICAL_STATUS_AS_RECORDED | INCONCLUSIVE_GENERAL_HARM; SENSITIVE_TO_INTERACTIONS; NO_PROMOTION |
+| 45 | Main-selection crowding versus interaction opportunities | HISTORICAL_STATUS_AS_RECORDED | PARTIAL_MECHANISM_IDENTIFICATION_NO_PROMOTION |
+| 46 | Separate feature coverage, update multiplicity and proposal opportunity | HISTORICAL_STATUS_AS_RECORDED | PARTIAL_CAUSAL_DIAGNOSIS_NO_PROMOTION |
+| 47 | Functional decomposition of coded pair memories | HISTORICAL_STATUS_AS_RECORDED | PARTIAL_CAUSAL_IDENTIFICATION_NO_PROMOTION |
+| 48 | Separate regularization of additive and joint pair components | PARTIAL | NO_PROMOTION |
+| 49 | Independent residual stability and pair-memory shrinkage | PARTIAL | NO_PROMOTION |
+| 50 | One independent marginal-utility signal to whole-table alpha | COMPLETED_PARTIAL_NO_PROMOTION | RETRY_IF_REAL_FAILURE_EVIDENCE |
+| 51 | Real-world failure audit | INCOMPLETE_WITH_EXPLICIT_REMAINDER | SEE_ORIGINAL_RECORD |
+| 52 | Falsification of joint value estimation on frozen structure | COMPLETE_DEVELOPMENT_PARTIAL | REGRESSION_ONLY_FROZEN_CONFIRMATION_CANDIDATE_NO_PUBLIC_PROMOTION |
+| 53 | Frozen regression confirmation | COMPLETE_PARTIALLY_CONFIRMED | PARTIALLY_CONFIRMED |
+| 54 | TRAIN-ONLY DIAGNOSIS OF FROZEN JOINT BENEFIT | COMPLETE | OOF_SIGNAL_STRONG |
+| 55 | Independent cost-risk validation of ALWAYS_JOINT | COMPLETE | KEEP_RESEARCH_ONLY |
+| 56 | Causal decomposition of joint downside | COMPLETE | KEEP_RESEARCH_ONLY |
+| 57 | Prospective falsification of error/norm tradeoff versus predictive variance | COMPLETE | OTHER |
+| 58 | Independent discovery versus estimation at comparable capacity and penalty | COMPLETE | DATA_EFFICIENCY_DOMINANT |
+| 59 | Equal-sample independent discovery/estimation | COMPLETE | CLOSED_WITH_STRONG_EVIDENCE |
+| 60 | Oblique coded states | COMPLETE_DEVELOPMENT | TOO_EXPENSIVE |
+| 61 | Cost collapse for oblique coded states | COMPLETE_DEVELOPMENT | COST_BREAKTHROUGH |
+| 62 | Frozen cheap-oblique cost stability and conditional transfer | COMPLETE | COST_NOT_STABLE |
+| 63 | Oblique runtime tail collapse and exact quantization engineering | COMPLETE | RATIO_GATE_FAILURE_LOW_ABSOLUTE_COST |
+| 64 | Frozen independent cheap-oblique quality confirmation and practical cost envelope | COMPLETE | QUALITY_NOT_CONFIRMED |
+| 65 | Architecture reset and new mechanism tournament | COMPLETE | COMPLETE_DEVELOPMENT_RATIONAL_LEAD_WITH_DOWNSIDE |
+| 66 | Frozen independent rational residual confirmation and downside falsification | COMPLETE | QUALITY_NOT_CONFIRMED |
+| 67 | Context-conditioned coded additive memory | COMPLETE | GENERALIZATION_FAILURE |
+| 68 | Why synthetic context works but real context does not | COMPLETE | MIXED |
+| 69 | Tensor-Train coded residual trainability resolution | COMPLETE | REDUNDANT_WITH_PAIR |
+| 70 | Real-gap tomography: cross-fitted teacher residual decomposition | COMPLETE | MIXED_NO_DOMINANT_MECHANISM |
+| 71 | Teacher-delta reliability and training-size matched tomography | COMPLETE_WITH_DIAGNOSTIC_LIMITS | MIXED_MEASUREMENT_LIMIT |
+| 72 | Cross-fitted multi-mechanism complementarity and real-gap composition | COMPLETE_WITH_DIAGNOSTIC_LIMITS | HIGH_ORACLE_LOW_GENERALIZATION |
+| 73 | Oracle-to-deployable combination generalization diagnosis | COMPLETE_WITH_DIAGNOSTIC_LIMITS | MIXED |
+| 74 | Small-composition identity and oracle-to-deployable gap decomposition | COMPLETE_KNOWN_PANEL_DIAGNOSTIC_WITH_DISCLOSED_IDENTIFIABILITY_LIMITS | HIGH_ORACLE_LOW_DEPLOYABILITY_CONFIRMED |
+| 75 | Frozen global-amplitude independent regression confirmation | COMPLETE | DOWNSIDE_NOT_ACCEPTABLE |
+| 76 | Frozen global-amplitude blend plus safe Base fallback independent regression confirmation | COMPLETE | STRONG_SAFE_BLEND_CONFIRMED |
+| 77 | Frozen safe-blend systems optimization | COMPLETE | MEMORY_PRACTICAL_LATENCY_HEAVY |
+| 78 | Frozen fully-native diversity blend independent confirmation | COMPLETE | STRONG_NATIVE_DIVERSITY_CONFIRMED |
+| 79 | Post-RC2 native class-partition coded-memory frontier | COMPLETE | ROUND79_NO_GENERALIZABLE_GAIN |
+| 80 | Class-partition difficulty diagnostics and training-only safety gates | COMPLETE | ROUND80_DIAGNOSTIC_SIGNAL_ONLY |
+| 81 | Novel function-class frontier: residual-interaction semantic admission audit | COMPLETE_HISTORY_GATE_STOP | ROUND81_NO_NEW_FRONTIER |
+| 82 | External failure mechanism synthesis and novelty-gated frontier discovery | COMPLETE_NO_NEW_FITS | ROUND82_NO_JUSTIFIED_NEW_FRONTIER |
+
+---
+
+# Current checkpoint — Round81 COMPLETE (history gate)
+
+Authoritative latest state:last_completed_round81, public1.0.0rc2 unchanged; ROUND81_NO_NEW_FRONTIER. Residual-pair proposal historically equivalent; fallback environment/generative contracts not admitted without prerequisites. Zero new fits/solves/data predictions; no transfer. Earlier Current/checkpoint headings are historical. No Round82.
+
+# Current checkpoint — Round80 COMPLETE
+
+Authoritative latest state: last_completed_round80, public1.0.0rc2 unchanged; ROUND80_DIAGNOSTIC_SIGNAL_ONLY. Six TRAIN/VALID signals, failed useful-gain gates, decoder weighting still harmful; reserve unopened. Earlier Current/checkpoint headings below are historical. No Round81.
+
+# Current checkpoint — Round79 COMPLETE
+
+Authoritative latest state: last_completed_round79, public1.0.0rc2 immutable; ROUND79_NO_GENERALIZABLE_GAIN. See the final Round79 section and research_private/ROUND79_MASTER_REPORT.md. Earlier Current/checkpoint headings below are historical snapshots, not the current round. No transfer was opened, no public runtime change, no Round80.
+
 > **Latest strategic checkpoint — POST_R78_POST_HARDENING_STRATEGIC_CHECKPOINT: PRODUCT_DEVELOPMENT_PREFERRED.**
 > Primary: RC2_RELEASE_EVIDENCE_AND_PERSISTENCE_CONTRACT. Technical hardening PASS; bounded evidence/persistence handoff before manual release review. Working rc2 differs from local HEAD0.1.0; remote CI PASS is user-reported. Version0.2.0rc2 / round78 unchanged. Earlier banners are historical.
 
@@ -14187,3 +14316,152 @@ Private audit:research_private/SAFEBLEND_INDEPENDENT_DOCS_AUDIT.md; machine chec
 in research_private/safeblend_independent/docs_update/final_audit.json.
 No new fit/solve/prediction/benchmark, remote operation, commit, tag or release.
 STOP; no Round79.
+
+
+<!-- ROUND79_CURRENT_BEGIN -->
+# Round79 — COMPLETE: post-RC2 class-output memory frontier
+
+`last_completed_round=79`; public1.0.0rc2 is immutable. Public baseline HEAD:
+`296c69ba4cb7b06344aac789d195344a1d9c5dae` (local authoritative public clone).
+
+**ROUND79_NO_GENERALIZABLE_GAIN**. One admitted mechanically distinct label-space
+principle, known ECOC prior-art; no novelty-to-literature claim. Residual pair
+proposal remains HISTORICALLY_EQUIVALENT. Eight proposals were audited; only L47
+dense class-subset targets were executable. M0OVR overlap and missingR17/18 sources
+remain explicit, not erased.
+
+Development:8primaryK>=4+4K3controls×5frozenstratifiedprofile-group-disjoint splits.
+CodeK:median+1.733197%logloss,5/0/3primary; Code1p5K:+5.066315%,7/0/1,
+median95%CI[+2.136321%,+6.483268%]. Code1p5Kmean+2.227038%,meanCIincludeszero.
+WorstDigits source−25.511990%,worstsplit−33.689765%; strict10%downside gate FAIL.
+Digits classes are nearly balanced, so sparse minority support is not sufficient
+explanation. Matched same-coefficient OVR marginal decoder isolates normalization;
+equalhead CodeKcoding increment−1.253816%,Code1p5K+2.082737%withCIincludingzero.
+
+Both DEVELOPMENT_FAIL; no selectedrecipe, no transfer, no independentreserveopened.
+Positive development median is a DEV_SIGNAL, not independently replicated gain,
+not a measured transfer failure, and not a confirmed specialist niche.
+
+Costs descriptive on8primary:Code1p5Kfit1.333x,serialized1.563x,loadeddeep1.471x,
+lookups1.502x. Latency/isolatedmodelRSS not qualified after failed qualitygate.
+Sequential worker peak146.84MiB,1numericalthread,100newmodel fits/715nativeheads;
+all60jobs VALID,240savedmodelsreplayedbitwise.16private testsPASS; public575PASS/
+4knownXFAIL/0FAILhash-reused, currentRuff/formatPASS. No RC2bug/stableblocker.
+
+Publicruntime/API/compiler/version unchanged. Only this memorypair and local
+research_private artifacts changed. Originalround1–78 records, including incomplete
+Round51 and missingearlycatalog caveats, preserved. No commit/remote/tag/release.
+
+Next proposed-only: diagnose train-only learnability of fixed class-subset targets
+at unchangednativecapacity and predict signed harm beyond imbalance/code distance
+on excluded sources before another recipe. Do not sweep codes/seed/steps or build
+a test-derived selector. No Round80 started; stable1.0engineering remains separate.
+
+Report: `research_private/ROUND79_MASTER_REPORT.md`.
+Seal/results/audit: `research_private/round79/`.
+<!-- ROUND79_CURRENT_END -->
+
+
+<!-- ROUND80_CURRENT_BEGIN -->
+# Round80 — COMPLETE: class-partition difficulty and training-only risk diagnosis
+
+**ROUND80_DIAGNOSTIC_SIGNAL_ONLY**; last_completed_round80, version1.0.0rc2.
+Public HEAD296c69ba4cb7b06344aac789d195344a1d9c5dae unchanged/read-only.
+Round79's60jobs/240models reused and hash verified;0new native fits. Six
+TRAIN/VALID signals frozen before extraction, all12sources×5splits, strict
+dataset-level LODO. Validation-only fallback and consensus shrinkage are
+historically equivalent and stopped, not renamed as new architectures.
+
+Fixed marginal-conflict gate retains0%median gain; composite VALID LCB>0 and
+normalized partition-skill difference>=0 retains22.0492% of Code1p5K gain:
+primarymedian+1.117082%logloss,95%sourceCI[0,5.831194]%,4/4/0WTL,0observed
+downside. It fails useful-retention gate; observed no-harm is not a guarantee.
+VALID-selectedSKILL weighting:median+4.902716%,7/0/1, but Digits23.506226%
+worse and worstsplit31.583914%worse. SUPPORT/REDUNDANCY also fail downside.
+No confirmation,transfer,systems or productization; independent reserve unopened.
+
+Digits is balanced, mixed partition skill lower, conflict higher, **underconfident**.
+One VALID-only scalar temperature removes its NLL downside (+17.6601%vs
+uncalibratedBase) but leaves ranking/accuracy loss. Diagnostic only; no matched
+calibratedBase/candidate confirmation. Multiple winners also gain from
+calibration; redundancy/support alone do not explain failure. Composite
+marginalCE decoder is not an independent evidence product. No proof of
+overcounting. Effective diversity is also low on winners. Catastrophic-signature
+evidence remains one source/CASE_SPECIFIC_ONLY; predictabilityYES_WEAK.
+
+120LODO statistical equations exclude all held-source splits; test outcomes
+serve only diagnostic targets. Gate thresholds are analytic and never learned
+from TEST. VALID already used for native stopping; normal LCB not independent
+admission guarantee. Historical incompleteRound51 and missingR17/18 preserved.
+
+17private tests,Ruff,replay PASS;575publicPASS/4knownXFAIL/0FAIL valid reused
+under41runtime/test hashes. Original240bitwise replay reused;180weighted and
+60temperature replay0mismatch. Only research/memory files changed. NoRC2bug,
+stableblocker,publicAPI/default/compiler/version change or remote action.
+CachedCodefit1.333x,size1.563x,deep1.471x,lookups1.502x; a gate fitting both
+branches has fit lowerbound2.333x before diagnostic costs, not a new benchmark.
+
+Close these fixed gates and three weights as general candidates; do not sweep
+thresholds or shrinkage. Reopen only for a distinct train-only witness replicated
+on multiple independent harmful sources with gain retention. Temperature remains
+diagnostic and needs a separately justified matched comparison, not automatic
+promotion. Report:research_private/ROUND80_MASTER_REPORT.md; audit:
+research_private/round80/final_audit.json. STOP; noRound81.
+<!-- ROUND80_CURRENT_END -->
+
+
+<!-- ROUND81_CURRENT_BEGIN -->
+# Round81 — COMPLETE: function-class frontier semantic admission audit
+
+**ROUND81_NO_NEW_FRONTIER**;last_completed_round81,public1.0.0rc2 unchanged.
+PublicHEAD296c69ba4cb7b06344aac789d195344a1d9c5dae read-only/clean;76hashes
+match prior baseline. User reports RC2 published; no remote verification/action.
+
+CandidateA sparse supervised residual pair memory is HISTORICALLY_EQUIVALENT
+at the offered principle level: Base→OOF/internal-heldout residual→few pairs→
+coded pair correction. R7–14/R47–59 and explicit Round79frontierB already map
+this family. The mandatory Round81§8 gate therefore stops it before fitting.
+OOF discovery was not proven an exact previously run binary recipe: R49 froze
+discovery, R59 was regression; those limitations are retained. No new sampling/
+information assumption or source-excluded signed-utility witness was supplied.
+
+Current native **scores** sum supported univariate/bivariate coded memories.
+A score-level pair correction remains in that class; changed sparse support,
+values or table counts change estimator/capacity, not a new interaction order.
+Probability-residual corrections may change logit algebra and are treated
+separately; no false probability-additivity theorem. Exact XOR2 table/hash
+expansion/H2-parity3 contrast/bin-likelihood identities are analytic certificates,
+not synthetic training PASS. No empirical zero-gain or impossibility claim.
+
+Autonomous fallback review covered all8Round79frontiers. Its actual queue had
+only the now-rejected output-code family, no second admitted candidate. B/F
+observed-environment risk and C/D generative dependency remain CONDITIONAL_NOT_
+ADMITTED: registered exogenous environment/material-risk witness and target-
+aligned dependency/inference premise absent. Zero rawdataset access; metadata
+audit limited to the registered panel, not all conceivable data. Conditional
+families are NOT empirically falsified. Ranking loss/confidence/chains require
+their prior reopen witnesses; no fourth or forced placeholder architecture.
+
+Round79/80 CLASS_PARTITION_REDUNDANCY explicitly REJECTED_FOR_NOW; retry only
+with independent evidence of a strong transferable train-only downside predictor.
+No new threshold/weight/shrink/temperature continuation.
+
+185top-level reports scanned plus620prior deep inventory reports reverified/read
+(overlapping counts),13KBfiles parsed; prior80sealed911files unchanged. Missing
+earlyR17/18 artifacts and historical incompleteRound51 preserved. No new native
+fit,solve,prediction,download,synthetic/development/transfer/system run. No model
+candidate,productization or version recommendation. Reserve unopened.
+
+12fresh private analytic/integrity tests,Ruff and exact replayPASS; public575
+PASS/4knownXFAIL/0FAIL valid-reused under41unchanged source/test hashes. No full
+public pytest rerun after a mandatory no-fit gate. Core/API/default/compiler/
+version/tests/productdocs and public clone unchanged. NoRC2bug/stableblocker.
+Only private artifacts and this memorypair written; no commit/remote/tag/release.
+
+Next:STOP. Reopen only for a specified distinct principle with its recorded
+train-only witness. Strongest conditional contract remains provider-defined
+environment risk, requiring provenance and replicated excluded-environment
+failure before any learner pilot. Proposed prerequisite work is not executed
+or scheduled. Report:research_private/ROUND81_MASTER_REPORT.md; audit:
+research_private/round81/final_audit.json. NoRound82.
+<!-- ROUND81_CURRENT_END -->

@@ -1,6 +1,6 @@
 # Security Policy
 
-The current prerelease candidate is CodAdapt 1.0.0rc2, not stable 1.0.0. Its Python requirement is
+The current source release line is CodAdapt 1.0.0. Its Python requirement is
 `>=3.10,<3.15`, with Python 3.10–3.14 in the qualified matrix. No support duration is promised.
 Report suspected vulnerabilities privately to
 the repository owner with the affected version, reproduction, impact, and suggested mitigation.
@@ -8,7 +8,7 @@ Do not open a public issue containing secrets or private data.
 
 CodAdapt is not a security boundary. Treat external schemas and outputs as untrusted where
 appropriate. Pickle and joblib can execute code while loading; load only trusted artifacts in
-compatible environments. No remediation SLA is guaranteed for this experimental prerelease.
+compatible environments. No remediation SLA or support duration is guaranteed. The stable native API does not make CodAdapt a security boundary.
 
 Native binary and multiclass training use explicit shared training functions and
 fit-local caches. Training does not reconstruct or execute source text, and input

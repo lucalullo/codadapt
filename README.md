@@ -2,9 +2,9 @@
 
 CodAdapt is a compact native tabular model family with mixed predictive competitiveness across tasks. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary and multiclass classification and single-target regression, while preserving a scikit-learn-style API.
 
-**CodAdapt 1.0.0rc2 is a prerelease candidate with native binary classification, Shared OVR multiclass and regression, a fully native experimental SafeBlend regressor and an optional EBM compiler/import tool.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
+**CodAdapt 1.0.0 provides a stable native API for binary classification, Shared OVR multiclass and regression. SafeBlend and the optional EBM compiler remain experimental.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
 
-This candidate prepares product and API stability; it is **not stable 1.0.0** and this documentation does not announce publication. It is intended for reproducible evaluation and practical tabular workflows. It does not claim universal superiority over established tree-based models.
+The 1.x stability contract covers the documented native API. It is intended for reproducible evaluation and practical tabular workflows; stability does not imply benchmark leadership. It does not claim universal superiority over established tree-based models.
 
 ## Highlights
 
@@ -30,22 +30,20 @@ The native CodAdapt default remains the architecture selected during the 0.1 dev
 
 ## Installation
 
-### From a locally built wheel
-
-Use Python **3.10–3.14** in a virtual environment. Activate that environment using
-your platform's normal command, then install the artifact you have built or received:
+Use Python **3.10–3.14** in a virtual environment:
 
 ```bash
 python -m venv .venv
-python -m pip install ./dist/codadapt-1.0.0rc2-py3-none-any.whl
+# Activate the environment using your platform's normal command.
+python -m pip install codadapt
 python -c "import codadapt; print(codadapt.__version__)"
 ```
 
-The current candidate source version is **1.0.0rc2**, a PEP 440 prerelease, not
-stable 1.0.0 or an announcement of a PyPI release. Historical RC2 artifacts and
-tags remain unchanged. Retain artifact SHA256 and dependency versions. See the
-[compatibility policy](https://github.com/lucalullo/codadapt/blob/main/docs/PYTHON_COMPATIBILITY.md) for executed evidence and
-remaining platform gates, and [release procedure](https://github.com/lucalullo/codadapt/blob/main/docs/RELEASING.md) for qualification.
+For an exact 1.0.0 environment, use `python -m pip install codadapt==1.0.0`.
+You can also install a locally built `dist/codadapt-1.0.0-py3-none-any.whl`.
+Retain artifact SHA256 and dependency versions. See the
+[compatibility policy](https://github.com/lucalullo/codadapt/blob/main/docs/PYTHON_COMPATIBILITY.md)
+and [release procedure](https://github.com/lucalullo/codadapt/blob/main/docs/RELEASING.md).
 
 To compile an already fitted supported EBM teacher, install the optional dependency:
 
@@ -162,10 +160,9 @@ print(f"Mean ROC-AUC: {np.mean(scores):.6f}")
 
 ## Data handling
 
-For large datasets, the **1.0.0rc2 candidate** adds `memory_budget_mb=512`
-(positive integer MiB), including external validation in its admission estimate.
-See [LARGE_DATASETS.md](docs/LARGE_DATASETS.md) before increasing it. This parameter
-is unavailable in published 1.0.0rc1; RC2 is not published by this preparation. The budget
+For large datasets, native estimators expose `memory_budget_mb=512`
+(positive integer MiB), including external validation in the admission estimate.
+See [LARGE_DATASETS.md](docs/LARGE_DATASETS.md) before increasing it. The budget
 is not a total-RSS cap or an OOM guarantee.
 
 With pandas DataFrames, supported numeric columns are treated as numerical features. String/object, `category`, boolean, and nullable-boolean columns are handled as categorical features. Missing values are handled natively.
@@ -263,7 +260,7 @@ for inputs, fitted diagnostics, persistence, costs and limitations.
 
 ## Experimental EBM compilation
 
-CodAdapt 1.0.0rc2 retains an **experimental, opt-in** compiler for supported additive `interpret-core==0.7.8` EBM models. Install the [optional `ebm` extra](#installation) when compiling a fitted teacher; the native CodAdapt installation remains independent of interpret.
+CodAdapt 1.0.0 retains an **experimental, opt-in** compiler for supported additive `interpret-core==0.7.8` EBM models. Install the [optional `ebm` extra](#installation) when compiling a fitted teacher; the native CodAdapt installation remains independent of interpret.
 
 ```python
 from codadapt.experimental import compile_ebm
@@ -504,17 +501,19 @@ These files are development documentation and are intentionally excluded from th
 
 ## Status
 
-CodAdapt 1.0.0rc2 is a **prerelease candidate**, not stable 1.0.0. The binary and regression algorithms remain unchanged from the validated 0.1 line. Native multiclass Shared OVR is included; SafeBlend and the EBM compiler remain opt-in and experimental. No publication or tag is created by candidate preparation.
+CodAdapt 1.0.0 stabilizes the documented native API while preserving RC2 training,
+prediction and resource-admission behavior. Native multiclass Shared OVR is included;
+SafeBlend and the EBM compiler remain opt-in and experimental. Source preparation
+does not perform publication or create a tag.
 
 Current independent evidence supports SafeBlend as a **compact regression specialist**,
 with strong serialized-size savings and faster inference on the tested hardware,
 but weaker median predictive quality than the external leader. Classification
 competitiveness remains mixed on the earlier blind panel.
 
-The native API is frozen as a candidate for the future 1.x contract described in
+The native API follows the 1.x contract described in
 [STABILITY.md](https://github.com/lucalullo/codadapt/blob/main/docs/STABILITY.md).
-Stable guarantees take effect only when stable 1.0 is published; experimental and
-private components are excluded. See the [release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md)
+Experimental and private components are excluded from the stable contract. See the [release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md)
 for migration, known limitations and persistence scope.
 
 ## License

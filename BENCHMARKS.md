@@ -1,7 +1,7 @@
 # Benchmark Disclosure
 
 The later independent SafeBlend regression qualification takes precedence for
-current **1.0.0rc1 candidate SafeBlend positioning**: compact serialized models were confirmed,
+current **1.0.0 SafeBlend positioning**: compact serialized models were confirmed,
 while predictive quality leadership was not. The frozen blind NEW_EXTERNAL panel
 remains the primary binary/multiclass evidence and its library-wide verdict remains
 **PRODUCT_POSITION_MIXED**. Earlier external pilots are secondary/historical evidence;

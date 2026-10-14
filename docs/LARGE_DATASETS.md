@@ -1,16 +1,15 @@
 # Large datasets and memory admission
 
-## 1.0.0rc2 candidate: not yet published
+## Stable 1.0.0 resource contract
 
-The published **1.0.0rc1** has a fixed 512 MiB fit-admission budget. The 1.0.0rc2
-candidate adds `memory_budget_mb=512` to the native classifier and regressor.
-This parameter is **not available in the published RC1**. It requires a separately
-qualified RC2 before stable 1.0; these changes do not publish or replace RC1.
+CodAdapt 1.0.0 preserves the `memory_budget_mb=512` parameter introduced in RC2
+for the native classifier and regressor. The scientific recipe, arithmetic and
+admission semantics are unchanged. Historical RC1 lacked this configurable parameter.
 
 ```python
 from codadapt import CodAdaptClassifier
 
-# 1.0.0rc2 candidate only; reserve RAM for the process and caller data.
+# Native 1.0.0; reserve RAM for the process and caller data.
 model = CodAdaptClassifier(memory_budget_mb=1024, random_state=42)
 model.fit(X_train, y_train)
 ```
@@ -36,7 +35,7 @@ Here N is input training rows before zero-weight filtering, P is feature count,
 T=`n_tables`, F=`features_per_table`, B=`n_bins`, C=`max_categories`, and
 S=`table_size`. V is external `eval_set` rows, or zero with internal validation.
 Internal validation is already part of N. External validation accounting is a
-candidate safety change; RC1 omitted V. A fit is admitted when E is at most the
+RC2 safety change retained in 1.0.0; RC1 omitted V. A fit is admitted when E is at most the
 configured budget. Rejection occurs before row copies and encoding, after basic
 input/target/weight validation. Converting an array-like input itself can allocate
 memory before this check; prefer an existing ndarray or DataFrame.
@@ -50,8 +49,8 @@ is no universal row limit, and a rejected shape is not proof that the machine la
 RAM. Do not infer a safe budget from installed RAM alone.
 
 At defaults, 699,635 rows and 21 features require **624.72 MiB** by this formula,
-so RC1/default admission rejects them even with float32 input. A 1,024 MiB explicit
-budget admits that shape in the candidate. Admission and synthetic engineering
+so default admission rejects them even with float32 input. A 1,024 MiB explicit
+budget admits that shape in 1.0.0. Admission and synthetic engineering
 qualification do not validate the user's undisclosed dataset, arbitrary categories,
 or every workload of the same shape.
 
@@ -61,7 +60,7 @@ Dense input bytes alone are N*P*4 for float32 and N*P*8 for float64. Native fitt
 also keeps raw row selections, multiple uint16 code levels and full-length float64
 working vectors. Float32 reduces raw input/copy storage, but does not halve total
 RSS; numeric conversions and learned values still use float64. Casting arbitrary
-float64 data to float32 can change cut assignments and predictions. The candidate
+float64 data to float32 can change cut assignments and predictions. The stable finalization
 does not change internal precision. The guard intentionally remains dtype-neutral.
 
 Shared OVR fits K heads sequentially with one shared encoder and a bounded X-only
@@ -95,11 +94,11 @@ Python exception handling; preserve data/checkpoints outside the process.
 
 Experimental `SafeBlendRegressor` retains its frozen API and recipe. It does not
 expose `memory_budget_mb`; its internal Base keeps the 512 MiB default and the
-candidate now accounts for its external validation rows. SafeBlend also prepares
+internal Base accounts for its external validation rows. SafeBlend also prepares
 a numeric DataFrame and fits its Rational component, which has separate temporary
 allocations. A successful Base fit is not a SafeBlend memory guarantee. No universal
 large-N SafeBlend guarantee or unlimited-memory mode is supported.
 
 Persistence policy remains [STABILITY.md](STABILITY.md). Trusted RC1 native objects
-loaded by this candidate receive the historical 512 MiB parameter default. Tested
+loaded by 1.0.0 receive the historical 512 MiB parameter default. Tested
 loads do not create a general cross-version compatibility promise.

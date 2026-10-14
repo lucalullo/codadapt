@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "codadapt"
 dynamic = ["version"]
-description = "Experimental tabular learning with adaptive coded memory and shared multi-resolution encoding"
+description = "Native tabular learning with adaptive coded memory and shared multi-resolution encoding"
 readme = "README.md"
 requires-python = ">=3.10,<3.15"
 license = "MIT"
@@ -13,7 +13,7 @@ license-files = ["LICENSE"]
 authors = [{name = "Luca Lullo"}]
 keywords = ["tabular", "machine-learning", "adaptive-codes", "numpy"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",

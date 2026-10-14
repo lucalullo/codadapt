@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.0.0
+
+- Finalize stable native CodAdapt/Classifier/Regressor API from qualified RC2;
+  keyword-only construction, active defaults and predictive/resource semantics unchanged.
+- Retain Shared OVR multiclass, clear failed-fit state and configurable native
+  memory_budget_mb=512MiB with external-validation accounting.
+- Keep SafeBlend and EBM compilation experimental; BucketEncoder stays private.
+- Finalize version/installation/metadata/stability/persistence/release documentation.
+  Same-version matching-environment persistence is supported; cross-version portability is not guaranteed.
+- Preserve mixed blind competitiveness and compact-specialist SafeBlend evidence;
+  no new algorithm, predictive promotion, runtime dependency or benchmark is introduced.
+- Stable publication remains a separate maintainer-only action after qualification.
+
+The following entries preserve earlier prerelease preparation history, including
+their availability statements at that time; they do not describe current1.0.0 availability.
+
 ## 1.0.0rc2 — prepared locally, not published
 
 - Add native `memory_budget_mb=512` as a positive integer MiB admission budget.
@@ -36,7 +52,7 @@
   historical; the version bump makes no new performance claim.
 
 The entries below record preparation of the historical 0.2.0rc2 line. Their
-version statements describe that earlier work, not the current 1.0.0rc2 candidate.
+version statements describe that earlier work, not the stable1.0.0 source.
 
 ## Historical 0.2.0rc2 preparation — pre-1.0 API cleanup
 
