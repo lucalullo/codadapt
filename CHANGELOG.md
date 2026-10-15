@@ -1,13 +1,13 @@
 # Changelog
 
-## Unreleased — proposed 1.0.1
+## 1.0.1 — prepared locally, publication pending
 
 - Optimize exact training metadata cardinality counts for native one- and
   two-feature codes, including Shared OVR's existing count cache. Predictions,
   fitted numeric state, API, defaults and model format are unchanged. This is
   an internal training-speed optimization; no accuracy, inference-speed or
-  memory improvement is claimed. The package version remains 1.0.0 during
-  local qualification; 1.0.1 is not published by this change.
+  memory improvement is claimed. This patch preserves the learned model and
+  predictions; local preparation does not publish 1.0.1.
 
 ## 1.0.0
 
@@ -23,7 +23,7 @@
 - Stable publication remains a separate maintainer-only action after qualification.
 
 The following entries preserve earlier prerelease preparation history, including
-their availability statements at that time; they do not describe current1.0.0 availability.
+their availability statements at that time; they do not describe current1.0.1 availability.
 
 ## 1.0.0rc2 — prepared locally, not published
 
@@ -61,7 +61,7 @@ their availability statements at that time; they do not describe current1.0.0 av
   historical; the version bump makes no new performance claim.
 
 The entries below record preparation of the historical 0.2.0rc2 line. Their
-version statements describe that earlier work, not the stable1.0.0 source.
+version statements describe that earlier work, not the current1.0.1 source.
 
 ## Historical 0.2.0rc2 preparation — pre-1.0 API cleanup
 

@@ -1,6 +1,6 @@
 # Python compatibility and release policy
 
-CodAdapt1.0.0 declares **Python>=3.10,<3.15** and qualifies minors3.10–3.14.
+CodAdapt1.0.1 declares **Python>=3.10,<3.15** and qualifies minors3.10–3.14.
 Metadata/resolver success alone does not prove execution. Each release requires
 installed-artifact numerical imports/Cholesky, pip check, native binary/multiclass/
 regression, categorical/missing inputs, clone/Pipeline/CV, memory admission and
@@ -22,7 +22,9 @@ were reported by the maintainer. They are RC2 context, not remotely queried evid
 or execution of stable1.0.0 workflows. Local stable qualification records exact
 artifact hashes/interpreters/dependency versions separately. Available local Windows
 minors and WSL installed-wheel checks are exercised; WSL is the same hardware.
-Stable macOS and the post-integration remote matrix remain **EXTERNAL_MANUAL_GATE**.
+The maintainer reports manual release qualification PASS for the optimized1.0.0 main.
+That is USER_CONFIRMED evidence, not fetched logs or qualification of1.0.1 artifacts.
+Candidate1.0.1 macOS and the post-integration remote matrix remain **EXTERNAL_MANUAL_GATE**.
 No local macOS or independent-hardware execution is simulated.
 
 Historical Windows DLL/application-control failures occurred in standalone SciPy
@@ -45,5 +47,5 @@ package smoke; local tests do not qualify those images. Cross-Python pickle/jobl
 loading remains diagnostic, not guaranteed. Prefer matching environments.
 
 No scientific recipe, numerical precision, compiler cells or native validation
-protocol changes accompany stable version finalization. Release uploads, tags and
+protocol changes accompany the1.0.1 exact training-speed patch. Release uploads, tags and
 workflow execution are maintainer-only actions; preparation performs none of them.

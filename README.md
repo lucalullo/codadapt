@@ -2,7 +2,7 @@
 
 CodAdapt is a compact native tabular model family with mixed predictive competitiveness across tasks. Its native estimator uses **adaptive coded memory with shared multi-resolution encoding** for binary and multiclass classification and single-target regression, while preserving a scikit-learn-style API.
 
-**CodAdapt 1.0.0 provides a stable native API for binary classification, Shared OVR multiclass and regression. SafeBlend and the optional EBM compiler remain experimental.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
+**CodAdapt 1.0.1 provides a stable native API for binary classification, Shared OVR multiclass and regression. SafeBlend and the optional EBM compiler remain experimental.** The compiler can export supported additive EBM models into compact standalone CodAdapt lookup models that no longer require the EBM teacher at inference time.
 
 The 1.x stability contract covers the documented native API. It is intended for reproducible evaluation and practical tabular workflows; stability does not imply benchmark leadership. It does not claim universal superiority over established tree-based models.
 
@@ -39,8 +39,8 @@ python -m pip install codadapt
 python -c "import codadapt; print(codadapt.__version__)"
 ```
 
-For an exact 1.0.0 environment, use `python -m pip install codadapt==1.0.0`.
-You can also install a locally built `dist/codadapt-1.0.0-py3-none-any.whl`.
+Before publication, install the locally built `dist/codadapt-1.0.1-py3-none-any.whl`.
+After publication, use `python -m pip install codadapt==1.0.1` for an exact environment.
 Retain artifact SHA256 and dependency versions. See the
 [compatibility policy](https://github.com/lucalullo/codadapt/blob/main/docs/PYTHON_COMPATIBILITY.md)
 and [release procedure](https://github.com/lucalullo/codadapt/blob/main/docs/RELEASING.md).
@@ -260,7 +260,7 @@ for inputs, fitted diagnostics, persistence, costs and limitations.
 
 ## Experimental EBM compilation
 
-CodAdapt 1.0.0 retains an **experimental, opt-in** compiler for supported additive `interpret-core==0.7.8` EBM models. Install the [optional `ebm` extra](#installation) when compiling a fitted teacher; the native CodAdapt installation remains independent of interpret.
+CodAdapt 1.0.1 retains an **experimental, opt-in** compiler for supported additive `interpret-core==0.7.8` EBM models. Install the [optional `ebm` extra](#installation) when compiling a fitted teacher; the native CodAdapt installation remains independent of interpret.
 
 ```python
 from codadapt.experimental import compile_ebm
@@ -501,7 +501,8 @@ These files are development documentation and are intentionally excluded from th
 
 ## Status
 
-CodAdapt 1.0.0 stabilizes the documented native API while preserving RC2 training,
+CodAdapt 1.0.1 retains the stable native API and exact learned model while reducing training time.
+It preserves RC2 predictive training semantics,
 prediction and resource-admission behavior. Native multiclass Shared OVR is included;
 SafeBlend and the EBM compiler remain opt-in and experimental. Source preparation
 does not perform publication or create a tag.

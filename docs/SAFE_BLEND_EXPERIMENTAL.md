@@ -1,7 +1,7 @@
 # Experimental native SafeBlend regression
 
 `codadapt.experimental.SafeBlendRegressor` is an opt-in, fully native regression
-estimator in the current **1.0.0 release line**. Standard CodAdapt installation
+estimator in the current **1.0.1 release line**. Standard CodAdapt installation
 is sufficient. It fits no external teacher and retains no external model.
 `CodAdaptRegressor` remains the default. The optional `codadapt[ebm]` compiler is
 a separate tool and is not used by SafeBlend.

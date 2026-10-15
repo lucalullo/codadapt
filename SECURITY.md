@@ -1,6 +1,6 @@
 # Security Policy
 
-The current source release line is CodAdapt 1.0.0. Its Python requirement is
+The current source release line is CodAdapt 1.0.1. Its Python requirement is
 `>=3.10,<3.15`, with Python 3.10–3.14 in the qualified matrix. No support duration is promised.
 Report suspected vulnerabilities privately to
 the repository owner with the affected version, reproduction, impact, and suggested mitigation.

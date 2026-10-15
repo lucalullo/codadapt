@@ -3932,8 +3932,8 @@
     "Round78:can an opt-in packaged native estimator preserve the exact recipe,branch-aware memory and cross-version fit/reload contract? Private proposal only;no tuning on confirmation panel."
   ],
   "next_experiments": [
-    "STOP; Luca reviews six-file handoff and separate1.0.1 preparation, then manual CI/macOS/TestPyPI/release gates. No Round91.",
-    "Do not repeat valid Round90 or productization fits. Reopen only for demonstrated correctness/platform regression, separately frozen independent workload/hardware evidence, or authorized version-dependent release gates."
+    "STOP. Luca reviews/copies the consolidated public handoff manually, commits/pushes, qualifies exact1.0.1commit including macOS, then TestPyPI/external smoke/tag/release/PyPI/post-release checks. No Round91.",
+    "Do not rerun valid release jobs without input invalidation; renew only gates affected by a future payload/version/environment change or demonstrated regression."
   ],
   "v0_2_readiness": {
     "native_core_improved": false,
@@ -21089,7 +21089,7 @@
       "research_round_added": false
     }
   ],
-  "current_research_status": "ROUND90_PRODUCTIZATION_READY_EXTERNAL_GATE",
+  "current_research_status": "CODADAPT_1_0_1_CANDIDATE_EXTERNAL_GATES_PENDING",
   "unresolved_mechanisms": {
     "historical": [
       "Unique-source crowding versus repeated residual refinement",
@@ -83389,5 +83389,79 @@
       "Round91_started": false,
       "remote_actions": 0
     }
+  },
+  "ultimate_objective": {
+    "status": "PERMANENT_STRATEGIC_POLICY",
+    "round": null,
+    "last_completed_round": 90,
+    "date": "2026-10-15",
+    "axes": [
+      "ACCURACY",
+      "GENERALIZATION",
+      "TRAINING SPEED",
+      "INFERENCE SPEED",
+      "MODEL SIZE",
+      "RAM",
+      "LARGE-N",
+      "ROBUSTNESS",
+      "SIMPLICITY",
+      "DEPLOYMENT"
+    ],
+    "no_cosmetic_tradeoff": true,
+    "identity": "original native coded-memory, not external learner wrapper/tree ensemble/neural net/generic boosting",
+    "new_idea_questions": [
+      "real weakness",
+      "new principle",
+      "historical non-equivalence",
+      "coded-memory identity",
+      "causal witness",
+      "falsification",
+      "NEW_EXTERNAL transfer",
+      "speed/memory cost"
+    ],
+    "benchmark": "broad frozen multi-task controls LightGBM/XGBoost/CatBoost/HGB, quality/fit/inference/serialized/RAM/peakRSS together",
+    "negative_positive_memory": "preserve permanently in MASTER/STATE/private reports",
+    "auto_resume": "authorized protocol transitions automatic, checkpoint technical interruptions",
+    "applied_to_current_task": "1.0.1 exact cost reduction, no new architecture or Round91"
+  },
+  "prepared_candidate_version": "1.0.1",
+  "RELEASE_1_0_1": {
+    "status": "COMPLETE_LOCAL_EXTERNAL_GATES_PENDING",
+    "verdict": "CODADAPT_1_0_1_CANDIDATE_EXTERNAL_GATES_PENDING",
+    "version": "1.0.1",
+    "public_published_version": "1.0.0",
+    "PUBLIC_1_0_1_BASELINE_HEAD": "fe06cb4c3d6ece29441a134a26cc1091bd8c881b",
+    "last_completed_round": 90,
+    "Round91_started": false,
+    "question": "Does the already qualified exact speed patch survive1.0.1 version/artifact qualification?",
+    "semantic_signature": "Round90 metadata-cardinality exact patch; version/docs only versus optimized public main",
+    "protocol": "research_private/release_1_0_1/PROTOCOL.json",
+    "semver_patch_justified": true,
+    "API_drift": 0,
+    "predictive_drift": false,
+    "Windows_fit_ratio": 0.22250429264940616,
+    "WSL_fit_ratio": 0.20358046375987474,
+    "installed_wheel_fit_ratio": 0.13105694071939067,
+    "tests": "607PASS4knownXFAIL0FAIL; all607priorPASSpreserved",
+    "Python": "installed3.10–3.14 PASS, pipcheck and same/fresh persistence",
+    "macOS": "EXTERNAL_MANUAL_GATE",
+    "existing_remote_evidence": "USER_CONFIRMED_REMOTE_RELEASE_QUALIFICATION_PASS on optimized1.0.0main only",
+    "wheel_SHA256": "e063d43b61996046a0f73a836482166a41bd8906cb5590b077b9864b4f4ff08d",
+    "sdist_SHA256": "e3acd1476859a0caf0eda9cad72fdced4ff5e269a25f8b2fe106bbbaa37c32d2",
+    "API_freeze_SHA256": "f5c37ca15a71f90a1ab620ebaae49abee1b0815d9572c87d317c254e63cd237b",
+    "failed_evidence": "modern offline dependency copy initially omitted narwhals; repaired missing local dependency only; negative log preserved; audit YAML fallback fixed without new dependency",
+    "scientific_fits": 0,
+    "completed_valid_jobs_repeated": 0,
+    "independent_hardware": false,
+    "public_clone_modified": false,
+    "remote_actions": 0,
+    "reports": [
+      "research_private/RELEASE_1_0_1_REPORT.md",
+      "research_private/release_1_0_1/final_audit.json"
+    ],
+    "candidate_manifest": "research_private/release_1_0_1/PUBLIC_MANIFEST.json",
+    "handoff": "research_private/release_1_0_1/PUBLIC_HANDOFF.json",
+    "retry_condition": "Do not rerun valid release jobs without input invalidation; renew only gates affected by a future payload/version/environment change or demonstrated regression.",
+    "next_exact_step": "STOP. Luca reviews/copies the consolidated public handoff manually, commits/pushes, qualifies exact1.0.1commit including macOS, then TestPyPI/external smoke/tag/release/PyPI/post-release checks. No Round91."
   }
 }

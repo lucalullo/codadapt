@@ -1,6 +1,6 @@
 # Stability and persistence contract
 
-## Stable native API in 1.0.0
+## Stable native API in 1.0.x
 
 The stable surface is `codadapt.CodAdaptClassifier`, its exact alias
 `codadapt.CodAdapt`, `codadapt.CodAdaptRegressor` and `codadapt.__version__`.
@@ -9,6 +9,8 @@ output shapes, class ordering, documented exception categories and inspection
 attributes in [API.md](API.md). Estimators follow scikit-learn constructor,
 clone, parameter and Pipeline conventions. Stable 1.0.0 preserves qualified RC2
 behavior; it introduces no new learner, probability mapping or experimental API.
+The1.0.1 patch changes exact training metadata counting only, with no API, learned-model
+or prediction change.
 
 `memory_budget_mb=512` remains a keyword-only positive integer in MiB. It controls
 a deterministic admission heuristic, not total RSS, and includes external validation
@@ -54,7 +56,8 @@ Same version does not guarantee portability across different numerical environme
 
 Cross-CodAdapt-version, cross-Python-minor, cross-dependency and cross-platform
 loading is **not guaranteed**. RC2-to1.0.0 replay is a qualified diagnostic,
-WORKS_NOT_GUARANTEED, not a permanent migration contract. No stable interchange
+WORKS_NOT_GUARANTEED, not a permanent migration contract. The same scope applies to
+tested1.0.0-to1.0.1 artifact replay; successful replay does not widen this guarantee. No stable interchange
 format, automatic migration or long-term serialized-layout compatibility is promised.
 Keep the original environment when archiving models.
 

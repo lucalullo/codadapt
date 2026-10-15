@@ -1,3 +1,21 @@
+# CodAdapt1.0.1 local release candidate COMPLETE
+
+**CODADAPT_1_0_1_CANDIDATE_EXTERNAL_GATES_PENDING.** Not Round91; last_completed_round90,current_round=null. Public clone mainHEAD fe06cb4c3d6ece29441a134a26cc1091bd8c881b remains read-only and version1.0.0. Desktop candidate/version/wheel/sdist1.0.1. Optimized main already has Round90; all16non-version runtime files unchanged against it. Version/docs/notebook only in this release task, no new parameter/feature/algorithm or scientific change.
+
+Release-grade true unpatched1.0.0 comparison:9primary controlled workloads plus optional700k;88fresh Windows timing jobs/44pairs,5small-medium/3large/1smoke; per-workload median fitratio0.222504. WSL4medium24freshjobs median0.203580;actual installed unpatched1.0.0wheel versus1.0.1wheel12freshjobs median0.131057. Same data/seed/config/4threads, matched environments, alternating fresh processes; allstate/output exact. No external quality or independent-hardware claim. Inference/deep/peak/serialization no material regression; no new gain claim on those axes. 400k/700k smoke complete safely, unchanged memory_budget semantics.
+
+607PASS/4knownXFAIL/0FAIL and all607previousPASS retained. Ruff/format,clean snapshot build/Twine,metadata1.0.1,isolated offline wheel installs3.10–3.14,pipcheck,numerical imports/Cholesky,binary/multiclass/regression/SafeBlend,clone/Pipeline/CV,failed-fit/determinism/pickle/joblib/same-freshprocess and trusted1.0.0replay PASS. Original CI notebook code cells execute against installedwheel offline (no ipykernel frontend claim). Sdist install PASS. Missing modern narwhals in offline dependency copy repaired locally, no new package dependency/download; original fail log retained. Workflow definitions unchanged and version-independent.
+
+Maintainer confirms previous optimized1.0.0 manual remote qualification PASS: USER_CONFIRMED evidence, not fetched logs or certification of new1.0.1artifacts. Candidate macOS/full future-commit remote matrix,TestPyPI/external smoke/publication remain manual gates,not FAIL. No Git mutation/remote/workflow/upload/tag/release; no clone write. The qualified prior3568-file productization seal is preserved using pre-release public-file snapshots for evolving version/docs/memory entries.
+
+North Star preserved. ULTIMATE OBJECTIVE registered as permanent policy: optimize accuracy/generalization/fit/inference/size/RAM/large-N/robustness/simplicity/deployment jointly; no cosmetic axis sacrifice or external-wrapper identity change. Every new quality idea needs real weakness,new principle,historical non-equivalence,coded-memory identity,causal witness,falsification,NEW_EXTERNAL transfer and cost evidence. TrackB exact0prediction/API/semanticdrift remains high priority independently. Broad frozen competitor benchmarks and all positive/negative evidence remain required; no closed research reopened by release preparation.
+
+Report research_private/RELEASE_1_0_1_REPORT.md (65fields);receipts,manifests,artifact hashes,plans,draft,RESUME/finalaudit underresearch_private/release_1_0_1/. Version1.0.1 is prepared, not published. Handoff is consolidated against current main; unchanged speed files/tests need no recopy. Original1–90 history and North Star follow unchanged below/inSTATE.
+
+Next: STOP. Luca reviews/copies the consolidated public handoff manually, commits/pushes, qualifies exact1.0.1commit including macOS, then TestPyPI/external smoke/tag/release/PyPI/post-release checks. No Round91.
+
+---
+
 # Permanent North Star — world-class practical tabular learning
 
 User policy adopted2026-10-15 after Round90 productization terminal qualification. **Not Round91; last_completed_round=90,current_round=null.** Full verbatim directive and hash: research_private/north_star/CODADAPT_NORTH_STAR.md and POLICY_RECEIPT.json; structured policy in STATE.strategic_north_star. No new fit/solve/architecture/version change or remote action.
