@@ -2,8 +2,8 @@
   "project": "CodAdapt",
   "public_version": "1.0.0",
   "research_state_version": 34,
-  "last_completed_round": 82,
-  "current_date": "2026-10-13",
+  "last_completed_round": 90,
+  "current_date": "2026-10-15",
   "public_core": {
     "status": "BINARY_REGRESSION_FROZEN_MULTICLASS_EXACT_PORT_INTEGRATED",
     "description": "Shared train-only quantile/category encoder; up to3residual memory levels; budgeted mains and fixed-code pair tables; validation-level stopping.",
@@ -3932,7 +3932,8 @@
     "Round78:can an opt-in packaged native estimator preserve the exact recipe,branch-aware memory and cross-version fit/reload contract? Private proposal only;no tuning on confirmation panel."
   ],
   "next_experiments": [
-    "STOP; no Round83 or additional fits. Reopen only after an independently supplied distinct principle and matching train-only mechanism witness."
+    "STOP; Luca reviews six-file handoff and separate1.0.1 preparation, then manual CI/macOS/TestPyPI/release gates. No Round91.",
+    "Do not repeat valid Round90 or productization fits. Reopen only for demonstrated correctness/platform regression, separately frozen independent workload/hardware evidence, or authorized version-dependent release gates."
   ],
   "v0_2_readiness": {
     "native_core_improved": false,
@@ -20414,6 +20415,228 @@
         ],
         "next_step": "STOP; no Round83 or additional fits. Reopen only after an independently supplied distinct principle and matching train-only mechanism witness."
       }
+    },
+    {
+      "round": 83,
+      "title": "Independent target-prior coded-evidence acquisition under a frozen label-shift contract",
+      "status": "COMPLETE_DEVELOPMENT_SAFETY_GATE_FAIL",
+      "decision": "ROUND83_PRIOR_SHIFT_SIGNAL_CONTROL_SAFETY_FAIL",
+      "evidence": "SYNTHETIC_CAUSAL_WITNESS_AND_REAL_INPUT_CONTROLLED_SHIFT_DEVELOPMENT_NOT_NATURAL_CONFIRMATION",
+      "source": "research_private/round83_findings.md",
+      "public_core_changed": false,
+      "summary": {
+        "status": "FAIL",
+        "gates": {
+          "median_ge_2pct": true,
+          "dataset_ci_lower_positive": true,
+          "worst_harm_below_10pct": true,
+          "no_shift_worst_harm_below_5pct": false,
+          "binary_auc_invariant": true,
+          "nonfallback_at_least60pct": true
+        },
+        "datasets": 13,
+        "jobs": 65,
+        "rows": 130,
+        "median_gain": 0.06599562381247978,
+        "dataset_bootstrap_ci": [
+          0.030492992801855957,
+          0.2034682400708193
+        ],
+        "wins": 11,
+        "ties": 1,
+        "losses": 1,
+        "worst_gain": -0.0762237596739388,
+        "worst_dataset": "digits",
+        "no_shift_worst_gain": -0.059592480572208874,
+        "nonfallback_fraction": 0.8769230769230769,
+        "binary_auc_max_difference": 0.0,
+        "by_task": {
+          "binary": {
+            "sources": 7,
+            "median_gain": 0.2034682400708193,
+            "worst_gain": 0.06599562381247978
+          },
+          "multiclass": {
+            "sources": 6,
+            "median_gain": 0.023175797064093673,
+            "worst_gain": -0.0762237596739388
+          }
+        },
+        "max_metric_replay_error": 5.551115123125783e-16,
+        "fit_ratio_median": 1.1928203504877735,
+        "inference_ratio_median": 1.0076162248760447,
+        "no_shift_median_gain": -0.0015816170145216857,
+        "oracle_prior_median_gain": 0.20596220335911325,
+        "scope": "Previously exposed inputs with controlled prior-shift acquisition, not natural or independent quality confirmation"
+      },
+      "retry_condition": "Reopen only with a new independently justified finite-sample identification/risk bound or acquisition information that controls no-shift downside at fixed native predictor; a new singular-value threshold, prior floor, shrinkage, gate, sampling ratio or calibration sweep on these 13 sources is not sufficient. Require independent source-excluded prospective validation and an explicit invariant-class-conditional deployment contract. No marginal-only method can certify arbitrary-shift safety; the matched confound must remain disclosed."
+    },
+    {
+      "round": 84,
+      "title": "Prior-channel causal forensics and independent identified-risk safety certificate",
+      "status": "COMPLETE_SAFETY_UTILITY_GATE_FAIL",
+      "decision": "ROUND84_PRIOR_CHANNEL_MECHANISM_REJECTED",
+      "evidence": "RETROSPECTIVE_SAVED_MODEL_REPLAY_AND_NEW_SYNTHETIC_ACQUISITION_NO_NEW_NATIVE_FITS",
+      "source": "research_private/ROUND84_MASTER_REPORT.md",
+      "public_core_changed": false,
+      "summary": {
+        "status": "FAIL",
+        "gates": {
+          "retained_median_gain_ge60pct": false,
+          "median_gain_ge_target": false,
+          "shift_worst_dataset_harm_lt5pct": true,
+          "no_shift_worst_dataset_harm_lt5pct": true,
+          "bootstrap_lower_positive": false,
+          "wins_gt_losses": false,
+          "admitted_sources_ge3": false,
+          "binary_auc_invariant": true,
+          "multiclass_median_auc_safe": true
+        },
+        "datasets": 13,
+        "splits_per_dataset": 5,
+        "median_gain": 0.0,
+        "R83_full_median_gain": 0.06599562381247966,
+        "retained_median_gain": 0.0,
+        "half_ungated_median_gain": 0.0570380739235183,
+        "WTL": [
+          0,
+          13,
+          0
+        ],
+        "dataset_bootstrap_ci": [
+          0.0,
+          0.0
+        ],
+        "worst_shift_gain": 0.0,
+        "worst_shift_dataset": "banknote",
+        "worst_no_shift_gain": 0.0,
+        "worst_no_shift_dataset": "banknote",
+        "worst_split_gain": 0.0,
+        "shift_intervention_rate": 0.0,
+        "no_shift_intervention_rate": 0.0,
+        "active_sources": 0,
+        "new_native_fits": 0,
+        "source_level_fixed_rule_LODO": true,
+        "independent_confirmation": false,
+        "scope": "Retrospective fixed-rule held-out-dataset application; rule form was designed after observing Round83. Not independent discovery CV."
+      },
+      "retry_condition": "Reopen only with independent acquisition or a new valid risk bound that measurably reduces certificate width while preserving honest no-shift coverage. No confidence-level, threshold, prior floor, regularization, calibration, dataset exclusion or binary-only rescue sweep on this panel. Require an externally asserted invariant P(X|Y) contract; unlabeled marginals cannot establish arbitrary-shift safety."
+    },
+    {
+      "round": 85,
+      "title": "Binary ranking fixed-representation causal witness",
+      "status": "COMPLETE_DIAGNOSTIC_ONLY_NO_CANDIDATE",
+      "decision": "ROUND85_CAUSAL_DIAGNOSIS_ONLY",
+      "evidence": "HISTORICALLY_EXPOSED14SOURCE45UNIT_REPLAY_PLUS_FIXED_REPRESENTATION_TRAIN_ONLY_ORACLES",
+      "source": "research_private/ROUND85_MASTER_REPORT.md",
+      "public_core_changed": false,
+      "summary": {
+        "AUC_pointwise": 0.0014287027136342667,
+        "AUC_pairwise": 0.00043458475705392965,
+        "equal_activation_pairs": 33717,
+        "material_gate": false,
+        "candidate": null
+      },
+      "retry_condition": "Require a new independent, preregistered train-only causal observable or information/function-class principle that separates the witnessed raw-different equal activations and is demonstrably distinct from historical level selection, adaptive addressing, allocation, pair/TT/context/codebook and global refit families. For an objective-only reopening, require material fixed-capacity ranking recovery on at least three source-excluded datasets with log-loss safety and a matched pointwise control; no penalty, sampler, temperature, solver, hybrid-weight or source-subset sweep on the exposed panel."
+    },
+    {
+      "round": 86,
+      "title": "Activation collision causal localization and minimal stage intervention diagnostics",
+      "status": "COMPLETE_DIAGNOSTIC_ONLY_NO_NOVEL_FIX",
+      "decision": "ROUND86_NO_NOVEL_FIX",
+      "evidence": "HISTORICALLY_EXPOSED14SOURCE45UNIT_ZERO_BASEFIT_FORENSICS_AND116TRAIN_ONLY_AGGREGATE_ESTIMATIONS",
+      "source": "research_private/ROUND86_MASTER_REPORT.md",
+      "public_core_changed": false,
+      "summary": {
+        "raw_conflict_pairs": 90,
+        "representation_induced_pairs": 33627,
+        "feature_subset_pairs": 32875,
+        "resolution_pairs": 633,
+        "binning_pairs": 119,
+        "hash_pairs": 0,
+        "oracle_median_AUC_potential": 0.0001961992242495603,
+        "oracle_median_LL_information_potential": 0.04994429308745249,
+        "train_only_general_utility_pass": false,
+        "candidate": null
+      },
+      "retry_condition": "Require an independently justified train-only information/selection principle that separates the localized omitted-feature or resolution ambiguities and yields material source-excluded utility versus matched parent/value/capacity controls. It must be distinct from historical adaptive addressing, supervised binning, feature allocation, conditional state readouts, pair/TT/context/codebook mechanisms. No pseudocount, feature-count, bin, gate, fingerprint, solver or source-subset sweep on this panel; a new diagnostic recipe needs a new falsifiable reason, and TEST entropy headroom alone is insufficient."
+    },
+    {
+      "round": 87,
+      "title": "Multiclass head quality versus probability calibration and class competition",
+      "status": "COMPLETE_DIAGNOSTIC_ONLY_NO_NOVEL_FIX",
+      "decision": "ROUND87_NO_NOVEL_FIX",
+      "evidence": "HISTORICALLY_EXPOSED33SOURCE93UNIT_ZERO_NATIVE_FIT_SAVED_HEAD_ATLAS_AND_LABELLED_CALIBRATION_ORACLES",
+      "source": "research_private/ROUND87_MASTER_REPORT.md",
+      "public_core_changed": false,
+      "summary": {
+        "raw_softmax_median_LL_gain_pct": 12.796023195362325,
+        "validation_affine_median_LL_gain_pct": 17.59180533489407,
+        "validation_affine_WTL": [
+          30,
+          0,
+          3
+        ],
+        "worst_validation_affine_source_harm_pct": 28.933893365861152,
+        "TEST_monotonic_oracle_median_gain_pct": 33.64511346119963,
+        "TEST_affine_oracle_median_gain_pct": 23.601785495038683,
+        "current_blind_leader_gap_pct": 22.03130790833858,
+        "class_relative_resolving_witnesses": 0,
+        "candidate": null
+      },
+      "retry_condition": "Require a new, explicitly distinct training-only principle with a concrete class-relative or head-information causal intervention, matched history/capacity controls and source-excluded probability/downside safety. Known softmax, temperature, diagonal/class affine calibration, richer dictionaries, per-head allocation and joint evidence codebooks are not novel. A separately authorized engineering validation of an explicitly known frozen calibrator would be a different admission contract, not a new function class. Do not tune controls, choose source subsets or rescue Mice/333 after seeing this panel; test oracles are not transfer evidence."
+    },
+    {
+      "round": 88,
+      "title": "Known multiclass probability geometry independent product qualification",
+      "status": "COMPLETE_AGGREGATE_TRANSFER_SIGNAL_SAFETY_FAILED",
+      "decision": "ROUND88_CALIBRATION_UNSAFE",
+      "evidence": "33HISTORICAL_SOURCES93REUSED_FITS_AND11NEW_EXTERNAL_SOURCES55UNCHANGED_BASE_FITS_NO_POSTHOC_MAPPING_CHANGE",
+      "source": "research_private/ROUND88_MASTER_REPORT.md",
+      "public_core_changed": false,
+      "summary": {
+        "M1_retrospective_gain_pct": 12.796023195362325,
+        "M1_retrospective_worst_harm_pct": 15.53229007630772,
+        "M2_retrospective_gain_pct": 13.951124514025931,
+        "M2_retrospective_worst_harm_pct": 92.78998999624018,
+        "external_gain_pct": 8.741326183647615,
+        "external_CI95": [
+          2.1325675947931644,
+          29.448899839383376
+        ],
+        "external_WTL": [
+          10,
+          0,
+          1
+        ],
+        "external_worst_dataset_harm_pct": 1.9199537818885282,
+        "external_worst_split_harm_pct": 13.151308616198843,
+        "external_catastrophic_class_harm_pct": 51.545612249210905,
+        "real_argmax_mismatches": 0
+      },
+      "scientific_novelty": "HISTORICALLY_EQUIVALENT",
+      "product_improvement": "AGGREGATE_GAIN_REPLICATED_BUT_UNSAFE_PROBABILITY_TAILS",
+      "retry_condition": "Require a separately preregistered probability-safety hypothesis, independent source-excluded evidence and unchanged class decisions. It must address olduci333/PageBlocks/Shuttle and newCardiotocography probability tails without test-selected source gates, per-class rescue, post-hoc temperature-bound changes or panel exclusions. Demonstrate retrospective median>=3%/worstharm<10%, new-source median>=2%/worstharm<5%, and no>=50%conditional-classNLLharm with>=20TESTrows. Known-mapping novelty is not required; genuine safety and transfer are. Repair process-tree RAM supervision before any renewed systems/product qualification, without repeating these valid scientific fits."
+    },
+    {
+      "round": 89,
+      "title": "Rare-class-safe convex multiclass probability mapping and source-excluded safety validation",
+      "status": "COMPLETE_TERMINAL_NO_SAFE_MAPPING",
+      "decision": "ROUND89_NO_SAFE_MAPPING",
+      "evidence": "HISTORICALLY_SEEN44SOURCE148UNIT_ZERO_NEW_FIT;LODO_AND_ORIGINAL_VALID_DISCRETE_SELECTION",
+      "source": "research_private/ROUND89_MASTER_REPORT.md",
+      "public_core_changed": false,
+      "retry_condition": "The tested coarse convex path and original-VALID5% rule are closed for general promotion. Reopen only with a separately authorized, independently justified conditional-tail safety principle or genuinely new risk information, frozen before new source outcomes, and source-excluded plus new-source all-class safety evidence. A finer lambda grid, altered bound, removing uci253/333 or small-support classes, per-class rescue, support-cap relabeling, or more temperature tuning on these44 sources is not a retry condition. Preserve all negative tails and original validation reuse limitations."
+    },
+    {
+      "round": 90,
+      "title": "Exact native metadata cardinality systems optimization",
+      "status": "COMPLETE_STRONG_LOCAL_PRODUCT_CANDIDATE",
+      "decision": "ROUND90_TRAINING_SPEED_BREAKTHROUGH",
+      "evidence": "12CONTROLLED_WORKLOADS36MATCHED_ESTIMATOR_PAIRS;BITWISE_OUTPUTS;WINDOWS310_314_AND_WSL_CORRECTNESS",
+      "source": "research_private/ROUND90_MASTER_REPORT.md",
+      "public_core_changed": false,
+      "retry_condition": "Native scalar-cardinality replacement is now qualified on the frozen controlled systems panel. Do not rerun these VALID jobs or reopen closed chunk/dtype/recompute/callback/mapping lines. Further performance claims require a separately frozen real-workload or independent-hardware replication;new optimization needs a distinct measured hotspot and historical certificate. Public integration/version choice requires separate authorization."
     }
   ],
   "history_completeness": {
@@ -20496,7 +20719,16 @@
       76,
       77,
       78,
-      79
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
     ],
     "missing_round_numbers": [],
     "primary_local_report_rounds": [
@@ -20642,7 +20874,9 @@
       "76": true,
       "77": true
     },
-    "productization_index_sync": "Secondary indexed list synchronized through78; original round records and evidence/partial-history caveats preserved."
+    "productization_index_sync": "Secondary indexed list synchronized through78; original round records and evidence/partial-history caveats preserved.",
+    "round87_note": "Index continuous1–87; historical missing originals and incomplete R51 evidence unchanged. Indexed does not mean all early raw evidence recovered.",
+    "round88_note": "Continuous1–88index;oldnegativeevidence/missingoriginals/R51partialscopeunchanged. Knownmappingproductreopeningexplicitlyauthorized;newaggregatebenefitreplicatedbutold/newprobabilitytailsunsafe."
   },
   "authoritative_files": [
     "docs/research/RESEARCH_MASTER.md",
@@ -20855,7 +21089,7 @@
       "research_round_added": false
     }
   ],
-  "current_research_status": "ROUND82_NO_JUSTIFIED_NEW_FRONTIER",
+  "current_research_status": "ROUND90_PRODUCTIZATION_READY_EXTERNAL_GATE",
   "unresolved_mechanisms": {
     "historical": [
       "Unique-source crowding versus repeated residual refinement",
@@ -23429,13 +23663,17 @@
   },
   "research_pause": {
     "status": "ALGORITHMIC_RESEARCH_PAUSE",
-    "round": 82,
-    "scope": "Native algorithmic research; not release preparation or a blanket theorem",
+    "round": 86,
+    "scope": "Exact local mixed representation loss; optimistic LL materiality without generalizing fixed-probe utility or novel principle. Not a universal impossibility theorem.",
     "reopen_conditions": [
       "A new independent external failure regime with a preregistered train-only witness replicated on >=3 sources, distinguishing ranking, probability mapping and function support; another descriptive association is insufficient.",
       "A precisely specified new information source or function-class principle, with a separating witness beyond the fixed-code univariate+bivariate score class, and no equivalence to old context/tensor/projection/composition mechanisms.",
       "A new matched intervention identifying estimation/optimization failure at fixed representation and capacity, meeting the relevant F01/F03/F10/F15 retry condition before source-excluded confirmation; no loss/temperature/ridge/gate sweep.",
-      "For conditional robust-risk or task-sharing ideas: provider-defined environments/related tasks plus repeated excluded-environment/task utility. Row fingerprints are not exogenous environments; X006/X027/X028 remain conditional, not empirically disproven."
+      "For conditional robust-risk or task-sharing ideas: provider-defined environments/related tasks plus repeated excluded-environment/task utility. Row fingerprints are not exogenous environments; X006/X027/X028 remain conditional, not empirically disproven.",
+      "Reopen only with a new independently justified finite-sample identification/risk bound or acquisition information that controls no-shift downside at fixed native predictor; a new singular-value threshold, prior floor, shrinkage, gate, sampling ratio or calibration sweep on these 13 sources is not sufficient. Require independent source-excluded prospective validation and an explicit invariant-class-conditional deployment contract. No marginal-only method can certify arbitrary-shift safety; the matched confound must remain disclosed.",
+      "Reopen only with independent acquisition or a new valid risk bound that measurably reduces certificate width while preserving honest no-shift coverage. No confidence-level, threshold, prior floor, regularization, calibration, dataset exclusion or binary-only rescue sweep on this panel. Require an externally asserted invariant P(X|Y) contract; unlabeled marginals cannot establish arbitrary-shift safety.",
+      "Require a new independent, preregistered train-only causal observable or information/function-class principle that separates the witnessed raw-different equal activations and is demonstrably distinct from historical level selection, adaptive addressing, allocation, pair/TT/context/codebook and global refit families. For an objective-only reopening, require material fixed-capacity ranking recovery on at least three source-excluded datasets with log-loss safety and a matched pointwise control; no penalty, sampler, temperature, solver, hybrid-weight or source-subset sweep on the exposed panel.",
+      "Require an independently justified train-only information/selection principle that separates the localized omitted-feature or resolution ambiguities and yields material source-excluded utility versus matched parent/value/capacity controls. It must be distinct from historical adaptive addressing, supervised binning, feature allocation, conditional state readouts, pair/TT/context/codebook mechanisms. No pseudocount, feature-count, bin, gate, fingerprint, solver or source-subset sweep on this panel; a new diagnostic recipe needs a new falsifiable reason, and TEST entropy headroom alone is insufficient."
     ]
   },
   "continuity_snapshots": {
@@ -78932,8 +79170,8 @@
     "status": null,
     "current_round": null
   },
-  "current_round": 82,
-  "status": "COMPLETE",
+  "current_round": null,
+  "status": "COMPLETE_TERMINAL",
   "round79": {
     "round": 79,
     "status": "COMPLETE",
@@ -79990,5 +80228,3166 @@
     "source_gaps": "Original early rounds/R17–18 remain missing where recorded; Round51 remainder preserved",
     "release_identity_note": "Top-level public_version refreshed from local clean stable clone; old RC2 round and release evidence retained verbatim",
     "previous_public_version": "1.0.0rc2"
+  },
+  "POST_1_0_GRAND_IMPROVEMENT_PROGRAM": {
+    "status": "COMPLETE_TERMINAL",
+    "current_round": null,
+    "last_completed_round": 83,
+    "version": "1.0.0",
+    "novelty": "New independent target-unlabeled information contract; BBSE not a new literature algorithm",
+    "question": "Under externally imposed invariant class-conditionals, an independent unlabeled target pool improves target proper loss via native channel priors",
+    "contract": "SEMISYNTHETIC_PRIOR_INTERVENTION_ON_REAL_INPUTS; not a natural shift guarantee or IID ranking rescue",
+    "synthetic": {
+      "status": "PASS",
+      "rows": 20,
+      "fits": 10,
+      "positive_median_gain": 0.23975364883351757,
+      "negative_worst_gain": -0.0022944777539368744,
+      "prior_mae_max": 0.049274751812812184,
+      "confound_median_gain": -0.30478856981179114,
+      "scope": "Synthetic acquisition contract only, not IID external ranking or natural-shift qualification"
+    },
+    "protocol_sha256": "8ed1a476a7f87fc72e2b2a865f07d904e5942f933a1b681b252413723a93d736",
+    "path": "research_private/post_1_0_grand_program/",
+    "next_exact_step": "STOP. No Round84 or threshold/calibration retuning; obtain independent identification/risk-bound evidence first",
+    "research_pause_scope": "Existing source-only closed families remain paused; explicit F10 acquisition-intervention exception only",
+    "terminal_verdict": "POST_1_0_DEVELOPMENT_ONLY",
+    "round_verdict": "ROUND83_PRIOR_SHIFT_SIGNAL_CONTROL_SAFETY_FAIL",
+    "scientific_principle": "Additional deployment information: identifiable source-coded class channel plus an independent unlabeled target marginal",
+    "semantic_signature": "frozen_native_scores|source_labeled_channel|independent_target_unlabeled_marginal|invertible_class_channel|prior_odds_transport|externally_asserted_label_shift",
+    "prior_art": "Lipton et al. (2018), BBSE; established literature principle, new project information contract",
+    "dataset_registry": "research_private/post_1_0_grand_program/11_DEVELOPMENT/DATASET_REGISTRY.json",
+    "split_registry": "research_private/post_1_0_grand_program/11_DEVELOPMENT/SPLITS.json",
+    "metrics": {
+      "status": "FAIL",
+      "gates": {
+        "median_ge_2pct": true,
+        "dataset_ci_lower_positive": true,
+        "worst_harm_below_10pct": true,
+        "no_shift_worst_harm_below_5pct": false,
+        "binary_auc_invariant": true,
+        "nonfallback_at_least60pct": true
+      },
+      "datasets": 13,
+      "jobs": 65,
+      "rows": 130,
+      "median_gain": 0.06599562381247978,
+      "dataset_bootstrap_ci": [
+        0.030492992801855957,
+        0.2034682400708193
+      ],
+      "wins": 11,
+      "ties": 1,
+      "losses": 1,
+      "worst_gain": -0.0762237596739388,
+      "worst_dataset": "digits",
+      "no_shift_worst_gain": -0.059592480572208874,
+      "nonfallback_fraction": 0.8769230769230769,
+      "binary_auc_max_difference": 0.0,
+      "by_task": {
+        "binary": {
+          "sources": 7,
+          "median_gain": 0.2034682400708193,
+          "worst_gain": 0.06599562381247978
+        },
+        "multiclass": {
+          "sources": 6,
+          "median_gain": 0.023175797064093673,
+          "worst_gain": -0.0762237596739388
+        }
+      },
+      "max_metric_replay_error": 5.551115123125783e-16,
+      "fit_ratio_median": 1.1928203504877735,
+      "inference_ratio_median": 1.0076162248760447,
+      "no_shift_median_gain": -0.0015816170145216857,
+      "oracle_prior_median_gain": 0.20596220335911325,
+      "scope": "Previously exposed inputs with controlled prior-shift acquisition, not natural or independent quality confirmation"
+    },
+    "positive_evidence": "Synthetic causal witness; controlled prior-shift median log-loss gain 6.60%, CI [3.05%, 20.35%]; binary AUC unchanged",
+    "negative_evidence": "No-shift harm: credit_g 5.959%, cmc 5.885%; shifted multiclass digits harm 7.622%; matched synthetic confound harm 30.48%",
+    "transfer": "NOT_STARTED_DEVELOPMENT_GATE_FAIL",
+    "confirmation": "NOT_STARTED_DEVELOPMENT_GATE_FAIL",
+    "systems": "Development cost only; no deployment qualification",
+    "core_modified": false,
+    "new_runtime_dependencies": false,
+    "public_baseline": "eaac95e8a4f2df4d8a7b929debdef509d429ffc6",
+    "previous_research_pause": {
+      "status": "ALGORITHMIC_RESEARCH_PAUSE",
+      "round": 82,
+      "scope": "Native algorithmic research; not release preparation or a blanket theorem",
+      "reopen_conditions": [
+        "A new independent external failure regime with a preregistered train-only witness replicated on >=3 sources, distinguishing ranking, probability mapping and function support; another descriptive association is insufficient.",
+        "A precisely specified new information source or function-class principle, with a separating witness beyond the fixed-code univariate+bivariate score class, and no equivalence to old context/tensor/projection/composition mechanisms.",
+        "A new matched intervention identifying estimation/optimization failure at fixed representation and capacity, meeting the relevant F01/F03/F10/F15 retry condition before source-excluded confirmation; no loss/temperature/ridge/gate sweep.",
+        "For conditional robust-risk or task-sharing ideas: provider-defined environments/related tasks plus repeated excluded-environment/task utility. Row fingerprints are not exogenous environments; X006/X027/X028 remain conditional, not empirically disproven."
+      ]
+    },
+    "previous_current_research_status": "ROUND82_NO_JUSTIFIED_NEW_FRONTIER",
+    "previous_next_experiments": [
+      "STOP; no Round83 or additional fits. Reopen only after an independently supplied distinct principle and matching train-only mechanism witness."
+    ],
+    "retry_condition": "Reopen only with a new independently justified finite-sample identification/risk bound or acquisition information that controls no-shift downside at fixed native predictor; a new singular-value threshold, prior floor, shrinkage, gate, sampling ratio or calibration sweep on these 13 sources is not sufficient. Require independent source-excluded prospective validation and an explicit invariant-class-conditional deployment contract. No marginal-only method can certify arbitrary-shift safety; the matched confound must remain disclosed.",
+    "report": "research_private/POST_1_0_GRAND_PROGRAM_REPORT.md",
+    "scientific_fits": 75
+  },
+  "capacity_resume_policy": {
+    "authority": "User permanent auto-resume instruction",
+    "technical_interruption_status": "INTERRUPTED_BY_CAPACITY",
+    "mission_until_terminal": "IN_PROGRESS",
+    "auto_resume": true,
+    "user_confirmation_for_technical_resume": false,
+    "reuse": "Verify hashes and reuse valid fits, solves, benchmarks, downloads and expensive tests; complete only missing work",
+    "preserve": "Never delete useful partial or negative evidence",
+    "required_resume_fields": [
+      "MISSION",
+      "CURRENT_PHASE",
+      "LAST_VALID_CHECKPOINT",
+      "COMPLETED_JOBS",
+      "PENDING_JOBS",
+      "INVALID_JOBS",
+      "FROZEN_RESULTS",
+      "HASHES",
+      "NEXT_EXACT_COMMAND_OR_STEP",
+      "TERMINAL_VERDICT_PENDING"
+    ],
+    "platform_limit": "If autonomous restart is unavailable, leave a complete checkpoint for automatic continuation in the next session",
+    "decision_exceptions": "Product decision, scientific contamination, public-clone modification, remote publication, legal/license issue, safety/resource violation, or a choice not determined by protocol"
+  },
+  "ROUND84": {
+    "status": "COMPLETE_TERMINAL",
+    "last_completed_round": 84,
+    "protocol_sha256": "35cb412369113855830ef9403a271afeb79af55c2302b890e752f4eb09f141e6",
+    "semantic_signature": "frozen_native|split_CAL_and_unlabeled_ADAPT|fixed_candidate|empirical_Bernstein_class_gain|prior_identification_polytope|worst_prior_dual_LCB_positive|identity_otherwise",
+    "hypothesis": "Finite channel/marginal uncertainty and conditional risk estimation can control no-shift downside without empirical failure-specific thresholds",
+    "path": "research_private/round84/",
+    "new_native_fits": 0,
+    "next_exact_step": "STOP; no Round85. Do not tune confidence/strength/thresholds on exposed data. Require the new acquisition/risk-bound evidence described in retry_condition.",
+    "prior_status": "ROUND83_PRIOR_SHIFT_SIGNAL_CONTROL_SAFETY_FAIL",
+    "prior_next_experiments": [
+      "Reopen only with a new independently justified finite-sample identification/risk bound or acquisition information that controls no-shift downside at fixed native predictor; a new singular-value threshold, prior floor, shrinkage, gate, sampling ratio or calibration sweep on these 13 sources is not sufficient. Require independent source-excluded prospective validation and an explicit invariant-class-conditional deployment contract. No marginal-only method can certify arbitrary-shift safety; the matched confound must remain disclosed."
+    ],
+    "terminal_verdict": "ROUND84_PRIOR_CHANNEL_MECHANISM_REJECTED",
+    "current_round": null,
+    "question": "Can an independent identified-risk certificate retain the prior-channel gain while controlling no-shift downside?",
+    "metrics": {
+      "status": "FAIL",
+      "gates": {
+        "retained_median_gain_ge60pct": false,
+        "median_gain_ge_target": false,
+        "shift_worst_dataset_harm_lt5pct": true,
+        "no_shift_worst_dataset_harm_lt5pct": true,
+        "bootstrap_lower_positive": false,
+        "wins_gt_losses": false,
+        "admitted_sources_ge3": false,
+        "binary_auc_invariant": true,
+        "multiclass_median_auc_safe": true
+      },
+      "datasets": 13,
+      "splits_per_dataset": 5,
+      "median_gain": 0.0,
+      "R83_full_median_gain": 0.06599562381247966,
+      "retained_median_gain": 0.0,
+      "half_ungated_median_gain": 0.0570380739235183,
+      "WTL": [
+        0,
+        13,
+        0
+      ],
+      "dataset_bootstrap_ci": [
+        0.0,
+        0.0
+      ],
+      "worst_shift_gain": 0.0,
+      "worst_shift_dataset": "banknote",
+      "worst_no_shift_gain": 0.0,
+      "worst_no_shift_dataset": "banknote",
+      "worst_split_gain": 0.0,
+      "shift_intervention_rate": 0.0,
+      "no_shift_intervention_rate": 0.0,
+      "active_sources": 0,
+      "new_native_fits": 0,
+      "source_level_fixed_rule_LODO": true,
+      "independent_confirmation": false,
+      "scope": "Retrospective fixed-rule held-out-dataset application; rule form was designed after observing Round83. Not independent discovery CV."
+    },
+    "synthetic": {
+      "curve": {
+        "LARGE_SHIFT": {
+          "safe_gain": 0.0,
+          "half_ungated_gain": 0.2368365337535993,
+          "intervened": 0.0
+        },
+        "MEDIUM_SHIFT": {
+          "safe_gain": 0.0,
+          "half_ungated_gain": 0.0527150067222814,
+          "intervened": 0.0
+        },
+        "NO_SHIFT": {
+          "safe_gain": 0.0,
+          "half_ungated_gain": -0.0004176767630961,
+          "intervened": 0.0
+        },
+        "REVERSE_SHIFT": {
+          "safe_gain": 0.0,
+          "half_ungated_gain": 0.2528745822980023,
+          "intervened": 0.0
+        },
+        "SMALL_SHIFT": {
+          "safe_gain": 0.0,
+          "half_ungated_gain": 0.002383288229661,
+          "intervened": 0.0
+        }
+      },
+      "strict_monotonic_safe_curve": true,
+      "strict_monotonic_ungated_curve": true,
+      "source_model_reused": true,
+      "native_fits": 0,
+      "definition": "Median relative loss gains over5seeds; flat zero from rejection is not evidence of useful causal response"
+    },
+    "positive_evidence": "Binary prior-intercept equivalence and growing ungated synthetic shift response; half-pool ungated median gain5.703807%.",
+    "negative_evidence": "All130 retrospective conditions and65 synthetic acquisitions abstain. Retention0%, W/T/L0/13/0. No confirmation or transfer.",
+    "failure": "Finite-sample confidence polytope and gain bounds are too wide at current independent acquisition support; total abstention is not a useful safe specialist.",
+    "dataset_scope": "13 previously exposed source datasets;65 original splits reused. Locked6 source-excluded confirmation datasets unexecuted.",
+    "raw_hashes": [
+      "research_private/round84/LODO_RAW_SEAL.json",
+      "research_private/round84/SYNTHETIC_RAW_SEAL.json"
+    ],
+    "confirmation": "NOT_STARTED_LODO_GATE_FAIL",
+    "transfer": "NOT_STARTED_LODO_GATE_FAIL",
+    "systems": "NOT_STARTED_LODO_GATE_FAIL",
+    "public_core_changed": false,
+    "public_version": "1.0.0",
+    "previous_research_pause": {
+      "status": "ALGORITHMIC_RESEARCH_PAUSE",
+      "round": 83,
+      "scope": "Source-only closed directions remain closed; the label-shift information contract has development downside. This is not an impossibility theorem.",
+      "reopen_conditions": [
+        "A new independent external failure regime with a preregistered train-only witness replicated on >=3 sources, distinguishing ranking, probability mapping and function support; another descriptive association is insufficient.",
+        "A precisely specified new information source or function-class principle, with a separating witness beyond the fixed-code univariate+bivariate score class, and no equivalence to old context/tensor/projection/composition mechanisms.",
+        "A new matched intervention identifying estimation/optimization failure at fixed representation and capacity, meeting the relevant F01/F03/F10/F15 retry condition before source-excluded confirmation; no loss/temperature/ridge/gate sweep.",
+        "For conditional robust-risk or task-sharing ideas: provider-defined environments/related tasks plus repeated excluded-environment/task utility. Row fingerprints are not exogenous environments; X006/X027/X028 remain conditional, not empirically disproven.",
+        "Reopen only with a new independently justified finite-sample identification/risk bound or acquisition information that controls no-shift downside at fixed native predictor; a new singular-value threshold, prior floor, shrinkage, gate, sampling ratio or calibration sweep on these 13 sources is not sufficient. Require independent source-excluded prospective validation and an explicit invariant-class-conditional deployment contract. No marginal-only method can certify arbitrary-shift safety; the matched confound must remain disclosed."
+      ]
+    },
+    "report": "research_private/ROUND84_MASTER_REPORT.md",
+    "retry_condition": "Reopen only with independent acquisition or a new valid risk bound that measurably reduces certificate width while preserving honest no-shift coverage. No confidence-level, threshold, prior floor, regularization, calibration, dataset exclusion or binary-only rescue sweep on this panel. Require an externally asserted invariant P(X|Y) contract; unlabeled marginals cannot establish arbitrary-shift safety.",
+    "validation": {
+      "private_tests": "11 PASS",
+      "math_checks_before_scientific_replay": "3 PASS",
+      "ruff": "PUBLIC_AND_PRIVATE_PASS",
+      "public_tests": "575 PASS /4 known XFAIL /0 FAIL, exact41hash reuse; not rerun",
+      "final_audit": "research_private/round84/final_audit.json"
+    }
+  },
+  "ROUND85": {
+    "status": "COMPLETE_TERMINAL",
+    "question": "Can the fixed deployed coded-memory activation class recover the external binary ranking gap by value/objective refitting?",
+    "path": "research_private/round85/",
+    "entering_status": "ROUND84_PRIOR_CHANNEL_MECHANISM_REJECTED",
+    "next_exact_step": "STOP. Do not start Round86, alter stable1.0.0 or tune the failed recipes. Require a new independent, preregistered train-only causal observable or information/function-class principle that separates the witnessed raw-different equal activations and is demonstrably distinct from historical level selection, adaptive addressing, allocation, pair/TT/context/codebook and global refit families. For an objective-only reopening, require material fixed-capacity ranking recovery on at least three source-excluded datasets with log-loss safety and a matched pointwise control; no penalty, sampler, temperature, solver, hybrid-weight or source-subset sweep on the exposed panel.",
+    "new_Base_fits": 0,
+    "source_count": 14,
+    "original_split_units": 45,
+    "prior_channel_status": "REJECTED_FOR_NOW_AS_AUTOMATIC_GENERAL_MECHANISM",
+    "prior_channel_retry": "Independent ex-ante observable robustly distinguishing safe versus harmful use, not gate tuning.",
+    "terminal_verdict": "ROUND85_CAUSAL_DIAGNOSIS_ONLY",
+    "last_completed_round": 85,
+    "current_round": null,
+    "semantic_signature": {
+      "input": "Frozen deployed feature/bucket codes and exact original memory activations",
+      "function_class": "Intercept plus original per-cell additive contributions; same active tables/masks/levels",
+      "learning": "Joint convex pointwise or sampled-pair logistic with fixed ridge; TRAIN only",
+      "inference": "Mathematically original cell-lookup class; diagnostic CSR arithmetic is not a promoted runtime",
+      "capacity": "No new states, features, levels, tables or dof",
+      "information": "No new information or teacher; fixed HGB prediction reference only"
+    },
+    "protocol": "research_private/round85/ORACLE_PROTOCOL.json",
+    "protocol_sha256": "82afd27e79b412b8da0b9a5226cf4bb92c8c594374144bad469e07d3aa6e1b0b",
+    "dataset_split_manifest": "research_private/round85/RANKING_ARTIFACT_REGISTRY.json",
+    "atlas": {
+      "sources": 14,
+      "units": 45,
+      "sampled_pairs_with_replacement": 609635,
+      "sum_unique_sampled_pairs_within_unit": 550586,
+      "exact_positive_negative_universe_sum": 2728083230,
+      "Base_source_median_gap_HGB": -0.023088058603288192,
+      "source_median_inversion_including_ties": 0.10844692829474792,
+      "source_median_strict_inversion": 0.09786010067122433,
+      "source_median_tie_rate": 0.0003923984484991206,
+      "source_median_hard_pair_rate": 0.054900490482980055,
+      "source_median_extreme_inversion_rate": 0.0,
+      "source_median_margin": 2.72442409589563,
+      "equal_activation_opposite_pairs_exact_sum": 33717,
+      "equal_activation_raw_different_opposite_pairs_sum": 33627,
+      "equal_activation_last_encoded_level_separable_pairs_sum": 33508,
+      "sources_with_equal_activation_raw_different_witness": 12,
+      "units_with_equal_activation_raw_different_witness": 30,
+      "probability_saturation_max_fraction": 0.0,
+      "ordered_score_bitwise_all": true,
+      "probability_bitwise_all": true,
+      "csr_max_absolute_score_error": 4.440892098500626e-15,
+      "correlates": {
+        "shared_active_addresses_fraction": {
+          "median_bad_minus_good": 0.13451635338262719,
+          "positive_sources": 13,
+          "negative_sources": 0,
+          "sources_with_both_pair_classes": 13
+        },
+        "pair_rare_lookup_fraction": {
+          "median_bad_minus_good": 0.00010155950911809911,
+          "positive_sources": 7,
+          "negative_sources": 5,
+          "sources_with_both_pair_classes": 13
+        },
+        "pair_high_support_fraction": {
+          "median_bad_minus_good": 0.000330544328354776,
+          "positive_sources": 7,
+          "negative_sources": 5,
+          "sources_with_both_pair_classes": 13
+        },
+        "pair_alias_lookup_fraction": {
+          "median_bad_minus_good": 0.0,
+          "positive_sources": 6,
+          "negative_sources": 6,
+          "sources_with_both_pair_classes": 13
+        },
+        "contribution_conflict_fraction": {
+          "median_bad_minus_good": 0.06136591881813787,
+          "positive_sources": 10,
+          "negative_sources": 3,
+          "sources_with_both_pair_classes": 13
+        },
+        "contribution_concentration": {
+          "median_bad_minus_good": -0.018567189565528774,
+          "positive_sources": 5,
+          "negative_sources": 8,
+          "sources_with_both_pair_classes": 13
+        },
+        "mean_positive_support": {
+          "median_bad_minus_good": 6.49168231586512,
+          "positive_sources": 7,
+          "negative_sources": 6,
+          "sources_with_both_pair_classes": 13
+        },
+        "mean_negative_support": {
+          "median_bad_minus_good": -5.224048378488999,
+          "positive_sources": 5,
+          "negative_sources": 8,
+          "sources_with_both_pair_classes": 13
+        },
+        "numeric_geometry_distance_first16": {
+          "median_bad_minus_good": -0.1688572226643854,
+          "positive_sources": 0,
+          "negative_sources": 13,
+          "sources_with_both_pair_classes": 13
+        }
+      },
+      "scope": "Pair counts overlap across original splits; not independent observations. Correlations descriptive. Last encoded level may equal selected last level; no raw-continuous oracle.",
+      "proof_scope": "Equal activation vectors make score equality unavoidable for every fixed linear value assignment; exact local proof, not a universal generalization ceiling."
+    },
+    "metrics": {
+      "monotone_calibration": {
+        "sources": 14,
+        "median_AUC_gain": 0.0,
+        "AUC_source_bootstrap_CI95": [
+          0.0,
+          0.0
+        ],
+        "median_relative_LL_gain": -6.096478341147682e-05,
+        "LL_source_bootstrap_CI95": [
+          -0.011982421601207771,
+          0.001095621538734326
+        ],
+        "median_absolute_LL_delta": 1.4866400236221433e-05,
+        "median_PR_AUC_gain": 0.0,
+        "median_Brier_gain": -0.0002287862453616077,
+        "AUC_WTL_tolerance_0_001": [
+          0,
+          14,
+          0
+        ],
+        "LL_WTL_tolerance_1percent": [
+          0,
+          10,
+          4
+        ],
+        "strict_AUC_positive_sources": 0,
+        "strict_LL_positive_sources": 6,
+        "worst_source_LL": {
+          "source": "fertility",
+          "LL_gain": -0.03197372157149703,
+          "AUC_gain": 0.0
+        },
+        "worst_source_AUC": {
+          "source": "darwin",
+          "LL_gain": -0.0313361388907602,
+          "AUC_gain": 0.0
+        },
+        "gap_sources_n": 9,
+        "gap_recovery_at_least30percent_sources": 0,
+        "median_gap_recovered_fraction_on_gap_sources": 0.0,
+        "median_remaining_gap_HGB": -0.023088058603288164,
+        "logloss_safety_pass": true,
+        "material_oracle_pass": false,
+        "worst_split_LL": {
+          "key": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_915_2",
+          "source": "uci_915",
+          "unit": 2,
+          "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+          "recipe": "monotone_calibration",
+          "AUC": 0.878099173553719,
+          "AUC_gain": 0.0,
+          "logloss": 0.3827876889381018,
+          "LL_gain": -0.07358698551691556,
+          "PR_AUC": 0.8337071241008621,
+          "PR_gain": 0.0,
+          "Brier": 0.11850984816128171,
+          "Brier_gain": -0.015017973508412913,
+          "Base_AUC": 0.878099173553719,
+          "Base_logloss": 0.3565502321675364,
+          "HGB_AUC": 0.8950413223140495,
+          "stationarity_pass": true,
+          "fit_seconds": 0.0038691000008839183,
+          "main_solves": 0,
+          "auxiliary_solves": 1,
+          "pair_samples": 0,
+          "iterations": 0
+        },
+        "cohorts": {
+          "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW": {
+            "sources": 6,
+            "median_AUC_gain": 0.0,
+            "median_LL_gain": -0.004302204208346316
+          },
+          "EXTERNAL_PILOT": {
+            "sources": 2,
+            "median_AUC_gain": 0.0,
+            "median_LL_gain": -0.014828249852502112
+          },
+          "EXTERNAL_REPLICATION": {
+            "sources": 6,
+            "median_AUC_gain": 0.0,
+            "median_LL_gain": 0.001023218345502147
+          }
+        }
+      },
+      "pairwise": {
+        "sources": 14,
+        "median_AUC_gain": 0.00043458475705392965,
+        "AUC_source_bootstrap_CI95": [
+          0.0,
+          0.007843263517678667
+        ],
+        "median_relative_LL_gain": 0.007779539687004655,
+        "LL_source_bootstrap_CI95": [
+          -0.01510827881815271,
+          0.03552716199952527
+        ],
+        "median_absolute_LL_delta": -0.0026449577725887186,
+        "median_PR_AUC_gain": 0.00026173571306210565,
+        "median_Brier_gain": 0.0003758781650717675,
+        "AUC_WTL_tolerance_0_001": [
+          6,
+          6,
+          2
+        ],
+        "LL_WTL_tolerance_1percent": [
+          7,
+          3,
+          4
+        ],
+        "strict_AUC_positive_sources": 9,
+        "strict_LL_positive_sources": 8,
+        "worst_source_LL": {
+          "source": "thoracic",
+          "LL_gain": -0.06279916091417936,
+          "AUC_gain": 0.01611111111111102
+        },
+        "worst_source_AUC": {
+          "source": "uci_915",
+          "LL_gain": -0.03306177970503303,
+          "AUC_gain": -0.0031404958677686335
+        },
+        "gap_sources_n": 9,
+        "gap_recovery_at_least30percent_sources": 2,
+        "median_gap_recovered_fraction_on_gap_sources": 0.10609540707070446,
+        "median_remaining_gap_HGB": -0.012427618307122357,
+        "logloss_safety_pass": true,
+        "material_oracle_pass": false,
+        "worst_split_LL": {
+          "key": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_915_0",
+          "source": "uci_915",
+          "unit": 0,
+          "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+          "recipe": "pairwise",
+          "AUC": 0.977685950413223,
+          "AUC_gain": -0.0033057851239671754,
+          "logloss": 0.2166901403580635,
+          "LL_gain": -0.11837030026234929,
+          "PR_AUC": 0.958197358197358,
+          "PR_gain": -0.0037210519099064587,
+          "Brier": 0.05938604484897063,
+          "Brier_gain": -0.007320981077613309,
+          "Base_AUC": 0.9809917355371902,
+          "Base_logloss": 0.19375527077858912,
+          "HGB_AUC": 0.9636363636363636,
+          "stationarity_pass": true,
+          "fit_seconds": 0.02634310000212281,
+          "main_solves": 1,
+          "auxiliary_solves": 1,
+          "pair_samples": 4096,
+          "iterations": 18
+        },
+        "cohorts": {
+          "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW": {
+            "sources": 6,
+            "median_AUC_gain": 6.503390065035752e-05,
+            "median_LL_gain": -0.00151629924223321
+          },
+          "EXTERNAL_PILOT": {
+            "sources": 2,
+            "median_AUC_gain": 0.001204738665594035,
+            "median_LL_gain": 0.014654284006247437
+          },
+          "EXTERNAL_REPLICATION": {
+            "sources": 6,
+            "median_AUC_gain": 0.006602308565607423,
+            "median_LL_gain": 0.020171802077154688
+          }
+        }
+      },
+      "pointwise": {
+        "sources": 14,
+        "median_AUC_gain": 0.0014287027136342667,
+        "AUC_source_bootstrap_CI95": [
+          0.0,
+          0.006733301057942953
+        ],
+        "median_relative_LL_gain": 0.0045721783861192855,
+        "LL_source_bootstrap_CI95": [
+          -0.004452796860793806,
+          0.03735419977206472
+        ],
+        "median_absolute_LL_delta": -0.0011219047029444734,
+        "median_PR_AUC_gain": 0.0006682510948069598,
+        "median_Brier_gain": 0.00019683566400357025,
+        "AUC_WTL_tolerance_0_001": [
+          7,
+          4,
+          3
+        ],
+        "LL_WTL_tolerance_1percent": [
+          5,
+          6,
+          3
+        ],
+        "strict_AUC_positive_sources": 9,
+        "strict_LL_positive_sources": 7,
+        "worst_source_LL": {
+          "source": "darwin",
+          "LL_gain": -0.02671532546460742,
+          "AUC_gain": 0.0020703933747411862
+        },
+        "worst_source_AUC": {
+          "source": "uci_1150",
+          "LL_gain": -0.011650848523833867,
+          "AUC_gain": -0.00390625
+        },
+        "gap_sources_n": 9,
+        "gap_recovery_at_least30percent_sources": 2,
+        "median_gap_recovered_fraction_on_gap_sources": 0.061321247758745756,
+        "median_remaining_gap_HGB": -0.012001199635350901,
+        "logloss_safety_pass": true,
+        "material_oracle_pass": false,
+        "worst_split_LL": {
+          "key": "EXTERNAL_PILOT_darwin_1",
+          "source": "darwin",
+          "unit": 1,
+          "cohort": "EXTERNAL_PILOT",
+          "recipe": "pointwise",
+          "AUC": 0.9440993788819876,
+          "AUC_gain": 0.0041407867494823725,
+          "logloss": 0.32673176792574926,
+          "LL_gain": -0.05063629586515184,
+          "PR_AUC": 0.9063958849095095,
+          "PR_gain": 0.003653699466056537,
+          "Brier": 0.09111993472205894,
+          "Brier_gain": -0.004005996874089424,
+          "Base_AUC": 0.9399585921325052,
+          "Base_logloss": 0.31098465683283893,
+          "HGB_AUC": 0.9958592132505176,
+          "stationarity_pass": true,
+          "fit_seconds": 0.015522000001510605,
+          "main_solves": 1,
+          "auxiliary_solves": 0,
+          "pair_samples": 0,
+          "iterations": 14
+        },
+        "cohorts": {
+          "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW": {
+            "sources": 6,
+            "median_AUC_gain": -0.00042404703991224537,
+            "median_LL_gain": -0.0033800522317393614
+          },
+          "EXTERNAL_PILOT": {
+            "sources": 2,
+            "median_AUC_gain": 0.003233166766419021,
+            "median_LL_gain": 0.04086489590981926
+          },
+          "EXTERNAL_REPLICATION": {
+            "sources": 6,
+            "median_AUC_gain": 0.003651088602089486,
+            "median_LL_gain": 0.011471505999897408
+          }
+        }
+      },
+      "pairwise_specific": {
+        "sources_pair_minus_point_AUC_at_least_0_005": 2,
+        "median_pair_minus_point_AUC": -0.00014633126541205855,
+        "objective_specific_claim": false,
+        "hybrid": "NOT_STARTED_PREREGISTERED_VALIDATION_FUTILITY"
+      }
+    },
+    "counts": {
+      "new_Base_fits": 0,
+      "Base_models_reused": 45,
+      "scientific_main_value_solves": 86,
+      "recipes": {
+        "monotone_calibration": {
+          "units": 45,
+          "main_solves": 0,
+          "auxiliary_scalar_solves": 45,
+          "pair_samples": 0,
+          "max_iterations": 0,
+          "stationarity_pass_units": 45
+        },
+        "pointwise": {
+          "units": 45,
+          "main_solves": 43,
+          "auxiliary_scalar_solves": 0,
+          "pair_samples": 0,
+          "max_iterations": 81,
+          "stationarity_pass_units": 45
+        },
+        "pairwise": {
+          "units": 45,
+          "main_solves": 43,
+          "auxiliary_scalar_solves": 43,
+          "pair_samples": 695580,
+          "max_iterations": 57,
+          "stationarity_pass_units": 45
+        }
+      },
+      "hybrid_solves": 0,
+      "new_HGB_fits": 0,
+      "new_downloads": 0
+    },
+    "positive_evidence": "Exact local representation collision proofs; modest fixed-capacity value-fit opportunities; all45 original Base replays bitwise;90 oracle results stationarity/replayPASS.",
+    "negative_evidence": "Neither oracle reaches material gate; recovery>=30% on only2 eligible sources; pairwise-specific threshold only2sources; both CIs include0; hybrid VALID gate0sources; no candidate/transfer.",
+    "failure": "Global ranking cause remains unresolved beyond local representation collisions; no distinct learning/addressing principle justified.",
+    "causal_classification": {
+      "status": "COMPLETE",
+      "classification": "MIXED_LOCAL_REPRESENTATION_COLLISION_CONFIRMED_MATERIAL_OBJECTIVE_SIGNAL_ABSENT",
+      "requested_case": "REPRESENTATION_LIMIT_LIKELY, conditional on the tested frozen recipes; not a global impossibility theorem",
+      "local_proof_confidence": "HIGH_EXACT_ALGEBRA",
+      "material_recipe_failure_confidence": "HIGH_FOR_THIS_FROZEN_PANEL_AND_RECIPE_ONLY",
+      "global_cause_confidence": "UNRESOLVED",
+      "objective_mismatch_confirmed": false,
+      "value_fit_opportunity": "Modest local fixed-capacity gains, especially htru2/qsar/thoracic/uci508; not the main panel-wide explanation established",
+      "aggregation_vs_value": "Not isolated: same global additive memory form, all cell values jointly changed",
+      "representation_witness_pairs": 33717,
+      "raw_different_witness_pairs": 33627,
+      "witness_source_count": 12,
+      "unresolved": "Unselected information, restricted linear value class, finite-sample estimation/regularization and generalization remain confounded outside exact local witnesses",
+      "retry_condition": "Require a new independent, preregistered train-only causal observable or information/function-class principle that separates the witnessed raw-different equal activations and is demonstrably distinct from historical level selection, adaptive addressing, allocation, pair/TT/context/codebook and global refit families. For an objective-only reopening, require material fixed-capacity ranking recovery on at least three source-excluded datasets with log-loss safety and a matched pointwise control; no penalty, sampler, temperature, solver, hybrid-weight or source-subset sweep on the exposed panel."
+    },
+    "novelty": "NO_PASSING_CANDIDATE_GENERIC_ROUTES_HISTORICALLY_EQUIVALENT",
+    "raw_hashes": [
+      "research_private/round85/ATLAS_SEAL.json",
+      "research_private/round85/ORACLE_RAW_SEAL.json",
+      "research_private/round85/ANALYSIS_SEAL.json",
+      "research_private/round85/WITNESS_SEAL.json"
+    ],
+    "synthetic": "NOT_STARTED_CAUSAL_AND_NOVELTY_GATE_FAIL",
+    "development": "NOT_STARTED",
+    "transfer": "NOT_STARTED",
+    "systems": "NOT_STARTED",
+    "report": "research_private/ROUND85_MASTER_REPORT.md",
+    "public_core_changed": false,
+    "public_version": "1.0.0",
+    "retry_condition": "Require a new independent, preregistered train-only causal observable or information/function-class principle that separates the witnessed raw-different equal activations and is demonstrably distinct from historical level selection, adaptive addressing, allocation, pair/TT/context/codebook and global refit families. For an objective-only reopening, require material fixed-capacity ranking recovery on at least three source-excluded datasets with log-loss safety and a matched pointwise control; no penalty, sampler, temperature, solver, hybrid-weight or source-subset sweep on the exposed panel.",
+    "validation": {
+      "private_tests": "16 PASS",
+      "ruff": "PUBLIC_AND_PRIVATE_PASS",
+      "public_tests": "575 PASS /4 known XFAIL /0 FAIL exact41hash reuse; not rerun",
+      "oracle_replay": "90 PASS zero fit/solve",
+      "final_audit": "research_private/round85/final_audit.json"
+    }
+  },
+  "ROUND86": {
+    "status": "COMPLETE_TERMINAL",
+    "question": "Which representation stage causes equal-activation opposite-label ambiguity, and how much held-out quality could resolving only that loss recover?",
+    "path": "research_private/round86/",
+    "source_count": 14,
+    "original_units": 45,
+    "new_Base_fits": 0,
+    "next_exact_step": "STOP. Do not open Round87 or alter stable1.0.0. Require an independently justified train-only information/selection principle that separates the localized omitted-feature or resolution ambiguities and yields material source-excluded utility versus matched parent/value/capacity controls. It must be distinct from historical adaptive addressing, supervised binning, feature allocation, conditional state readouts, pair/TT/context/codebook mechanisms. No pseudocount, feature-count, bin, gate, fingerprint, solver or source-subset sweep on this panel; a new diagnostic recipe needs a new falsifiable reason, and TEST entropy headroom alone is insufficient.",
+    "terminal_verdict": "ROUND86_NO_NOVEL_FIX",
+    "last_completed_round": 86,
+    "current_round": null,
+    "semantic_signature": "Exact raw/normalized/full-encoder/selected-feature/level/tuple/hash/mask equality factorization; empirical information bounds plus frozen TRAIN-only aggregate stage probes, no architecture novelty",
+    "protocol_sha256": "5ffe460ff45bb66044fa1d4b95bb4b511df34ecd260c050e3d7675c608ede3a6",
+    "intervention_protocol_sha256": "b1aaa542687f64bc6104b896d25f4a460765e64189feb832eb03020b1a8a665f",
+    "original_registry": "research_private/round85/RANKING_ARTIFACT_REGISTRY.json",
+    "raw_source_count": 14,
+    "original_split_units": 45,
+    "raw_counts": {
+      "sources": 14,
+      "units": 45,
+      "total_signature_instances_summed": 181017,
+      "mixed_signature_instances": 404,
+      "mixed_sample_instances": 6258,
+      "mixed_positive_instances": 1209,
+      "mixed_negative_instances": 5049,
+      "mixed_opposite_pair_instances": 33717,
+      "exact_raw_conflict_pair_instances": 90,
+      "normalized_only_conflict_pair_instances": 0,
+      "representation_induced_pair_instances": 33627,
+      "R85_hash_discrepancy_sum": 0,
+      "pooled_stage_pair_counts_DESCRIPTIVE_ONLY": {
+        "CATEGORICAL_MAPPING_ONLY": 0,
+        "FEATURE_SUBSET": 32875,
+        "HASH_ADDRESS": 0,
+        "INPUT_NORMALIZATION_ONLY": 0,
+        "JOINT_NUMERIC_CATEGORICAL_MAPPING": 0,
+        "LEVEL_RESOLUTION": 633,
+        "NUMERIC_BINNING_ONLY": 119,
+        "RAW_X_EXACT_DUPLICATES": 90,
+        "SUPPORT_MASKING": 0
+      },
+      "pooled_stage_pair_fractions_DESCRIPTIVE_ONLY": {
+        "CATEGORICAL_MAPPING_ONLY": 0.0,
+        "FEATURE_SUBSET": 0.9750274342319898,
+        "HASH_ADDRESS": 0.0,
+        "INPUT_NORMALIZATION_ONLY": 0.0,
+        "JOINT_NUMERIC_CATEGORICAL_MAPPING": 0.0,
+        "LEVEL_RESOLUTION": 0.01877391226977489,
+        "NUMERIC_BINNING_ONLY": 0.0035293768722009667,
+        "RAW_X_EXACT_DUPLICATES": 0.0026692766260343445,
+        "SUPPORT_MASKING": 0.0
+      },
+      "source_median_collision_rate_opposite": 0.0003923984484991206,
+      "source_median_enrichment_opposite_vs_same": 0.20984071239116564,
+      "source_median_observed_vs_null_expected": 0.4399597672048695,
+      "source_median_raw_distance": 0.2631131240053495,
+      "source_median_raw_distance_p95": 0.4308567642319965,
+      "sources_with_observed_opposite_enrichment_above_null": 1,
+      "sources_with_raw_distinguishable_collision": 12,
+      "sources_with_no_activation_collision": [
+        "darwin",
+        "uci_451"
+      ],
+      "strong_Base_controls": [
+        {
+          "source": "rice",
+          "cohort": "EXTERNAL_REPLICATION",
+          "unit": 0.5,
+          "N": 953.0,
+          "unique_signatures": 544.5,
+          "singleton_signature_rate": 0.618962027083624,
+          "singleton_sample_rate": 0.388247639034628,
+          "collision_group_rate": 0.381037972916376,
+          "max_group_size": 12.0,
+          "mean_group_size": 2.012302806086835,
+          "group_size_entropy_nats": 6.020052694521993,
+          "mixed_label_signatures": 32.5,
+          "mixed_label_samples": 122.5,
+          "mixed_label_positive_samples": 60.0,
+          "mixed_label_negative_samples": 62.5,
+          "mixed_label_pairs": 101.0,
+          "opposite_pair_universe": 222360.0,
+          "same_label_colliding_pairs": 1006.5,
+          "opposite_label_collision_rate": 0.000454218384602,
+          "same_label_collision_rate": 0.004352093674871,
+          "opposite_vs_same_enrichment": 0.094095592798308,
+          "null_expected_mixed_pairs_fixed_group_sizes": 542.8758806775596,
+          "observed_vs_null_expected_ratio": 0.168953811743515,
+          "distinct_activation_identical_contribution_vector_pairs": 0.0,
+          "distinct_contribution_vector_identical_final_score_pairs": 0.0,
+          "exact_score_ties_opposite_pairs": 101.0,
+          "near_score_pairs_abs_delta_1e8": 101.0,
+          "near_only_pairs": 0.0,
+          "original_pointwise_oracle_AUC_gain": 0.000787012052527,
+          "original_pairwise_oracle_AUC_gain": 0.000573394495413,
+          "Base_AUC": 0.966668915272531,
+          "HGB_AUC": 0.963119490915632,
+          "Base_gap_HGB": 0.003549424356899,
+          "Base_logloss": 0.23076091441683,
+          "HGB_logloss": 0.310528974887048,
+          "raw_distinguishable_pairs": 101.0,
+          "representation_induced_pairs": 101.0,
+          "post_normalization_representation_pairs": 101.0,
+          "selected_levels": 2.0,
+          "selected_feature_count": 6.5,
+          "n_features": 7.0,
+          "raw_distance_mean": 0.109350468574106,
+          "raw_distance_median": 0.107368991363767,
+          "raw_distance_p95": 0.202970614906703,
+          "distance_pair_draws": 101.0,
+          "TRAIN_null_z": -72.6364824810673,
+          "TEST_null_z_DIAGNOSTIC": -22.30970603958804,
+          "TEST_null_upper_p_DIAGNOSTIC": 1.0
+        },
+        {
+          "source": "uci_1150",
+          "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+          "unit": 2.0,
+          "N": 64.0,
+          "unique_signatures": 63.0,
+          "singleton_signature_rate": 0.984126984126984,
+          "singleton_sample_rate": 0.96875,
+          "collision_group_rate": 0.015873015873016,
+          "max_group_size": 2.0,
+          "mean_group_size": 1.015873015873016,
+          "group_size_entropy_nats": 4.137222233967175,
+          "mixed_label_signatures": 0.6,
+          "mixed_label_samples": 1.2,
+          "mixed_label_positive_samples": 0.6,
+          "mixed_label_negative_samples": 0.6,
+          "mixed_label_pairs": 0.6,
+          "opposite_pair_universe": 1024.0,
+          "same_label_colliding_pairs": 0.4,
+          "opposite_label_collision_rate": 0.0005859375,
+          "same_label_collision_rate": 0.000403225806452,
+          "opposite_vs_same_enrichment": 0.0,
+          "null_expected_mixed_pairs_fixed_group_sizes": 0.507936507936508,
+          "observed_vs_null_expected_ratio": 1.18125,
+          "distinct_activation_identical_contribution_vector_pairs": 0.0,
+          "distinct_contribution_vector_identical_final_score_pairs": 0.0,
+          "exact_score_ties_opposite_pairs": 0.6,
+          "near_score_pairs_abs_delta_1e8": 0.6,
+          "near_only_pairs": 0.0,
+          "original_pointwise_oracle_AUC_gain": -0.00390625,
+          "original_pairwise_oracle_AUC_gain": -0.002734375,
+          "Base_AUC": 0.85556640625,
+          "HGB_AUC": 0.84921875,
+          "Base_gap_HGB": 0.00634765625,
+          "Base_logloss": 0.478134033248805,
+          "HGB_logloss": 0.579641518949172,
+          "raw_distinguishable_pairs": 0.6,
+          "representation_induced_pairs": 0.6,
+          "post_normalization_representation_pairs": 0.6,
+          "selected_levels": 1.2,
+          "selected_feature_count": 6.8,
+          "n_features": 38.0,
+          "raw_distance_mean": 0.651455024045422,
+          "raw_distance_median": 0.651455024045422,
+          "raw_distance_p95": 0.651455024045422,
+          "distance_pair_draws": 0.6,
+          "TRAIN_null_z": -2.010856897146319,
+          "TEST_null_z_DIAGNOSTIC": 0.194676498528735,
+          "TEST_null_upper_p_DIAGNOSTIC": 0.708
+        },
+        {
+          "source": "uci_759",
+          "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+          "unit": 2.0,
+          "N": 172.8,
+          "unique_signatures": 97.4,
+          "singleton_signature_rate": 0.674311843179399,
+          "singleton_sample_rate": 0.44979163866111,
+          "collision_group_rate": 0.325688156820601,
+          "max_group_size": 12.6,
+          "mean_group_size": 3.067212962293202,
+          "group_size_entropy_nats": 4.079421421812574,
+          "mixed_label_signatures": 7.4,
+          "mixed_label_samples": 51.8,
+          "mixed_label_positive_samples": 23.0,
+          "mixed_label_negative_samples": 28.8,
+          "mixed_label_pairs": 83.0,
+          "opposite_pair_universe": 7285.4,
+          "same_label_colliding_pairs": 339.8,
+          "opposite_label_collision_rate": 0.011424104054241,
+          "same_label_collision_rate": 0.045116317772106,
+          "opposite_vs_same_enrichment": 0.27847312579919,
+          "null_expected_mixed_pairs_fixed_group_sizes": 207.60270126856327,
+          "observed_vs_null_expected_ratio": 0.417748197126906,
+          "distinct_activation_identical_contribution_vector_pairs": 0.0,
+          "distinct_contribution_vector_identical_final_score_pairs": 0.0,
+          "exact_score_ties_opposite_pairs": 83.0,
+          "near_score_pairs_abs_delta_1e8": 83.0,
+          "near_only_pairs": 0.0,
+          "original_pointwise_oracle_AUC_gain": -0.001222914072229,
+          "original_pairwise_oracle_AUC_gain": 0.000130067801301,
+          "Base_AUC": 0.902558599695586,
+          "HGB_AUC": 0.896687422166874,
+          "Base_gap_HGB": 0.005871177528712,
+          "Base_logloss": 0.387612916210406,
+          "HGB_logloss": 0.455986332505849,
+          "raw_distinguishable_pairs": 83.0,
+          "representation_induced_pairs": 83.0,
+          "post_normalization_representation_pairs": 83.0,
+          "selected_levels": 2.2,
+          "selected_feature_count": 9.4,
+          "n_features": 23.0,
+          "raw_distance_mean": 0.070627530041166,
+          "raw_distance_median": 0.068560972148183,
+          "raw_distance_p95": 0.134818292218558,
+          "distance_pair_draws": 83.0,
+          "TRAIN_null_z": -27.99459107642166,
+          "TEST_null_z_DIAGNOSTIC": -10.026861659414193,
+          "TEST_null_upper_p_DIAGNOSTIC": 0.998
+        },
+        {
+          "source": "uci_915",
+          "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+          "unit": 2.0,
+          "N": 77.0,
+          "unique_signatures": 66.6,
+          "singleton_signature_rate": 0.897173714775093,
+          "singleton_sample_rate": 0.779220779220779,
+          "collision_group_rate": 0.102826285224907,
+          "max_group_size": 4.4,
+          "mean_group_size": 1.161218246120526,
+          "group_size_entropy_nats": 4.122369709705845,
+          "mixed_label_signatures": 0.4,
+          "mixed_label_samples": 0.8,
+          "mixed_label_positive_samples": 0.4,
+          "mixed_label_negative_samples": 0.4,
+          "mixed_label_pairs": 0.4,
+          "opposite_pair_universe": 1210.0,
+          "same_label_colliding_pairs": 15.8,
+          "opposite_label_collision_rate": 0.000330578512397,
+          "same_label_collision_rate": 0.009207459207459,
+          "opposite_vs_same_enrichment": 0.029818181818182,
+          "null_expected_mixed_pairs_fixed_group_sizes": 6.699248120300752,
+          "observed_vs_null_expected_ratio": 0.048139730639731,
+          "distinct_activation_identical_contribution_vector_pairs": 0.0,
+          "distinct_contribution_vector_identical_final_score_pairs": 0.0,
+          "exact_score_ties_opposite_pairs": 0.4,
+          "near_score_pairs_abs_delta_1e8": 0.4,
+          "near_only_pairs": 0.0,
+          "original_pointwise_oracle_AUC_gain": -0.001818181818182,
+          "original_pairwise_oracle_AUC_gain": -0.003140495867769,
+          "Base_AUC": 0.928595041322314,
+          "HGB_AUC": 0.925123966942149,
+          "Base_gap_HGB": 0.003471074380165,
+          "Base_logloss": 0.30412538236447,
+          "HGB_logloss": 0.344931133916037,
+          "raw_distinguishable_pairs": 0.4,
+          "representation_induced_pairs": 0.4,
+          "post_normalization_representation_pairs": 0.4,
+          "selected_levels": 2.8,
+          "selected_feature_count": 10.6,
+          "n_features": 14.0,
+          "raw_distance_mean": 0.077922077922078,
+          "raw_distance_median": 0.077922077922078,
+          "raw_distance_p95": 0.077922077922078,
+          "distance_pair_draws": 0.4,
+          "TRAIN_null_z": -4.754323290214975,
+          "TEST_null_z_DIAGNOSTIC": -2.922941854197677,
+          "TEST_null_upper_p_DIAGNOSTIC": 0.998
+        }
+      ],
+      "worst_Base_sources": [
+        {
+          "source": "spect",
+          "cohort": "EXTERNAL_REPLICATION",
+          "unit": 0.0,
+          "N": 187.0,
+          "unique_signatures": 1.0,
+          "singleton_signature_rate": 0.0,
+          "singleton_sample_rate": 0.0,
+          "collision_group_rate": 1.0,
+          "max_group_size": 187.0,
+          "mean_group_size": 187.0,
+          "group_size_entropy_nats": 0.0,
+          "mixed_label_signatures": 1.0,
+          "mixed_label_samples": 187.0,
+          "mixed_label_positive_samples": 172.0,
+          "mixed_label_negative_samples": 15.0,
+          "mixed_label_pairs": 2580.0,
+          "opposite_pair_universe": 2580.0,
+          "same_label_colliding_pairs": 14811.0,
+          "opposite_label_collision_rate": 1.0,
+          "same_label_collision_rate": 1.0,
+          "opposite_vs_same_enrichment": 1.0,
+          "null_expected_mixed_pairs_fixed_group_sizes": 2580.0,
+          "observed_vs_null_expected_ratio": 1.0,
+          "distinct_activation_identical_contribution_vector_pairs": 0.0,
+          "distinct_contribution_vector_identical_final_score_pairs": 0.0,
+          "exact_score_ties_opposite_pairs": 2580.0,
+          "near_score_pairs_abs_delta_1e8": 2580.0,
+          "near_only_pairs": 0.0,
+          "original_pointwise_oracle_AUC_gain": 0.0,
+          "original_pairwise_oracle_AUC_gain": 0.0,
+          "Base_AUC": 0.5,
+          "HGB_AUC": 0.837403100775194,
+          "Base_gap_HGB": -0.337403100775194,
+          "Base_logloss": 0.693147180559945,
+          "HGB_logloss": 0.55770006782998,
+          "raw_distinguishable_pairs": 2551.0,
+          "representation_induced_pairs": 2551.0,
+          "post_normalization_representation_pairs": 2551.0,
+          "selected_levels": 0.0,
+          "selected_feature_count": 0.0,
+          "n_features": 22.0,
+          "raw_distance_mean": 0.767055464072554,
+          "raw_distance_median": 0.731131067139577,
+          "raw_distance_p95": 1.448125225931534,
+          "distance_pair_draws": 2551.0,
+          "TRAIN_null_z": null,
+          "TEST_null_z_DIAGNOSTIC": null,
+          "TEST_null_upper_p_DIAGNOSTIC": 1.0
+        },
+        {
+          "source": "fertility",
+          "cohort": "EXTERNAL_REPLICATION",
+          "unit": 0.5,
+          "N": 25.0,
+          "unique_signatures": 12.5,
+          "singleton_signature_rate": 0.479166666666667,
+          "singleton_sample_rate": 0.46,
+          "collision_group_rate": 0.520833333333333,
+          "max_group_size": 13.5,
+          "mean_group_size": 13.020833333333334,
+          "group_size_entropy_nats": 1.581712025211702,
+          "mixed_label_signatures": 0.5,
+          "mixed_label_samples": 12.5,
+          "mixed_label_positive_samples": 2.5,
+          "mixed_label_negative_samples": 10.0,
+          "mixed_label_pairs": 50.0,
+          "opposite_pair_universe": 73.0,
+          "same_label_colliding_pairs": 100.5,
+          "opposite_label_collision_rate": 0.5,
+          "same_label_collision_rate": 0.501968503937008,
+          "opposite_vs_same_enrichment": 0.5,
+          "null_expected_mixed_pairs_fixed_group_sizes": 50.07666666666667,
+          "observed_vs_null_expected_ratio": 0.5,
+          "distinct_activation_identical_contribution_vector_pairs": 0.0,
+          "distinct_contribution_vector_identical_final_score_pairs": 0.0,
+          "exact_score_ties_opposite_pairs": 50.0,
+          "near_score_pairs_abs_delta_1e8": 50.0,
+          "near_only_pairs": 0.0,
+          "original_pointwise_oracle_AUC_gain": 0.0,
+          "original_pairwise_oracle_AUC_gain": 0.032608695652174,
+          "Base_AUC": 0.608695652173913,
+          "HGB_AUC": 0.825434782608696,
+          "Base_gap_HGB": -0.216739130434783,
+          "Base_logloss": 0.409534997800366,
+          "HGB_logloss": 0.356929354006261,
+          "raw_distinguishable_pairs": 50.0,
+          "representation_induced_pairs": 50.0,
+          "post_normalization_representation_pairs": 50.0,
+          "selected_levels": 0.5,
+          "selected_feature_count": 2.5,
+          "n_features": 9.0,
+          "raw_distance_mean": 0.628689155692732,
+          "raw_distance_median": 0.622149954832882,
+          "raw_distance_p95": 0.970030285309064,
+          "distance_pair_draws": 50.0,
+          "TRAIN_null_z": 0.262520510216072,
+          "TEST_null_z_DIAGNOSTIC": -0.314626602482846,
+          "TEST_null_upper_p_DIAGNOSTIC": 1.0
+        },
+        {
+          "source": "uci_508",
+          "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+          "unit": 2.0,
+          "N": 1799.0,
+          "unique_signatures": 389.4,
+          "singleton_signature_rate": 0.561661652727696,
+          "singleton_sample_rate": 0.121845469705392,
+          "collision_group_rate": 0.438338347272304,
+          "max_group_size": 301.2,
+          "mean_group_size": 4.644915698656004,
+          "group_size_entropy_nats": 4.551401209344797,
+          "mixed_label_signatures": 48.6,
+          "mixed_label_samples": 1036.6,
+          "mixed_label_positive_samples": 108.4,
+          "mixed_label_negative_samples": 928.2,
+          "mixed_label_pairs": 6015.8,
+          "opposite_pair_universe": 244348.0,
+          "same_label_colliding_pairs": 62536.6,
+          "opposite_label_collision_rate": 0.024619804541064,
+          "same_label_collision_rate": 0.04554897363566,
+          "opposite_vs_same_enrichment": 0.525400361494286,
+          "null_expected_mixed_pairs_fixed_group_sizes": 10357.157903939958,
+          "observed_vs_null_expected_ratio": 0.564323822157962,
+          "distinct_activation_identical_contribution_vector_pairs": 0.0,
+          "distinct_contribution_vector_identical_final_score_pairs": 0.0,
+          "exact_score_ties_opposite_pairs": 6015.8,
+          "near_score_pairs_abs_delta_1e8": 6015.8,
+          "near_only_pairs": 0.0,
+          "original_pointwise_oracle_AUC_gain": 0.009363694403064,
+          "original_pairwise_oracle_AUC_gain": 0.016200664625861,
+          "Base_AUC": 0.730159035473996,
+          "HGB_AUC": 0.882858054905299,
+          "Base_gap_HGB": -0.152699019431303,
+          "Base_logloss": 0.24479542808158,
+          "HGB_logloss": 0.179812961638245,
+          "raw_distinguishable_pairs": 6012.6,
+          "representation_induced_pairs": 6012.6,
+          "post_normalization_representation_pairs": 6012.6,
+          "selected_levels": 3.0,
+          "selected_feature_count": 19.0,
+          "n_features": 1024.0,
+          "raw_distance_mean": 0.280739233592173,
+          "raw_distance_median": 0.266605078095609,
+          "raw_distance_p95": 0.506816446600989,
+          "distance_pair_draws": 5743.4,
+          "TRAIN_null_z": -7.934954229325456,
+          "TEST_null_z_DIAGNOSTIC": -4.27317415366842,
+          "TEST_null_upper_p_DIAGNOSTIC": 1.0
+        },
+        {
+          "source": "uci_451",
+          "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+          "unit": 2.0,
+          "N": 24.0,
+          "unique_signatures": 23.6,
+          "singleton_signature_rate": 0.981818181818182,
+          "singleton_sample_rate": 0.966666666666667,
+          "collision_group_rate": 0.018181818181818,
+          "max_group_size": 1.2,
+          "mean_group_size": 1.018181818181818,
+          "group_size_entropy_nats": 3.154948924329281,
+          "mixed_label_signatures": 0.0,
+          "mixed_label_samples": 0.0,
+          "mixed_label_positive_samples": 0.0,
+          "mixed_label_negative_samples": 0.0,
+          "mixed_label_pairs": 0.0,
+          "opposite_pair_universe": 143.0,
+          "same_label_colliding_pairs": 0.4,
+          "opposite_label_collision_rate": 0.0,
+          "same_label_collision_rate": 0.003007518796992,
+          "opposite_vs_same_enrichment": 0.0,
+          "null_expected_mixed_pairs_fixed_group_sizes": 0.207246376811594,
+          "observed_vs_null_expected_ratio": 0.0,
+          "distinct_activation_identical_contribution_vector_pairs": 0.0,
+          "distinct_contribution_vector_identical_final_score_pairs": 0.0,
+          "exact_score_ties_opposite_pairs": 0.0,
+          "near_score_pairs_abs_delta_1e8": 0.0,
+          "near_only_pairs": 0.0,
+          "original_pointwise_oracle_AUC_gain": 0.006993006993007,
+          "original_pairwise_oracle_AUC_gain": 2.22044604925031e-17,
+          "Base_AUC": 0.699300699300699,
+          "HGB_AUC": 0.825174825174825,
+          "Base_gap_HGB": -0.125874125874126,
+          "Base_logloss": 0.620960804033605,
+          "HGB_logloss": 0.526988592542664,
+          "raw_distinguishable_pairs": 0.0,
+          "representation_induced_pairs": 0.0,
+          "post_normalization_representation_pairs": 0.0,
+          "selected_levels": 1.4,
+          "selected_feature_count": 6.8,
+          "n_features": 9.0,
+          "raw_distance_mean": null,
+          "raw_distance_median": null,
+          "raw_distance_p95": null,
+          "distance_pair_draws": 0.0,
+          "TRAIN_null_z": -2.051060902210093,
+          "TEST_null_z_DIAGNOSTIC": -1.349011370998963,
+          "TEST_null_upper_p_DIAGNOSTIC": 1.0
+        }
+      ],
+      "value_state_extra_pairs": 0,
+      "aggregation_only_extra_pairs": 0,
+      "source_descriptive_correlations": {
+        "opposite_label_collision_rate": {
+          "rho": 0.18921903639263982,
+          "p_descriptive": 0.5170638772864482,
+          "sources": 14
+        },
+        "mixed_label_samples": {
+          "rho": 0.11001106767013943,
+          "p_descriptive": 0.7081170251237482,
+          "sources": 14
+        },
+        "max_group_size": {
+          "rho": 0.1384615384615385,
+          "p_descriptive": 0.6368849912650183,
+          "sources": 14
+        },
+        "raw_distance_mean": {
+          "rho": 0.3636363636363637,
+          "p_descriptive": 0.2452650007307772,
+          "sources": 12
+        },
+        "observed_vs_null_expected_ratio": {
+          "rho": 0.06160619789527809,
+          "p_descriptive": 0.8342802152270148,
+          "sources": 14
+        }
+      },
+      "materiality": {
+        "refinement": "input_normalized",
+        "sources": 14,
+        "median_local_tight_AUC_potential": 0.0001961992242495603,
+        "median_local_loose_AUC_potential": 0.0001961992242495603,
+        "median_information_LL_potential": 0.04994429308745249,
+        "median_total_replacement_LL_potential_separate": 0.06444882066176666,
+        "median_group_calibration_LL_potential_separate": 0.016111095340636972,
+        "AUC_source_bootstrap_CI95": [
+          1.763939504931088e-05,
+          0.0059722222222222225
+        ],
+        "LL_source_bootstrap_CI95": [
+          0.007051898523946078,
+          0.3211726296931862
+        ],
+        "sources_gap30percent": 2,
+        "sources_AUC_at_least0_01": 3,
+        "sources_LL_at_least2percent": 9,
+        "materiality_pass": true,
+        "ORACLE_ONLY": true,
+        "no_generalization_claim": true
+      },
+      "count_scope": "All counts sum overlapping original split instances, not independent unique population rows/pairs. Primary aggregation is source-balanced.",
+      "new_Base_fits": 0,
+      "new_solves": 0
+    },
+    "materiality": {
+      "status": "PASS_OPTIMISTIC_ORACLE_ONLY",
+      "primary": {
+        "refinement": "input_normalized",
+        "sources": 14,
+        "median_local_tight_AUC_potential": 0.0001961992242495603,
+        "median_local_loose_AUC_potential": 0.0001961992242495603,
+        "median_information_LL_potential": 0.04994429308745249,
+        "median_total_replacement_LL_potential_separate": 0.06444882066176666,
+        "median_group_calibration_LL_potential_separate": 0.016111095340636972,
+        "AUC_source_bootstrap_CI95": [
+          1.763939504931088e-05,
+          0.0059722222222222225
+        ],
+        "LL_source_bootstrap_CI95": [
+          0.007051898523946078,
+          0.3211726296931862
+        ],
+        "sources_gap30percent": 2,
+        "sources_AUC_at_least0_01": 3,
+        "sources_LL_at_least2percent": 9,
+        "materiality_pass": true,
+        "ORACLE_ONLY": true,
+        "no_generalization_claim": true
+      },
+      "all_refinement_bounds": [
+        {
+          "refinement": "full_finest_codes",
+          "sources": 14,
+          "median_local_tight_AUC_potential": 0.00019507492131737826,
+          "median_local_loose_AUC_potential": 0.00019507492131737826,
+          "median_information_LL_potential": 0.03383836860869381,
+          "median_total_replacement_LL_potential_separate": 0.047614335179378006,
+          "median_group_calibration_LL_potential_separate": 0.015382534337007004,
+          "AUC_source_bootstrap_CI95": [
+            8.475084750847508e-06,
+            0.0059722222222222225
+          ],
+          "LL_source_bootstrap_CI95": [
+            0.004716755106427906,
+            0.318016411697264
+          ],
+          "sources_gap30percent": 2,
+          "sources_AUC_at_least0_01": 3,
+          "sources_LL_at_least2percent": 9,
+          "materiality_pass": true,
+          "ORACLE_ONLY": true,
+          "no_generalization_claim": true
+        },
+        {
+          "refinement": "input_normalized",
+          "sources": 14,
+          "median_local_tight_AUC_potential": 0.0001961992242495603,
+          "median_local_loose_AUC_potential": 0.0001961992242495603,
+          "median_information_LL_potential": 0.04994429308745249,
+          "median_total_replacement_LL_potential_separate": 0.06444882066176666,
+          "median_group_calibration_LL_potential_separate": 0.016111095340636972,
+          "AUC_source_bootstrap_CI95": [
+            1.763939504931088e-05,
+            0.0059722222222222225
+          ],
+          "LL_source_bootstrap_CI95": [
+            0.007051898523946078,
+            0.3211726296931862
+          ],
+          "sources_gap30percent": 2,
+          "sources_AUC_at_least0_01": 3,
+          "sources_LL_at_least2percent": 9,
+          "materiality_pass": true,
+          "ORACLE_ONLY": true,
+          "no_generalization_claim": true
+        },
+        {
+          "refinement": "raw_exact",
+          "sources": 14,
+          "median_local_tight_AUC_potential": 0.0001961992242495603,
+          "median_local_loose_AUC_potential": 0.0001961992242495603,
+          "median_information_LL_potential": 0.04994429308745249,
+          "median_total_replacement_LL_potential_separate": 0.06444882066176666,
+          "median_group_calibration_LL_potential_separate": 0.016111095340636972,
+          "AUC_source_bootstrap_CI95": [
+            1.763939504931088e-05,
+            0.0059722222222222225
+          ],
+          "LL_source_bootstrap_CI95": [
+            0.007051898523946078,
+            0.3211726296931862
+          ],
+          "sources_gap30percent": 2,
+          "sources_AUC_at_least0_01": 3,
+          "sources_LL_at_least2percent": 9,
+          "materiality_pass": true,
+          "ORACLE_ONLY": true,
+          "no_generalization_claim": true
+        },
+        {
+          "refinement": "selected_features_finest",
+          "sources": 14,
+          "median_local_tight_AUC_potential": 7.202459252415723e-06,
+          "median_local_loose_AUC_potential": 7.202459252415723e-06,
+          "median_information_LL_potential": 0.006006169449372087,
+          "median_total_replacement_LL_potential_separate": 0.007241415681598672,
+          "median_group_calibration_LL_potential_separate": 0.0012352462322265834,
+          "AUC_source_bootstrap_CI95": [
+            0.0,
+            0.00015392047395660833
+          ],
+          "LL_source_bootstrap_CI95": [
+            0.0,
+            0.02680020840018918
+          ],
+          "sources_gap30percent": 0,
+          "sources_AUC_at_least0_01": 0,
+          "sources_LL_at_least2percent": 5,
+          "materiality_pass": false,
+          "ORACLE_ONLY": true,
+          "no_generalization_claim": true
+        },
+        {
+          "refinement": "selected_level_tuples",
+          "sources": 14,
+          "median_local_tight_AUC_potential": 0.0,
+          "median_local_loose_AUC_potential": 0.0,
+          "median_information_LL_potential": 0.0,
+          "median_total_replacement_LL_potential_separate": 0.0,
+          "median_group_calibration_LL_potential_separate": 0.0,
+          "AUC_source_bootstrap_CI95": [
+            0.0,
+            0.0
+          ],
+          "LL_source_bootstrap_CI95": [
+            0.0,
+            0.0
+          ],
+          "sources_gap30percent": 0,
+          "sources_AUC_at_least0_01": 0,
+          "sources_LL_at_least2percent": 0,
+          "materiality_pass": false,
+          "ORACLE_ONLY": true,
+          "no_generalization_claim": true
+        },
+        {
+          "refinement": "unmasked_addresses",
+          "sources": 14,
+          "median_local_tight_AUC_potential": 0.0,
+          "median_local_loose_AUC_potential": 0.0,
+          "median_information_LL_potential": 0.0,
+          "median_total_replacement_LL_potential_separate": 0.0,
+          "median_group_calibration_LL_potential_separate": 0.0,
+          "AUC_source_bootstrap_CI95": [
+            0.0,
+            0.0
+          ],
+          "LL_source_bootstrap_CI95": [
+            0.0,
+            0.0
+          ],
+          "sources_gap30percent": 0,
+          "sources_AUC_at_least0_01": 0,
+          "sources_LL_at_least2percent": 0,
+          "materiality_pass": false,
+          "ORACLE_ONLY": true,
+          "no_generalization_claim": true
+        }
+      ],
+      "caveat": "Potential from TEST labels does not establish an attainable or generalizing learner; empirical uniqueness/noise can produce headroom."
+    },
+    "interventions": {
+      "status": "COMPLETE_DIAGNOSTIC_NO_CANDIDATE",
+      "results": {
+        "C_omitted_feature": {
+          "median_AUC_gain_vs_Base": 9.62111575663338e-05,
+          "median_LL_gain_vs_Base": 0.0012862451098454076,
+          "median_AUC_increment_vs_parent": 0.0,
+          "median_LL_increment_vs_parent": 0.00033431816652548796,
+          "AUC_increment_CI95": [
+            -0.0002837057068918231,
+            0.0006487227918689498
+          ],
+          "LL_increment_CI95": [
+            0.0,
+            0.006007046235744651
+          ],
+          "AUC_Base_CI95": [
+            0.0,
+            0.001398601398601418
+          ],
+          "LL_Base_CI95": [
+            -0.003464561624157475,
+            0.01058559468000575
+          ],
+          "gap30percent_increment_sources": 2,
+          "Base_LL_safety_pass": true,
+          "causal_utility_pass": false,
+          "LL_Base_WTL_1percent": [
+            4,
+            7,
+            3
+          ],
+          "LL_increment_WTL_1percent": [
+            2,
+            11,
+            1
+          ],
+          "AUC_Base_WTL_0_001": [
+            4,
+            8,
+            2
+          ],
+          "worst_source_LL": {
+            "source": "uci_759",
+            "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+            "intervention": "C_omitted_feature",
+            "unit": 2.0,
+            "AUC_gain_vs_Base": -0.008438909644389,
+            "LL_gain_vs_Base": -0.034996321617214,
+            "AUC_increment_vs_parent": -0.000888888888889,
+            "LL_increment_vs_parent": -0.006243209367781,
+            "PR_AUC_gain_vs_Base": -0.005361493442814,
+            "Brier_gain_vs_Base": -0.00430779478154,
+            "TRAIN_states": 255.8,
+            "TEST_seen_fraction": 0.672758435273558,
+            "selected_feature": 8.4,
+            "TRAIN_information": 0.020055710358492
+          },
+          "worst_split_LL": {
+            "source": "uci_759",
+            "unit": 1,
+            "unit_key": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_759_1",
+            "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+            "intervention": "C_omitted_feature",
+            "AUC_gain_vs_Base": -0.017465753424658,
+            "LL_gain_vs_Base": -0.053851540104518,
+            "AUC_increment_vs_parent": -0.006369863013699,
+            "LL_increment_vs_parent": -0.042569768034378,
+            "PR_AUC_gain_vs_Base": -0.011169867206526,
+            "Brier_gain_vs_Base": -0.005599816487884,
+            "TRAIN_states": 68,
+            "TEST_seen_fraction": 0.91907514450867,
+            "selected_feature": 2.0,
+            "TRAIN_information": 0.02738811158432
+          },
+          "median_TRAIN_states": 239.7,
+          "median_TEST_seen_fraction": 0.2704769902262089
+        },
+        "D_finest_selected": {
+          "median_AUC_gain_vs_Base": 7.709188567972536e-06,
+          "median_LL_gain_vs_Base": 0.00045223421926499086,
+          "median_AUC_increment_vs_parent": 0.0,
+          "median_LL_increment_vs_parent": -5.4954937887041755e-05,
+          "AUC_increment_CI95": [
+            -0.0001953125,
+            0.0003350422737902481
+          ],
+          "LL_increment_CI95": [
+            -0.0018426147804693094,
+            0.0015937719100110658
+          ],
+          "AUC_Base_CI95": [
+            0.0,
+            0.0008662342045764326
+          ],
+          "LL_Base_CI95": [
+            -0.00190512932873228,
+            0.010124921279177346
+          ],
+          "gap30percent_increment_sources": 1,
+          "Base_LL_safety_pass": true,
+          "causal_utility_pass": false,
+          "LL_Base_WTL_1percent": [
+            4,
+            7,
+            3
+          ],
+          "LL_increment_WTL_1percent": [
+            2,
+            11,
+            1
+          ],
+          "AUC_Base_WTL_0_001": [
+            3,
+            10,
+            1
+          ],
+          "worst_source_LL": {
+            "source": "uci_759",
+            "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+            "intervention": "D_finest_selected",
+            "unit": 2.0,
+            "AUC_gain_vs_Base": -0.006126470181265,
+            "LL_gain_vs_Base": -0.033534372177041,
+            "AUC_increment_vs_parent": 0.001423550574236,
+            "LL_increment_vs_parent": -0.004675560201509,
+            "PR_AUC_gain_vs_Base": -0.005009808545677,
+            "Brier_gain_vs_Base": -0.003568128774429,
+            "TRAIN_states": 259.0,
+            "TEST_seen_fraction": 0.693587847829009,
+            "selected_feature": 8.4,
+            "TRAIN_information": 0.020055710358492
+          },
+          "worst_split_LL": {
+            "source": "uci_759",
+            "unit": 3,
+            "unit_key": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_759_3",
+            "cohort": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW",
+            "intervention": "D_finest_selected",
+            "AUC_gain_vs_Base": -0.009178082191781,
+            "LL_gain_vs_Base": -0.046256847967451,
+            "AUC_increment_vs_parent": 0.0,
+            "LL_increment_vs_parent": 0.0,
+            "PR_AUC_gain_vs_Base": -0.002504409559683,
+            "Brier_gain_vs_Base": -0.007049599838716,
+            "TRAIN_states": 352,
+            "TEST_seen_fraction": 0.549132947976879,
+            "selected_feature": 20.0,
+            "TRAIN_information": 0.011267818345314
+          },
+          "median_TRAIN_states": 258.75,
+          "median_TEST_seen_fraction": 0.23464338673944513
+        },
+        "parent_control": {
+          "median_AUC_gain_vs_Base": 0.00012815233663521775,
+          "median_LL_gain_vs_Base": 0.0005815358015990423,
+          "median_AUC_increment_vs_parent": 0.0,
+          "median_LL_increment_vs_parent": 0.0,
+          "AUC_increment_CI95": [
+            0.0,
+            0.0
+          ],
+          "LL_increment_CI95": [
+            0.0,
+            0.0
+          ],
+          "AUC_Base_CI95": [
+            0.0,
+            0.001398601398601418
+          ],
+          "LL_Base_CI95": [
+            -0.009200600752316624,
+            0.004966243547829319
+          ],
+          "gap30percent_increment_sources": 0,
+          "Base_LL_safety_pass": true,
+          "causal_utility_pass": false,
+          "LL_Base_WTL_1percent": [
+            3,
+            7,
+            4
+          ],
+          "LL_increment_WTL_1percent": [
+            0,
+            14,
+            0
+          ],
+          "AUC_Base_WTL_0_001": [
+            5,
+            7,
+            2
+          ],
+          "worst_source_LL": {
+            "source": "fertility",
+            "cohort": "EXTERNAL_REPLICATION",
+            "intervention": "parent_control",
+            "unit": 0.5,
+            "AUC_gain_vs_Base": -0.043478260869565,
+            "LL_gain_vs_Base": -0.034887936893677,
+            "AUC_increment_vs_parent": 0.0,
+            "LL_increment_vs_parent": 0.0,
+            "PR_AUC_gain_vs_Base": -0.018353174603175,
+            "Brier_gain_vs_Base": -0.002779824671631,
+            "TRAIN_states": 28.5,
+            "TEST_seen_fraction": 0.68,
+            "selected_feature": 2.0,
+            "TRAIN_information": 0.031712436537107
+          },
+          "worst_split_LL": {
+            "source": "fertility",
+            "unit": 1,
+            "unit_key": "EXTERNAL_REPLICATION_fertility_1",
+            "cohort": "EXTERNAL_REPLICATION",
+            "intervention": "parent_control",
+            "AUC_gain_vs_Base": -0.08695652173913,
+            "LL_gain_vs_Base": -0.069775873787354,
+            "AUC_increment_vs_parent": 0.0,
+            "LL_increment_vs_parent": 0.0,
+            "PR_AUC_gain_vs_Base": -0.036706349206349,
+            "Brier_gain_vs_Base": -0.005559649343262,
+            "TRAIN_states": 56,
+            "TEST_seen_fraction": 0.36,
+            "selected_feature": 3.0,
+            "TRAIN_information": 0.022004672398728
+          },
+          "median_TRAIN_states": 222.10000000000002,
+          "median_TEST_seen_fraction": 0.3275206111155958
+        }
+      },
+      "null_information": {
+        "source_median_observed_minus_null": -0.020041701660375673,
+        "sources_observed_above_null_mean": 1,
+        "scope": "Empirical entropy splitting potential is not evidence of signal. Null comparisons descriptive, not a tuned admission rule."
+      },
+      "aggregate_state_estimations": 116,
+      "new_Base_fits": 0,
+      "new_optimizer_solves": 0,
+      "C_active_units": 28,
+      "D_active_units": 43,
+      "candidate_stage": "NOT_STARTED_UNLESS_NOVELTY_PASS",
+      "capacity": "Diagnostic whole-signature lookup states, no fair-capacity product claim"
+    },
+    "causal_classification": {
+      "status": "COMPLETE",
+      "classification": "MIXED_REPRESENTATION_LOSS",
+      "strongest_local_stage": "FEATURE_SUBSET_LOSS_CONDITIONAL_ON_WITNESSED_PAIRS",
+      "global_ranking_driver": "NOT_ESTABLISHED; median local AUC upper gain0.000196, only2gap30percent sources",
+      "logloss_materiality": "PASS_OPTIMISTIC_EMPIRICAL_ORACLE_ONLY;4.994429% information headroom, not attainable generalization",
+      "causal_intervention": "FAIL_GENERAL_UTILITY; C incremental median AUC0 and LL0.033432%; D AUC0 and LL−0.005495%",
+      "positive_causal_case": "SPECT one omitted feature/coarsest path restores AUC+0.229845 and LL+12.0925%, historically exposed single original split; joint feature+path intervention, not general confirmation",
+      "confidence": {
+        "stage_counts": "HIGH_EXACT_NESTED_EQUIVALENCE",
+        "raw_duplicate_floor": "HIGH_GIVEN_PERSISTED_INPUT_ONLY",
+        "generalization_driver": "UNRESOLVED",
+        "fixed_probe_failure": "HIGH_FOR_FROZEN_RECIPE_ONLY"
+      },
+      "limitations": [
+        "Attribution is a nested factorization, not a unique physical order for simultaneous losses",
+        "ORACLE entropy headroom can be caused by finite sample noise/uniqueness",
+        "Whole-signature parent control changes the original additive memory function class",
+        "One finite train-only aggregate failure does not prove every omission remedy impossible",
+        "Raw-equal conflict is data ambiguity given X, not proof of actual annotation error"
+      ],
+      "retry_condition": "Require an independently justified train-only information/selection principle that separates the localized omitted-feature or resolution ambiguities and yields material source-excluded utility versus matched parent/value/capacity controls. It must be distinct from historical adaptive addressing, supervised binning, feature allocation, conditional state readouts, pair/TT/context/codebook mechanisms. No pseudocount, feature-count, bin, gate, fingerprint, solver or source-subset sweep on this panel; a new diagnostic recipe needs a new falsifiable reason, and TEST entropy headroom alone is insufficient."
+    },
+    "novelty": "NO_PASSING_CANDIDATE_CAUSAL_UTILITY_GATE_FAIL",
+    "positive_evidence": "Raw-distinct exact collision33627; feature32875/resolution633/binning119/duplicate90; local SPECT train-only restoration AUC+0.229845/LL+12.0925%; optimistic LL information potential4.994429%; descriptive omission-headroom/C-utility rho0.673114,p0.008329, not an ex-ante gate.",
+    "negative_evidence": "Hash/categorical/normalization/mask attribution0; median local AUC potential0.000196; C/D incremental AUC0,LL+0.033432%/−0.005495%; entropy headroom not above permutation mean on13/14sources; no material general train-only intervention.",
+    "failure": "Local representation information loss is established; empirical headroom is not generalizing utility. No distinct causal learning/refinement principle beyond closed families.",
+    "round19_relation": {
+      "classification": "PARTIAL_OVERLAP",
+      "exact_protocol_equivalence": "INSUFFICIENT_EVIDENCE_ORIGINAL_R19_FILES_MISSING",
+      "known_collision_definition": "Distinct selected-table coded tuples assigned to the same hashed address; collision-free addresses/observed tuple dictionaries central contrast",
+      "evidence": "MASTER summary plus original R19 request preserved in chat attachments and CODED_REPRESENTATION_CEILING_AUDIT; original result/CSV/map absent",
+      "task": "Both classification/regression covered by broader capacity program; collision-free +0.452% summary is not sufficiently labelled to reconstruct task-specific estimate",
+      "datasets": "12 previously used small real sources x3 plus25 synthetic patterns x2tasks x3; individual collision-free dataset list unavailable",
+      "representation": "Frozen-coded versus collision-free contrast known; exact membership, dictionary/unseen fallback, solver, ridge and stopping unavailable",
+      "outcome": "Exploratory collision-free +0.452% summary, no independent transfer evidence. Broader budget/fitting controls do not establish universal ceiling",
+      "closure": "Diagnostic only; generic collision-free replacement and capacity escalation not justified as new mechanism. Subsequent ceiling audit stopped before numerical repetition",
+      "relation_to_round85": "R85 full activated-cell vector equality includes quantization, omitted features/levels, hashing and masks; R19 hashing is one possible submechanism only. Full-vector equality is not synonymous with per-table hash aliasing",
+      "decision": "Do not refit/benchmark a generic collision-free dictionary. Zero-fit stage localization and bound analysis are explicitly authorized and have a distinct forensic question",
+      "history_F12": "PARTIAL; no invention of missing recipe details, dataset names or transfer numbers",
+      "original_request": {
+        "path": "C:\\Users\\lucal\\.codex\\attachments\\d16e03b6-1406-4423-8f83-d981cfe2318e\\pasted-text.txt",
+        "sha256": "b2f047d107f50ad56fcd68518b0e985c60b38f9f48dc300a652ef29ad30d9765",
+        "read": "FULL",
+        "collision_definition_verbatim": "Usa indirizzi senza hashing/collisioni quando la dimensione lo consente.",
+        "original_result_file": "research_private/round19_oracle_results.csv",
+        "original_result_exists": false,
+        "request_vs_execution": "Request is not an execution receipt; MASTER summary is the surviving exploratory outcome evidence"
+      }
+    },
+    "history_gaps_preserved": true,
+    "raw_hashes": [
+      "research_private/round86/FORENSIC_RAW_SEAL.json",
+      "research_private/round86/INTERVENTION_RAW_SEAL.json",
+      "research_private/round86/STAGE_INFORMATION_SEAL.json"
+    ],
+    "synthetic": "NOT_STARTED",
+    "development": "NOT_STARTED",
+    "transfer": "NOT_STARTED",
+    "confirmation": "NOT_STARTED",
+    "systems": "NOT_STARTED",
+    "aggregate_state_estimations": 116,
+    "new_optimizer_solves": 0,
+    "public_core_changed": false,
+    "public_version": "1.0.0",
+    "report": "research_private/ROUND86_MASTER_REPORT.md",
+    "retry_condition": "Require an independently justified train-only information/selection principle that separates the localized omitted-feature or resolution ambiguities and yields material source-excluded utility versus matched parent/value/capacity controls. It must be distinct from historical adaptive addressing, supervised binning, feature allocation, conditional state readouts, pair/TT/context/codebook mechanisms. No pseudocount, feature-count, bin, gate, fingerprint, solver or source-subset sweep on this panel; a new diagnostic recipe needs a new falsifiable reason, and TEST entropy headroom alone is insufficient.",
+    "validation": {
+      "private_tests": "18 PASS",
+      "ruff": "PUBLIC_AND_PRIVATE_PASS",
+      "public_tests": "575 PASS/4knownXFAIL/0FAIL hash-bound reuse; not rerun",
+      "prediction_metric_replays": 135,
+      "original_asset_files": 689,
+      "final_audit": "research_private/round86/final_audit.json"
+    }
+  },
+  "ROUND87": {
+    "status": "COMPLETE_TERMINAL",
+    "round": 87,
+    "verdict": "ROUND87_NO_NOVEL_FIX",
+    "causal_classification": "CALIBRATION_PROBLEM_WITH_MIXED_HEAD_QUALITY_LIMITATIONS",
+    "materiality": {
+      "status": "PASS_KNOWN_PROBABILITY_CALIBRATION_MECHANISM",
+      "median_VALID_affine_TEST_gain_pct": 17.59180533489407,
+      "sources_at_least2pct": 27,
+      "source_count": 33,
+      "independent_source_meaning": "Different real data sources, not independent confirmatory datasets; all historically exposed",
+      "normalization_known_control_gain_pct": 12.796023195362325,
+      "novelty_status": "FAIL_EQUIVALENT",
+      "class_relative_materiality": "NOT_ESTABLISHED",
+      "rare_only_materiality": "NOT_ESTABLISHED_AS_GENERAL_EXPLANATION"
+    },
+    "novelty": "NO_PASS",
+    "candidate": null,
+    "scientific_native_fits": 0,
+    "candidate_fits": 0,
+    "development": "NOT_STARTED_NO_CANDIDATE",
+    "transfer": "NOT_STARTED",
+    "systems": "NOT_STARTED",
+    "public_core_modified": false,
+    "retry_condition": "Require a new, explicitly distinct training-only principle with a concrete class-relative or head-information causal intervention, matched history/capacity controls and source-excluded probability/downside safety. Known softmax, temperature, diagonal/class affine calibration, richer dictionaries, per-head allocation and joint evidence codebooks are not novel. A separately authorized engineering validation of an explicitly known frozen calibrator would be a different admission contract, not a new function class. Do not tune controls, choose source subsets or rescue Mice/333 after seeing this panel; test oracles are not transfer evidence.",
+    "next_step": "STOP after Round87. No Round88, no stable change, no candidate fit. Preserve the33-source atlas and current Shared OVR. Any reopening must satisfy the recorded retry condition; normalization utility is now a material diagnostic, not a promoted model.",
+    "source_count": 33,
+    "split_count": 93,
+    "semantic_signature": "Frozen native OVR scores, head ranking versus probability-map calibration versus class competition; no new representation",
+    "protocol_sha256": "261244e24eeef36e64742b92a636a4eb56679f6b87b4cba6d0f49d7d0bab7efa",
+    "raw_freeze_sha256": "977a7c6e51b2ffadd469b552a0e1210fdc81bc287c2610bf6530b4b1174f28d2",
+    "summary": {
+      "sources": 33,
+      "units": 93,
+      "class_range": [
+        3,
+        26
+      ],
+      "total_test_sample_instances": 192697,
+      "total_head_instances": 652,
+      "counterfactuals": {
+        "A_CURRENT": {
+          "sources": 33,
+          "median": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "CI95_source_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "WTL": [
+            0,
+            33,
+            0
+          ]
+        },
+        "B_RAW_SOFTMAX": {
+          "sources": 33,
+          "median": 12.796023195362325,
+          "mean": 17.9061020724826,
+          "std": 19.00857756646565,
+          "CI95_source_bootstrap": [
+            7.279936289808361,
+            23.586903526938652
+          ],
+          "WTL": [
+            27,
+            0,
+            6
+          ]
+        },
+        "C_VALID_AFFINE": {
+          "sources": 33,
+          "median": 17.59180533489407,
+          "mean": 22.2416255539421,
+          "std": 20.861365584237515,
+          "CI95_source_bootstrap": [
+            11.08399562705065,
+            34.1493162985963
+          ],
+          "WTL": [
+            30,
+            0,
+            3
+          ]
+        },
+        "D_FIT_PRIOR": {
+          "sources": 33,
+          "median": 12.737028784841918,
+          "mean": 17.89575798630069,
+          "std": 19.17929046965369,
+          "CI95_source_bootstrap": [
+            5.523309934248609,
+            24.666977112138753
+          ],
+          "WTL": [
+            27,
+            0,
+            6
+          ]
+        },
+        "ORACLE_TEST_AFFINE": {
+          "sources": 33,
+          "median": 23.601785495038683,
+          "mean": 33.31955962082827,
+          "std": 24.920316959569348,
+          "CI95_source_bootstrap": [
+            17.167013674294605,
+            43.082032695389614
+          ],
+          "WTL": [
+            33,
+            0,
+            0
+          ]
+        },
+        "ORACLE_TEST_MONOTONIC": {
+          "sources": 33,
+          "median": 33.64511346119963,
+          "mean": 37.75196002019612,
+          "std": 22.679382597334424,
+          "CI95_source_bootstrap": [
+            23.021797124615528,
+            47.28903968072194
+          ],
+          "WTL": [
+            33,
+            0,
+            0
+          ]
+        }
+      },
+      "current_logloss": {
+        "sources": 33,
+        "median": 0.5776835689366765,
+        "mean": 0.6089422460141033,
+        "std": 0.37804895355775064,
+        "CI95_source_bootstrap": [
+          0.4180569171499384,
+          0.7094168678201331
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "accuracy": {
+        "sources": 33,
+        "median": 0.8545878693623639,
+        "mean": 0.8081399528095581,
+        "std": 0.1421943454964472,
+        "CI95_source_bootstrap": [
+          0.7307060755336617,
+          0.904
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "top2": {
+        "sources": 33,
+        "median": 0.9532710280373832,
+        "mean": 0.9265565245287143,
+        "std": 0.08230813139512645,
+        "CI95_source_bootstrap": [
+          0.9226666666666667,
+          0.979081400636653
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "top3": {
+        "sources": 33,
+        "median": 0.9922480620155039,
+        "mean": 0.9697234182722383,
+        "std": 0.05122211797553119,
+        "CI95_source_bootstrap": [
+          0.9815384615384616,
+          0.9981735159817351
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "mean_true_rank": {
+        "sources": 33,
+        "median": 1.2185478073328542,
+        "mean": 1.3456433879701586,
+        "std": 0.35333098443910055,
+        "CI95_source_bootstrap": [
+          1.1274329783327213,
+          1.3599023090586146
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "head_auc": {
+        "sources": 33,
+        "median": 0.9612476390115087,
+        "mean": 0.9325312889550074,
+        "std": 0.07253718141467448,
+        "CI95_source_bootstrap": [
+          0.9216693680858151,
+          0.9829848438874772
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "head_pr_auc": {
+        "sources": 33,
+        "median": 0.8194636927255844,
+        "mean": 0.7930655833116208,
+        "std": 0.15742128728719587,
+        "CI95_source_bootstrap": [
+          0.7370731020697469,
+          0.8843846639454783
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "head_binary_logloss": {
+        "sources": 33,
+        "median": 0.13917746326637612,
+        "mean": 0.18426028907844788,
+        "std": 0.12576536648762426,
+        "CI95_source_bootstrap": [
+          0.10399577466266008,
+          0.2404785126554302
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "binary_ece": {
+        "sources": 33,
+        "median": 0.03857422378153191,
+        "mean": 0.046644701049614094,
+        "std": 0.025485548819556416,
+        "CI95_source_bootstrap": [
+          0.03184975086665614,
+          0.04849647704096587
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "scale_ratio": {
+        "sources": 33,
+        "median": 1.855726889000536,
+        "mean": 37181830967903.94,
+        "std": 146545517058394.03,
+        "CI95_source_bootstrap": [
+          1.5481150482228696,
+          2.264042746722853
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "HGB_reference_sources": 7,
+      "current_HGB_gap": {
+        "sources": 7,
+        "median": 8.986082768465412,
+        "mean": 7.355933440552513,
+        "std": 44.26145172688663,
+        "CI95_source_bootstrap": [
+          -48.473094351492094,
+          57.707457269868165
+        ],
+        "WTL": [
+          4,
+          0,
+          3
+        ]
+      },
+      "current_HGB_accuracy_delta": {
+        "sources": 7,
+        "median": -0.03500000000000001,
+        "mean": -0.06679783419759236,
+        "std": 0.06841000589843417,
+        "CI95_source_bootstrap": [
+          -0.12070175438596494,
+          -0.012307692307692353
+        ],
+        "WTL": [
+          1,
+          0,
+          6
+        ]
+      },
+      "historical_blind_leader_gap_pct_median": 22.03130790833858,
+      "historical_blind_source_count": 5,
+      "witness_counts": {
+        "witness_HEAD_QUALITY": 15378,
+        "witness_OVERCONFIDENT_RIVAL": 2520,
+        "witness_CLASS_COMPETITION_DESCRIPTIVE": 1513,
+        "witness_NORMALIZATION": 46818,
+        "witness_RARE_CLASS": 4779
+      },
+      "class_relative_resolving_witness_count": 0,
+      "classifications": {
+        "HEAD_QUALITY_DOMINANT": [
+          "cmc",
+          "maternal_health",
+          "mice_protein",
+          "student_dropout"
+        ],
+        "MIXED": [
+          "anuran_species",
+          "balance_scale",
+          "car",
+          "chess_krk",
+          "cnae9",
+          "connect4",
+          "glass",
+          "letter",
+          "page_blocks",
+          "shuttle",
+          "uci_763",
+          "uci_862",
+          "vehicle"
+        ],
+        "NORMALIZATION_DOMINANT": [
+          "digits",
+          "dry_bean",
+          "gas",
+          "hand_postures",
+          "iris",
+          "pendigits",
+          "satimage",
+          "segment",
+          "sensorless",
+          "uci_253",
+          "uci_366",
+          "urban_land_cover",
+          "wall_following",
+          "wine",
+          "wireless_localization"
+        ],
+        "UNKNOWN": [
+          "uci_333"
+        ]
+      },
+      "head_feature_jaccard": {
+        "sources": 33,
+        "median": 0.5979780801209372,
+        "mean": 0.6060522727046768,
+        "std": 0.27253362399941644,
+        "CI95_source_bootstrap": [
+          0.41114435052773546,
+          0.6867592592592592
+        ],
+        "WTL": [
+          33,
+          0,
+          0
+        ]
+      },
+      "rare_support_NLL_correlation": {
+        "sources": 29,
+        "median": -0.6,
+        "mean": -0.49360189144826355,
+        "std": 0.4588847869011692,
+        "CI95_source_bootstrap": [
+          -0.8424242424242423,
+          -0.3214285714285715
+        ],
+        "WTL": [
+          5,
+          0,
+          24
+        ]
+      },
+      "rare_support_AUC_correlation": {
+        "sources": 29,
+        "median": 0.19999999999999998,
+        "mean": 0.13188566199093485,
+        "std": 0.45857630824630086,
+        "CI95_source_bootstrap": [
+          -0.1926260891424546,
+          0.39999999999999997
+        ],
+        "WTL": [
+          18,
+          0,
+          11
+        ]
+      },
+      "native_fits": 0,
+      "candidate_fits": 0,
+      "diagnostic_affine_solves": 186,
+      "diagnostic_binary_calibration_solves": 652,
+      "oracle_PAVA_estimations": 652,
+      "nonconverged_affine_solves": 9,
+      "probability_mismatches": 0,
+      "strict_rank_mismatches": 0,
+      "max_normalization_identity_error": 1.7763568394002505e-15,
+      "peak_recorded_process_RSS_GiB": 0.16225814819335938,
+      "peak_scope": "End-of-job RSS snapshots, not continuous OS peak measurement; systems stage not triggered"
+    },
+    "evidence_scope": "HISTORICALLY_SEEN_DIAGNOSTIC_ONLY",
+    "public_version": "1.0.0",
+    "validation": {
+      "private_tests": "10PASS",
+      "ruff": "PUBLIC_AND_PRIVATE_PASS",
+      "public_tests": "575PASS/4knownXFAIL/0FAIL hash-bound reuse,not rerun"
+    }
+  },
+  "ROUND88": {
+    "status": "COMPLETE_TERMINAL",
+    "round": 88,
+    "verdict": "ROUND88_CALIBRATION_UNSAFE",
+    "scientific_novelty": "HISTORICALLY_EQUIVALENT",
+    "product_improvement": "AGGREGATE_GAIN_INDEPENDENTLY_REPLICATED_BUT_PROBABILITY_SAFETY_FAILED",
+    "aggregate_signal": "MAJOR_PRODUCT_SIGNAL_ON_AGGREGATE_TARGETS",
+    "productization_justified": false,
+    "retrospective_pass": false,
+    "formal_transfer_pass": false,
+    "rare_class_safety": false,
+    "M3_started": false,
+    "confirmation_started": false,
+    "full_product_systems_started": false,
+    "core_modified": false,
+    "public_version": "1.0.0",
+    "public_clone_modified": false,
+    "new_native_fits": 55,
+    "reused_native_fits": 93,
+    "real_temperature_fits": 93,
+    "completed_fit_solve_repeats": 0,
+    "tiny_private_math_temperature_solves": 2,
+    "transfer_sources": 11,
+    "transfer_splits": 55,
+    "key_metrics": {
+      "M1_retrospective_gain_pct": 12.796023195362325,
+      "M1_retrospective_worst_harm_pct": 15.53229007630772,
+      "M2_retrospective_gain_pct": 13.951124514025931,
+      "M2_retrospective_worst_harm_pct": 92.78998999624018,
+      "external_gain_pct": 8.741326183647615,
+      "external_CI95": [
+        2.1325675947931644,
+        29.448899839383376
+      ],
+      "external_WTL": [
+        10,
+        0,
+        1
+      ],
+      "external_worst_dataset_harm_pct": 1.9199537818885282,
+      "external_worst_split_harm_pct": 13.151308616198843,
+      "external_catastrophic_class_harm_pct": 51.545612249210905,
+      "real_argmax_mismatches": 0
+    },
+    "failure_classification": [
+      "CALIBRATION_INSTABILITY",
+      "HEAD_SCALE_HETEROGENEITY",
+      "RARE_CLASS_HARM"
+    ],
+    "peak_fit_RAM_evidence": "PARTIAL_SUPERVISOR_OMITTED_VENV_CHILD;do_not_use4MiBpeaks",
+    "retry_condition": "Require a separately preregistered probability-safety hypothesis, independent source-excluded evidence and unchanged class decisions. It must address olduci333/PageBlocks/Shuttle and newCardiotocography probability tails without test-selected source gates, per-class rescue, post-hoc temperature-bound changes or panel exclusions. Demonstrate retrospective median>=3%/worstharm<10%, new-source median>=2%/worstharm<5%, and no>=50%conditional-classNLLharm with>=20TESTrows. Known-mapping novelty is not required; genuine safety and transfer are. Repair process-tree RAM supervision before any renewed systems/product qualification, without repeating these valid scientific fits.",
+    "next_step": "STOP after Round88; no Round89 or integration. Keep stable1.0.0 normalized sigmoid. Preserve independently replicated aggregate probability gain and all rare/split/old-source harms. Reopen only under the recorded safety-focused retry contract.",
+    "protocol_sha256": "eb7e599ffe2e165e52681bc8089b73f9534e8b7ea93165c1e666bc92fd6e148a",
+    "recipe_sha256": "3a903903f6e30aa7e14c3d8a4a81632c8252dda6599049941961af1dac464d95",
+    "transfer_registry_sha256": "f2fc16a6be056879d78c75e8042b9f591b16f992244e5ddb4cd709eb4c07878c",
+    "transfer_raw_freeze_sha256": "4f80f0180896f7e58f1bfb75ca421a658db9a390db0f4e0ad2fee8f806994476",
+    "retrospective": {
+      "status": "COMPLETE",
+      "sources": 33,
+      "units": 93,
+      "methods": {
+        "M1": {
+          "source_statistics": {
+            "n": 33,
+            "median": 12.796023195362325,
+            "mean": 17.9061020724826,
+            "std": 19.00857756646565,
+            "WTL": [
+              27,
+              0,
+              6
+            ],
+            "CI95": [
+              7.279936289808361,
+              23.586903526938652
+            ],
+            "percentile95_harm": 4.833079183661463,
+            "max_harm": 15.53229007630772
+          },
+          "split_statistics": {
+            "n": 93,
+            "median": 13.862823642397936,
+            "mean": 17.68638522774729,
+            "std": 18.834434531031665,
+            "WTL": [
+              78,
+              0,
+              15
+            ],
+            "CI95": [
+              7.581210901435531,
+              16.358927136183322
+            ],
+            "percentile95_harm": 5.766616251458781,
+            "max_harm": 15.53229007630772
+          },
+          "worst_source": "uci_333",
+          "worst_split": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_333_0",
+          "worst_split_gain_pct": -15.53229007630772,
+          "argmax_mismatches": 0,
+          "accuracy_delta": 0.0,
+          "macro_f1_delta": 0.0,
+          "rare_median_class_gain_pct": 8.859629831241271,
+          "rare_catastrophic_class_units": 2,
+          "rare_safety_pass": false,
+          "retrospective_pass": false,
+          "median_ece": 0.06518625945480479,
+          "median_brier": 0.21450890742141074
+        },
+        "M2": {
+          "source_statistics": {
+            "n": 33,
+            "median": 13.951124514025931,
+            "mean": 17.29190181221164,
+            "std": 27.610485727806914,
+            "WTL": [
+              31,
+              0,
+              2
+            ],
+            "CI95": [
+              9.363087684749727,
+              24.945522813625697
+            ],
+            "percentile95_harm": 11.238562548826701,
+            "max_harm": 92.78998999624018
+          },
+          "split_statistics": {
+            "n": 93,
+            "median": 14.323888684987217,
+            "mean": 18.557658389706898,
+            "std": 23.480051575002676,
+            "WTL": [
+              83,
+              0,
+              10
+            ],
+            "CI95": [
+              10.409020509363764,
+              18.95167654781614
+            ],
+            "percentile95_harm": 1.880120681511677,
+            "max_harm": 92.78998999624018
+          },
+          "worst_source": "uci_333",
+          "worst_split": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_333_0",
+          "worst_split_gain_pct": -92.78998999624018,
+          "argmax_mismatches": 0,
+          "accuracy_delta": 0.0,
+          "macro_f1_delta": 0.0,
+          "rare_median_class_gain_pct": 9.014802746572313,
+          "rare_catastrophic_class_units": 3,
+          "rare_safety_pass": false,
+          "retrospective_pass": false,
+          "median_ece": 0.035871700109740425,
+          "median_brier": 0.21054593848765238
+        }
+      },
+      "selected": "M1",
+      "purpose": "INDEPENDENT_FALSIFICATION_ONLY_RETROSPECTIVE_FAIL_NO_PROMOTION",
+      "native_fits": 0,
+      "scalar_temperature_fits": 93,
+      "new_architecture": false,
+      "scientific_novelty": "HISTORICALLY_EQUIVALENT",
+      "no_posthoc_rescue": true
+    },
+    "transfer": {
+      "status": "COMPLETE_FROZEN_NO_TUNING",
+      "source_count": 11,
+      "unit_count": 55,
+      "mapping": "M1",
+      "dataset": {
+        "n": 11,
+        "median": 8.741326183647615,
+        "mean": 15.348266432835716,
+        "std": 16.30681316970254,
+        "WTL": [
+          10,
+          0,
+          1
+        ],
+        "CI95": [
+          2.1325675947931644,
+          29.448899839383376
+        ],
+        "percentile95_harm": 0.9599768909442641,
+        "max_harm": 1.9199537818885282
+      },
+      "split": {
+        "n": 55,
+        "median": 8.20722734820406,
+        "mean": 15.348266432835718,
+        "std": 18.192554511133494,
+        "WTL": [
+          49,
+          0,
+          6
+        ],
+        "CI95": [
+          3.3802222501853607,
+          12.077650114157256
+        ],
+        "percentile95_harm": 2.3458742066696425,
+        "max_harm": 13.151308616198843
+      },
+      "worst_source": "cardiotocography",
+      "worst_source_gain_pct": -1.9199537818885282,
+      "worst_split": "cardiotocography__3",
+      "worst_split_gain_pct": -13.151308616198843,
+      "argmax_mismatches": 0,
+      "median_accuracy_delta": 0.0,
+      "median_macro_f1_delta": 0.0,
+      "median_Brier": 0.2664439406110679,
+      "median_ECE": 0.06974694195466095,
+      "rare_source_median_gain_pct": 4.19412004529398,
+      "catastrophic_class_units": 1,
+      "rare_safety_pass": false,
+      "transfer_pass": false,
+      "retrospective_pass": false,
+      "general_product_eligible": false,
+      "scientific_novelty": "HISTORICALLY_EQUIVALENT",
+      "same_stable_Base_fits": true,
+      "new_native_fits": 55,
+      "recipe_changed_after_transfer": false,
+      "max_sampled_peak_RSS_GiB": 0.004169464111328125
+    },
+    "validation": {
+      "private_tests": "20PASS",
+      "ruff": "PUBLIC_AND_PRIVATE_PASS",
+      "public_tests": "575PASS/4knownXFAIL/0FAILhash-boundreuse;notrerun"
+    },
+    "artifacts": "research_private/round88/",
+    "research_question": "Can known cheap argmax-preserving maps independently improve frozen nativeOVRprobabilities safely?",
+    "semantic_signature": "Fixednativeheadscores→normalizedsigmoidversusrawsoftmaxversusoneboundedVALIDtemperature;unchangedencoder/selection/coefficientsandclassdecisions;productqualificationnotnovelarchitecture"
+  },
+  "round89_prior_top_level": {
+    "last_completed_round": 88,
+    "current_round": null,
+    "current_date": "2026-10-14",
+    "status": "COMPLETE",
+    "current_research_status": "ROUND88_CALIBRATION_UNSAFE",
+    "next_experiments": [
+      "Require an independently justified train-only information/selection principle that separates the localized omitted-feature or resolution ambiguities and yields material source-excluded utility versus matched parent/value/capacity controls. It must be distinct from historical adaptive addressing, supervised binning, feature allocation, conditional state readouts, pair/TT/context/codebook mechanisms. No pseudocount, feature-count, bin, gate, fingerprint, solver or source-subset sweep on this panel; a new diagnostic recipe needs a new falsifiable reason, and TEST entropy headroom alone is insufficient."
+    ]
+  },
+  "ROUND89": {
+    "round": 89,
+    "status": "COMPLETE_TERMINAL",
+    "verdict": "ROUND89_NO_SAFE_MAPPING",
+    "retrospective_pass": false,
+    "confirmation_started": false,
+    "systems_started": false,
+    "productization_justified": false,
+    "selected_recipe": null,
+    "novelty": "HISTORICALLY_EQUIVALENT_KNOWN_MAPPING_AUTHORIZED_ENGINEERING",
+    "causal_conclusion": "RIVAL_SHARPENING_SUPPRESSES_TRUE_PROBABILITY_ON_WRONG_TAIL_ROWS;ORIGINAL_VALID_CLASS_CONSTRAINT_DOES_NOT_TRANSFER",
+    "native_fits": 0,
+    "reused_native_fits": 148,
+    "optimizer_solves": 0,
+    "discrete_validation_selections": 148,
+    "valid_fit_solve_repeats": 0,
+    "public_core_modified": false,
+    "public_clone_modified": false,
+    "version": "1.0.0",
+    "retry_condition": "The tested coarse convex path and original-VALID5% rule are closed for general promotion. Reopen only with a separately authorized, independently justified conditional-tail safety principle or genuinely new risk information, frozen before new source outcomes, and source-excluded plus new-source all-class safety evidence. A finer lambda grid, altered bound, removing uci253/333 or small-support classes, per-class rescue, support-cap relabeling, or more temperature tuning on these44 sources is not a retry condition. Preserve all negative tails and original validation reuse limitations.",
+    "next_exact_step": "STOP after Round89;keep stable1.0.0 and all negative evidence;no Round90 or integration",
+    "key_metrics": {
+      "A025_gain": 4.233053842305998,
+      "A025_worst_class": 15.285104302717828,
+      "A_LODO_gain": 0.0,
+      "A_LODO_WTL": [
+        1,
+        43,
+        0
+      ],
+      "B_gain": 7.907062599157625,
+      "B_CI95": [
+        3.730397798729916,
+        13.687659613131162
+      ],
+      "B_WTL": [
+        39,
+        3,
+        2
+      ],
+      "B_worst_source": 15.53229007630772,
+      "B_worst_class": 122.97919729695583
+    },
+    "protocol_sha256": "0335f3ddcab008c811e0bf789c2e83bdb6c8f6fa3041ccd7259bd0a3750ee803",
+    "retrospective_sources": 44,
+    "retrospective_units": 148,
+    "A_lodo": {
+      "source": {
+        "n": 44,
+        "mean": 0.09152993807091457,
+        "median": 0.0,
+        "std": 0.6002019420331917,
+        "WTL": [
+          1,
+          43,
+          0
+        ],
+        "CI95": [
+          0.0,
+          0.0
+        ],
+        "max_harm": 0.0,
+        "percentile95_harm": 0.0
+      },
+      "split": {
+        "n": 148,
+        "mean": 0.1360580160513595,
+        "median": 0.0,
+        "std": 0.7366832139549132,
+        "WTL": [
+          5,
+          143,
+          0
+        ],
+        "CI95": [
+          0.0,
+          0.0
+        ],
+        "max_harm": 0.0,
+        "percentile95_harm": 0.0
+      },
+      "worst_source": "anuran_species",
+      "worst_source_gain": 0.0,
+      "worst_split": "anuran_species__788601",
+      "worst_split_gain": 0.0,
+      "worst_class": {
+        "key": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_253_4",
+        "source": "uci_253",
+        "panel": "R87_33",
+        "method": "L025",
+        "head": 3,
+        "label": "Citrobacter freundii",
+        "fit_support": 19,
+        "fit_prevalence": 0.04896907216494845,
+        "test_support": 5,
+        "rare": true,
+        "nll": 1.693171666135011,
+        "baseline_nll": 1.4686820785528791,
+        "gain_pct": -15.285104302717828,
+        "absolute_gain_nats": -0.22448958758213178,
+        "true_probability_mean": 0.1902496758871436,
+        "true_probability_median": 0.20163656115776707,
+        "predicted_mass": 0.05001256481179761,
+        "recall": 0.0,
+        "precision": 0.0
+      },
+      "worst_class_harm": 15.285104302717828,
+      "class_harm95": 0.0,
+      "median_class_gain": 0.0,
+      "rare_class": {
+        "n": 665,
+        "mean": 1.075674245593841,
+        "median": 0.0,
+        "std": 4.227352668257122,
+        "WTL": [
+          79,
+          570,
+          16
+        ],
+        "CI95": [
+          0.0,
+          0.0
+        ],
+        "max_harm": 15.285104302717828,
+        "percentile95_harm": 0.0
+      },
+      "rare_source": {
+        "n": 28,
+        "mean": 0.26891856139846027,
+        "median": 0.0,
+        "std": 1.3973418343213915,
+        "WTL": [
+          1,
+          27,
+          0
+        ],
+        "CI95": [
+          0.0,
+          0.0
+        ],
+        "max_harm": 0.0,
+        "percentile95_harm": 0.0
+      },
+      "class_units": 1142,
+      "rare_class_units": 665,
+      "argmax_mismatches": 0,
+      "non_tie_mismatches": 0,
+      "accuracy_delta": 0.0,
+      "macro_f1_delta": 0.0,
+      "ECE_delta": 0.0,
+      "Brier_delta": 0.0,
+      "median_accuracy": 0.8102025506376593,
+      "median_macro_F1": 0.7331260449539361,
+      "median_ECE": 0.13482075375474822,
+      "median_Brier": 0.2829177933119048
+    },
+    "B": {
+      "source": {
+        "n": 44,
+        "mean": 14.482640355669036,
+        "median": 7.907062599157625,
+        "std": 16.813949601640566,
+        "WTL": [
+          39,
+          3,
+          2
+        ],
+        "CI95": [
+          3.730397798729916,
+          13.687659613131162
+        ],
+        "max_harm": 15.53229007630772,
+        "percentile95_harm": 0.0
+      },
+      "split": {
+        "n": 148,
+        "mean": 14.803020413441757,
+        "median": 6.896222465348623,
+        "std": 17.056378482261476,
+        "WTL": [
+          131,
+          12,
+          5
+        ],
+        "CI95": [
+          5.011416338934611,
+          9.61571425466397
+        ],
+        "max_harm": 15.53229007630772,
+        "percentile95_harm": 0.0
+      },
+      "worst_source": "uci_333",
+      "worst_source_gain": -15.53229007630772,
+      "worst_split": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_333_0",
+      "worst_split_gain": -15.53229007630772,
+      "worst_class": {
+        "key": "BLIND_EXTERNAL_HISTORICALLY_EXPOSED_NOW_uci_253_4",
+        "source": "uci_253",
+        "panel": "R87_33",
+        "method": "B_VALID5",
+        "head": 3,
+        "label": "Citrobacter freundii",
+        "fit_support": 19,
+        "fit_prevalence": 0.04896907216494845,
+        "test_support": 5,
+        "rare": true,
+        "nll": 3.274855509601456,
+        "baseline_nll": 1.4686820785528791,
+        "gain_pct": -122.97919729695583,
+        "absolute_gain_nats": -1.806173431048577,
+        "true_probability_mean": 0.04845147671081183,
+        "true_probability_median": 0.03904094305580991,
+        "predicted_mass": 0.03621453053538326,
+        "recall": 0.0,
+        "precision": 0.0
+      },
+      "worst_class_harm": 122.97919729695583,
+      "class_harm95": 4.255040550873413,
+      "median_class_gain": 8.457050529940409,
+      "rare_class": {
+        "n": 665,
+        "mean": 13.946391849399488,
+        "median": 6.084699384909123,
+        "std": 21.767763528681325,
+        "WTL": [
+          493,
+          36,
+          136
+        ],
+        "CI95": [
+          5.012644795424582,
+          7.085100691588988
+        ],
+        "max_harm": 122.97919729695583,
+        "percentile95_harm": 3.681128733869375
+      },
+      "rare_source": {
+        "n": 28,
+        "mean": 13.920800680914477,
+        "median": 6.224754349853934,
+        "std": 19.23598988517895,
+        "WTL": [
+          19,
+          2,
+          7
+        ],
+        "CI95": [
+          0.17728660782845368,
+          15.307193859835365
+        ],
+        "max_harm": 7.032657306830426,
+        "percentile95_harm": 3.416660997050532
+      },
+      "class_units": 1142,
+      "rare_class_units": 665,
+      "argmax_mismatches": 0,
+      "non_tie_mismatches": 0,
+      "accuracy_delta": 0.0,
+      "macro_f1_delta": 0.0,
+      "ECE_delta": -0.05119575513064648,
+      "Brier_delta": -0.0169677642371788,
+      "median_accuracy": 0.8102025506376593,
+      "median_macro_F1": 0.7331260449539361,
+      "median_ECE": 0.06764798758615523,
+      "median_Brier": 0.2666892758498323
+    },
+    "C": "HISTORICALLY_EQUIVALENT_NOT_EXECUTED",
+    "report": "research_private/ROUND89_MASTER_REPORT.md",
+    "final_audit": "research_private/round89/final_audit.json",
+    "numerical": "PASS_DEFINED_DOMAIN;INHERITED_ZERO_MASS_REJECT",
+    "persistence": "PASS_PRIVATE_ONLY",
+    "validation": {
+      "private_tests": "23PASS",
+      "public_tests": "575PASS/4knownXFAIL/0FAIL exact41hash reuse",
+      "ruff": "PUBLIC_AND_PRIVATE_PASS"
+    }
+  },
+  "round90_prior_top_level": {
+    "last_completed_round": 89,
+    "current_round": null,
+    "current_date": "2026-10-14",
+    "status": "COMPLETE_TERMINAL",
+    "current_research_status": "ROUND89_NO_SAFE_MAPPING",
+    "next_experiments": [
+      "STOP after Round89;keep stable1.0.0 and all negative evidence;no Round90 or integration",
+      "The tested coarse convex path and original-VALID5% rule are closed for general promotion. Reopen only with a separately authorized, independently justified conditional-tail safety principle or genuinely new risk information, frozen before new source outcomes, and source-excluded plus new-source all-class safety evidence. A finer lambda grid, altered bound, removing uci253/333 or small-support classes, per-class rescue, support-cap relabeling, or more temperature tuning on these44 sources is not a retry condition. Preserve all negative tails and original validation reuse limitations."
+    ]
+  },
+  "ROUND90": {
+    "round": 90,
+    "status": "COMPLETE_TERMINAL",
+    "verdict": "ROUND90_TRAINING_SPEED_BREAKTHROUGH",
+    "semantic_signature": "native_training_distinct_tuple_metadata|uint16_pair_injective_uint32_scalar_unique|same_OVR_count_cache|no_predictive_math_or_state_change",
+    "candidate": "A_EXACT_SCALAR_KEY_CARDINALITY",
+    "ideas_generated": 12,
+    "ideas_deduped": 8,
+    "candidates_executed": 1,
+    "combined_executed": false,
+    "productization_justified": true,
+    "stable_public_core_modified": false,
+    "public_clone_modified": false,
+    "version": "1.0.0",
+    "API_delta": 0,
+    "dependency_delta": 0,
+    "predictive_drift": false,
+    "scientific_quality_fits": 0,
+    "profiling_estimator_fits": 12,
+    "matched_timing_estimator_fits": 72,
+    "completed_job_refits": 0,
+    "platform_small_engineering_fits": 72,
+    "tests": "29privatePASS;candidate575PASS4knownXFAIL0FAIL",
+    "meanings": "Engineering/test fits are intentional authorized costs,not new predictive quality experiments",
+    "fit_ratio": 0.2606544652130508,
+    "peak_RSS_ratio": 0.9995430486697198,
+    "deep_ratio": 1.0,
+    "serialized_ratio": 1.0,
+    "inference_ratios": {
+      "1": 0.9941098954873313,
+      "32": 0.9963770815126942,
+      "1000": 0.995978609602379,
+      "100000": 0.9928977116177902
+    },
+    "inference_speed_claim": false,
+    "independent_hardware": false,
+    "WSL_performance": "FIT_REPLICATED_ON4FROZEN_MEDIUM_WORKLOADS3PAIRS_EACH",
+    "macOS": "EXTERNAL_MANUAL_GATE",
+    "retry_condition": "Native scalar-cardinality replacement is now qualified on the frozen controlled systems panel. Do not rerun these VALID jobs or reopen closed chunk/dtype/recompute/callback/mapping lines. Further performance claims require a separately frozen real-workload or independent-hardware replication;new optimization needs a distinct measured hotspot and historical certificate. Public integration/version choice requires separate authorization.",
+    "next_exact_step": "STOP after Round90. Review the private two-file exact-count patch in a separately authorized integration task;choose release scope manually. Do not start Round91 or modify stable1.0.0.",
+    "Linux_timing_fits": 24,
+    "Linux_fit_ratio": 0.20136407172554338,
+    "protocol_sha256": "98229424885de1fc6e7361cedb5897f321b8f736eb4140c80b8c0b579088d5d2",
+    "candidate_sha256": "02d18fba4ad256b073f3a11bcdece966fe323c466c4bfda870d68643c6629662",
+    "report": "research_private/ROUND90_MASTER_REPORT.md",
+    "product_candidate": "research_private/round90/PRODUCT_CANDIDATE/",
+    "final_audit": "research_private/round90/final_audit.json",
+    "profile_runs": 84,
+    "workload_summary": [
+      {
+        "workload": "binary_medium",
+        "median_ratio": 0.1662322963651118,
+        "median_saving_pct": 83.37677036348882,
+        "min_ratio": 0.16425045949461978,
+        "max_ratio": 0.16653909854564566,
+        "IQR_ratio": 0.0011443195255129435,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.96607280000012,
+        "A_seconds": 0.16059249999989333,
+        "RSS_ratio": 1.0016935443101966,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "binary_mixed",
+        "median_ratio": 0.31775366041122005,
+        "median_saving_pct": 68.22463395887799,
+        "min_ratio": 0.2677616265942491,
+        "max_ratio": 0.35893795779009435,
+        "IQR_ratio": 0.045588165597922614,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.0817667999999685,
+        "A_seconds": 0.026090800000019954,
+        "RSS_ratio": 1.003198446468858,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "binary_small",
+        "median_ratio": 0.26344497879038437,
+        "median_saving_pct": 73.65550212096157,
+        "min_ratio": 0.25896898620884284,
+        "max_ratio": 0.27903740261680066,
+        "IQR_ratio": 0.010034208203978934,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.08458920000009584,
+        "A_seconds": 0.02228459999992083,
+        "RSS_ratio": 0.9987308912604558,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "multiclass10",
+        "median_ratio": 0.22324541723469934,
+        "median_saving_pct": 77.67545827653007,
+        "min_ratio": 0.18087604638689841,
+        "max_ratio": 0.25585303998347664,
+        "IQR_ratio": 0.03748849679828914,
+        "all_repeats_faster": true,
+        "baseline_seconds": 2.9161704999999074,
+        "A_seconds": 0.6510217000000011,
+        "RSS_ratio": 0.9962254769008227,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "multiclass3",
+        "median_ratio": 0.3902389572574331,
+        "median_saving_pct": 60.97610427425669,
+        "min_ratio": 0.31502065269962365,
+        "max_ratio": 0.5026550853263702,
+        "IQR_ratio": 0.09381721631337325,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.1555971000000227,
+        "A_seconds": 0.059088499999916166,
+        "RSS_ratio": 1.0,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "multiclass40",
+        "median_ratio": 0.6172558116930837,
+        "median_saving_pct": 38.27441883069162,
+        "min_ratio": 0.5791851494575857,
+        "max_ratio": 0.6239551428744404,
+        "IQR_ratio": 0.022384996708427418,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.2314192000001185,
+        "A_seconds": 0.13846769999986464,
+        "RSS_ratio": 0.9998291182501708,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "regression_large",
+        "median_ratio": 0.04976104970807963,
+        "median_saving_pct": 95.02389502919203,
+        "min_ratio": 0.046805580176787584,
+        "max_ratio": 0.05080072183789876,
+        "IQR_ratio": 0.0019975708305555867,
+        "all_repeats_faster": true,
+        "baseline_seconds": 15.240199000000075,
+        "A_seconds": 0.7583683000000292,
+        "RSS_ratio": 0.9940979448491155,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "regression_medium",
+        "median_ratio": 0.10051156307684526,
+        "median_saving_pct": 89.94884369231548,
+        "min_ratio": 0.0990348179830406,
+        "max_ratio": 0.10679564085694661,
+        "IQR_ratio": 0.003880411436953002,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.8389171999999689,
+        "A_seconds": 0.08449200000018209,
+        "RSS_ratio": 0.9986274763692865,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "regression_small",
+        "median_ratio": 0.17535797863757904,
+        "median_saving_pct": 82.4642021362421,
+        "min_ratio": 0.17494432117158942,
+        "max_ratio": 0.17967814156011305,
+        "IQR_ratio": 0.002366910194261801,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.07516510000004928,
+        "A_seconds": 0.013180800000100135,
+        "RSS_ratio": 0.9986407935452153,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "regression_wide",
+        "median_ratio": 0.5042019941346484,
+        "median_saving_pct": 49.579800586535164,
+        "min_ratio": 0.5031927667469296,
+        "max_ratio": 0.5592118984052801,
+        "IQR_ratio": 0.028009565829175243,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.11942619999990711,
+        "A_seconds": 0.060094400000025416,
+        "RSS_ratio": 1.0016476215785277,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "safeblend_medium",
+        "median_ratio": 0.2578639516357173,
+        "median_saving_pct": 74.21360483642827,
+        "min_ratio": 0.2561492020752678,
+        "max_ratio": 0.26378198093487915,
+        "IQR_ratio": 0.0038163894298056666,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.8670360999999502,
+        "A_seconds": 0.22438769999985198,
+        "RSS_ratio": 0.9990713360541558,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      },
+      {
+        "workload": "safeblend_small",
+        "median_ratio": 0.5915008191177453,
+        "median_saving_pct": 40.849918088225465,
+        "min_ratio": 0.5811829683018419,
+        "max_ratio": 0.7338123734538844,
+        "IQR_ratio": 0.07631470257602124,
+        "all_repeats_faster": true,
+        "baseline_seconds": 0.13612029999990227,
+        "A_seconds": 0.08011920000012651,
+        "RSS_ratio": 0.9984549798289033,
+        "deep_ratio": 1.0,
+        "serialized_ratio": 1.0
+      }
+    ],
+    "available_platforms": [
+      "310",
+      "311",
+      "312",
+      "313",
+      "314",
+      "WSL"
+    ],
+    "private_tests": 29,
+    "candidate_public_tests": {
+      "passed": 575,
+      "xfail": 4,
+      "failed": 0
+    }
+  },
+  "ROUND90_PRODUCTIZATION": {
+    "status": "COMPLETE_TERMINAL",
+    "verdict": "ROUND90_PRODUCTIZATION_READY_EXTERNAL_GATE",
+    "question": "Does exact scalar cardinality optimization survive public-core integration?",
+    "hypothesis": "injective uint16 scalar tuple count replaces structured row unique without predictive drift",
+    "semantic_signature": "same Round90 exact metadata count; no new scientific mechanism",
+    "public_version": "1.0.0",
+    "proposed_version": "1.0.1",
+    "last_completed_round": 90,
+    "current_round": null,
+    "baseline_head": "eaac95e8a4f2df4d8a7b929debdef509d429ffc6",
+    "workspace_runtime_modified": true,
+    "public_clone_modified": false,
+    "API_drift": 0,
+    "predictive_drift": false,
+    "source_manifest": {
+      "codadapt/__init__.py": "08ca7a596aaf414912d4d9c18e1d88b919954034312c258467daca79daf51919",
+      "codadapt/_base.py": "08105d36c076fd011129798911981de1ec9a54f199b85d604baafc345c844faf",
+      "codadapt/_core.py": "7ebdd55cc7c0c47f06f02aae04979f37aa603c0f6951dca9c39bdd933b2d12bf",
+      "codadapt/_multiclass.py": "305e14c52bbc5e64d2cc4415b48ecc49529275fc17224afef04eff9256e38736",
+      "codadapt/_multiclass_artifact.py": "b804429afd3fd1d2f24d7381193de5f15a9f44c50868971ed9a8a138374ab785",
+      "codadapt/_multiclass_packing.py": "546ce55462163db64857541587f3413be0766c2f8daa44fc5698a36345b5bdeb",
+      "codadapt/_training.py": "07c8d94c69c19792e9568fddfd8817c16b67fb6edb3c6833a148a278670a6b9b",
+      "codadapt/_version.py": "661cd029667c445ad32248fbcfcec1d78e0323de5ef0b31f039c3c3435900ed8",
+      "codadapt/classifier.py": "3b5a8a76d703357f010b82d40cef88d16d8662ab5aab92b1483100d954ccb900",
+      "codadapt/experimental/__init__.py": "44796409ba32ae28ac44f4b0b492fc8a0e292c85592d9e21bedeacd13af5ed5b",
+      "codadapt/experimental/_compiler.py": "fe355d7954f20fa6af34f40e27d4aee9cdada474fc18d0f261be3e44bbff1a03",
+      "codadapt/experimental/_model.py": "e38c537f785447fc01b884a2d2ac276b3a4a84d6d2f31e4ec018e2f6a180449d",
+      "codadapt/experimental/_rational.py": "7f3f3cccaa4cc29cfc7f6c0835bc4abb1cc9aef3d6eb714adf7ed9c0daea5e0a",
+      "codadapt/experimental/_safe_blend.py": "b17870219367eda7b024724941e8544823ee940f49bfa4682dab742dccfc8930",
+      "codadapt/preprocessing.py": "e5a5da0b275acbb60ca2c73776fb84e8c3b0ab50bb7cfa6a1a293a4367fabf24",
+      "codadapt/regressor.py": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8"
+    },
+    "Windows_fit_ratio": 0.24049334024988184,
+    "WSL_fit_ratio": 0.1934675330559546,
+    "installed_wheel_fit_ratio": 0.13112038578742596,
+    "systems_scope": "controlled engineering workloads, no external quality/independent-hardware claim",
+    "public_tests": {
+      "status": "PASS",
+      "passed": 607,
+      "known_xfail": 4,
+      "failed": 0,
+      "ordinary_skipped": 0,
+      "prior_pass_preserved": 575,
+      "new_pass": 32,
+      "xml_sha256": "1fd5fb4fb495f4b804e33af724338751db935b4c34c1a3a0f4fafb436b4cdc5e",
+      "source": "full clean-public-snapshot suite; all runtime/tests byte-equal to integrated workspace",
+      "xfail_reasons": [
+        "Unweighted quantiles and row support counts are not invariant to weighted row repetition.",
+        "NumPy object arrays are outside scope; use a pandas DataFrame for mixed data.",
+        "Unweighted quantiles and row support counts are not invariant to weighted row repetition.",
+        "NumPy object arrays are outside scope; use a pandas DataFrame for mixed data."
+      ],
+      "source_manifest": {
+        ".gitignore": "136b5f822cf02f36ee6428f806b5a9ca2d5793554e3e7f0a5ae6a9e2e4403307",
+        "AGENTS.md": "c4dfc6674bf1e7dac5fe00aaf26112aba0f6a20ba11a6f8a5b0848f2c36950aa",
+        "BENCHMARKS.md": "06a1da3a566647e5a843842c4ad3d99201fe58a39c0bac50d9c6f6e89c68e423",
+        "CHANGELOG.md": "9d4ae030d33f9bcd2594a3912d00103a51994777e49874664740bf0349359177",
+        "CONTRIBUTING.md": "26261d60b668cdcf1577814bef406cdfe15c34223983f2c71f6b270407a9e476",
+        "LICENSE": "3610c350fb9e5515a3c859187dba4f04f6d0345f840fbc17034b79db9d44d5b3",
+        "MANIFEST.in": "89f60521b7f910771f0636f84a21d9b6863ac521e33b06080b64f632119aafce",
+        "pyproject.toml": "fead98af4814d785dae673a49597d82cde86fd44c29943ecdffc96c61915ec51",
+        "README.md": "438e537b917bcf48b135b32110848b89cf2e865f9513721b292d0b4f4ba43414",
+        "RELEASE_NOTES.md": "8bb1b9c012a7e2ed38e6bfb20e35f6aec929e07af44e6fe55b25493e9e5de354",
+        "SECURITY.md": "9ece5f5bc436ca66469c5b96890cebfe496cdae7ed8fa26e9d3f556755445359",
+        "benchmarks/run_benchmarks.py": "0ffe025f41441eaec9c321845f7a5e9bcc2e5698539988bc9b952db84d0a7b93",
+        "docs/ALGORITHM.md": "f5866f0c92c3995d4c1aff4cb98d963463fc0165004b828f60a242e6cd2ef23c",
+        "docs/API.md": "463c9a6b579fee7ae88e97fbe84d4bf788fe11d535d3055da19389377d3e055c",
+        "docs/EBM_COMPILER.md": "d060bcc41f798249d4da89f9dcfc9a47c939a03fed265b5ecfe90529f0895240",
+        "docs/LARGE_DATASETS.md": "8bced446e286027f493c28c9c7318f8ae3781107c1010118f2b5fd543077c1da",
+        "docs/PYTHON_COMPATIBILITY.md": "22b572f275b8dfc89900d5072f028e52a72492bcf211459eadc79852b07d6963",
+        "docs/RELEASING.md": "73ad141cacaa8ffc659e8bd56e3fa0372e283ec94a489cb4e747441e7b4e0673",
+        "docs/SAFE_BLEND_EXPERIMENTAL.md": "3ff3239354fbe68378e3c481e540177f5075e0decc2162cc3eab94a9f053a846",
+        "docs/STABILITY.md": "12500bdf3e3a51ad885bf3e3d1c677132f3344c5ca25dfff9885848c6e80639c",
+        "examples/basic_classification.py": "596d709c6caf8a07469c1312be2c0da255debbe5fc560b035107f2f311d91a5b",
+        "examples/basic_multiclass.py": "302e1bf301f819ac78404b804ee0b916ee1b3d0eb4779abbae5b287d4fd2f0c4",
+        "examples/basic_regression.py": "8e13a0f495e8aadca200ea61cfe82dd7b7bf5e30b9204ab032ea5da26cf47349",
+        "examples/kaggle_quickstart.ipynb": "808c72a6bdeae5ee5eb0599f8794ade91527bdc142c3d70df21c217ce8eead41",
+        "examples/release_smoke.py": "8658331ff50b74732fc45dc761bd243bb8a97e6205a255b03313d504faffa493",
+        "tests/conftest.py": "a48148cf2c17742e58f5fc0aadbbdea63ccffbaead902a953dd2b3b695b83e29",
+        "tests/test_adaptive_levels.py": "31923b7f1136b1b80131aaa8231c5396b2fd6fde00198812aa80c9f6559b4d85",
+        "tests/test_addressing.py": "ab489530ef4027a28180f300f5fb20b8d2311c9813da16186d9af94976023783",
+        "tests/test_cardinality.py": "d2761105870685498540a96212ba9b753cddc93b8e85d9ac7dcb764c3ce00f9e",
+        "tests/test_classifier.py": "a78a917d5e3a4c07b0b60645da8cd37e0cb4ddd1a24ed86ba1066e980ec4b503",
+        "tests/test_classifier_training.py": "00653b82c247549b6678b42b30100545ca6a051c99c0e8005feee9b78498cd2d",
+        "tests/test_coded_memory.py": "ecc223e3a7a43ce9b01dffd02579fba7408c5a8e57c3f4519ed228a042172e94",
+        "tests/test_default_api.py": "9c19cb1adf4a2804fe255dc611f8e47b6a06acf8aafdfaa3a93daa0ddf4600b0",
+        "tests/test_ebm_compiler.py": "968246c24668291093a4b49b8d6e2639877d667a87125a032c0adcbaf7b3400d",
+        "tests/test_incremental_gain.py": "5e8e67272e93472079e2d9b0fba00a6d2a06fb43666c061109afdd422959caa0",
+        "tests/test_independence.py": "ef21a3b05678fc8b53467f3b981908144108a7bf26a3158325be5fd86b455b53",
+        "tests/test_memory_budget.py": "e43c1ff7f12138fa0735ccb52f752282d8bddd907a03e1dd92a30f47e0b6ca74",
+        "tests/test_multiclass.py": "217856da731e8e76eef569c8ddae42c16b9deb8be45f3721c61a4e21b20c1221",
+        "tests/test_no_leakage.py": "9593f4731cf99b65d4bcefbc273e39db690d64315055f0352d189402d27bbb86",
+        "tests/test_packaging.py": "23685a2d77559eaa37b273c1a1bd78f9982d37f0318230032dc38e8f2824bdd2",
+        "tests/test_persistence.py": "fc8b2e39b9ed1e3bfca2b98b982e7f4029cb795867b37bc043b13f7ffa89f2d2",
+        "tests/test_preprocessing.py": "1bebe09011a23f87c0358e08dbce3cce95993ddb18b22925f3aedea2e6deb469",
+        "tests/test_pre_rc_api.py": "91761901009f46458e189fd787d7ba42d46267c304bb1e19f0f2289b166a7d78",
+        "tests/test_rational_callback.py": "b4cb40633b011be4b7fe21d3a8ef3a622c5edc4c007bf154fc6294f7f56f5a56",
+        "tests/test_regressor.py": "7eaa2d404bc7a17882c8f8ca9186d20cf700456f574a4dd28ecee8f0b5f9cf60",
+        "tests/test_release_contracts.py": "7fc974ff532ba43b4e26c6d6db081442c7e27ffba36c97edaebe2c43373bb516",
+        "tests/test_safe_blend.py": "249b5d5b8fae14f2f6a297c91abf2fd64362fd9b4f5e4bff65e2ed784a225aeb",
+        "tests/test_shared_encoder.py": "3947ab50ff462c6ad703311b7d409cd19520866a2eb6f4e3099c9b35745c74d9",
+        "tests/test_sklearn_compat.py": "daa03657f3f30818366c5e89fde42effda186504253af68e273ddc928bb5f6f5",
+        "tests/_binary_reference.py": "5615ae561b25ca117943064fe3a996880b141026bfa5d9105daadb53edde9bae",
+        "tests/_multiclass_helpers.py": "38275b31d970ea67b609983293efe17fddd36dc50d42216b07b7a5d0548b4874",
+        ".github/workflows/publish-pypi.yml": "7529237f991901358dd5f444a4caec1270ca52a30e460d8eb99da5ab15d6d4c2",
+        ".github/workflows/publish-testpypi.yml": "a27ad36192a06b24fa189ac50bb1fd626ca77283f73d0cbf5e279d4131d583a2",
+        ".github/workflows/release-qualification.yml": "111c5a2433f49b0e0261d2efe28a7994966a589b2649dc34cf0e566aae3b8ff7",
+        ".github/workflows/tests.yml": "7a1b5fea7b8b383056e15dd8876f1976234cdad2258d3db9fd5efbd49d8b1b83",
+        "benchmarks/reproducibility/benchmark_codadapt_cv.py": "faf5004e4215dd8ab0d9db099183a4d22d2e8e109c23621f6ee94fc3cebd3f0d",
+        "benchmarks/reproducibility/benchmark_cv_full.csv": "55e921c1cf889afff67695d20dc3da2804c2f042be1d2c9d85c24244b672a53b",
+        "benchmarks/reproducibility/benchmark_cv_full.json": "80dff07e40cd7b9062fbfebf982eb242fafc877f0e3e1e76db59aa45750e9c9f",
+        "benchmarks/reproducibility/BENCHMARK_CV_REPORT.md": "91f21d0e6469ce512b43d198f5c65fcbec85d314ae8364b76523a94e0b16f41b",
+        "src/codadapt/classifier.py": "3b5a8a76d703357f010b82d40cef88d16d8662ab5aab92b1483100d954ccb900",
+        "src/codadapt/preprocessing.py": "e5a5da0b275acbb60ca2c73776fb84e8c3b0ab50bb7cfa6a1a293a4367fabf24",
+        "src/codadapt/regressor.py": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8",
+        "src/codadapt/_base.py": "08105d36c076fd011129798911981de1ec9a54f199b85d604baafc345c844faf",
+        "src/codadapt/_core.py": "7ebdd55cc7c0c47f06f02aae04979f37aa603c0f6951dca9c39bdd933b2d12bf",
+        "src/codadapt/_multiclass.py": "305e14c52bbc5e64d2cc4415b48ecc49529275fc17224afef04eff9256e38736",
+        "src/codadapt/_multiclass_artifact.py": "b804429afd3fd1d2f24d7381193de5f15a9f44c50868971ed9a8a138374ab785",
+        "src/codadapt/_multiclass_packing.py": "546ce55462163db64857541587f3413be0766c2f8daa44fc5698a36345b5bdeb",
+        "src/codadapt/_training.py": "07c8d94c69c19792e9568fddfd8817c16b67fb6edb3c6833a148a278670a6b9b",
+        "src/codadapt/_version.py": "661cd029667c445ad32248fbcfcec1d78e0323de5ef0b31f039c3c3435900ed8",
+        "src/codadapt/__init__.py": "08ca7a596aaf414912d4d9c18e1d88b919954034312c258467daca79daf51919",
+        "src/codadapt/experimental/_compiler.py": "fe355d7954f20fa6af34f40e27d4aee9cdada474fc18d0f261be3e44bbff1a03",
+        "src/codadapt/experimental/_model.py": "e38c537f785447fc01b884a2d2ac276b3a4a84d6d2f31e4ec018e2f6a180449d",
+        "src/codadapt/experimental/_rational.py": "7f3f3cccaa4cc29cfc7f6c0835bc4abb1cc9aef3d6eb714adf7ed9c0daea5e0a",
+        "src/codadapt/experimental/_safe_blend.py": "b17870219367eda7b024724941e8544823ee940f49bfa4682dab742dccfc8930",
+        "src/codadapt/experimental/__init__.py": "44796409ba32ae28ac44f4b0b492fc8a0e292c85592d9e21bedeacd13af5ed5b"
+      }
+    },
+    "platform_correctness": "Windows3.10–3.14 and WSL3.12 PASS",
+    "macOS": "EXTERNAL_MANUAL_GATE",
+    "failures": "private analysis Enum digest/CRLF header/setup corrected without fit/test reruns; original single inference flag retained and not reproduced",
+    "reports": [
+      "research_private/ROUND90_PRODUCTIZATION_REPORT.md",
+      "research_private/round90_productization/final_audit.json"
+    ],
+    "retry_condition": "Do not repeat valid Round90 or productization fits. Reopen only for demonstrated correctness/platform regression, separately frozen independent workload/hardware evidence, or authorized version-dependent release gates.",
+    "next_exact_step": "STOP; Luca reviews six-file handoff and separate1.0.1 preparation, then manual CI/macOS/TestPyPI/release gates. No Round91."
+  },
+  "strategic_north_star": {
+    "status": "PERMANENT_STRATEGIC_POLICY",
+    "adopted_date": "2026-10-15",
+    "not_a_new_round": true,
+    "objective": "CodAdapt among the best practical choices for real tabular problems; quality and systems Pareto, no benchmark-specific leadership claim",
+    "full_policy": "research_private/north_star/CODADAPT_NORTH_STAR.md",
+    "full_policy_sha256": "3167edcde7b95b459d08a2c0e35611d6094cbcd49a4d861640f923b24b7c12a8",
+    "dimensions": [
+      "accuracy",
+      "generalization",
+      "training_speed",
+      "inference_speed",
+      "model_size",
+      "retained_and_peak_RAM",
+      "large_N_scalability",
+      "robustness",
+      "determinism",
+      "sklearn_compatibility",
+      "ease_of_use",
+      "deployment",
+      "maintainability",
+      "reproducibility"
+    ],
+    "candidate_ledger": [
+      "QUALITY",
+      "FIT_TIME",
+      "INFERENCE_BATCH1",
+      "INFERENCE_BATCH32",
+      "INFERENCE_BATCH1K",
+      "INFERENCE_BATCH100K",
+      "SERIALIZED_SIZE",
+      "DEEP_MEMORY",
+      "PEAK_RSS",
+      "LOOKUP_COST",
+      "LARGE_N",
+      "ROBUSTNESS"
+    ],
+    "track_A": [
+      "binary ranking",
+      "multiclass probability quality",
+      "representation/objective limitations",
+      "new causal witnesses",
+      "new coded-memory principles"
+    ],
+    "track_B": [
+      "exact training/inference optimization",
+      "exact memory/model size reduction",
+      "large-N",
+      "vectorization/cache locality/exact packing/platform efficiency"
+    ],
+    "quality_priority": "binary/multiclass quality closer to leading tabular learners while retaining compactness/inference/coded-memory identity; preserve regression competitiveness",
+    "competitors_when_appropriate": [
+      "LightGBM",
+      "XGBoost",
+      "CatBoost",
+      "HistGradientBoosting",
+      "other scientifically appropriate controls"
+    ],
+    "priority_classes": [
+      "better quality at nearly unchanged cost",
+      "much lower cost at unchanged quality",
+      "quality and systems improved together"
+    ],
+    "exact_optimization_priority": "high; 0 prediction/probability drift and 0 API change plus material gain -> prompt productization qualification; do not hold Track B behind lack of a Track A frontier",
+    "quality_admission": "closed lines stay closed unless recorded retry condition is met by new causal witness/principle/external evidence or genuinely distinct prior art",
+    "sequence": [
+      "real failure",
+      "causal mechanism",
+      "falsifiable hypothesis",
+      "candidate",
+      "development",
+      "NEW_EXTERNAL transfer",
+      "second independent confirmation for strong claims"
+    ],
+    "tail_safety": [
+      "worst dataset",
+      "worst split",
+      "worst class",
+      "95th percentile harm; do not accept catastrophic tails for aggregate gain"
+    ],
+    "identity": "light native coded-memory learner; no boosting wrapper/neural net/random forest/external ensemble transformation; avoid heavy ML dependencies",
+    "product_contract": [
+      "strong automatic defaults",
+      "few public parameters",
+      "clear errors",
+      "pandas/categorical/NaN support",
+      "trusted persistence",
+      "large datasets",
+      "Pipeline",
+      "simple installation/deployment"
+    ],
+    "dataset_evidence": [
+      "source",
+      "license",
+      "hash",
+      "target",
+      "preprocessing",
+      "split contract; never select sources by outcome"
+    ],
+    "claims": "measured, reproduced, documented, with independent evidence for superiority; synthetic/development != real-data confirmation",
+    "version_strategy": {
+      "exact_safe_bugfix": "1.0.x",
+      "new_capability_or_behavior": "1.1.x",
+      "breaking_API": "future major",
+      "automatic_bump": false
+    },
+    "public_safety": "Desktop workspace for research/candidates; public clone read-only; qualified changes proposed for manual integration only",
+    "continuity": "record every positive/negative experiment; preserve history and negative evidence; MASTER/STATE plus private reports sufficient without chat",
+    "capacity": "INTERRUPTED_BY_CAPACITY -> checkpoint valid work -> automatic resume missing work, no restart or technical user confirmation",
+    "task_question": "Does this change make CodAdapt more likely to be chosen for a real tabular problem? If yes measure product impact rigorously; otherwise lower priority",
+    "round90_relation": "category B: exact training-cost reduction at unchanged predictions; no quality/inference/memory gain claim; no independent competitor leadership established",
+    "actions_this_policy_task": {
+      "new_fits": 0,
+      "new_solves": 0,
+      "new_architecture": false,
+      "version_change": false,
+      "Round91_started": false,
+      "remote_actions": 0
+    }
   }
 }

@@ -1,3 +1,261 @@
+# Permanent North Star — world-class practical tabular learning
+
+User policy adopted2026-10-15 after Round90 productization terminal qualification. **Not Round91; last_completed_round=90,current_round=null.** Full verbatim directive and hash: research_private/north_star/CODADAPT_NORTH_STAR.md and POLICY_RECEIPT.json; structured policy in STATE.strategic_north_star. No new fit/solve/architecture/version change or remote action.
+
+Optimize the joint Pareto frontier of accuracy/generalization, fit/inference, size/deep/peak RAM, large-N, robustness, determinism, sklearn compatibility, ease of use, deployment, maintainability and reproducibility. Record quality,fit,batch1/32/1k/100k inference,serialized/deep/peak memory,lookup cost,large-N and robustness per candidate. Compare appropriate frozen LightGBM/XGBoost/CatBoost/HGB controls where scientifically valid; no superiority claim without independent evidence.
+
+Track A: binary ranking and multiclass probability quality are primary quality weaknesses; maintain regression competitiveness and require genuinely new witnesses/principles for new regression research. Follow real failure -> causal mechanism -> falsifiable hypothesis -> development -> NEW_EXTERNAL transfer -> second independent confirmation for strong claims. Closed lines require their recorded retry condition; no benchmark tuning or hidden catastrophic dataset/split/class tails. Record worst dataset/split/class and95th-percentile harm.
+
+Track B continues independently when A lacks a frontier. Prioritize exact optimizations with0prediction/probability drift,0API change and material product gains, then qualify promptly. Round90 fits categoryB: much lower training cost with exact predictive equivalence; it does not establish better quality, inference, memory or universal competitor leadership. Current local handoff remains READY_EXTERNAL_GATE for proposed1.0.1; version1.0.0 unchanged, macOS/future release gates manual.
+
+Preserve lightweight native coded-memory identity, strong simple defaults/few new public parameters, explicit errors, pandas/categorical/NaN/persistence/Pipeline/large-data support and simple standalone deployment. Expand broad external source reserve with source/license/hash/target/preprocessing/split provenance and outcome-independent selection. Never use published stable as a lab or copy into the public clone automatically. Exact safe fixes1.0.x,new behaviors1.1.x,breaking API futuremajor; no automatic bump.
+
+Preserve every positive and negative result in MASTER/STATE/private reports. Capacity interruptions remain INTERRUPTED_BY_CAPACITY; checkpoint and automatically resume missing work without repeating valid jobs. Final product question: does the change make CodAdapt more likely to be chosen for a real tabular problem? Measure that rigorously.
+
+This strategic policy adds no experimental authorization beyond the existing scoped tasks. No Round91 is started; the completed Round90 handoff and manual release next step remain in force.
+
+---
+
+# Round90 productization COMPLETE — authorized local public-core candidate
+
+**ROUND90_PRODUCTIZATION_READY_EXTERNAL_GATE.** Not Round91. last_completed_round=90,current_round=null; published stable1.0.0/clone untouched. Workspace version remains1.0.0; recommend separate1.0.1 preparation after maintainer review and external release gates.
+
+Authorized2runtimefile integration exactly matches Round90's private candidate: uint16 single/pair scalar cardinality; original generic fallback and OVR cache policy unchanged.32new regression tests and one unreleased changelog note; no API/default/model/accuracy change. Original1149-file Round90 seal preserved, with original memory bytes archived under round90_productization/evidence before this append.
+
+14primary controlled workloads plus700k optional smoke;182fresh Windows timing fits/91pairs;7small/medium and3large repeats. Allpairs faster/state/output-exact. Primary median per-workload fitratio0.240493;WSL4medium/24fits 0.193468;fresh installedwheel2medium/12fits 0.131120;second Pythonminor performance PASS. Engineering evidence, not predictive-quality or independent-hardware confirmation. Primary aggregate/task metrics exclude the one-pair700k smoke.
+
+Full candidate suite607PASS/4knownXFAIL/0FAIL;all575previousPASS retained. Ruff/format,build/Twine,wheel/sdist isolated offline install,pipcheck,old1.0artifact replay,pickle/joblib,same/freshprocess,sklearn/API/failed-fit/Windows3.10–3.14/WSL contracts PASS. Strict fitted-state/encoder/count/output checks and580address/mass probe comparisons exact. Enum audit digest originally captured per-process class method addresses: canonical replay of saved objects resolves the mixed/bool false flags without refit. CRLF metadata/setup issues corrected; all negative logs retained.
+
+Inference ratios bybatch1/32/1k/100k around1.0; original mixedbinary batch32predict CI flag1.102052 retained;5freshprocess A/A-controlled followups median.999954, no reproducible harm. PeakRSSratio0.997640,deep/serialized1.0;no material inference/RAM/size gain claim. 400k binary/regression and700k regression complete safely. Same local hardware for Windows/WSL. macOS/full future-commit remote release qualification EXTERNAL_MANUAL_GATE,not FAIL.
+
+Six exact handoff paths/SHA256 in research_private/round90_productization/PUBLIC_HANDOFF.json. Report research_private/ROUND90_PRODUCTIZATION_REPORT.md;full receipts/raw checkpoints/RESUME/finalaudit underround90_productization/. Publicclone76hashes remain unchanged. Current private1.0.0builds must never be published. No Git mutation, remote, tag, release, workflow or upload. Historical1–90 and all closed failures retained below/inSTATE.
+
+Next: STOP; Luca reviews six-file handoff and separate1.0.1 preparation, then manual CI/macOS/TestPyPI/release gates. No Round91.
+
+---
+
+# Round90 COMPLETE — exact native metadata cardinality training breakthrough
+
+last_completed_round=90;current_round=null;stable1.0.0 immutable. **ROUND90_TRAINING_SPEED_BREAKTHROUGH.** No predictive architecture/objective/mapping/encoding/addressing/API/state semantics change. Round89's1412-file seal verified. R89 mapping closure and all historical systems negatives retained below.
+
+Measured native combination cardinality row-unique cost:binary50k70.41%,K10fit54.69%,regression50k85.25%/400k91.75%,SafeBlend50k64.47% (inclusive profiling,not speed certification). CandidateA replaces only uint16one/two-feature metadata counts with scalar unique using injectiveuint32key(a<<16)|b;other cases originalfallback. Native OVR caches/admission andall floating operations unchanged. No new state/dependency. Distinct from priorcache/dtype/address/packing/chunk/recompute/callback work;known integer principle,not novel math.3771available source files additionally scanned;early missing records remain gaps.
+
+12controlled workloads,84profiler runs (12fit+72prediction),72fresh timing fits/36matched pairs/3alternating repeats. All36pairs faster. Median workload fitratio0.260654;binary50k.166232,K10.223245,regression400k.049761,SafeBlend50k.257864,K40smoke.617256. No external predictive-quality or independent-hardware claim.12ideas/8historicallyequivalent/1executed family. Strong product-gain stop;B/C/Dnotadmitted,combinationnottriggered.
+
+All learned state/time-stripped traces and144case/batch strictnumeric bytes match;0predict/proba/state mismatches. Signedzero explicitly checked;labels exactorderedvalues. Inferencecode unchanged;measured aggregatebatch1/32/1k/100k ratios.994110/.996377/.995979/.992898,not speedclaims. Worstcellmedian1.155433,range.969228–1.262573;no all3repeat>5%inferregression. PeakRSSmedian.999543,deep/serialized1.0:no materialmemory/sizegain. Actualworker selfRSS/OSlifetimehighwater plusrecursivechild supervision;no old4MiBlauncherpeakreuse.
+
+29privatePASS;freshisolated candidate public575PASS/4knownXFAIL/0FAIL (571firstsuite+4previouslyskipped packaging checks afterlocalbuild;no validpubliccase repeated). WindowsPython3.10–3.14 andWSL3.12same-envbaseline/candidate correctness,persistence,clone/PipelinePASS. WSLfit4mediumcases/24freshjobs/12pairsreplicates,median0.201364,allfaster/state-exact;samehardware,notindependenthardware. macOS EXTERNAL_MANUAL_GATE. Core optionalheavy imports absent. Private pandasIndex cache digest fixed bysemantic labels/dtype/names,reusing originalfit;310optionalpsutilharnessimport removed viaAST-identicalfixturesbeforefits. Failedlogsretained. Oldworker source preserved;currentlintcommentASTidentical.
+
+Local product candidate justified:research_private/round90/PRODUCT_CANDIDATE contains9reviewdocs+minimal2filepatch (_training.py,_multiclass.py). Private snapshot/wheel/sdist/testreceipt underPRODUCTIZATION;private1.0.0build NOT a release. Recommend separatemaintainerreview/authorizedintegration andmanualrelease-scope choice (possible1.0.1,or1.1.0ifscope/riskwarrants),notautomaticversiondecision. StablebugsNONE_NEW_ESTABLISHED. Publicsrc/tests/productdocs/default/API/version andclone unchanged;only workspace MASTER/STATE publicfilesedited. CloneHEADeaac95e8a4f2df4d8a7b929debdef509d429ffc6,76hashes unchanged.0remoteGit,publication,tag,release orworkflow actions.
+
+Report:research_private/ROUND90_MASTER_REPORT.md (61fields);protocol/rawfreezes/profiles/pairedtimings/statebyteproofs/memory/platforms/productpatch/finalaudit underround90/. Historical1–89 semantics andallMASTERbytes preserved;STATEindexcontinuous1–90.
+
+RETRY_IF: Native scalar-cardinality replacement is now qualified on the frozen controlled systems panel. Do not rerun these VALID jobs or reopen closed chunk/dtype/recompute/callback/mapping lines. Further performance claims require a separately frozen real-workload or independent-hardware replication;new optimization needs a distinct measured hotspot and historical certificate. Public integration/version choice requires separate authorization.
+
+Next: STOP after Round90. Review the private two-file exact-count patch in a separately authorized integration task;choose release scope manually. Do not start Round91 or modify stable1.0.0.
+
+---
+
+# Round89 COMPLETE — rare-class-safe convex probability mapping
+
+last_completed_round=89; current_round=null; stable1.0.0 immutable. **ROUND89_NO_SAFE_MAPPING.** Explicitly authorized known-mapping engineering, no novelty claim. Round88's1634-file seal verified; all33old+11recent sources /148saved native fits reused. These are now historically exposed development. No new head fit or optimizer solve;148original-VALID discrete scalar selections. No source excluded, grid0/.25/.50/.75/1 and5%VALIDbound frozen before outcomes.
+
+Fixed.25: median+4.233054%LL, worstsourceharm.263967%, but worstclass+15.285104% (uci253 Citrobacter freundii,FIT19/TEST5), beyond frozen15%limit. LODO43lambda0/1lambda.25: median0%,WTL1/43/0,CI[0,0];held-out uci253 creates the same class tail. Full.50/.75classharm35.281367%/64.540507%. Do not remove the five-row class or insert a finer lambda point after seeing it; low precision is disclosed, not universal impossibility.
+
+B largest discrete lambda under originalVALID aggregate non-worsening and every class<=5%harm: median+7.907063%,CI[3.730398,13.687660],WTL39/3/2, but worstsource+15.532290%harm(uci333),worstclass+122.979197%(uci253). A105TESTrow class also harms33.132876%. Lambda counts0/.25/.5/.75/1=12/31/18/22/65. All observedVALIDconstraints pass, but207TESTclass units worsen. On11Round88sources B gains8.470969%,WTL11/0/0, yet worstclass+21.881980%; not independent confirmation.0realargmax/accuracy/F1changes.
+
+Forensics1142class units/665rare under frozen FITprevalence<10%. OriginalNSP2Cardiotocography split3:F189,V47,T59;prevalence13.897/13.824/13.850%;NLL1.083423→1.641880,+51.545612%. Meantrueprobability.500645→.548673 yet wrong-row suppression/rival sharpening causes the log tail;binaryheadAUC.912437/ECE.015869,unchangedrecall.593220. Class2isnon-rare underR89taxonomy but remains in unrestricted all-class safety. Margin/rival associations stronger than support;no causal support witness. C HISTORICALLY_EQUIVALENT_NOT_EXECUTED. R80/R84/R87/R88/SafeBlend history retained.
+
+No retrospective-eligible recipe: no new confirmation downloads/fits, second panel, deployment systems or product candidate. Numeric K3/10/40/100/500 and row-local/persistence checks PASS on P0-defined domain;inherited all-zero sigmoid mass explicitly rejected, float-saturation tie exceptions disclosed. A adds0fittedattrs,Bone lambda_;old1.0artifact private adapters/pickle/joblib same/fresh/clone/Pipeline PASS. No public integration. R88peakmonitor limitation remains PARTIAL;no false peak claims or repeat of valid fits.
+
+Report: research_private/ROUND89_MASTER_REPORT.md (67fields). Raw predictions/forensics/LODO/Bselection/frozen protocol/receipts/replay/finalaudit underresearch_private/round89/.23privatePASS;Ruffpublic/privatePASS;public575PASS/4knownXFAIL/0FAIL reused only with41unchanged hashes. PubliccloneHEADeaac95e8a4f2df4d8a7b929debdef509d429ffc6,76filesunchanged/read-only. Only workspace MASTER/STATE changed among public files.0Gitmutations/remotes/publications/versionchanges. Historical1–88negativeevidence andmissing-source gaps preserved below;continuous1–89index inSTATE.
+
+RETRY_IF: The tested coarse convex path and original-VALID5% rule are closed for general promotion. Reopen only with a separately authorized, independently justified conditional-tail safety principle or genuinely new risk information, frozen before new source outcomes, and source-excluded plus new-source all-class safety evidence. A finer lambda grid, altered bound, removing uci253/333 or small-support classes, per-class rescue, support-cap relabeling, or more temperature tuning on these44 sources is not a retry condition. Preserve all negative tails and original validation reuse limitations.
+
+Next: STOP after Round89;keep stable1.0.0 and all negative evidence;no Round90 or integration.
+
+---
+
+# Round88 COMPLETE — known probability geometry product qualification
+
+last_completed_round=88;current_round=null;stable1.0.0immutable. **ROUND88_CALIBRATION_UNSAFE.** Novelty:HISTORICALLY_EQUIVALENT,explicitlynotaproductgate. Aggregateproductimprovementreplicated;probabilitysafetytailsFAIL. R87's1378filesealverifiedbeforeopening;allnegativehistoryretained.
+
+33old sources/93fitsreused,EXACT_RAW_SCORE. M1rawsoftmaxmedianLLgain12.796023%,27/0/6,CI[7.279936,23.586904],worstsourceuci33315.532290%harm,rareclassPageBlocks/Shuttle52.747446%/55.240968%harm. M2oneVALID-onlyT in[.5,2]median13.951125%,31/0/2,butuci333T.5has92.789990%TESTharm.0oldheadfits;93scalarcalibrations. M1frozenforindependentfalsificationonly;retrospectiveeligibilityFAIL. NoM3orpost-testrescue.
+
+11NEW_EXTERNALsources/55same-head comparisons,unchangedstableBasefitonceperunit. MedianM1LLgain8.741326%,sourcebootstrap95%CI[2.132568,29.448900],10/0/1;sourceworstharm1.919954%Cardiotocography;0realargmax/accuracy/F1/recallchanges. Section44aggregateMAJOR_PRODUCT_SIGNALconditionsmet. Fulltransfer/productgateFAIL:newCardiotocographyclass2,59TESTrows,conditionalNLL1.083423→1.641880,+51.545612%harm;worstsplit+13.151309%harm. Rare-source mediangain+4.194120%doesnotremovetailfailure. Nochangesafterallrawjobsfrozen.
+
+Sources:Seeds,Dermatology,LibrasMovement,Vowel152,Vertebral,Semeion,SteelFaults,Cardiotocography,Splice,Texture,ISOLET. URL/date/raw/clean/split/licence/label/groupauditsstored. WrongUCI53/IrisIDcorrectedbeforefits;UserKnowledgelabelaliasesexcludedwithouttargetmerge;Eucalyptus503/412failurepreserved. ISOLEToriginalsourcefilesverifyCSVexactly,officialheldout30speakerTESTwithTRAINcohortholdoutand15uncertainboundaryrowspurge;Vowelofficialspeakerholdout. TheirfivefitseedsreusetheofficialTEST;not55independenttestpopulations. Unavailablesigner/writerIDsandearlyhistorygapsdisclosed.
+
+Mechanism:MIXEDpositive-sigmoidgapcompression/headscale;correctrowconfidencegainsbutwrong/rareprobabilitytailsworsen. Notaclassdecision/representationbreakthrough. Mapping-onlyengineeringlatencyratios1/32/1k/100k=0.647166/0.630137/0.480124/0.464006;notend-to-end. ZeroextraM1fittedattrs;oldstableartifactadaptation/pickle/joblibfreshprocess/clone/params/Pipeline/extremefinite/K100/batchindependencePASS. Syntheticfloat-saturationdecisiontiesexplicit;no universalfloatargmaxpromise. Fullconfirmation/end-to-endproductsystemsNOT_TRIGGERED_SAFETY_GATE. FitRSSsupervisoromittedvenvchild;4MiBpeakreadingsINVALIDforfitRAM,workerendmax.174122GiBnotpeak. ResourcequalificationPARTIAL;novalidfitrepeatedforprofiling.
+
+Report:research_private/ROUND88_MASTER_REPORT.md (69fields);receipts/protocol/rawfreezesandfinalauditunderresearch_private/round88/.20privatePASS,Ruffpublic/privatePASS;public575PASS/4knownXFAIL/0FAILreceipt reusedwith41unchangedruntime/testhashes. PubliccloneHEADeaac95e8a4f2df4d8a7b929debdef509d429ffc6and76filesunchanged;noGitmutationorpublication. PublicdatasetHTTPSdownloadsonly. Currentdefault/API/versionunchanged;nofuture1.1behaviorintegrated. StablebugsNONE.
+
+Retry:Require a separately preregistered probability-safety hypothesis, independent source-excluded evidence and unchanged class decisions. It must address olduci333/PageBlocks/Shuttle and newCardiotocography probability tails without test-selected source gates, per-class rescue, post-hoc temperature-bound changes or panel exclusions. Demonstrate retrospective median>=3%/worstharm<10%, new-source median>=2%/worstharm<5%, and no>=50%conditional-classNLLharm with>=20TESTrows. Known-mapping novelty is not required; genuine safety and transfer are. Repair process-tree RAM supervision before any renewed systems/product qualification, without repeating these valid scientific fits.
+
+Next:STOP after Round88; no Round89 or integration. Keep stable1.0.0 normalized sigmoid. Preserve independently replicated aggregate probability gain and all rare/split/old-source harms. Reopen only under the recorded safety-focused retry contract.
+
+---
+
+# Round88 IN_PROGRESS — known probability geometry product qualification
+
+last_completed_round=87;current_round=88;stable1.0.0unchanged. Explicitly authorized known-mapping product qualification; no algorithmic novelty required or claimed. R87 seal verified;33sources/93saved fits reused. M0/M1/M2 only, no per-class rescue. External transfer rules and tail gates frozen before new outcomes.
+
+---
+
+# Round87 COMPLETE — multiclass probability-map/head-quality causal atlas
+
+last_completed_round=87;current_round=null;stable1.0.0unchanged. **ROUND87_NO_NOVEL_FIX.**33historically exposed real sources/93original units,K3–26;0newnativefits/0candidatefits. All usable canonical native sources included;Covtype historical preflight rejection preserved. Shared-versus-independent implementation equivalence remains exact; existing per-head selections already differ.
+
+Known raw-softmax diagnostic LLgain median12.796023% (27/0/6),0argmaxchanges; VALID-affine median17.591805% (30/0/3),95%source-bootstrapCI[11.08399562705065, 34.1493162985963],but Mice28.933893%harm anduci33312.330987%harm. No known transform promoted. TESTstrict-monotonic oracle33.645113% and restrictedTEST-affine23.601785% are feasible diagnostic potential,not tight universal ceilings;9oracleiteration-limit cases preserved.652headinstances;macroheadAUCmedian0.961248;top1/2/3medians0.854588/0.953271/0.992248. Counts are repeated sample instances,not independent rows.15normalization/calibration,4head-quality,13mixed,1unknown descriptive source labels. No independent class-relative resolving witness;no intrinsicOVRimpossibility proven.
+
+Historical blind leader+22.031308%LL remains separate from7-source fixedHGB+8.986083%; preserve original leader identities,uci253zero-loss infinite relative gap,mean-versus-median conventions. Rare support correlates with conditional loss but frequent/balanced heads also fail. Known calibration is material yet historically equivalent and fails downside;Afrontier lacks resolving witness,B/C/Dduplicate known selection/addressing/codebook/calibration families. Synthetic/development/transfer/confirmation/systemsNOT_STARTED_NO_CANDIDATE. StablebugsNONE.186jointdiagnosticcalibrations+652binarycalibrations+652TESTPAVAestimations explicitly separated from0nativefits. Frozen raw-gradient naming correction in supplemental audit;no solve repeated.
+
+Report:research_private/ROUND87_MASTER_REPORT.md;atlas/protocol/receipts/FINAL_VERDICT underresearch_private/round87/.10privatePASS,Ruffpublic/privatePASS;575PASS/4knownXFAIL public suite reused with41unchangedruntime/testhashes. Publicclone read-only;noGitmutation/remote/publication. Historicalnegativeevidence andR17/18/R19/R51gaps preserved. 
+
+Retry:Require a new, explicitly distinct training-only principle with a concrete class-relative or head-information causal intervention, matched history/capacity controls and source-excluded probability/downside safety. Known softmax, temperature, diagonal/class affine calibration, richer dictionaries, per-head allocation and joint evidence codebooks are not novel. A separately authorized engineering validation of an explicitly known frozen calibrator would be a different admission contract, not a new function class. Do not tune controls, choose source subsets or rescue Mice/333 after seeing this panel; test oracles are not transfer evidence.
+
+Next:STOP after Round87. No Round88, no stable change, no candidate fit. Preserve the33-source atlas and current Shared OVR. Any reopening must satisfy the recorded retry condition; normalization utility is now a material diagnostic, not a promoted model.
+
+---
+
+# Round87 IN_PROGRESS — multiclass head/competition/normalization localization
+
+last_completed_round=86; current_round=87. Round86 seal verified before opening; stable1.0.0 unchanged. Reuse every portable multiclass source, original splits and saved native models. No candidate before causal materiality and historical novelty.
+
+---
+
+# Current research checkpoint — Round86 COMPLETE
+
+**ROUND86_NO_NOVEL_FIX.** Causal classification:MIXED_REPRESENTATION_LOSS. last_completed_round =86; current_round =null. Stable1.0.0/public core/API/compiler/tests/product docs and read-only GitHub clone unchanged. Public baseline HEAD eaac95e8a4f2df4d8a7b929debdef509d429ffc6. Only workspace MASTER/STATE changed among public files; no remote operation, publication or version bump.
+
+Question: what causes R85's identical-activation ambiguity, and how much generalization could removing it recover? R85's770-file seal verified; all14historically exposed binary sources/45original splits reused. Entire raw values, native normalized values, full finest codes, selected features/levels, unmasked addresses and masks are compared by exact equivalence (no row-hash reliance).0newBasefits/0optimizer solves;116TRAIN-only aggregate state estimations separately disclosed.
+
+Exact reconciliation:33,717 opposite-label equal-activation pair instances =90raw-X duplicate conflicts +119numeric-binning +32,875feature-subset +633level/resolution losses. Additional normalization/categorical/hash/address/support-mask contributions0.33,627raw-distinct pairs and33,508finest-code separable pairs match R85 exactly.181,017unique signature instances,404mixed signatures,6,258mixed sample instances. These are overlapping split sums; dataset-weighted quality is primary. Different-address equal-values and aggregation-only extra ties0. Raw conflicts are data ambiguity given X, not proven label error.
+
+Attribution is a frozen nested factorization, not unique physical stage causality under simultaneous losses. R19 relation PARTIAL_OVERLAP: per-table hash collision removal differs from full-path collapse. Original R19 prompt read/hash retained, but result/CSV/map remain missing: exact protocol INSUFFICIENT_EVIDENCE, +0.452% exploratory summary not a new result. No generic collision-free refit repeated. Early/R17–18/R51 gaps unchanged.
+
+Local AUC potential median+0.000196 (95% source CI[0.000017639,0.005972222]); >=30% HGB-gap recovery on only fertility/SPECT,2of9eligible sources. Optimistic TEST-entropy information-only LL potential4.994429% (CI[0.705190%,32.117263%]) meets the necessary materiality admission,9sources>=2%. Calibration potential1.611110% and total replacement6.444882% medians separated. These are ORACLE_ONLY and not necessarily scalar-realizable/local-generalizing predictions. Permutation null: opposite collision ratio median0.439960 of group-size expectation, observed LL information below null mean on13/14sources (median−0.0200417nats). Raw uniqueness/mixed groups alone do not establish a useful mechanism.
+
+Frozen train-only C chooses one omitted feature by originalFIT conditional information; D restores existing finest codes on represented features. Both use fixed5Base-prior pseudo-observations, unseen->Base, and matched parent-only signature lookup. The parent lookup changes original additive function class/capacity; do not assign all its gain to refinement. C versusBase median AUC+0.000096/LL+0.128625%; versusparent AUC0/LL+0.033432%. D versusBase+0.000008/+0.045223%; versusparent0/−0.005495%. Both utilityFAIL; incremental intervals include0. C source/split worstLL harm3.4996%/5.3852%. SPECT locally improves+0.229845AUC/+12.0925%LL via feature+path restoration on one exposed split; fertility improves AUC but harms LL. No general confirmation.135prediction metrics replayed, no valid fit/solve repeated.
+
+No candidate generated after causal utilityFAIL. Three prompt-offered concepts only receive admission/history checks: selective ambiguity refinement lacks general utility/new principle; secondary fingerprint has zero hash witness; ambiguity-preserving code overlaps supervised addressing/resolution history. No synthetic candidate, development, ablations, transfer, confirmation, systems or product integration. No reserve opened. Research weakness is not a stable bug. PriorChannel remains rejected as an automatic general mechanism.
+
+Full69-field report:research_private/ROUND86_MASTER_REPORT.md. Protocols, raw equivalences, group sizes, bounds, null draws, TRAIN choices, predictions, replay and terminal audit:research_private/round86/. final_audit.json binds private tests/Ruff,41unchanged runtime/test hashes and reused public575PASS/4knownXFAIL/0FAIL receipt. History1–85 is preserved below/in STATE, forming continuous1–86.
+
+| Round | Title | Status | Decision |
+|---|---|---|---|
+| 86 | Activation collision causal localization and stage probes | COMPLETE_DIAGNOSTIC_ONLY_NO_NOVEL_FIX | ROUND86_NO_NOVEL_FIX |
+
+RETRY_IF: Require an independently justified train-only information/selection principle that separates the localized omitted-feature or resolution ambiguities and yields material source-excluded utility versus matched parent/value/capacity controls. It must be distinct from historical adaptive addressing, supervised binning, feature allocation, conditional state readouts, pair/TT/context/codebook mechanisms. No pseudocount, feature-count, bin, gate, fingerprint, solver or source-subset sweep on this panel; a new diagnostic recipe needs a new falsifiable reason, and TEST entropy headroom alone is insufficient.
+
+STOP. No Round87. Permanent capacity auto-resume remains active for technical interruptions; this mission reached a scientific terminal verdict.
+
+---
+
+# Round86 IN_PROGRESS — activation collision causal localization
+
+last_completed_round=85; current_round=86. R85's770-file seal verified. Exact raw-X duplicate analysis and stage-local forensic bounds on14historically exposed sources/45original units; zero new Basefit. R19 partial semantic overlap documented, original recipe gaps retained. No candidate admitted before materiality+intervention+novelty. Stable1.0.0/public clone immutable.
+
+---
+
+# Current research checkpoint — Round85 COMPLETE
+
+**ROUND85_CAUSAL_DIAGNOSIS_ONLY.** last_completed_round = 85; current_round = null; stable public version1.0.0 immutable. Public baseline HEAD eaac95e8a4f2df4d8a7b929debdef509d429ffc6. Only workspace MASTER/STATE changed among public files; runtime/API/compiler/tests/product docs and read-only public clone are unchanged. No remote operation, release or version bump.
+
+Question: can the deployed coded-memory representation recover the documented external binary ranking gap by changing only cell values/objective? All14 historically exposed sources/45 original units are reused, with689 input files verified and zero new Base/HGB fits. Exact activation and ordered score/probability replay is bitwise, CSR arithmetic discrepancy <=4.45e−15. Atlas:609,635 sampled positive-negative pairs (550,586 summed within-unit unique), exact universe2,728,083,230. Base median AUC gap to frozen HGB −0.023088. These are diagnostic development artifacts, not blind confirmation.
+
+Preregistered fixed-capacity TRAIN-only global pointwise and pairwise logistic refits (same internalFIT, fixed original ridge scale, deterministic sampled pairs) both have45/45 stationarity passes. Two constant cases are analytic;86 main numerical solves total,88 auxiliary scalar solves. Pointwise median AUC +0.001429, relative log-loss gain+0.457218%; pairwise +0.000435,+0.777954%. Source-bootstrap95% AUC intervals [0,0.006733]/[0,0.007843], LL intervals [−0.445280%,3.735420%]/[−1.510828%,3.552716%]; all include zero. Neither reaches +0.01 AUC or >=30% HGB-gap recovery on three sources (only htru2/thoracic,2of9 eligible sources). Pairwise beats pointwise by >=0.005 AUC on only two sources. Hybrid not started: zero sources meet its frozen internalVALID criteria. Monotone intercept control AUC/AP delta0 and relative LL gain−0.006096%.
+
+Local causal witness:33,717 exact opposite-label equal-activation pairs,33,627 raw-different,12sources/30units.33,508 differ at the last stored encoded level. SPECT selects zero levels and therefore cannot exceed AUC0.5 by value-only refit; the HGB gap0.337403 is an exact selected-representation limitation. Collisions elsewhere prove only a small part of error (uci5084.55%, uci7596.02% mean per-split Base AUC error lower bounds). Arbitrary test-label signature lookup is NONDEPLOYABLE, not an attainable linear refit or generalization bound. Optimizer failures cannot prove global representation impossibility. Shared addresses/nearby raw geometry correlate with inversions; support/aliasing signs are mixed and not a panel-wide causal explanation. Probability saturation is zero. Global objective-vs-representation remainder is unresolved.
+
+No novelty candidate: F03 covers global joint refit, E06/G01 the known ranking objective, historical level/address/allocation families generic signature splitting. Four routes reviewed; no new causal principle. No synthetic candidate, development, transfer, systems or productization. Pairwise source/split LL harm6.28%/11.84% is retained; pointwise2.67%/5.06%. Formerly blind six-source cohort remains weak. No source subset rescue, penalty/sampler/solver/hybrid sweep or new dataset opened. PriorChannel remains REJECTED_FOR_NOW_AS_AUTOMATIC_GENERAL_MECHANISM.
+
+Full61-field report:research_private/ROUND85_MASTER_REPORT.md. Data/code/protocol/raw/results, exact row certificates, private recovery events and replay:research_private/round85/. final_audit.json binds the terminal artifact inventory, fresh private checks/Ruff and reused575PASS/4knownXFAIL/0FAIL public evidence after41unchanged hashes. Historical1–84 entries, early-source gaps and Round51 incomplete remainder are preserved below and in STATE.
+
+| Round | Title | Status | Decision |
+|---|---|---|---|
+| 85 | Binary ranking fixed-representation causal witness | COMPLETE_DIAGNOSTIC_ONLY_NO_CANDIDATE | ROUND85_CAUSAL_DIAGNOSIS_ONLY |
+
+RETRY_IF: Require a new independent, preregistered train-only causal observable or information/function-class principle that separates the witnessed raw-different equal activations and is demonstrably distinct from historical level selection, adaptive addressing, allocation, pair/TT/context/codebook and global refit families. For an objective-only reopening, require material fixed-capacity ranking recovery on at least three source-excluded datasets with log-loss safety and a matched pointwise control; no penalty, sampler, temperature, solver, hybrid-weight or source-subset sweep on the exposed panel.
+
+STOP. No Round86. Capacity auto-resume policy remains active for future technical interruptions; this mission has a scientific terminal verdict.
+
+---
+
+# Round85 IN_PROGRESS — external binary ranking causal diagnosis
+
+last_completed_round=84; current_round=85. All14 historically exposed binary sources/45 original units from Round82 are admitted for zero-Base-fit inversion/state replay. Fixed-representation oracles are explicitly diagnostic even when historically equivalent. No candidate or new architecture is admitted. PriorChannel remains rejected as an automatic general mechanism. Stable1.0.0/public clone immutable. Next: complete the inversion atlas and exact activation caches, then preregister at most3 main oracle recipes.
+
+---
+
+# Current research checkpoint — Round84 COMPLETE
+
+**ROUND84_PRIOR_CHANNEL_MECHANISM_REJECTED.** last_completed_round = 84; current_round = null. Stable 1.0.0, core/API/public tests/product documentation and read-only public clone are unchanged. Earlier Round83 and all rounds 1–83 are preserved below and in STATE.
+
+Round84 verified the 471-artifact Round83 seal, reused all 65 saved Base models/splits and ran no new native fit. Binary prior transport is exactly a logit intercept shift (error <= 1.56e-15), with no AUC/AP change. credit_g/cmc no-shift harms arise when finite channel/marginal estimates move away from the source prior; channel precision, sampling noise and posterior mismatch remain distinct contributors.
+
+One new, scoped risk-certificate hypothesis was preregistered: independent CAL/ADAPT halves, empirical Bernstein bounds, an identified target-prior confidence polytope, and admission only when its worst-case conditional gain lower bound is positive. This satisfies the explicit Round83 finite-sample-risk-bound retry for a falsification test; it is known statistical risk control, not a new function class. Confidence is conditional on IID acquisition and invariant P(X|Y), pointwise per job; no arbitrary-shift guarantee. Three generic threshold/confidence/continuous-strength proposals were HISTORICALLY_EQUIVALENT and not fitted.
+
+Frozen retrospective fixed-rule LODO: 13 sources × 5 splits, 130 decisions. **All corrections rejected: median gain 0%, retention 0%, W/T/L 0/13/0, CI [0, 0], harm 0%.** 114 negative certificates, 16 channel rejections. The ungated half estimator still yields 5.703807% median gain versus 6.599562% full-pool gain. Independent acquisition splitting alone does not explain total loss of benefit; certificate width does. This is retrospective development, not independent rule discovery.
+
+Five reused native synthetic mappings with new acquisition draws: ungated median gain −0.041768%,0.238329%,5.271501%,23.683653% for priors 0.50 / 0.55 / 0.65 / 0.80; reverse 0.20 gives 25.287458%. The prior mechanism is supported, but safe output is Base in all 25 curve cases and 40 batch probes. An algebraic large-support integrity test admits a real positive correction; it is not confirmation. Batch 1 without a certified acquisition context has deterministic Base behavior.
+
+LODO gate FAIL. Six locked, historically seen but rule-construction-excluded confirmation sources remain unexecuted. No transfer reserve acquired/opened, no confirmation, second confirmation, systems or productization. Review of all 30 existing registry entries admits no B/C family: no new reopen witness. No threshold, confidence, strength or source-subset rescue. Close the tested safety route at this support; do not assert that every possible safety bound is impossible.
+
+Report:research_private/ROUND84_MASTER_REPORT.md. Full raw diagnostics, deterministic checkpoints, protocol hash, synthetic/LODO seals, certificate-width decomposition and final audit:research_private/round84/. Public 575 PASS / 4 known XFAIL / 0 FAIL receipt reused with unchanged 41 runtime/test hashes; fresh private tests and Ruff receipts are linked by final_audit.json. Only MASTER/STATE are public workspace edits. Capacity auto-resume policy remains active for technical interruptions; this mission reached a scientific terminal verdict.
+
+| Round | Title | Status | Decision |
+|---|---|---|---|
+| 84 | Prior-channel identified-risk safety certificate | COMPLETE_SAFETY_UTILITY_GATE_FAIL | ROUND84_PRIOR_CHANNEL_MECHANISM_REJECTED |
+
+The preserved 1–83 record plus this entry forms continuous 1–84 history. Historical Round51 remainder and early source gaps are unchanged.
+
+RETRY_IF: Reopen only with independent acquisition or a new valid risk bound that measurably reduces certificate width while preserving honest no-shift coverage. No confidence-level, threshold, prior floor, regularization, calibration, dataset exclusion or binary-only rescue sweep on this panel. Require an externally asserted invariant P(X|Y) contract; unlabeled marginals cannot establish arbitrary-shift safety.
+
+STOP. No Round85, version bump, clone write, remote operation or publication.
+
+---
+
+# Round84 IN_PROGRESS — frozen prior-channel risk certificate
+
+last_completed_round =83; current_round=84. User authorized causal diagnostics and a new finite-sample safety mechanism. Round83 evidence preserved. Zero new fits/solves before preregistration. One identified-risk lower bound is frozen; no threshold/calibration rescue. Protocol:research_private/round84/PROTOCOL.json. Next: replay saved65 jobs, synthetic acquisition controls, then continue only when the corresponding gates pass. Stable 1.0.0 and public clone unchanged.
+
+---
+
+# Current research checkpoint — Round83 COMPLETE
+
+**ROUND83_PRIOR_SHIFT_SIGNAL_CONTROL_SAFETY_FAIL; POST_1_0_DEVELOPMENT_ONLY.** `last_completed_round = 83`; no active round. Stable 1.0.0, its core and API are unchanged. Read-only public clone HEAD: `eaac95e8a4f2df4d8a7b929debdef509d429ffc6`. The earlier Round82 pause and zero-fit verdict remain valid for their source-only scope and are preserved below.
+
+The scoped F10 reopening introduced independent unlabeled target information under a known P(Y) intervention and invariant P(X|Y). BBSE is established prior art; the novelty is this project's information contract. The review covered 44 papers/methods (including 13 reused records and one official API), 165 overlapping historical cards and 30 specifications. One candidate passed novelty. Its fitted-native five-seed causal witness achieved a 23.975% median log-loss gain, with 0.2294% worst harm in negative controls and exact identity on the uninformative channel. A matched conditional-law confound caused 30.48% harm, ruling out an arbitrary-shift safety claim. Exact population calculations and fitted witnesses remain separate evidence.
+
+Frozen development used 13 previously exposed real-input sources × 5 splits: 65 valid jobs and 130 evaluations. Median controlled-shift log-loss gain was 6.599562%, with source-bootstrap 95% CI [3.049299%, 20.346824%] and wins/ties/losses 11/1/1. Binary and multiclass medians were 20.346824% and 2.317580%; binary AUC was unchanged. Worst shifted harm was 7.622376% on digits. **No-shift harm of 5.959248% on credit_g and 5.884968% on cmc exceeded the frozen 5% safety gate.** The candidate failed; transfer, confirmation and post-hoc recipe changes were not started. These are controlled prior interventions, not natural external confirmation.
+
+Development fit including acquisition cost was 1.1928× Base; inference on one observed held-out batch was 1.0076×. These are not full systems or deep-memory qualification. All 75 scientific fits (10 synthetic + 65 development), hashes and negative evidence are retained; no valid fit was repeated. Fourteen private checks and public/private Ruff passed. Existing public evidence of 575 PASS / 4 known XFAIL / 0 FAIL was reused only with unchanged runtime/test hashes. Two UCI archives were acquired for provenance only; the blind reserve stayed unopened.
+
+Reports: `research_private/POST_1_0_GRAND_PROGRAM_REPORT.md`, `research_private/round83_findings.md`, and `research_private/post_1_0_grand_program/20_FINAL/final_audit.json`.
+
+## Round index continuation
+
+| Round | Title | Status | Decision |
+|---|---|---|---|
+| 83 | Independent target-prior coded-evidence acquisition | COMPLETE_DEVELOPMENT_SAFETY_GATE_FAIL | ROUND83_PRIOR_SHIFT_SIGNAL_CONTROL_SAFETY_FAIL |
+
+The historical 1–82 index below and this entry form the continuous 1–83 record, also validated in STATE. The unresolved historical Round51 remainder is unchanged.
+
+RETRY_IF: Reopen only with a new independently justified finite-sample identification/risk bound or acquisition information that controls no-shift downside at fixed native predictor; a new singular-value threshold, prior floor, shrinkage, gate, sampling ratio or calibration sweep on these 13 sources is not sufficient. Require independent source-excluded prospective validation and an explicit invariant-class-conditional deployment contract. No marginal-only method can certify arbitrary-shift safety; the matched confound must remain disclosed.
+
+Capacity interruptions are technical states, never scientific verdicts. Record `INTERRUPTED_BY_CAPACITY`, preserve valid and partial artifacts, update the required fields in `RESUME.md`, and continue automatically from the first unfinished checkpoint when execution becomes available. No confirmation is required for technical resumption. The present mission has reached a scientific terminal verdict, so it is COMPLETE rather than interrupted.
+
+No stable bug fix, public integration, release or version bump. One LOW documentation-precision observation remains: nondefault resolution maps are not always pairwise nested; this is not a confirmed runtime failure. STOP; do not open Round84.
+
+---
+
+# Post-1.0 open-world program — Round83 opened
+
+last_completed_round82; current_round83. A new independent unlabeled target-prior information contract passes novelty and fitted synthetic causal witness. Median positive logloss gain23.975%; no-shift/noise worst harm0.2294%; binaryAUC unchanged. Matched-marginal conditional-law confound harms30.48%, so no automatic shift-safety claim. Frozen real-input prior-intervention development only; not IID ranking or natural-shift confirmation. Stable1.0.0 unchanged; public clone read-only. All previous source-only negative findings and pause contracts retained. Protocol:research_private/post_1_0_grand_program/09_PROTOCOLS/ROUND83_DEVELOPMENT.json.
+
+---
+
 # Post-1.0 grand research program — terminal strategic audit
 
 **GRAND_RESEARCH_NO_JUSTIFIED_FRONTIER.** No Round83 opened; last_completed_round remains82. Stable baseline1.0.0, clean local public HEAD `72a67464efbf1cd63e4c234183449f2e14c1f2ba`; publication is user-reported, no remote verification. Public clone/src/API/version unchanged.

@@ -13,7 +13,7 @@ from sklearn.utils.multiclass import type_of_target
 
 from ._base import _rows, _target
 from ._core import addresses, aggregate
-from ._training import _surrogate, train_coded_memory
+from ._training import _combination_count, _surrogate, train_coded_memory
 from .preprocessing import BucketEncoder
 
 
@@ -184,7 +184,7 @@ class XCache:
     def combination_count(self, z, features):
         key = (id(z), tuple(features))
         if key not in self.combinations:
-            self.combinations[key] = int(np.unique(z[:, features], axis=0).shape[0])
+            self.combinations[key] = _combination_count(z, features)
         return self.combinations[key]
 
 

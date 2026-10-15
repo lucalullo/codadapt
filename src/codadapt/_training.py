@@ -61,6 +61,14 @@ def predict_coded_memory_buckets(levels, encoders, z_levels, intercept, table_si
 
 
 def _combination_count(z, features):
+    if z.dtype == np.dtype(np.uint16):
+        if len(features) == 1:
+            return int(np.unique(z[:, features[0]]).size)
+        if len(features) == 2:
+            key = z[:, features[0]].astype(np.uint32)
+            np.left_shift(key, 16, out=key)
+            np.bitwise_or(key, z[:, features[1]].astype(np.uint32), out=key)
+            return int(np.unique(key).size)
     return int(np.unique(z[:, features], axis=0).shape[0])
 
 

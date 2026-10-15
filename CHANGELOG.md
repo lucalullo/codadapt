@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — proposed 1.0.1
+
+- Optimize exact training metadata cardinality counts for native one- and
+  two-feature codes, including Shared OVR's existing count cache. Predictions,
+  fitted numeric state, API, defaults and model format are unchanged. This is
+  an internal training-speed optimization; no accuracy, inference-speed or
+  memory improvement is claimed. The package version remains 1.0.0 during
+  local qualification; 1.0.1 is not published by this change.
+
 ## 1.0.0
 
 - Finalize stable native CodAdapt/Classifier/Regressor API from qualified RC2;
