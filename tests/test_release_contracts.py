@@ -104,6 +104,8 @@ def test_invalid_input_after_successful_fit_is_unfitted(kind, bad_x):
 @pytest.mark.parametrize("kind", ["binary", "multiclass", "regression"])
 def test_memory_preflight_rejects_without_stale_fit(kind):
     model, x, y = fixture(kind)
+    # A fixed cap must reject independently of machine headroom; AUTO may admit.
+    model.set_params(memory_budget_mb=512)
     model.fit(x, y)
     # A broadcast view avoids allocating a large test matrix. The guard must
     # reject before training/encoding materializes it.

@@ -42,6 +42,39 @@ class _ResolutionView:
         self.support_ = support
 
 
+def _pool_categorical_strings(encoder):
+    schemas = [s for s in getattr(encoder, "schemas_", ()) if s["kind"] == "categorical"]
+    # Cap work and transient storage independently of user row/category cardinality.
+    if len(schemas) < 2 or sum(len(s["observed_categories"]) for s in schemas) > 32768:
+        return
+    pool = {}
+
+    def canonical(value):
+        return pool.setdefault(value, value) if type(value) is str else value
+
+    for schema in schemas:
+        original = schema["vocabulary"]
+        items = [(canonical(k), v) for k, v in original.items()]
+        if any(a is not b for (a, _), b in zip(items, original)):
+            schema["vocabulary"] = dict(items)
+        observed = schema["observed_categories"]
+        if type(observed) is not pd.Index or observed.dtype != np.dtype(object):
+            continue
+        values = observed.to_numpy(copy=False)
+        replacement = None
+        for position, value in enumerate(values):
+            pooled = canonical(value)
+            if pooled is not value:
+                if replacement is None:
+                    replacement = values.copy()
+                replacement[position] = pooled
+        if replacement is not None:
+            replacement.flags.writeable = values.flags.writeable
+            schema["observed_categories"] = pd.Index(
+                replacement, dtype=observed.dtype, name=observed.name, copy=False
+            )
+
+
 class BucketEncoder(TransformerMixin, BaseEstimator):
     """Internal encoder for compact, deterministic integer buckets.
 
@@ -350,6 +383,7 @@ class BucketEncoder(TransformerMixin, BaseEstimator):
             self.feature_names_in_ = X.columns.to_numpy(dtype=object, copy=True)
         self.schemas_, self.support_, self.n_buckets_ = schemas, support, sizes
         self.categorical_features_ = np.array(sorted(categorical), dtype=np.intp)
+        _pool_categorical_strings(self)
         self._is_fitted_ = True
         return transformed
 
@@ -379,7 +413,20 @@ class BucketEncoder(TransformerMixin, BaseEstimator):
             if not X.columns.equals(self._columns_):
                 X = X.iloc[:, order]
         transformed = np.empty(X.shape, dtype=np.uint16)
+        numeric_array = isinstance(X, np.ndarray) and all(
+            schema["kind"] == "numeric" for schema in self.schemas_
+        )
         for j, schema in enumerate(self.schemas_):
+            if numeric_array:
+                # Input dtype/schema checks above already establish numeric columns.
+                # Preserve float64 conversion, independent storage and infinity errors.
+                values = np.array(X[:, j], dtype=np.float64, copy=True)
+                if np.isinf(values).any():
+                    raise ValueError(
+                        f"Input contains infinity in feature {j!r}; infinities are not supported."
+                    )
+                transformed[:, j] = self._transform_numeric(values, schema)
+                continue
             series = self._column(X, j)
             feature = X.columns[j] if self._fit_dataframe_ else j
             if schema["kind"] == "numeric":

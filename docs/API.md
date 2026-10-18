@@ -1,5 +1,9 @@
 # API pubblica
 
+> Candidate locale 1.1.0rc1: C1 congelata, default nativo `"auto"`.
+> La 1.0.1 usava il default storico 512 MiB; un intero esplicito lo conserva.
+> Preparazione locale, nessuna pubblicazione.
+
 ```python
 from codadapt import CodAdapt, CodAdaptClassifier, CodAdaptRegressor
 
@@ -30,7 +34,7 @@ Il costruttore memorizza i parametri; il primo `fit` crea lo stato appreso.
 | `tol` | `1e-5` | Soglia relativa: gain > tol × max(1, abs(previous_validation_loss)). |
 | `random_state` | `None` | `None`, intero `[0, 2**32-1]` o `np.random.RandomState`; usa un intero per riprodurre il fit. |
 | `verbosity` | `0` | 0 silenzioso; 1–2 riepilogo del fit corrente. |
-| `memory_budget_mb` | `512` | Intero positivo in MiB; budget della stima preventiva, non limite RSS. Introdotto nella RC2 e mantenuto invariato in 1.0.0. |
+| `memory_budget_mb` | `"auto"` | `"auto"` oppure intero positivo in MiB. AUTO estende il dominio storico solo con headroom visibile conservativo; un intero resta un limite rigido della stima E, non di RSS. |
 
 Non esiste un parametro pubblico `verbose`. Nessun livello di `verbosity` sopprime
 globalmente warning o eccezioni. I default non lanciano l'esplorazione dei candidati
@@ -43,7 +47,7 @@ di architettura: quella appartiene al runner sperimentale.
 ## Migrazione pre-1.0 e contratto del trainer corrente
 
 I costruttori nativi sono **keyword-only**: usare `CodAdapt(n_bins=8, l2=5.0)`,
-non argomenti posizionali. I default dei parametri rimasti sono invariati.
+non argomenti posizionali. I default predittivi dei parametri rimasti sono invariati. La 1.1.0rc1 modifica solo il default di ammissione memoria; vedere [AUTO_MEMORY.md](AUTO_MEMORY.md).
 
 Sono stati rimossi sette controlli inattivi: `max_iter`, `adapt_codes`,
 `adapt_every`, `max_code_updates`, `n_candidates`, `min_code_count` e `patience`.
@@ -70,7 +74,9 @@ l'ambiente originale. Un load riuscito non rende nuovamente validi i parametri r
 
 ## Input
 
-La versione 1.0.0 conserva il budget memoria esplicito introdotto nella RC2 e il default 512 MiB.
+Storicamente 1.0.0 e 1.0.1 pubblica conservano il budget introdotto nella RC2 e il default 512 MiB.
+La 1.1.0rc1 usa `"auto"`, senza cambiare capacità, precisione o fitting;
+la migrazione esplicita `memory_budget_mb=512` conserva la vecchia ammissione.
 La stima ora include anche le righe di `eval_set` esterno prima delle copie e
 dell'encoding. Non cambia fitting o predizioni dei fit ammessi; può rifiutare
 validation molto grandi prima ignorate dal guard. Vedere

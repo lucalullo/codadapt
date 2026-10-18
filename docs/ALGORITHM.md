@@ -1,4 +1,4 @@
-# Current native CodAdapt algorithm (1.0.0)
+# Current native CodAdapt algorithm (1.1.0rc1)
 
 This describes the explicit shared trainer in `_training.py`. Historical
 coordinate-wise code-move experiments do not describe this public runtime.
@@ -77,7 +77,9 @@ roughly O(n*(selected main features + 2*interactions)), plus input validation/en
 Numerical encoding uses binary search over cuts; categorical mapping cost depends on
 cardinality and values. Neither constant latency nor a hard RSS bound is promised.
 
-The conservative preflight fit allocation and bucket-matrix limits are each 512 MiB;
+The historical preflight fit estimate cap is 512 MiB; frozen C1 in 1.1.0rc1
+adds AUTO admission while preserving explicit integer caps (see [AUTO_MEMORY.md](AUTO_MEMORY.md)).
+The separate bucket-matrix limit remains 512 MiB;
 input arrays, the interpreter, vocabularies and other temporaries add RSS. Observed
 categorical membership is limited to one million categories per feature. Oversized
 workloads are rejected before primary allocations rather than routed to another model.

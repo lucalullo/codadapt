@@ -1,3 +1,633 @@
+# CodAdapt 1.1.0rc1 — local release candidate prepared, not published
+
+2026-10-18. Explicit release-preparation authorization changes the workspace
+version from the prior C1 placeholder 1.0.1 to 1.1.0rc1. Published-baseline field
+remains 1.0.1; the current candidate is local only. Round index remains 1–90,
+last_completed_round=90, Round91 NOT_OPENED, research INCUBATION.
+
+The frozen 31-file C1 integration is the base. Only the version literal changes
+among 25 runtime modules; all 24 computational modules remain byte-identical to
+the integrated C1 and all25 AST-match raw C1 after version normalization. Tests
+are unchanged. Release docs now expose AUTO migration and six audited limitation
+rows;3MEDIUM+2LOW remain documented,1LOW placeholder/docs issue is resolved.
+No new feature,optimization,scientific fit,benchmark or predictive claim.
+
+Exact RC wheel Python3.10–3.14 plus primary3.12sdist:6new isolated candidate
+installs PASS with existing matching-minor numerical stacks reused offline.
+Installed-RC public suite727PASS/4knownXFAIL/0FAIL,Ruff/format,Twine,archive/privacy/
+metadata audits,fresh-process examples and8notebook code cells PASS. The 4XFAIL
+remain weighted-repetition quantile/support scope and NumPy object-array scope
+for classifier/regressor. No new failing test or CRITICAL/HIGH issue.
+
+225 exact C1 comparisons and platform receipts are reused by source lineage;
+Windows/WSL/Kaggle/Docker/nestedLinux/macOS actual receipts are not relabeled as
+fresh RC OS-by-minor executions. Fit~0.997x,ndarray inference~0.808x,categorical
+pickle~0.748x remain scoped to their own protocols. No general RAMsaving,
+qualitygain or anti-OOM claim. Original V8FAIL1.397x and all negative evidence
+remain valid. AUTO is default only in local1.1.0rc1;explicit integers cap E,
+not RSS;SafeBlend internal Base512 and legacy missing-field512 are preserved.
+
+Local QA receipt: research_private/v1_1_program/39_RC1_PREPARATION/V1/LOCAL_RESULT.json
+Release manifest/manual-copy handoff/TestPyPI plan are under that same folder.
+H3/H4/P0 remain PASS;cleanup manually complete. ZERO GITHUB OPERATIONS: no clone
+read/write,remote query,workflow,publishing,tag or release. Future exact integrated
+commit CI/TestPyPI are EXTERNAL_MANUAL_GATE,prepared but unexecuted. This entry
+supersedes earlier current-version/proposal wording below without rewriting it.
+
+---
+
+# C1 public productization — local proposal ready, no release
+
+2026-10-18. H3_REMOTE_CLEANUP=COMPLETE per user-confirmed manual deletion;
+no remote requery or operation. Old cleanup403 and all actualMac artifacts retained.
+ZERO GITHUB OPERATIONS is now permanent;clone untouched. Future remote needs are
+MANUAL_GITHUB_ACTION_REQUIRED,not automatically requested or executed.
+
+Frozen C1 integrated only in Desktop:4existing+9new runtime modules;all25 modules
+AST-identical to frozen C1 after Ruff layout formatting. Native memory_budget_mb
+proposed default="auto";positive integers remain hard deterministic-estimate caps,
+not RSS limits. Same512legacy lazy domain,no detector queries;conservative visible
+extension beyond512,no model downsizing/subsampling or prediction change. SafeBlend
+explicitly retains512;old objects missing parameter retain512. No research runtime
+dependency or new dependency. Documentation/API/migration distinguish unpublished
+workspace from public1.0.1. Runtime version remains1.0.1;round90,Round91NOT_OPENED.
+
+New integrated qualification727PASS/4knownXFAIL/0FAIL,Ruff/formatPASS;wheel/sdist,
+Twine,5isolated installedPython3.10-3.14contracts,fit/load example and8notebookcells
+PASS. Numerical dependencies reused offline;not a new all-platform-by-minor matrix.
+43old evidence hashes reverified,225exactpairs and qualified P1/H1systems reused
+through C1identity. No valid external acceptance or scientific benchmark repeated.
+Original V8fitFAIL1.397x,load/small-model/DataFrame/timing-tail tradeoffs preserved.
+No quality gain or general peakRSS saving/anti-OOM guarantee claimed. First suite
+3stale implicit512 tests and harness/import/encoding recoveries preserved,not hidden.
+
+PRODUCTIZATION_READY local-only;H3/H4CLOSED_PASS,P0privatePASS,0CRITICAL/0HIGH,
+V1_1_MILESTONE_READY remainsTRUE. P0localintegrationPASS;manual public adoption not
+performed,so productdeployment pending. ResearchINCUBATION;no version bump,clone
+synchronization,tag or publication. See37_PUBLIC_PRODUCTIZATION_PREP/V1/RESULT.json,
+PUBLIC_INTEGRATION_FILES.md,FINDINGS.md,QUALIFICATION_MATRIX.json andRED_TEAM.json.
+Stale STATErootpublic_version1.0.0 corrected with recorded provenance to1.0.1;
+older scope statements below remain historical,not current instructions.
+
+# H3 cleanup status — owner permission action only
+
+2026-10-18. AllMacrawartifacts/logs retrieved,locallyverified andimported before
+cleanup attempt. SameownedprivateH3repo ID1424662073 deletion isauthorized bythe
+userattachmentcleanupclause. Firstautomaticreview refused unseenattachment;the
+verbatimclause+threecompletedprerequisites were presented andsameactionapproved.
+ActualGitHubDELETE then returnedHTTP403,activeOAuthscopes lackdelete_repo.
+No credentials changed,noalternatebypass/deletion mechanism attempted. Temporary
+private repo remains;owner needs onlySettings/DangerZone deletion of
+lucalullo/codadapt-h3-c1-qualification-20261018-0990c804. No publicrepo involved.
+This isAUTH_FAILURE_CLEANUP_ONLY,not CodAdapt/platformqualificationFAIL.
+H3CLOSED_PASS,finalcumulativePASS/privateV1_1_MILESTONE_READY,0CRITICAL/0HIGH remain;
+P0privatequalificationPASS/publicadoptionnotperformed. No moreremotejobs/fits.
+Allreproducibility artifacts retainedlocally. SeeMACOS_REMOTE_EXECUTION_V1/
+CLEANUP_RECEIPT.json,CLEANUP_AUTHORIZATION_PROOF.json andfinal_audit.json.
+
+# CodAdapt1.1 — actual H3 macOS PASS;private milestone cumulative PASS
+
+2026-10-18. Explicit one-task remote authorization:owned temporary PRIVATE GitHub
+H3-only repo,one macos-15-intel hostedAppleVM job. ActualmacOS15.7.9/native
+CPython3.12.10x86_64,noRosetta. Five exactDarwinwheelbytes/25installedC1sources/
+original699635x21CSV identities verified. AUTO8.298926s/control6.959471s both full
+PASS;0prediction/bucket/state mismatches,83guards0fail/error/skip;pickle/joblib,
+failedrefit andexplicitbudget contractsPASS. AUTOpeak565321728/control565092352
+bytes;effectiveAUTO1271.5654296875MiB. These are descriptive acceptance arms,
+not a fairnewperformancebenchmark;no universalfitoverheadclaim.46scientificraw
+hashes,outer/preparation/wheel manifests andfrozencollector exactPASS locally;
+fullarchive+GitHublogspreserved. No importedmodel fit/prediction repeated.
+TransportGitblobAPI422 resolved losslesslybefore0fits;WindowslocalMAX_PATH
+recovery reusesdownloadedhashvalidZIP. Bothinfrastructurefailurespreserved.
+
+SameC1 frozen asmilestonecandidate,20property finalcumulative scopedPASS using
+43verifiedold evidencefiles/43unchangedpublicruntime-test hashes,225exactpairs,
+75affectedC1contracts,Python3.10-3.14guard/clone/pickle evidence. OriginalV8host
+receipts remainV8;23/25C1modules includingallresourceextensions arebyteexact,
+twoaffectedroutes qualified. H3C1 andH4originalV8 realLinux bothclosed,0CRITICAL/
+0unresolvedHIGH. V1_1_MILESTONE_READY = PRIVATE candidate/evidence milestone only.
+P0requiredplatform/cumulativequalificationPASS;publiczero-config adoption isNOT
+performed,soP0productadoptionremainsIN_PROGRESS. Public512default/runtime/API/
+version1.0.1/round90/cloneunchanged. No release/defaultpromotion authorized.
+OldV8independentfitFAIL1.397x,all rejectedcandidates,qualitygaps andscopedP1/load/
+sizecosttradeoffs retained. No newqualitygain;researchINCUBATION,Round91closed.
+CleanupprivateH3repositoryonlyafter verifiedimport;see its separate receipt.
+Evidence:34_FINAL_EXTERNAL_GATES/V1/MACOS_REMOTE_EXECUTION_V1/VERIFIED_RESULT.json,
+35_MILESTONE_CANDIDATE_FREEZE/V1 and36_FINAL_CUMULATIVE_INTEGRATION/V1.
+
+# CodAdapt1.1 — H3 exact Darwin-wheel metadata verified (NOT executed)
+
+2026-10-18. Explicit one-task public PyPI read authorization fulfilled: all5 locked
+versions have compatible non-yanked x86_64 wheels for native CPython3.12/macOS15.
+NumPy2.5.4, SciPy1.18.1, pandas3.0.6, scikit-learn1.9.1 and psutil7.2.2:
+exact filenames/tags/advertisedSHA256 frozen from5 retained raw HTTPS JSON responses.
+Four cp312/cp312 wheels, psutil cp36/abi3 stableABI. No downloads/installations or
+native binary execution; advertised hashes are NOT downloaded-byte integrity proof.
+Prior read rejection/audit preserved; authorization now CLOSED, no further remote
+operation. Workflow/private account/setup/dispatch still unauthorized/unverified.
+H3 EXTERNAL_MANUAL_GATE,H4PASS,P0IN_PROGRESS,oneHIGH,NEAR_MILESTONE_READY;C1frozen,
+version1.0.1/default512/round90/runtime/clone unchanged. No new platformPASS or fit.
+Receipt:34_FINAL_EXTERNAL_GATES/V1/MACOS_REMOTE_AUDIT_V1/DARWIN_WHEEL_METADATA_V1/
+WHEEL_VERIFICATION.json; human-readable filenames/hashes in FINDINGS.md.
+Stop and await separate authorization; actual Mac gate and final cumulative remain.
+
+# CodAdapt1.1 — H3 hosted macOS feasibility audit (NOT executed)
+
+2026-10-18. GitHub Actions macos-15-intel/CPython3.12 native is a technically
+qualifying remote-Apple route. Existing public manual qualification cannot run
+frozen C1 H3 unchanged. A complete workflow proposal exists ONLY as private
+documentation; recommended disposable PRIVATE qualification repo protects original
+CSV/candidate/raw artifacts. No new service/account required; private quota/cost,
+current auth/permissions and five exact Darwin wheel identities remain unverified.
+Direct PyPI metadata read was automatically rejected under current no-remote scope;
+no bypass or actual install/job. Explicit later authorization required for remote
+setup/private transfer/one dispatch/retrieval. Public clone read-only and unchanged.
+H3 EXTERNAL_MANUAL_GATE,H4PASS,P0IN_PROGRESS,oneHIGH,NEAR_MILESTONE_READY;C1 frozen.
+No new platformPASS/fit/solve/benchmark/claim,public runtime/API/default512/version1.0.1
+or round90 change. Prior raw gates and negative evidence retained.
+See34_FINAL_EXTERNAL_GATES/V1/MACOS_REMOTE_AUDIT_V1/{FINDINGS.md,DECISION.json,
+WORKFLOW_PROPOSAL.md}. Await authorization/preconditions, then actual H3 only;
+after verifiedPASS candidatefreeze+finalcumulative,not release.
+
+# CodAdapt1.1 — H4 real Linux VM nested gate PASS
+
+## 2026-10-18 — actual Hyper-V execution and verified raw import
+
+UserenabledHyperV/group/reboot;agentverifiedpermission andcreated onlydedicated
+realUbuntu24.04x86_64VM,4CPU/12GiB/40GiB,SecureBootOn. RootfulDocker/systemd/
+cgroupv2 actuallyobserves6GiBancestor+8GiBchild,min6GiB. OriginalV8twofull
+699635x21arms PASS,zero output/bucket/state mismatch.42sealedrawfiles rehashed
+andfrozencollector assertions replayedsamePASS,0newfitsduringimport.
+ActualVMonthe samephysicalLUCA-PC,notindependenthardware/qualityconfirmation.
+Preservesparse-NTFSprovisioningrefusal andoriginalwrapperForeignOutputError
+before0fits. I/O-onlyadapterseparateslogs/metadata;allscientificBUNDLE/wheel/
+data/protocolbytes unchanged. Dockerargdiffonlyexternaloutputbindsourcepath.
+C1notmodified;23/25filesandallresourceextensions identicaltoV8,notrelabelled
+actualC1hostexecution. H4resolved,H3actualMacexternal,oneHIGH,P0IN_PROGRESS,
+NEAR_MILESTONE_READY. AfterMacPASSonly:candidatefreeze+finalcumulative,0CRITICAL/
+0HIGH;noautomaticpublic/defaultpromotion. OldV8costFAIL1.397x,C1225pairs,
+Python3.10-3.14 andallpriorvalidfits retained. VMgracefullyOff/diskskept.
+Version1.0.1/default512/round90/runtime/tests/cloneunchanged;researchINCUBATION;
+no release,publishing orGitoperation. ScientificMap218claims;newactualgate
+andprivate-harnessnegative scopedDEVELOPMENT_SIGNAL.
+See34_FINAL_EXTERNAL_GATES/V1/VM_EXECUTION_V1/FINDINGS.md,VERIFIED_RESULT.json,
+P0_RECEIPT_INDEX.json,WEAKNESS_REGISTRY.json andp0-nested-results.zip.
+
+# CodAdapt1.1 — actual Linux VM automation prerequisite
+
+## 2026-10-18 — read-only native capability audit
+
+Hardware virtualization ACTIVE;HyperV/WHP disabled,no managementCLI/provider or
+other conventional VM platform found,current token lacksHyperVrights. Native
+outside-sandbox CIM audit supersedes incomplete restricted views. No existing
+usableVMidentified in checked inventories;not awhole-disk image absenceclaim.
+32GBhost,8cores16threads,~610GBdisk free,UbuntuDNS/TCP443available;currentfreeRAM
+~10.6GiB requires fresh headroom check before guestallocation. Human admin
+HyperVenablement,groupgrant,restart needed;preparedoperatorcommands NOT executed.
+No system/VMchange,newfit,gate or simulation. Five-filehandoff/CSV remainVALID.
+H3/H4external,2HIGH,C1frozen,P0IN_PROGRESS,milestoneNEAR_MILESTONE_READY,
+researchINCUBATION,round90/version1.0.1/default512/clone unchanged.
+See34_FINAL_EXTERNAL_GATES/V1/VM_AUTOMATION_AUDIT_V1/RESUME.md andAUTOMATION_DECISION.json.
+
+# CodAdapt1.1 — original CSV verified;Linux transfer complete
+
+## 2026-10-18 — correction and exact offline image export
+
+REAL_DATASET_PRESENT_HASH_VALID=TRUE,independently rehashed originalDownloadsCSV
+2313b65c74e6994f01c2628aae82d2f97aa6f74a81950172ff83864837c98b36.
+QualifiedDockerimage38305e... exported with original tag;13OCIblobs verified;
+five-fileLINUX_TRANSFER_READY includes unchangedfrozenZIP,image,CSV,SHA256SUMS
+and copy/pasteVM instructions. OldmissingCSV/daemon observations and valid
+ID-onlyexport preserved;taggedtransport adds no image/model/cell change.
+No localnestedgate,container,fit,benchmark or newplatformPASS. H3Mac/H4nested
+remainexternal,2HIGH,P0IN_PROGRESS,C1frozen,milestoneNEAR_MILESTONE_READY,
+researchINCUBATION. Runtime/default512/version1.0.1/round90/clone unchanged.
+See34_FINAL_EXTERNAL_GATES/V1/LINUX_TRANSFER_PREPARATION_V1/LINUX_HANDOFF_RECEIPT.json.
+
+# CodAdapt1.1 — final external gates, C1 frozen
+
+## 2026-10-18 — evidence-only operator handoff
+
+H1/H2 remain PASS;H3 actualMac/H4 realLinux distinct finite ancestor remain
+EXTERNAL_MANUAL_GATE,2HIGH,P0IN_PROGRESS,milestoneNEAR_MILESTONE_READY.
+C1/source/wheel/criteria/harnesses frozen,141+input hashes verified;no new fit,
+solve,test,benchmark or scientific result. Both gate transfer instructions are
+copy/paste-ready;Mac requires five exact native Darwin wheels,originalCSV and
+CPython3.12. Nested requires rootful localLinuxDocker/systemd/cgroupv2,hostRAM>8GiB,
+visible6GiBparent/8GiBchild and original qualifiedV8image. DockerDesktop does not
+qualify H4;its localdaemon currently unavailable for imageexport. OriginalCSV
+currently absent at recordedDownloads path;never recreate fromcache. These
+preconditions do not invalidate historical platformPASS or constitute algorithmFAIL.
+H3C1 andH4originalV8source scopes remain separate,explicit lineage review due.
+After both real receipts validate PASS:milestonecandidatefreeze then final
+cumulativeintegration qualification,0CRITICAL/0HIGH and all requested axes/platforms.
+No automatic release/default promotion,version1.0.1/round90 unchanged,researchINCUBATION.
+See34_FINAL_EXTERNAL_GATES/V1/README.md,C1_FREEZE.json,GATE_WAITING_STATE.json,RESUME.md.
+All prior negative/positive evidence and225C1exact comparisons preserved.
+
+# CodAdapt1.1 — final HIGH gap resolution
+
+## 2026-10-18 — H1/H2 local closure;two actual external gates
+
+**H1PASS,H2scopedPASS;NEAR_MILESTONE_READY privatecandidate.** P0IN_PROGRESS;
+researchRESEARCH_INCUBATION;Round91NOT_OPENED. OriginalV8challenge1.397287xFAIL
+unchanged. NewC1 is notpublicintegration/defaultapproval or release.
+
+Forensics localizes dominant privatefirstfitAUTOmodulebootstrap. Fourteenlegacy
+sources neverqueryOSresources butfirstimportfivemodules. Coldguard7.6933msvs
+baseline0.1555ms,warm3.7us;oldsourcemedianextra7.14475ms. Nineinstrumentedfit
+traces separateinput,admission,encoding,cardinality,memoryconstruction,training,
+validation,import/finalization;serializationoutside originalfitclock. No exact
+retrospective percentageoruniversalclaim. Both baselines retainR90training;
+R90old0.260654xvs1.0.0isnotthenew1.0.1denominator.
+
+One historicallydeduplicatedprivateexactroutingpatchavoidsunusedlegacyimports,
+notpreloadingworkoutsidetheclock. Onlyprivate_base/_multiclassroutingchanges;
+all extension/learningmodules,capacity,codes,values,APIsemanticsunchanged.
+Threefrozenalternatingfreshworker sessions(75units each)fitratios
+0.979994/0.998732/0.996787x<=1.05.450newcostcounterfactualmodels+9phasefits
+explicitlycounted;225pairedpredictions/buckets/state/persistence exact,0mismatch.
+Frozenoldartifacts preserved;225baselinecontrols retimed fornewcostprotocol,
+noactualKaggle/WSL/Dockeracceptancereruns. Blogexplicit4096controlseparate;
+old512refusals retained. Samehosttemporalreplication,notnewindependentquality.
+
+H2uses14-axisscorecard:threeindependentscopedbenefitsP1ndarrayinference,
+P1highcardartifactcompaction,AUTOreal-largeNzero-config. AUTO/largeN/UXcount
+once;R90already1.0.1notnewcredit. Qualityunchanged,knowncompetition/tails
+FUTURE_RESEARCH;load/smallmodel/DataFrametradeoffs explicit. Currentnewhelper
+contracts75PASS,Python3.10–3.14guard/clone/picklesmokes,offlineprivatewheelbuild
+andtargetinstallPASS;public620PASS/4XFAILreceipt reusedunder43unchangedhashes.
+
+OnlyoriginalHIGHH3actualMac/H4realvisiblefiniteancestorremainexternal.
+MacC1V2packagepreservescriteria/runners andchangesprospectivesourcebindings;
+oldV8receiptsnotrelabelednewC1hostexecution. Nestedonecommandfills ONLYoriginal
+V8missingunit;realLinuxhost/cloudVMwvisible6GiBparent/8GiBchildrequired,
+nohostmutation orsimulation. Source-lineageandaffectedcumulativepublic/default
+decisionremaindueafteractualgates. No release/noautomaticdefaultpromotion.
+
+See33_HIGH_GAP_RESOLUTION/V1/FINDINGS.md,H1_RESULT,scorecard,WEAKNESS_REGISTRY,
+EXTERNAL andfinal_audit. Allpreviousnegativeknowledge/16concepts/18sources/
+fivewaitingresearchtriggerspreserved. Version1.0.1/public512MiB/round90/runtime/
+clone unchanged. No Gitremote/tag/release/publication.
+
+# CodAdapt1.1 — product consolidation / research incubation
+
+## 2026-10-18 — V1_1_PRODUCT_GAP_CLOSURE
+
+**Research RESEARCH_INCUBATION;product milestone NOT_READY;P0 IN_PROGRESS.**
+NO_FUNDAMENTALLY_DISTINCT_PRINCIPLE_YET remains VALID/terminal for the bounded
+16concept/18primary-source invention space. No new architectures/fit/solve/
+benchmark. Five evidence-only reopen triggers are registered in ScientificMap
+NEXT_GENERATION_RESEARCH_TRIGGERS.json;zero satisfied;Round91NOT_OPENED.
+
+Receipt-only product reassessment verifies6821hash checks and reuses75exact
+prediction/state/bucket/row pairs plus170per-class AP/recall pairs. Binary,
+multiclass and regression show NO MATERIAL REGRESSION OBSERVED versus the frozen
+Round90optimized1.0.1baseline;five Blog512refusals retain fixed4096quality
+controls. Earlier1.0lineage exactness is historical,not a fresh1.0.0experiment.
+LGB gaps remain binary−0.022727AUC,MC−23.35%logloss ADVANTAGE,regression+23.99%
+RMSE worse;source scopes/tails unchanged. Inherited quality questions now map to
+FUTURE_RESEARCH;their prior evidence/severity is preserved,not relabelled runtime
+regression or erased to obtain readiness.
+
+P1 ndarray inference/artifact benefits and actual Windows/WSL/Kaggle AUTO full
+fits are real,scoped1.1value. R90alreadybelongs1.0.1and cannotcounttwice.
+Local cumulative contractsPASS;original independent challenge stillFAILS fit
+1.397287x(CI1.186471–1.923095)versus<=1.05x. Othermedian costgatesPASS;worst
+individual100kinference1.686139x/loadtradeoffs retained. FourHIGHproduct/
+qualification gaps:fitgate,incremental significance,actualMac,distinctfinite
+nestedancestor. NoobservedCRITICALruntimebug is not universalbugabsence.
+Final publicscope/defaultintegration and affected cumulative qualification are
+conditional pending work,not an excuse to repeat the valid private snapshot.
+Nested remains mandatory for fullP0/AUTOdefault;only additionalrobustness for
+an explicitly512default-retaining product. No retrospective waiver.
+
+See32_PRODUCT_GAP_CLOSURE/V1/FINDINGS.md,PRODUCT_GAPS,WEAKNESS_REGISTRY,
+RELEASE_CLAIM_LEDGER andQUALITY_REVIEW. Product track may progress via actual
+missing receipts and new causal cost evidence;radical architecture generation
+waits for a verified trigger. Version1.0.1/public512/last_completed_round90/
+clone/releasefreeze unchanged. No release,tag,publication orremoteoperation.
+
+# CodAdapt next generation — fundamental invention checkpoint
+
+
+## 2026-10-18 — first-principles invention audit
+
+**NO_FUNDAMENTALLY_DISTINCT_PRINCIPLE_YET**, scoped to this16-concept literature
+and theory pass. The prior NO_CROSS_FAILURE_PRINCIPLE_SUPPORTED verdict and all
+eight rejected sketches remain valid and closed. No new variants, learner,
+fit, solve, benchmark, witness execution or dataset acquisition.
+
+The finite-memory model separates encoding, address fibers, stored values,
+support, query transcript, readout and the algorithm that learns them. Worst-case
+joint capacity needs product storage, while structured high-order responses can
+have very short descriptions. Their efficient identification under noisy
+observational sampling is an additional premise, not supplied by the format.
+Eighteen primary-source records cover13requested literature areas; actual
+abstract/selected-section read scopes and failed fulltext retrievals are explicit.
+
+Sixteen primitive concepts were hard-pruned for known external principles,
+historical equivalence, missing identification/decoder assumptions, unchanged
+capacity or unbounded/large-N costs. Zero qualified architectures. Three symbolic
+boundary dossiers are NOT finalists: known sparse characters, rank-one products
+and sketch-plus-decoder identifiability. No novelty or witness admission is
+granted; no claim that all future inventions are impossible.
+
+See ../v1_1_program/31_FUNDAMENTAL_INVENTION/V1/FINDINGS.md and its six requested
+artifacts. New research needs an explicit restricted target class, observation
+contract, distinct discovery rule and charged bounded deployment. Existing
+Gait/MathE/binary/multiclass causes and unknowns are not overwritten. R17/R18
+missing archives and R51partial remain. Round91 NOT_OPENED;program/P0 IN_PROGRESS;
+macOS/nested external;milestone NOT_READY;1.0.1/default512MiB/last round90 unchanged.
+
+# CodAdapt 1.1 cross-mechanism synthesis — current checkpoint
+
+
+## 2026-10-18 — cross-mechanism algorithm synthesis
+
+**NO_CROSS_FAILURE_PRINCIPLE_SUPPORTED** in the bounded eight-proposal review.
+The19x13matrix distinguishes explicit supported/rejected propositions from weak
+signals and unknowns. All205priorclaims/711hashbindings and the five preceding
+Extreme Evolution task manifests were verified; historical levels are not
+upgraded. Conditional information restrictions recur across binary omission
+and Gait at different pipeline boundaries. Signed conditional utility fails
+transfer in several other families. These are cross-failure constraints, not
+a new trainable principle or one demonstrated cause of all losses.
+
+Eight post-synthesis operator sketches were compared against the complete
+1-90index, post-round memory and20family semantic cards. Zero survive novelty
+and cross-failure admission. No new fits,solves,witnesses or benchmarks; no
+Gait reopening. General graph/DAG variants are not declared mathematically
+identical to every tested TT; their missing specification/evidence prevents a
+certificate. F08/F18 external prerequisites and F16 real bridge remain absent.
+OriginalR17/R18 archive ambiguity and R51 partial remainder are preserved.
+
+See ../v1_1_program/30_CROSS_MECHANISM_SYNTHESIS/V1/FINDINGS.md and
+CROSS_FAILURE_MECHANISM_MATRIX.json. Expanded theory separates address-vector
+information from linear readout capacity and population risk from finite TEST
+oracles. Gait verdicts remain GAIT_MECHANISM_CAUSALLY_IDENTIFIED and
+GAIT_SPECIFIC_OR_UNKNOWN. This does not exhaust future coded-memory research.
+Round91 NOT_OPENED;program/P0 IN_PROGRESS;macOS/nested external;milestone
+NOT_READY;version1.0.1/default512MiB/last_completed_round90 unchanged.
+
+# CodAdapt 1.1 grand development program — current checkpoint
+
+## Gait mechanism — bounded completion — 2026-10-18
+
+**GAIT_MECHANISM_CAUSALLY_IDENTIFIED**, scoped to the frozen native information restriction on this10-person cohort. **Function class:MIXED**, dominated by strictly insufficient idealunary/pair capacity on the frozen encoder,plusresolution andsmaller fitted-valueheadroom. EvenTESToptimalallpairs cannotmatchLightGBM in5/5subjectsplits. Samefrozencodes+fulljointTRAINmeans recover77.87%median observedMSEgap;globaldeployedTRAINOLS recovers2.11%RMSE. Higher-order conditionalphase shapes are stable withincohort;all4inputs used,everyTESTcoordinate has60TRAINmeasurements from6people. This is a finite-sample operationalcertificate,not populationcausal attribution or a new learner.
+
+Metadata-frozen regimepanel:3historicallyobserved empiricalsources(Yacht/Airfoil/Synchronous)+Servosimulatorcontrol,5groupedsplits,40newfits. Airfoil/Synchronous showmaterialloss5/5,but no samepair-capacitycertificate;oraclesoftenvacuous andsupportstructure differs. **GAIT_SPECIFIC_OR_UNKNOWN**,noMECHANISM_GENERALIZATION_SIGNAL. Matched2smallsyntheticcontrols reproduce scalarhigher-orderloss;knownjointcodedlookup recovers. NEW_PRINCIPLE/HISTORICAL_DEDUP/noveltycertificate do not pass. R67/R68/R69/context/value/interpolationhistory retained;no oldrecipepromoted orretuned. **Round91 NOT_OPENED.**
+
+Five originalGaitBase/LGBpairs reused,zeroGaitrefits. Fullrowerroratlases,15Gaitlinearprojections,90PAVAcurves,20externalpairoracles andsame-L2diagnostics are countedseparately from40external+2syntheticmodel fits. Exactnested finiteTESTdecomposition is not a population percentage;TRAINcontrols separate fromTESToracles. Read29_GAIT_MECHANISM/V1/FINDINGS.md,VERDICT.json,FAILURE_DECOMPOSITION.json,HISTORICAL_DEDUP_REVIEW.json,RESUME.md andfinal_audit.json. Next requires independentlymeasured repeated-contextdata or adistinct stable discovery principle. No furthercurrentfit repetition.
+
+Previous **BOUNDED_NEW_OBSERVATION_SPACE_EXHAUSTED_NO_NEW_WITNESS** staysVALID/unchanged. All priorpositive/negative evidence preserved;ScientificMap now205claims. Wholeprogram/P0IN_PROGRESS,milestoneNOT_READY,macOS/nestedexternal,releasefreeze,version1.0.1/public512MiB/last_completed_round90 unchanged. Publicruntime/API/tests andclone untouched;noGitremote/publishing. RELEASE=TRUST;RESEARCH=FUTURE.
+
+## Prior observation phase — preserved without reinterpretation
+
+## New observation space — bounded completion — 2026-10-18
+
+**BOUNDED_NEW_OBSERVATION_SPACE_EXHAUSTED_NO_NEW_WITNESS; Round91 NOT_OPENED.** Thirteen metadata-selected external source contracts (5 binary,3 multiclass,5 regression),65 seed/split units,325 frozen model jobs and65 saved-model diagnostics. Sources,targets,features,group/time splits,metrics,recipes,seeds andhashes were frozen before models; quality quarantine was released only after all jobs were terminal. Source medians first: binary median native-reference gap -0.009670; multiclass median native-reference gap -0.139580; regression median native-reference gap -0.039538. This is NEW_FAILURE_DISCOVERY, not independent confirmation or a victory claim. Descriptive seed CIs do not imply independent cohorts. Two intended MC source slots remain unfilled; no posthoc substitutions or fabricated labels.
+
+Ten source-bound proofs distinguish fixed native activation span/rank, actual scalar unary/pair arity, support aggregation, deterministic multiresolution, conditional-risk identities, rare-context nonidentifiability, reachability and general joint-coded universality. Actual native numerical cap16/default4-8-16 and pair groups are distinct from broad constructor bounds. Raw/code/deployed TEST equality endpoints are finite-sample diagnostics, not population causal fractions. New observed gaps do not supply a historically distinct learning principle. All14mechanisms audited; generalizing causes remain UNKNOWN. No triple certificate or new family; prior MathE/F16/F17/F08/F18 closures retained.
+
+Read28_NEW_OBSERVATION_SPACE/V1/FINDINGS.md, SOURCE_SUMMARY.json, FAILURE_ATLAS.json, CODED_MEMORY_THEORY.md, ALGORITHM_GENERATION_REVIEW.json, RESUME.md and final_audit.json. News group-max-date split is not strict row-forward forecasting; small groups,rare-class absence and repeated partitions explicitly scoped. Provider archive mismatch,404s and unresolved identities preserved as source limitations. Only failed preparations/unfitted feature-name failures recovered; valid fits reused. Historical claims and all negative results preserved.
+
+Whole program/P0 remain IN_PROGRESS; milestone NOT_READY; macOS/nested finite ancestor remain EXTERNAL_MANUAL_GATE. Public runtime/API/tests/default512MiB/version1.0.1 unchanged; last_completed_round90. No clone write,Gitoperation,remotejob,release orpublication. RELEASE=TRUST; RESEARCH=FUTURE. This closes the bounded acquired observation panel only; future science is not declared exhausted.
+
+## Earlier dated evidence — retained without reopening
+
+## Latest mechanism resolution — 2026-10-18
+
+**ALL_CURRENT_BLOCKERS_TERMINALLY_CLASSIFIED; no triple certificate; Round91 NOT_OPENED.** MathE validation-bestprefix choices1/0/7/1/1 fail allfourfrozenchecks:1/5TESTLLwins,0/3validation-positive choicesonemptyfits transfer,medianTESTLL+0.3345%worse vsBase,worst+1.2574%. PREFIX_RETENTION_REJECTED;no optimizerprototype. Threeof4fixedrejectedfullproposals helptest:existingtablesexpressusefulobservedscores,but no safeacceptancefollows. OverallMathEclassification UNKNOWN;localizedpathlossnotpopulationfunctionclassproof. All5TRAIN/VALscoretracesbitwisematch;4minimumdiscardedfirstproposalsrecovered,0newfullfits.
+
+F16knownmedianSYNTHETIC_SIGNAL retained;rowwiseeffectrank differsfromrawmonotonicity,time/TTcoordinateorder. Fullreadablehistorymanifest/contextreview findsnoverifiableexactexecutedinternal equivalent;partialfuzzyoverlap/missingR17/18remainunresolved. No realorder-specificbridge;SYNTHETIC_SIGNAL_ONLY. F08/F18 BLOCKED_BY_MISSING_EXTERNAL_STRUCTURE withdata/domain/structuraltypesexplicit;notnegativeallvariants. F17remainsclosedTT-equivalent. No newfamily,prototype,externalconfirmation orrelease.
+
+Read27_MECHANISM_RESOLUTION/V1/FINDINGS.md,VERDICT.json,HISTORICAL_DEDUP_REVIEW.json,EXTERNAL_STRUCTURE_REQUIREMENTS.json,RESUME.md andfinal_audit.json. Prior25/26andtask24FAIL immutable;allnegative/positiveclaimsretained. Currenttaskcomplete;wholeprogram/P0IN_PROGRESS,version1.0.1/public512/last_completed_round90 unchanged;Mac/nestedexternalgatesunwaived. Runtime/API/tests/clone unchanged;noGitremote/publication.
+
+Permanent userpolicy recorded prospectively: **RELEASE=TRUST;RESEARCH=FUTURE**. No releasepressuremayalterresearch;no immatureideasinrelease. Future1.1trustgate0CRITICAL/0unresolvedHIGHruntime-productpluscrediblequality,systems,largeN,zero-config,cross-platform,packaging,predictablefailuresandknownlimits. This policydoesnotchangethisfrozenprotocol/verdict. Source:research_private/v1_1_program/RELEASE_TRUST_RESEARCH_FUTURE_POLICY.md.
+
+## Earlier dated evidence — retained without retroactive requalification
+
+## Latest causal witness phase — 2026-10-18
+
+**ALL_FOUR_PRIORITY_WITNESSES_REJECTED for promotion;zero novelty/causal certificates;Round91NOT_OPENED.** InitialV1diagnostics remainVALID/immutable. Whole program remainsIN_PROGRESS towardCODADAPT_NEXT_ALGORITHM_BASELINE. No new priority or release.
+
+MathEPRIORITY_A exact first-proposal traces match all5original histories. All5features/eightnonzero memories are constructed;allcategorical level codes identical. Four validation-worse proposals are atomically rejected;3have an observed better prefix,but complete unary blocks already fail in all4. This identifies admission/rollback path,not a proven generalizing fix or an intrinsic input/activation failure. Fixed deployed empty span NOT_EXPRESSIBLE for ranking;captured prefix scores CURRENTLY_EXPRESSIBLE;observedbetterprefix EXPRESSIBLE_BUT_NOT_REACHED(notpopulationtarget);generalizing target sufficiency UNKNOWN.
+
+Controlled bundle shift reproduces interceptAUC0.5 versus unarycontrol0.75;alignedlaw nativeAUC1/logloss0.08315beats unary0.56516,and nullstayschance. Always-drop-pairs is not a general remedy and component admission is historical. F16median regression nativeRMSE0.25versus knownOWAcontrol0is positiveSYNTHETIC_SIGNAL,not novelty/realtransfer. F17transitionlookup is restrictedTT;F08ontology/F18certifiedaction not supplied. Missing prerequisites are not empirical falsification of allvariants. Drug tie-only explanation STRONG_NEGATIVE_EVIDENCE:median bound0.00018315AUC versusgap-0.108614. MCaggregate-23.35%LL remainsADVANTAGE;rareclass robustness only.
+
+New work:4smallsynthetic nativefits,7firstproposalrecomputations(5real+2synthetic),100savedMCsignedcomparisons;0fullrealrefits/competitorcampaigns/benchmarks. Original4family semantic signatures preserved. See26_CAUSAL_WITNESS/V1/FINDINGS,CERTIFICATES,MATHE_CAUSAL_DECOMPOSITION,RESUME andfinal_audit. No further witness retry without original prerequisite/novelty change. Version1.0.1/public512/round90/P0IN_PROGRESS/Mac+nestedexternal/oldFAILunchanged. Publicruntime/API andGitHubclone untouched;no remotejob orpublication.
+
+## Earlier dated evidence — retained,not instructions to repeat completed jobs
+
+## Current Extreme Evolution checkpoint — 2026-10-18
+
+**Goal: CODADAPT_NEXT_ALGORITHM_BASELINE.** The bounded initial causal frontier is complete with unmet novelty gates;whole program IN_PROGRESS. This supersedes only current-task routing,not any historical verdict. No Round91. Version1.0.1/publicdefault512MiB/last_completed_round90 unchanged;no release or clone writes.
+
+All15 finalchallenge sources are now OBSERVED_DEVELOPMENT_FAILURE_LAB,not a future independent confirmation panel.75saved-prediction decompositions/300comparisons and75V8activation plus75Basejobtiming audits use no newfit,solve,predictAPI orbenchmark. MathE4/5intercept-only after rejectedfirstlevel;Drug median tie-only recovery<=0.00018315AUC;multiclass-23.35%logloss is an aggregate advantage with retained class-tail harm. Blog omission/equality diagnostics coexist with high selected-pattern support;no fraction of real regressiongap is causally assigned. Existingfit1.397287xFAIL remains;internal/outside-clock localization is not a causal speedfix.
+
+Twenty semantic families cover the15requestedaxes;four diagnostic priorities F08classontology,F16orderedcomposition,F17suffixstatelearning,F18certifiedinvariance. **ZeroNOVELTY_CERTIFICATE_PASS/zeroCAUSAL_WITNESS_PASS.** State-transition memory is restrictedTT,orderedaggregationknownpriorart,providerstructuresabsent,R17/18overlapunresolved. No newlearnerfit is admitted. This is not proof of impossibility or exhaustive closure of allfuture algorithms. Next specific prerequisites and controls are in25_EXTREME_EVOLUTION/V1/FAMILY_REGISTRY.json;ScientificMap2.0 contains eight added linked artifacts. Oldnegatives/P0Windows/WSL/KagglePASS/DockerpositivePARTIAL/Macandnestedexternal gates remain unchanged. P0IN_PROGRESS,milestoneNOT_READY. Prior task24 numerical gate/protocol/panel/wheel immutable.
+
+Read25_EXTREME_EVOLUTION/V1/FINDINGS.md,CHECKPOINT.json,RESUME.md andfinal_audit.json before future work. A complete materiallydistinct TRAIN-only principle must pass novelty,then its matched causal witness,beforeRound91. Do not rerun old recipes,turn diagnostics into confirmation,or tune on the observed panel.
+
+## Earlier dated program checkpoints — retained evidence
+
+Program adopted2026-10-15. **Version1.0.1 unchanged; last_completed_round=90,current_round=null.** Not automatically Round91. No release/version/tag/publication or public-clone write. The initial four tracks, expanded by the permanent exhaustive directive to seven, accumulate evidence toward a substantial multi-axis1.1milestone.
+
+## Terminal challenge decision and reading order
+
+**FINAL_CHALLENGE_COMPLETE;candidate gate FAIL;milestone NOT_READY.** 75/75exact pairs,0mismatch. Fit1.397287x(95%CI1.186471–1.923095)fails frozen1.05x;other cost gates pass. Native warm inference1/1k/100k=0.989703/0.995981/0.993021x;peakRSS1.007731x,pickle1.020645x,deep1.025164x. 5originalBlogFeedback512MiBrefusals remain recorded;V8admits all5,exact to the predeclared4096MiBcontrol. LightGBM gaps:binary-0.022727AUC,multiclass-23.35%logloss,regression+23.99%RMSE. Regression scope has one observational and four computational/backtest/query sources;not five empirical confirmations. Openweaknesses:0observedCRITICAL,6HIGHrows,13MEDIUM,1EXTERNAL_GATE_ONLYaggregate. The6HIGHrows coverfit/significance plus4binary source/competitor findings on2cohorts,not6distinctcauses. No causal explanation for fit overhead is claimed;do not repair/retune the frozen candidate on these now-observed sources. P0remainsIN_PROGRESS;actualMac/nested remainexternal. Currentweaknesses:24_FINAL_CHALLENGE/V1/WEAKNESS_REGISTRY.json;terminalhandoff:POST_COMPLETION_HANDOFF_V1/SUMMARY.json.
+
+Earlier checkpoint sections below retain their original dated scope. Their previous missing-source/future-challenge instructions are superseded by completedtask24;they are not instructions to repeat valid work. Runtime/currentprogramversion is1.0.1. The rootSTATEpublic_version1.0.0 is a preserved historical field,not currentruntime metadata;see RESEARCH_VERSION_FIELD_SCOPE.json.
+
+## Independent final challenge complete — frozen evidence,not a release
+
+All525slots terminal;450successful new model fits. Local frozen gate:FAIL. Exactness:True. Fifteen external original task sources/75splits;eleven empirical-observation sources,four published simulation/backtest/query sources. The latter are not empirical-regression confirmation. All failures,tails,conditional parent guard refusals and original protocol/presets remain visible. No candidate/source changes after outcomes. No new predictive improvement is inferred from unchanged predictions. See24_FINAL_CHALLENGE/V1/FINDINGS.md,GATES,SYSTEMS_SUMMARY,COMPETITIVE_SUMMARY,WORST_CASES,WEAKNESS_REGISTRY andfinal_audit. **P0/whole1.1 IN_PROGRESS;actualmacOS/distinctfiniteancestor and significance/product review remain.** Version1.0.1/public512/runtime/round90unchanged;noRound91,release,clonewrite orremoteGit.
+
+## Historical task23 cumulative snapshot — before the completed final challenge
+
+The existing frozen V8wheel already contains P1 and private failure-only cleanup. Eighteenproperties/eighteensource-bound evidencegroups verify;25wheel/sdist/installedsources,Python3.10–3.14Windows/WSLcontracts and21savedreplays are reused. Twelve public/P1files are byte-identical,nineguardmodules added,and only declared admission/constructor/failurepreparation methods differ in four counterparts. Predictor/persistence methods and numerical kernels are unchanged. No newfit,solve,benchmark or priorplatformreplay. P1input-regime inference/artifact benefits retain original limits;Kaggle/Dockeracceptance costs are not a fair fullspeedbenchmark and no generic training/RSS/size gain is inferred. **PASS_LOCAL_CUMULATIVE_SOURCE_BOUND is not global/default/release readiness.** RealMac one-commandoffline package is prepared with exactscience/candidate and13universalwheels;fivecompatibleDarwinbinarywheels are an explicit externalprecondition. No MacPASS claimed. Nested remainsEXTERNAL_MANUAL_GATE and blocks the originalfullP0/AUTO-defaultclaim;it is additionalrobustnessevidence only for a product retaining public512. No retrospectivewaiver. Finalchallenge gates and15source slots(5per task,5splits) are prepared beforeoutcomes. No verifiedfreshlocal source identities are available;all indexedaliases excluded. The challenge is NOT_EXECUTION_READY until genuinely independent raw/source/group/time/split identities are admitted and frozen. No oldreserve relabelledconfirmation. Openweaknesses:0observedruntimeCRITICAL/HIGH;2HIGHqualification/significancegaps,2MEDIUMlimitations,1EXTERNAL_GATE_ONLYaggregate. No universal absenceofbugs certificate. **P0/1.1 IN_PROGRESS;milestone NOT_READY.** Public512/runtime/API/version1.0.1/round90 unchanged;noRound91,clonewrite,remoteoperation orrelease. Current proof/matrix/weaknesses/MacZIP/finalchallenge protocol/finalaudit:23_CUMULATIVE/V1.
+
+## Latest verified actual Kaggle VM V2 — KAGGLE_VM_REAL_PASS
+
+The returned p0-kaggle-results-v2.zip is imported unchanged and fully CRC/SHA/path audited. All46manifest artifacts,4nested receipts,25installed source files in both archived layouts and19wheel identities verify. The trusted frozen collector exactly reconstructs every returned PASS field. Actual Linuxx86_64/Python3.13.15 Kaggle completes both original699635x21 arms;83guards pass,420all-row bucket/output comparisons and normalized learned state have0mismatch. Freshpickle/joblib/clone/Pipeline,explicitinteger hard caps and3controlled failure-atomicity checks pass. The real missingensurepip environment uses the isolated offline pip-lessvenv+hostpip24.1.2 path. Earlier user-reported KagglePARTIAL remains a historical bootstrap failure;only the pending actual-gate status below is superseded. AUTO/control wall7.117185641/6.415919837s and sampled fit-load-save peaks568066048/569679872bytes are scoped acceptance measurements,not a fair speed benchmark or isolatedfitpeak. Estimate655065376bytes,AUTO guard-available29720948736bytes,effectivebudget7086.0263671875MiB;visible cgroupv2 cap32212254720bytes. User attribution plus original platform evidence is not independent remote attestation,qualityconfirmation,FP/FN-rate estimation or an absoluteanti-OOMcertificate. Prior49fits reused,2actualKagglefits imported,total51models/2254comparisons;no new localfit,solve or imported-model execution. **P0 IN_PROGRESS:**WindowsPASS,WSLPASS,KaggleVMPASS,DockerstrictmatrixPARTIAL solely missing distinctfiniteancestor,macOSEXTERNAL_MANUAL_GATE. Proceed directly to actualmacOS with compatible isolated dependencies;the Linuxcp313wheelhouse is not aDarwinbundle. Cumulative planning may proceed inparallel;fullcumulativequalification/defaultdecision,independentfinalchallenge andsignificance gates remain unmet. **Milestone1.1 NOT_READY.** Public512MiB/runtime/API/version1.0.1/round90 unchanged;noRound91,clonewrite,remoteoperation orrelease. Authoritative current receipts,WEAKNESS_REGISTRY,MILESTONE_REASSESSMENT andfinal_audit:22_KAGGLE/REAL_VM_V2_IMPORT_V1.
+
+## Latest Kaggle harness compatibility fix — isolated offline V2 ready
+
+User reports actualKagglePARTIAL before fit:CPython3.13.15 lacksensurepip while hostpip24.1.2 is available. This is a bootstrap environment issue,not a provenCodAdapt/AUTO failure. Versioned private harnessV2 uses normalvenv whenensurepip exists;otherwise venv--without-pip plus supported existinghostpip--python. Only alreadyinstalledvirtualenv is an offline fallback. All candidate execution stays isolated with system/user-site disabled;no current-environment bypass. Hash-checked Linuxcp313 dependencywheels are bundled,so runtimeInternet is unnecessary. Five local regression cases PASS onCPython3.13.15/pip24.1.2 with Docker networkingdisabled,including actual absentensurepip fixture,presentensurepip,fullisolatedinstall/import/Cholesky,hostleak/reuse,oldreceiptprotection andbypassrejection. This is local packaging evidence,not actualKaggleacceptance. Originalscientific engine/criteria,wheel,source/data/bothprotocolhashes remain unchanged;no newfit/solve. Use newZIP in21_HARNESS/KAGGLE_BOOTSTRAP_V2 andNEW output/kaggle/working/p0-kaggle-results-v2. Preserve previousPARTIAL receipts;actualfullgatererun remains pending. 49valid scientificmodels/1834comparisons retained;strictDocker nested/macOS/cumulative gates stillpending. P0/1.1IN_PROGRESS,milestoneNOT_READY,public512MiB/API/runtime/version1.0.1/round90 unchanged;noRound91,clonewrite orpublication.
+
+## Latest actual Docker Desktop qualification — strict matrix PARTIAL
+
+Docker Desktop4.95/Engine29.8.2 is now actually available;this supersedes only the earlier dated capability-absence observation. Real cgroup-v2 comfortable4GiB and default-unlimited containers each complete both original699635x21 arms. Fournew valid full fits,840array comparisons and normalized learned state have0mismatch;45oldP0models reused,total49. At1GiB AUTO rejects before encoding,remainsunfitted and does not injectOOM. Explicit512reject/1024admit,pickle/joblib/freshclone/Pipeline and controlled atomicity pass. Available scenarios are DOCKER_DESKTOP_REAL_CONTAINER_PASS. The original unchanged matrix requires a distinct finite nested ancestor and correctly remainsPARTIAL: actual hierarchy has one finite level and read-only cgroups. Nested isNOT_AVAILABLE_IN_CURRENT_RUNTIME;actualv1 absent;no privileged/global Docker reconfiguration or simulated ancestor. AUTO budget961.14453125MiB under4GiB versus3070.8046875MiB under visible-unlimited;fit/load/save sampled peaks~541–545MiB,not isolated fit peaks or ananti-OOM certificate. Operational PATH/PYTHONPATH/module-import failures are retained and minimally recovered;valid fits/comparison were not repeated for cost or harness recovery. P0/whole1.1 remainIN_PROGRESS andmilestoneNOT_READY. Missing nested/KaggleVM/macOS/cumulative coverage;no independent nativeLinux hardware or predictive confirmation claim. See20_CONTAINER/DOCKER_DESKTOP_V1:RESULT,FROZEN_MATRIX_REPLAY,RESOURCE_RESULTS,WEAKNESS_REGISTRY andfinal_audit. Public512MiB/API/runtime/version1.0.1/round90 unchanged;noRound91,clone write,Git orpublication.
+
+## Latest actual capability audit — maximum authorized automation complete
+
+Windows and actual Ubuntu24.04 WSL2 capabilities were read directly after sandbox-only limitations were resolved. Registered native Python3.10–3.14 and WSL3.12 metadata are readable; no scientific fits or numerical qualification tests were repeated. No usable Docker/Podman/containerd or checked alternative runtime, authenticated configured Kaggle route, or verified actual macOS host is available. Native/WSL DNS/TLS PASS does not establish remote execution. Actual WSL cgroup v2 metadata PASS is not finite-container acceptance. Container/KaggleVM/macOS remain EXTERNAL_MANUAL_GATE under current capabilities; if an authorized local runtime appears, execute its gate automatically. Kaggle upload/job still needs separate single-task authorization after authentication is available. **Original Downloads/train(3).csv is now present and exact-SHA256 valid**; the earlier absence snapshot is preserved, not reused as current status. Windows/WSL full-real-fit PASS and45controlledmodels/994exact comparisons are reused. No new fit/solve/benchmark, remote job, secret disclosure, clone write or release. P0/whole1.1 remain IN_PROGRESS, milestone NOT_READY, public512MiB/default/source/version1.0.1 andround90 unchanged; noRound91. See19_CAPABILITIES/MAX_AUTOMATION_V1 per-gate receipts and RESUME for actual-host/new-information triggers.
+
+## External manual-gate handoff — prepared, not executed
+
+CURRENT_OBSERVATION_SPACE_EXHAUSTED is accepted for current local observations; it is not RESEARCH_COMPLETE or V1_1_MILESTONE_READY. Program1.1 and P0 remain IN_PROGRESS. A final private V8 wheel/standalone manual gate ZIP is prepared for actual Kaggle VM, controlled container and macOS execution. The existing V3 fit/comparison/persistence/atomicity functions and all25predictive source files are preserved; only installed-package setup adapts. Eleven unique no-fit preparation checks and3help smokes pass; actual external runs=0. No simulated host is PASS. At that earlier preparation the original Downloads/train(3).csv path was absent; later availability observations supersede only that point-in-time status, never regenerate from cache. Valid Windows/WSL full real fits remain valid. V1_1_MILESTONE_GAP_REPORT.md records qualified gains, external gates, known weaknesses and RC1 prerequisites; verdict NOT_READY. Round90 already belongs to1.0.1; no transferable new quality gain or three broadly qualified incremental release reasons are claimed. Next trigger is EXTERNAL_GATE_RESULT or NEW_EXTERNAL_EVIDENCE. Do no further local experiments without such evidence. Round91 NOT_OPENED; public512MiB/runtime/API/version1.0.1/round90 unchanged. No Git/remote/clone write or release.
+
+## Latest milestone-gap continuation
+
+The source-contract task remains closed. The next locally actionable metric gap was completed from435savedclassificationcells/19observedsuppliedtasks/87splitunits:1580classrows,348splitpairs,1264classpairs. All original global metrics and row/class alignments replay;no model was loaded,fit or predicted again. Median source mean AP delta vsLightGBM is -0.038154binary and -0.069668multiclass(macroOVR);these are descriptive observed-panel comparisons,not independent confirmation. Signed class-loss accounting reconstructs global logloss deltas within5.56e-16;aggregate gains can hide class harm. This is additional measured coverage,not a new causal/noveltycertificate or a candidate. R85-R89 and P3/P5/P6/P7/P8 remain closed under original retry conditions. Current admitted local observation pass reached CURRENT_OBSERVATION_SPACE_EXHAUSTED;whole1.1/P0 remainIN_PROGRESS. P0 actualcontainer/KaggleVM/macOS remainEXTERNAL_MANUAL_GATE;futurecumulativecandidate/finalchallenge areprerequisite-gated. Source1.0.1,round90,publicdefault512MiB unchanged;noRound91/release/clonewrite. See17_WEAKNESS_AUDIT/CLASS_TAIL_AP_V1.
+
+## Latest authoritative continuation
+
+**P0 AUTO remains IN_PROGRESS and is not completed.** Private V8 completed the real 699635×21 full zero-configuration fit on Windows and WSL. 51 controlled models are valid; 2254 new-case array comparisons have no mismatch. Actual constrained Linux-container, Kaggle-VM and macOS runs remain EXTERNAL_MANUAL_GATE. Public AUTO is not promoted: the runtime default remains512MiB.
+
+Current independent phase: FINAL_CHALLENGE_COMPLETE. The original-task MC/reg atlas has 231/231 sealed cells at this memory update, on42 original split units; official333/312 each has one partition. The current14-source binary330-cell phase is complete in observed-development scope. All VALID fit/latency checkpoints are reused. No Root runtime/test/version change belongs to this continuation.
+
+Private P5 inference-only demand-mapped coarse-code counterfactual: TERMINAL_REJECTED_PRIVATE_RECIPE. The fixed P5 recipe has observed eligible wide warm ratio0.544x but fails its frozen worst-point regression gate. It remains closed/rejected;no retuning,integration or RSS benefit is claimed. P0, quality research and exact systems evidence keep their separate scopes.
+
+Exact current continuation: ActualMac/nested receipts and causal/significance/productscope review;no repeatcurrentnowobservedpanel or rejectedcandidate tuning.
+
+All prior registered benchmark/follow-up chains have exited. The separately frozen all-nine-source atlas has 270/270sealed cells at this update; check its live job receipts before resuming. Old chain plans are historical execution evidence,not a direction to restart completed jobs. Reuse all valid fits/latency units.
+
+Current full source inventory:CURRENT.json ->research_private/v1_1_program/02_COMPETITIVE_ATLAS/SOURCE_CONTRACTS/CURRENT_VIEW_V5/SOURCE_REGISTRY.json contains111aliases/100explicitprovider-taskidentitygroups,notindependent sources. Eighteensyntheticcontrols remainseparate;all29P1realworkloadreferences andALL9originalqualifiedsources(including22648301)arecovered. 270historicaljobchains/45originalgroup-timepartitionsrecoveredwithoutrefit;newcurrentfourthread270-keycontractseparatelyfrozen. Broader66partialaliasesremainnotadmittedfornewfits;93legacyMCchainsremainPARTIALfornewdecisions. Versioned supplements preserve all earlier views and add direct unit facts; all66cachedsource-scope reviews are recorded when their sealed completion receipt is present. Documentary completeness does not waive unresolved primary-admission gates. V3actualhostharnesspreparedonly;P0actualcontainer/Kaggle/macOSnotPASS.
+
+Earlier scoped progress follows; original receipts and the latest summary retain their explicit evidence boundaries.
+
+Current frozen source/frontier task reached **CURRENT_OBSERVATION_SPACE_EXHAUSTED**,only within its bounded local pass. P6fullprimary1.09344x/worst1.33407x rejected;C42whole-arrayduplicateupperbounds0;P7wide0.37633x/worst1.08288x andP8wide0.52081x/worst1.20287x both rejected by original stage downside gates. No width/cap/cutoff/kernel retuning,publicintegration,RSSsaving or quality gain is claimed. The whole1.1program andP0 remainIN_PROGRESS;actualhost/newsource/causal/physicalwitness gates remain.
+
+The permanent RELEASE_SIGNIFICANCE_AND_WEAKNESS_LOOP policy was recorded without changing currentprotocols. Its first compatible saved-evidence scorecard/tail/gap plan is complete;three HIGHqualification gaps are unmet gates,not observed runtimebugs. No cumulativecandidate/redteam/finalchallenge/release is claimed;no CRITICALabsence certificate.
+
+V1_1_BASELINE_0 freezes the already integrated Round90 exact trainer, source/test/API hashes and prior release receipts. New systems candidates must compare against this optimized baseline, never the older slow1.0.0trainer. Ten qualified saved models are reused without scientific refits; engineering probes are not independent quality confirmation.
+
+Current phase: FINAL_CHALLENGE_COMPLETE. Program remains IN_PROGRESS. See research_private/V1_1_GRAND_PROGRAM_REPORT.md, v1_1_program/MASTER_STATUS.json, CHECKPOINT.json, RESUME.md and per-job receipts. Inference profile -> up to8historically deduped ideas / at most4exact candidates -> memory/serialization -> large-N -> competitive atlas. Quality remains certificate-gated; closed lines and all negative evidence retained.
+
+EXPERIMENT_UNIVERSE, RESEARCH_COVERAGE_MATRIX, EXPERIMENT_QUEUE, positive/negative knowledge, open questions and productization backlog are permanent. Unknown causes need a concrete next test or explicit missing-evidence blocker. Continue through ready distinct tasks; only V1_1_MILESTONE_READY or a fully audited CURRENT_OBSERVATION_SPACE_EXHAUSTED closes the long mission. No absolute claim that all possible future ideas have been tested.
+
+The permanent scientific map is research_private/scientific_map/SCIENTIFIC_MAP.md with hash-bound claims, mechanism maps, evidence levels, historical round index and append-only claim versions. Every new result, audit and negative outcome must update this global knowledge; UNKNOWN material causes require a falsification plan. This index never upgrades historical evidence, repeats valid fits or changes frozen protocols.
+
+Read all current and historical evidence with its original scope: old blind competitive timings remain legacy evidence, and no user-confirmed remote receipt is promoted to independently fetched evidence. New atlas protocols may use4threads; the original frozen benchmark retains its6-thread tree presets and unchanged protocol hash.
+
+P0 requirement: RESOURCE_AWARE_ZERO_CONFIG_MEMORY_ADMISSION (realKaggleCSV699635x21; static512MiB guard refusal at624.72MiB now reproduced). P3 is terminally rejected;P0 continues without changing P3protocol/gates/publicruntime. Source C:/Users/lucal/Downloads/train(3).csv,target satisfaction,exclude id;fullidentity/cache verified. LocalWindows/WSL AUTO resourcepairs nowexact:980fullrowarrays0mismatch,normalizedlearnedstates/persistencePASS. ActualKaggleVM/macOShardware notqualified. Required before1.1milestone. See07_PRODUCT/P0_MEMORY_REQUIREMENT.json,REAL_STAGE_AUDIT_V1 andScientificMap backlog.
+
+P0-A frozen candidate terminal verdict: PRIVATE_AUTO_MEMORY_V2_NOT_PRODUCTIZABLE_VALID_INPUT_PROFILE_GAP.20smallAUTO fits acrossWindows310-314/localWSL,6CVfolds,4realresourcefits and6largeNfits remainVALID;one minimum valid-inputparent witness bringscontrolledmodeljobs to37(testfixturefitsseparatelyscoped). Real980arrays andlargeN2200arrays match;largest2Mrows,peaklargeNwholeworkertree869036032bytes. Privatecopiedsuite aggregates620PASS4knownXFAIL:617passes/4XFAILreused plus3targetedlegacyguardexpectationrepairs,original3rawfails preserved. Wheel/sdist sourcesexact/privatepayloadexcluded. HoweverBaseaccepts validexternalvalidationlists andAUTOprofile rejects them,remainingunfitted:defaultcompatibilityNO_GO. No candidate/protocol retroactive change. P0requirement remainsOPEN;reopen onlywith boundedcurrentlyvalid inputprofile,unaffectedfits/testsreused. Publicdefault512/API/runtime unchanged. SeeAUTO_MEMORY/FINAL_V2 andFINDINGS_V2.md.
+
+Second user requirement P0-B: P0_KAGGLE_QUALITY_GAP_ANALYSIS is activeafterP0-Acandidate terminal. Prefitdataaudit and70/15/15split/fivefixedrecipes arefrozen;see currentcheckpoint andp0_quality_current_progress forfit/analysisstatus.97-98%accuracy is notassumed. Fullrowresource models MUST NOTserveasheldoutqualitybaselines. NewpermanentWORLD_CLASS_DATASET_AGNOSTIC_GLOBAL_OPTIMIZATION policy:Kaggle isacceptance/failurelab only;no dataset-specificalgorithm/productionthreshold/featurehack orsingle-sourceleadershipclaim. Generalmechanisms requirehistoricaldedup,causalwitness andindependent-source transfer;prefer>=3sources. Futurefrozenbenchmark targetsbinary20-30,multiclass15-25,regression20-30 acrossall15quality/systems/UXaxes. Currentprotocols/candidates/splits/gates remainunchanged. See07_PRODUCT/WORLD_CLASS_POLICY/POLICY.json.
+
+P0-B fixed diagnostic panel terminal:Base90.0215%accuracy,fixedreferences92.5190-92.5524%;97-98%not supportedbyfixedfairrecipes. Ranking/discardedinformationwitness,minor globalcalibrationrecovery;scarceindividualcellsupportnotdominant. Exactcausalpartition/trueceiling/trainablegain/other-source mechanismtransferUNKNOWN;qualityrequirement PARTIALLY_ANSWERED,notclosed. All5fits/200draws/atlas/20systemscells/80permutationsreused. Nextoutcome-independentinventoryandno-fitsavedbinarysourcereplication;noKaggle-specificcandidate. See03_QUALITY/P0_KAGGLE/FINAL_V1.
+
+P0-V3 metadata-only profile repair:264affectedtestsPASS acrossWindowsPython3.10-3.14/localWSL,1previouslyrejectedlist-validation fit nowlearned-state/full480rowoutput/persistenceexact;38controlledP0models total,37reused. Conservativepolicy/detector/learning/preprocessing unchanged. Opaquecustomconversion remainsunbounded. Userdecision2026-10-16:preserveALLcurrentlyacceptedarraylike beforeAUTOdefault;studyconservativefallback,failureatomicity,documentlimits,nosilentmanualconfigurationrequirement. Standardfix isscopedVALID,notdefaultpromotion;public512unchanged. SeeBOUNDED_PROFILE_V3/FINAL andINPUT_CONTRACT_DECISION.
+
+P0-V4finiteprivatecompatibilitypanel COMPLETE:168affectedguardsWindows3.10-3.14/localWSL,one newopaquevalidationfitexact;38validoldmodelsreused,total39controlledP0models. Original-onceconversion/legacy512estimatecap/headroomfloor/postnormalizationremainingfitcheck preserveordinarycustomarraylikecontract. Unknownconverterpeak remainsUNQUALIFIED,not hardOOMsafe. Flagcovers externalvalidation only. Privatewheel/sdist/Ruff/Twine,6freshpackage layers18savedparentreplays,6installedguards andseparatesdistlayerPASS. Publicruntime/tests/default512unchanged;futurecumulativeAUTOdocs/cost/externalqualification stillopen. PackageCRLFharness andWSLtransitivepth failures preserved/minimallyrepaired,zero rebuild/fitrepeat. SeeOPAQUE_FALLBACK_V4/FINAL;longprogramIN_PROGRESS.
+
+NEW P0metadata-subclasscounterexample afterfiniteV4panel:RootBase3preparationsreachedoriginaltrainerwithsavedparentcodes/targets/weightsexact/no metadatahooks. V4standardcontrolacceptedpreparation,training+validationDataFramesubclassesrejectedafter1/2newmemory_usagecalls.6APIpreparationattempts,4encoderquantilepreparations,0newlearnedfits/solves;39oldP0modelsreused. Thisisnot3newcompleteBasefits. WiderAUTOdefaultNO_GO;V4finite/previouspositiveevidencekeptVALID. PrivateV5trustedmetadata/legacycapunknownremainderprotocolfrozen;source/tests stillpending. No publicswitch/hardOOMclaim. SeePANDAS_SUBCLASS_CONTRACT_V1/FINAL andMETADATA_COMPATIBILITY_V5/PROTOCOL.json.
+
+PrivateV5 localcontract gatesVALID:546uniqueaffectedpurechecks (91eachWindows310-314/localWSL),1new5000rowtrain+validation-subclassfit reproducesexistingparentcodedpreparation/fulllearnedstate/alloutputs/pickle/joblib/freshreload;0metadatahooks.39oldmodelsreused,total40. Guard-onlyASTproof/17otherfilesbyteidentical. Unknownremainderremainslegacy512capped/unqualified,notOOMsafe/fullresourcecertificate. Source/cost/privatepackage scopes pending;public512/Rootruntime/tests unchanged. WSLseparatorfailurebeforecollection repairedonlymissing91checks;455Windowschecksreused. Sourcepre-freezeEOL/class-countreview/DRAFTandnegativeevidence preserved. SeeMETADATA_COMPATIBILITY_V5/SOURCE_AUDIT andMINIMUM_ADMITTED.
+
+PrivateV5 finitepanel terminal:546purechecks/one5000rowexactsubclassfit,total40models39reused.21sourcebytes/privatewheel/sdist/Ruff/Twine/sixinstalledlayers18replays/sixresourceguards/separatesdistPASS. Knownreal699635x21/2MrequirementsmatchV2;metadata-onlyguardcost318.5498ms/.172ms,notfitratio. Unknownremainderremainslegacy512capped/profile-resourceunqualified/lower-bound,notOOMcertificate. Public512/runtime/tests/versionunchanged. WiderP0cumulative/defaultdocumentation/resourcecoverage/externalqualificationOPEN. SeeMETADATA_COMPATIBILITY_V5/FINAL;reuseallvalidmodels/tests/packages.
+
+Robustness finitecontractaudit complete:6savedP1models/78newsmallquerycells,0unexpectederrors/nonfinite/warnings/inputorlearnedstatemutations.620suite/largeNresourcefitsreused,0newfit/solve.19regimerowskeeptraining/realshiftqualityUNKNOWN withnextfalsification/blocker;finitepredictionsdonotproveaccuracyrobustness. See06_ROBUSTNESS/CONTRACT_MATRIX_V1/FINAL.
+
+ActualWindowsresourceconstraintaudit:flat2GiBprocess/3GiBjobcaptured;stricterouter1.5GiBunderinner2/3GiBnotobserved. Pure430MiBrequestadmitsfromvisiblecurrentjobbutrejectswithallownhandles.2tinychildren,0fits/solves/largeallocations;noOOMclaim. Detectoralreadydocumentsinaccessibleancestors;visible-onlyqualificationisnotall-constraintcertificate. V5finitepanel/40models/546checksremainVALID;publicAUTOdefaultscopeunresolved. SeeACTUAL_CONSTRAINT_COVERAGE_V1/FINAL.
+
+Hidden-limitlocalfeasibilitycomplete:current-job-onlyobservationcannotcertifyunobservedancestors;notproofWindowsAPIs/AUTO/custominputs impossible. Visibleheuristic,unqualifiedlegacycap,futuredocumentedeffectivelimitsaredistinctcontracts,none newlyimplemented. TwoSDKrootsabsent/notexhaustiveAPIsearch. Userchoice2stillbinding/public512unchanged. No newfit/solve/process. Frozenhelper1F401preserved/AST-equivalentlintcopyqualified;validanalysisnotrerun. SeeHIDDEN_LIMIT_FEASIBILITY_V1.
+
+Researchmapserialization-ordergaprepaired:latestunknownupdatesmovedbeforeprojection;15serializedplans/currentevidencehashes,7purechecksPASS. Prior5QAscopevalidbutmissing2invariants;oldsource/map/REDnegativepreserved. No scientific/runtimechange. Reserve859/428/138available-historyscanIN_PROGRESS:175865selectedtextfiles/2.45GB,first240stimeouttechnical/0validscanunits;streaminghash-chainrepairreusesallcompletedfileunits. No reservepreparedlabels,outcomeselection,fit/solve/downloadorfreshnessclaim. SeeRESERVE_HISTORY_V1/RESUME.md andSTREAMING_REPAIR_V1/CHECKPOINT.json.
+
+Reservehistoryfinitepanelcomplete:175865fileunits/352hashparts/193references/158known-aliasrootunits;30raw-cleanhashchecksPASS.859alreadyconsumedby30core-validpastSafeBlendqualificationfits,samepreparedSHA;notfresh.428/138noavailableoutcomeexposurefound,butearlyarchive/72read-oversize/1encoding/21aliasrootgapsretained:2limitedprospective,0unconditionalfresh. NinecachedUCIprovenancereceipts/CCBY4declarations verified;no fit/solve/download/preparedlabeldeserialization. Frozenoldportfolio/common16cohort/255unitsunchanged;delta nominal100observed+2limited. Technicaltimeoutnotresearchfailure. SeeRESERVE_HISTORY_V1/FINAL.
+
+Linuxaddress-spacewitnesscomplete:ownsoftRLIMIT_AS128MiB,before/afterresident/cgroupsnapshotsidentical,256MiBvirtualreservationfailsENOMEM12/0pageswritten. Directgetrlimitobservescap,currentdetectoromitsit;purephysicalpolicy430MiBrequestadmitnotaddressfeasibility. Ownlimitrestored,0MLimport/fit/solve,notactualmodelOOM/RSScap. Nextallocation-domain/false-rejectfeasibilitybeforeanynewguard;no frozenpolicyretuning orpublicdefaultswitch. V5/40models/546guardsremainVALID. SeeLINUX_ADDRESS_LIMIT_V1/FINAL.
+
+Actual1GiBWindowscommitquotautilitycounterexample:onepreregisterednew480x6legacy512controlfitmatchesoldparentfullstate/alloutputs;parent/40oldmodelsreused,total41. AUTOsameinputrejectsbudget0beforeencoder/trainer/0learnedfits,atomic. Kernelcommitpeak310296576bytes(notRSS). Fixed1GiBreserveplus256MiBpilotfloorbothmaterial;no frozenpolicy/source/defaultretuning. V5finitecompat/packagepanelVALID,butgeneralAUTOdefaultNO_GOinthisactualregime. Futureglobalresourcepolicyneedsnewsource/domainprinciple+preregistration;reuse41validmodels. SeeLOW_CAPACITY_LEGACY_V1/FINAL.
+
+Retainedcapacitysourceauditcomplete:HISTORICALLY_EQUIVALENT24lookup/headboundalreadyknown,notnewrepresentation orreplacementE.4860purealgebracells/700crosschecks/0fits. PilotHnotactualretainedbytes;coefficientpacking/category/allocator/commit/virtualdomainsremainseparate.41modelsreused,source/default512unchanged. Nextseparatelypreregisterlegacycompatibilityversusqualifiedextensioncontract,no frozenconstantretuning. SeeRETAINED_CAPACITY_RECONCILIATION_V1/FINAL.
+
+Two-tierresourcepurecontractPASS:18144cells/3024monotonicgroups/216explicitintegerchecks;old1GiBcontrolwouldadmitcounterfactually,notnewAUTOlearnedfit. Legacy512risknonexpansion versusstrictnewheadroomextension,oldE/Q/CONSERVATIVEunchanged;unknown/finitevirtualdomainblocksnewextension pendingqualification. Purepassnotadapter/defaultqualification;41modelsreused. Nextread-onlydomainmetadataandoriginal-once/failureatomicitygates. SeeRESOURCE_TIER_CONTRACT_V1/FINAL.
+
+Virtualdomainmetadatapanelcomplete:5minimumWindows310-314stdlibreads,effectivevirtualchannelUNKNOWN/notfabricatedunlimited;notproofnoWindowsAPI. PriorWSLunlimited/finite128MiBgetrlimitwitnessreused,0newLinuxcap/mmap/MLfit. Newcontractabove512Winextensionunqualified;privatelegacytierstilltestableunderseparatepreregistrationwith41modelsreused. Publicdefault512unchanged/no publicAUTOqualification. SeeVIRTUAL_DOMAIN_METADATA_V1/FINAL.
+
+PrivateV6legacytierfiniteintegrationterminal:23sourcefiles20parentexact/puretierASTexact,294changedguardsPASS6runtimes,9validoriginal-callback/atomicitypreparationsstopbeforeencoderfit.41modelsreused,0newencoder/learnedfits. V1NaNharnessfailurepreserved/V2byte-comparison+per-casecheckpointrepair;1invalid+9validAPIattempts. Windows>512virtualUNKNOWNstillrejects,real699635x21P0notresolved/defaultNO_GO. Publicsource/tests/default512/API/version/round90unchanged. NextsavedWindowscapability/sourceauditbeforeanynewextensioncontract. SeeLEGACY_TIER_V6/FINAL.
+
+Windowscapabilitymetadataauditterminal:oneextraOSreadcapturesvirtualnamedfieldsalreadyreturnedbyfrozen64byteABI;notworkspace/contiguous/effectivehierarchy/unlimitedcertificate. Sixsavedsuccesssnapshotsalljobmembers/0unconfined;hiddenancestorwitnessunchanged. No newWindowsrelaxation/source/fit;41modelsreused. NextonechangedV6Linuxactualrealcachedguard-onlycallundernewpreregistration,thenremainingcoverageeligibilityaudit. SeeWINDOWS_CAPABILITY_V1/FINAL.
+
+ActualV6Linuxrealguardterminal:verified699635x21cache/ownunlimitedRLIMIT_AS/twovisiblesnapshots,onechangedguardadmitE655065376/Q923500832exactoldWSLmodel. Freshestimatorunfitted/noencoder/0fit/prediction;41modelsreused. SampledmetadataworkerRSS272187392bytesnotfullfitpeak. NotKaggleVM/defaultpromotion;Windows>512domainunqualified. Nextremainingprogrameligibility/sourceadmissionauditsandQA-scopeerratum;no repeatedvalidunits. SeeLEGACY_TIER_V6/LINUX_REAL_GUARD/FINAL.
+
+PrimaryOSreview+actualAppMemoryInfochannelterminalNEGATIVE:7read-onlyMicrosoftreferences,newone-own-child/2Appqueries. Available3210383360+private10842112matchesinner3GiBnumerically;outer1.5GiB/process2GiBtighterunobserved. Minheadroomdiagnosticdoesnotfixold430MiBpolicycounterfactual;no suchallocation/MLfit/source/defaultchange. All41models/V6proofsreused. NotallWindowsAPIimpossibility;nextbaseline-relativeriskcontractreview,notQcertificate/typeban orreserve tuning. Read-onlywebbibliographyallowedbyprior-artdirective,noGitremote/publiccloneaction. SeeDOCUMENTED_APP_COMMIT_V1/FINAL.
+
+Formallegacyadmissionreviewterminal:45purechecks/AST0opaquehooks;oldE<=512predicatecanbepreservedwithoutinputprofiling. FullQ<=A orE<=A isdifferentgate,notunconditionallegacyadmissionequivalence. RelativebudgetcompatibilitynotnewOOMcertificate/userdefaultapproval;512capcounterfactualnotmeasurednewfit. All41models/V6gatesreused. NextseparatelypreregisterprivateV7legacy-firstfeasibility,strictV6largerextensionsunchangedinitially,0newfit/publicchange. SeeBASELINE_RELATIVE_CONTRACT_V1/FINAL.
+
+Private classifier failure-only cleanup qualified:42matched zero-fit preparations across Windows3.10–3.14/localWSL. Four public-source custom target/weight dispatch failures left old predictions available;private exception-only reset fixes them while preserving exception/callback context and successful-fit AST. All41P0models reused;public runtime/tests/default512/version unchanged. Medium bug accumulates toward1.1;no release or public integration. See12_BUGS/PRIVATE_DISPATCH_CLEANUP_V1/FINAL.
+
+PrivateV7legacy-firstfinitepanelVALID:192changedguards/sixruntimes/ninezero-fitpreparations;zero newinput/resource/domain probes inside oldE<=512domain. Unknownrequiredbytes/conversionpeak/no certificate explicit;strictV6largerextensionunchanged,21otherfilesexact/classifierqualifiedfailurefix. 41models/42dispatchcasesreused;package/cost/cumulativecontractpending,publicsource/default512held. SeeLEGACY_FIRST_V7/FINITE_PANEL.
+
+PrivateV7cumulativequalificationterminal:wheel/sdist/Ruff/Twine,6freshwheel+1sdistlayers/21saved-parentreplays/23sourcebytes/pickle-joblib/clone-pipelinePASS. Ready-importhelpercostseparatelymeasured;notfullfitratio. GeneralAUTOdefaultNO_GO:largerWindowseffective-domain/hiddenlimitsandindependenthardwareunresolved. 41modelsreused/0newfits;publicruntime/default512/versionheld. P0staysOPEN,notmissionexhaustion. SeeLEGACY_FIRST_V7/FINAL.
+
+Provider-IDmetadataauditterminal:100observedcatalogrecords ->89canonicalprovider/taskgroups (binary14/multiclass33/regression42),stillupperboundswithunknowncross-provideraliases. ExplicitUCIidentity/URLmerges only;OpenMLprefixsometimesincorrect. No prepareddata/model/resultfiles/reservelabels opened. Old16cohort/255units/history unchanged. Broader source/license/target/hash/group/time/preset admission separate;notnewfaircomparisoncoverage. SeePROVIDER_ALIAS_METADATA_V1/FINAL.
+
+Observedbinarydocumentaryadmissionterminal:14distinctUCI_IDs/cachedproviderCCBY4/target-shape/sourcehashverified;8legacyaliasesrecoveroriginalreceipts. Zero data/model/resultdeserialization,newdownloads/fits orreserveconsumption. Thoracicspelling/DARWIN_ID/IranianCustomerValue caveats explicit. Onlymetadataready,notnewbenchmark/leakage/freshconfirmation. Separate reader/group/time/five-split/preset/reuse readiness next. SeeOBSERVED_BINARY_METADATA_ADMISSION_V1/FINAL.
+
+Observedbinaryreuse-readinessV2terminal:45originalsplits/25missingtofive,28declaredBase/HGBmodelbytesvalid,0mismatch. V1alternatereceiptschemafailurepreserved;8validcasesreused/6missingonlycompleted. No input/modeldeserialization/newfit;oldbytevalidityisnotcurrentrecipe/timingqualification. Incidental2historicalmetricdictsdisplayedafterfixed14cohort,allretained/nochanges/noreserve. Reader/unifiedjobkeyauditremainsseparate.
+
+New explicit userchoice2:study conservative AUTO using visible resources with explicitlimits/noabsoluteantiOOMpromise. Keep public512/explicitusercaps,allarraylikelegacycompatibility,no downsizing/subsampling/predictivedrift,mandatoryatomicity. RequireWindows/Linuxcontainer/Kaggle/WSL/macOS/real699635x21/estimate-available-pointRSS-peakRSS/FP-FN beforefuturedefaultdecision. ThisauthorizesnewprivateV8contract,notretroactiveV6/V7relaxation orpublicpromotion. Old41models/allnegatives preserved. SeeVISIBLE_HEURISTIC_DECISION_V1.
+
+PrivateV8visibleheuristiclocalqualificationterminal:372changedguards/sixruntimes,fouractualrealCSVAPIpreparations stopbeforeencoder,sevenfreshpackagelayers21saved-parentreplaysPASS. 25sourcefiles/21parentbyteexact,E655065376/Q923500832/trainingindicesexact;41models/980realarrays reused,0newencoder/learnedfits. RSS/commit/VMS/addressheadroom/epochscopedtable;generalguardFP-FNratesUNKNOWN. WSLpath/invalidmutablelistaggregates/finalsealharnessfailurespreserved/minimumrepairs,no reexecutionofvalidunits. ActualLinuxcontainer/KaggleVM/macOS EXTERNAL_MANUAL_GATE,notFAIL;offlineharnesspreparedonly. Userchoice2honored/public512held. Thisisnotpublicdefaultqualification orwholemissionexhaustion;independentreader/reuseidentityauditready. SeeVISIBLE_HEURISTIC_V8/FINAL.
+
+Originalreader-scopeauditterminal:14fixedobservedbinarysources/45originalsplits/28model-byte receipts reused. SPECT80/187officialtask retainsonequalitysplit;nominal25shortfallincludes4fakeindependentfolds. Originalcontract66target/21missingunits;no sourceexcluded/oldprotocolchanged. ReaderAST/prose isnotfreshrawleakageproof;CustomerValue/entity/upstreamprovenanceconditional. Old0.2rc2source differsfromcurrentBASELINE_1;futureexactjobkeysawaitunifiedsource/preset/env/splitmanifest andmatchingoldkeysearch. 0newfit/solve/input-modeldeserialization/download/reserveconsumption. SeeOBSERVED_BINARY_READER_SCOPE_V1/FINAL.
+
+P0STILLIN_PROGRESS2026-10-17:beforeencoderadmissionwasNOTacceptance. FrozeninstalledprivateV8nowcompletesexactCodAdaptClassifier(random_state=42).fit onreal699635x21Windows/WSLwithnomanualbudget;980fullrowarrays/state/freshpersistenceexactoldexplicitparents. Onecompleteopaquelegacyfallbackfit/originalonceconversion,andoneactualownchild1GiBquotaV8AUTOcompletefitexactoldcontrol;4newminimumengineeringfits+41reused=45. 48newofflinecgroupintegration/newfittedfailed-refitchecksPASS. WSLcaptureFDfailurebeforecollectionretained;only24missingchecksrepairedcapture=sys. CurrentE/Q/available/pointRSS/actualpeakCSVscoped;actualquotaRSS141320192/commit310280192separate. GeneralguarderrorratesUNKNOWN. ExactMANUAL_HANDOFF_V2prepared/newverifylocallysmokedwithsavedmodels/0fit;actualLinuxcontainer/KaggleVM/macOS EXTERNAL_MANUAL_GATE,notFAIL. Public512/runtime/tests/version1.0.1held;noP0completion/defaultpromotion. Wholeprogramcontinuesautomaticallytoauthorizedbenchmarkmanifestpriority. SeeLOCAL_ACCEPTANCE_STATUS_2026_10_17.
+
+Currentobservedbinarybenchmarkpreregistered:BASELINE1/default512source,14fixedobservedUCIIDs,66qualityunits,330cells. 45originalsplitfilesuntouched/21deterministicmissingunits;SPECTremainsofficialone80/187qualitysplit. Unifiedfourthreadpresets,source/schema/env/learningkeysfrozenbeforefits. 24validATLAS1fourthreadfitsreusedwithoutrefit;historicaldependencycodebyteswereunmeasured/notnewlycertified,oldfitcostepochseparate. Noreserve/newconfirmation/defaultchange. Originalblind6threadprotocolunchanged. SeeOBSERVED_BINARY_CURRENT_V1.
+
+Currentobservedbinary330cellcampaignterminal;allrawfrozenbeforepairedanalysis. SeeFINAL/FINDINGS,AGGREGATE,SOURCE_PAIRED/results/pairedforquality/downside/costtails. Observeddevelopmentonly;overlappingsplitCIsnotindependentconfirmation,SPECTonefold,nooutcome-basedrecipe/sourcechange. ActualwholeworkerRSSnotfit-only;opaqueexternalnativeheaplimitsandoldfitepochseparationexplicit. Wholeprogram/P0remainIN_PROGRESS;public512/version1.0.1/round90held. NextbroadercurrentMC/regressionreadiness,notnewalgorithmorRound91.
+
+MC/regdocumentarycontinuationcomplete:80observedaliases/75canonicalupperboundtaskgroups,207cachedhashfilesverified/0dataset-model-outcomedeserialization/newfit/solve/download. 11cachedproviderCCBY4aliasrecords,36license-declarationrecords,33historicalMCdatacacherecords;not75independentqualifiedsources. V1blanketMCsplitfixtureassumptionincorrectfor7EXTERNAL_R82fullsources;minimumV2originalreaderASTrepairseparates7full/26splitfixtures,reuses207bytechecks/preservesoldnegative. Minimumoriginalprovider/license/target/reader/alignmentrecoveryneededbeforeexpandedcurrentfit;missingreceiptisnotimpossibility/legaloralgorithmFAIL. Allobservedrecords retained,428/138reservesuntouched. SeeOBSERVED_MC_REG_DOCUMENTARY_V1.
+
+OriginalMCsourcefactsrecoveredforall33historicalaliases:V1cachedAPI/provenance/ZIP/bundledreader24aliases;V2only9missingoriginalfixedUCItransferunits,24reused. 0labels/models/outcomesdeserialization/newfit/solve/download. UCIAPIalonehasnolicensefieldfor9transfercases;OpenMLPublicdeclarationnotdistributioncertificate. Hand/anuransubject-recordinggroupscrossoldrandomengineeringfolds;urbanpublishedtrain/testconcatenatedinoldengineeringcontract. Preserveoldexactengineeringevidence;futurequalitytasksneedexplicitreader/alignment/group-time/officialsplit/source-license/preset/reuseprotocolbeforefits. Noaliasesmerged/freshconfirmationclaimed. SeeOBSERVED_MC_SOURCE_RECOVERY_V1 andOBSERVED_MC_TRANSFER_RECOVERY_V2.
+
+NextsystemsC/Fpredictionbufferidearejectedatread-onlyhistorygate:HISTORICALLY_EQUIVALENTtoP2D2/D3/P3. FourvalidsameBASELINE1disjointprofilesreused;0newfit/solve/profile/timing/candidate. Oldwidepositives.164–.436andP3.7197heldout-widepreserved,notgeneralpromotion;oldworst1.097/1.125gatesunchanged. Newatlasremainingcostdoesnotreopenidenticalrecipe. NextoriginalMC/regtask-reader/schema/group-time/officialsplit/exactkeyreadiness;P0actualhostgatesOPEN. SeePREDICTION_LAYOUT_HISTORY_GATE_V1.
+
+TenoriginalprimaryMC/regtaskreadinesscomplete:42originalqualityindexunits,not50;UCI333/312eachoneofficialpartition. V1blanket5-splitassumptionfailedat333after5validcases/25indices;V2reusesall5casesandonly5missing/17indicescompleted. No8fakeofficialfolds/newdata-model-outcome read/newfit/solve. Originaldomainexclusions/group-time/provenancecaveatsretained;40old4threadc0fitbytecandidatesvalid. Current231model-cellmanifest/source/environment/exactkeysearchmustbefrozenbeforeanynewfits. No dataset/test-selection/backupconsumption/publicdefaultchange. SeePRIMARY_MC_REG_READINESS_V1/FAILURE andV2/FINAL.
+
+Current multiclass/regression execution is frozen: 231 cells on 10 observed original primary tasks, 42 original split units. Reuse search resolved 40 saved four-thread fits; at most 191 missing current-contract fits remain. The V1 manifest confused partition seed None with estimator RNG; it failed before any fit. V2 preserves original model RNG and all saved source/indices; negative evidence retained. Separate worker/controller/analyzer frozen before new fits. Each learned model and latency cell is checkpointed, no completed unit repeated. Official UCI333/312 each has one split; 30 purged Dow Jones rows remain excluded. No AUTO, test tuning, new representation or public change. See OBSERVED_MC_REG_CURRENT_V1/FAILURE and V2/REUSE_RESOLUTION/EXECUTION_IMPLEMENTATION. P0 external gates remain OPEN.
+
+Current original-task multiclass/regression atlas is terminal in its scope: 231/231 successful cells; 191 missing current-contract fits and 40 saved fits reused; 0 saved prediction mismatches. All raw receipts frozen before paired equal-source quality/cost/downside analysis. This is observed development, not external confirmation; old fit clocks, descriptive overlapping-split CIs, opaque native heaps and whole-worker RSS scopes remain explicit. Whole 1.1 program and P0 actual container/Kaggle/macOS gates remain IN_PROGRESS.
+
+All 36 historical regression aliases now have original cached provider/API, target/drop and reader/split receipts recovered: 23 actual OpenML and 13 UCI caches. No fit/solve/download or raw/prepared/model/result deserialization; earlier raw/prepared byte checks reused. Generic Public declarations are not legal certification, ordinal numeric tasks are not silently treated as canonical continuous regression, and old target-dependent exact-X+y deduplication/capped IID preparations are not unseen-group/time evidence. This is source-fact recovery, not benchmark admission or independent-source proof. Raw-to-prepared alignment and information-availability/group-time review remain next gates. See OBSERVED_REG_SOURCE_RECOVERY_V1.
+
+A distinct scoped exact-inference counterfactual is now preregistered for AFTER the current231 benchmark and saved-artifact chain. Full finest encoding/validation stays unchanged; only integer coarse columns actually consumed by the learned lookup memories would be materialized. Static unions over all heads are 27/3072,13/3072,25/3072 and248/3900 coarse columns on four already profiled models. This is not a measured speedup. Source audit shows old chunking tested fit-only all-dense buffers with inference unchanged; P2/P3 tested C/F all-column layout. The broad old I5 historical label is preserved and its scope conflict documented. SCOPED_INFERENCE_CONTRACT_REOPEN_CONDITION_MET authorizes one private falsifiable P5 execution counterfactual, not a new algorithm or public edit. P5 fixed eligibility, exactness, downside and scoped systems gates frozen before prototype/timing; no threshold retuning. See COARSE_DEMAND_HISTORY_GATE_V1 and P5_DEMAND_MAPPED_CODES/PROTOCOL.json.
+
+Exact next step: ActualMac/nested receipts and causal/significance/productscope review;no repeatcurrentnowobservedpanel or rejectedcandidate tuning.
+
+<!-- END_V1_1_PROGRAM_CURRENT -->
+
+# CodAdapt1.1 grand development program — current checkpoint
+
+Program adopted2026-10-15. **Version1.0.1 unchanged; last_completed_round=90,current_round=null.** Not automatically Round91. No release/version/tag/publication or public-clone write. The initial four tracks, expanded by the permanent exhaustive directive to seven, accumulate evidence toward a substantial multi-axis1.1milestone.
+
+V1_1_BASELINE_0 freezes the already integrated Round90 exact trainer, source/test/API hashes and prior release receipts. New systems candidates must compare against this optimized baseline, never the older slow1.0.0trainer. Ten qualified saved models are reused without scientific refits; engineering probes are not independent quality confirmation.
+
+Current phase: BOUNDARY_PASS_SAVED_MODEL_GATE_PENDING. Program remains IN_PROGRESS. See research_private/V1_1_GRAND_PROGRAM_REPORT.md, v1_1_program/MASTER_STATUS.json, CHECKPOINT.json, RESUME.md and per-job receipts. Inference profile -> up to8historically deduped ideas / at most4exact candidates -> memory/serialization -> large-N -> competitive atlas. Quality remains certificate-gated; closed lines and all negative evidence retained.
+
+EXPERIMENT_UNIVERSE, RESEARCH_COVERAGE_MATRIX, EXPERIMENT_QUEUE, positive/negative knowledge, open questions and productization backlog are permanent. Unknown causes need a concrete next test or explicit missing-evidence blocker. Continue through ready distinct tasks; only V1_1_MILESTONE_READY or a fully audited CURRENT_OBSERVATION_SPACE_EXHAUSTED closes the long mission. No absolute claim that all possible future ideas have been tested.
+
+The permanent scientific map is research_private/scientific_map/SCIENTIFIC_MAP.md with hash-bound claims, mechanism maps, evidence levels, historical round index and append-only claim versions. Every new result, audit and negative outcome must update this global knowledge; UNKNOWN material causes require a falsification plan. This index never upgrades historical evidence, repeats valid fits or changes frozen protocols.
+
+Read all current and historical evidence with its original scope: old blind competitive timings remain legacy evidence, and no user-confirmed remote receipt is promoted to independently fetched evidence. New atlas protocols may use4threads; the original frozen benchmark retains its6-thread tree presets and unchanged protocol hash.
+
+Exact next step: ReadP3_PROTOCOL andP3_WORKLOAD_MANIFEST;implement/validate scoped saved-model loader and exactness. No P2followupfits or coldgates;P2isREJECTED. Reuse6boundaryencoderfits.
+
+<!-- END_V1_1_PROGRAM_CURRENT -->
+
+# Release freeze after1.0.1 — permanent development policy
+
+User directive adopted2026-10-15. **Not a research round; last_completed_round=90,current_round=null; workspace version remains1.0.1.** Full directive: research_private/release_freeze_policy/RELEASE_FREEZE.md; hash/verification and pre-policy memory snapshots: POLICY_RECEIPT.json and before_*. Current machine-readable policy: STATE.release_freeze_policy and STATE.strategic_north_star.version_strategy.
+
+Accumulate research, benchmarks, candidates, local productization, exact optimization, tests, datasets, research documentation and1.1prototypes exclusively in the Desktop workspace. Do not propose a release for each improvement. No automatic version bump, tag, GitHub Release, TestPyPI or PyPI action; public clone remains read-only without a fresh task-specific exception.
+
+Subsequent1.0.x releases are reserved ONLY for CRITICAL BUG, HIGH BUG, SECURITY FIX, PACKAGING BREAKAGE or SERIOUS COMPATIBILITY DEFECT. New capabilities, accuracy gains, speedups, memory reductions and new behavior accumulate toward1.1.0rc1. This prospectively supersedes earlier release-cadence advice, including treating exact performance improvements alone as a patch-release reason. Preserve the already authorized1.0.1 handoff and all historical evidence; this policy does not assert that1.0.1 was published.
+
+Do not propose1.1.0rc1 until a substantial milestone makes1.1clearly better than1.0 on multiple important axes. Evidence may combine transferable quality, major training gains, material inference or memory/model-size gains, stronger large-N behavior and robust new coded-memory capabilities. No numeric release thresholds were supplied; none are invented here. Preserve the joint North Star rather than trading an important axis for a cosmetic gain.
+
+Normal sequence: RESEARCH -> CAUSAL EVIDENCE -> DEVELOPMENT -> TRANSFER -> SYSTEMS -> PRODUCTIZATION CANDIDATE -> KEEP DEVELOPING. Publication follows a significant overall program milestone, not each improvement. Closed-line retry conditions, causal/transfer gates, positive/negative research continuity and authorized-protocol auto-resume remain unchanged. This policy registration starts no experiment or new round.
+
+Verification: valid JSON; every pre-policy state field unchanged except the prospective North Star version strategy, whose original value is preserved in release_freeze_policy; all previous MASTER bytes retained below. Runtime, tests, workflows, other product documentation, version and clone untouched. No tests, fit, solve, Git or remote operation.
+
+---
+
 # CodAdapt1.0.1 local release candidate COMPLETE
 
 **CODADAPT_1_0_1_CANDIDATE_EXTERNAL_GATES_PENDING.** Not Round91; last_completed_round90,current_round=null. Public clone mainHEAD fe06cb4c3d6ece29441a134a26cc1091bd8c881b remains read-only and version1.0.0. Desktop candidate/version/wheel/sdist1.0.1. Optimized main already has Round90; all16non-version runtime files unchanged against it. Version/docs/notebook only in this release task, no new parameter/feature/algorithm or scientific change.

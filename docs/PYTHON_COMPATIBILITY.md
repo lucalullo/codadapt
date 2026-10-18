@@ -1,51 +1,54 @@
 # Python compatibility and release policy
 
-CodAdapt1.0.1 declares **Python>=3.10,<3.15** and qualifies minors3.10–3.14.
-Metadata/resolver success alone does not prove execution. Each release requires
-installed-artifact numerical imports/Cholesky, pip check, native binary/multiclass/
-regression, categorical/missing inputs, clone/Pipeline/CV, memory admission and
-trusted persistence checks. Test minimum and modern numerical stacks; no claim
-that every allowed dependency combination has been executed.
+The local CodAdapt **1.1.0rc1** candidate declares **Python >=3.10,<3.15**.
+Exact installed-wheel qualification covers Python 3.10–3.14 locally on Windows;
+exact sdist installation is checked on Python 3.12. Numerical imports/Cholesky,
+metadata, pip check, native contracts, trusted persistence and sklearn behavior
+are checked against the installed artifact. Existing matching-minor numerical
+stacks are reused offline in new isolated candidate environments; this is not a
+fresh network resolution of every dependency or every allowed combination.
 
 ## Dependency scope
 
-NumPy, pandas, scikit-learn, SciPy and threadpoolctl are direct runtime dependencies.
-SciPy is required for native sparse-input checks and SafeBlend numerics. The optional
-EBM compiler pins interpret-core==0.7.8; the teacher is needed only during compilation.
-Native fit and compiled inference require no interpret/LightGBM/XGBoost/CatBoost model.
+NumPy, pandas, scikit-learn, SciPy and threadpoolctl remain direct runtime
+dependencies, with unchanged declared ranges. SciPy supplies native sparse-input
+checks and experimental SafeBlend numerics. The optional EBM compiler pins
+interpret-core==0.7.8; its teacher is required only during compilation.
+Native fit and compiled inference need no external tree learner or teacher.
 Optional extras may have narrower practical compatibility than the native core.
 
-## Evidence and platform boundaries
+## Actual platform evidence and source binding
 
-RC2 Windows/Linux/macOS, Python3.10–3.14 and full remote release qualification PASS
-were reported by the maintainer. They are RC2 context, not remotely queried evidence
-or execution of stable1.0.0 workflows. Local stable qualification records exact
-artifact hashes/interpreters/dependency versions separately. Available local Windows
-minors and WSL installed-wheel checks are exercised; WSL is the same hardware.
-The maintainer reports manual release qualification PASS for the optimized1.0.0 main.
-That is USER_CONFIRMED evidence, not fetched logs or qualification of1.0.1 artifacts.
-Candidate1.0.1 macOS and the post-integration remote matrix remain **EXTERNAL_MANUAL_GATE**.
-No local macOS or independent-hardware execution is simulated.
+Frozen AUTO has scoped full-fit receipts for the original 699,635 x 21
+satisfaction dataset on Windows, WSL and a real Kaggle VM, real finite-container
+Docker evidence, a real nested Linux VM gate and native macOS Intel/Python 3.12.
+Earlier V8 hosts qualify the unchanged extension; C1's lazy routing is bound by
+source comparison and qualified contracts. The macOS C1 gate is an actual Apple
+host, not simulation. RC computational sources equal the integrated C1 sources;
+only the package version literal changes in this release preparation.
+
+These receipts are not relabeled as fresh 1.1.0rc1 executions on every host or
+as a full OS-by-minor matrix. WSL shares the Windows machine's hardware. Historic
+maintainer-confirmed CI is separate from locally inspected machine receipts.
+Future exact-RC remote release qualification is **MANUAL_GITHUB_ACTION_REQUIRED**;
+no GitHub operation is performed by local preparation.
 
 Historical Windows DLL/application-control failures occurred in standalone SciPy
-before CodAdapt. Preserve their receipts as numerical-environment limitations; do
-not disable OS security controls or label them algorithm failures. A source workaround
-that reuses old numerical directories is not a fresh dependency installation.
-Stable qualification distinguishes those cases explicitly if they recur.
+before CodAdapt. They remain numerical-environment evidence, not algorithm
+failures. Do not disable security controls or describe reuse of existing numerical
+libraries as a fresh dependency installation. Use maintained interpreter patches;
+local patch versions are qualification inputs, not security recommendations.
 
-## Release gate
+## Manual release gate
 
-Fast tests.yml covers representative old/new Python and optional EBM. The manual
-release-qualification.yml covers all five minors on Windows, Ubuntu and macOS,
-wheel/sdist installs and installed-wheel suites. Optional compiler gates are separate.
-Workflow definitions are prepared gates until the maintainer executes them against
-the integrated stable commit. Previous-commit CI does not qualify new artifacts.
+Local workflow definitions include representative push tests and the manual
+release-qualification workflow for Windows, Linux and macOS/Python 3.10–3.14.
+Definitions are prepared gates until a maintainer executes them on the exact
+integrated commit. Previous-commit CI does not qualify new artifacts. Optional
+compiler checks remain separate. No workflow is dispatched by local preparation.
 
-Use maintained interpreter patches in deployment; local patches are test inputs,
-not security recommendations. Hosted Kaggle/Colab images need their own installed-
-package smoke; local tests do not qualify those images. Cross-Python pickle/joblib
-loading remains diagnostic, not guaranteed. Prefer matching environments.
-
-No scientific recipe, numerical precision, compiler cells or native validation
-protocol changes accompany the1.0.1 exact training-speed patch. Release uploads, tags and
-workflow execution are maintainer-only actions; preparation performs none of them.
+Trusted pickle/joblib persistence is supported only within matching environments;
+cross-version or cross-Python replay is diagnostic, not a permanent guarantee.
+Keep exact package artifacts, hashes and dependency versions. See
+[stability](STABILITY.md), [limitations](RC1_KNOWN_LIMITATIONS.md) and
+[manual release instructions](RELEASING.md).

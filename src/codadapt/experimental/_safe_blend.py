@@ -174,7 +174,10 @@ class SafeBlendRegressor(RegressorMixin, BaseEstimator):
         x_train, x_validation = prepared.iloc[train], prepared.iloc[validation]
         with threadpool_limits(limits=int(self.n_jobs)):
             base = CodAdaptRegressor(
-                categorical_features=cats, random_state=seed, verbosity=self.verbosity
+                categorical_features=cats,
+                random_state=seed,
+                verbosity=self.verbosity,
+                memory_budget_mb=512,
             ).fit(x_train, target[train], eval_set=(x_validation, target[validation]))
             rational = Rational(bins=16, ridge=0.001, seed=seed, maxiter=100, cats=cats).fit(
                 x_train, target[train]

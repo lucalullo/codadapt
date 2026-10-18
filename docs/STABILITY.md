@@ -1,6 +1,12 @@
 # Stability and persistence contract
 
-## Stable native API in 1.0.x
+> Local 1.1.0rc1 changes the native admission default from 512 MiB to `"auto"`.
+> This intentional admission change preserves explicit integer and predictive
+> semantics. Preparation is not publication. See the
+> [migration contract](V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md) and
+> [limitations](RC1_KNOWN_LIMITATIONS.md).
+
+## Native 1.x API and the 1.1.0rc1 admission migration
 
 The stable surface is `codadapt.CodAdaptClassifier`, its exact alias
 `codadapt.CodAdapt`, `codadapt.CodAdaptRegressor` and `codadapt.__version__`.
@@ -12,7 +18,7 @@ behavior; it introduces no new learner, probability mapping or experimental API.
 The1.0.1 patch changes exact training metadata counting only, with no API, learned-model
 or prediction change.
 
-`memory_budget_mb=512` remains a keyword-only positive integer in MiB. It controls
+Published 1.0.x uses keyword-only `memory_budget_mb=512`, a positive integer in MiB. It controls
 a deterministic admission heuristic, not total RSS, and includes external validation
 rows. It does not increase model capacity or promise unlimited data size. See
 [LARGE_DATASETS.md](LARGE_DATASETS.md). `features_per_table` remains functional

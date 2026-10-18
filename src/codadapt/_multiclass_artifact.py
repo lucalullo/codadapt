@@ -5,6 +5,7 @@ import numpy as np
 from ._core import sigmoid
 from ._multiclass_packing import pack, unpack
 from ._training import predict_coded_memory_buckets
+from .preprocessing import _pool_categorical_strings
 
 
 class CompactHead:
@@ -69,6 +70,7 @@ class Artifact:
 
     def __setstate__(self, wire):
         encoder, classes, records, table_size, params = unpack(wire)
+        _pool_categorical_strings(encoder)
         self.shared_state = SharedState(encoder, classes, table_size, params)
         self.heads = tuple(
             CompactHead(self.shared_state, intercept, levels) for intercept, levels in records

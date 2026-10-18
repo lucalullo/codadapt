@@ -1,7 +1,11 @@
 # Benchmark Disclosure
 
+The local 1.1.0rc1 adds no predictive-quality claim and does not rerun or rewrite
+these frozen panels. Its scoped inference/size/admission claims are documented in
+[the release notes](RELEASE_NOTES.md), with [tradeoffs](docs/RC1_KNOWN_LIMITATIONS.md).
+
 The later independent SafeBlend regression qualification takes precedence for
-current **1.0.0 SafeBlend positioning**: compact serialized models were confirmed,
+current **SafeBlend positioning**: compact serialized models were confirmed,
 while predictive quality leadership was not. The frozen blind NEW_EXTERNAL panel
 remains the primary binary/multiclass evidence and its library-wide verdict remains
 **PRODUCT_POSITION_MIXED**. Earlier external pilots are secondary/historical evidence;

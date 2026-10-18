@@ -1,6 +1,13 @@
 # Large datasets and memory admission
 
-## Stable 1.0.0 resource contract
+## Native 1.1.0rc1 resource contract
+
+The local RC defaults to `memory_budget_mb="auto"` for native estimators.
+Version 1.0.1 used 512 MiB; an explicit integer retains that contract. See
+[AUTO_MEMORY.md](AUTO_MEMORY.md) for the two paths, exact reserve policy,
+array-like limitations, diagnostics and migration. No release is authorized.
+
+## Historical 1.0.x resource contract
 
 CodAdapt 1.0.0 preserves the `memory_budget_mb=512` parameter introduced in RC2
 for the native classifier and regressor. The scientific recipe, arithmetic and
@@ -15,8 +22,9 @@ model.fit(X_train, y_train)
 ```
 
 `memory_budget_mb` is a positive integer measured in **MiB (2**20 bytes)**, despite
-the conventional `_mb` suffix. The default stays 512. There is no automatic RAM
-detection, unlimited mode, or automatic retry after a resource rejection. The
+the conventional `_mb` suffix. In published 1.0.x the default is 512 and there is no automatic RAM
+detection, unlimited mode, or retry. The 1.1.0rc1 AUTO default adds conservative
+resource observation; explicit integers retain this contract. The
 parameter controls admission only: increasing it does not increase model capacity,
 change the encoder, change arithmetic precision, or alter the training recipe.
 It works with `get_params`, `set_params`, clone, Pipeline and pickle/joblib.
@@ -49,10 +57,11 @@ is no universal row limit, and a rejected shape is not proof that the machine la
 RAM. Do not infer a safe budget from installed RAM alone.
 
 At defaults, 699,635 rows and 21 features require **624.72 MiB** by this formula,
-so default admission rejects them even with float32 input. A 1,024 MiB explicit
-budget admits that shape in 1.0.0. Admission and synthetic engineering
-qualification do not validate the user's undisclosed dataset, arbitrary categories,
-or every workload of the same shape.
+so the historical 512 MiB default rejects them even with float32 input. A
+1,024 MiB explicit budget admits that estimate. The real satisfaction CSV has
+subsequently passed scoped private AUTO full-fit gates on multiple platforms,
+including real Kaggle and macOS. This does not qualify arbitrary categories or
+every workload of the same shape.
 
 ## Scaling and practical use
 
@@ -93,7 +102,7 @@ Python exception handling; preserve data/checkpoints outside the process.
 ## SafeBlend is a separate resource profile
 
 Experimental `SafeBlendRegressor` retains its frozen API and recipe. It does not
-expose `memory_budget_mb`; its internal Base keeps the 512 MiB default and the
+expose `memory_budget_mb`; its internal Base is explicitly pinned to 512 MiB and the
 internal Base accounts for its external validation rows. SafeBlend also prepares
 a numeric DataFrame and fits its Rational component, which has separate temporary
 allocations. A successful Base fit is not a SafeBlend memory guarantee. No universal

@@ -27,9 +27,22 @@ def addresses(z, features, codes, table_size):
     Add in int64 before the modulo: compact input code dtypes must not determine
     arithmetic precision. Parameter and feature validation belongs to the API.
     """
-    total = np.zeros(z.shape[0], dtype=np.int64)
-    for feature, code in zip(features, codes):
-        total += code[z[:, feature]].astype(np.int64, copy=False)
+    if (
+        isinstance(features, (np.ndarray, list, tuple))
+        and isinstance(codes, (np.ndarray, list, tuple))
+        and len(features)
+        and len(codes)
+    ):
+        total = codes[0][z[:, features[0]]].astype(np.int64, copy=False)
+        for feature, code in zip(features[1:], codes[1:]):
+            total += code[z[:, feature]].astype(np.int64, copy=False)
+    else:
+        # Preserve the generic iterable/empty-group contract.
+        total = np.zeros(z.shape[0], dtype=np.int64)
+        for feature, code in zip(features, codes):
+            total += code[z[:, feature]].astype(np.int64, copy=False)
+    if table_size > 0 and table_size & (table_size - 1) == 0:
+        return (total & (table_size - 1)).astype(np.uint16)
     return (total % table_size).astype(np.uint16)
 
 

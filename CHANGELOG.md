@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.1.0rc1 — prepared locally, not published
+
+- Change the native memory admission default from `512` to `"auto"`. Eligible
+  larger inputs use conservative visible headroom; explicit positive integer
+  budgets remain hard caps on the deterministic working-allocation estimate E.
+  Neither mode guarantees RSS or prevents every OOM. No model downsizing,
+  subsampling, precision or fitted-prediction change is introduced.
+- Preserve frozen C1 lazy admission routing, scoped real platform acceptance
+  and the existing experimental SafeBlend internal Base budget of 512 MiB.
+- Qualify the exact RC wheel on Python 3.10–3.14 and its sdist on Python 3.12
+  locally; distinguish source-bound platform receipts from a new remote matrix.
+- Document the intentional default migration, six audited limitation rows and
+  manual-only release gates. No parameters are deprecated or removed in this RC.
+
+- Optimize numeric NumPy prediction input conversion and exact address
+  arithmetic. Learned values and predictions are unchanged by these inference optimizations.
+- Share immutable categorical strings within bounded native encoder metadata
+  after fit and trusted pickle/joblib loading. This reduces duplication in
+  qualifying categorical models; high-cardinality loading can take longer.
+  Existing artifacts remain compatible.
+
 ## 1.0.1 — prepared locally, publication pending
 
 - Optimize exact training metadata cardinality counts for native one- and
@@ -23,7 +44,7 @@
 - Stable publication remains a separate maintainer-only action after qualification.
 
 The following entries preserve earlier prerelease preparation history, including
-their availability statements at that time; they do not describe current1.0.1 availability.
+their availability statements at that time; they do not describe current package-index availability.
 
 ## 1.0.0rc2 — prepared locally, not published
 

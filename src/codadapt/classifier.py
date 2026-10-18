@@ -24,7 +24,14 @@ class CodAdaptClassifier(ClassifierMixin, _BaseCodAdapt):
 
     def fit(self, X, y, sample_weight=None, eval_set=None):
         """Fit binary or multiclass targets with the same constructor parameters."""
-        if not is_multiclass(y, sample_weight):
+        try:
+            multiclass = is_multiclass(y, sample_weight)
+        except BaseException:
+            for key in list(vars(self)):
+                if key.endswith("_"):
+                    delattr(self, key)
+            raise
+        if not multiclass:
             return super().fit(X, y, sample_weight=sample_weight, eval_set=eval_set)
         tick = perf_counter()
         for key in list(vars(self)):

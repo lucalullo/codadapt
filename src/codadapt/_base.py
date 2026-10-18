@@ -19,7 +19,7 @@ from ._training import (
     predict_coded_memory_buckets,
     train_coded_memory,
 )
-from .preprocessing import BucketEncoder
+from .preprocessing import BucketEncoder, _pool_categorical_strings
 
 
 def _rows(X, indices):
@@ -48,6 +48,84 @@ def _target(y):
     return result
 
 
+_LEGACY_MEMORY_MIB = 2**20
+
+
+def _legacy_diagnostics(estimate, shape):
+    # This is the inherited budget domain, never a new memory safety bound.
+    rows, features = shape if type(shape) is tuple and len(shape) == 2 else (None, None)
+    return dict(
+        required_bytes=None,
+        effective_budget_bytes=512 * _LEGACY_MEMORY_MIB,
+        available_bytes=None,
+        capacity_bytes=None,
+        process_RSS_bytes=None,
+        rows=rows,
+        features=features,
+        dtype="UNPROFILED_LEGACY_INPUT",
+        observed_class_count=None,
+        class_count_bound_known=False,
+        elapsed_s=None,
+        policy="EXACT_LEGACY_512_ADMISSION_DOMAIN",
+        model_changed=False,
+        status="LEGACY_COMPATIBILITY_UNPROFILED_CONVERSION",
+        tier_status="LEGACY_COMPATIBILITY_EXACT_STATIC_DOMAIN",
+        virtual_domain="UNOBSERVED",
+        virtual_observation=dict(status="UNOBSERVED", scope="Not queried inside legacy domain"),
+        profile_complete=False,
+        resource_qualified=False,
+        required_bytes_is_lower_bound=True,
+        unprofiled_external_inputs=["All roles deliberately unprofiled inside inherited domain"],
+        conversion_peak_bound_known=False,
+        safety_scope="Inherited512heuristic risk only;no input profile or resource certificate. Arbitrary custom conversion and hidden constraints remain unbounded.",
+    )
+
+
+def _record_legacy_diagnostics(model, diagnostics, pre_conversion=True):
+    for attribute, key in [
+        ("memory_admission_available_bytes_", "available_bytes"),
+        ("memory_admission_process_RSS_bytes_", "process_RSS_bytes"),
+        ("memory_admission_virtual_available_bytes_", "virtual_available_bytes"),
+    ]:
+        setattr(model, attribute, diagnostics.get(key))
+    model.memory_admission_tier_ = diagnostics["tier_status"]
+    model.memory_admission_virtual_domain_ = diagnostics["virtual_domain"]
+    model.memory_admission_safety_certificate_ = False
+    model.effective_memory_budget_mb_ = diagnostics["effective_budget_bytes"] / _LEGACY_MEMORY_MIB
+    model.memory_admission_required_bytes_ = diagnostics["required_bytes"]
+    model.memory_admission_profile_complete_ = diagnostics["profile_complete"]
+    model.memory_admission_resource_qualified_ = diagnostics["resource_qualified"]
+    model.memory_admission_required_is_lower_bound_ = diagnostics["required_bytes_is_lower_bound"]
+    if pre_conversion:
+        model.memory_validation_conversion_preflight_qualified_ = diagnostics["profile_complete"]
+        model.memory_admission_preconversion_status_ = diagnostics["status"]
+        model.memory_admission_status_ = diagnostics["status"]
+        model.memory_admission_shape_ = (diagnostics["rows"], diagnostics["features"])
+    else:
+        model.memory_admission_status_ = (
+            (
+                "LEGACY_COMPATIBILITY_AFTER_ORIGINAL_NORMALIZATION_RECHECK"
+                if diagnostics["tier_status"].startswith("LEGACY_COMPATIBILITY")
+                else "AUTO_ADMIT_AFTER_ORIGINAL_NORMALIZATION_RECHECK"
+            )
+            if diagnostics["profile_complete"]
+            else "LEGACY_COMPATIBILITY_UNPROFILED_REMAINDER"
+        )
+
+
+def _recheck_memory_after_conversion(model, estimate, X, y, weight, eval_set):
+    if type(estimate) is int and 0 <= estimate <= 512 * _LEGACY_MEMORY_MIB:
+        _record_legacy_diagnostics(
+            model,
+            _legacy_diagnostics(estimate, model.memory_admission_shape_),
+            pre_conversion=False,
+        )
+    else:
+        from ._memory_admission import recheck_after_conversion
+
+        recheck_after_conversion(model, estimate, X, y, weight, eval_set)
+
+
 class _BaseCodAdapt(BaseEstimator):
     """Common parameters; construction only stores the supplied values."""
 
@@ -69,7 +147,7 @@ class _BaseCodAdapt(BaseEstimator):
         random_state=None,
         verbosity=0,
         lookup_budget=24,
-        memory_budget_mb=512,
+        memory_budget_mb="auto",
     ):
         self.n_bins = n_bins
         self.max_categories = max_categories
@@ -89,12 +167,13 @@ class _BaseCodAdapt(BaseEstimator):
         self.memory_budget_mb = memory_budget_mb
 
     def _validate_parameters(self):
-        if (
+        automatic = isinstance(self.memory_budget_mb, str) and self.memory_budget_mb == "auto"
+        if not automatic and (
             isinstance(self.memory_budget_mb, (bool, np.bool_))
             or not isinstance(self.memory_budget_mb, numbers.Integral)
             or self.memory_budget_mb < 1
         ):
-            raise ValueError("memory_budget_mb must be a positive integer in MiB.")
+            raise ValueError("memory_budget_mb must be a positive integer in MiB or 'auto'.")
         bounds = {
             "n_bins": (2, 4096),
             "max_categories": (1, 4096),
@@ -132,7 +211,7 @@ class _BaseCodAdapt(BaseEstimator):
         if isinstance(state, numbers.Integral) and not 0 <= state <= 2**32 - 1:
             raise ValueError("random_state integer must lie in [0, 2**32 - 1].")
 
-    def _check_memory_budget(self, n, p, eval_set=None):
+    def _check_memory_budget(self, n, p, eval_set=None, *, X=None, y=None, sample_weight=None):
         """Apply the deterministic working-allocation heuristic, not an RSS cap."""
         validation_rows = 0
         if eval_set is not None:
@@ -155,6 +234,19 @@ class _BaseCodAdapt(BaseEstimator):
             * max(self.n_bins + 1, self.max_categories + 3)
         )
         estimate += 32 * self.n_tables * self.table_size
+        if isinstance(self.memory_budget_mb, str) and self.memory_budget_mb == "auto":
+            if 0 <= int(estimate) <= 512 * _LEGACY_MEMORY_MIB:
+                _record_legacy_diagnostics(
+                    self, _legacy_diagnostics(int(estimate), (int(n), int(p)))
+                )
+            else:
+                from ._memory_admission import check_auto, record_diagnostics
+
+                diagnostics = check_auto(
+                    self, int(estimate), X, y, sample_weight, eval_set, shape=(int(n), int(p))
+                )
+                record_diagnostics(self, diagnostics)
+            return int(estimate)
         budget = int(self.memory_budget_mb) * 1024**2
         if estimate > budget:
             raise ValueError(
@@ -172,6 +264,8 @@ class _BaseCodAdapt(BaseEstimator):
         state = state.copy()
         state.setdefault("memory_budget_mb", 512)
         super().__setstate__(state)
+        if hasattr(self, "shared_encoder_"):
+            _pool_categorical_strings(self.shared_encoder_)
 
     def _encode_target(self, y, fitting=False):
         if self._task == "regression":
@@ -252,7 +346,9 @@ class _BaseCodAdapt(BaseEstimator):
             raise ValueError(
                 "sample_weight must contain at least one non-zero value and have a finite positive sum."
             )
-        self.estimated_memory_bytes_ = self._check_memory_budget(n, p, eval_set)
+        self.estimated_memory_bytes_ = self._check_memory_budget(
+            n, p, eval_set, X=X, y=y, sample_weight=weight
+        )
         keep = np.flatnonzero(weight > 0)
         X_train, y_train, weight = _rows(X, keep), y[keep], weight[keep].copy()
         y_train = self._encode_target(y_train, fitting=True)
@@ -305,6 +401,11 @@ class _BaseCodAdapt(BaseEstimator):
                 _rows(X_train, train_indices),
                 y_train[train_indices],
                 weight[train_indices],
+            )
+        if getattr(self, "memory_validation_conversion_preflight_qualified_", True) is False:
+            normalized_eval = (X_valid, y_valid) if X_valid is not None else None
+            _recheck_memory_after_conversion(
+                self, self.estimated_memory_bytes_, X_train, y_train, weight, normalized_eval
             )
         self.n_features_in_ = p
         self.timings_ = {}

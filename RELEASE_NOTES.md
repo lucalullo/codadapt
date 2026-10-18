@@ -1,3 +1,46 @@
+# CodAdapt 1.1.0rc1 release notes
+
+Local prerelease candidate; this preparation does not publish an artifact or run
+remote workflows. The frozen C1 computational implementation is unchanged.
+
+- **Resource-aware automatic admission:** native binary, Shared OVR multiclass
+  and regression constructors default to `memory_budget_mb="auto"`. Eligible
+  large inputs can fit without manually increasing a budget when visible
+  resources provide conservative headroom. The original 699,635 x 21 satisfaction
+  dataset has source-bound full-fit acceptance evidence, not merely a preflight.
+- **Explicit control is preserved:** a positive integer in MiB is a hard cap on
+  estimated working allocation E, not on total RSS. Pass `512` to retain historical
+  admission. SafeBlend's internal Base remains explicitly 512 MiB.
+- **Scoped systems value:** matched C1 fit ratio approximately 0.997x, ndarray
+  inference latency 0.808x (19.2% lower), categorical pickle size 0.748x (25.2%
+  smaller), each in its own qualified protocol. These are not one universal
+  benchmark. Peak RSS was about 1.002x in the matched fit comparison; no general
+  RAM saving is claimed. DataFrame inference may be unchanged; categorical
+  compaction can increase loading time and small models can grow slightly.
+- **Predictive behavior:** qualified exact comparisons preserve predictions and
+  fitted numeric state. No accuracy improvement or competitive leadership is
+  claimed; the published blind quality evidence remains mixed.
+- **Compatibility:** exact RC installed-wheel checks cover Windows Python
+  3.10–3.14, plus a Python 3.12 sdist install. Actual Windows, WSL, Kaggle, Docker,
+  nested Linux and macOS receipts are bound through the frozen C1/V8 source
+  lineage. They are not a fresh RC OS-by-minor matrix.
+
+AUTO is a visible-resource heuristic, not an allocation reservation or anti-OOM
+guarantee. Hidden limits, concurrent pressure and custom input conversions remain
+limitations. Same-version matching-environment trusted persistence is supported;
+cross-version replay is diagnostic, not guaranteed. Four known sklearn scope
+XFAIL remain disclosed. SafeBlend and EBM compilation remain opt-in experimental.
+
+See [migration](docs/V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md),
+[AUTO details](docs/AUTO_MEMORY.md), [all six limitation rows](docs/RC1_KNOWN_LIMITATIONS.md),
+[Python policy](docs/PYTHON_COMPATIBILITY.md) and [manual release steps](docs/RELEASING.md).
+
+---
+
+## Historical 1.0.1 notes
+
+The following section preserves its preparation-time availability statements.
+
 # CodAdapt 1.0.1 release notes
 
 Patch release focused on exact training-speed optimization. CodAdapt1.0.1

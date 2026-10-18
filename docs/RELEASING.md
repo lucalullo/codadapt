@@ -1,53 +1,67 @@
-# Releasing CodAdapt
+# Preparing and releasing CodAdapt 1.1.0rc1
 
-This is the manual procedure for CodAdapt1.0.1. Local preparation creates no
-commit, tag, index upload, workflow run or GitHub Release. The1.0.1 exact training-speed patch preserves
-the stable1.0 API, learned model and predictions; experimental components
-remain opt-in. See [STABILITY.md](STABILITY.md) and [LARGE_DATASETS.md](LARGE_DATASETS.md).
+This is a manual handoff procedure. The local 1.1.0rc1 candidate is prepared from
+frozen C1 with release-only version/documentation changes. Preparation never
+modifies the GitHub clone or invokes GitHub, TestPyPI, PyPI, tags or workflows.
+Local readiness does not authorize publication or stable 1.1 promotion.
 
-## Local qualification
+## Local evidence
 
-1. Identify the current public main from the authoritative read-only clone, not laboratory Git metadata.
-2. Freeze the qualified exact speed patch, API/defaults and scientific claims. Release preparation changes only version/docs/metadata.
-3. Set1.0.1, build wheel/sdist from a clean public-only snapshot, run Ruff/format,
-   full pytest and Twine; record hashes and four disclosed scope XFAIL.
-4. Install wheel and sdist in clean package environments outside the source checkout.
-   Run pip check, numerical imports/Cholesky, native tasks, SafeBlend branches,
-   clone/Pipeline/CV, memory_budget, fresh-process pickle/joblib and reinstall checks.
-5. Qualify Python3.10–3.14 and available WSL. Record actual platform evidence,
-   standalone DLL failures and any reused numerical dependencies accurately.
-6. Check archive contents/license/metadata/README, teacher-free inference, API and
-   trusted1.0.0 artifact replay. Preserve original environments; cross-version persistence is not guaranteed.
-7. Review consolidated handoff paths/SHA256 and the exact candidate manifest.
-   Research memory is intentionally tracked in the repository, excluded from wheel/sdist;
-   research_private is never copied or distributed.
+1. Freeze exact computational source, tests, API/default migration and claims.
+2. Build wheel/sdist from a clean public-only snapshot; audit metadata, license,
+   archive contents, private-file exclusion and high-confidence secret patterns.
+3. Run Ruff, formatting, the installed-RC public suite, Twine, clean package
+   installs, pip check and installed-artifact smokes. Preserve four known scope
+   XFAIL and distinguish them from failures.
+4. Qualify Python 3.10–3.14 wheel and primary Python 3.12 sdist. Record existing
+   offline numerical stack reuse and actual interpreter/dependency versions.
+5. Exercise binary/multiclass/regression, SafeBlend, AUTO/explicit budgets,
+   failure atomicity, clone/Pipeline/CV, examples/notebook and fresh-process trusted
+   pickle/joblib. Cross-version replay remains diagnostic, not guaranteed.
+6. Bind real platform receipts to C1 through explicit source lineage. Do not
+   relabel prior V8 or C1 hosts as new exact-RC host executions.
+7. Record exact changed public paths, hashes, wheel/sdist and test receipts in
+   RC1_RELEASE_MANIFEST.json and RC1_MANUAL_GITHUB_HANDOFF.md under the private
+   local release-preparation folder. Research memory is tracked in the source
+   repository but excluded from distributions; research_private is never copied.
 
-## Maintainer-only external gates, in order
+## Maintainer-only actions, after separate approval
 
-1. Integrate the qualified changed public files manually and record the new commit.
-2. Commit/push manually and obtain push CI PASS on that exact commit.
-3. Run Manual release qualification (no publishing), including Windows/Linux/macOS
-   and Python3.10–3.14. Confirm stable macOS separately from historical RC2 success.
-4. Publish candidate1.0.1 to TestPyPI through the manual testpypi environment workflow.
-5. Verify fresh external TestPyPI install, provenance/version, pip check, tasks,
-   SafeBlend, memory admission, persistence and uninstall/reinstall; review README rendering.
-6. Create the future v1.0.1 tag and GitHub Release only after qualification approval.
-7. Publish1.0.1 to production PyPI through the manual pypi environment workflow.
-8. Repeat external PyPI smoke and verify final published artifact hashes/metadata.
+1. Manually copy only the handoff's public paths from the Desktop workspace to
+   the real clone. Compare each SHA256 and review the exact diff; do not copy
+   private evidence, caches, environments or build outputs into source control.
+2. Manually commit/push and record the resulting commit. Obtain push CI PASS.
+3. Manually run `Manual release qualification (no publishing)` on that exact
+   commit, including the Windows/Linux/macOS and Python 3.10–3.14 matrix. This is
+   an external manual gate, not a local failure when unexecuted.
+4. After explicit authorization and trusted-publisher configuration, manually run
+   the TestPyPI workflow for 1.1.0rc1. Inspect the exact artifacts/hashes. Never
+   overwrite a published version, add source secrets or enable automatic publishing.
+5. In a fresh external environment, preinstall declared dependencies from the
+   trusted production index. Install the explicit TestPyPI candidate with
+   `--no-deps --pre --index-url https://test.pypi.org/simple/ codadapt==1.1.0rc1`.
+   Avoid mixed-index dependency resolution. Run pip check, import/version, binary,
+   multiclass, regression, SafeBlend, AUTO large-N and persistence smokes.
+6. Review uploaded README/metadata, failure behavior and observation feedback.
+   TestPyPI success does not itself authorize production upload, a tag, GitHub
+   Release or stable 1.1. A new decision is required for each publication step.
 
-Both publish workflows remain workflow_dispatch only with trusted publishing;
-never add passwords/tokens to source or enable automatic push publishing.
-Package-name/environment ownership and publishing authorization are manual gates.
-Never overwrite a published version or relabel an older archive. Resolve ordinary
-dependencies from the trusted production index, then install the explicit TestPyPI
-package artifact without an unreviewed mixed-index dependency search.
+The future general prerelease install command is
+`python -m pip install --pre codadapt==1.1.0rc1`, only after the intended index
+contains the approved candidate. See the private RC1_TESTPYPI_PLAN.md for exact
+manual smoke commands and the original real-data acceptance case.
 
-## Integrity and observation
+## Claim lock and limitations
 
-Preserve PRODUCT_POSITION_MIXED blind evidence and compact-specialist SafeBlend
-positioning; stable API does not imply benchmark superiority. Repeated splits are
-not new sources. Large-N700k receipts are shape-equivalent synthetic engineering,
-not validation of an undisclosed real dataset. Record actual RC feedback/observation
-without inventing a duration. A critical/high runtime defect blocks stable; research
-failure alone does not. Retain release receipts and plan rollback/yank decisions
-rather than replacing published files. No automatic stable promotion is performed.
+Resource-aware admission is eligible-domain admission, not guaranteed memory
+safety. Explicit integers cap estimated E, not RSS. Qualified C1 matched fit ratio
+is approximately 0.997x; ndarray inference approximately 0.808x; categorical pickle
+approximately 0.748x. Each belongs to its own protocol. No universal speed, size,
+RAM or predictive-quality advantage is claimed. Preserve mixed blind results and
+compact-specialist SafeBlend positioning. Original real satisfaction-data full
+fits are scoped platform evidence, not validation of every 700k-row dataset.
+
+Retain all positive/negative receipts and known limitations. A CRITICAL/HIGH
+runtime/product issue blocks readiness. See [migration](V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md),
+[limitations](RC1_KNOWN_LIMITATIONS.md), [AUTO](AUTO_MEMORY.md) and
+[Python compatibility](PYTHON_COMPATIBILITY.md).

@@ -50,7 +50,7 @@ def test_budget_clone_pipeline_and_bitwise_predictions(kind, dtype):
 
 
 def test_formula_default_dtype_and_external_validation_accounting():
-    model = CodAdaptClassifier()
+    model = CodAdaptClassifier(memory_budget_mb=512)
     n, p = 699635, 21
     expected = n * (40 * p + 96) + 24 * (p + 24) * 131 + 65536
     with pytest.raises(ValueError, match="624.72 MiB.*512 MiB"):
@@ -102,6 +102,7 @@ def test_external_validation_exact_boundary_then_rejection():
 @pytest.mark.parametrize("refit", [False, True])
 def test_large_reject_atomicity_without_large_allocation(kind, refit, monkeypatch):
     model, x, y = fixture(kind)
+    model.set_params(memory_budget_mb=512)
     if refit:
         model.fit(x, y)
     from codadapt.preprocessing import BucketEncoder
@@ -123,6 +124,7 @@ def test_large_reject_atomicity_without_large_allocation(kind, refit, monkeypatc
 @pytest.mark.parametrize("kind", ["binary", "multiclass", "regression"])
 def test_external_validation_guard_precedes_encoding(kind, monkeypatch):
     model, x, y = fixture(kind)
+    model.set_params(memory_budget_mb=512)
     model.fit(x, y)
     xv = np.broadcast_to(np.zeros(1), (3000000, 4))
     with pytest.raises(ValueError, match="3000000 external validation rows"):

@@ -18,11 +18,12 @@ import pytest
 from codadapt import __version__
 
 ROOT = Path(__file__).resolve().parents[1]
+DIST = Path(os.environ.get("CODADAPT_TEST_DIST", ROOT / "dist"))
 
 
 @pytest.fixture(scope="module")
 def wheel():
-    wheels = sorted((ROOT / "dist").glob(f"codadapt-{__version__}-*.whl"))
+    wheels = sorted(DIST.glob(f"codadapt-{__version__}-*.whl"))
     if not wheels:
         pytest.skip("Build the wheel with python -m build before distribution checks")
     return wheels[-1]
@@ -172,7 +173,7 @@ def test_installed_wheel_fit_predict_and_persistence_in_external_environment(
 
 
 def test_source_distribution_excludes_research_memory_and_private_artifacts():
-    archive = ROOT / "dist" / f"codadapt-{__version__}.tar.gz"
+    archive = DIST / f"codadapt-{__version__}.tar.gz"
     if not archive.exists():
         pytest.skip("Build the source distribution before distribution checks")
     with tarfile.open(archive) as contents:

@@ -11,7 +11,7 @@ from scipy import sparse
 from sklearn.model_selection import train_test_split
 from sklearn.utils.multiclass import type_of_target
 
-from ._base import _rows, _target
+from ._base import _recheck_memory_after_conversion, _rows, _target
 from ._core import addresses, aggregate
 from ._training import _combination_count, _surrogate, train_coded_memory
 from .preprocessing import BucketEncoder
@@ -82,7 +82,7 @@ def prepare(model, X, y, sample_weight, eval_set):
     if len(y) != n:
         raise ValueError("X and y have inconsistent numbers of samples.")
     weight = validate_weights(sample_weight, n)
-    estimate = model._check_memory_budget(n, p, eval_set)
+    estimate = model._check_memory_budget(n, p, eval_set, X=X, y=y, sample_weight=weight)
     keep = np.flatnonzero(weight > 0)
     x, y, w = _rows(X, keep), y[keep], weight[keep].copy()
     try:
@@ -140,6 +140,9 @@ def prepare(model, X, y, sample_weight, eval_set):
             UserWarning,
             stacklevel=2,
         )
+    if getattr(model, "memory_validation_conversion_preflight_qualified_", True) is False:
+        normalized_eval = (xv, yv) if xv is not None else None
+        _recheck_memory_after_conversion(model, estimate, x, y, w, normalized_eval)
     return Prepared(x, y, w, xv, yv, classes, rng, train_ids, valid_ids, int(estimate))
 
 
