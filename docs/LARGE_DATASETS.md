@@ -1,6 +1,6 @@
 # Large datasets and memory admission
 
-## Native 1.1.0rc1 resource contract
+## Native 2.0.0 resource contract
 
 The local RC defaults to `memory_budget_mb="auto"` for native estimators.
 Version 1.0.1 used 512 MiB; an explicit integer retains that contract. See
@@ -23,7 +23,7 @@ model.fit(X_train, y_train)
 
 `memory_budget_mb` is a positive integer measured in **MiB (2**20 bytes)**, despite
 the conventional `_mb` suffix. In published 1.0.x the default is 512 and there is no automatic RAM
-detection, unlimited mode, or retry. The 1.1.0rc1 AUTO default adds conservative
+detection, unlimited mode, or retry. The 2.0.0 AUTO default adds conservative
 resource observation; explicit integers retain this contract. The
 parameter controls admission only: increasing it does not increase model capacity,
 change the encoder, change arithmetic precision, or alter the training recipe.

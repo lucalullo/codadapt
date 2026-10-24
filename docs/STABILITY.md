@@ -1,12 +1,13 @@
 # Stability and persistence contract
 
-> Local 1.1.0rc1 changes the native admission default from 512 MiB to `"auto"`.
+> CodAdapt 2.0.0 — Official Stable Release retains the qualified RC1 admission
+> default change from 512 MiB to `"auto"`.
 > This intentional admission change preserves explicit integer and predictive
-> semantics. Preparation is not publication. See the
-> [migration contract](V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md) and
+> semantics. Prepared and fully qualified for official release. See the
+> [migration contract](V1_0_1_TO_V2_0_COMPATIBILITY.md) and
 > [limitations](RC1_KNOWN_LIMITATIONS.md).
 
-## Native 1.x API and the 1.1.0rc1 admission migration
+## Native API and the 2.0.0 admission migration
 
 The stable surface is `codadapt.CodAdaptClassifier`, its exact alias
 `codadapt.CodAdapt`, `codadapt.CodAdaptRegressor` and `codadapt.__version__`.
@@ -77,3 +78,11 @@ unsupported. SafeBlend fit thread-pool limits are process-wide.
 Use an integer random_state and identical data/order/configuration/environment for
 repeatability. Bitwise results across numerical versions or platforms are not
 guaranteed. `None` is nondeterministic; prefer integers over shared RandomState objects.
+
+## CodAdapt 2.0 qualification scope
+
+2.0.0 preserves the qualified public RC1 computational runtime and API. Only the
+version literal and necessary documentation change in final stable preparation.
+The dedicated final-public-basis Mac gate is native Intel macOS/Python3.12.
+Version-only source binding does not claim a fresh 2.0.0 execution on every OS.
+The private B1/V2 format and all three Next-Gen components remain excluded.

@@ -1,8 +1,8 @@
 # API pubblica
 
-> Candidate locale 1.1.0rc1: C1 congelata, default nativo `"auto"`.
+> CodAdapt 2.0.0 — Official Stable Release. C1 congelata, default nativo `"auto"`.
 > La 1.0.1 usava il default storico 512 MiB; un intero esplicito lo conserva.
-> Preparazione locale, nessuna pubblicazione.
+> Prepared and fully qualified for official release.
 
 ```python
 from codadapt import CodAdapt, CodAdaptClassifier, CodAdaptRegressor
@@ -47,7 +47,7 @@ di architettura: quella appartiene al runner sperimentale.
 ## Migrazione pre-1.0 e contratto del trainer corrente
 
 I costruttori nativi sono **keyword-only**: usare `CodAdapt(n_bins=8, l2=5.0)`,
-non argomenti posizionali. I default predittivi dei parametri rimasti sono invariati. La 1.1.0rc1 modifica solo il default di ammissione memoria; vedere [AUTO_MEMORY.md](AUTO_MEMORY.md).
+non argomenti posizionali. I default predittivi dei parametri rimasti sono invariati. La 2.0.0 modifica solo il default di ammissione memoria; vedere [AUTO_MEMORY.md](AUTO_MEMORY.md).
 
 Sono stati rimossi sette controlli inattivi: `max_iter`, `adapt_codes`,
 `adapt_every`, `max_code_updates`, `n_candidates`, `min_code_count` e `patience`.
@@ -75,7 +75,7 @@ l'ambiente originale. Un load riuscito non rende nuovamente validi i parametri r
 ## Input
 
 Storicamente 1.0.0 e 1.0.1 pubblica conservano il budget introdotto nella RC2 e il default 512 MiB.
-La 1.1.0rc1 usa `"auto"`, senza cambiare capacità, precisione o fitting;
+La 2.0.0 usa `"auto"`, senza cambiare capacità, precisione o fitting;
 la migrazione esplicita `memory_budget_mb=512` conserva la vecchia ammissione.
 La stima ora include anche le righe di `eval_set` esterno prima delle copie e
 dell'encoding. Non cambia fitting o predizioni dei fit ammessi; può rifiutare

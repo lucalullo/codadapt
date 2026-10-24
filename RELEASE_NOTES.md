@@ -1,3 +1,37 @@
+# CodAdapt 2.0.0 — Official Stable Release
+
+Prepared and fully qualified for official release. CodAdapt 2.0 keeps the
+qualified public RC1 computational implementation. The 2.0 finalization changes
+version metadata and documentation, not learned values, prediction arithmetic
+or API behavior.
+
+Compared with the historical 1.0.1 line, native binary, Shared OVR multiclass and
+regression use resource-aware `memory_budget_mb="auto"`. Eligible larger inputs
+can be admitted using conservatively visible headroom; an explicit positive
+integer remains a hard estimate cap. `512` preserves historical admission.
+AUTO is a heuristic, not reservation, a process-RSS limit or an anti-OOM guarantee.
+The frozen C1 lazy path, exact numeric inference and categorical metadata sharing
+are retained. No new predictive-quality improvement is claimed.
+
+Next-Gen B1/V2 Components 01, 02 and 03 remain private HOLD_FOR_FUTURE. This
+release does not expose their serving format, dispatcher or state packing.
+SafeBlend and EBM compilation remain opt-in experimental with unchanged recipes.
+
+The unchanged public basis passed a dedicated real Intel macOS15/Python3.12
+gate; version2.0.0 artifact checks are local, with explicit version-only source
+binding. Prior Windows3.10–3.14, WSL, real Kaggle, finite Docker and nested Linux
+evidence retains its original scope. This is not a fresh full OS-by-minor matrix.
+No arbitrary cross-version/cross-platform pickle portability is promised.
+
+See [2.0 migration](docs/V1_0_1_TO_V2_0_COMPATIBILITY.md),
+[AUTO](docs/AUTO_MEMORY.md), [stability](docs/STABILITY.md),
+[Python coverage](docs/PYTHON_COMPATIBILITY.md), [inherited limitations](docs/RC1_KNOWN_LIMITATIONS.md)
+and [manual publication handoff](docs/RELEASING.md).
+
+---
+
+## Historical RC1 preparation notes (retained verbatim)
+
 # CodAdapt 1.1.0rc1 release notes
 
 Local prerelease candidate; this preparation does not publish an artifact or run

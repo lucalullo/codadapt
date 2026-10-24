@@ -1,11 +1,11 @@
 # Python compatibility and release policy
 
-The local CodAdapt **1.1.0rc1** candidate declares **Python >=3.10,<3.15**.
+**CodAdapt 2.0.0 — Official Stable Release** declares **Python >=3.10,<3.15**.
 Exact installed-wheel qualification covers Python 3.10–3.14 locally on Windows;
 exact sdist installation is checked on Python 3.12. Numerical imports/Cholesky,
 metadata, pip check, native contracts, trusted persistence and sklearn behavior
 are checked against the installed artifact. Existing matching-minor numerical
-stacks are reused offline in new isolated candidate environments; this is not a
+stacks are reused offline in isolated qualification environments; this is not a
 fresh network resolution of every dependency or every allowed combination.
 
 ## Dependency scope
@@ -27,11 +27,14 @@ source comparison and qualified contracts. The macOS C1 gate is an actual Apple
 host, not simulation. RC computational sources equal the integrated C1 sources;
 only the package version literal changes in this release preparation.
 
-These receipts are not relabeled as fresh 1.1.0rc1 executions on every host or
+These receipts are not relabeled as fresh 2.0.0 executions on every host or
 as a full OS-by-minor matrix. WSL shares the Windows machine's hardware. Historic
 maintainer-confirmed CI is separate from locally inspected machine receipts.
-Future exact-RC remote release qualification is **MANUAL_GITHUB_ACTION_REQUIRED**;
-no GitHub operation is performed by local preparation.
+The frozen final public basis additionally passed the dedicated native Intel
+macOS15/Python3.12 gate in a task-only private runner. The subsequent2.0.0
+metadata-only finalization is locally qualified and source-bound; no fresh2.0.0
+Mac execution or complete OS-by-minor matrix is claimed. Future public commit
+qualification/publication remains **MANUAL_GITHUB_ACTION_REQUIRED**.
 
 Historical Windows DLL/application-control failures occurred in standalone SciPy
 before CodAdapt. They remain numerical-environment evidence, not algorithm
@@ -45,7 +48,8 @@ Local workflow definitions include representative push tests and the manual
 release-qualification workflow for Windows, Linux and macOS/Python 3.10–3.14.
 Definitions are prepared gates until a maintainer executes them on the exact
 integrated commit. Previous-commit CI does not qualify new artifacts. Optional
-compiler checks remain separate. No workflow is dispatched by local preparation.
+compiler checks remain separate. Publication workflows require separate
+maintainer authorization.
 
 Trusted pickle/joblib persistence is supported only within matching environments;
 cross-version or cross-Python replay is diagnostic, not a permanent guarantee.

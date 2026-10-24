@@ -1,9 +1,9 @@
-# AUTO memory admission — 1.1.0rc1
+# AUTO memory admission — 2.0.0
 
-This local RC integrates frozen C1. Native constructors default to `"auto"`;
-1.0.1 used the historical integer default, 512 MiB. Retain the exact RC artifact
-and its SHA256. Local preparation is not publication. See the
-[migration contract](V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md) and
+CodAdapt 2.0.0 — Official Stable Release integrates frozen C1. Native constructors
+default to `"auto"`; 1.0.1 used the historical integer default, 512 MiB. Retain the
+exact release artifact and its SHA256. Prepared and fully qualified for official
+release. See the [migration contract](V1_0_1_TO_V2_0_COMPATIBILITY.md) and
 [known limitations](RC1_KNOWN_LIMITATIONS.md).
 
 ## API and migration
@@ -11,7 +11,7 @@ and its SHA256. Local preparation is not publication. See the
 ```python
 from codadapt import CodAdaptClassifier, CodAdaptRegressor
 
-# Native 1.1.0rc1 default, for binary, Shared OVR multiclass and regression.
+# Native 2.0.0 default, for binary, Shared OVR multiclass and regression.
 model = CodAdaptClassifier(random_state=42)  # memory_budget_mb="auto"
 
 # Preserve historical deterministic admission on any machine.
@@ -102,10 +102,10 @@ Intel/Python 3.12 gate. Earlier hosts ran the frozen V8 extension; C1 preserves 
 extension and changes its lazy routing. These are scoped platform receipts,
 not a new full OS-by-Python matrix or a guarantee for every dataset of that shape.
 
-The local 1.1.0rc1 candidate combines automatic admission for eligible larger inputs,
+CodAdapt 2.0.0 combines automatic admission for eligible larger inputs,
 lower numeric-array prediction overhead and smaller artifacts for qualifying
 categorical metadata. No predictive-quality improvement or general peak-RAM
 reduction is claimed. Small models may grow slightly, DataFrame inference may be
 unchanged, and categorical compaction may increase load time. The original slower
 V8 result remains historical negative evidence; C1's matched temporal fit tests
-addressed that bottleneck. Release remains a separate manual trust decision.
+addressed that bottleneck. Publication remains a separate maintainer action.

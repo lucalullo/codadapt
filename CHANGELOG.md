@@ -1,5 +1,23 @@
 # Changelog
 
+## 2.0.0 — Official Stable Release
+
+Prepared and fully qualified for official release.
+
+- Finalize CodAdapt 2.0 from the qualified public RC1 basis. Computational runtime,
+  learned-state arithmetic, predictive behavior and public methods are unchanged
+  from that basis; this step changes version metadata and release documentation.
+- Retain resource-aware AUTO admission and its lazy C1 path. Explicit positive
+  integer budgets remain hard caps on estimated allocation, not whole-process RSS.
+  Relative to 1.0.1, the native default becomes `"auto"`; pass `512` for historical
+  admission. No silent subsampling, downsizing or anti-OOM guarantee.
+- Retain qualified exact numeric inference and categorical metadata sharing.
+  Next-Gen B1/V2 Components 01/02/03 remain private and are not included.
+- Verify the frozen public basis on real Intel macOS/Python3.12 and requalify
+  metadata-only 2.0 artifacts locally. Keep scoped platform/dependency evidence,
+  four known sklearn XFAIL, mixed predictive competitiveness and persistence limits.
+- No new accuracy improvement is claimed.
+
 ## 1.1.0rc1 — prepared locally, not published
 
 - Change the native memory admission default from `512` to `"auto"`. Eligible

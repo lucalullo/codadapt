@@ -1,3 +1,290 @@
+<!-- REPRESENTATION_CAPACITY_FRONTIER_TERMINAL_2 -->
+# Representation capacity frontier — stop2, known engineering transfer PASS
+
+**ADAPTIVE_CAPACITY_SIGNAL_FOUND / GRADUAL_CAPACITY_RECOVERY.**135newwholemodel fits(90developmentnative,45newstationBase/capacity/LGB),15developmentBasefitsreused. Fixed128states,+3logicalfinitecodebitsvs16, selectedbefore untouchedoriginalgwn/psu/sxf2019-06-21bytes. External pairedmedianRMSE gains14.5131%/24.7511%/50.3833%,5/5each;serialized1.2306x,paired100klatency0.9941/1.0303/1.0240x;comparablepredictionpeakRSS1.0014/1.0010/1.0023x,tracedlivemodel-load1.0486/1.0509/1.0475x(notexhaustivedeepRAM). Native stillbehindLGB4.6409%/8.1975%/17.9154%pairedRMSE. SameSURFRADnetwork/dateandP1clockinterpolation,notforecast/universaltabularconfirmation. KnowncapacityutilityNOTblockedbylackofnovelty;nodefault128promotion. TESToptimaladaptiveallocationhasstrongmatchedfamilyefficiencysignal,exactrestrictedmedianmin43/17/45statesat1.25LGBtolerance;TESTprivilege/referenceerrorlimitsretained. NoTRAIN-onlyallocatortrained. ProductreadyNO:broaderdownside/zero-config/large-NTRAIN/independenthardwaregatesunqualified,notnoveltyblockers. All135savedstatesreplaybitwiseonunchangedpublicpredictioncode;308privatePASS;public727PASS4knownXFAIL0FAILhash-reused,source88snapshot/86currentand12receiptsunchanged. PublicRC1runtime/API/defaultAUTO/version1.1.0rc1immutable;last_completed_round90,Round91NOT_OPENED. Priorencoderverdictandallnegativespreserved. Only3publicNOAAdataGETs,nocloneaccess/GitHub/install/publication. Report: research_private/post_rc1/NEXT_GENERATION_PROGRAM/REPRESENTATION_CAPACITY_FRONTIER/V1/REPRESENTATION_CAPACITY_FRONTIER.md.
+
+<!-- ENCODER_FRONTIER_TERMINAL_B -->
+# Encoder frontier — completed at authorized stop B
+
+**ENCODER_LIMIT_UNDERSTOOD_NO_NOVEL_FIX**. All15 frozen SURFRAD station-splits classify the current encoder as **REPRESENTATION_INSUFFICIENT** on the observed finite TEST samples. Float64 preprocessing preserves supplied X bits; the first loss is quantile binning to16 states. Weak global order survives with zero reversals, but94.7735% median adjacent TEST-clock order edges collapse; median54TRAINrows/cell, allTESTsupported, full deployed keys preserve q. P=1 cannot identify cross-feature/interaction loss. Known fixed-q native-minus-LGB SSE gap bounds80.6448%/90.2983%/94.7630% remain unchanged. TEST local affine oracle removes86.6348%/28.9111%/99.0821% of within-code SSE; these privileged ceilings are not learned-model gains. Sixteen post-decomposition concepts: zero novelty certificates; partial overlaps/archival gaps explicit. D/E/F correctly NOT_ADMITTED, not failed or capacity-interrupted. No candidate, new fit, optimizer, model prediction, transfer or benchmark;255oracle/control arrays replay bitwise,65newprivatePASS;public727PASS/4knownXFAIL/0FAILhash-reused and fresh public RuffPASS. Old expansion18192files/parent782 protected,RC1runtime/API/defaultAUTO/version1.1.0rc1 unchanged. All prior FAIL/HOLDs and NEW_GENERAL_MECHANISM_FOUND preserved. Round91NOT_OPENED,last_completed_round90. Only memory pair public changes;no clone access/network/release. Report: research_private/post_rc1/NEXT_GENERATION_PROGRAM/ENCODER_FRONTIER/V1/ENCODER_FRONTIER.md.
+
+<!-- NEW_EVIDENCE_EXPANSION_TERMINAL_A -->
+# New evidence expansion — COMPLETE at parent condition A
+
+**NEW_GENERAL_MECHANISM_FOUND**: bounded external generalization of the known fixed numeric-precision bottleneck. Three prospective original SURFRAD station-days pass every frozen criterion,5/5splits each; minimum median native-minus-LGB SSE gap unclosable at the unchanged codes80.6448%/90.2983%/94.7630%. Same16-bin-cap source mechanism, not novel mathematics or a new learner. Original ArgoFAIL/HOLD and SSTformatHOLD remain unchanged; no universal field/forecast/niche claim.975fits973SUCCESS,39tables(36empirical+3computed),275privatePASS;public727PASS/4knownXFAIL/0FAILandRuffhash-reused.88snapshot/86currentpublic/12receipts/782parentmatch;only this memorypair changed,RC1runtime/API/defaultAUTO/versionunchanged. Round91NOT_OPENED,last_completed_round90,no baselinepromotion. Stop;future principle must satisfy all three certificates and cost/transfer gates. Report: research_private/post_rc1/NEXT_GENERATION_PROGRAM/NEW_EVIDENCE_EXPANSION/V1/FINAL_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_EVENT_TEMPORAL_INFORMATION_BOTTLENECK_TRANSFER -->
+## New evidence expansion: prospective temporal-domain transfer PASS
+
+All3originalSURFRADstationdaysfixedbeforevalues pass all frozen criteria,5/5splits each. PairednativeRMSEexcessvsLGB410.8497%/38.2174%/479.7234%;minimumfixed-qnative-minus-LGBSSEgapfractionmedian80.6448%/90.2983%/94.7630%. CompletecodeflooraboveALL4boostersonall15station-splits;rawclockfloor0. This localizes a bounded common numeric-precision bottleneck before value estimation, beyond one map/profile;notpopulationriskorforecasttruth. KnownR86mathHISTORICALLY_EQUIVALENT,newexternaldomaintransferonly. Sourceisbiasedstandalonepublishedpyranometerchannel,negativenightvalueskept,notbestphysicaltotalirradiance. OldArgoFAIL/HOLD andSSTHOLD unchanged.975fits973SUCCESS,39tables36empirical+3computed,275privateQA;public88snapshot/86current/12receipts/782parentunchanged,727PASS/4knownXFAIL/0FAILreused. ParentconditionAeligibleONLYafterfinalaudit;Round91NOT_OPENED,no newlearner/baseline/publicchange.
+
+<!-- NEW_EVIDENCE_EVENT_TEMPORAL_RADIOMETER_SOURCE_ADMISSION -->
+## New evidence expansion: temporal radiometer-domain gate admitted
+
+OriginalSURFRADBondville/FortPeck/DesertRockfixed2019-06-21,3whole1440minuteQC0records,dtUTCclock→publishedstandalonepyranometerdw_solar. 517/489/556validnegativeinstrumentnightreadingsretained;notcomputedbestphysicalsolarflux/forecast. Sourcebias/providerreprocessing/onecalendar/sharednetworklimitationsandCC0/citationsdocumented. Literalheader'mversion1'neededmetadata-onlyversionedparserrecovery;old3HOLDsprebodyandunusedtransportlabelsretained,notalgorithmfailures. All75unchangedrecipes/5groupedsplits/runtimehashesfrozenbeforefits,5pre-fittestsPASS.900fits898SUCCESSreused,270privateQA;oldArgoFAIL/HOLD,SSTHOLDunchanged,Round91closed,publicRC1immutable.
+
+<!-- NEW_EVIDENCE_EVENT_DENSE_PROFILE_CONFIRMATION_METADATA_HOLD -->
+## New evidence expansion: dense profile confirmation acquisition HOLD
+
+ThreefixedDACsAOML/INCOIS/JMA,first8WMOIDsbypreregisteredhashfrozenbeforeprofileheaders;22originalcycle001NetCDF3headersand2availabilityHOLDs. INCOISN_LEVELS1/14/1/99/40/58/59/103,none>=512,soDENSE_ORDERED_PROFILE_CONFIRMATION_V1NOT_EVALUABLEbeforetarget/QCvalueinspectionorfit. NootherDAC/cycle/pool/Nthreshold;unusedheadereligiblefilesnotfittedaspartialconfirmation. OriginalBOTH-profileFAILandNOAASSTHOLDunchanged. Noalgorithmnegativeclaim/globalpublicsourceexhaustion.900fits898SUCCESS/265privateQAunchanged;nextdistinctmetadata-onlytemporalradiationsensorfieldquestion,nottheArgorescue.
+
+<!-- NEW_EVIDENCE_EVENT_FIXED_CODE_CROSS_SOURCE_ACCOUNTING -->
+## New evidence expansion: fixed-code error identity and diagnostic limits
+
+All20cachedW/X/Y/ZunitsverifySSEnative=SSEwithincode+between-codepredictionmismatchinfloat64. Medianwithin-codefractionsTOTALnativeSSE92.5704%/60.9167%/88.2652%/17.7661%;medianTESTcelloccupancy349.5/195/12/2. LeftoverisNOToptimization-causalshare;small-celloraclepower/referencechoiceconfoundedwithsourceN/curve. All4comparatorsretained,tinyoldfloat32XGBdifferencesquantifiedwithoutchangingreceipts. OriginalBOTH-profilegateFAIL,NOAASSTgateNOT_EVALUABLE;nonewgeneralclaimorRound91. 0newfit/solve/predict/encodertransform;3newmath/negativecontrol/replaytestsPASS,265privateQAtotal,900fits898SUCCESSunchanged. Nextseparateprospectiveregimehypothesisrequires3newmetadata-selecteddenseoriginalprofileswithallfrozencriteria,noposthocrescue.
+
+<!-- NEW_EVIDENCE_EVENT_ORIGINAL_PROFILE_JOINT_GATE_FAILURE -->
+## New evidence expansion: measured-profile joint gate FAIL, dense witness retained
+
+OriginalArgo992-levelCSIRO5905589:native.458146CvsLGB.117655C,255.8451%worse5/5;all-codefloor.402083Caboveall4boosters5/5,88.2652%TOTALnativeSSEand87.6445%medianLGBSSEGAPunclosable. Original109-levelCoriolis6902746:native1.018015CvsLGB2.256819C,52.9123%betterLGBand53.4435%betterHGB5/5BUT219.1522%worseCatand97.6664%worseXGB5/5. Fixedprimaryfloor0/5,NON_IDENTIFYING;Catfloorabove4/5andXGB3/5retainedwithoutprimaryswitch. BOTH-profileprospectivegateFAIL,noQC/cycle/recipe/source/reference rescue. Denseoriginalinstrument-averagedprofileextendssource-specificwitnessbeyondprocessedmaps,butnotuniformphysical-profile/nicheconfirmation. OriginalSSTgateNOT_EVALUABLEunchanged. 900fits898SUCCESS,36tables33empirical+3computed,262privateQA;public88snapshot/86current/12receipts/782parentmatch,727PASS/4knownXFAIL/0FAILreused. Round91closed,no baselineorpublicchange.
+
+<!-- NEW_EVIDENCE_EVENT_ORIGINAL_PROFILE_ROLE_CONTRAST_ADMISSION -->
+## New evidence expansion: original Argo profile role contrast admitted
+
+SamefixedWMO5905589cycle001canonicalCSIROroute(correctedmetadata-onlyfromAOML404)andWMO6902746cycle001Coriolis. PrimaryinstrumentreportedaveragedrawPRES/TEMP,ownQC1:992and109eligiblelevels;1CSIROlevelrejectedbyfixedQC,secondaryCoriolisunpumpedsamplingexcludedbypriorprimaryrole. NetCDF3headers/units/rawbits/rowgroupsvalidated,fiftyunchangedpresetsfrozenbeforefits,5newpre-fittestsPASS. OfficialD-fileguideprefersADJUSTEDforphysicalinference;thisisexplicitRAWsensor-variablemappingdiagnostic,notclimatetruth. OriginalNOAASSTgateNOT_EVALUABLEunchanged,notreplaced;BOTH-profilecontrastgateprospective.850fits848SUCCESSreused,257privateQA,no publicchange,Round91closed.
+
+<!-- NEW_EVIDENCE_EVENT_SPATIAL_ROLE_CONTRAST_METADATA_HOLDS -->
+## New evidence expansion: source-role contrast metadata HOLDs
+
+ExactNCEIH13712directdepthproductsaregriddedHDF5BAG457MB,raw+processedarchive351.953GB;noteligibleoriginalpointtablewithin256MiBcap. ExactEA2moriginal5kmGeoTIFFnominal6.25Mcells>1Mcap,no certified1kmoriginalmember. BothHOLDbeforedata/fit;no crop,resample,backscatter-as-depthorremoteorder. Rights/historyrecorded,accessiblehistory0matcheswitholdaccess/R17-18gapsretained. No empiricalqualityclaim or originalNOAASSTgatereplacement. Nextmetadataonlyoriginalorderedinstrumentprofiles;850fits848SUCCESS/252privateQAunchanged.
+
+<!-- NEW_EVIDENCE_EVENT_SWISS_SPATIAL_INFORMATION_WITNESS -->
+## New evidence expansion: Swiss terrain fixed-code loss, original gate still blocked
+
+Whole250000originalSwiss2mpixels,2canonicalLV95coordinates,25SUCCESS. NativeRMSE4.962971mvsLGB1.434016m; paired243.6313%worse5/5,all4boostersbetter5/5. Fullcodes256cells/50000distinctTESTcoordinates; privilegedcodefloor3.886018m,rawXfloor0,aboveall4boosters5/5. Median60.9167%TOTALnativeSSEand57.3006%native-minus-LGBSSEGAPunclosableatfixedq(two denominators). Source-specificfrozengatePASS,secondproviderfieldwitness;originaltwo-providergateNOT_EVALUABLE/notPASSbecauseNOAAoriginalHDF5formatHOLD. No silentlyreplacedsourceorloweredgate. Documentedcap16,9/24lookupsused,notquota/APIbug. Same1kmprocessedfieldinterpolationnotunseenregion;knownR86proofnotnovelprinciple. 850fits848SUCCESS,34tables31empirical+3computed,252privateQA;727publicPASS/4knownXFAIL/0FAILhash-reused,88snapshot/86public/12receipts/782parentunchanged. MissionIN_PROGRESS;Round91closed,no baselinepromotion.
+
+<!-- NEW_EVIDENCE_EVENT_SWISS_SOURCE_ADMISSION_NOAA_FORMAT_HOLD -->
+## New evidence expansion: original Swiss field admitted; NOAA format HOLD
+
+Original Swisstopo fixed2600-1200 whole500×500 2m field: published SHA verified, canonical cell-center coordinates and all250000 float32 heights retained; five unchanged25-model execution units frozen,5pre-fit tests PASS. NOAA ERSSTv5 original202503 HDF5 bytes hash-valid, no installed reader on Windows/bundled/WSL; TECHNICAL_FORMAT_HOLD, not algorithm failure, original two-provider replication gate NOT_EVALUABLE/notPASS. No substitute source/month/format, no predictive result yet. Source independence/processed field/interpolation/attribution limitations explicit. 825fits823SUCCESS reused,247privateQA; Round91closed, publicRC1immutable.
+
+<!-- NEW_EVIDENCE_EVENT_SPATIAL_246_INFORMATION_WITNESS -->
+## New evidence expansion: original dense spatial field information witness
+
+UCI246434874originalroadpoints×2coordinates:25SUCCESS,native49.5792%RMSEworseLGB5/5,all4boostersbetter5/5. Completefrozenencoder201-204cellsversus~79596rawcoordinateidentitiesin~87kTESTrows. PrivilegedfiniteTESTcode-meanfloor11.97879m,raw-Xfloor.033836m;all-codeflooralreadyworsethanANY4booster5/5. Median92.5704%TOTALnativeSSEunavoidableatfixedq;minimumfixed-qnative-minus-LGBSSEGAPsharemedian0.867729370987965. NotpopulationBayesrisk/learnedgain. Documentedcap16,all4/8/16accepted,9/24lookupquotaused;notquotaexhaustionorAPIbug. CurrentfrozenfunctionclassinsufficientforTHISobservedrisk,standardmethodhistoricallyequivalent,notnewnativecertificate. Sharedroad/regioninterpolationlimits;generalizationpendingtwoothermetadata-selectedproviderfieldsundernewfrozengate. 825fits823SUCCESS,242privateQA;publicRC1unchanged,Round91NOT_OPENED. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/NEW_EVIDENCE_EXPANSION/V1/SPATIAL_COMPLETED_OBSERVATION/FINDINGS.md.
+
+<!-- NEW_EVIDENCE_EVENT_NCDB2019_EXTERNAL_NEGATIVE -->
+## New evidence expansion: NCDB2019 frozen external negative
+
+All25SUCCESS;native4.3631%higherLLvsLightGBM(5/5loss,descriptiveCI4.0766-4.8156%worse),3.55-4.78%worseallotherboosters5/5. Exactretrospectivelossaccounting:rarefatalclassonly0.029-5.275%ofoverallLLexcess,known-categoryrows99.313-100.250%;allTRAINcategoryvocabulariescomplete,noseen-statequotatruncation. Notcausalhead/functionclassidentification. Nativelearned/nonconstantandbeatsTRAIN-nullallparts;owninteractionshelpbutnotadditiveceiling. Compactmodels/large-batchadvantage,notuniversalRAM/single-rowadvantage(native/Cat1row4.204×slower;workerRSSvsLGB1.059×). Requested100kactual47.8k-53.3k. 237privateQAqualified;800fits798SUCCESS,32tables29empirical+3computed,old50seedjobsseparate. EPAHOLD preserved. PublicRC1unchanged,Round91NOT_OPENED. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/NEW_EVIDENCE_EXPANSION/V1/NCDB_COMPLETED_OBSERVATION/FINDINGS.md.
+
+<!-- NEW_EVIDENCE_EVENT_AGENCY_SOURCE_ADMISSION -->
+## New evidence expansion: agency contracts before quality
+
+NCDB2019 original251949eligiblepersons×18literalcodefields(1762fatal) is admitted for25frozen observations;original272301records and20352N/Utargeteligibility exclusions are audited. Fivecoarse-timegroupedblocks,2101groups;105782literalC_CASEkeys do notcrossblocks, but originaleventidentitysemantics are notcertified. C_SEV,outcome/sequenceidentifiers excluded. EPAarchiveisvalid butnumericNAsemanticsHOLDremains,no fit/recordrepair. InitialstrictschemaHOLDs and pre-fit harness/QA failures retained;header-onlycase/extra-unused-column amendment frozen BEFORErecordvalues orfits. New6privatechecksPASS,218qualifiedtotal;prior775fits/773SUCCESS unchanged until current25raw jobs close. No native candidate,Round91NOT_OPENED,publicRC1immutable. Detailed evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/NEW_EVIDENCE_EXPANSION/V1/ORIGINAL_AGENCY_METADATA/KNOWLEDGE_ADMISSION.json.
+
+<!-- NEW_EVIDENCE_EVENT_EMPIRICAL_572_942_PRIOR_EXPOSURE_HOLD -->
+UCI572and942alreadyappearasREJECT_PRIOR_EXPOSURE_OR_UNRESOLVED_ALIASintheoldobservation-spaceeligibilityledger. CurrentN/P/identitymatch;bothleadsheldbeforeanysource-recorddownload/fit. No newempiricaltableorqualitycredit;noglobalpublic-sourceexhaustioninferred. IN_PROGRESS,last90,Round91NOT_OPENED,775fits/773SUCCESS/212QAunchanged,RC1immutable.
+
+<!-- NEW_EVIDENCE_MD17_POSE_PATH_NEGATIVE -->
+Samerawneighbours/properrigidalignmentremovesmedian13.785%rawsquareddisplacement,butTRAIN-forceRMSE21.9504versusraw21.9877/nearest7.0971;wrongrotation21.9468similar. Correctalignmentbeatsnearest0/5. PrivilegedalignedTEST-forceoracle0.70665remainsunavailableatdeployment. Rigid-posepathdoesnotexplaintherawTRAIN-forcefailureonthesefixedpairs. No newfit/predict/NNquery,2560geometric3x3SVD,212privateQA PASS;775fits/773SUCCESSunchanged. Knownphysical/calculusdiagnostic,notnewlearner;alloldnegativesandRound91closurespreserved. IN_PROGRESS,last90,RC1immutable.
+
+<!-- NEW_EVIDENCE_MD17_TRAIN_FORCE_NEGATIVE -->
+BoundedMD17first512TESTrows/split:raw-neighbourTRAIN-forceTaylorRMSEmedian21.9877versusnearestE7.0971,native5.2821,LGB3.7304;TRAIN-forceworsethannearest/wrong-sign/shuffledF5/5. TEST-forceendpointoracle0.7207isprivileged,notcandidatequality. Exactfull-codepairaliases0/512ineachsplit:NON_IDENTIFYING,notrepresentation-sufficiencyPASS. No newfit/solve/predict,10encodertransforms,205privateQA PASS;775fits/773SUCCESSunchanged. Local-affinehistoricalclosurepreserved;allRound91certificatesfalse. IN_PROGRESS,last90,RC1immutable.
+
+<!-- NEW_EVIDENCE_MD17_FIXED_TOPOLOGY_COMPLETED -->
+MD17uracilnativeRMSEmedian4.74990kcal/mol,22.32%worseLGB,16.39%worseCat,23.52%worseXGB,22.61%worseHGB. Nativewins1/5andloses4/5againsteach,allfivefoldCIsincludezero. Two nativeunitsconstantonTEST;only3/5varyandbeatTRAINmean. Native/LGBfit0.927,serialized0.113,workerRSS0.858,single-row0.628,actual26754-rowbatch1.249. Halfaveragingharmsnative3.47%median;allfixedactionsremainprivilegeddiagnostics. Onecomputedtrajectory,unknownindexchronology;notindependentempirical/unseenmolecule/forecastconfirmation. Compositionvariationnotnecessaryfortheexistenceofthismedianfailure,butitscauseunknown. AlloldnegativesandQM7HOLDpreserved.775distinctfits/773fullSUCCESS,31tables(28empirical+3computed),197privateQA PASS. IN_PROGRESS,last90,Round91NOT_OPENED,publicRC1immutable. SeeMD17_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_MD17_FIXED_TOPOLOGY_SOURCE_ADMITTED -->
+Original MD17uracilfull133770configurations,12atoms,48literalfieldsadmitted. R/z/Eoriginaldtypeandbytes/categorylabelsroundtrip,zero rowfilters,133770exactgeometrygroupswithnocrossblockduplicates. Originalforcearraysnotloadedandnotinputs. All25existingregressionrecipesand5indexblockssplitsfrozenbeforefits. SinglecomputedmoleculetrajectoryandunknownNPZchronology: no independentempirical/forecast/newmoleculeconfirmation.192privateQA PASS,750oldfits/748SUCCESSreused,new25pending. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable.
+
+<!-- NEW_EVIDENCE_QM9_COMPLETED_PHYSICAL_QUOTIENT_SCOPE -->
+Full original QM9 gap cohort: native RMSE0.0383313Hartree,27.95%worseLightGBM,21.79%worseCatBoost,32.10%worseXGBoost(all5/5loss);1.24%worseHGBmedianwithCIincludingzero. NativebeatsTRAINmeanandvariesonTEST5/5. Native/LGBfit0.322,size0.300,RSS0.678,single-row0.468,actuallargeTESTbatch0.474. Fixedhalf original/reverse harmsnative11.84%;HGBinstead improves3.23%median,so averagingharmisnot universal. PhysicalEuclidean-orbitquotientcounterexamples5/5encoders,10encodertransforms,0newfit/predict/targetread. Same-molecule/same-targetcounterexamplesdoNOTprovelabelinformationloss,originalgapcauseorusefulrecovery. Relatedcomputedcohortnotindependentempiricalconfirmation;oldQM7HOLDunchanged. 750distinctfits/748fullSUCCESS,30tables(28empirical+2computed),186privateQA PASS. Public88snapshot/86current/12receipts and782parentfilesunchanged. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable. SeeQM9_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_QM9_ORIGINAL_GEOMETRY_SOURCE_ADMITTED -->
+QM9originalfull133885XYZrecords validated andretained,maximum29atoms,116literal(element,XYZ)fields,129366conservativechemicalcontrol/geometrygroups,largest9. OriginalgapHartreetargetandallfivegroupedcyclicsplit/fixedregressionrecipesfrozenbeforefit. No quantumparentproperties/SMILES/IDsasX,no unitconversion/descriptor/subsample/qualityfilter. RelatedGDBauthorcomputedcohort,notindependentempiricalconfirmation;allqualityflagsretained. Locatorcorrectionfromprimaryproviderpreserved,notperformanceselection.176privateQA PASS;25fixedbaselinejobsfrozen/running,nooutcomeclaimyet. Prior725fits/723SUCCESSreused. QM7physicalHOLDunchanged. IN_PROGRESS,last90,Round91NOT_OPENED,publicRC1immutable.
+
+<!-- NEW_EVIDENCE_QM7_CONVENTION_METADATA_UNRESOLVED -->
+Whole7165rows:allentrymultisetsmatchtol1e-5;directR/Zformula matches3;literaturedescendingrownormmatches506;only509suppliedXmatrices haveexactnonincreasingrownorms. AuthorlinkedloaderusesX/P/TdirectlyanddoesnotdocumentR/Zalignment. Unknownindexconventionremains;no sourcecorruptionorlearnedqualitycausalityinferred. OriginalphysicalHOLDunchanged;no nearestpermutation/scaleorbenchmarkrepair.165privateQA PASS,725fits/723SUCCESS unchanged,IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable.
+
+<!-- NEW_EVIDENCE_PHYSICAL_ADMISSION_HOLD_SOURCE_CONVENTION -->
+Directformula failsfrozen1e-5relativecriterion: maximum3.6576460693499593 on32preselectedsourceindices. Geometriccounterexamplesandencodertransforms werecorrectlynotstarted. OriginalX-basedfits remainvalid; R/Zwere nottheirpredictors.162privateQA PASS. SourceXbenchmarkvalidunchanged; no originalinput/model/gate repair, no codelearningorRound91. IN_PROGRESS,last90,RC1immutable.
+
+<!-- NEW_EVIDENCE_INDUCED_CODE_ACTION_PREREQUISITE -->
+25/25 savedencoders admit a constructive quotient-congruence counterexample on an unrestrictedpositive-relationalproductdomain. This does not establish realizable3Dmolecularsupport, predictiveinformationloss or cause ofthe originalgap. A rawlabel-preservingaction is not automatically a well-defined groupaction after per-column quantization; naive code-coordinate noncommutation alone is also insufficient. Standardalgebra,newfrozen-schemaauditonly;25models,6newprivatechecks,160cumulativePASS. Physicalmanifold/taskutilityUNKNOWN. No newlearner, no passedcertificate, no originaloutcomerewrite. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable.
+
+<!-- NEW_EVIDENCE_ASSAY_CONSTANT_SCORES_AND_WRONG_CONTROL_SCOPE -->
+One nativeBZRunit isexactconstant onall3savedpartitions;other19nativeunits varyTRAIN/TEST. Wrong-action changed-targetfractions median30.38%,36.67%,35.96%,45.16% inDHFR/COX2/ER/BZR. No fittedmodel, controlrecipe, primaryresult or gatechanged. This is an interpretiveaddendum,notnewconfirmation. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable.
+
+<!-- NEW_EVIDENCE_FOUR_EMPIRICAL_ASSAYS_COMPLETED -->
+All100newfixedbaselineunits and provideractiondiagnostics completed without a new learner. DHFR_MD native originalAUC=0.83132, reversalΔ=-0.30704, cycleΔ=-0.41170, fixedhalfΔ=-0.01925; COX2_MD native originalAUC=0.70430, reversalΔ=-0.25528, cycleΔ=-0.12204, fixedhalfΔ=-0.03115; ER_MD native originalAUC=0.80398, reversalΔ=-0.11321, cycleΔ=-0.02830, fixedhalfΔ=-0.02149; BZR_MD native originalAUC=0.78933, reversalΔ=-0.09635, cycleΔ=-0.09032, fixedhalfΔ=-0.01505. Four related curated empirical assays, not four independentproviders; no scaffold-heldout claim. Every outcome/failure and oldQM7/R1/S1/R2negative remains. F18external-actionpremise now empirical, but no novelty/causalrecovery/real-failurecertificate. 725distinctfits/723fullSUCCESS,29tables(28empirical+1computed),154privateQA PASS; public727PASS/4knownXFAIL hash-reused. Singleunit schemaread disclosed, no frozenchoicechanged. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable. See ASSAY_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_ASSAY_X_ONLY_CODEBOOK_AWARE_LINEAGE -->
+X-only lineage audit across DHFR_MD/COX2_MD/ER_MD/BZR_MD uses eachoriginalREADME atomcodebook before matching node/edge/distancemultisets: allsixpairs havezeroequal signatures. This does not exclude sharedscaffolds,precursorsoralteredconformers or provefourindependentproviders.2privateQA PASS,146cumulative sofar;no newfit/predict/targetaccess. Original100jobprotocolunchangedandstillrunning. OnecompletedLGBschemaread withmetrics isdisclosed;no aggregate/actionanalysisyetandnochoicechanged. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable.
+
+<!-- NEW_EVIDENCE_ORBIT_LAW_SCOPE_NO_NEW_VICTORY -->
+A declared target-preserving action is not automatically an invariance of the original input distribution. For a label-preserving involution g, balanced mean squared loss minus the loss of the half-averaged predictions equals one quarter of their squared disagreement. This known identity concerns a balanced orbit law, not the original canonical-presentation law. The original QM7 averaging harm remains unchanged; no new prospective benchmark, AUC guarantee, recovery certificate or learner follows. See QM7_ORBIT_PROBES/DEPLOYMENT_LAW_SCOPE_ADDENDUM.json. Current empirical assay execution is unchanged.
+
+<!-- NEW_EVIDENCE_LINKED_METRIC_QUESTION_NOT_ADMITTED -->
+A target-link/typed-entity metric-sharing question is indexed as HYPOTHESIS only. BTS hubclique has low-rank cosine AND squared-distance structure; this does not bound the native hashed span or establish recoverability. R14 sharing and missing R17/18 catalogs prevent a novelty claim. No metriclearner, solve or syntheticfit was run. Current four-assay execution remains unchanged. Evidence: CONSIDERED_MECHANISMS/LINKED_METRIC_TARGET_GEOMETRY_NOT_ADMITTED.json.
+
+<!-- NEW_EVIDENCE_ASSAY_SOURCE_EXECUTION_FROZEN_RUNNING -->
+Four original curated empiricalcompoundactivity cohorts DHFR_MD/COX2_MD/ER_MD/BZR_MD admitted at393x1521/303x1296/446x1849/306x1089. Exact typedundirectedinputroundtrip,completeoriginalattributes/grouped5foldsplits/provideratomactions frozenbeforefits. Samefrozenbinaryrecipes,100newbaselinejobs,sequential12GiBworker/boosters6threads.144privatechecksPASS. One relatedprovidercollection/differentassayseries,not4independentproviders;upstreamHremoval/coveragefiltering andunknownclass-threshold/sharedscaffold limits explicit. Prior625completedfits/623SUCCESS reused. Sourcefreezeassembly error(no binarytemplate inseedpanel) resolved prefitusingexistingPANEL_Cbinaryrecipes;no newrecipeorvalidfitrepeat. Active exactresume: NEW_EVIDENCE_EXPANSION/V1/ASSAY_RUN/RESUME.md. Inheritedrun_observation.pydrivertext isdocerratumonly;use run_assay_panels.py andchecklivejobbeforelaunching. All100rawunitsmustbefrozenbeforeaggregateanalysis/actions. No newlearner orRound91. IN_PROGRESS,last90,RC1immutable.
+
+<!-- NEW_EVIDENCE_QM7_COMPLETED_PROVIDER_ACTION_DIAGNOSTIC -->
+625validfits/623fullSUCCESS,25observationtables=24empirical+1DFTcomputational,137privateQA PASS. QM7original7165x529 usesfullCoulombmatrices,originalenergy andoriginalfolds. Native RMSE75.15 versus fixedboosters14.89–16.26; all25unitsvalid. Providerdeclared atom permutations change allmodels; native reverse/cycle error ratios2.21/3.60. Fixedhalf original/reverse averaging worsensnativeRMSE36.76%median, also harmsall4boosters. No averagingrescue or newnativelearner. F18external-actionpremise nowexists foracomputedcohort, but no novelty/causal/real-failurecertificate or empiricaltransfer. R17/18gaps and alloldnegativespreserved. Sourcefrozenbeforeitsrecords/outcomes;initialcataloglead explicitlydisclosed. BTSrowIDsizecommenterratum U25/max41,730,328B,notscientificchange. IN_PROGRESS,last90,Round91NOT_OPENED,publicRC1immutable. SeeQM7_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_BTS_GEOMETRY_ROUTE_FORENSICS -->
+BTS original Distance is constant within every observed TRAIN route, reciprocal means agree, and an X-selected 24-airport clique has low-rank cosine AND squared-distance structure. This is not unique spherical geometry or a new learner. More than99.66% TEST rows are on known TRAIN routes; native TRAIN RMSE median124.84 miles is already high. Within-route prediction variance accounts for about32.85% of native TEST MSE; route mean bias remains. The reused TRAIN raw-pair mean reference is exact on known routes but loses to LGB in the first window because of unseen-route fallback. No unique causal attribution or independent provider replication.600fits/598fullSUCCESS unchanged,126privateQA PASS;public86/86 and frozen88/88 exact. Next: explicit original F18 external-action prerequisite audit; F08 class-ontology prerequisite remains absent. IN_PROGRESS, no terminal, Round91 NOT_OPENED, last90. See BTS_GEOMETRY_ROUTE_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_TRANSPORT2_COMPLETED_OUTCOMES -->
+600validscientificfits/598fullSUCCESS,24observationtablesincluding2known-familynew-perioddiagnostics;50seedjobsseparatelyreused,0validfitrepeats.115privatechecksPASS. BIXI237542x9:RMSEworse4.9924%LGB,17.1089%Cat,7.3021%XGB,8.6574%HGB. BTS533175x31DISTANCEmiles:worse310.3791%LGB,147.9081%Cat,509.0591%XGB,330.2919%HGB;strongnewfailureseed,notautomaticallyruntimeHIGH. Bothfull-codeTESTfloors0/5strictbarriersvsall4,non-identifyingnotproofofsufficientlearnability. OriginalR1/S1/R2negativesunchanged;aliascrowdingHISTORICALLY_EQUIVALENTR44/R45,nofitforit.Model-onlysystemsscopeexcludesBIXIoriginalstationlookup;allgeometryretained. IN_PROGRESS,noterminalcondition,last90,Round91NOT_OPENED,RC1immutable. Next:TRAIN-onlyBTSmeasurement/targetgeometryhistoryaudit,beforenewfits.SeeTRANSPORT2_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_ALIAS_CROWDING_NOT_NOVEL -->
+Naturalaliasmetadata prompted a proposedcode-partition-classquota; mechanismoverlapwithR44/R45isHISTORICALLY_EQUIVALENT. No newfit/sweep/candidate forit. Historicalpositiveinteractioncounterexamplesandpartial/unresolvedsign/reopenconditionspreserved;TRAIN-equivalenceisnotfutureequivalence. M/Nfrozenobservationscontinueunchanged,last90,Round91NOT_OPENED. SeeCONSIDERED_MECHANISMS/ALIAS_CROWDING_HISTORY_DEDUP.json.
+
+<!-- NEW_EVIDENCE_TRANSPORT2_SOURCE_FREEZE -->
+M/Njointsource/executionfreezevalidbefore50newfits;111privateQA PASS. Previouslyfullyaudited550fits/548fullSUCCESS unchanged. BIXI237542x9originalAprilridesplusoriginal619stationdictionarygeometry/names,notartificiallycoordinate-free.BTS533175x31original2019FebDISTANCE,allpredeparturefieldskept,knownprovidernewperiod/targetdiagnosticnotvirginfamily;R59old1987-2013processedDepDelaydistinct.SpecificBIXIownerCCBY4catalogverified,rawarchivesandCRC/memberhashesvalid.Model-onlysystemsbenchmarks excludecommonsourceassembly/stationdictionarycost,no fullapplicationdeploymentclaim.Both50rawunitsterminalbeforeaggregatequalityinspection.R1/S1/R2negativespreserved.IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable;pollrunningdriverandreuseallvalidunits.
+
+<!-- NEW_EVIDENCE_CHICAGO_NEGATIVE_REPLICATION -->
+550validfits/548fullSUCCESS,22observationtablesincluding1known-familynew-perioddiagnostic,106privateQA;zero repeatedvalidfit.Chicago449874originalrecords/449868labelledx12:RMSEworse9.9627%LGB,11.5062%Cat,11.5646%XGB,10.3890%HGB,all5/5negative.Nonethelesscode-floorstrictbarriers0/5vsall4.ProspectiveR2FAIL:NYC4/5and+21.5442%floorRMSEexcessvsXGB,Chicago0/5and-24.1170%;criterionunchanged.LAnegative0/5retained.LA2constantmodels/only2beatTRAINmean;NYCpooleddropoffstateshavesupportupto1016,butnot a generalcausal/utilitycertificate.No stopcondition met;IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable.SeeCHICAGO_FINDINGS.md;continue metadata-onlyoriginaltransportcoverage,notclosedbin/capacitysweeps.
+
+<!-- NEW_EVIDENCE_ROUTE_INFORMATION_CHECKPOINT -->
+525validfits/523fullSUCCESS,21observationtablesincluding1known-familynew-perioddiagnostic,97privatePASS;zero repeatedvalidfits. NYC2019distance loses65.4992%RMSEvsLGB; full-code TESToraclefloor>xgberror4/5,HGB3/5butLGB/Cat0/5;categoricalcoarseningaccounts~99%ofcoarseningincrement,nottotalerror. LAnewprovider-durationcontrast has0/5barriersvsall4;nativegain3.1381%LGB,6.5837%XGB,CIsinclude0;Catloss1.4003%,HGBparity. No generalmechanism/learnedrecovery/noveltycertificate. OriginalR1/S1negativegatesunchanged. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable;continue independentprovider metadata. SeeROUTE_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_CLINICAL_CONDITIONAL_CHECKPOINT -->
+19new observation sources/475valid fits/473fullSUCCESS,old50seedjobs reused; no valid fit repeats. HCV615x12all5labels:LLgain29.6036%vsLGB but72.8859%worse vsCat and16.9038%worse vsXGB;CIloss uncertainty retained. CDC891253680x21:AUCdelta-0.0104599LGB,allfourcompetitor losses5/5;fit2.1845xLGB. Conditional rare-atom counts15models/3domains/10560labelaggregations:two domains nonidentified,one survey association only,no causalutilitycertificate. V1outcome-filteredriskdenominator invalid asoverallrisk preserved;V2X-onlydenominator correction reusesallvalidlabelcounts.82privateQA PASS;public727/4XFAIL reused. OriginalR1/S1unchanged. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable. See CLINICAL_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_NOAA_AND_NULL_STRUCTURE -->
+New evidence checkpoint:17observation sources,425valid fits,423fully qualified successes; prior50seed jobs reused. NOAA2025 direct-injury counts:72,360x17,25/25PASS,median RMSEgain20.9965%vsLGB/31.6595%vsCat/16.2841%vsXGB,parityHGB. Four native fits are exactly TRAIN-mean fallback;0/5beats TRAIN mean,so relative win is not demonstrated conditional injury learning. Saved-model structure175units/7MCcohorts confirms LGB/HGB constant functions on2ultrasmall cohorts only;no generic categorical-strength explanation. All30regression null diagnostics retained.15new private checks PASS(71total),public727/4XFAILreceipt reused. OriginalR1/S1 failures unchanged. IN_PROGRESS,Round91NOT_OPENED,last90,RC1immutable. Resolve metadata-extension12 provenance; no global usable-public-source exhaustion claim. See NEW_EVIDENCE_EXPANSION/V1/NOAA_FINDINGS.md.
+
+<!-- NEW_EVIDENCE_ORACLE_AND_ATOM_CHECKPOINT -->
+16newmodelobservationsources,400distinctcells/398fullSUCCESS,all400validfits. Historical5XGBprefit and2HGBbitwisefailures preserved. R1originalFAIL2/3,S1notreplicated.25regressionpartitionbounds/100TESToracleaggregations show0strictinputbarriers aboveLGBM,not generalizingsufficiency. Count/schemaidentity10savedencoders verifiesfixedquantileupperatomadmissionasymmetry across2domains;novelty/whole-taskcausality NOTESTABLISHED,not apublicbugproof.56privateQA PASS;public727PASS/4knownXFAILreused. NOAA2025metadata source remainsusable,so no finite-poolglobalexhaustion claim. IN_PROGRESS,last90,Round91NOT_OPENED,RC1immutable,clone0. See NEW_EVIDENCE_EXPANSION/V1/MECHANISM_REASSESSMENT.md/json; resumeoriginalsourcecontractstep,notoldfits.
+
+<!-- NEW_EVIDENCE_G_COMPLETE -->
+Expanded new-evidence checkpoint: 16sources with5splits and5fixedfamilies; 398distinct successful cells,5historical XGBoostinput failures retained and filled only in a separate supplemental ledger; 2thirdpartyHGBbitwisebatchfailures explicitly unscored,validfits preserved. R1fails2/3(UCI580_SPECIFIC_OR_UNKNOWN);S1notreplicated. CDCwins11.5984%RMSE vsLGB butparityvsXGB/HGB; Beijingloses36.9169%,Room87.8773%(absolute errors/nearzero denominators retained). Dresses-.042898AUC,Algerianmedian0;source/asof/schema limits explicit. No new causal generalmechanism/candidate/baseline orRC1defect. All positive/negative evidence in NEW_EVIDENCE_EXPANSION/V1/EXPANDED_FINDINGS.md and EXPANDED_KNOWLEDGE.json. Publicsource search IN_PROGRESS; no globalexhaustion assertion. last90,Round91NOT_OPENED,RC1immutable,cloneaccess0.
+
+<!-- NEW_EVIDENCE_F_COMPLETE -->
+Expanded new-evidence checkpoint: 15sources with5splits and5fixedfamilies; 373distinct successful cells,5historical XGBoostinput failures retained and filled only in a separate supplemental ledger; 2thirdpartyHGBbitwisebatchfailures explicitly unscored,validfits preserved. R1fails2/3(UCI580_SPECIFIC_OR_UNKNOWN);S1notreplicated. CDCwins11.5984%RMSE vsLGB butparityvsXGB/HGB; Beijingloses36.9169%,Room87.8773%(absolute errors/nearzero denominators retained). Dresses-.042898AUC,Algerianmedian0;source/asof/schema limits explicit. No new causal generalmechanism/candidate/baseline orRC1defect. All positive/negative evidence in NEW_EVIDENCE_EXPANSION/V1/EXPANDED_FINDINGS.md and EXPANDED_KNOWLEDGE.json. Publicsource search IN_PROGRESS; no globalexhaustion assertion. last90,Round91NOT_OPENED,RC1immutable,cloneaccess0.
+
+<!-- NEW_EVIDENCE_E_COMPLETE -->
+Expanded new-evidence checkpoint: 14sources with5splits and5fixedfamilies; 348distinct successful cells,5historical XGBoostinput failures retained and filled only in a separate supplemental ledger; 2thirdpartyHGBbitwisebatchfailures explicitly unscored,validfits preserved. R1fails2/3(UCI580_SPECIFIC_OR_UNKNOWN);S1notreplicated. CDCwins11.5984%RMSE vsLGB butparityvsXGB/HGB; Beijingloses36.9169%,Room87.8773%(absolute errors/nearzero denominators retained). Dresses-.042898AUC,Algerianmedian0;source/asof/schema limits explicit. No new causal generalmechanism/candidate/baseline orRC1defect. All positive/negative evidence in NEW_EVIDENCE_EXPANSION/V1/EXPANDED_FINDINGS.md and EXPANDED_KNOWLEDGE.json. Publicsource search IN_PROGRESS; no globalexhaustion assertion. last90,Round91NOT_OPENED,RC1immutable,cloneaccess0.
+
+<!-- NEW_EVIDENCE_D_COMPLETE -->
+Expanded new-evidence checkpoint: 13sources with5splits and5fixedfamilies; 325distinct successful cells,5historical XGBoostinput failures retained and filled only in a separate supplemental ledger. R1fails2/3(UCI580_SPECIFIC_OR_UNKNOWN);S1notreplicated. CDCwins11.5984%RMSE vsLGB butparityvsXGB/HGB; Beijingloses36.9169%,Room87.8773%(absolute errors/nearzero denominators retained). Dresses-.042898AUC,Algerianmedian0;source/asof/schema limits explicit. No new causal generalmechanism/candidate/baseline orRC1defect. All positive/negative evidence in NEW_EVIDENCE_EXPANSION/V1/EXPANDED_FINDINGS.md and EXPANDED_KNOWLEDGE.json. Publicsource search IN_PROGRESS; no globalexhaustion assertion. last90,Round91NOT_OPENED,RC1immutable,cloneaccess0.
+
+<!-- NEW_EVIDENCE_BC_AND_RECOVERY_COMPLETE -->
+Expanded new-evidence checkpoint: 12sources with5splits and5fixedfamilies; 300distinct successful cells,5historical XGBoostinput failures retained and filled only in a separate supplemental ledger. R1fails2/3(UCI580_SPECIFIC_OR_UNKNOWN);S1notreplicated. CDCwins11.5984%RMSE vsLGB butparityvsXGB/HGB; Beijingloses36.9169%,Room87.8773%(absolute errors/nearzero denominators retained). Dresses-.042898AUC,Algerianmedian0;source/asof/schema limits explicit. No new causal generalmechanism/candidate/baseline orRC1defect. All positive/negative evidence in NEW_EVIDENCE_EXPANSION/V1/EXPANDED_FINDINGS.md and EXPANDED_KNOWLEDGE.json. Publicsource search IN_PROGRESS; no globalexhaustion assertion. last90,Round91NOT_OPENED,RC1immutable,cloneaccess0.
+
+<!-- NEW_EVIDENCE_PANEL_A_COMPLETE -->
+PanelAcomplete:150terminal units,145SUCCESS,5XGBoost empty-category input failures preserved. Native vsLightGBM median gains:TAE12.9825%LL,Academic16.7792%LL,SoySmall89.5206%LL,NHANES+.02478629AUC,EarlyDiabetes-.00585938AUC,Annealing177.8602%higherLL. OnlyTAEpasses aggregateS1; no general strength mechanism. Historical/ancestry/ultrasmall controls explicit. NoRC1bug/candidate/promotion. PanelB100jobs frozen (3temporal physical/count families+Lung62control);metadata-only LightGBM JSON name alias qualified,30valid jobs reused, no original source/protocol hash changes. Report:NEW_EVIDENCE_EXPANSION/V1/PANEL_A_FINDINGS.md. OverallIN_PROGRESS;Round91NOT_OPENED,last90.
+
+<!-- NEW_EVIDENCE_EXPANSION_BEGIN -->
+## Next-generation new evidence expansion — IN_PROGRESS
+
+POST_RC1_BASELINE_1 and RC1 1.1.0rc1 remain immutable. The earlier50jobs and
+782-file batch are hash-verified and reused. New user authorization permits
+public dataset/provider metadata reads only; GitHub clone access, remote jobs,
+publication and runtime changes remain forbidden. last_completed_round90;
+Round91 NOT_OPENED. This is observation/diagnosis, not new learner confirmation.
+
+Saved fits, without refitting: UCI580 co-trained main-only ablation improves
+RMSE4/5; UCI582 native ECE is lower than LightGBM5/5. These are observational
+diagnostic leads, not causal conclusions or marketing claims. Noise and intrinsic
+interaction demand remain unknown. Fixed R1/S1 replication gates precede any new
+outcome; S1 includes symmetric untuned probability-mixture intervention and class
+tail/rank checks. No calibration candidate or rejected-family retry authorized.
+
+Six original cohorts are frozen before150new source/split/family jobs:
+UCI3,100,467,91 multiclass;529,887 binary controls. Exact predictor duplicates
+are grouped; all observed classes retained;5predeclared seeds; fixed RC1 and four
+boosting recipes. UCI467's released131rows differ from metadata300; ESP is the
+original paper's response. Its possible person overlap with Assam582 is unknown,
+so it cannot count as fully independent582replication. SoybeanSmall is47rows,
+a tiny-N control sharing ancestry with SoybeanLarge, never two independent
+cohorts. NHANES published subset2278rows excludes exact age/subjectID from X.
+
+64,338documentary files reviewed; all37Annealing hits are SciPy module
+inventories, not dataset fits;529leads are candidate-pool/alias definitions.
+Raw/member hashes checked. MissingR17/18archives preserve nonuse uncertainty.
+Regression pool extension is metadata/provenance-driven, never performance-
+selected. Reject missing targets, outcome leakage, untraceable normalization,
+resource-inadmissible schemas and same-cohort aliases rather than force quotas.
+
+Task checkpoint and all new receipts:
+research_private/post_rc1/NEXT_GENERATION_PROGRAM/NEW_EVIDENCE_EXPANSION/V1/.
+Reuse VALID units; no restarting old fits. Scientific Map updated with bounded
+diagnostic questions and explicit falsification plans. No terminal verdict yet.
+
+<!-- NEW_EVIDENCE_EXPANSION_END -->
+
+# Continuous next-generation development — new frozen local observation evidence
+
+2026-10-19. The user explicitly reopens an active seven-track program after the
+scoped post-RC1waiting batch. POST_RC1_BASELINE_1 remains immutable; GitHub/clone,
+publication, version changes and historical recipe retuning remain prohibited.
+
+Two locally cached unused source contracts (UCI580regression and582multiclass)
+passed hash/group/row/history audits and were frozen before50newRC1/competitor
+jobs.50SUCCESS,0valid priorfitrepeats. AgainstfixedLightGBM,medianMCrelative
+logloss reduction7.0484%;regressionRMSEexcess4.1038%. No severe trigger in4/5seeds,
+no newbinarycohort, no independentcandidateconfirmation or newqualitygain overRC1.
+Fivepartitions are not independentcohorts;580is spatialnowcasting,not forecasting.
+
+Ten savedmodel information fingerprints expose retained/omitted distinctions,
+not an identified generalizing cause. Countyadjacency does not certify response
+invariance/classontology. A binaryUCI541lead remains unadmitted due source/label
+confounding and unmatched measurementcolumns without provider semantics. Existing
+negative evidence is preserved; no performance-based source/schema repair.
+
+Competitiveindex816records/50strata retains worstsource/split/class/latency/RSS;
+legacy clocks are never relabelledRC1. Fiveofflinezlib3roundtrips preserve exact
+picklebytes but smallabsolute savings imply0materialproductaxes. Tennewnative
+arraysmax72,690bytes fail the existing1MiBmaterialmmapadmission,so0RSSbenchmarks.
+FourmissingPythonminor privatewordingcontractsPASS with3.12/replaysreused;
+0newvalidfits forUX and no change toRC1.18privateQA PASS;publicRuffPASS;the
+hash-identical727PASS/4knownXFAIL/0FAILRCreceipt is reused rather than rerun.
+
+No newbaseline, release or Round91. last_completed_round=90. NewCRITICAL/HIGH0
+within this reviewed scope. The finite currently justified local admission space
+is exhausted under frozenreopen/zero-remote conditions; not a theorem about future
+research. Program continuation requires a newly admitted source/measurement fact,
+materialdeployment/physicalwitness, realRCissue or distinct causal learningpremise.
+Automaticresume reuses all50validjobcheckpoints. See NEXT_GEN_FINDINGS.md,
+NEXT_GEN_RESULT.json and NEXT_GEN_RESUME.md in
+research_private/post_rc1/NEXT_GENERATION_PROGRAM/. No cloneaccess orremoteops.
+
+---
+
+# Post-RC1 development — immutable public baseline and first local batch
+
+2026-10-19. User confirms stable1.0.1,publicprerelease1.1.0rc1/tagv1.1.0rc1 on
+GitHub/TestPyPI/PyPI,and externalTestPyPI/KaggleacceptancePASS. This is
+USER_CONFIRMED evidence,no remote requery or newrawreceipt;published archive
+bytes/commit are not independently asserted. Priorlocal-only wording below is
+historical,superseded by this current report,not rewritten.
+
+POST_RC1_BASELINE_1 freezes all88qualifiedsourcefiles,localwheel/sdist hashes,
+receipts,API,claims,limitations and scopedperformance. RC1runtime/version/tests/
+releasedocs and frozen39/40evidence remain unchanged. Current researchmemory
+only receives chronologicaldevelopmentrecords;originalpublished-baseline memory
+bytes remain in the immutable snapshot. No stablepreparation or versionbump.
+
+Firstlocalbatch:87sourceerrorsites ->14remediationrecipes;twoLOWwordingfrictions
+confirmed via minimalpublicentrypoint witnesses. A privatefutureproposal changes
+3stringliterals in2modules only;exceptiontypes/atomicity and3savednativeartifacts
+perarm remain exact,0newvalidfits. It is not applied toRC1 or fully productized.
+Readonlyjoblibmmap gives10exactarraycomparisons on3trustedRC1artifacts with
+unchanged learnedvalues/input/files. Corrected mappedbacking18,040/586/69,096bytes
+is below the frozen1MiBmaterialitygate,so noRSS/timing orRAMsavingclaim. Slotdigest
+andview-offset diagnosticfailures/repairs are preserved;validbinary/replaywork
+was reused,not repeated. No algorithm failure is inferred from harness errors.
+
+Fivegaps ranked:diagnosticUX,readonlyartifactdeployment,large-batchtemporaryRAM,
+AUTOresourceuncertainty,predictivecompetitiveness. Elevenclosedsystemsrecords
+remain binding;historicalREADYqueuepointers do not reopen them. No new numerical
+systems candidate,qualitysweep or Round91trigger. ResearchINCUBATION;round1-90
+continuous,last_completed_round90. Current useful local registered batch is
+complete;program waits for actualfeedback/materialdeploymentartifact or a
+distinct admittedwitness. This is not globalexhaustion orreleaseauthorization.
+
+Newtrack:research_private/post_rc1/;LOCAL_BATCH_RESULT.json,backlog/feedback/
+issues/stablechecklist andtaskreceipts are authoritativecurrent pointers.
+Clone/GitHub/remote operations0. Existing3MEDIUM+2LOWlimits retained,2additional
+localLOWwordingissues;no newconfirmedCRITICAL/HIGH. RELEASE=TRUST,RESEARCH=FUTURE.
+
+---
+
 # CodAdapt 1.1.0rc1 — local release candidate prepared, not published
 
 2026-10-18. Explicit release-preparation authorization changes the workspace
@@ -15385,3 +15672,740 @@ failure before any learner pilot. Proposed prerequisite work is not executed
 or scheduled. Report:research_private/ROUND81_MASTER_REPORT.md; audit:
 research_private/round81/final_audit.json. NoRound82.
 <!-- ROUND81_CURRENT_END -->
+
+
+<!-- TRAIN_ONLY_ADAPTIVE_CAPACITY_TERMINAL_B -->
+## TRAIN-only adaptive capacity: fixed relative-risk rule failed
+
+TRAIN_ONLY_POLICY_FAILED, stop B. 30 TRAIN-only units/480 regions, 11 independent
+signals, all inputs and per-unit predictions hash-frozen before OOS scoring.
+The predefined conditional-risk score passes only BON/SXF (2/6); FPK AUC .568359,
+PSU .638021, GWN precision .551724, DRA precision .641026. DRA AUC .998667 is
+retained: its operating threshold flags 28 regions below material absolute utility,
+so the failure does not imply absent ranking information. TRAIN within-code
+targetvariance descriptive AUC .754..1 is positive secondary evidence, not a
+posthoc replacement policy. Four support/cardinality/entropy-type scores are
+constant here; all parent supports54, so their utility is unidentifiable in this
+design. All5folds overlap; six station-days share provider/date and were previously
+exposed. This is prospective frozenrule reanalysis, not untouchedconfirmation.
+
+No new whole native/booster fit, benchmark or RAM probe. C/D/E/F not executed
+after the frozen upstream failure; no adaptive RMSE/cost/downside/AUTO PASS claim.
+Prior ADAPTIVE_CAPACITY_SIGNAL_FOUND and all GLOBAL128 fits remain valid. No new
+baseline/MATERIAL_GAIN/engineeringcandidate; RC1/runtime/API/default/version
+unchanged, Round91 NOT_OPENED, last_completed_round90. 98 private PASS; public
+727PASS/4knownXFAIL hash-reused; public Ruff and private correctness Ruff PASS.
+
+Retry only with a separately preregistered material-utility/noise estimator and
+independent source-frozen regime, retaining equalcapacity/downside/cost/AUTO gates.
+Do not retune this score/threshold on these TEST outcomes. Current task terminal;
+no blanket impossibility or exhaustion of all adaptive learning is asserted.
+Evidence: research_private/post_rc1/NEXT_GENERATION_PROGRAM/TRAIN_ONLY_ADAPTIVE_CAPACITY/V1/KNOWLEDGE.json.
+
+
+<!-- ADAPTIVE_CAPACITY_POLICY_DIAGNOSIS_TERMINAL -->
+## Adaptive capacity policy diagnosis — scoped oracle ceiling weakness
+
+SELECTIVE_POLICY_CEILING_WEAK under the fixed strict96-state/global128 oracle
+quality dominance gate. POLICY_FAILURE_MECHANISM_IDENTIFIED=TRUE; demand-gap
+classification B (TRAIN signal present, metric misses material utility).
+149/154 false-positive demand flags are below the original absolute utility
+floor;141 already have low estimated TRAIN absolute gain. Actual chosen-k flags
+are separate:156 false-positive allocations/16 missed useful opportunities.
+TRAIN within-code variance minimum stationAUC .754local/.805native; relative
+score cross-station rank correlation .224 vs variance .679. Native/local benefit
+disagreement2.5–12.5%; memory-level/conditional causality not identified in P1.
+
+At96states the TEST-valued oracle is0.005–6.63% worse in median RMSE than global128,
+none of6sources reaching4/5strictdominance. This closes only this fixed family's
+claim of demonstrated strict dominance. A separately frozen TRAIN-value oracle
+allocation control improves matcheduniform128 in5/6station medians; preserve it.
+No universal selective impossibility is claimed. State/value+cut accounting is
+symbolic, not measured nativefit/pickle/RSS/inference. No deployableV2 created.
+
+All30V1units/allnativefits reused;960missinglocalTRAINhistogram estimates and15
+missingoraclematrices only.156newprivatePASS; public727PASS/4knownXFAIL hashreused.
+Earlier TRAIN_ONLY_POLICY_FAILED/ADAPTIVE_CAPACITY_SIGNAL_FOUND/GLOBAL128signal
+preserved. GLOBAL128 still requires broad downside/classification/largeN/AUTO/
+systems/size/zero-config/crossdomain gates before productization. RC1 runtime/API/
+AUTO/default/version1.1.0rc1 unchanged. Lastcompletedround90; Round91NOT_OPENED.
+
+Same6alreadyexposedstationdays/provider/date/overlappingpointinterpolationfolds;
+notindependentconfirmation. No thresholdtuning/newpolicy/nativefit/benchmark/
+cloneaccess/network/GitHub/publication. Retry only with separately justified
+materialutility andindependentactualnativeefficiencybridge, notgaterescueonthese6.
+Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/ADAPTIVE_CAPACITY_POLICY_DIAGNOSIS/V1/KNOWLEDGE.json.
+
+
+<!-- GLOBAL128_ENGINEERING_QUALIFICATION_TERMINAL_B -->
+## GLOBAL128 broad engineering qualification — rejected
+
+BROAD_DOWNSIDE_FAILED. Twenty real metadata-selected sources (8regression,
+6binary,6multiclass)×5 frozen existing group/time splits; one separate5split
+interaction stress.100BASEfits hash-reused,105newGLOBAL128+5newstressBASEfits.
+No valid original fit rerun. GLOBAL128 frozen privately with128default, numeric
+32/64/128 levels and SharedOVR128cap; all other algorithms unchanged. RC1 untouched.
+
+Dataset-first median relative primary effects: regression−0.678%RMSE, binary
+−0.312%LL, multiclass+1.708%LL. W/T/L4/1/3,3/2/1,1/2/3. Worstsource medians:
+Swiss+85.691%RMSE, UCI887+7.171%LL, UCI288+55.209%LL. p95split harms89.956%,
+9.149%,57.272%. WorstregsplitUCI864/93105 hasconstantTESTtarget0: RMSE.0370303→
+.4017813 (+985.006%), bothR2=0; absolute/scalecontextretained,noexclusion.
+QM7+26.577%,Bixi+9.926%RMSEmedians independentlyfail. Regression-onlyalsofails.
+Argo5905589−77.382%RMSE5/5 andUCI501−10.271%median(withharmfulsplits)preserved.
+EarlierSURFRADpositivecapacityevidenceVALID,notpooledwiththisbroadpanel.
+
+GLOBAL128 overallREJECTED, noNEXT_GENengineeringcandidate/MATERIAL_GAIN/baseline.
+SelectiveV1closedbyexplicituserinstruction,noV2. No universalhighercapacity
+impossibilityclaimed. Wholepipelinechangesderivedlevels/support/addressing;
+causalcomponentnotisolatedandnonewrepairattempted. Existing-sourcecontrastnot
+untouchedconfirmation. Rareclassrecalls/supports/AUC/AP/MAE/R2fullyrecorded.
+
+StopBpreventsadditionalC-I: latency/deepRAM/load/save/competitors/explicitbudget/
+atomicity/KaggleacceptanceNOT_EVALUATED.30fullfrozenTRAINAUTOqualityfitsonsixlarge
+datasetscomplete, notfullAUTOqualification. Observedpickle grows2.57xBZR_MD,
+2.55xQM7; historicalfittimesunpaired,noinferencespeed/deepmemoryclaims.
+226privatePASS; public727PASS/4knownXFAIL hashreused; Ruff/source/rawreplayaudited.
+Publicruntime/API/default/version1.1.0rc1 unchanged,lastcompletedround90,
+Round91NOT_OPENED. Onlymemorypairpubliclychanged. No clone/network/GitHub/release.
+
+Retryonlywithnewdistinctcausalwitnessandindependentfrozenquality/safety/cost
+premise;notvanilla128repeat,posthocdatasetrouteorthresholdrescue. STOP.
+Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/GLOBAL128_ENGINEERING_QUALIFICATION/V1/KNOWLEDGE.json.
+
+<!-- CAPACITY_BENEFIT_HARM_MECHANISM_TERMINAL -->
+## Capacity benefit/harm mechanism — terminal after GLOBAL128 broad rejection
+
+CAPACITY_HARM_TOO_HETEROGENEOUS; first point CAPACITY_HARM_REMAINS_MIXED. Same20real sources x5splits,200saved models;0newfits/solves. TEST200/200bitwise replay and BASE TRAIN100/100bitwise.18materialwins,17smallwins,21ties,7smallharms,37materialharms.13/37harm splits improveTRAIN;24/37also worsenTRAIN. Finer cuts preserve coarse numeric encoding, but32/64/128 replaces4/8/16 under fixed256-address tables, unchangedlambda/budget and altered selection/stopping: not a nested extension of the fitted Base.
+
+Swiss medianRMSE+85.69%,TRAIN+86.95%,0low-support exposure; hash aliasing and missing coarse learning path measurable. UCI864seed93105rejects all fine levels, returns intercept;+985.01%TESTRMSE on1013zero targets (absolute.03703->.40178), not erased. Argo remains5/5positive,medianRMSE-77.38%;SURFRAD prior positives remainVALID. Support<5 restricted privileged TEST-target oracle meets its scopedmaterial gate on3/6harmed sources (UCI288/UCI571/UCI887),not Swiss/QM7/Bixi. Fixedbackoff loses muchArgo gain and causesUCI529harm; no TRAIN-safepolicy demonstrated. Bothmodelsmedianserialized2.170xBase;~98.58%extra retainedstates overG128, support metadata extra. No runtimebenchmark or deployable compactbackoff claim.
+
+DiagnosticquestionWHENunsafe differs from oldWHEREhelps allocator; mechanismfamilies hierarchical/supportbackoff/coarse-fine/shrinkage remainHISTORICALLY_EQUIVALENT at conceptlevel(F01/F06/F07/F09/F13/F14,R11-13/R30-31/R49-59), archivalgaps preserved. No newindependent reliabilitychannel; promotionconjunctionFALSE. GLOBAL128 REJECTEDgeneral/regression-only,SELECTIVEV1closed,noV2,noRound91. ScopeDEVELOPMENT_DIAGNOSTIC_EXPOSED,notconfirmation. Retryonlynew independentinformation ordistinctcausalintervention satisfyinghistoricalconditions;neverthresholdtuning.
+
+Evidence: `research_private/post_rc1/NEXT_GENERATION_PROGRAM/CAPACITY_BENEFIT_HARM_MECHANISM/V1/FINDINGS.md`, `ANALYSIS.json`, `KNOWLEDGE.json`, per-jobhashreceipts and `final_audit.json`. SourceoftruthprotocolSHA47ce885b01e09212545e384305bd2b31dcdc5024ec48f1cce0ed959e018681b4. Core/API/default/version unchanged(1.1.0rc1,AUTO);last_completed_round90 unchanged. No GitHub access/remote/release. Stop at terminalC.
+
+
+<!-- CAPACITY_CLOSURE_AND_FRONTIER_ADVANCE -->
+## Close capacity line and advance distinct frontiers — terminal bounded local pass
+
+CURRENT_USEFUL_LOCAL_SPACE_EXHAUSTED (stopD), broader program conditionallyIN_PROGRESS. REPRESENTATION_CAPACITY_16_TO_128 CURRENTLY_NOT_PRODUCTIZABLE, STRONG_NEGATIVE_PRODUCT_EVIDENCE; SURFRAD/Argo POSITIVE_REGIME_EVIDENCE preservedVALID. Keep TRAIN_ONLY_POLICY_FAILED,SELECTIVE_POLICY_CEILING_WEAK,GLOBAL128general/regression-onlyREJECTED,CAPACITY_HARM_TOO_HETEROGENEOUS,no safe backoff. NoV2/V3/threshold/backoff/globalcapacityrepair. Reopenonlynewcausalsignal,distinctTRAIN-onlypolicy,newrepresentationprincipleorheterogeneity-reducingevidence underhistoricalfalsifiablegates.
+
+12frontiercards rescored with7valueaxes/COST/RISK/historicalredundancy;admissionbefore score. ClosedP3/P5/P6/P7/P8/C2/fitallocation/coeff/import/copyfamiliesnotreopened. Neworiginal100BASEartifactscreen:no mmapadmission(maxnumericbacking559015B<1MiB);fixedzlib3saves>=256KiBand>=20%on15/100artifacts(3/20sources),100/100exactbyte reconstruction. Positive practicaltransportmagnitudeonly,notnativelearning/RAM/speedgainorqualifiedcandidate;actualdeploymentcontext/costcontractstillrequiredbyoldretry. No artificiallyenlargedmodels orcodecsearch.
+
+Competitivepointerrefreshlinks975existingfits/973SUCCESS/39tables withall4boosters andnative;preserves980attempts including5prefitfailures andvalidrecoveries,2qualified third-partybatch-equivalencefailures retained. Older816indexnotpooled/replaced. V1catalogueIDbookkeepingerror preserved; V2usesoldfit.jsonidentityrule,noscientificchange. 0newfits/solves/predictions/benchmarks/profiles/downloads; no threeMATERIAL_GAINaxes,newbaseline,newmechanismorRound91. RC1/API/AUTO/default/version1.1.0rc1 immutable,last_completed_round90. Onlytrackedmemorypairchanged;zeroGitHub/clone/remote/publication.
+
+Evidence:`research_private/post_rc1/NEXT_GENERATION_PROGRAM/FRONTIER_ADVANCE_AFTER_CAPACITY/V1/FINDINGS.md`,RESULT/KNOWLEDGE,protocols,per-artifact/per-panelreceipts,final_audit. Nextonlynewsource-boundphysicaloperator/ownerwitness,actualmaterialdeploymentcontract,newadmittedoriginalsourcefacts,ortriple-certifiednewprinciple. Finitecurrentqueueexhaustion,notallpossibleresearchimpossibility.
+
+
+<!-- EXTERNAL_EVIDENCE_EXPANSION_II_START -->
+## External evidence expansion II - IN_PROGRESS
+
+New user-authorized primary public metadata/data search; prior bounded local exhaustion and capacity product closure preserved. Metadata-first source admission and fixed original RC1/four-comparator recipes; new deployment/transport observations only on original new-workload artifacts. No native learner/capacity repair, no Round91, no RC1/API/default/version mutation or clone/GitHub access. last_completed_round=90. Checkpoint: research_private/post_rc1/NEXT_GENERATION_PROGRAM/EXTERNAL_EVIDENCE_EXPANSION_II/V1/RESUME.md.
+
+
+### EXTERNAL_EVIDENCE_EXPANSION_II_ZLIB_REJECTED_MMAP_MATERIAL
+
+15/15newwideartifacts material bytes,25/25state/predictions exact; Ads warmload3.3617x violates frozen1.50. No qualified zlib candidate. Five newGasoriginalarrays exceed existing1MiB mmap materiality; not a RAM benefit yet. Separately preregister same-version protocol5outofband single-contiguous backing restoration; no cost or converted artifacts before freeze. Only5materialoriginalmodels eligible, allother20not hidden. Need real load/retainedUSS/RSS/persistence/exactness and size gates. Evidence: research_private/post_rc1/NEXT_GENERATION_PROGRAM/EXTERNAL_EVIDENCE_EXPANSION_II/V1/BRANCH_DECISIONS.json. IN_PROGRESS; no Round91, no public change.
+
+
+### EXTERNAL_EVIDENCE_EXPANSION_II_SIX_SOURCE_PORTABLE_IN_PROGRESS
+
+150SUCCESS fixedrecipe scientificunits on6cohorts; Census336564x30 wage RMSE11.53% worseLGB5/5 withfasterfit/lowerartifactbytes. ZlibrejectAds warm3.3617x; mapped formatexactbutUSS.9731xnotmaterial. ActualfreshworkerpreloadRSSfraction.9310 qualifiesnewdependencyownermeasurement; portableimagecounterfactual IN_PROGRESS only. No newqualitymechanism certificate; not publicevidence globallyexhausted. See research_private/post_rc1/NEXT_GENERATION_PROGRAM/EXTERNAL_EVIDENCE_EXPANSION_II/V1/INTERIM_FINDINGS.md. last_completed_round=90; public1.1.0rc1 unchanged.
+
+
+### EXTERNAL_EVIDENCE_EXPANSION_II_TERMINAL_B
+
+External evidence expansion II completed150 fixed-recipe observations on6 sources. NEXT_GEN_ENGINEERING_CANDIDATE_READY, authorized stop B: a private fitted-only native image, not an estimator replacement. Cold process ratio0.3394, peak serving RSS0.5204; warm inference preserved. Exact numeric replay on2314971 overlapping TEST rows and555 input/error probes. Zlib and mapped-format failures preserved. No quality gain, new baseline, public API/runtime/default/version change, or release. Round91 NOT_OPENED, last_completed_round90. Evidence: research_private/post_rc1/NEXT_GENERATION_PROGRAM/EXTERNAL_EVIDENCE_EXPANSION_II/V1/KNOWLEDGE.json. Minimal-environment/independent-platform/product review remain before any integration.
+
+The fitted-only image is a separate private contract; ordinary estimator import/API/dependencies remain unchanged. Source kernels and learned state are exact. This is not a new quality mechanism and does not open Round91. See FINDINGS.md for every source limitation, failed branch, harness recovery, verification definition and future gate.
+
+
+### PRIVATE_INFERENCE_PRODUCTIZATION_START
+
+Unchanged fitted-only image enters private trust/schema/failure-atomicity qualification. Previous 30-model cost/exactness evidence remains VALID. Freeze implementation and new tests before outcomes; no post-failure loader repairs, public changes, new fits or remote access. Resume: research_private\post_rc1\NEXT_GENERATION_PROGRAM\PRIVATE_INFERENCE_PRODUCTIZATION\V1\RESUME.md
+
+
+### PRIVATE_INFERENCE_PRODUCTIZATION_TERMINAL_B
+
+Private inference productization: FORMAT_PRODUCTIZATION_FAILED (stop B). Frozen image:15/27 malformed-input checks PASS,12 FAIL; deterministic export3/3 PASS, transactional save0/3. Wrong format magic/undeclared section/dtype-changed state can return a model; EOF lacks image context. Two private HIGH blockers,0 new public RC1 CRITICAL/HIGH. Earlier30-model cold/RSS/exactness observations remain VALID. Direct estimator Pipeline unsupported; prediction-function bridge/joblib exact on3 tasks. No candidate fix, refit, retiming, API/default/version change or new material gain. One dependency-isolation cause cannot count as two independent baseline gains. Future distinct versioned schema/atomic-save proposal must be frozen before tests. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/PRIVATE_INFERENCE_PRODUCTIZATION/V1/KNOWLEDGE.json. Round91 NOT_OPENED; last_completed_round90.
+
+
+### PRIVATE_FORMAT_HARDENING_START
+
+Only the two private HIGH blockers are reopened by explicit hardening authorization. Prior V1 failure and cold/RSS positives remain valid. Framing schema2/unchanged payload schema1; no public RC1 mutation. Protocol and next step: research_private/post_rc1/NEXT_GENERATION_PROGRAM/PRIVATE_FORMAT_HARDENING/V1/RESUME.md
+
+
+### PRIVATE_FORMAT_HARDENING_TERMINAL
+
+Private format hardening:FORMAT_HARDENING_FAILED. Schema2 single-file framing preserves raw payload schema1 and all numerical kernels. 107 malformed checks/24 save faults PASS; all30 exact,0 mismatches on2314971 overlapping TEST rows. ColdV2/RC1 source-first0.3685; coldV2/V11.0516; peakV2/RC10.5267. Qualified independent gains added:0; startup/RSS are ONE mechanism. Original V1 rejection and positives preserved. No cost-driven tuning, public RC1/API/default/version change, remote or release. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/PRIVATE_FORMAT_HARDENING/V1/KNOWLEDGE.json.
+
+
+### HARDENED_FORMAT_COLD_RECOVERY_START
+
+Prior FORMAT_HARDENING_FAILED preserved. Explicit new cost-causal diagnosis before any general implementation change; identical safety/gates, all30 artifacts. No RC1/round/remote change. research_private/post_rc1/NEXT_GENERATION_PROGRAM/HARDENED_FORMAT_COLD_RECOVERY/V1/RESUME.md
+
+
+### HARDENED_FORMAT_COLD_RECOVERY_TERMINAL
+
+Hardened cold-start recovery:NEXT_GEN_COMPONENT_QUALIFIED. Cause VALIDATION_SCALING: packed validated decoding and lazy success diagnostics, all93 predicates/atomic/state digest retained. 107 malformed/24 atomic PASS,30 models/2314971 overlapping TEST rows exact. Gas new/old-private 1.43767 vs unchanged1.50 cap; median new/RC1 cold 0.36506, peak 0.52622. Previous FORMAT_HARDENING_FAILED untouched. Qualified independent deployment causes=1; no public integration/baseline/release. Round91 NOT_OPENED,last_completed_round90,1.1.0rc1 unchanged. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/HARDENED_FORMAT_COLD_RECOVERY/V1/KNOWLEDGE.json.
+
+
+### COMPONENT_FREEZE_INDEPENDENT_FRONTIER_START
+
+One deployment cause only; component01 frozen, no baseline. Real local load/save portability followed by independent frontier admission. RC1 immutable,Round91 not opened. research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPONENT_FREEZE_INDEPENDENT_FRONTIER/V1/RESUME.md
+
+
+### COMPONENT01_PORTABILITY_INDEPENDENT_FRONTIER_TERMINAL
+
+Component01 definitivefreeze:one DEPLOYMENT/MODEL_LOADING cause only. Windows3.10-3.14PASS with648valid units reused; WSL strictsavedWindowsbits FAIL9/30models,60probabilityelements,max1.11e-16; rawscores/classes andsameLinuxRC1/private30/30exact.107malformed/24atomicLinuxPASS. HyperV not executed networkaccess; VMOff12GiB/originalMAC201/switch restored,butMACmode static,manualenvironmentrestorepending. macOSFUTURE_EXTERNAL.12frontiers rescored;25savedwarmprofilesreused,noadmitted independentcandidate. CURRENT_USEFUL_LOCAL_SPACE_EXHAUSTED, boundedcurrentevidenceonly. Axes2/3empty,noNEXT_GEN_BASELINE_1,Round91NOT_OPENED,last_completed_round90,publicRC1immutable. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPONENT_FREEZE_INDEPENDENT_FRONTIER/V1/KNOWLEDGE.json.
+
+
+### PORTABILITY_CONTRACT_NEW_EVIDENCE_TERMINAL
+
+EXTERNAL_EVIDENCE_REQUIRED(stopD),boundedphase. SeparatepreregisteredCROSS_PLATFORM_NUMERICAL_REPRODUCIBILITY_V1:21/30BITWISE_PORTABLE,9/30NUMERICALLY_PORTABLE,max2ULP/1.11e-16;raw/state/metadata/classes/order/regressionexact.60arbitrarythresholddecisionintervalsretained;notuniversaldecisioninvariance. OriginalstrictWSL9/30FAILandQUALIFIED_PRIVATE_WINDOWSunchanged. HyperVOff12GiB/originalMAC201/switch;staticflagresidualdocumented,0newmutations. Two metadata-firstnewrawsourcesScania76000x170/UCI296101766x47/source-split-metric-hashfreeze beforefits.2original+2minimalinvalidprofilemeasurementrepairfits,originalstatesandTESTbits exact. One distinctprivateboundedliteralnormalizer18semanticPASSbutwholewarm.924/.948vs<=.833gateFAIL;no retuning.20contracttestsPASS,public727/4hashreuse,RuffPASS. No secondqualifiedcomponent/materialgain2/3,baseline,predictiveclaimorRound91. Externalrequirementisdistinctindependentoperator/semanticpremise orrealplatformtransfer,notnetworkblock/norallpublicresearchimpossible. PublicRC1/API/AUTO/version1.1.0rc1,last_completed_round90 unchanged;zeroGitHub/clone/publication. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/PORTABILITY_CONTRACT_NEW_EVIDENCE/V1/RESULT.json;report:research_private\post_rc1\NEXT_GENERATION_PROGRAM\PORTABILITY_CONTRACT_NEW_EVIDENCE\V1\FINDINGS.md
+
+
+### EXTERNAL_EVIDENCE_EXPANSION_III_START
+
+Metadata-firstnewsourceadmission, source/split/metrics/recipes/hashfreeze beforefits. Component01WindowsandstrictbitwiseFAIL/numericalsupportpreserved. Oldfailedliteralcategoryandclosedcapacity/layout/formatfamiliesnotreopened. No RC1/public/default/version change, no Round91 or GitHub/cloneaccess. Resume:research_private\post_rc1\NEXT_GENERATION_PROGRAM\EXTERNAL_EVIDENCE_EXPANSION_III\V1\RESUME.md
+
+
+### EXTERNAL_EVIDENCE_EXPANSION_III_FROZEN_PANEL_PROGRESS
+
+Four original sources frozen: SUSY5M×18 (simulation, systems scope), RNASeq801×20531, leaf shape1600×64/100classes, CensusKDD299285×40. MillionSong/YearPrediction was correctly excluded after actual historical-fit evidence. No outcomes used for source selection. Source/execution freeze SHA256 fc6cf2f124dbc5133d5e27f55b31f37e58c94f24288f2244d327a0c46cd4743d. Six-thread scientific recipes, five splits each;100 units resumable. Census survey weights excluded from X, used for fit and primary metrics; exact-X groups disjoint, original TEST preserved. Initial wide/large AUTO refusals preserved without integer-budget override or subsampling. CatBoost scientific fit valid; only NPZ object-label postfit loader repaired, no refit. Task remains IN_PROGRESS; gains2/3 empty; no public source/default/version change, Round91 not opened. Live evidence: research_private\post_rc1\NEXT_GENERATION_PROGRAM\EXTERNAL_EVIDENCE_EXPANSION_III\V1\PROGRESS_EVIDENCE.json.
+
+
+### EXTERNAL_III_DISTINCT_MAPPING_PRIMITIVE_ADMISSION
+
+Support-predicate reuse rejected before prototype:18.4%instrumented CPU below fixed20%owner screen;855groups but608distinctjointpredicates. Negative remains source-bound. A separate original _transform_categorical mapping operator owns49–50%wholeCPU on newCensus117 and priorclinical296; rejectedliteralV1 changed only _categorical_values and explicitly excluded mapping. New fixed nonrare-string map dispatcher preserves that original validator, all cuts/codes/state/arithmetic. No layout/format/globalpatch/cache.17semantic tests PASS, including10648Cartesian cases; full transfer/cost/RSS/Python qualification still pending, no component02promotion. Candidate source/gates frozen in STRING_MAPPING_PROTOCOL SHA256 9efd026bca25382ef571b486e4f2326f051e6d41dc8cc841b594e6e8e2b550e6. New scalarregression addendum301/846 frozen beforeits fits;21no-fit group/factory/metric checks PASS, no revised initialprotocol. Main task remains IN_PROGRESS;gains2/3null,publicRC1unchanged,Round91notopened.
+
+
+### EXTERNAL_EVIDENCE_EXPANSION_III_TERMINAL_A
+
+Second independent frozen private gain: exact bounded nonrare-string mapping after unchanged native normalization. 83models/19sources exact;7schema-only targets,5non-discovery source transfers;warm ratios0.480684/0.494746 at1/32rows,all76source/batchpooled medians<=1.05. Six fresh RSS arms pairs<=1.10;model bytes/state unchanged. NativePython3.10-3.13PASS76cases;current3.14SciPyDLLblocked beforeCodAdapt (notPASS),portable-onlycomposition3.12/3.14PASS30each. 150scientificunits:136SUCCESS,9AUTOrefusals,5CatRNAresource rejects;UCI301regressionpositive development observation,three other pairedsource qualitylosses preserved. Supportreuse18.4%<20%rejected beforeprototype. Component01andcrossOSstrictFAIL/numericalsupport unchanged. Gaincount2,gain3empty,baselineNOTpromotable,0newCRITICAL/HIGHinqualifiedscope,RC1immutable,Round91NOT_OPENED,last_completed_round90. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/EXTERNAL_EVIDENCE_EXPANSION_III/V1/FINDINGS.md
+
+
+### COMPONENT02_FREEZE_THIRD_GAIN_START
+
+Canonicalcomponent02name frozen as exact alias,notthirdgain. Prior83models19sources/smallbatchgatesunchanged;native314NOT_QUALIFIED_ENVIRONMENT_BLOCKED,noCodAdaptFAIL. Newthird-gainprograminpriorityorder,owner/history-first. RC1immutable,round90,Round91notopened,zeroGitHub/clone/publication. Resume:research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPONENT_02_FREEZE_THIRD_GAIN/V1/RESUME.md
+
+
+### THIRD_GAIN_FROZEN_FULL_FIT_PROGRESS
+
+38semanticPASS;categorykernelratio.730305notfullfitgain. Actualnativecategoricalinventory14sources/8targets includesrare-keyreviews1276;8pure-numericmodelsreuseVALIDfits sincechangedoperatornotcalled. Three metadataselectedUCIpublic transfercontracts73/222/468 frozenbeforefullcandidatefits,oldcohortsnotqualityconfirmation. Allfullfitunitscheckpointbeforevalidation;oneworker6threads. RC1unchanged,2gains,gain3null. Resume:research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPONENT_02_FREEZE_THIRD_GAIN/V1/RESUME.md
+
+
+### THIRD_GAIN_TRAIN_FREQUENCY_REJECTED
+
+FrozenrecipeREJECTED:38semanticPASS,categorykernelratio.730305butwholefitmedian.902607fails.833333,onepool1.054474fails1.05. Allfits/partialdata retained;novarianttuning. V1unmodifiednullisolateshistoricalfloatinglosslogvariance,V2fullcurrent-stateexactnessandhistoricalpredictivebitsretainstrictgates. NoRSSfollowupaftercostfail. ContinuepriorityB/C/D,2gains,gain3null,RC1unchanged,Round91notopened. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPONENT_02_FREEZE_THIRD_GAIN/V1/TRAIN_FREQUENCY_REJECTION.json
+
+
+### THIRD_GAIN_EXACT_ZERO_OWNER_ADMITTED
+
+The fixed TRAIN frequency recipe remains REJECTED unchanged (full fit ratio 0.902607; downside 1.054474). A distinct read-only ownership audit on original new K100 models finds exact +0 coefficient payload about 55% of retained model bytes. The 19-source analytical ordinal-map bound admits 11 sources, not yet an actual gain. A single fixed private direct cell codec is preregistered: float64 bits preserved including -0, no dense live cache, no transport compressor, no new fits. Thirty primitive tests PASS; source-first storage/exactness and fresh warm cost qualification IN_PROGRESS. Components 01/02 unchanged; gain3 not qualified, no Round91 or baseline promotion.
+Evidence: research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPONENT_02_FREEZE_THIRD_GAIN/V1/ZERO_PROGRESS_KNOWLEDGE.json
+
+
+### THIRD_GAIN_ZERO_CELL_REJECTED
+
+Exact positive-zero cell elision is materially supported: 83 logical models and19 source-first output/persistence checks PASS; target serialized median ratio0.566701. The one frozen ordinal-map runtime fails its unchanged per-source warm<=1.05 gate on UCI846, so ZERO_CELLS_V1 is REJECTED unchanged. No conditional RSS/platform followups executed, no third qualified gain and no baseline. Positive state-size evidence retained; no source removal, timing repair, density cutoff or backend retuning. Continue a materially distinct frontier, not global exhaustion.
+
+
+### THIRD_GAIN_PROVIDED_CATEGORY_CODES_PROGRESS
+
+Two fixed negatives remain closed: raw-object TRAIN factorization and exact-zero storage with UCI846 warm ratio1.054354. A distinct provided-input guarantee is now measured: caller pandas.Categorical codes/dictionary already exist, so no raw-object factorization or automatic conversion is added. Original normalization41-49% on4sources;31semantic fixtures PASS after preserving the invalid missing-free representative version and correcting pandas integer/missing scalar materialization. Fixed five-source category stage ratio0.114759 is not a whole-fit speed claim. All14 source TRAIN views are frozen; fresh paired whole fit qualification IN_PROGRESS. Input preparation cost recorded separately; no raw-CSV speed, quality confirmation, Round91, public change or third gain yet.
+
+
+## THIRD_INDEPENDENT_COMPONENT_QUALIFIED_TERMINAL_A
+
+Third independent PRIVATE component qualified: provided-Categorical TRAIN ratio0.777152504,14 sources/8 targets/3 sessions,3 true non-discovery engineering transfers,268 exact full-fit checkpoints. Component01 deployment and Component02 warm dispatch unchanged, one cause each. Raw-object frequency and exact-zero storage recipes remain REJECTED unchanged with positive sub-results preserved. Three-component private candidate exists;84 fitted-only composition cases and37 WSL primitives PASS. Native314 remains application-control/SciPy ENVIRONMENT_BLOCKED before CodAdapt, not FAIL/PASS. Cumulative PARTIAL, baseline NOT promoted. No quality improvement/new confirmation/novelty certificate/Round91/public runtime/API/default/version change or GitHub access. last_completed_round90. See research_private\post_rc1\NEXT_GENERATION_PROGRAM\COMPONENT_02_FREEZE_THIRD_GAIN\V1\FINDINGS.md.
+
+
+### THREE_COMPONENT_CUMULATIVE_START
+
+Already-frozen three-component candidate, no tuning. Reuse validated fits; qualify actual composition material gains/full systems/contracts/native314 environment. No baseline/public change yet. Round91 NOT_OPENED,last_completed_round90. See research_private/post_rc1/NEXT_GENERATION_PROGRAM/THREE_COMPONENT_CUMULATIVE/V1/RESUME.md
+
+
+### THREE_COMPONENT_CUMULATIVE_TERMINAL
+
+INTEGRATED_CANDIDATE_FAILED.83models/19sources/3606690overlappingTESTrows exact; actual three-session composition costs and all tails retained. Native314 fresh offline environment repaired, missing contracts qualified, oldDLLfailure preserved. WSLsameplatformPASS, strictcrossOS9/30FAIL/numerical2ULP distinction unchanged; HyperVOff/noIP/notexecuted. No publicRC1/API/AUTO/version change, no GitHub/clone/publication or Round91,last_completed_round90. Evidence:research_private\post_rc1\NEXT_GENERATION_PROGRAM\THREE_COMPONENT_CUMULATIVE\V1\FINDINGS.md.
+
+
+### INTEGRATION_TRAINING_GAIN_RECOVERY_START
+
+Prior INTEGRATED_CANDIDATE_FAILED unchanged. Causal timing decomposition only; no benchmark hunting or threshold repair. Frozen14source3arm diagnostic protocol; candidate/RC1 immutable. Any fix needs a general redundant cost before separate preregistration. See research_private/post_rc1/NEXT_GENERATION_PROGRAM/INTEGRATION_TRAINING_GAIN_RECOVERY/V1/RESUME.md.
+
+
+## INTEGRATION_TRAINING_GAIN_RECOVERY_TERMINAL
+
+Original INTEGRATED_CANDIDATE_FAILED preserved. Component03 standalone qualification preserved, but integrated training remains1.1967x<1.20x and MATERIAL_GAIN_3 is EMPTY. MATERIAL_GAIN_1/2 VALID; NEXT_GEN_BASELINE_1 NOT_PROMOTED. Paired14source3arm3session diagnosis:126exact predictive-state/probe fits, 0 format/serving/warm-map calls in fit, same Component03 callable and native call counts. Extra setup median5.3us; even subtraction of whole measured setup leaves ratio0.835416>0.833333. Historical mean-time accounting attributes ratio change to candidate and faster RC1 denominator separately; original median gates unchanged. MEASUREMENT_INTERACTION supported; exact historical cache/thermal cause UNKNOWN. No generic redundant cost, no fix, no requalification benchmark. Automatic six-priority audit plus new19source numeric TRAIN owner screen:1/5metadata targets>=20% versus3required;18exact native states and1 conservative SUSY AUTO headroom refusal preserved. No new kernel/candidate. CURRENT_USEFUL_LOCAL_SPACE_EXHAUSTED within current admitted queue (not universal exhaustion), subsidiary COMPONENT_03_INTEGRATION_REJECTED. 43private audit tests PASS; public727PASS/4XFAIL reused and public Ruff0;5 frozen private import lint notes disclosed. Public RC1 and five component sources unchanged. No clone access or remote work. last_completed_round90; Round91 NOT_OPENED. See research_private/post_rc1/NEXT_GENERATION_PROGRAM/INTEGRATION_TRAINING_GAIN_RECOVERY/V1/FINDINGS.md. Retry only with distinct source-bound physical owner or new causal/novel/realfailure certificate; never repeat failed integration to seekPASS.
+
+
+### THIRD_GAIN_REPLACEMENT_START
+
+Component03 integration REJECTED unchanged; gains01/02VALID,gain3EMPTY. New public metadata-only source acquisition authorized; no RC1 or clone change. See research_private/post_rc1/NEXT_GENERATION_PROGRAM/THIRD_GAIN_REPLACEMENT/V1/RESUME.md. Round90 unchanged;Round91NOT_OPENED.
+
+
+## THIRD_GAIN_REPLACEMENT_TERMINAL
+
+NEXT_GEN_BASELINE_PROMOTABLE privateonly; THIRD_ALTERNATIVE_COMPONENT_QUALIFIED. Old03integrated1.197<1.20FAIL unchanged. Gains01/02VALID; new03replacement immutable by-value numeric encoder metadata, existingpositiveSharedOVRscope-transfer HISTORICALLY_EQUIVALENT, notnewalgorithm. Four fixedowner sources:median actualfile/C1 0.385054,deepmodel/C1 0.173455;conditionalnotuniversal/processRAM.108states/24sources/4103069overlappingTESTrowevaluations exact.72paired metadata sessions and144fresh cumulative receipts: cold/native.278229,peakloadRSS.497957,categorybatch1.479068/batch32.495636.0CRITICAL0HIGH;Crop65165rowratio1.139477MEDIUM retained. Five neworiginalsources/125fixedfits:14strongloss4smallloss2strongwin vs4fixedcomparators, allscope/historicalalias exclusions retained. No newqualitywitness/Round91. Windows310-31476newpytestPASS+32tasktestsreuse;WSL8logicalcontracts completed withonlyminimalpath recovery; missingpytest andallharnessnegatives preserved. Public727PASS4XFAILreuse/publicRuffPASS/86publichashesunchanged. Actual4fileprivatebundle excludesrejectedtraining03; no publicRC1/API/default/version/clone/GitHub/publication change. last_completed_round90,history1-90unchanged. StopterminalC;privatebaselinefreeze andfutureportability/qualitylimits in research_private\post_rc1\NEXT_GENERATION_PROGRAM\THIRD_GAIN_REPLACEMENT\V1\FINDINGS.md.
+
+
+### PRIVATE_BASELINE_1_PROMOTION_WEAKNESS_ATTACK_START
+
+User-authorized permanent PRIVATE NEXT_GEN_BASELINE_1 freeze, followed by integrated red-team. Previous NEXT_GEN_BASELINE_PROMOTABLE and rejected TRAIN03 1.197<1.20 remain unchanged. Prior2891artifact hashes verified;108learnedartifacts and86unchanged native sourcefiles frozen. No fit, public runtime/API/default/version mutation or remote. Missing84split costs only, Cropdiagnosis before optimization (no optimization authorized). Resume:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_1_PROMOTION_WEAKNESS_ATTACK/V1/RESUME.md. last_completed_round90,Round91NOT_OPENED.
+
+
+### PRIVATE_BASELINE_1_RED_TEAM_TERMINAL_A
+
+NEXT_GEN_BASELINE_1_RED_TEAM_PASS,permanent PRIVATE identity underBASELINES/NEXT_GEN_BASELINE_1/V1. PreviousNEXT_GEN_BASELINE_PROMOTABLE andTRAIN03integrationREJECTED1.197<1.20 preserved. Threeconditionalcauses:deploymentcold3.594x/peak.498xRC1;categoricalsmallbatch~2.09x/2.02x;metadataheavy4sourceactualstatefile.385x/deep.173xalreadyC1(notwholeprocessRAM).108models24sources0state/prediction/metricdrift,742classgroups,28zero-recallmodelsretained.
+
+2891priorartifacthashesreused,84missingmodel-splitwarmunitsadded(onefixedpairedsession,no fits),24firstsplit3sessiontimingsretained. Source-medianrequested100k1.00074;11sourcesactual>=10kmedian1.00552,p95harm4.84%. Cropold1.139477retained;paireddecomposition.982037,other4splits.9772..1.0332. No newC3MCpayload/kernel/categoricaldispatch cost;measurementinteraction supported,cache/frequencycauseunknown. NewAds93104requested1k/actual657ratio1.34061;identicalinputlater.97576xsamefixedrun,no retry. BoundedMEDIUMdownside,notuniformthroughputpromise.
+
+Windows+realWSLeach9newunittestmethodsPASS:107malformed,24atomicfaults,12integratedcorruptions,explicitnativepickle/joblibfallback,cloning/Pipelineboundary,partialmixeddtypes/concurrency;additional48categoricalconcurrentcallsPASSperplatform. PriorWindows3.10-3.14andpublic727PASS4knownXFAIL0FAILhashreuse,publicRuffPASS. OriginalstrictWindows->WSL9/30negativeandseparatenumericalcontractretained. NoHyperVexecution(CIMaccessunavailable),no newMacformatPASS. NativeAUTO/explicitinteger/largeNcontractsunchanged by86sourcehashes,notnewfitclaims.
+
+0CRITICAL/0unresolvedHIGHwithinprivatecontract;MEDIUMCrop,Adsoutlier,crossOSstrictbits. Opaqueimageisnotestimator;genericdeepcopyreadonlyflagsnotqualified. Competitivefrozenpanel14STRONG_LOSS4SMALL_LOSS2STRONG_WINretained,notqualityimprovement. Round91NOT_OPENED,last_completed_round90,publicRC1/API/default/versionunchanged,zeroGitHub/clone/publication. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_1_PROMOTION_WEAKNESS_ATTACK/V1/FINDINGS.md,KNOWLEDGE.json,final_audit.json. StopatrequestedterminalA;futurequalityrequiresnewgeneralizedcausaltriplecertificate.
+
+
+### BASELINE_2_QUALITY_FIRST_START
+
+PrivateBaseline1 remains authoritative and immutable; threeconditionalgains andallMEDIUM retained. Newmetadata-firstoriginalsourceadmission, fixednative/fourcompetitorrecipes,source/hash/splitfreeze beforefits. No existingfits/benchmarks repeated; no publicRC1/default/API/version mutation,cloneaccess orGitHub operation. Round91NOT_OPENED,last_completed_round90. Resume:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_QUALITY_FIRST/V1/RESUME.md.
+
+
+### BASELINE_2_QUALITY_FIRST_HASH_BOUND_PROGRESS
+
+136 saved predictions replay original metrics without mismatch;40 new native states pass exact private Baseline1 serving. Four fixed-firstsplit atlases complete; heterogeneous error phenotypes are descriptive, not a new causal certificate. Source/job/split/scientific hyperparameter freeze unchanged. Preserve prefit LightGBM JSON-name failure and postfit XGB NUL mismatch; two qualified metadata-only harness extensions, zero VALID scientific fits repeated. Full225unit panel IN_PROGRESS; no partial-based candidate/panel/gate decision. Round91 NOT_OPENED,last_completed_round90. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_QUALITY_FIRST/V1/PROGRESS_SNAPSHOT_136.json.
+
+
+### BASELINE_2_QUALITY_FIRST_PRIMARY_COMPLETE_KNOWN_ENGINEERING_REVIEW
+
+All225fixedunitsSUCCESS;225rawmetricreplays0mismatch;45newnativefullTESTstatesexacton62913overlappingrows.36source/referenceclassifications:8STRONG_WIN2SMALL_WIN1PARITY6SMALL_LOSS19STRONG_LOSS;9views/6UCIIDs/atmost5providerfamilies,not36independentdatasets.2binaryintercept-onlyartifactsreplicateknownfirstlevelVALIDrejection,notnovelty. WideAmazonTRAIN6043/10000nonconstantcolumnsloseallnumericcuts;historicalATOM_POLARITYalreadyprovedthisknownproperty. Newpreregistereddeadblockpermutationkeepsfullnativeq/predictionsbitwisewhilefixedLightGBMloglossworsens8/8,mean126.833percent. Computationalfittedfunctionlink,notrecoverablegapfraction/generativecausality/transfer. Originalcount-onlyverdictsunchanged. Userauthorizedknownengineeringbranchadmitsonlysource/gatepreregistrationforONEminimalnonconstancysafeguardwithinnominalbins;nocandidatefit/code/promotionyet. NoRound91noveltycertificate;currenttaskIN_PROGRESS. PublicRC1/API/default/versionunchanged,last_completed_round90. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_QUALITY_FIRST/V1/KNOWN_ENGINEERING_ADMISSION.json.
+
+
+### BASELINE_2_QUALITY_FIRST_TERMINAL
+
+CURRENT_USEFUL_LOCAL_SPACE_EXHAUSTED,boundedcurrentqueueonly.225newfixedunits/45newexactmodels;oneknownnonconstant-quantilefallbackimprovesAmazonTESTLL11.111654%but0/4observedtransferfamiliesreach+.005AUC,and509splitloses.014899AUC. RareclassN6NLL+79.3%retained.218actualAUTOheadroomprefitreject+4unattempted,219nominalcontrolsnotquality;nofreshevidenceinvented.21newcandidatefits,40structuralVALIDfitreuses,0VALIDrefits. KnownengineeringREJECTED,noBaseline2/noRound91;threeBaseline1gainsandallnegatives/MEDIUMunchanged. No newdistinctsecondaryowner. Evidence/retry/uncertainty: `research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_QUALITY_FIRST/V1/KNOWLEDGE.json`.
+
+
+### QUALITY_SIGNAL_RECONCILIATION_NEW_EVIDENCE_IV_START
+
+PreviousboundedexhaustionandknownseparatorREJECTEDpreserved. GenericLL/ranking/tailtradeoffHISTORICALLY_EQUIVALENT:R85/R87-89. AmazonMCgainandassayAUCharmarenotwithin-modelconflict;0/26savedbinarycomparisonsLLimproveswhileAUCworsens. No newcalibrator/fit/solve/PartB. Newmetadata-firstpublicsourceevidenceIVanddistinctfourthsystemsowneradmissionIN_PROGRESS;Baseline1RC1immutable,Round91NOT_OPENED,last90,clone/GitHub0. Resume: research_private/post_rc1/NEXT_GENERATION_PROGRAM/QUALITY_SIGNAL_RECONCILIATION_NEW_EVIDENCE_IV/V1/RESUME.md
+
+
+### NEW_EVIDENCE_IV_SOURCE_FREEZE
+
+Four natural original sources,100fixed units,seeds95301-05,recipes6threads;source/split/metrics/raw/prepared/runtime/execution hashes frozen before firstfit. Sensorless325 exactoldarchive match excludes knownscientificcohort;552 canonicalarchive unrelatedfailuredata;427 anonymizedtrialIDs cannotprove preregisteredperson-disjointcontract. All40metadataleads retained includingnegativeacquisition/role/exposureevidence.349staticcalendar,373sevenoriginalcannabisclasses,188fulloriginalK8activepositive,608official36sensorcohort48providedcoordinatescalendarinconsistency(no provenprospectiveclaim). No newqualitycandidate/PartB;Round91NOT_OPENED,last90. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/QUALITY_SIGNAL_RECONCILIATION_NEW_EVIDENCE_IV/V1/SOURCE_FREEZE.json
+
+
+### NEW_EVIDENCE_IV_FINEST_OPERATOR_SCOPE_AUDIT
+
+P5 original protocol explicitly leaves full finest numeric discretization intact. Its coarse-demand rejection is preserved and does not by itself falsify a separate finest-operator question. New p53 static consumed union6-8/5408 with5400+unused numeric columns; traffic38/48unused; existing immutable numeric wide1081/51/860 also have unread finest columns. No candidate or speed claim. Seven-source no-elision attribution preregistered, every raw conversion/validation and full original numeric function still executed; timers partition used/unread calls. Require>=20%unwrapped-time operator share on>=3providers before even admitting separateonecandidatepreregistration. Original100source/recipe/gatehashes unchanged;profiling waitsforprimaryrunner. Generic liveness engineering,notnewlearningprinciple/noveltyclaim. Round91NOT_OPENED,last90,publicRC1unchanged. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/QUALITY_SIGNAL_RECONCILIATION_NEW_EVIDENCE_IV/V1/FINEST_PROFILE_FREEZE.json
+
+
+### NEW_EVIDENCE_IV_ONE_NUMERIC_FRAME_CANDIDATE
+
+Seven-sourceunusedfinestnumericownerfails3sourceadmission:onlyp53.3246fraction,other.058-.092;noelisionprototype. Distinctpandascolumn-Seriesmaterializationownerpasses3standardF64providers:188.2607,608.3296,1081.5183. NUMERIC_COPY old.00418selftimeandP3/P5/P7/P8negativespreserved;notclaimcopyinclusivecostornewmath. Onepre-implementationfrozenprivateF64NumpyBlockreaderpreservesoriginalfullvalidation/everybucket/allClevelarrays/state/format;fallbackforotherinputs.128frozenmodels4329230overlappingfullTESTrows0bucket/state/predmismatch;36extracontracts+freshNoMLdependencyPASS.3freshsessions/2352pairs112cells:warmtargetspeedups1.561419x/1.818551x/3.464117x;worstpooledratio1.037317,globalmedian.997075,originalgatesPASS. NewcandidateNOTQUALIFIEDyet:load/peakRSS/owners/Pythonretentionpending. Primary100fixedmodelsallSUCCESS;classification5strongwin2smallwin1smallloss8strongloss(over16source/refcells,4providers). Noqualitynoveltycertificate/Round91;last90;RC1/threeB1gains/baselineidentityimmutable;GitHub/clone0. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/QUALITY_SIGNAL_RECONCILIATION_NEW_EVIDENCE_IV/V1/COLUMN_FRAME_CANDIDATE/V1/PROTOCOL.json
+
+
+### QUALITY_SIGNAL_RECONCILIATION_NEW_EVIDENCE_IV_TERMINAL
+
+FOURTH_INDEPENDENT_SYSTEMS_GAIN_QUALIFIED. One frozen private numeric DataFrame column-view reader, known engineering not new mathematics. 128states/28sources/4329230overlappingfullTESTrows/allbuckets0mismatch. Threepairedfreshsessions: 1881.561419x,6081.818551x,10813.464117x(actual18rows,not1k);worstpooledC4/B11.037317,allmedian.997075. Same128.nativebytes,ownermax1.005099,cold1.003710,peakload1.001950;Python310-314matchingNumPy2PASS. InitialNumPy1.24B1payloadnumpy._corefailurepreserved;notnewcompatibilitypromise. 36extra+8redteamPASS,0CRITICAL/HIGHinprivatescope;Crop/Ads/crossOSMEDIUMunchanged. Fine-unusedownerFAIL1of3,noprototype;P3/P5/P7/P8/TRAIN03negativesunchanged. Qualityheadlinehistoricallyequivalent0/26;fouroriginalproviders100/100SUCCESS,5strongwin2smallwin1smallloss8strongloss (16source/referencecells,not16datasets);p53AUCharmupto.110366,trafficRMSEharmupto37.277percentpreserved. Noqualitycertificate,noRound91,last90,B1promotedreferenceunchanged,B2notpromoted,RC1/API/default/versionunchanged,clone/GitHub0. 727PASS4XFAILreusedhash-bound,RuffpublicPASS,privateprofileclosurewaiversdocumented,JSON/historyauditPASS. Knowledge:research_private/post_rc1/NEXT_GENERATION_PROGRAM/QUALITY_SIGNAL_RECONCILIATION_NEW_EVIDENCE_IV/V1/KNOWLEDGE.json. Component:research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPONENTS/NEXT_GEN_COMPONENT_04_NUMERIC_FRAME_VIEW/V1. Next:Future separately frozen private Baseline2 cumulative/weakness qualification in its intended deployment domain, reusing all current valid gates; acquire new platform evidence only if that domain expands. Do not reopen rejected quality/TRAIN03/coarse families.
+
+
+### BASELINE_2_INTEGRATION_AND_ATTACK_START
+
+BASELINE_2_INTEGRATION_AND_ATTACK IN_PROGRESS. Exact Baseline1+C04 source composition; canonical C04 NUMERIC_WARM_INFERENCE alias references original immutable freeze, no new recipe. 128models/28metadata-selected source cases; prior full exactness/cold/RSS/Python/fit/AUTO lineage reused by matching hashes. New missing batch8/128/10k, float32 fallback, real WSL and targeted after-use/RSS contracts only; no scientific fits. Realistic numeric gate excludes18rowcohort and requires3providers/2tasks/2Pregions/one beyond3discovery sources at1.20x. No old clock replacement or threshold rescue. RC1/API/default/versionimmutable,last90,Round91NOT_OPENED,clone/GitHub0. Protocol:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_INTEGRATION_AND_ATTACK/V1/PROTOCOL.json;resume:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_INTEGRATION_AND_ATTACK/V1/RESUME.md
+
+
+### BASELINE_2_INTEGRATION_AND_ATTACK_TERMINAL
+
+NEXT_GEN_BASELINE_2_PROMOTED,privateonly.128models/28sources,fourexactconditionalcausesretained. Newbroadening216pooled/648sessioncells(210reused438missingnew),actualrows-only1/8/32/128/1k/10k/100k,nocycling. Fiveprimaryrealisticsources>=1.20x:1881.5614,2061.9068,3731.3224(actual128),6081.8186,8461.2650;18rowcohortnotcounted;241belowmaterialretained. GlobalmedianB2/B11.002540,worst1.055096float32P3row1,gate1.02/1.10PASS. Windows128fullTESTexactreused+28new324assertions;realWSL128fullTEST4329230overlappingrowsnew0bucket/state/predmismatch. Python310-314matchingdependencyreceiptsreused;strictcrossOS9/30negativeandNumPy2->1failurepreserved. Fit/AUTO/explicitintegerhardcap/largeNunchangedby86sourcehashes,nonewfits;model.native128unchanged. Postwarm/repeatedRSS/ownersPASS;newwarmIOdescriptiveMEDIUMreload1.199744/save1.110261preserved,noretiming;oldload/cold/category/sizebridgereceiptsreused,notinventedproduct-of-mediansspeedup. 0CRITICAL/0HIGH;Crop1.139warm,Ads1.3406isolatedwarm(NOTRSS,earlierpeakshorthandcorrected),crossOSbits+newfloat32smallfallbackMEDIUM. NullablepicklecacheandWSLpathharnessfailurespreserved/attributed,3Windows+83WSLVALIDunitsreused;candidate/gatesunchanged. 727PASS4XFAILreused,Ruffpublic/privatePASS,JSON/history90unchanged,Round91NOT_OPENED,RC1/API/default/versionimmutable,clone/GitHub0. Privatebaseline:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINES/NEXT_GEN_BASELINE_2/V1;knowledge:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_INTEGRATION_AND_ATTACK/V1/KNOWLEDGE.json. Next: saved-evidence competitivequalityattack started; no newcertificate/candidate/release.
+
+
+### BASELINE_2_QUALITY_COMPETITIVE_ATTACK_START
+
+IN_PROGRESS. Baseline2privatefour-gainreferenceimmutable. Saved173stateuniverse(128qualified+45priorqualityoriginalstates),fourfixedreferenceswherevalid,missingexplicit. Metrics/rowalignment/perclass/ranking/calibration/tails before newfits. All6MEDIUMauditwithoutretiming; no source/runtime/default/API/versionchange,Round91NOT_OPENED,last90,clone/GitHub0. Protocol:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_QUALITY_COMPETITIVE_ATTACK/V1/AUDIT_PROTOCOL.json;resume:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_QUALITY_COMPETITIVE_ATTACK/V1/RESUME.md.
+
+
+### BASELINE_2_SAVED_QUALITY_AUDIT_COMPLETE
+
+850savedmetricunits/171native states,35sourceviews<=31independencefamilies;18strongloss11strongwin4smallloss2smallwin vsfixedLightGBM; predictive equality does not imply competitive quality.45additional B2 fullTEST inferencechecks0mismatch;original128proofreused,no newfits/timing. SixMEDIUM retained,no causalclockrepair. New bounded metadatafirstsourcequeue underway,notRound91;last90,RC1/privateB2immutable,clone/GitHub0.
+
+
+### BASELINE_2_QUALITY_COMPETITIVE_ATTACK_TERMINAL
+
+CURRENT_USEFUL_LOCAL_SPACE_EXHAUSTED,boundedcurrentqueueonly,notallpublicevidence.900metricunits/181comparablenativestates/37sourceviews<=33independencefamilies/147source-referencecells;fixedLightGBM12STRONG_WIN2SMALL_WIN4SMALL_LOSS19STRONG_LOSS.850savedunitsandoriginal128exactproofreused;45priorqualityfullTESTB2predictions0mismatch,10newfullTESTbucket/state/prediction0mismatch,nooldfit/clocksrepeated. 12metadata-onlyleads,10oldscientific/roleholds,2originalsources50fixedunitsALLSUCCESS.995AUCvsLGB+.026845(5/5),vsCB-.012261(1/5);1162vsLGB-.050223(1/5),vsCB+.062867(4/5),weakunstablesignal. NF1rawdictionaryBEFOREfitscorrectsAPI331/WithTumorsto296suppliedrows/CaseType/18covariates;notclinical/prospective/newfamilyclaim. ApisToxnominalSMILESnotmolecularfeaturization. 7VALIDmetricunitsreusedafterdtype-onlyharnessfix;50originalmetricdictsexact,preserveinitialfailure,nofrozensciencechange. All6MEDIUMretained:3isolated3regimespecific;onlycrossOSbitsconfirmedregimeweakness;2sourceIOunconfirmedphysicalcause. No newcausaltriple/reopencondition/knownengineeringcandidate/Gain5/Baseline3;R85-R89/quantile/global128/TRAIN03negativesunchanged. FourprivateB2gains/RC1/API/default/versionimmutable;last90,Round91NOT_OPENED. 8newtestsPASS,public727PASS4XFAILhashreused,RuffPASS,public86/previous999hash/historyJSONauditPASS,clone/GitHub0. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINE_2_QUALITY_COMPETITIVE_ATTACK/V1/KNOWLEDGE.json.
+
+
+### COMPETITIVE_REGIME_DISCOVERY_START
+
+{"status": "IN_PROGRESS", "question": "What structural TRAIN-legal properties distinguish strongnativewins/losses under fixedLightGBM?", "semantic_signature": "IMMUTABLE_B2__37_CANONICAL_TRAIN_VIEWS__ACTUAL_NATIVE_ADDRESS_GEOMETRY__MATCHED_OPPOSITE_OUTCOMES__NO_META_MODEL", "protocol": "research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPETITIVE_REGIME_DISCOVERY/V1/PROTOCOL.json", "protocol_SHA256": "660a26fd5c905a80394873504606e5c4089f0c6c69b36ed818d3f8d2bde07ad4", "resume": "research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPETITIVE_REGIME_DISCOVERY/V1/RESUME.md"}
+
+
+### COMPETITIVE_REGIME_DISCOVERY_TERMINAL
+
+COMPETITIVE_REGIME_SIGNAL_FAILED,boundedcurrentdescriptor/overlapspace,notnoregimeproof.37TRAINatlases;31strongviews->28documentedfamily/taskunits;AMI433MCmixedB/CLOSS,DWINretained. 4096rows64targetblindcolumns cap,actualnativeaddresses/support/quantization andTRAINonlyMI/NN/calibration;nocurrentTESTdescriptorornewfit. 13frozenaxis tests,10kblockedpermutations2kfamilybootstrap/LOSO/BH;all13UNKNOWN,minq.452. PairMIdelta+.470/quantization-.478unvalidated. Only1matchedpair,26unmatched,strongoverlap/powerlimit. 489ParkinsonTRAIN56subjects168voicereplicatesvsNF1206groups206rows:descriptor-groupcontrolNN.4095->.3143, NF1.00036unchanged;noalgocausalityclaim. InitialwrongappendixaliasSPECTFcorrectedfromoriginalcatalog/contract,initialevidencepreserved,allactualdata/statisticsunchanged. 0externalregimesadmitted,PhaseFNOTACTIVATED,nosource/fits/metamodel/causalwitness/Round91/Baseline3. HistoricalpostR74NOT_PREDICTABLEpreserved,differenttarget/newerviews/actualaddressmatchedauditonly. FourB2gains/RC1/API/default/versionimmutable,0CRITICAL/0HIGH/6MEDIUM,last90.10newtestsPASS(9reused+1new),public727PASS4XFAILhashreused,RuffPASS,public86/previous1738/hash/JSON/historyauditPASS,clone/GitHub0. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/COMPETITIVE_REGIME_DISCOVERY/V1/KNOWLEDGE.json.
+
+
+### CONTROLLED_REGIME_EVIDENCE_TERMINAL
+
+CONTROLLED_REGIME_SIGNAL_FAILED,boundedcontrolledspace,notabsenceofregimesorallpublicevidenceexhaustion.103historicalcontractviews/229splitartifacts,212rowreplays17unresolved;37detailedunits185splits/strictgroup-time-duplicateTRAINrepair. 301NN+.170603->-.115793,1276+.747230->+.252528,489+.409524->+.314286;846noeligiblecrossconfigurationanchors. Exact-XoverlapACS/fanflaggedPROTOCOL_LIMITATION,notprovenperson/targetleakage;originalgroup/timeverdictsretained.60metadata-onlyleads,75frozenpanelunits+80TRAIN-noisediagnosticfits=155newfits0VALIDrefits. Rawhashaliaslatecheckrecovers329Messidororiginalpre-fitroleREJECT(notoldfit):25unitsdiagnosticonly,paired-eyelinkmissing;no substitution/thresholdchange.2acceptednewcohorts565/85750units,notindependentpatientconfirmation. 565AUCvsLGB-.037681,857+.058405butCB/XGB/HGBPARITY;alllossesretained.1unknownlinkageprovisionalpair,0highqualitypairs,12UNKNOWNaxes,minq.566,qualifiedsensitivityq1. Positive4/4TRAINcorruptionrelative-robustnessmeanDID+.058087AUC,exactsourcep/q.125;nativecleanVALIDasymmetryandnoindependenttransferpreventmechanismclaim. 155resultreplaysexact15newB2fullTESTstate/bucket/predictionexact;12privatetestsPASS,727PASS4XFAILhashreused,RuffPASS,public86/B2/prior96unchanged. All4B2gains/0CRITICAL/0HIGH/6MEDIUM/RC1version1.1rc1/defaultautoimmutable,last90,Round91NOT_OPENED,clone/GitHub0. Evidence:research_private/post_rc1/NEXT_GENERATION_PROGRAM/CONTROLLED_REGIME_EVIDENCE/V1/KNOWLEDGE.json. Retry requires originalID/rawhash/alias/roleholdqualifiednewmatchedcohorts beforefits;no forcedquota oroldgate rescue.
+
+
+<!-- GRAND_NEXT_GEN_V3_CHECKPOINT_01 -->
+## Grand V3 — active twelve-track program
+
+B2 remains the immutable private four-gain reference; RC1 unchanged, last_completed_round90, Round91 NOT_OPENED. Prior CONTROLLED_REGIME_SIGNAL_FAILED preserved. Initial42memory/1318artifact/100B2leaf/86public hashes verified. 20questions frozen before execution. Q01 reuses60LightGBM fitted paths with original clean-VALID minimum-logloss selection: mean TRAIN-noise AUC DID .058087→.038430 (33.84percent reduction), all4source mean-dose signs stillpositive, oldq=.125 unchanged. This is selection sensitivity, not independent causal confirmation or a qualitycandidate. 22prototype family atlas distinguishes known scalar pair envelope from raw-code loss and normalized OVR probability geometry;17exact rational certificates,0fits/0numericalsolves. Public727PASS4XFAIL reused by hashes;37view4reference/tails imported; partial native-resource receipts do not identify full B2 Pareto dominance. New non-UCI metadata-first admission and remaining systems/UX/theory cells IN_PROGRESS. No novelty/witness/R91/B3 promotion,0CRITICAL/0HIGH/6MEDIUM. Evidence: research_private/post_rc1/GRAND_NEXT_GEN_V3/KNOWLEDGE_CHECKPOINT_01.json. Resume: research_private/post_rc1/GRAND_NEXT_GEN_V3/RESUME.md.
+
+
+<!-- GRAND_NEXT_GEN_V3_CHECKPOINT_02 -->
+## Grand V3 — second verified checkpoint, program active
+
+2metadata-selectedgovernmentcohorts:EPA2024386493x4/1242sites andUKSTATS19_2024100927x19/K3/44forces,50fixednative+fourreferencefits;5site/force-heldoutsplits each,not10independentpopulations. All50metrics replayed,10newnativeB2state/bucket/predictionchecks0mismatch. EPAmedianRMSEgainvsLGB-12.9007percent,stronglossall4;UKloglossgainvsLGB-0.5029percentPARITY,smalllossCB-1.2897percent. EPA75fixedfreshprocesscold/RSSunitsVALID;UKadditionalcold/RSSpending. All4B2gains unchanged. NewQ21knownengineeringdiagnostic frozen after source-bound observable: documentedtol*max1floor rejectspositiveVALIDthirdlevelinall5EPAfits. Standardppm->ppbconversion uses5newconditionfitsand5originalmodelsreused: samecode/prefix5/5,thirdleveladmitted3vs2,TESTRMSEgainmedian3.6646percent(2.1553–4.6713percent),all5positive;newB2scaledstatesexact. Oneexposedscoutsource,notgeneralmechanism/transfer/qualitycomponent. Additionallookups/bytescharged. Rawrole1hourpreset incompatiblewithoriginal8hourEPAfile;correctedbeforefirstfit,oldacquisitionfreeze retained. UKharnessclasses_accessorfailedafter1VALIDfit;V2correctsimageinterfaceandreusesfit,nomodelchange. Scalarresponse contrast certificates nowexplicitlyseparatebinaryranking/classification/probabilitytargets;4constructive knownscorecertificates,notnewprinciple. No newcandidate/Baseline3/Round91/RC1/API/default/versionchange;last90,0CRITICAL/0HIGH/6MEDIUM;clone/GitHub0. Evidence:research_private/post_rc1/GRAND_NEXT_GEN_V3/KNOWLEDGE_CHECKPOINT_02.json.
+
+
+<!-- GRAND_NEXT_GEN_V3_CHECKPOINT_03 -->
+## Checkpoint03 — program IN_PROGRESS
+
+Bothnewgovernmentpanels50fixedfits+150fixedfreshprocessload/RSSunits complete. All50metricsreplay,10newrawnativeB2statesexact;5additionalunitconditionstatesexact. EPA386493x4site-heldout nativeRMSEloses12.90percent toLGB;UK100927x19/K3force-heldout loglossnearparitywithLGB/XGB/HGB,smalllossCB. Complete12dimensionpointfrontier:EPA5/5PARETO_COMPETITIVE;UK2PARETO_LEADING3PARETO_COMPETITIVE. Descriptivethismachine only,notqualitysupremacy/worldclasscertification. Q21physicalppm->ppbconversion isolates documentedtol*max1floor:all5samecode/first2prefixes,maxfullTESTprefixnumericaldifference3.23e-16;thirdlevel4/8/16pathaccepted,newRMSEgain2.1553–4.6713percent(median3.6646percent). Extraactivequeries16->24 andserializedstateabout1.501x;no fifthgain orcandidate. Oneexposedscoutsource,notindependenttransfer. Public727PASS4XFAILhashreused;17newprivatePASS;public86/B2frozen100unchanged. EIA CBECS2018metadataselectednext,codebook/guide/licensecached;targetELCNSandZELCNS reported/imputed distinction andFINALWT/masking requirehonestrolefreeze. NoCBECSrawCSV/modeloutcomesyet. NYCmetadatamentionsCBECSnationalmedians,notoriginalrecordfit; possiblemaskedbuildingoverlapremainslimitation. Alloldnegatives/fourB2gains/6MEDIUMpreserved;0CRITICAL/0HIGH,RC1/API/default/versionimmutable,last90,Round91NOT_OPENED. NoGitHub/clone/publication. Currentexactresume:research_private/post_rc1/GRAND_NEXT_GEN_V3/RESUME.md.
+
+
+<!-- GRAND_NEXT_GEN_V3_CHECKPOINT_04 -->
+## Checkpoint04 — null safety and third-source preparation
+
+95newfitsVALID:50sourcebenchmark+5EPAunitconditions+40newpreregisterednullconditions. 20Gaussianzero-signaldesigns,N512/4096,P8/64:rawunit0/20nonconstantadmissions,scaledunit1/20;worstTEST_RMSEharm0.6166percent. Thisfinitecounterexamplepreserves a downside of removingtheimplicitunitfloor;notuniversalrejectionofallnormalizedadmissionrules. Noqualitycomponentpromoted. EIAraw6436buildings,1249columns,reportedtarget/basic-inputsubset2542x11,9divisiongroups; metadata-firstroles/weights/5splits frozen beforeanyEIAmodel. SameTRAINweightnormalizationforall5learners; weightedheldoutprimary,unweightednativeVALIDAPI;selectionbias/masking/national-estimate exclusions explicit. 4newprivatepreflightPASS. Nooldfits/timingrepeated. Runtime86/B2frozen100hashesunchanged;Round91NOT_OPENED,last90. ProgramIN_PROGRESS; next25EIAunits thenremainingdistincttracks.
+
+
+<!-- GRAND_NEXT_GEN_V3_CHECKPOINT_05 -->
+## Checkpoint05 — three-source evidence and one frozen engineering condition
+
+75newsourcebenchmarkfits+225freshprocessload/RSSunitsVALID;allprimarymetricsreplayed. EIAreportedsubset2542x11,weightedRMSEmedian nativegainvsLGB -13.9941percent,vsHGB -7.9636,CB -1.7916,XGB -3.4180. Three-sourcecompletepointPareto:EPA5competitive;UK2leading/3competitive;EIA1leading/4competitive. Onemachinepointestimates,noglobalqualitysupremacy. 15newTEST-onlytranscriptoracles:EPAfinestfloorabout0.68ofactualMSE,selectedabout0.83;EIAfloornearzero;UKhighsplitvariation. ThesearefiniteTESTlowerbounds,notpopulationnoiseorlearnableTRAINgain. 3additionalinstrumentedfitexecutionswereneededforpreviouslyabsentownerprofiles,eachsamelearnedstate/fullTESTbits;theyarenotnewbenchmarkrepeats. Onlyoneaggregateowner>20percent,not3sources;nogeneralexactoptimizationadmitted. CDC2017-2020metadatacached,butoldNHANESsourcefamilyacrossyears/targetsholdforcesREJECTbeforeanyrawdownload/fit. Q22singleknownengineeringconditionfrozen:TRAINweightedresponsestandardization,unchangedlearner,foldcoefficientsbacktorawunits. All11regressionviews/10families/55originalsplits,noneperformancechosen. Gatefamilymedian2percent,60percentfamilies>=1percent,worstharm2percent,p95harm1percent,mediancost<=1.2,worst<=2,exactB2. NoQ22outcomesyet;noqualitycomponentorR91claim.123totalfitexecutions=120newconditions+3profiles;alloldnegativeevidencepreserved. Public86/B2frozen100unchanged,0CRITICAL/0HIGH,6MEDIUM,last90,Round91NOT_OPENED. ProgramIN_PROGRESS.
+
+
+<!-- GRAND_NEXT_GEN_V3_CHECKPOINT_06 -->
+## Checkpoint06 — Q22 global engineering rejected
+
+All55preregisteredTRAINresponsestandardizationconditionscomplete,55oldcontrolsreused. 11sourceviews/10families;familymedianRMSEgain2.22e-17,only1/10families>=1percent;frozen2percentmedianand60percentbroadnessFAIL. Worstobservedharmabout1.12e-13(rounding),mediancostnear1,worstserialized1.500875;55originalencodersunchangedand55candidateB2state/predexact. Q22_ENGINEERING_CONDITION_REJECTED,no null/transfer/pairedtimingrescueauthorizedafterthisfailure. EPAknownlocalsignalpreserved,no genericcomponent. 175newconditionfits+3missing-ownerinstrumentedfits=178executions,225newcoldunits.27newprivatecontractsPASS;publicRuffPASS,public727PASS4XFAILhashreuse. PrivateRuff14frozenissues:2matchsoftkeywordparsercases,12closureF821afterdel;all56PYcompileparsePASSandremainingfilesfatalRuffPASS. Executedworkers/hashesnotrewritten. NextNHIS2024clinicalmetadata/rawadmittedbeforefit:officialCDC32629adultrecordsource,rolewhitelistfixed,originalZIP5f926b2ec0af508fa84ebc791c83bfefa6f020724754aab599004706981abdaf. NHISnotNHANES,0prioralias/rawfingerprintmatchin9770readabledocuments;hiddenparticipantoverlapnotprovedabsent. NoNHISscientificfit yet;freezeallweightedbenchmarkandunweightednoiseprotocolsbeforeanynewfit. RC1/B2/runtime/API/default/versionimmutable,last90,Round91NOT_OPENED,0CRITICAL/0HIGH,6MEDIUM. ProgramIN_PROGRESS.
+
+
+<!-- GRAND_NEXT_GEN_V3_TERMINAL -->
+## Grand V3 terminal — GRAND_OBSERVATION_SPACE_EXHAUSTED
+
+Currently identified, distinct high-value V3 observation premises satisfying the frozen history, causal/owner, source-admission and resource entry gates across all12tracks. NOT exhaustion of all public datasets, all function classes, all theoretical questions or all possible future hypotheses. Unmeasured universal/confirmation claims remain PARTIAL/UNTESTED/BLOCKED and have reopen plans.
+
+All12tracks reviewed,23question dispositions,233fit executions(100newsourcebenchmarks+130newdiagnosticconditions+3explicitmissing-ownerinstrumentedrepeats),300fresh-processload/RSSunits,15TESTfiberoracles,35fixedreadoutpasses,4X-onlypreprocessor fits. 4originalgovernmentcohorts EPA/UK/EIA/NHIS;source/roles/license/hash/group/weights/recipes frozen first. Regression lossesall4refsretained;NHISweightedAUCgainLGB+.007732/XGB+.008344,CB-.006767,HGBparity. EPAknownunitfloorcause+3.6646percentlocalRMSEbut~50percentstatecostandNULLfalseadmission;Q22globalTRAINresponsestandardizationFAIL(familymedian~0,1/10broadness). Oldnoiseq=.125preserved;VALIDselectorremoves33.84percentoldmeanDID. NewNHIScount-preservingnoise4/5signsperdose diagnostic only;nativeprivileged2x2valuechangesdominateconditionalpathharm,notintrinsicrelative-LGBcause. Q07scopeerratum:OWNDATA-onlyoldcountexcludedlogicalviews(43oldownerschecked);zerosrealbutQ23ordinalcodecHISTORICALLY_EQUIVALENTtooldlatency-rejectedcodec1.05435>1.05,0newprototype. No newgeneraltrainingowner;CSRworkflowfrictionobserved2/4butprevalence/bridgeunqualified.17scalarcertificates22families;probability/ranking/learnabilitydistinct. No fifthgain/Baseline3/Round91;B2fourgains/100frozenleaves/86publicfilesunchanged,version1.1.0rc1/AUTOdefaultunchanged,last90,0CRITICAL/0HIGH/6MEDIUM. 42privatePASS,public727PASS4knownXFAIL0FAILhashreuse,publicRuffPASS;14knownfrozenprivateRuffexceptionsretained/all82Pythoncompileparse/remainingfatalPASS. 12DdescriptivepointPareto onnewcohortsonly;fitclocks excludeB2compilation/serialization(totaldeploy-readycostUNKNOWN),sampledwholeprocessRSSnotmodel-exclusive,100kcappedactualrows. No newconfirmation or completepublic-universe/scientific-exhaustionclaim. Reopenonlyconcretenewcausal/owner/workflow/identifiabilitypremise;OPEN_QUESTIONSandcoveragepreserveunknowns. Runtime/API/clone/GitHub/publication0changes. Findings:research_private/post_rc1/GRAND_NEXT_GEN_V3/GRAND_FINDINGS.md; audit:research_private/post_rc1/GRAND_NEXT_GEN_V3/final_audit.json.
+
+
+<!-- GRAND_NEXT_GEN_V4_INITIALIZED -->
+## V4 research trigger hunt — active
+
+V3 scopedterminalpreserved. New8-trackprogramme seeks newinformation/identifiedpremises,notmoregenericdatasets. Fullhistory/ScientificMaploaded,3825V3artifactsand86public/100B2frozenhashesverified.13semanticclassesfrozen;no coarseclassblanketnoveltyorfalsificationclaim. 0newfit/solve/sourceacquisitionatinitialization,RC1/B2/API/default/versionimmutable,last90,Round91NOT_OPENED. Primaryliterature/theory/generative/structured-domain/benchmarkgaptriggersfirst;primitivesonlyafteridentifiedpremise. Resume:research_private/post_rc1/GRAND_NEXT_GEN_V4/RESUME.md.
+
+
+<!-- GRAND_NEXT_GEN_V4_TERMINAL -->
+## V4 terminal — real target replicas as a research trigger
+
+HIGH_VALUE_RESEARCH_TRIGGER_FOUND, scoped to a new observable label-process regime, not a new learner/primitive or measured quality gain. BIDMC53 original recordings: paired raw annotation counts differ in31; unique-index sensitivity differs in30. Fixed424 windows differ in79/83 for the two explicitly retained index origins. These statistics are POST_HOC descriptions, not physiological gold/noise estimates or independent confirmation. Two raters do not identify true error rates or conditional error independence.
+
+Preserve two negative source contracts: paired digital/CSV time maxerror0.004s vs1e-8 and all5 physical bounds fail; original replica strict-order check stops at06 (2 duplicate-index streams,2 inversions). No gate rescue, sorting/dedup/exclusion or threshold change. All53 annotation files and53 headers author-hash valid; all data used here become diagnostic/development evidence. Known E16 calibration fiber witness24 comparisons/48 X-only encoders is informative, not new novelty or a real quality bridge.
+
+28 primary principle cards/30 areas;28 generator specifications/144 finite mean-formula checks (not full stochastic/native benchmarks);4 source-bound formal notes;13 semantic classes;3 math-only primitive cards;12 trigger/adversarial rows;7 benchmark gaps and7 source screens.0 new supervised fits/solves/candidates. Prior V3 scoped exhaustion, all negatives and missing R17/18/R51 limitations preserved. V4/all-research exhaustion NOT claimed.
+
+72 private tests PASS, public Ruff PASS/private fatal Ruff PASS;727publicPASS4knownXFAIL0FAIL receipt reused by hash.86public/100B2 leaves unchanged, B2four gains/128models28sources unchanged;0CRITICAL0HIGH6MEDIUM preserved. RC1/version1.1.0rc1/AUTO/API/runtime immutable,last90,Round91NOT_OPENED;no B3/publishing/GitHub/clone access.
+
+Next: separate source-exact annotation-role/target-identifiability protocol and independent repeated-label source; no latent noise weights from two raters, no old-family tuning rescue. Claim level EXTERNAL_SIGNAL_DESCRIPTIVE_POSTHOC_NOT_CONFIRMATION. Report: research_private/post_rc1/GRAND_NEXT_GEN_V4/V4_FINDINGS.md. Audit: research_private/post_rc1/GRAND_NEXT_GEN_V4/final_audit.json.
+
+
+
+<!-- LABEL_PROCESS_MECHANISM_INITIALIZED -->
+## Label-process mechanism programme — active
+
+V4 HIGH_VALUE_RESEARCH_TRIGGER_FOUND preserved. New pre-fit source audit:53 records correspond to46 subject groups; source-exact WFDB export is a lossy unique-time union with ann2 precedence (53/53files,218 lost rater memberships relativeCSV). Original equivalence gate remains failed; no fit until canonical source identity is independently verified. All53 annotation atlas22exact/27small/3material/1extreme is descriptive, not a clinical tolerance/quality claim. Frozen5subject-group folds and80small diagnostic-fit maximum; no tuning, confidence policy or native candidate. PublicRC1 and privateB2 immutable,last90,R91NOTOPENED. Latest task gain3EMPTY is label-quality scope, no rollback of B2four serving gains. Resume:research_private/post_rc1/LABEL_PROCESS_MECHANISM/V1/RESUME.md.
+
+
+<!-- LABEL_PROCESS_MECHANISM_TERMINAL -->
+## Label-process mechanism terminal — LABEL_VARIABILITY_NOT_MATERIAL
+
+V4 HIGH_VALUE_RESEARCH_TRIGGER_FOUND preserved; bounded new diagnostic completes80 fixed jobs on53 BIDMC acquisitions/46 subject groups,424 retrospective60s PPG-summary rows. Exact106 CSV/MAT ordered annotation streams and metadata establish canonical source roles; one-based sample clock verified. Original CSV/WFDB equality FAIL remains: exact53/53 unique-time/ann2-precedence export loses218 memberships. Literal segment-string failure preserved, exact5token delimiter/extension adapter changes no signal/annotation bytes or clock. Original V4 precision/order failures retained.
+
+Observed balanced-view consistency component is3.377% of common risk(CI1.111–8.717%),2.797% native(CI1.006–5.990%), below frozen10% margin. Native excess cross-view penalty1.232%(CI−0.953–3.890%) excludes frozen5% materiality; no material native label-robustness gap. Common variance cancels exactly in learner excess. Mean-target RMSE native3.473994/LGB3.138735/XGB3.109385/CB2.910232/HGB3.102051; native quality loss remains unexplained here. Abs-disagreement predictor−12.532% MSE gain(CI−50.182 to−1.052%); small source-role signed shift−0.2193bpm(CI−0.4176 to−0.0849), not named-person bias or physiological truth. True noise/ambiguity/gold rater remain UNKNOWN, no Bayes/irreducibility claim.
+
+No weighting/shrinkage/robust aggregation/native principle admitted; old families deduplicated.3 external metadata screens,0 raw followup cohorts/0 transfer.25 privatePASS (5model bitwise replays), publicRuff/privatefatalRuffPASS;727publicPASS4knownXFAIL0FAIL hashreuse. Public86/B2_100leaves immutable;0C0H6MEDIUM preserved; version1.1.0rc1/AUTO,last90,R91NOT_OPENED. Label-line gain3EMPTY, historical privateB2 four serving gains preserved. Clone/GitHub/publication0. All results diagnostic/development, one source, no blind confirmation.
+
+Retry only with new identifiable measurement/target evidence and independent preregistered source; no cohort/threshold rescue. Remaining native quality gap needs a separate distinct causal witness, not observed label-noise attribution. Findings:research_private/post_rc1/LABEL_PROCESS_MECHANISM/V1/FINDINGS.md; audit:research_private/post_rc1/LABEL_PROCESS_MECHANISM/V1/final_audit.json.
+
+
+
+<!-- RESIDUAL_REGRESSION_GAP_TERMINAL -->
+## Residual regression-gap terminal — RESIDUAL_GAP_NOT_CAUSALLY_LOCALIZED
+
+Original label-process LABEL_VARIABILITY_NOT_MATERIAL preserved/closed as STRONG_NEGATIVE_CAUSAL_EVIDENCE for this observed gap only; reopen only new hiddenrater/state/systematicbias/repeatedmeasurement evidence. Original218WFDBmembershiploss excluded from canonicaltargets. Reuse80fits,424rows/33PPGfeatures/53acquisitions/46subjects/5groupfolds;0newfits/downloads/benchmarks. ActualinnerTRAIN cellcounts/address/readout and5nativefold replays exact.
+
+NativeRMSE3.473994/LGB3.138735,pooledexcessMSE2.216976; pairedsubjectCI95[−0.985874,5.104347],relativeRMSEharm10.6813%CI[−3.396%,30.661%],4loss/1winfolds. Fold4=96.32%netgap,topsubject31.65%; leaveone-subject excesspositive1.5444–3.2983.71activeemptyjointcellrows excess6.954 vs1.264 on353otherrows; allmarginalsupporttrue. Subject/depth/fold/support confounded;noindependentreliabilitychannel. LGB32features vsnative7–14,35.3–45.7%splitgainoutside nativeunion is descriptive,not causalfeatureutility.
+
+Selectedoccupiedcell TESToracleRMSE.434511,fixedshapeaggregation1.668086,eachbetterthanLGB5/5;notTRAINlearnability. Residualsame-spanoracle identical,reusednotresolvedtwice. Fullfinest33feature528pairTESTspan fullrowrank5/5,RMSE6e−14,vacuous: unlikeGait no allpairinsufficiencycertificate. Selectedactivationfibers repeat99rows: withintranscript signedgap−.037853,between+2.254829,sumactual+2.216976. Nativewithin-fibertargetfloor.057685(2.602%netgapupperbound),finiteTESTpartitiononly,nopopulationcausalshare. TRAINgradientnonzero5/5,bestcoordinateobjectivegain3.06–11.89notapplied;noTESTbenefitclaim. All other interpolation/joint/finer/support/value/weight learningfamilies dedupclosed,notrerun. No unique/general cause or engineeringcandidate; conditional2–4sourcegeneralization NOT_ACTIVATED,notallpublicevidenceexhaustion.
+
+15newtestsPASS,0replaymismatch,Ruffpublic/privatefatalPASS;727publicPASS4knownXFAIL0FAIL hashreuse. All787oldlabelartifacts,86public/100B2leaves,90roundhistory unchanged. ExistingfourB2servinggains retained; currentqualitylinegain3EMPTY.0CRITICAL/0HIGH/6MEDIUM,last90,R91NOT_OPENED,RC1version1.1.0rc1/default/APIimmutable;clone/GitHub/publication0.
+
+Next requires independently identified observation/discovery premise and historically distinct TRAIN-only causal intervention with signed unseen-subjectutility before metadata-only independentreplication. No repeatedfits,thresholdrescue or nativequalityclaim. Findings:research_private/post_rc1/RESIDUAL_REGRESSION_GAP/V1/FINDINGS.md; finalaudit:research_private/post_rc1/RESIDUAL_REGRESSION_GAP/V1/final_audit.json.
+
+
+
+<!-- THIRD_GAIN_AFTER_QUALITY_HOLD_PROGRESS -->
+## Active third-gain continuation
+
+Initial45statesowner2of3FAIL preserved; whole20postB2governmentpanel expansion adds3independentownerfamilies. 193candidate semanticchecksums exact; afterload true reachablemodel reduction22.8–26.4%on5fixedownerfamilies,fileabout1.8–2.0%smaller. Not yetqualifiedgain.
+Resume: research_private/post_rc1/THIRD_GAIN_AFTER_QUALITY_HOLD/V1/RESUME.md
+RC1/B2immutable,last90,R91NOT_OPENED.
+
+
+<!-- THIRD_GAIN_AFTER_QUALITY_HOLD_TERMINAL -->
+## Third-gain continuation terminal
+
+THIRD_ALTERNATIVE_COMPONENT_QUALIFIED; component QUALIFIED_PRIVATE_ENGINEERING_COMPONENT. 193 states / 38 families / 4904335 fullTEST rows, zero mismatches. Retained-model target median 0.749181; file median 0.981344; not wholeprocess-RAM savings. 342 frozen clock units, no retiming; cost PASS, failed []. 78 new platform contracts and 5 red-team checks PASS. Prior quality closures, initial owner FAIL, rejected TRAIN03 and all six MEDIUM preserved. No new algorithmic novelty/Round91/quality claim. Current gain3 VALID_INCREMENTAL_STEADY_MODEL_MEMORY; historical B1/B2 unchanged. Evidence: research_private/post_rc1/THIRD_GAIN_AFTER_QUALITY_HOLD/V1/FINDINGS.md. Last90/RC1 immutable/clone and GitHub zero.
+
+
+<!-- FINAL_THREE_COMPONENT_INTEGRATION_START -->
+Current frozen local integration: research_private/post_rc1/FINAL_THREE_COMPONENT_BASELINE_INTEGRATION/V1/RESUME.md. Three requested axes; historical B1/B2 and all negatives preserved. RC1 immutable, last90/Round91NOT_OPENED.
+
+
+<!-- FINAL_THREE_COMPONENT_BASELINE_INTEGRATION_TERMINAL -->
+## Final integration — private B1/V2 promoted, bounded attack PASS
+
+All three requested gains survive. DirectRC1cold2.818x; peakloadRSSreduction48.76%; category1/32 2.065x/2.021x; incrementalretainedmodelmemory−25.08% in qualifiedfivefamilies,notprocessRSS.193native state bridges/4,904,335reusedfullTESTrows/0mismatch;252directcostunits and342incrementalunits includedwithoutretiming.103newmalformed+107old+24atomicPASS;38source/450inputchecks/228concurrentcallsPASS.0C0H,sixinheritedMEDIUMpreserved. HyperVguardrejectbeforestart(12GiBVM,insufficientheadroom);Windows310–314/WSLhash-reusePASS;no newMacPASS. Originaltraining03/quality/label negatives and B1/V1/B2/V1 immutable. No newlearner/qualitygain/R91/release. Evidence:research_private/post_rc1/FINAL_THREE_COMPONENT_BASELINE_INTEGRATION/V1/FINDINGS.md; baseline:research_private/post_rc1/NEXT_GENERATION_PROGRAM/BASELINES/NEXT_GEN_BASELINE_1/V2.
+
+
+<!-- PERMANENT_CANONICAL_DIRECTION -->
+## Permanent canonical direction — present, future and working contract
+
+The canonical future direction is docs/research/CODADAPT_CANONICAL_VISION.md;
+README states supported present truth; AGENTS.md states the working contract.
+Original coded-memory learning and the twelve-axis Pareto objective remain the
+North Star. No new public leadership claim or scientific certificate is created.
+
+Current private reference is NEXT_GEN_BASELINE_1/V2, not historical B1/V1 or
+B2/V1. Direct frozen RC1 comparisons: cold load 2.818x, peak-load RSS -48.76%,
+categorical batches 1/32 2.065x/2.021x. The retained-model -25.08% is incremental
+versus B2 in five qualified owner families, NOT process RSS. Existing first
+bounded attack PASS, 193 native-state bridges / 38 families / 4,904,335 reused
+fullTEST rows / zero mismatch; no quality gain or general training-speed claim.
+0 CRITICAL / 0 HIGH / six inherited MEDIUM remain in the scoped current audit.
+
+Prior task terminal NEXT_GEN_BASELINE_1_PROMOTED_AND_FIRST_ATTACK_PASS and every
+negative remain intact. A bounded continuation admission review finds no pending
+admitted local empirical unit: missing independent hardware/native-Mac evidence,
+new host headroom, original causal/source/owner information are explicit entry
+conditions. Historical READY arrays do not override later terminal closures.
+No rerun, new fit, solve, benchmark, candidate change or platform PASS occurred.
+This is conditional local readiness, not exhaustion of all possible research.
+
+RC1 runtime/API/default/version1.1.0rc1 and sealed B1/V2 are unchanged. Deliberate
+public documentation delta: AGENTS contract and one README identity paragraph;
+new canonical vision and appended research memory. Old full-payload receipts are
+historical snapshots; runtime/test hash-bound evidence remains reusable. Original
+source/payload freezes are NOT rewritten to pretend documentation is unchanged.
+Last completed round90; Round91 NOT_OPENED. No GitHub/clone access, remote action,
+publication, release preparation or version bump.
+
+Evidence: research_private/post_rc1/PERMANENT_CANONICAL_DIRECTION/V1/FINDINGS.md.
+Continuation: research_private/post_rc1/PERMANENT_CANONICAL_DIRECTION/V1/NEXT_FRONTIER_ADMISSION.json.
+Resume: research_private/post_rc1/PERMANENT_CANONICAL_DIRECTION/V1/RESUME.md.
+
+
+
+<!-- PAIRED_SENSOR_VIEW_FRONTIER_START -->
+## Independent paired sensor-view evidence — active
+
+New user-authorized evidence frontier selected prospectively by EIG*product*generality/cost. Same-event tri-axis acceleration views and fusion, two original metadata-admitted UCI319 MHEALTH/UCI231 PAMAP2 cohorts; original archive/member/window/split hashes before first fit. Fixed5s nonoverlap retrospective stationary windows:1251/3781 events,10/9subjects,12classes,12single/36fusedfeatures; no subject/time/label in X, group-excluded train/validation/test. Three folds, fourviews, fivefixedlearners=120checkpointed diagnosticjobs; no candidate or new principle. Old label/residual/training/closed negatives preserved. PublicRC1 and B1V2 immutable,last90/R91NOT_OPENED. Initial unsupported n_jobs constructor and float32 normalization-guard failures are harness-only, preserved; validfits reused. Resume: research_private/post_rc1/PAIRED_SENSOR_VIEW_FRONTIER/V1/RESUME.md.
+
+
+<!-- PAIRED_SENSOR_VIEW_FRONTIER_TERMINAL -->
+## Paired sensor-view frontier — new quality signal, cause unresolved
+
+Terminal NEW_EXTERNAL_QUALITY_SIGNAL_NOT_CAUSALLY_LOCALIZED. Metadata-first
+EIG*product*generality/cost frontier: UCI319MHEALTH/UCI231PAMAP2,1251/3781fixed5s
+events,10/9subjects,12classes,3groupfolds,4views,5fixedlearners=120uniqueVALIDfits;
+0validfitreruns,2postfitcheckpointrecoveries. Native/B1V2 exact24newmodels /
+20128heldout event-viewrows,0mismatch; baseline seal and RC1 unchanged.
+
+Raw paired logloss DID +.661526(CI.347948–.994503)/+1.108224(CI.953858–1.262791)
+passes original10%/CI gate in both cohorts. Fused native/LGBlogloss .616035/.458533
+and .765141/.630206; native/CatBoost .616035/.136246 and .765141/.390141.
+Single-view logloss often favorsnative while accuracy favorsreferences. ErrorDID
+−.01462/+ .01393 has mixed direction; no pure fusion/information-loss attribution.
+
+Separately preregistered24VALID-only reference-temperature solves preserve all
+reference hard decisions and rawprimary files. SecondaryDID−.306906(CI−1.207340,
+.234470)/+.199965(CI.104241,.324708): cross-source secondary gate no longer passes;
+2/24TESTcalibrations harmed, including MHEALTHFUSED. Confidence sensitivity is
+observed, not a correct calibrator or causal fraction/native principle. TRAIN
+featurecoverage and all32reference/view win/loss cells retained; no new native
+candidate, calibrationpolicy or materialgain. Novelty/witness/reallinkNOT_MET.
+
+Original constructorn_jobs, dtype32probability/labelshape and nestedZIP-QA errors
+are harness negatives preserved; data/fits/thresholds unchanged, fits reused.
+Additional rawhash history scan late/partial(7896indexes,no matches; oldenv/temp
+warnings), so development diagnostics only, never untouched confirmation.15distinct
+privatechecksPASS,727publicPASS4XFAIL hashreused,RuffPASS;0newCRITICAL/HIGH,
+sixinheritedMEDIUM, B1/V2threegains/RC1API/default/version1.1.0rc1 unchanged.
+Last90/Round91NOT_OPENED,clone/GitHub/publication/release0.
+
+Next requires a distinct identifying TRAIN-only cause/recovery premise; no
+native calibration/capacity/selection/aggregation or TEST-oracle rescue on these
+exposed cohorts. Missing hardware/platform evidence remains a separate conditional
+frontier, not all-science exhaustion. Findings:
+research_private/post_rc1/PAIRED_SENSOR_VIEW_FRONTIER/V1/FINDINGS.md.
+Resume: research_private/post_rc1/PAIRED_SENSOR_VIEW_FRONTIER/V1/RESUME.md.
+
+<!-- PAIRED_VIEW_INFORMATION_ADDITION_TERMINAL -->
+## Paired information addition — MULTIVIEW_GAP_NOT_CAUSALLY_LOCALIZED
+
+120previousfits reused,0newfits. 15096paired comparisons/5032events/19subjects/2exposedcohorts.
+Native aggregate FUSED-minus-single NLL−.282953/−.408773;LGB−.944480/−1.516997: relative competitor gain, not aggregate native harm. Important native breaks106/411 coexist; fixes767/2872 exceed breaks151/607. Common216feature schemas/648level codes and intercepts exact; downstream selection/value/hash/stopping changes co-vary.1077/1843partial head-feature occurrences omitted;750/880shared queries have changed readouts. No unique cause or new principle.
+Partial-block swap lowersNLL/rescues67/106+277/411importantbreaks but harms hard accuracy globally; no policy/candidate. StructuralTRAIN-sideVALID-only diagnostic AUC.63885/.58076 butR2.00216/−.00352, frozen signal conjunctionFAIL. OriginalVALID reuse disclosed, notnestedconfirmation. Referenceconfidence bands/old24controls reused;2/24harm preserved. RepresentationMIXED/UNKNOWN;witnessNOT_ACTIVATED,Round91NOT_OPENED,last90.55privatePASS,727publicPASS4XFAILhashreuse,RuffPASS;983prior/84protected/19baselineleavesunchanged,0C0H6inheritedMEDIUM. RC1/B1V2immutable,threegainsretained,noGitHub/clone/release. Retry onlydistinctidentifyingTRAIN-onlyintervention and signedunseensubjectrecovery, notoldfamilyrescue.
+Findings:research_private/post_rc1/PAIRED_VIEW_INFORMATION_ADDITION/V1/FINDINGS.md. Resume:research_private/post_rc1/PAIRED_VIEW_INFORMATION_ADDITION/V1/RESUME.md.
+
+
+<!-- MULTIVIEW_CLOSURE_AND_FRONTIER_RESTART_START -->
+## Multiview closure and new source-contract frontier
+
+PAIRED_VIEW_INFORMATION_ADDITION closed as NO_CAUSALLY_ACTIONABLE_MECHANISM. Permanent interpretation RELATIVE_MULTIVIEW_UNDERUTILIZATION, causal mechanismUNKNOWN: native absolute fusion benefit, larger LGB relative benefit, heterogeneous517local harmful pairs. Prior verdict/counterfactual downside preserved; no further MHEALTH/PAMAP2 experiments. B1V2threegains/RC1immutable,last90,R91NOT_OPENED. New metadata-selected SCADA physical operational regime, earliest2016 wholearchives only; twofarms/sameoperator/sharedvendor, notindependentoperatorconfirmation. Source/raw/role/temporal split freeze before model outcomes; no newlearner/candidate.
+Resume:research_private/post_rc1/FRONTIER_AFTER_MULTIVIEW/V1/RESUME.md
+
+<!-- MULTIVIEW_CLOSURE_AND_FRONTIER_RESTART_TERMINAL -->
+## Multiview closed; distinct physical frontier complete — CURRENT_USEFUL_LOCAL_SPACE_EXHAUSTED
+
+Permanent interpretation RELATIVE_MULTIVIEW_UNDERUTILIZATION, causalUNKNOWN:
+ABSOLUTE nativefusionbenefit;RELATIVE largerLGBbenefit;LOCAL517harmfulpairs;
+MECHANISMnotlocalized. ClosedNO_CAUSALLY_ACTIONABLE_MECHANISM;0newMHEALTH/PAMAPexperiments.
+Metadata-first Kelmarsh/Penmanshiel2016 sourcecontracts,CCBY4.0,sameoperator/vendor,
+610244events/20machines;12nominalphysicalfeatures,9entirelymissingKelmarshfields
+retained. Contemporarypowerestimation,notforecast/causalintervention. 36789visible
+sourceindexes0aliasmatchesbeforefits;3forwarddayfolds/source,30fixedfits,0refits.
+PoolednativeRMSE124.7467/264.7804vsLGB95.8494/243.4956(+30.15/+8.74percent);
+all8referenceaggregatelossesretained,earlywindow/day/binwinsalso recorded.
+Nativepickle33.4/43.2kBvsLGB848.7/853.4kB,descriptivecompactnessnotprocessRAM.
+6newB1V2state/bucket/predictionbridges/212741TESTrows/0mismatch;no newcausal
+mechanism/component/materialgain. Knowncapacity/selection/aggregation/systems
+familiesdeduplicatednotretried.19distinctprivatePASS;4historicalQAAPI failures
+preserved/resolved,727publicPASS4XFAILhashreuse,RuffPASS.0C0H6inheritedMEDIUM;
+RC1/B1V2threegainsunchanged,last90,R91NOT_OPENED,GitHub/clone/release0.
+ScopedstopD: no remaining admittedlocalunit;not universalexternalexhaustion.
+Retry onlynewidentifyingTRAIN-onlypremise,originalcontrolchannel,materialowner
+orindependenthardware—notposthocsource/threshold/capacityrescue.
+Findings:research_private/post_rc1/FRONTIER_AFTER_MULTIVIEW/V1/FINDINGS.md. Resume:research_private/post_rc1/FRONTIER_AFTER_MULTIVIEW/V1/RESUME.md.
+
+
+<!-- CANONICAL_QUALITY_SYNTHESIS_TERMINAL -->
+## Canonical quality synthesis — no global cause or general niche identified
+
+CANONICAL_QUALITY_SYNTHESIS_COMPLETE; decision D:
+QUALITY_EVIDENCE_STILL_TOO_HETEROGENEOUS. There are 242 source/protocol/diagnostic
+rows and 18 strength records, not independent cohorts. All 1950 catalogue
+result/receipt hashes and 500 prior manifest checks match. No new fit, solve,
+download or prediction replay. Dense ordered numeric encoder loss remains
+locally replicated; Gait's fixed pair span, binary selected-activation loss,
+multiclass probability tails and PPG between-transcript gap concern different
+stages. GLOBAL128 harm, dense-support counterexamples, class-tail negatives,
+label-materiality negative, absolute multiview improvement with relative gap,
+wind losses and all R79-90 decisions remain. All 13 previous global regime axes
+remain UNKNOWN; zero qualified controlled matches. Five explanations screened,
+none admitted globally; no new candidate or Round91.
+
+One missing dimension: INDEPENDENTLY_IDENTIFIED_MATCHED_RESPONSE_LAW_CONTRAST.
+Best question: does independently measured pre-target process/acquisition state
+change conditional response and native excess at comparable X/TRAIN support,
+or does excess persist within the same identified law? Require an original
+contract and timing before any empirical protocol; no acquisition or fit is
+currently admitted under D. RC1/B1V2/three gains unchanged; last round 90,
+Round91 NOT_OPENED; 0 CRITICAL/HIGH and six inherited MEDIUM observations.
+
+Additional human stable 1.1.0 directive REGISTERED ONLY: separate STABLE RELEASE
+TRACK from NEXT-GEN RESEARCH. Stable derives from qualified RC1, not private
+components; minimal version/docs delta unless a CRITICAL/HIGH RC1 blocker is
+documented. No stable source/version change or preparation during this synthesis.
+Neurotabular excluded as user error. Zero GitHub/clone access/publication.
+
+Evidence: research_private/post_rc1/CANONICAL_QUALITY_SYNTHESIS/V1/FINDINGS.md.
+Matrices, nine questions, contradictions, hard filters and one best question
+are hash-bound in that folder. This updates knowledge, not the algorithm or release.
+
+
+
+<!-- HUMAN_PROJECT_RELATION_2026_10_24 -->
+## Human project report registered, without changing research evidence
+
+The user's58-section project report is preserved byte-for-byte in
+research_private/post_rc1/PROGRAM_DIRECTIVES/V1/CODADAPT_RELAZIONE_PROGETTO_UTENTE_2026_10.txt
+(SHA2563824b2a9cda9b3daef2baf8957e83fa5b7f2e76c20de6a99d40a4d05ff73d8b6).
+It is human-supplied historical/strategic context, not a new qualification,
+independent scientific result or authorization to reopen closed work. The
+registration receipt records metric-scope cautions without altering the source.
+Stable1.1 derives from qualifiedRC1; private NextGen stays separate. The completed
+quality synthesis and all previous negative results remain unchanged. No fit,
+download, candidate, protocol, version, public runtime or baseline change.
+last_completed_round90; Round91 NOT_OPENED; no clone/GitHub/publication action.
+
+
+
+<!-- CODADAPT_1_0_OFFICIAL_CONVERGENCE -->
+## CodAdapt 1.0 Official — maximum qualified stable convergence, local scope complete
+
+NOT_READY_FOR_OFFICIAL_1_0. Product generation name is CodAdapt1.0Official;
+technicalversion remains1.1.0rc1 and its finalselection is separate. Latesthuman
+release-track maximumqualifiedadmission supersedes earlierRC1-onlyrestriction;
+researchgates and olddecisions remain unchanged. AllthreeB1/V2components are
+HOLD_FOR_FUTURE, notpubliclyintegrated: fitted-onlyformat/lifecycle/persistence
+contracts and nativeMac evidence do not yet meet finalpublicproductiongate.
+Privategains remain valid, not rejected or silently promoted.
+
+Isolated82file publicpackagecandidate fromfrozenRC1:25/25runtime modules exact,
+0runtime/API/default/versiondelta. Newofflinewheel/sdistbuild+TwinePASS;
+6cleanWindowsinstalls(3.10-3.14,wheelplus312sdist)+1actualWSL312installPASS;
+SciPy/import/source/budget/clone/persistencechecksPASS,0newfits/downloads.
+Broad15sourcequalitymetrics delta0byidentity, notnewmeasurements; original225
+comparisons,727PASS4knownXFAIL0FAIL,examples/notebook/P0receipts reused byhash.
+16newreleasechecksPASS,RuffPASS. No newlymeasuredspeedup or publicB1memoryclaim.
+
+FinalpublicmacOSwheel/fullsuitegate EXTERNAL_MANUAL_GATE; earlieractualC1AUTO
+MacPASS staysVALID, notrelabeled asnewpayload/formatPASS. OfflineIntelMac/Python312
+bundle prepared withoutdataset ornetwork requirement. FullOS-by-minormatrix not
+claimed. Finaltechnicalversion/stablelabels explicitlydeferred; no autoversion
+rollback/bump.0observedCRITICAL/HIGHruntimeissues; missingqualification notFAIL.
+
+RC1/B1V2 remain immutable; qualitysynthesisdecisionD retained,last90,
+Round91NOT_OPENED. Rootpublicchanges only appendedMASTER/STATE; allcandidate
+source/docs/tests/builds stayprivate staging. No cloneaccess,GitHub,publication.
+Evidence: research_private/official_stable_convergence/V1/FINDINGS.md.
+Resume: research_private/official_stable_convergence/V1/RESUME.md.
+
+
+
+<!-- CODADAPT_2_0_OFFICIAL_CONVERGENCE -->
+## CodAdapt 2.0 — final stable destination, real Mac gate pending
+
+The permanent official milestone is now CODADAPT 2.0, final technical target 2.0.0. This supersedes the previous product name only for current/future planning; historical sealed names and verdicts remain unchanged. The former version-choice prerequisite is resolved, not a second blocker.
+
+Current local verdict NOT_READY_FOR_CODADAPT_2_0. Sole blocker FINAL_PUBLIC_PAYLOAD_MACOS_GATE / MACOS_EXTERNAL_EXECUTION_REQUIRED. 375 prior artifact hashes, 30 previous memory files, 84 protected public files, 19 B1/V2 leaves, 82 candidate files and all 106 internal Mac ZIP files verified. ZIP SHA256 37060f080b33334358db3c7e28877311c9943cb3b921e9b3ca2d1274325be875. No final public Mac receipt found in bounded local search. Earlier real C1 AUTO Mac PASS remains valid only in its original scope.
+
+727 PASS / 4 known XFAIL / 0 FAIL and Windows3.10-3.14, WSL, packaging evidence reused in original hash-bound scopes; no valid fit/test/benchmark repeated. 25/25 runtime modules identical to RC1. All three B1/V2 components HOLD_FOR_FUTURE, private baseline unchanged. No new quality or systems gain claimed. 0 observed CRITICAL/HIGH runtime issues.
+
+Only after verified actual final Mac PASS: stage CODADAPT_2_0_OFFICIAL_CANDIDATE, change local metadata/required docs to 2.0.0, rebuild and requalify package/install/contracts and final trust. No premature bump or replacement of frozen Mac bundle. Current source version remains 1.1.0rc1. No clone access, GitHub or publication. Research terminal and all negatives preserved; last completed round90, Round91 NOT_OPENED.
+
+Evidence and continuation: research_private/official_stable_convergence/V2_CODADAPT_2_0/FINDINGS.md; research_private/official_stable_convergence/V2_CODADAPT_2_0/RESUME.md.
+
+
+<!-- CODADAPT_2_0_FINAL_PUBLIC_MACOS_GATE -->
+## CodAdapt 2.0 — final public Mac gate CLOSED_PASS
+
+Actual macos-15-intel, native Python3.12.10 x86_64, noRosetta; original ZIP SHA25637060f080b33334358db3c7e28877311c9943cb3b921e9b3ca2d1274325be875 and wheel6da187463e973a0639d10301a35a482e885d9ec69850db312b3d990006bce503 unchanged. Full receipts downloaded and locally verified:729PASS/4knownXFAIL/0FAIL, golden/numerical stack/installed source hashes PASS. Original PARTIAL702PASS/4XFAIL/3skip preserved; offline optional EBM dependency and array-api environment recovery only, original ZIP/runtime/tests/gate criteria unchanged. sklearn1.9 has consolidated duplicate clone IDs and added checks; all native test identities and original unique operators retained. Local verifier assertion repaired without a remote rerun. No predictive claim or private component admission. Final Mac blocker closed; conditional local2.0.0 metadata/build/install/trust preparation now authorized, not publication. Last90/Round91NOT_OPENED; public repository and clone untouched. Evidence:research_private/official_stable_convergence/V3_REMOTE_MACOS_AND_2_0/VERIFIED_RESULT.json.
+
+
+<!-- CODADAPT_2_0_OFFICIAL_CANDIDATE_FINAL -->
+## CodAdapt 2.0 — official stable candidate READY, not published
+
+Final real Intel macOS public-basis gate CLOSED_PASS:729PASS/4knownXFAIL/0FAIL; first PARTIAL retained. After local verification and memory import, version-only2.0.0 finalization completed in Desktop. Fresh installed2.0 Windows312 suite727PASS/4knownXFAIL/0FAIL;6cleanWindowsinstalls(3.10–3.14 wheel/312sdist),5minor golden contracts, actualWSL312newwheel, standalone numeric/persistence/sklearn/atomicity/AUTO/integer tests, release example fresh-process fit/load, build/Twine/Ruff PASS.24runtime modules byte-identical to frozenRC1;one_version literal only, semanticidentityPASS. No private B1/V2 component integrated.
+
+New functional synthetic699635x21 AUTO/explicit1024 full fits match all probability bytes and learned memory state; explicit512reject preserved. This is engineering, NOT a realKaggle acceptance replacement. Original Downloads CSV currently missing and not reconstructed; earlier real C1Windows/WSL/Kaggle/container/nested/Mac acceptance and quality comparisons reused by verified computational lineage. No new predictive benefit, speedup or universal RAM/platform claim. All six inherited public limitation rows and negative history preserved.0CRITICAL/0HIGH/0FAIL; no remaining product readiness blocker.
+
+CODADAPT_2_0_OFFICIAL_CANDIDATE_READY is local preparation only. Temporary remote repo cleanup attempted once after verified download/import;GitHub403insufficient rights -> MANUAL_TEMP_REPO_CLEANUP_REQUIRED, administrative not runtime-blocking. No public repository/clone write, tag or publication. Research terminal unchanged,last90/Round91NOT_OPENED. Evidence:research_private/official_stable_convergence/V3_REMOTE_MACOS_AND_2_0/FINDINGS.md; final_audit.json; PUBLIC_HANDOFF_MANIFEST.json.

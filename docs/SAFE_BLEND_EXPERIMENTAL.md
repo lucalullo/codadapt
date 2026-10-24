@@ -1,7 +1,7 @@
 # Experimental native SafeBlend regression
 
 `codadapt.experimental.SafeBlendRegressor` is an opt-in, fully native regression
-estimator in the local **1.1.0rc1 candidate**. Standard CodAdapt installation
+estimator in **CodAdapt 2.0.0**. Standard CodAdapt installation
 is sufficient. It fits no external teacher and retains no external model.
 `CodAdaptRegressor` remains the default. The optional `codadapt[ebm]` compiler is
 a separate tool and is not used by SafeBlend.
@@ -28,7 +28,7 @@ missing and unseen categories map to missing before the native bucket encoders.
 No validation or test target enters preprocessing or either model's fit.
 
 Base retains the frozen `CodAdaptRegressor` predictive recipe, with
-`memory_budget_mb=512` explicitly pinned even when the 1.1.0rc1 native
+`memory_budget_mb=512` explicitly pinned even when the 2.0.0 native
 constructor defaults to AUTO. See [AUTO migration](AUTO_MEMORY.md). Base uses
 the explicit validation set and the detected categorical indices. The complementary native Rational
 estimator uses 16 quantile bins, ridge 0.001 and at most 100 L-BFGS-B iterations.
