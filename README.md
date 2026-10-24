@@ -1,4 +1,4 @@
-# CodAdapt 2.0.0 — Official Stable Release
+# CodAdapt 2.0.0
 
 > Prepared and fully qualified for official release.
 > Native estimators default to `memory_budget_mb="auto"`. See
