@@ -1,0 +1,1384 @@
+{
+  "identity": {
+    "version": "2.1.0",
+    "contract_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b",
+    "source_files": 38,
+    "native_source_sha256": "85c36bbee8f02c8e44c095b49f5dc8ac9d38e5051aba146f585b4cffbf0fc03f"
+  },
+  "proposed_public_version": "2.1.0",
+  "publication_approved": false,
+  "references": [
+    {
+      "path": ".github/workflows/qualification.yml",
+      "line": 35,
+      "values": [
+        "7.2.2"
+      ]
+    },
+    {
+      "path": "benchmarks/README.md",
+      "line": 3,
+      "values": [
+        "4.6.0",
+        "7.2.2"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 3,
+      "values": [
+        "3.12.10"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 4,
+      "values": [
+        "10.0.26300"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 9,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 10,
+      "values": [
+        "2.5.3"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 11,
+      "values": [
+        "1.18.1"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 12,
+      "values": [
+        "3.0.6"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 13,
+      "values": [
+        "1.9.1"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 14,
+      "values": [
+        "4.7.0"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "line": 15,
+      "values": [
+        "3.7.0"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/BENCHMARK_CV_REPORT.md",
+      "line": 69,
+      "values": [
+        "4.7.0"
+      ]
+    },
+    {
+      "path": "benchmarks/reproducibility/BENCHMARK_CV_REPORT.md",
+      "line": 73,
+      "values": [
+        "3.12.10",
+        "0.2.0rc2",
+        "2.5.3",
+        "3.0.6",
+        "1.18.1",
+        "1.9.1",
+        "4.7.0"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 6,
+      "values": [
+        "1.1.0rc1"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 123,
+      "values": [
+        "3.12.14"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 283,
+      "values": [
+        "3.12.14"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 284,
+      "values": [
+        "2.3.5",
+        "2.2.3",
+        "1.16.2",
+        "1.8.0",
+        "4.7.0"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 285,
+      "values": [
+        "1.2.10",
+        "3.4.1"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 305,
+      "values": [
+        "0.1.0"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 307,
+      "values": [
+        "0.1.0"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 372,
+      "values": [
+        "3.12.14",
+        "24.04.4",
+        "3.12.3"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 373,
+      "values": [
+        "2.3.5",
+        "2.2.3",
+        "1.16.2",
+        "1.8.0",
+        "0.7.8"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 451,
+      "values": [
+        "1.0.0rc1",
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 500,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "line": 520,
+      "values": [
+        "3.12.14",
+        "2.3.5",
+        "2.2.3",
+        "1.16.2",
+        "1.8.0"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 3,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 11,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 34,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 43,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 52,
+      "values": [
+        "1.1.0rc1"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 73,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 80,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 82,
+      "values": [
+        "1.0.0"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 98,
+      "values": [
+        "1.0.0rc2"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 108,
+      "values": [
+        "1.0.0rc1"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 111,
+      "values": [
+        "1.0.0rc1"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 129,
+      "values": [
+        "1.0.0rc1"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 133,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 136,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 151,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 154,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 164,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 166,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 205,
+      "values": [
+        "0.2.0rc2"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 210,
+      "values": [
+        "0.2.0rc1"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "line": 231,
+      "values": [
+        "0.1.0"
+      ]
+    },
+    {
+      "path": "DIFF_FROM_PREVIOUS_REVIEW.json",
+      "line": 334,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "DIFF_FROM_PREVIOUS_REVIEW.json",
+      "line": 342,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "DIFF_FROM_PREVIOUS_REVIEW.json",
+      "line": 350,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "DIFF_FROM_PREVIOUS_REVIEW.json",
+      "line": 358,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "DIFF_FROM_PREVIOUS_REVIEW.json",
+      "line": 366,
+      "values": [
+        "2.0.0.dev0+lab.g6r1.tar.gz"
+      ]
+    },
+    {
+      "path": "docs/ALGORITHM.md",
+      "line": 1,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/ALGORITHM.md",
+      "line": 88,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/AUTO_MEMORY.md",
+      "line": 1,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/AUTO_MEMORY.md",
+      "line": 9,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/AUTO_MEMORY.md",
+      "line": 11,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/AUTO_MEMORY.md",
+      "line": 12,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "docs/AUTO_MEMORY.md",
+      "line": 22,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/AUTO_MEMORY.md",
+      "line": 113,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/CI_AND_RUNNER_REVIEW.md",
+      "line": 9,
+      "values": [
+        "7.2.2"
+      ]
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "line": 1,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "line": 13,
+      "values": [
+        "3.12.10"
+      ]
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "line": 14,
+      "values": [
+        "3.10.22"
+      ]
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "line": 15,
+      "values": [
+        "3.14.10"
+      ]
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "line": 16,
+      "values": [
+        "3.11.18",
+        "3.12.16",
+        "3.13.18",
+        "3.15.2"
+      ]
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "line": 28,
+      "values": [
+        "3.12.10"
+      ]
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "line": 35,
+      "values": [
+        "2.5.4",
+        "1.18.1"
+      ]
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "line": 45,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "docs/EBM_COMPILER.md",
+      "line": 1,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/EBM_COMPILER.md",
+      "line": 48,
+      "values": [
+        "0.7.8"
+      ]
+    },
+    {
+      "path": "docs/HISTORICAL_RELEASE_NOTES.md",
+      "line": 3,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/HISTORICAL_RELEASE_NOTES.md",
+      "line": 10,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "docs/HISTORICAL_RELEASE_NOTES.md",
+      "line": 37,
+      "values": [
+        "1.1.0rc1"
+      ]
+    },
+    {
+      "path": "docs/HISTORICAL_RELEASE_NOTES.md",
+      "line": 76,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "docs/HISTORICAL_RELEASE_NOTES.md",
+      "line": 80,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "line": 3,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "line": 1,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "line": 11,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "line": 14,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "line": 20,
+      "values": [
+        "1.0.0"
+      ]
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "line": 27,
+      "values": [
+        "1.0.0"
+      ]
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "line": 34,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "line": 54,
+      "values": [
+        "1.0.0"
+      ]
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "line": 120,
+      "values": [
+        "1.0.0"
+      ]
+    },
+    {
+      "path": "docs/PERSISTENCE.md",
+      "line": 36,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "docs/PERSISTENCE.md",
+      "line": 42,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/QUALIFICATION.md",
+      "line": 7,
+      "values": [
+        "7.2.2"
+      ]
+    },
+    {
+      "path": "docs/RELEASING.md",
+      "line": 4,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "docs/SAFE_BLEND_EXPERIMENTAL.md",
+      "line": 1,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/SAFE_BLEND_EXPERIMENTAL.md",
+      "line": 12,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/SAFE_BLEND_EXPERIMENTAL.md",
+      "line": 39,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/STABILITY.md",
+      "line": 1,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/STABILITY.md",
+      "line": 11,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/STABILITY.md",
+      "line": 18,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/STABILITY.md",
+      "line": 25,
+      "values": [
+        "1.0.0"
+      ]
+    },
+    {
+      "path": "docs/STABILITY.md",
+      "line": 92,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/STABILITY.md",
+      "line": 95,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md",
+      "line": 1,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md",
+      "line": 9,
+      "values": [
+        "1.0.1",
+        "1.1.0rc1"
+      ]
+    },
+    {
+      "path": "docs/V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md",
+      "line": 11,
+      "values": [
+        "1.0.1"
+      ]
+    },
+    {
+      "path": "docs/V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md",
+      "line": 16,
+      "values": [
+        "1.1.0rc1"
+      ]
+    },
+    {
+      "path": "docs/V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md",
+      "line": 39,
+      "values": [
+        "1.1.0rc1"
+      ]
+    },
+    {
+      "path": "docs/V1_0_1_TO_V2_0_COMPATIBILITY.md",
+      "line": 1,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/V1_0_1_TO_V2_0_COMPATIBILITY.md",
+      "line": 9,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/V1_0_1_TO_V2_0_COMPATIBILITY.md",
+      "line": 11,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/VERSIONING.md",
+      "line": 3,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "docs/VERSIONING.md",
+      "line": 4,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "docs/VERSIONING.md",
+      "line": 26,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "docs/VERSIONING.md",
+      "line": 37,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "HISTORICAL_MIGRATION.json",
+      "line": 307,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "ISTRUZIONI_TRASFERIMENTO_GITHUB.md",
+      "line": 1,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "ISTRUZIONI_TRASFERIMENTO_GITHUB.md",
+      "line": 3,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "ISTRUZIONI_TRASFERIMENTO_GITHUB.md",
+      "line": 37,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "ISTRUZIONI_TRASFERIMENTO_GITHUB.md",
+      "line": 40,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "MIGRATION_PLAN.md",
+      "line": 41,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "pyproject.toml",
+      "line": 2,
+      "values": [
+        "84.2.1",
+        "0.48.0",
+        "3.1.0"
+      ]
+    },
+    {
+      "path": "pyproject.toml",
+      "line": 7,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "pyproject.toml",
+      "line": 16,
+      "values": [
+        "0.7.8"
+      ]
+    },
+    {
+      "path": "README.md",
+      "line": 7,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "README.md",
+      "line": 11,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "README.md",
+      "line": 51,
+      "values": [
+        "3.12.10"
+      ]
+    },
+    {
+      "path": "README.md",
+      "line": 59,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "line": 1,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "line": 3,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "line": 19,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "line": 28,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "requirements/build.txt",
+      "line": 1,
+      "values": [
+        "1.6.1"
+      ]
+    },
+    {
+      "path": "requirements/build.txt",
+      "line": 2,
+      "values": [
+        "84.2.1"
+      ]
+    },
+    {
+      "path": "requirements/build.txt",
+      "line": 3,
+      "values": [
+        "0.48.0"
+      ]
+    },
+    {
+      "path": "requirements/build.txt",
+      "line": 4,
+      "values": [
+        "3.1.0"
+      ]
+    },
+    {
+      "path": "requirements/qualification.txt",
+      "line": 1,
+      "values": [
+        "9.1.1"
+      ]
+    },
+    {
+      "path": "requirements/qualification.txt",
+      "line": 2,
+      "values": [
+        "7.2.2"
+      ]
+    },
+    {
+      "path": "requirements/qualification.txt",
+      "line": 3,
+      "values": [
+        "3.1.2"
+      ]
+    },
+    {
+      "path": "requirements/qualification.txt",
+      "line": 4,
+      "values": [
+        "0.7.8"
+      ]
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "line": 1,
+      "values": [
+        "1.26.4"
+      ]
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "line": 2,
+      "values": [
+        "2.2.3"
+      ]
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "line": 3,
+      "values": [
+        "1.14.1"
+      ]
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "line": 4,
+      "values": [
+        "1.6.1"
+      ]
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "line": 5,
+      "values": [
+        "3.7.0"
+      ]
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "line": 6,
+      "values": [
+        "1.6.0"
+      ]
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "line": 7,
+      "values": [
+        "3.0.0"
+      ]
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "line": 8,
+      "values": [
+        "1.17.0"
+      ]
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "line": 1,
+      "values": [
+        "2.5.4"
+      ]
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "line": 2,
+      "values": [
+        "3.1.0"
+      ]
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "line": 3,
+      "values": [
+        "1.18.1"
+      ]
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "line": 4,
+      "values": [
+        "1.9.1"
+      ]
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "line": 5,
+      "values": [
+        "3.7.0"
+      ]
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "line": 6,
+      "values": [
+        "1.6.0"
+      ]
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "line": 7,
+      "values": [
+        "3.0.0"
+      ]
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "line": 8,
+      "values": [
+        "1.17.0"
+      ]
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "line": 1,
+      "values": [
+        "2.5.4"
+      ]
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "line": 2,
+      "values": [
+        "3.1.0"
+      ]
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "line": 3,
+      "values": [
+        "1.18.1"
+      ]
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "line": 4,
+      "values": [
+        "1.9.1"
+      ]
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "line": 5,
+      "values": [
+        "3.7.0"
+      ]
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "line": 6,
+      "values": [
+        "1.6.0"
+      ]
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "line": 7,
+      "values": [
+        "3.0.0"
+      ]
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "line": 8,
+      "values": [
+        "1.17.0"
+      ]
+    },
+    {
+      "path": "src/codadapt/_inference.py",
+      "line": 54,
+      "values": [
+        "2.5.4",
+        "3.1.0",
+        "1.18.1",
+        "1.9.1"
+      ]
+    },
+    {
+      "path": "src/codadapt/_version.py",
+      "line": 1,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "src/codadapt/experimental/_compiler.py",
+      "line": 20,
+      "values": [
+        "0.7.8"
+      ]
+    },
+    {
+      "path": "src/codadapt/experimental/_compiler.py",
+      "line": 32,
+      "values": [
+        "0.7.8"
+      ]
+    },
+    {
+      "path": "src/codadapt/experimental/_compiler.py",
+      "line": 33,
+      "values": [
+        "0.7.8"
+      ]
+    },
+    {
+      "path": "src/codadapt/preprocessing.py",
+      "line": 508,
+      "values": [
+        "3.1.0",
+        "2.5.4"
+      ]
+    },
+    {
+      "path": "src/codadapt/serving/_contract.py",
+      "line": 70,
+      "values": [
+        "2.5.4",
+        "3.1.0",
+        "1.26.4",
+        "2.2.3"
+      ]
+    },
+    {
+      "path": "src/codadapt/serving/portable_native_runtime.py",
+      "line": 383,
+      "values": [
+        "1.1.0rc1"
+      ]
+    },
+    {
+      "path": "src/codadapt/serving/source_contract.json",
+      "line": 3,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "tests/legacy/test_serving.py",
+      "line": 204,
+      "values": [
+        "1.26.4",
+        "2.2.3",
+        "2.5.4",
+        "3.1.0",
+        "2.5.4",
+        "3.1.0"
+      ]
+    },
+    {
+      "path": "tests/native/test_auto_backend.py",
+      "line": 15,
+      "values": [
+        "2.5.4",
+        "3.1.0",
+        "1.18.1",
+        "1.9.1"
+      ]
+    },
+    {
+      "path": "tests/native/test_auto_backend.py",
+      "line": 27,
+      "values": [
+        "2.5.4",
+        "3.1.0",
+        "1.18.1",
+        "1.9.1"
+      ]
+    },
+    {
+      "path": "tests/native/test_numeric_frame_g6.py",
+      "line": 60,
+      "values": [
+        "2.5.4",
+        "3.1.0"
+      ]
+    },
+    {
+      "path": "tests/native/test_numeric_frame_g6.py",
+      "line": 99,
+      "values": [
+        "2.2.0"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 17,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 18,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 22,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 25,
+      "values": [
+        "2.0.0",
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 36,
+      "values": [
+        "2.1.0",
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 41,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 54,
+      "values": [
+        "2.0.0",
+        "02.1.0",
+        "2.1.0+local",
+        "2.1.0",
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 65,
+      "values": [
+        "9.9.9"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 75,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 85,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 94,
+      "values": [
+        "2.1.0rc1"
+      ]
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "line": 100,
+      "values": [
+        "2.1.0rc1"
+      ]
+    },
+    {
+      "path": "tools/model_version_compatibility.py",
+      "line": 161,
+      "values": [
+        "2.0.0.dev0+lab.g6r1"
+      ]
+    },
+    {
+      "path": "tools/model_version_compatibility.py",
+      "line": 164,
+      "values": [
+        "2.1.0"
+      ]
+    },
+    {
+      "path": "tools/prepare_version.py",
+      "line": 110,
+      "values": [
+        "2.0.0"
+      ]
+    },
+    {
+      "path": "tools/prepare_version.py",
+      "line": 111,
+      "values": [
+        "2.0.0"
+      ]
+    }
+  ],
+  "historical_or_fixture_versions_retained": true
+}

@@ -1,0 +1,43 @@
+name: Manual platform qualification (no publication)
+on:
+  workflow_dispatch:
+    inputs:
+      os:
+        description: Actual target host (unexecuted targets remain unqualified)
+        type: choice
+        options: [windows-latest, ubuntu-latest, macos-latest]
+        default: windows-latest
+      python:
+        description: CPython minor; exact resolved patch is recorded
+        type: choice
+        options: ['3.10', '3.11', '3.12', '3.13', '3.14', '3.15']
+        default: '3.12'
+      backend:
+        type: choice
+        options: [native, pure]
+        default: native
+permissions:
+  contents: read
+concurrency:
+  group: qualification-${{ github.ref }}-${{ inputs.os }}-${{ inputs.python }}-${{ inputs.backend }}
+  cancel-in-progress: false
+jobs:
+  qualify:
+    timeout-minutes: 35
+    runs-on: ${{ inputs.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ inputs.python }}
+          allow-prereleases: false
+      - name: Install bounded runner dependency from official PyPI
+        run: python -I -B -m pip --isolated --disable-pip-version-check --no-input --keyring-provider disabled install --index-url https://pypi.org/simple --only-binary=:all: psutil==7.2.2
+      - name: Execute actual host qualification
+        run: python -I -B tools/qualify_platform.py --run-id ci --backend ${{ inputs.backend }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qualification-${{ inputs.os }}-${{ inputs.python }}-${{ inputs.backend }}
+          path: qualification_runs/ci/
+          if-no-files-found: warn

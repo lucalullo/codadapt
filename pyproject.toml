@@ -1,54 +1,35 @@
 [build-system]
-requires = ["setuptools>=77", "wheel"]
+requires = ["setuptools==84.2.1", "wheel==0.48.0", "pybind11==3.1.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "codadapt"
-dynamic = ["version"]
-description = "Native tabular learning with adaptive coded memory and shared multi-resolution encoding"
+version = "2.1.0"
+description = "Adaptive coded-memory learning for tabular classification and regression"
 readme = "README.md"
-requires-python = ">=3.10,<3.15"
+requires-python = ">=3.10,<3.16"
 license = "MIT"
 license-files = ["LICENSE"]
-authors = [{name = "Luca Lullo"}]
-keywords = ["tabular", "machine-learning", "adaptive-codes", "numpy"]
-classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "Intended Audience :: Science/Research",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "Programming Language :: Python :: 3.14",
-    "Topic :: Scientific/Engineering :: Artificial Intelligence",
-]
 dependencies = ["numpy>=1.24", "pandas>=2.0", "scikit-learn>=1.4", "scipy>=1.8", "threadpoolctl>=3.1"]
-
-[project.urls]
-Homepage = "https://github.com/lucalullo/codadapt"
-Repository = "https://github.com/lucalullo/codadapt"
-Issues = "https://github.com/lucalullo/codadapt/issues"
 
 [project.optional-dependencies]
 ebm = ["interpret-core==0.7.8"]
 dev = ["pytest>=7.4", "ruff>=0.9", "build>=1.2", "twine>=5", "nbformat>=5.9", "nbclient>=0.10", "ipykernel>=6.29"]
 benchmark = ["psutil>=5.9"]
 
-[tool.setuptools.dynamic]
-version = {attr = "codadapt._version.__version__"}
-
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+"codadapt.serving" = ["source_contract.json"]
+
 [tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts = "-ra"
+testpaths = ["tests/native", "tests/legacy", "tests/tools"]
+# This preserved historical test injects host dependencies via .pth. Genuine
+# clean consumer installation is required by tools/qualify_platform.py instead.
+addopts = "-ra --strict-markers --ignore=tests/legacy/test_packaging.py"
+markers = ["native: requires a successfully built and imported C++ extension"]
 
 [tool.ruff]
 target-version = "py310"
 line-length = 100
-extend-exclude = ["build", "dist", ".venv", "benchmark_results"]
-
-[tool.ruff.lint]
-select = ["E4", "E7", "E9", "F", "I"]

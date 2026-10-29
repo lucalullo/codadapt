@@ -143,6 +143,8 @@ def prepare(model, X, y, sample_weight, eval_set):
     if getattr(model, "memory_validation_conversion_preflight_qualified_", True) is False:
         normalized_eval = (xv, yv) if xv is not None else None
         _recheck_memory_after_conversion(model, estimate, x, y, w, normalized_eval)
+    # Balance original class labels once, not each binary OVR target separately.
+    w = model._prepare_training_weight(y, w)
     return Prepared(x, y, w, xv, yv, classes, rng, train_ids, valid_ids, int(estimate))
 
 

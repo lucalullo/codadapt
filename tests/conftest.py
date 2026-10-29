@@ -1,17 +1,4 @@
-"""Resolve installed runtime dependencies for isolated offline subprocess tests."""
-
-import importlib.util
+"""Default wheel location for artifact-contract tests."""
 from pathlib import Path
-
-import pytest
-
-
-@pytest.fixture
-def dependency_paths():
-    # Only dependency directories: never inject the CodAdapt source into wheel tests.
-    paths = []
-    for name in ("numpy", "pandas", "scipy", "sklearn", "joblib", "threadpoolctl"):
-        spec = importlib.util.find_spec(name)
-        folder = Path(spec.origin).resolve().parent
-        paths.append(str(folder.parent if spec.submodule_search_locations else folder))
-    return list(dict.fromkeys(paths))
+import os
+os.environ.setdefault("CODADAPT_TEST_DIST",str(Path(__file__).resolve().parents[1]/"dist"))

@@ -1,3 +1,6 @@
+> Historical observations, not new G6-R1 measurements. Presets, source versions
+> and unfavorable outcomes remain historical. Current results: [performance](../../docs/PERFORMANCE.md).
+
 # CodAdapt: Exploratory Repeated Cross-Validation Benchmark
 
 **Date:** 9 October 2026  |  **Status:** Author-run exploratory experiment, **not** independent validation.
@@ -79,3 +82,10 @@ Raw outputs: `benchmark_cv_full.csv` and `benchmark_cv_full.json`.
 - Broader real-world tabular benchmarks with pre-defined splits and matched tuning budgets.
 - Report within-dataset paired differences and meaningful uncertainty, avoiding independence assumptions for folds.
 
+
+## Current source adapter
+
+The runner in this copy removes Git subprocess discovery and user Downloads
+paths, replacing identity with its own SHA256. The historical script hashes
+above and CSV/JSON remain unchanged. No fits were run for this adaptation;
+execute only under a new appropriate protocol, not to recreate favorable timing.

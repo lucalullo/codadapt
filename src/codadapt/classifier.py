@@ -7,6 +7,7 @@ from sklearn.base import ClassifierMixin
 from sklearn.utils.validation import check_is_fitted
 
 from ._base import _BaseCodAdapt
+from ._class_weight import training_class_weights, validate_class_weight
 from ._core import sigmoid
 from ._multiclass import fit_heads, is_multiclass, prepare
 from ._multiclass_artifact import Artifact
@@ -21,6 +22,57 @@ class CodAdaptClassifier(ClassifierMixin, _BaseCodAdapt):
     """
 
     _task = "classification"
+
+    def __init__(
+        self,
+        *,
+        n_bins=32,
+        max_categories=128,
+        quantile_sample_size=20000,
+        n_tables=8,
+        features_per_table=3,
+        table_size=256,
+        main_effects=True,
+        l2=5.0,
+        categorical_features=None,
+        early_stopping=True,
+        validation_fraction=0.15,
+        tol=1e-5,
+        random_state=None,
+        verbosity=0,
+        lookup_budget=24,
+        memory_budget_mb="auto",
+        class_weight=None,
+    ):
+        super().__init__(
+            n_bins=n_bins,
+            max_categories=max_categories,
+            quantile_sample_size=quantile_sample_size,
+            n_tables=n_tables,
+            features_per_table=features_per_table,
+            table_size=table_size,
+            main_effects=main_effects,
+            l2=l2,
+            categorical_features=categorical_features,
+            early_stopping=early_stopping,
+            validation_fraction=validation_fraction,
+            tol=tol,
+            random_state=random_state,
+            verbosity=verbosity,
+            lookup_budget=lookup_budget,
+            memory_budget_mb=memory_budget_mb,
+        )
+        self.class_weight = class_weight
+
+    def _validate_parameters(self):
+        super()._validate_parameters()
+        validate_class_weight(self.class_weight)
+
+    def _prepare_training_weight(self, y, weight, *, encoded_classes=None):
+        if self.class_weight is None:
+            return weight
+        labels = encoded_classes[y.astype(np.intp)] if encoded_classes is not None else y
+        return training_class_weights(labels, weight, self.class_weight)
 
     def fit(self, X, y, sample_weight=None, eval_set=None):
         """Fit binary or multiclass targets with the same constructor parameters."""
@@ -119,6 +171,8 @@ class CodAdaptClassifier(ClassifierMixin, _BaseCodAdapt):
         return state
 
     def __setstate__(self, state):
+        state = state.copy()
+        state.setdefault("class_weight", None)
         super().__setstate__(state)
         if "_ovr_artifact_" in state:
             self._restore_aliases()

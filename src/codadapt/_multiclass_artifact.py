@@ -4,7 +4,7 @@ import numpy as np
 
 from ._core import sigmoid
 from ._multiclass_packing import pack, unpack
-from ._training import predict_coded_memory_buckets
+from ._inference import predict_coded_memory_buckets
 from .preprocessing import _pool_categorical_strings
 
 
@@ -55,8 +55,9 @@ class Artifact:
         return result
 
     def decision_function(self, x):
-        z = self.shared_state.encoder.transform_levels(x)
-        return np.column_stack([h.scores(z) for h in self.heads])
+        from ._batching import decision
+        return decision(self.shared_state.encoder, x,
+                        lambda z: np.column_stack([h.scores(z) for h in self.heads]))
 
     def predict_proba(self, x):
         return probabilities(self.decision_function(x))

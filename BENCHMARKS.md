@@ -1,3 +1,6 @@
+> Historical observations, not new G6-R1 measurements. Presets, source versions
+> and unfavorable outcomes remain historical. Current results: [docs/PERFORMANCE.md](docs/PERFORMANCE.md).
+
 # Benchmark Disclosure
 
 The local 1.1.0rc1 adds no predictive-quality claim and does not rerun or rewrite

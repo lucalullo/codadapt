@@ -1,4 +1,12 @@
-# Current native CodAdapt algorithm (2.0.0)
+> Historical public documentation preserved from the 2.0.0 source line.
+> Technical descriptions apply where unchanged; release and platform receipts
+> below describe that historical source, not qualification of the present C++
+> backend. Current scope: [compatibility](COMPATIBILITY.md), [API](API.md),
+> [persistence](PERSISTENCE.md). This copy remains a development review candidate.
+> In historical prose, "native" names CodAdapt's own algorithm; it does not
+> imply that training runs in C++.
+
+# CodAdapt coded-memory learning algorithm
 
 This describes the explicit shared trainer in `_training.py`. Historical
 coordinate-wise code-move experiments do not describe this public runtime.
@@ -96,3 +104,10 @@ across classes, not softmax; ties select the first label in `np.unique` order.
 A compact artifact deduplicates shared metadata and preserves float64 coefficients.
 Pickle/joblib restore sharing. No external teacher or private research module is
 required. See [STABILITY.md](STABILITY.md) for persistence and concurrency limits.
+
+## Current opt-in class balancing
+
+The classifier adds class_weight="balanced" using effective positive TRAIN
+mass, before OVR heads; class_weight=None and the regressor are unchanged.
+See [API](API.md) for the exact weighting formula and validation isolation.
+C++ accelerates ordered inference only; it does not change the learning rule.

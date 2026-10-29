@@ -1,7 +1,8 @@
-"""Lightweight public sanity benchmark for CodAdapt 0.1.0.
+"""Lightweight historical public sanity benchmark for CodAdapt.
 
 This runner is intentionally small and self-contained. It is not the frozen internal
 release benchmark described in BENCHMARKS.md.
+Its historical results are not new measurements for the current development build.
 """
 
 from __future__ import annotations

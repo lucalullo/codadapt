@@ -1,0 +1,123 @@
+{
+  "version": "2.1.0",
+  "current_matrix": [
+    {
+      "OS": "Windows11",
+      "CPU": "x64",
+      "Python": "3.14.10",
+      "compiler": "MSVC14.51.36231/SDK10.0.26100.0",
+      "status": "PASS_FINITE_ACTUAL_210_NATIVE_AND_PURE",
+      "native_wheel_runtime": true,
+      "pure_wheel_runtime": true,
+      "optional_EBM": "PASS_IN_FULL_SUITE",
+      "automatic_backend": "Python",
+      "explicit_native": "PASS",
+      "dependency_pins": "requirements/windows314.txt",
+      "inherited_earlier_actual210_full_suite": {
+        "passed": 1012,
+        "skipped": 3,
+        "historical_xfail": 4,
+        "failed": 0,
+        "errors": 0
+      },
+      "full_suite_rerun_in_this_revision": false,
+      "new_final_targeted_tests": {
+        "native": {
+          "passed": 148,
+          "skipped": 1,
+          "failed": 0,
+          "errors": 0
+        },
+        "pure": {
+          "passed": 47,
+          "skipped": 51,
+          "failed": 0,
+          "errors": 0
+        }
+      },
+      "final_exact_wheel_consumers": "PASS_NATIVE_AND_PURE"
+    },
+    {
+      "OS": "Windows11",
+      "CPU": "x64",
+      "Python": "3.10.22",
+      "compiler": "MSVC14.51.36231/SDK10.0.26100.0",
+      "status": "CORE_PASS_FULL_PROFILE_HOLD_OPTIONAL_EBM_POLICY",
+      "native_wheel_runtime": true,
+      "pure_wheel_runtime": true,
+      "optional_EBM": "HOLD_LIBEBM_WIN_X64_DLL_APP_CONTROL_4551",
+      "automatic_backend": "Python",
+      "explicit_native": "PASS_CORE",
+      "dependency_pins": "requirements/windows310.txt",
+      "inherited_earlier_actual210_full_suite": {
+        "passed": 1002,
+        "skipped": 1,
+        "historical_xfail": 4,
+        "failed": 0,
+        "errors": 12
+      },
+      "full_suite_rerun_in_this_revision": false,
+      "new_final_targeted_tests": {
+        "native": {
+          "passed": 148,
+          "skipped": 1,
+          "failed": 0,
+          "errors": 0
+        },
+        "pure": {
+          "passed": 47,
+          "skipped": 51,
+          "failed": 0,
+          "errors": 0
+        }
+      },
+      "final_exact_wheel_consumers": "PASS_NATIVE_AND_PURE"
+    },
+    {
+      "OS": "Windows11",
+      "CPU": "x64",
+      "Python": "3.12.10",
+      "status": "BUILD_PASS_NEW_RUNTIME_HOLD_PREREQUISITE_POLICY",
+      "native_build": true,
+      "new_version_runtime_tested": false,
+      "reason": "R2fresh pandas indexers DLL denied; no changed condition for repeated import"
+    },
+    {
+      "OS": "Windows",
+      "CPU": "x64",
+      "Python": "3.11.18",
+      "status": "NOT_TESTED_HISTORICAL_RUNTIME_OR_DEPENDENCY_POLICY_BLOCK"
+    },
+    {
+      "OS": "Windows",
+      "CPU": "x64",
+      "Python": "3.12.16",
+      "status": "NOT_TESTED_HISTORICAL_RUNTIME_OR_DEPENDENCY_POLICY_BLOCK"
+    },
+    {
+      "OS": "Windows",
+      "CPU": "x64",
+      "Python": "3.13.18",
+      "status": "NOT_TESTED_HISTORICAL_RUNTIME_OR_DEPENDENCY_POLICY_BLOCK"
+    },
+    {
+      "OS": "Windows",
+      "CPU": "x64",
+      "Python": "3.15.2",
+      "status": "NOT_TESTED_HISTORICAL_RUNTIME_OR_DEPENDENCY_POLICY_BLOCK"
+    },
+    {
+      "OS": "Linux",
+      "CPU": "x64/ARM64",
+      "Python": "3.10-3.15 targets",
+      "status": "NOT_TESTED_NO_AUTHORIZED_OPERATIONAL_REAL_HOST"
+    },
+    {
+      "OS": "macOS",
+      "CPU": "x64/ARM64",
+      "Python": "3.10-3.15 targets",
+      "status": "NOT_TESTED_NO_AUTHORIZED_OPERATIONAL_REAL_HOST"
+    }
+  ],
+  "RELEASE": "HOLD"
+}

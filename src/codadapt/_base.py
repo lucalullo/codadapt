@@ -15,8 +15,8 @@ from sklearn.utils.multiclass import type_of_target
 from sklearn.utils.validation import check_is_fitted
 
 from ._core import addresses
+from ._inference import predict_coded_memory_buckets
 from ._training import (
-    predict_coded_memory_buckets,
     train_coded_memory,
 )
 from .preprocessing import BucketEncoder, _pool_categorical_strings
@@ -300,6 +300,10 @@ class _BaseCodAdapt(BaseEstimator):
             )
         return (y == self.classes_[1]).astype(np.float64)
 
+    def _prepare_training_weight(self, y, weight, *, encoded_classes=None):
+        # Regression retains the original vector and arithmetic verbatim.
+        return weight
+
     def fit(self, X, y, sample_weight=None, eval_set=None):
         """Fit only on positive-weight training rows, with optional external validation."""
         started = perf_counter()
@@ -407,6 +411,9 @@ class _BaseCodAdapt(BaseEstimator):
             _recheck_memory_after_conversion(
                 self, self.estimated_memory_bytes_, X_train, y_train, weight, normalized_eval
             )
+        weight = self._prepare_training_weight(
+            y_train, weight, encoded_classes=getattr(self, "classes_", None)
+        )
         self.n_features_in_ = p
         self.timings_ = {}
         preprocessing_start = perf_counter()
@@ -460,10 +467,10 @@ class _BaseCodAdapt(BaseEstimator):
 
     def _decision(self, X):
         check_is_fitted(self)
-        Z_levels = self.shared_encoder_.transform_levels(X)
-        return predict_coded_memory_buckets(
-            self.levels_, self.encoders_, Z_levels, self.intercept_, self.table_size
-        )
+        from ._batching import decision
+        return decision(self.shared_encoder_, X, lambda z: predict_coded_memory_buckets(
+            self.levels_, self.encoders_, z, self.intercept_, self.table_size
+        ))
 
     def __sklearn_is_fitted__(self):
         return getattr(self, "_is_fitted_", False)

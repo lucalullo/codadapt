@@ -1,0 +1,70 @@
+{
+  "version": "2.1.0",
+  "release": "HOLD",
+  "proposed_not_publication_approved": true,
+  "files": {
+    "codadapt-2.1.0-cp310-cp310-win_amd64.whl": {
+      "SHA256": "d3b6ac1eeb3c600220e9f93244fe93c38da5fed01dd3d77e5cc517fae0cb9c46",
+      "bytes": 177302
+    },
+    "codadapt-2.1.0-cp312-cp312-win_amd64.whl": {
+      "SHA256": "96f675b1a74f48c380ad278e0da7d99766dab5818db3a08ed8b63a28f36aecfd",
+      "bytes": 179842
+    },
+    "codadapt-2.1.0-cp314-cp314-win_amd64.whl": {
+      "SHA256": "3640fe40061e97931a613c8cfeae8520fc826fcbd7561b30e0b12faff30a82e8",
+      "bytes": 181784
+    },
+    "codadapt-2.1.0-py3-none-any.whl": {
+      "SHA256": "d8f9d8a6290095c0dea466a99a1006c300efbe86600c7db4c4e7c90d14505b97",
+      "bytes": 90861
+    },
+    "codadapt-2.1.0.tar.gz": {
+      "SHA256": "2bc5c34d93866ab285c3785ab673bcd28a39090892be0be4539a7df9ef7a9156",
+      "bytes": 7175664
+    }
+  },
+  "native_builds": {
+    "win310": {
+      "status": "PASS_DEFINITIVE_BUILD_FROM_EXACT_SDIST",
+      "compiler": "MSVC14.51.36231/WindowsSDK10.0.26100.0",
+      "original_source_archive_SHA256": "a2942249cf8ba766837ae57654171b0c1ee199c834a476c2d81ad9e76e3bcf3b",
+      "wheel_SHA256": "d3b6ac1eeb3c600220e9f93244fe93c38da5fed01dd3d77e5cc517fae0cb9c46",
+      "original_build_receipt_SHA256": "07419c70912ec060349dfa9f278198b83050b005de5608f989456af0034c187a"
+    },
+    "win312": {
+      "status": "PASS_DEFINITIVE_BUILD_FROM_EXACT_SDIST",
+      "compiler": "MSVC14.51.36231/WindowsSDK10.0.26100.0",
+      "original_source_archive_SHA256": "ef2e696ad5882289aa981a93dc89624b0f13337a0b4898a86cb407db64ef473c",
+      "wheel_SHA256": "96f675b1a74f48c380ad278e0da7d99766dab5818db3a08ed8b63a28f36aecfd",
+      "original_build_receipt_SHA256": "6e331fda1db701bdef79f55019bf3246263b040212228678bfdb5eccdfef87d7"
+    },
+    "win314": {
+      "status": "PASS_DEFINITIVE_BUILD_FROM_EXACT_SDIST",
+      "compiler": "MSVC14.51.36231/WindowsSDK10.0.26100.0",
+      "original_source_archive_SHA256": "eebc541f6ce8f64d33a4ea5b557c0b39f7ade4b8ae5569b33fc3e74a787fa9c5",
+      "wheel_SHA256": "3640fe40061e97931a613c8cfeae8520fc826fcbd7561b30e0b12faff30a82e8",
+      "original_build_receipt_SHA256": "7e3e03484bd921aedbe619e2a18d1b4b0e71fe53c18163868e8338cad90680ab"
+    }
+  },
+  "final_sdist_refresh": {
+    "status": "PASS_FINAL_SOURCE_ARCHIVE_REFRESH",
+    "artifacts": {
+      "codadapt-2.1.0.tar.gz": {
+        "SHA256": "2bc5c34d93866ab285c3785ab673bcd28a39090892be0be4539a7df9ef7a9156",
+        "bytes": 7175664
+      }
+    },
+    "changed_archive_members": [
+      "docs/QUALIFICATION.md",
+      "tests/tools/test_qualification_cache_identity.py",
+      "tools/qualification_identity.py",
+      "tools/qualify_platform.py"
+    ],
+    "all_wheel_runtime_and_metadata_inputs_unchanged": true,
+    "native_compilation_evidence": "Existing native wheels compiled from preceding exact source archives; all runtime/compiler inputs byte-identical to final sdist",
+    "wheel_rebuild_required": false,
+    "reason": "Only docs, receipt tooling and its regression tests changed; wheels contain none of them"
+  },
+  "source_archive_runtime_and_wheel_metadata_inputs": "Exact bytes match compiled/installed wheel inputs; final tooling/docs corrections require sdist refresh only"
+}

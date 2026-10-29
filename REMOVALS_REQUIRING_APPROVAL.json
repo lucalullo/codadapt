@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "scope": "Exact absent paths in saved public inventory, not a scan of the current real repository",
+  "source_manifest_SHA256": "0d925420ccb25c102d408fbf71d9b58b77248fc292986413949cae8f7a2626a3",
+  "count": 38,
+  "records": [
+    {
+      "path": ".github/workflows/publish-pypi.yml",
+      "reference_SHA256": "7529237f991901358dd5f444a4caec1270ca52a30e460d8eb99da5ab15d6d4c2",
+      "reference_bytes": 562,
+      "rationale": "Workflow manuale con id-token:write e trusted-publishing. Pubblicazione vietata nella candidata; conservare nello storico privato. Disattivazione/rimozione nel vero repository richiede decisione dell’utente.",
+      "replacement": "Nessun equivalente di pubblicazione",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": ".github/workflows/publish-testpypi.yml",
+      "reference_SHA256": "a27ad36192a06b24fa189ac50bb1fd626ca77283f73d0cbf5e279d4131d583a2",
+      "reference_bytes": 644,
+      "rationale": "Come PyPI ma endpoint TestPyPI: capacità non richiesta nella consegna autorizzata. Non copiarlo attivo; nessuna rimozione automatica nel repository esistente.",
+      "replacement": "Nessun equivalente di pubblicazione",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": ".github/workflows/release-qualification.yml",
+      "reference_SHA256": "111c5a2433f49b0e0261d2efe28a7994966a589b2649dc34cf0e566aae3b8ff7",
+      "reference_bytes": 4524,
+      "rationale": "Preservare finalità di build/wheel/sdist, consumer pulito, smoke per task e optional EBM. Sostituire vecchio YAML con unica matrice manuale coerente; vecchio ambiente host e test predefiniti non qualificano la nuova copia.",
+      "replacement": ".github/workflows/qualification.yml; docs/QUALIFICATION.md",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "reference_SHA256": "7a1b5fea7b8b383056e15dd8876f1976234cdad2258d3db9fd5efbd49d8b1b83",
+      "reference_bytes": 5842,
+      "rationale": "Push/pull_request automatici e vecchi pin/matrice appartengono alla stable precedente. Conservare copertura core, packaging e optional; unica CI manuale richiesta. Nessun workflow pubblicazione aggiunto.",
+      "replacement": ".github/workflows/qualification.yml; docs/QUALIFICATION.md",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "AGENTS.md",
+      "reference_SHA256": "c4dfc6674bf1e7dac5fe00aaf26112aba0f6a20ba11a6f8a5b0848f2c36950aa",
+      "reference_bytes": 1079,
+      "rationale": "Istruzioni agli agenti impongono docs/research privati come memoria pubblica autoritativa e aggiornamenti dopo ogni round. Contraddice separazione scientifica attuale; non è funzionalità runtime né documentazione utente.",
+      "replacement": "Documentazione pubblica normale; memoria privata preservata separatamente",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "docs/OFFICIAL_PRODUCT_CANDIDATE.md",
+      "reference_SHA256": "771e658f0c85686128fc6a4ae2e24990855acaa8d144c9b15fb902d5e23236ba",
+      "reference_bytes": 784,
+      "rationale": "Dichiara Official Stable2.0.0 e fullyqualified: non applicabile alla nuova candidata. Tutte le affermazioni storiche restano preservate nella copia precedente; sostituire con stati effettivi HOLD, non nuova release.",
+      "replacement": "docs/HANDOFF_REPORT.md; RELEASE_NOTES.md",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "docs/research/RESEARCH_MASTER.md",
+      "reference_SHA256": "6d3aaf874c929fade2ba25c5d1a0e3ab199931cb667bcfe81388aeda88f1bd29",
+      "reference_bytes": 1621448,
+      "rationale": "1.6MB di memoria scientifica dettagliata include direttive, internal paths, internal admission gates, candidate e conoscenze riservate. Non destinata al nuovo repo pulito. Byte originali preservati privatamente; nessuna perdita di conoscenza.",
+      "replacement": "docs/PERFORMANCE.md; docs/HANDOFF_REPORT.md solo sintesi verificata",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "docs/research/RESEARCH_STATE.json",
+      "reference_SHA256": "cd19e7531579badd666fa57b6d6c5d3b6921dc64a695408b11e6fa74c5059444",
+      "reference_bytes": 4859885,
+      "rationale": "4.86MB con centinaia di blocchi di ricerca e riferimenti a stato privato/round. Non è dipendenza runtime. Preservare hash/bytes nello storico privato, omettere dal repo pubblico per privacy; non dichiarare cancellazione approvata.",
+      "replacement": "Matrice/stati pubblici sintetici, memoria privata integra",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "examples/release_smoke.py",
+      "reference_SHA256": "8658331ff50b74732fc45dc761bd243bb8a97e6205a255b03313d504faffa493",
+      "reference_bytes": 4789,
+      "rationale": "Probe storico include binario/MC/reg/SafeBlend, pipeline e roundtrip in nuovo processo, già coperti da consumer/suite attuale. Evitare un secondo runner ambiguo chiamato release; mantenere equivalenza funzionale documentata e SafeBlend nei test optional.",
+      "replacement": "examples/basic_usage.py; tools/engineering_probe.py; optional smoke mirato",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/_binary_reference.py",
+      "reference_SHA256": "5615ae561b25ca117943064fe3a996880b141026bfa5d9105daadb53edde9bae",
+      "reference_bytes": 1160,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/_binary_reference.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/_multiclass_helpers.py",
+      "reference_SHA256": "38275b31d970ea67b609983293efe17fddd36dc50d42216b07b7a5d0548b4874",
+      "reference_bytes": 3220,
+      "rationale": "File già trasferito in tests/legacy; adattamenti unicamente per class_weight=None rispetto al Binary frozen senza quel parametro. Le assert di equivalenza rimangono e il nuovo parametro è verificato esplicitamente.",
+      "replacement": "tests/legacy/_multiclass_helpers.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_adaptive_levels.py",
+      "reference_SHA256": "31923b7f1136b1b80131aaa8231c5396b2fd6fde00198812aa80c9f6559b4d85",
+      "reference_bytes": 2520,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_adaptive_levels.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_addressing.py",
+      "reference_SHA256": "ab489530ef4027a28180f300f5fb20b8d2311c9813da16186d9af94976023783",
+      "reference_bytes": 1912,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_addressing.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_auto_memory.py",
+      "reference_SHA256": "33d5b59f722975290e72a6718cf2bc4d87ca8bd9e6f445709e83bdccbf97d5e4",
+      "reference_bytes": 5285,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_auto_memory.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_auto_memory_cgroup.py",
+      "reference_SHA256": "98a6f0a0e0cf40657bc605bc81f6a632cbc6e1ed62b88cf475888654e650ee32",
+      "reference_bytes": 4985,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_auto_memory_cgroup.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_auto_memory_policy.py",
+      "reference_SHA256": "e9116338d38665d86614ee314962980f626e25e14567abe6445754828f9b1ddf",
+      "reference_bytes": 10596,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_auto_memory_policy.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_cardinality.py",
+      "reference_SHA256": "d2761105870685498540a96212ba9b753cddc93b8e85d9ac7dcb764c3ce00f9e",
+      "reference_bytes": 2572,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_cardinality.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_classifier.py",
+      "reference_SHA256": "a78a917d5e3a4c07b0b60645da8cd37e0cb4ddd1a24ed86ba1066e980ec4b503",
+      "reference_bytes": 5786,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_classifier.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_classifier_training.py",
+      "reference_SHA256": "00653b82c247549b6678b42b30100545ca6a051c99c0e8005feee9b78498cd2d",
+      "reference_bytes": 2718,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_classifier_training.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_coded_memory.py",
+      "reference_SHA256": "ecc223e3a7a43ce9b01dffd02579fba7408c5a8e57c3f4519ed228a042172e94",
+      "reference_bytes": 2878,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_coded_memory.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_default_api.py",
+      "reference_SHA256": "9c19cb1adf4a2804fe255dc611f8e47b6a06acf8aafdfaa3a93daa0ddf4600b0",
+      "reference_bytes": 3911,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_default_api.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_ebm_compiler.py",
+      "reference_SHA256": "968246c24668291093a4b49b8d6e2639877d667a87125a032c0adcbaf7b3400d",
+      "reference_bytes": 8425,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_ebm_compiler.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_incremental_gain.py",
+      "reference_SHA256": "5e8e67272e93472079e2d9b0fba00a6d2a06fb43666c061109afdd422959caa0",
+      "reference_bytes": 6657,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_incremental_gain.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_independence.py",
+      "reference_SHA256": "ef21a3b05678fc8b53467f3b981908144108a7bf26a3158325be5fd86b455b53",
+      "reference_bytes": 1709,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_independence.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_inference_metadata_exact.py",
+      "reference_SHA256": "364f1979f80960f08e42a2cfb983484a36f133409d81f721f295da7940047944",
+      "reference_bytes": 5056,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_inference_metadata_exact.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_memory_budget.py",
+      "reference_SHA256": "1c25c840fda2b6a6c6d77916f545cc73b652a0e7c62672ac010a60195b4b8fde",
+      "reference_bytes": 6582,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_memory_budget.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_multiclass.py",
+      "reference_SHA256": "217856da731e8e76eef569c8ddae42c16b9deb8be45f3721c61a4e21b20c1221",
+      "reference_bytes": 11729,
+      "rationale": "File già trasferito in tests/legacy; adattamenti unicamente per class_weight=None rispetto al Binary frozen senza quel parametro. Le assert di equivalenza rimangono e il nuovo parametro è verificato esplicitamente.",
+      "replacement": "tests/legacy/test_multiclass.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_no_leakage.py",
+      "reference_SHA256": "9593f4731cf99b65d4bcefbc273e39db690d64315055f0352d189402d27bbb86",
+      "reference_bytes": 6347,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_no_leakage.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_packaging.py",
+      "reference_SHA256": "ecdf9910b710f663b968511bad4b7780ff7b3cff86c40a2c977f46041b3452de",
+      "reference_bytes": 9928,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso. Esclusione esecutiva motivata: vecchia harness usa path injection; file mantenuto, installazione pulita e test artifact/consumer lo sostituiscono, non è contato PASS.",
+      "replacement": "tests/legacy/test_packaging.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_persistence.py",
+      "reference_SHA256": "fc8b2e39b9ed1e3bfca2b98b982e7f4029cb795867b37bc043b13f7ffa89f2d2",
+      "reference_bytes": 3756,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_persistence.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_pre_rc_api.py",
+      "reference_SHA256": "91761901009f46458e189fd787d7ba42d46267c304bb1e19f0f2289b166a7d78",
+      "reference_bytes": 4259,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_pre_rc_api.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_preprocessing.py",
+      "reference_SHA256": "1bebe09011a23f87c0358e08dbce3cce95993ddb18b22925f3aedea2e6deb469",
+      "reference_bytes": 12195,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_preprocessing.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_rational_callback.py",
+      "reference_SHA256": "b4cb40633b011be4b7fe21d3a8ef3a622c5edc4c007bf154fc6294f7f56f5a56",
+      "reference_bytes": 5610,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_rational_callback.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_regressor.py",
+      "reference_SHA256": "7eaa2d404bc7a17882c8f8ca9186d20cf700456f574a4dd28ecee8f0b5f9cf60",
+      "reference_bytes": 3657,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_regressor.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_release_contracts.py",
+      "reference_SHA256": "b1f4ce03922029e5d6c45bfd6d0bbb4fafb72c785c6b10eaa05e1060a6ba1d9c",
+      "reference_bytes": 5248,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_release_contracts.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_safe_blend.py",
+      "reference_SHA256": "249b5d5b8fae14f2f6a297c91abf2fd64362fd9b4f5e4bff65e2ed784a225aeb",
+      "reference_bytes": 10613,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_safe_blend.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_shared_encoder.py",
+      "reference_SHA256": "3947ab50ff462c6ad703311b7d409cd19520866a2eb6f4e3099c9b35745c74d9",
+      "reference_bytes": 2683,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_shared_encoder.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    },
+    {
+      "path": "tests/test_sklearn_compat.py",
+      "reference_SHA256": "daa03657f3f30818366c5e89fde42effda186504253af68e273ddc928bb5f6f5",
+      "reference_bytes": 4528,
+      "rationale": "File già trasferito in tests/legacy, byte-identico; conservare percorso nuovo, nessuna duplicazione al vecchio percorso.",
+      "replacement": "tests/legacy/test_sklearn_compat.py",
+      "approval_required": true,
+      "approval_obtained": false,
+      "automatic_removal": false
+    }
+  ],
+  "approval_obtained": false,
+  "automatic_deletion": false,
+  "true_repository_inspected": false,
+  "overlays_leave_these_files_present": true,
+  "additional_or_changed_real_repository_files_require_owner_review": true
+}

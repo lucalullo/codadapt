@@ -1,0 +1,89 @@
+{
+  "previous_summary_preserved": {
+    "version": "2.1.0",
+    "runs": [
+      {
+        "run": "final210_consumer_win314",
+        "counts": {
+          "tests": 1019,
+          "passed": 1012,
+          "failed": 0,
+          "errors": 0,
+          "skipped_including_xfail": 7
+        },
+        "raw_report_SHA256": "cb7958ca74e830d40a0da4ce3a10cefe298d6bd0472e22f1d7e90a8c66ef5529",
+        "redaction": "Hostnames, personal paths and traceback text omitted; errors retained as errors"
+      },
+      {
+        "run": "final210_consumer_win310",
+        "counts": {
+          "tests": 1019,
+          "passed": 1002,
+          "failed": 0,
+          "errors": 12,
+          "skipped_including_xfail": 5
+        },
+        "raw_report_SHA256": "81c1696cc410dc990310c0567cbc5612d60ceae88293f3af873facfdc488b672",
+        "redaction": "Hostnames, personal paths and traceback text omitted; errors retained as errors"
+      },
+      {
+        "run": "final210_pure_win314",
+        "counts": {
+          "tests": 98,
+          "passed": 47,
+          "failed": 0,
+          "errors": 0,
+          "skipped_including_xfail": 51
+        },
+        "raw_report_SHA256": "4a4202c51af9de8da063390c5bb614cc8292482c10772856de62e80acdab9848",
+        "redaction": "Hostnames, personal paths and traceback text omitted; errors retained as errors"
+      },
+      {
+        "run": "final210_pure_win310",
+        "counts": {
+          "tests": 98,
+          "passed": 47,
+          "failed": 0,
+          "errors": 0,
+          "skipped_including_xfail": 51
+        },
+        "raw_report_SHA256": "6aac9b6595dedffae235deac1ff4ee9ff64f94d06d0abeb02e0f643ef0bf6178",
+        "redaction": "Hostnames, personal paths and traceback text omitted; errors retained as errors"
+      }
+    ],
+    "counts_not_summed_as_independent_tests": true,
+    "pure_selected_tests": 47,
+    "pure_native_absence_skips": 51,
+    "pure_full_legacy_not_repeated": true,
+    "no_new_scientific_fits": true,
+    "missing_artifact_or_policy_error_not_hidden_as_skip": true
+  },
+  "scope": "Historical counts below are not new executions",
+  "new_targeted": {
+    "win310_native": {
+      "passed": 148,
+      "skipped": 1,
+      "failed": 0,
+      "errors": 0
+    },
+    "win310_pure": {
+      "passed": 47,
+      "skipped": 51,
+      "failed": 0,
+      "errors": 0
+    },
+    "win314_native": {
+      "passed": 148,
+      "skipped": 1,
+      "failed": 0,
+      "errors": 0
+    },
+    "win314_pure": {
+      "passed": 47,
+      "skipped": 51,
+      "failed": 0,
+      "errors": 0
+    }
+  },
+  "final_checks": "FINAL_CHECKS.json"
+}

@@ -1,3 +1,11 @@
+> Historical public documentation preserved from the 2.0.0 source line.
+> Technical descriptions apply where unchanged; release and platform receipts
+> below describe that historical source, not qualification of the present C++
+> backend. Current scope: [compatibility](COMPATIBILITY.md), [API](API.md),
+> [persistence](PERSISTENCE.md). This copy remains a development review candidate.
+> In historical prose, "native" names CodAdapt's own algorithm; it does not
+> imply that training runs in C++.
+
 # Experimental EBM compilation
 
 This opt-in API exports a fitted additive Explainable Boosting Machine to standalone

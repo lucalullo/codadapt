@@ -1,0 +1,21 @@
+{
+  "purpose": "Remove only absolute workstation prefix in public skip locations; preserve counts, test names, states and skip reasons. Raw JUnit hashes remain in FINAL_CHECKS.json.",
+  "records": [
+    {
+      "file": "qualification/win310_native_targeted.xml",
+      "SHA256": "f54002e9005e007a1faffdcccea28b3bf06645374e7db936eccbf015c86b9804"
+    },
+    {
+      "file": "qualification/win310_pure_targeted.xml",
+      "SHA256": "5a6181016cec7228db4d9b93c2534d07d931f83d5c1c2af45f569762be9d905b"
+    },
+    {
+      "file": "qualification/win314_native_targeted.xml",
+      "SHA256": "8c10f32c108c551b62d8b757f046035bc2ea7df6c4943f128468a5cd07a4585c"
+    },
+    {
+      "file": "qualification/win314_pure_targeted.xml",
+      "SHA256": "b466b8e02031fcf5166799558fd0e85cfe81d599166f4c2cb8a9f9b4795b551c"
+    }
+  ]
+}

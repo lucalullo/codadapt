@@ -1,8 +1,8 @@
 """Benchmark di stabilita' CodAdapt: cross-validation ripetuta, senza tuning.
 
 Esecuzione dalla cartella del progetto con ambiente CodAdapt attivo:
-  python "%USERPROFILE%\\Downloads\\benchmark_codadapt_cv.py" --quick
-  python "%USERPROFILE%\\Downloads\\benchmark_codadapt_cv.py"
+  python "benchmarks/reproducibility/benchmark_codadapt_cv.py" --quick
+  python "benchmarks/reproducibility/benchmark_codadapt_cv.py"
 
 Nota: nessuna validazione indipendente; usa quattro piccoli dataset scikit-learn.
 """
@@ -15,7 +15,6 @@ import hashlib
 import json
 import pickle
 import platform
-import subprocess
 import sys
 import time
 from datetime import datetime, timezone
@@ -93,14 +92,8 @@ def pkgver(name):
         return "non_disponibile"
 
 
-def git_commit():
-    try:
-        result = subprocess.run(
-            ["git", "rev-parse", "HEAD"], capture_output=True, text=True, check=True
-        )
-        return result.stdout.strip()
-    except (OSError, subprocess.CalledProcessError):
-        return None
+def source_identity():
+    return hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 
 
 def fingerprint(X, y):
@@ -190,7 +183,7 @@ def main():
         "python": sys.version,
         "platform": platform.platform(),
         "cpu": platform.processor(),
-        "git_commit": git_commit(),
+        "runner_SHA256": source_identity(),
         "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "packages": {
             name: pkgver(name)

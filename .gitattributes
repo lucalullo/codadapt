@@ -1,0 +1,9 @@
+# CodAdapt serving contracts bind exact source bytes.
+# Existing source/document files have mixed LF and CRLF line endings.
+# Do NOT normalize text on checkout or commit: preserve byte identity.
+* -text
+
+# Binary datasets and future distribution artifacts.
+*.npz binary
+*.whl binary
+*.gz binary

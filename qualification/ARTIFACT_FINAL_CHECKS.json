@@ -1,0 +1,16 @@
+{
+  "status": "PASS_FINAL_CANONICAL_ARTIFACT_CHECKS",
+  "tests_passed": 4,
+  "tests_failed": 0,
+  "actual_public_runner_staging_inputs": 14,
+  "source_distribution_matches_staged_inputs": true,
+  "version_contract_audit": {
+    "version": "2.1.0",
+    "contract_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b",
+    "source_files": 38,
+    "native_source_sha256": "85c36bbee8f02c8e44c095b49f5dc8ac9d38e5051aba146f585b4cffbf0fc03f"
+  },
+  "original_JUnit_SHA256": "6e95f0e3ccf681b1027cc38bd2420c6790d94585f366371951971be73a037625",
+  "new_fits": 0,
+  "source_contract_unchanged": true
+}

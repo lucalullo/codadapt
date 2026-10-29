@@ -1,5 +1,43 @@
 # Changelog
 
+Final technical correction: unify receipt identities across producer, verifier
+and synthetic tests; exclude normal __pycache__ without ignoring other inputs.
+Verify before/after ordinary imports. Finalize 38 manual removal proposals from
+59 historical decisions, including 4 obsolete workflows. Preserve every 2.1.0
+product byte and serving contract. Explicit native 3.10/3.14 measurements are
+separate from automatic dispatch, which remains unchanged. See RAPPORTO_FINALE.md.
+
+## Proposed 2.1.0 — local review candidate, publication pending approval
+
+- Carry forward the G6-R1 ordered C++17 inference kernel and explicit Python
+  fallback, bounded large-batch allocation and guarded numeric DataFrame path.
+- Carry forward optional `class_weight="balanced"`, calculated internally from
+  effective positive TRAIN weight mass and combined once with `sample_weight`.
+- Carry forward source-bound serving artifacts, integrity validation and
+  commit-bound export receipts.
+- Prepare coherent 2.1.0 package metadata, source fingerprints and serving
+  contract in a new independent copy. Rebuild distributions for that exact identity.
+- Select native, legacy and tools suites in the standard pytest command; retain
+  historical expected failures and the documented obsolete harness exclusion.
+- Provide bounded manual qualification, artifact/input identity validation,
+  restored documentation/examples and an explicit plan for 59 historical paths.
+
+No new learning strategy or certified multiclass accuracy improvement is added.
+Default `class_weight=None`, the regression behavior and the conservative
+automatic backend guard are preserved. Current qualification results and open
+gates are in [GATES_REPORT.md](GATES_REPORT.md). Historical entries below keep
+their original scope and do not qualify this new version automatically.
+
+
+---
+
+## Historical public release record
+
+The entries below are retained from the original public source and do not
+qualify the present development backend or announce another release.
+
+# Changelog
+
 ## 2.0.0 — Official Stable Release
 
 Prepared and fully qualified for official release.
@@ -140,7 +178,7 @@ version statements describe that earlier work, not the current1.0.1 source.
 - Completed independent SafeBlend regression qualification: nine NEW_EXTERNAL
   datasets, 45 frozen group/time splits, zero tuning and 270/270 SUCCESS jobs.
 - Refined SafeBlend positioning to an experimental compact regression specialist:
-  serialized compactness independently replicated (0.129× the external leader),
+  serialized compactness independently replicated (0.129Ã— the external leader),
   while predictive quality leadership was not confirmed (+4.62% median RMSE).
   The earlier five-dataset −0.67% quality advantage did not replicate; no deep-RAM
   advantage was demonstrated. Algorithm, API, defaults and version are unchanged.
@@ -166,10 +204,10 @@ version statements describe that earlier work, not the current1.0.1 source.
 - Removed the external LightGBM product dependency; no SafeBlend extra is needed.
 - Ported the independently confirmed Round 78 recipe without changing scientific
   capacity, preprocessing, stopping or prediction semantics.
-- Round 78 independent research confirmation found +2.061% median RMSE gain on 18 new regression datasets × five splits;
+- Round 78 independent research confirmation found +2.061% median RMSE gain on 18 new regression datasets Ã— five splits;
   improvement is not guaranteed on individual datasets or splits.
 - Reduced fit/deployment cost relative to the superseded external-model design;
-  the frozen native research panel still costs about 4.13× Base to fit.
+  the frozen native research panel still costs about 4.13Ã— Base to fit.
 - Added standalone persistence, native-independence tests and Python 3.10–3.14 CI.
 - Native binary/regression defaults, EBM compiler and version 0.2.0rc2 remain unchanged.
 - Added automatic fully native single-label multiclass classification to CodAdaptClassifier/CodAdapt.

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "PREPARATION_STEP_RECORD_SEE_CURRENT_GATES",
+  "RELEASE": "HOLD",
+  "public_release": false,
+  "before": {
+    "version": "2.0.0.dev0+lab.g6r1",
+    "contract_SHA256": "933533115fe958018edf4a477d9f307bb5e37c705e86c343d5071db70013460e",
+    "source_files": 38,
+    "native_source_sha256": "5a1937636d25b5f296431da055fac8d089c295668431d3cd91994a36574e18e4"
+  },
+  "after": {
+    "version": "2.1.0",
+    "contract_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b",
+    "source_files": 38,
+    "native_source_sha256": "85c36bbee8f02c8e44c095b49f5dc8ac9d38e5051aba146f585b4cffbf0fc03f"
+  },
+  "changed_files": [
+    "pyproject.toml",
+    "src/codadapt/_version.py",
+    "src/codadapt/serving/source_contract.json"
+  ],
+  "source_unchanged": true,
+  "compatibility": "Preserve old matching runtime; no migration or cross-contract loading promised",
+  "status_at_creation": "UNQUALIFIED_VERSION_COPY",
+  "current_qualification": "qualification/GATES.json"
+}

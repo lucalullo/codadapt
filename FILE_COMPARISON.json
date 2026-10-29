@@ -1,0 +1,2201 @@
+{
+  "reference": "Saved original public inventory; no access to true repository",
+  "records": [
+    {
+      "path": ".github/workflows/publish-pypi.yml",
+      "action": "REMOVE",
+      "previous_SHA256": "7529237f991901358dd5f444a4caec1270ca52a30e460d8eb99da5ab15d6d4c2",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": ".github/workflows/publish-testpypi.yml",
+      "action": "REMOVE",
+      "previous_SHA256": "a27ad36192a06b24fa189ac50bb1fd626ca77283f73d0cbf5e279d4131d583a2",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": ".github/workflows/qualification.yml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "d4713f0525fcff0391d7dfe5809da1f167e9b2a141b9bbff54b6b71eb7ed1c42",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": ".github/workflows/release-qualification.yml",
+      "action": "REMOVE",
+      "previous_SHA256": "111c5a2433f49b0e0261d2efe28a7994966a589b2649dc34cf0e566aae3b8ff7",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "action": "REMOVE",
+      "previous_SHA256": "7a1b5fea7b8b383056e15dd8876f1976234cdad2258d3db9fd5efbd49d8b1b83",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": ".gitignore",
+      "action": "MODIFY",
+      "previous_SHA256": "136b5f822cf02f36ee6428f806b5a9ca2d5793554e3e7f0a5ae6a9e2e4403307",
+      "current_SHA256": "fb3940b5c7d96e693254eec38fcdfa3dac531ce22bc8e10c53a0e3c071cae4fa",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "AGENTS.md",
+      "action": "REMOVE",
+      "previous_SHA256": "c4dfc6674bf1e7dac5fe00aaf26112aba0f6a20ba11a6f8a5b0848f2c36950aa",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "action": "MODIFY",
+      "previous_SHA256": "8d20bfe7b2682f19a0e2d2a6ea75d8f14a59170f7717531db9150d91a515d129",
+      "current_SHA256": "344ef2a2a833cf47d81fb7dd52dd50969c545254c4958ce8b19395ac2417f216",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "CHANGELOG.md",
+      "action": "MODIFY",
+      "previous_SHA256": "d0325195c8a42de884de67b6ed48869c078fc396131641c192a4292f30810841",
+      "current_SHA256": "b55c2f7ccff54c0296a5223a3995661a87d6a50c8fe0bb68fc66f4aba8c782d5",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "action": "MODIFY",
+      "previous_SHA256": "26261d60b668cdcf1577814bef406cdfe15c34223983f2c71f6b270407a9e476",
+      "current_SHA256": "8c13bb4af8b2f107dc440187cf811eadb4985388ae2c8abd5fc4c69ea8884141",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "DIFF_FROM_FINAL_REVIEW.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": null,
+      "hash_binding": "Final manifest; self-referential comparison metadata omitted here",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "DIFF_FROM_PREVIOUS_REVIEW.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": null,
+      "hash_binding": "Final manifest; self-referential comparison metadata omitted here",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "DIFF_FROM_R2.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": null,
+      "hash_binding": "Final manifest; self-referential comparison metadata omitted here",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "FILE_COMPARISON.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": null,
+      "hash_binding": "Final manifest; self-referential comparison metadata omitted here",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "GATES_REPORT.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "f35417a7f01b97e73eb2c84f71b72c272193d84fd5c3a028da6d311250c1bb30",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "HISTORICAL_MIGRATION.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "5025799d162e83792536a9bdf54e27b0e1556bc443ebe2cf130dab4931f48d74",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "ISTRUZIONI_TRASFERIMENTO_GITHUB.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "64654e1de4e484aa221fc186aac145d42aa748eb26a02c262cada4ee33233d19",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "LICENSE",
+      "action": "KEEP",
+      "previous_SHA256": "3610c350fb9e5515a3c859187dba4f04f6d0345f840fbc17034b79db9d44d5b3",
+      "current_SHA256": "3610c350fb9e5515a3c859187dba4f04f6d0345f840fbc17034b79db9d44d5b3",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "LOCAL_USE.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "2a1a4f5f054b00e4ebf38f846ed5450041707149feeaed70da8a3711a40ab0bb",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "MANIFEST.in",
+      "action": "MODIFY",
+      "previous_SHA256": "89f60521b7f910771f0636f84a21d9b6863ac521e33b06080b64f632119aafce",
+      "current_SHA256": "c3ad3e5250656d99c4d361cbf4ab9f8b2d258caa098210389438c1ddd4cc596e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "MANIFEST_SHA256.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": null,
+      "hash_binding": "Final manifest; self-referential comparison metadata omitted here",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "MIGRATION_PLAN.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "1cb71a58432aad04e02bdfda61017c39a847dc5f74406fe33b6f7e9fbb985a79",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "RAPPORTO_FINALE.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "3868e7337d2998d971b3dfbee7e4a41e59ee00fa1a05cfb1127d14549e671268",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "README.md",
+      "action": "MODIFY",
+      "previous_SHA256": "f4167a87de318b277f189e5ac465a2c0f8801388fd64276da9aca7a1227efb63",
+      "current_SHA256": "3760b088d6be7c86a306d3caf8ab44c75a276c527191436bc70ee6033c9d8ca2",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "action": "MODIFY",
+      "previous_SHA256": "6611d9b3614e866746b9569af728e440476e7def75c6cebc26b28d52f0b43be6",
+      "current_SHA256": "2171da473bf33640cba270cebc97bfa62edf53756178c82e670a81259487dc4a",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "REMOVALS_REQUIRING_APPROVAL.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "6567d74989d0bb2a8bb274caa4dca993b757622fca4d6e81291eeb7711f5bbb5",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "REMOVALS_REQUIRING_APPROVAL.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "9be59c325ad1eac112f5901dae9e9eee45bf90aa9066e4d6af511748ab9c3320",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "SECURITY.md",
+      "action": "MODIFY",
+      "previous_SHA256": "e486eeb1c7150c516e483159f4d5a2677d9b066bc6508f512db916a6e4e39c27",
+      "current_SHA256": "f86de260dd6a6466872ca7c4ef2a6ce20ce47a0cab86a11d590f9f4b52227e25",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "VERSION_PREPARATION.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "cd8a9115dc06315a7d34c1be4a57e989874360fc3c6b22139176f3b5e9e848fa",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/DATA_LICENSE.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "612c1a1c3caf9f5e8eb61fbbb36b818842cbc3a5c4c19c10d0cb158071364ee1",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/NATIVE_PROFILE_PROTOCOL.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "0ff445afedbdbe72b018624a992bf9ec8ba52c976b7f0e5af6c20d5e8a365f95",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/README.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "66be04c090bda80bcceeecd7bbbb610a78abd46064bfeccb23ccc7ebfd688de3",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/MANIFEST.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "5d5e94bdaa4850fcc2979b30ccb5e3b0687dac59a0d6e9b8ca10a5d99a4c2966",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/music_0.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "8e8c11103cca4be4c5c67e6f9bb0a646e1deed43e008400e7972b68941856d90",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/music_1.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "6ac5d08498a4fbc50694c94ba9542874566bd355234ce82fc16290109c8ea85d",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/music_2.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "51c4d7ff6989e5b5ecfe5b09f0d6d2ef6bcc5a102acf5ff393604bd0ab73836a",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/music_3.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "776a20f0c37130d15739a2294b465abdfce44d3817b38976bf15e69b4d2dffa6",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/music_4.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "cc12c1cf4ebd7177a2748185f5e4c5cf1e56e561b076f6ea601c7910afbc6a55",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/rice_0.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "a0d2c4a61de75c31d138e9fa4a7a2612281e6bf15a42cbe7c8d1f97e3707a5df",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/rice_1.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "9dce2b75e35935b9dfabde0a4bad54d389ef5eba21ae7341012e96692d370fae",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/rice_2.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "dc47dd434d825f9686e97064df13e87909230a3c475e6db8ca77c541d30760ff",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/rice_3.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "d7e03cc8574a4599b80ef9243599332925a3b206e1d1dd255967f3f0c75b2202",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/rice_4.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "583ac42967374baae2f070b144ea5ac8ed40b8a52b3f92afbdf19e75bedbb0e6",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/wireless_0.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "992afa3d25e929b4508be7ac332c58996364b8ddc17aca3ad78527eed91c7a38",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/wireless_1.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "b3d9b239654a32e0f95c7de3c0932b87fd2a8be53b42646d44267ee2ea568a10",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/wireless_2.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "58f8a2bfb73519023b354d586c23c11ac28d0f01a215f02956f96bb2e4efcb59",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/wireless_3.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "4f0a89d2013936eb8fd57058cb886d3cb5ca0bd3412d2de48b5eeeee6483b9a0",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/data/wireless_4.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "f9c92c13d7e5b4790b313314569ce77f23238b1798aa25436beeb9d09dce0fcb",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/native_profile_benchmark.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "11f46aaa9dd22dbafa4afe2d7e7c170a323668314b88d0a4a0dfdf72233326cf",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/observed_classification.csv",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "e6e55737bcb2bdec01a4872a28b9a0cbbdcdb731f7b11cdfba75247fa2b0e908",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/reproduce_classification.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "0898d9b1741ef8faf3b32186d7f5b28719ea9d2e38dc2eea4207f142b278aee4",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/reproducibility/BENCHMARK_CV_REPORT.md",
+      "action": "MODIFY",
+      "previous_SHA256": "91f21d0e6469ce512b43d198f5c65fcbec85d314ae8364b76523a94e0b16f41b",
+      "current_SHA256": "12ac27fbbaf27f4b31f93f25aa96cadb5e261572727d44c2285b97661ce4d51e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_codadapt_cv.py",
+      "action": "MODIFY",
+      "previous_SHA256": "faf5004e4215dd8ab0d9db099183a4d22d2e8e109c23621f6ee94fc3cebd3f0d",
+      "current_SHA256": "c1ac76a08cbb92f46bd72c2a780208837560f5261a0693aa4f6d3da9df3cc187",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.csv",
+      "action": "KEEP",
+      "previous_SHA256": "55e921c1cf889afff67695d20dc3da2804c2f042be1d2c9d85c24244b672a53b",
+      "current_SHA256": "55e921c1cf889afff67695d20dc3da2804c2f042be1d2c9d85c24244b672a53b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/reproducibility/benchmark_cv_full.json",
+      "action": "KEEP",
+      "previous_SHA256": "80dff07e40cd7b9062fbfebf982eb242fafc877f0e3e1e76db59aa45750e9c9f",
+      "current_SHA256": "80dff07e40cd7b9062fbfebf982eb242fafc877f0e3e1e76db59aa45750e9c9f",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "benchmarks/run_benchmarks.py",
+      "action": "MODIFY",
+      "previous_SHA256": "0ffe025f41441eaec9c321845f7a5e9bcc2e5698539988bc9b952db84d0a7b93",
+      "current_SHA256": "e82eeddf6d6d7cc57a3d8ef0ec838839f56ec486c237c814ce0ceb691735331f",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/ALGORITHM.md",
+      "action": "MODIFY",
+      "previous_SHA256": "3645a018f187e5e46994d8de56896592f43130141c7dca35159c9e70d1a00cdd",
+      "current_SHA256": "5a04f198f3851a61b09a7b29ffc8c6d1c68040f68b8eb485574abf010705c4da",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/API.md",
+      "action": "MODIFY",
+      "previous_SHA256": "d3a0b2d0b83ae67d3992530598840e98ad2349f7e53e375763f5a2cdbd2c885c",
+      "current_SHA256": "a8b4673a58358ebe83a857ea0cf46e921cd91a6359542c7569e5e347426830b2",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/AUTO_MEMORY.md",
+      "action": "MODIFY",
+      "previous_SHA256": "25295faaec1c97a446d7b9fac742e97d0541cfcfcacae30ef3ed7019fba276c1",
+      "current_SHA256": "4f57f456f5b17f8bf549ada42b88a67e1db4d0f1ccc340a83747c23fe74317f7",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/CI_AND_RUNNER_REVIEW.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "e378c8639dd1db3918476d691c1f6aa146c7c70d6656d17c3ace108412ff6d7d",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "16ec745e72949eb5501cd3f5875901dcabbd7f1093b6056e0d8c61967855f464",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/EBM_COMPILER.md",
+      "action": "MODIFY",
+      "previous_SHA256": "d060bcc41f798249d4da89f9dcfc9a47c939a03fed265b5ecfe90529f0895240",
+      "current_SHA256": "ef9d4dea2de00853b93097324770586be4f23ec60cadf6331f0c02616f2a8579",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/FINAL_QUALIFICATION.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "41a0de25dbf70a48634203ae0359724bf3edf91af8be9b5eafe4db31587f7e72",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/HANDOFF_REPORT.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "a89fe92979ff3dbf4178755a096da93400f5f0e3fb6cb78c91d968039ef2534a",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/HISTORICAL_RELEASE_NOTES.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "d46f10c356cef93880dd782569840e19aad5c40b308a2b9d226d516348e94c1b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "a463a90f9499b5bc34448ffa332bd4f81351c52630297b60f5cbd44c1207299f",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "action": "MODIFY",
+      "previous_SHA256": "3bea8cb8830f9948607457c4f7389d2441ab3a917524631c8f670a2e511f9e5b",
+      "current_SHA256": "6c6595c7300b33b0b8cb6e3572044fbb35a53eb16393ed9893d9463e9d78137b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "c5e8e2ccf7568eac5fbe2a0dbb9b655bde2e1f4e3995e4281d537e1d8e05e0e6",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/MIGRATION_FINALIZATION.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "ffe24b7655bd3c1c87bc15190a2529b0063666f030d3607706fbdd2e15593a4e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/NATIVE_PROFILE_DECISION.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "438d7d8320e326c18c9d1b84f4012f61a105246e6c8ebe8ee1079400cab15de8",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/OFFICIAL_PRODUCT_CANDIDATE.md",
+      "action": "REMOVE",
+      "previous_SHA256": "771e658f0c85686128fc6a4ae2e24990855acaa8d144c9b15fb902d5e23236ba",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "docs/PERFORMANCE.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "db3d1098d59c75783b4a89b3b446a304c5bd8905e48ccaf06292b4dfe32e4e82",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/PERSISTENCE.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "6ce5e0f2fa0c777d89df7b3ecca7994a47c73913d4e7b8502f708a60a079b3f5",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/PYTHON_COMPATIBILITY.md",
+      "action": "MODIFY",
+      "previous_SHA256": "d0231d556c3e6dcb9b0be58c40824fdfb466e0ed1cd838ec682506350e2951f0",
+      "current_SHA256": "0af80fee78c64b6a0954ee1c5b874424752323b70d2a632b8120185901391454",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/QUALIFICATION.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "6357048745f625f070e52da502f910d777086607a4be98e49b004dae679f280c",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/RC1_KNOWN_LIMITATIONS.md",
+      "action": "MODIFY",
+      "previous_SHA256": "4b151b24c52e12f9c3c911ed61070b17ab3f8a4b1b29a38aaf2c063ddd2598df",
+      "current_SHA256": "b30c3179b311743a7fd293a77f464d8ca05c84f8af8128ae2783e3b8343f1242",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/RELEASING.md",
+      "action": "MODIFY",
+      "previous_SHA256": "55c402562da6e5f6945e86fcca69e9f259a1f516603bfa1609d61494440d1ad9",
+      "current_SHA256": "01c113456f51641aa1c77a2067f78dda1d01e48d716a5fcef386ef0dd34fc7d2",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/SAFE_BLEND_EXPERIMENTAL.md",
+      "action": "MODIFY",
+      "previous_SHA256": "e700bfd98c0f33fa6956bd8ed589b1435d3b42e12cd151b75364f56a1242649a",
+      "current_SHA256": "5d62ebfb8c0b2b96a09030d0515b9d41c18091d1664a8e104eb80c70bcaf5272",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/SOURCE_LAYOUT.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "88aba6dc8d4e39f118430f06da77cb12ccaea0d3aa2b723c2b7a09e957f702ba",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/STABILITY.md",
+      "action": "MODIFY",
+      "previous_SHA256": "1bb7b1444794a60a8156a6317c40959da2e0a34f8d4e5869bc4e7cf4cd4bfb79",
+      "current_SHA256": "9ff97474afa2d9428fac25b101d0849ace32dcb097bb7bec04ab478979e3430d",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/TEST_DATA.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "c895a77a5a7d3c0d383e23906500c84c18e900dd0092804a55ccb89a55298603",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/V1_0_1_TO_V1_1_0RC1_COMPATIBILITY.md",
+      "action": "MODIFY",
+      "previous_SHA256": "d257d52a86862cc6e2d705207991c80fae2728b6b7b828b1150387ab8641616b",
+      "current_SHA256": "6b158e8ead04df1e485ae32415c039eed378b3be346d2c532950654db82fbc2b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/V1_0_1_TO_V2_0_COMPATIBILITY.md",
+      "action": "MODIFY",
+      "previous_SHA256": "707357cabc39132c579a764d4c56ee1338d4cfa01e7e499436178c91ff3c23e2",
+      "current_SHA256": "e4dfbab055a077514741ce65fd4d0bf3aa966010b0369493864f0726f7215068",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/VERSIONING.md",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "5b8f4fe4f8e30dfcd8cc6d4f7ea5f485b404f05a54f61514caf683dbc14f78a8",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "docs/research/RESEARCH_MASTER.md",
+      "action": "REMOVE",
+      "previous_SHA256": "6d3aaf874c929fade2ba25c5d1a0e3ab199931cb667bcfe81388aeda88f1bd29",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "docs/research/RESEARCH_STATE.json",
+      "action": "REMOVE",
+      "previous_SHA256": "cd19e7531579badd666fa57b6d6c5d3b6921dc64a695408b11e6fa74c5059444",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "examples/basic_classification.py",
+      "action": "KEEP",
+      "previous_SHA256": "596d709c6caf8a07469c1312be2c0da255debbe5fc560b035107f2f311d91a5b",
+      "current_SHA256": "596d709c6caf8a07469c1312be2c0da255debbe5fc560b035107f2f311d91a5b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "examples/basic_multiclass.py",
+      "action": "KEEP",
+      "previous_SHA256": "302e1bf301f819ac78404b804ee0b916ee1b3d0eb4779abbae5b287d4fd2f0c4",
+      "current_SHA256": "302e1bf301f819ac78404b804ee0b916ee1b3d0eb4779abbae5b287d4fd2f0c4",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "examples/basic_regression.py",
+      "action": "KEEP",
+      "previous_SHA256": "8e13a0f495e8aadca200ea61cfe82dd7b7bf5e30b9204ab032ea5da26cf47349",
+      "current_SHA256": "8e13a0f495e8aadca200ea61cfe82dd7b7bf5e30b9204ab032ea5da26cf47349",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "examples/basic_usage.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "ffe8181dae0ca0dc334f7a42645c83a13c6b0265251c62b6aa39605683675905",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "examples/kaggle_quickstart.ipynb",
+      "action": "MODIFY",
+      "previous_SHA256": "f7537dafe84247dcb6cefc46f11098fa0f1058d4f6e21bddc00b4f5034134d25",
+      "current_SHA256": "e45849d7293e1f4569fdf9901aa80207bc25a91bdbdd929599b9a9f0cf571982",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "examples/release_smoke.py",
+      "action": "REMOVE",
+      "previous_SHA256": "8658331ff50b74732fc45dc761bd243bb8a97e6205a255b03313d504faffa493",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "native/memory_read.cpp",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "922974d7fcf4bec4f4a9952d1389dfc9db2602eac28090cea90488455e8209a2",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "native/toolchain_smoke.cpp",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "74483e746aab5fd315a15d16e9035b88c6f02632f1b23548971392e2e75bfd88",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "pyproject.toml",
+      "action": "MODIFY",
+      "previous_SHA256": "fead98af4814d785dae673a49597d82cde86fd44c29943ecdffc96c61915ec51",
+      "current_SHA256": "3086642756197b3539e36e826124ae73c1a11af68a92bd0db04fa0cf087fe1a0",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/ARTIFACT_FINAL_CHECKS.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "ca22d640245d701b6aef3bd384076c1aab1a3c37e043c5fc6302e8af2a42425c",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/BUILD_SNAPSHOT.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": null,
+      "hash_binding": "Final manifest; self-referential comparison metadata omitted here",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/DISTRIBUTIONS.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "0210338473e6eebc69b933d674b29099846de02cb025346e3e4a964a9385a4ad",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/FINAL_CHECKS.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "1ce4fdb1fbdaed50a6f8cc21874c80791900f0511e84c5a100abe2a1400b8137",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/GATES.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "e69d4b53b1d12f25691d70f7f8420543968d6d3c45328aee1db2e5fdfca9f8e1",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/JUNIT_REDACTION.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "86a5af4e5a28be5d50865b9f6a52b5b4c10df1618944fad2ba8731d41f2e8ff6",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/NATIVE_PROFILE_EVALUATION.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "c9a97a7741e62457748c9a5fea570b8c39b624a630ecc1c43d272ad267828fde",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/PLATFORM_MATRIX.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "fed596064df50a0d32e9a66e87c9b5b7c19b79129528a256cb4db9fe21278a3f",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/TEST_SUMMARY.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "39786c47259e685d73799d76dc4f4186c58403b7b4c47596ac7dca0f7aa04a88",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/VERSION_AUDIT.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "ade2cc9a7f8de49f334422b5781af2487360dc64018a32d5cb67b668f321231e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/final210_consumer_win310.xml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "224c66d356f5ee08c6deec6aea3b35bc81c1002f5745fe3cb83e09556d9848de",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/final210_consumer_win314.xml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "2b919ade8173fa1f931d6fbd150727de9509d4b06c0c9e7eff91a5c365035591",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/final210_pure_win310.xml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "47909375aa30edd5943238e045f12f3c5973c4fafb4b31eed6ccda8ef3197a77",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/final210_pure_win314.xml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "b0a48d5c37cae08600fcf0912f30413bc4dc5ec14b4f831ad76a50c76b2ad0a9",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/win310_native_targeted.xml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "f54002e9005e007a1faffdcccea28b3bf06645374e7db936eccbf015c86b9804",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/win310_pure_targeted.xml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "5a6181016cec7228db4d9b93c2534d07d931f83d5c1c2af45f569762be9d905b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/win314_native_targeted.xml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "8c10f32c108c551b62d8b757f046035bc2ea7df6c4943f128468a5cd07a4585c",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "qualification/win314_pure_targeted.xml",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "b466b8e02031fcf5166799558fd0e85cfe81d599166f4c2cb8a9f9b4795b551c",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "requirements/build.txt",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "19a6e32d11a216e9d7c8e07035dd9c272606fb6eb04e114401ec4090d2e82070",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "requirements/qualification.txt",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "da5118ae7605f493c48753a50bcc0dc0b862fdfb3004aa8cc9e0d62e33cb8eb7",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "requirements/windows310.txt",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "6211474dd8aa2505f2603a0e1036c2dfcfb972263653a2cde75b3f072021bb93",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "requirements/windows312.txt",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "e45a0ecde66916366242edb90b221ea6782b13b0ae11fa23c70ca7a0743b9b4f",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "requirements/windows314.txt",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "e45a0ecde66916366242edb90b221ea6782b13b0ae11fa23c70ca7a0743b9b4f",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "setup.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "104f645da3a666f6243f39190329c5d1e4f4ae8c9d19dd087d1fc24cc16d0c32",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/__init__.py",
+      "action": "MODIFY",
+      "previous_SHA256": "08ca7a596aaf414912d4d9c18e1d88b919954034312c258467daca79daf51919",
+      "current_SHA256": "f04264fdae988b9e17c56217af75c1c0d35f52137df2a701ec1032f8825ab70f",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_base.py",
+      "action": "MODIFY",
+      "previous_SHA256": "910bf78946b36397c0fd75cb42806ca4d273f34d39a05eb2a3a1312ffb5ecc6d",
+      "current_SHA256": "c64fe0ed61f85c37f09948b8d2ab7f59b35e4eed22a7ebc33da75192b91e5efb",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_batching.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "314ef2b0c3546a6ee2d260f59ee39d3a1caa9073db842e43f4428ccd62bda6f2",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_class_weight.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "7c960b9c53a21eaed56808c921169078298235d354ab05c247780df5457e7294",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_core.py",
+      "action": "KEEP",
+      "previous_SHA256": "ed5ee68396afd4527719c97b3abe29a4eed1bd497d7222e8a9a573b388ffdb02",
+      "current_SHA256": "ed5ee68396afd4527719c97b3abe29a4eed1bd497d7222e8a9a573b388ffdb02",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_inference.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "2cce6bfb09b1149f4ab5e968c33d657745d81497aee7b6f2c24adb1b11e77e0f",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_memory_admission.py",
+      "action": "KEEP",
+      "previous_SHA256": "f5c4fe8601806187391914cd31eb45eb29a03854f5b2ca90934fba9bedbceec0",
+      "current_SHA256": "f5c4fe8601806187391914cd31eb45eb29a03854f5b2ca90934fba9bedbceec0",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_memory_policy.py",
+      "action": "KEEP",
+      "previous_SHA256": "529fb43dd3af2b40aa9fbafd9c7650fce8922310dab07fe3bc7a93e1f2c173bc",
+      "current_SHA256": "529fb43dd3af2b40aa9fbafd9c7650fce8922310dab07fe3bc7a93e1f2c173bc",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_multiclass.py",
+      "action": "MODIFY",
+      "previous_SHA256": "fb5661e3f8b6e8028b67ed42c077b011b45655ca894a170b812cedec9d7f672b",
+      "current_SHA256": "f55813eff1a0783ee1899b8e2d55500c889ad33a48f687b32ff0a1a87fd43b52",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_multiclass_artifact.py",
+      "action": "MODIFY",
+      "previous_SHA256": "bed11a2d69afbdda5b46508a3cd8fdd6181021bf2a2600742f3a4a0730d1e652",
+      "current_SHA256": "22019c91761dc7926254415d5234acda1cefa9b4ba080b8f9ce4fac3b14d0376",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_multiclass_packing.py",
+      "action": "KEEP",
+      "previous_SHA256": "546ce55462163db64857541587f3413be0766c2f8daa44fc5698a36345b5bdeb",
+      "current_SHA256": "546ce55462163db64857541587f3413be0766c2f8daa44fc5698a36345b5bdeb",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_resource_snapshot.py",
+      "action": "KEEP",
+      "previous_SHA256": "d2903043d1272630deadf39a22a8a3dea7934924951fb70f2fbf35a238117b01",
+      "current_SHA256": "d2903043d1272630deadf39a22a8a3dea7934924951fb70f2fbf35a238117b01",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_resource_tier.py",
+      "action": "KEEP",
+      "previous_SHA256": "f4f0b51ee16fa877a2249e5696043a4db22690e6815910d8c0d05a716f6b1632",
+      "current_SHA256": "f4f0b51ee16fa877a2249e5696043a4db22690e6815910d8c0d05a716f6b1632",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_sequence_payload.py",
+      "action": "KEEP",
+      "previous_SHA256": "424add92c0338da3bc93b8dd224ad249f609990a37c540918b64f720e8b8f5bc",
+      "current_SHA256": "424add92c0338da3bc93b8dd224ad249f609990a37c540918b64f720e8b8f5bc",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_training.py",
+      "action": "KEEP",
+      "previous_SHA256": "07c8d94c69c19792e9568fddfd8817c16b67fb6edb3c6833a148a278670a6b9b",
+      "current_SHA256": "07c8d94c69c19792e9568fddfd8817c16b67fb6edb3c6833a148a278670a6b9b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_trusted_payload.py",
+      "action": "KEEP",
+      "previous_SHA256": "6a952dde874b19b45c027412cb146c02e36481633f33f923c526f28526fd0297",
+      "current_SHA256": "6a952dde874b19b45c027412cb146c02e36481633f33f923c526f28526fd0297",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_version.py",
+      "action": "MODIFY",
+      "previous_SHA256": "1cb25cf367d9ea1eb9a9d1307c25b1d14d7fe75545407547bf791d76df6dd989",
+      "current_SHA256": "5f26eddac90165a98630d94bb8e5f5206fa1e2e231a940c600ef0c2065ab25a7",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_virtual_domain.py",
+      "action": "KEEP",
+      "previous_SHA256": "9c91571b31ca553d9b0bd56a0669fe71c4cb9cf0f558f392bf4eb5a51ff0c28e",
+      "current_SHA256": "9c91571b31ca553d9b0bd56a0669fe71c4cb9cf0f558f392bf4eb5a51ff0c28e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_visible_tier.py",
+      "action": "KEEP",
+      "previous_SHA256": "fdb4900a477e1e3188c83172c7cf158bab290169b7d5cce3fb42fd08cac2b2ee",
+      "current_SHA256": "fdb4900a477e1e3188c83172c7cf158bab290169b7d5cce3fb42fd08cac2b2ee",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/_visible_virtual.py",
+      "action": "KEEP",
+      "previous_SHA256": "555fe507fb0af9e537375c176c8865e8c50398af3b47b998dd3066a04dfdc098",
+      "current_SHA256": "555fe507fb0af9e537375c176c8865e8c50398af3b47b998dd3066a04dfdc098",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/classifier.py",
+      "action": "MODIFY",
+      "previous_SHA256": "3ea1dfef07d38b1b4b57b8cd31409620d21c3a059c63d3f6f2c39c4cb416168e",
+      "current_SHA256": "e51faa542520855cab5c3716f8ccbb38e9090cae7cb160e3f264d758d446fa4b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/experimental/__init__.py",
+      "action": "KEEP",
+      "previous_SHA256": "44796409ba32ae28ac44f4b0b492fc8a0e292c85592d9e21bedeacd13af5ed5b",
+      "current_SHA256": "44796409ba32ae28ac44f4b0b492fc8a0e292c85592d9e21bedeacd13af5ed5b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/experimental/_compiler.py",
+      "action": "KEEP",
+      "previous_SHA256": "fe355d7954f20fa6af34f40e27d4aee9cdada474fc18d0f261be3e44bbff1a03",
+      "current_SHA256": "fe355d7954f20fa6af34f40e27d4aee9cdada474fc18d0f261be3e44bbff1a03",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/experimental/_model.py",
+      "action": "KEEP",
+      "previous_SHA256": "e38c537f785447fc01b884a2d2ac276b3a4a84d6d2f31e4ec018e2f6a180449d",
+      "current_SHA256": "e38c537f785447fc01b884a2d2ac276b3a4a84d6d2f31e4ec018e2f6a180449d",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/experimental/_rational.py",
+      "action": "KEEP",
+      "previous_SHA256": "7f3f3cccaa4cc29cfc7f6c0835bc4abb1cc9aef3d6eb714adf7ed9c0daea5e0a",
+      "current_SHA256": "7f3f3cccaa4cc29cfc7f6c0835bc4abb1cc9aef3d6eb714adf7ed9c0daea5e0a",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/experimental/_safe_blend.py",
+      "action": "KEEP",
+      "previous_SHA256": "a70a783ab450d2c3a3a5b7d4ec3c898d83d2c4b1674f3932ff078c915c10ce0b",
+      "current_SHA256": "a70a783ab450d2c3a3a5b7d4ec3c898d83d2c4b1674f3932ff078c915c10ce0b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/preprocessing.py",
+      "action": "MODIFY",
+      "previous_SHA256": "9095ce3ce73a425ad79beb6f0c52bf00a239b2988ee3bf745a315c19abdb4d88",
+      "current_SHA256": "209b4401bee34efb6aed6d2dca8635f9998a7528310511ff32b932098d883e55",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/regressor.py",
+      "action": "KEEP",
+      "previous_SHA256": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8",
+      "current_SHA256": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/__init__.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "920ba7269c9cea62443d7898b9a3d161beaa165af20044922e99adbed50adf3c",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/_contract.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "64a2603cc827ef25a6e3c6a040093a564cfcb464368e48a744d7ef8aa572e825",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/backing_compiler.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "6a590f918f4d9dfa8608f5d938668f84d34748a806569a9d5fd97e04d2f861a2",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/composed_runtime.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "dd619b3a8b5e72a0ed2490d51e4a61d1805d1b1565f80b17c43566b9182f03ba",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/exporter.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "f8c8235569a2ef8fb16262ac0dc868ffd083dfe3f23575504acfdd6ed6c5879e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/metadata_compiler.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "d7675d2a0ec0e1963ced1ee4bbaa58067d8c66ceaf1256a555cb0ba40f291646",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/numeric_frame_runtime.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "cc77606106d779aef70c170766be1217a15ff7ced38aebe59578608cbacb8f81",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/portable_native_runtime.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "7a56a6b702fdd6fe1462082619ff7e3d52170590dea43ce7c98cdf1a8f4a2c3e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/source_contract.json",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/string_map_primitive.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "0bf858034672f1c275a51593e98709914bba9945d89113e72b5043a64fc77683",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "src/codadapt/serving/validated_native_format.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "9da4a94bd026e247b4a1d72c548e39d2f953a0e35db0cc683065d20695416b1c",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/_binary_reference.py",
+      "action": "REMOVE",
+      "previous_SHA256": "5615ae561b25ca117943064fe3a996880b141026bfa5d9105daadb53edde9bae",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/_multiclass_helpers.py",
+      "action": "REMOVE",
+      "previous_SHA256": "38275b31d970ea67b609983293efe17fddd36dc50d42216b07b7a5d0548b4874",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/conftest.py",
+      "action": "MODIFY",
+      "previous_SHA256": "a48148cf2c17742e58f5fc0aadbbdea63ccffbaead902a953dd2b3b695b83e29",
+      "current_SHA256": "6e74dcfaa8e1b79c173a1de6896ba5d35414b4c049ff54692feb0dce5e9096a4",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/data/binary/DATA.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "8cde99089edd88627055216d5ba873ed0e60ae2009df6fdb128cd7ef920b877c",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/data/multiclass/DATA.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "cfc500450dddd5e8b84eedcd99e4470ef78b4f8889869d465a71a116b168427e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/data/regression/DATA.npz",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "4c61105c61b376ffddea1156318d5156d12f3279f3f99bd99c1f37d45aa72d84",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/_binary_reference.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "5615ae561b25ca117943064fe3a996880b141026bfa5d9105daadb53edde9bae",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/_multiclass_helpers.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "8594f25debd186e4796a0df838de86bbd49e99ac9c0a60aa80ecff397af2a949",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/conftest.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "a48148cf2c17742e58f5fc0aadbbdea63ccffbaead902a953dd2b3b695b83e29",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_adaptive_levels.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "31923b7f1136b1b80131aaa8231c5396b2fd6fde00198812aa80c9f6559b4d85",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_addressing.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "ab489530ef4027a28180f300f5fb20b8d2311c9813da16186d9af94976023783",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_auto_memory.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "33d5b59f722975290e72a6718cf2bc4d87ca8bd9e6f445709e83bdccbf97d5e4",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_auto_memory_cgroup.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "98a6f0a0e0cf40657bc605bc81f6a632cbc6e1ed62b88cf475888654e650ee32",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_auto_memory_policy.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "e9116338d38665d86614ee314962980f626e25e14567abe6445754828f9b1ddf",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_cardinality.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "d2761105870685498540a96212ba9b753cddc93b8e85d9ac7dcb764c3ce00f9e",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_class_weight.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "91e08a74240d996626bd7491cd49c1e9158ca742207db1069a6505d6cb328a85",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_classifier.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "a78a917d5e3a4c07b0b60645da8cd37e0cb4ddd1a24ed86ba1066e980ec4b503",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_classifier_training.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "00653b82c247549b6678b42b30100545ca6a051c99c0e8005feee9b78498cd2d",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_coded_memory.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "ecc223e3a7a43ce9b01dffd02579fba7408c5a8e57c3f4519ed228a042172e94",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_default_api.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "9c19cb1adf4a2804fe255dc611f8e47b6a06acf8aafdfaa3a93daa0ddf4600b0",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_ebm_compiler.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "968246c24668291093a4b49b8d6e2639877d667a87125a032c0adcbaf7b3400d",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_incremental_gain.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "5e8e67272e93472079e2d9b0fba00a6d2a06fb43666c061109afdd422959caa0",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_independence.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "ef21a3b05678fc8b53467f3b981908144108a7bf26a3158325be5fd86b455b53",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_inference_metadata_exact.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "364f1979f80960f08e42a2cfb983484a36f133409d81f721f295da7940047944",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_memory_budget.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "1c25c840fda2b6a6c6d77916f545cc73b652a0e7c62672ac010a60195b4b8fde",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_multiclass.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "bfe5bda5b443a16851a56311db28f9e0b7221107960c5bbb214f55fc18db0b56",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_no_leakage.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "9593f4731cf99b65d4bcefbc273e39db690d64315055f0352d189402d27bbb86",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_packaging.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "ecdf9910b710f663b968511bad4b7780ff7b3cff86c40a2c977f46041b3452de",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_persistence.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "fc8b2e39b9ed1e3bfca2b98b982e7f4029cb795867b37bc043b13f7ffa89f2d2",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_pre_rc_api.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "91761901009f46458e189fd787d7ba42d46267c304bb1e19f0f2289b166a7d78",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_preprocessing.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "1bebe09011a23f87c0358e08dbce3cce95993ddb18b22925f3aedea2e6deb469",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_rational_callback.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "b4cb40633b011be4b7fe21d3a8ef3a622c5edc4c007bf154fc6294f7f56f5a56",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_regressor.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "7eaa2d404bc7a17882c8f8ca9186d20cf700456f574a4dd28ecee8f0b5f9cf60",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_release_contracts.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "b1f4ce03922029e5d6c45bfd6d0bbb4fafb72c785c6b10eaa05e1060a6ba1d9c",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_safe_blend.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "249b5d5b8fae14f2f6a297c91abf2fd64362fd9b4f5e4bff65e2ed784a225aeb",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_serving.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "07dfbcec030159653fb9b6a9d51420918d983b8944bdd3b4219c9a93844730d4",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_shared_encoder.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "3947ab50ff462c6ad703311b7d409cd19520866a2eb6f4e3099c9b35745c74d9",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/legacy/test_sklearn_compat.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "daa03657f3f30818366c5e89fde42effda186504253af68e273ddc928bb5f6f5",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/native/conftest.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "9ce552e5656520262d6147fcf7abdb4038e9c24e7bbdb5d7d9142f2d51d4c4cf",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/native/test_auto_backend.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "d80a00503e57c4d45415206b377194d918879f29974351de5cd94f99a2c03424",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/native/test_batching.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "45db1b57bac238d6fd1b5bf5f80b7b475c420f2ab0f3575899c8d33fca2c3005",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/native/test_boundary.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "a38c7e3c9ab8a5a061169a2828ff734148a51053b2d86d712ccccb914f2649c5",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/native/test_numeric_encoding.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "c694c02cdd5ebc7fe2c73ccbf161b1593e766b53dc0b244b4fb739703608d04b",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/native/test_numeric_frame_g6.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "09c1e8b244b4a0ff94b7ddc1833f16f1a7e3500515b821dccf24b5ddb9a235f2",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/test_adaptive_levels.py",
+      "action": "REMOVE",
+      "previous_SHA256": "31923b7f1136b1b80131aaa8231c5396b2fd6fde00198812aa80c9f6559b4d85",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_addressing.py",
+      "action": "REMOVE",
+      "previous_SHA256": "ab489530ef4027a28180f300f5fb20b8d2311c9813da16186d9af94976023783",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_auto_memory.py",
+      "action": "REMOVE",
+      "previous_SHA256": "33d5b59f722975290e72a6718cf2bc4d87ca8bd9e6f445709e83bdccbf97d5e4",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_auto_memory_cgroup.py",
+      "action": "REMOVE",
+      "previous_SHA256": "98a6f0a0e0cf40657bc605bc81f6a632cbc6e1ed62b88cf475888654e650ee32",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_auto_memory_policy.py",
+      "action": "REMOVE",
+      "previous_SHA256": "e9116338d38665d86614ee314962980f626e25e14567abe6445754828f9b1ddf",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_cardinality.py",
+      "action": "REMOVE",
+      "previous_SHA256": "d2761105870685498540a96212ba9b753cddc93b8e85d9ac7dcb764c3ce00f9e",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_classifier.py",
+      "action": "REMOVE",
+      "previous_SHA256": "a78a917d5e3a4c07b0b60645da8cd37e0cb4ddd1a24ed86ba1066e980ec4b503",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_classifier_training.py",
+      "action": "REMOVE",
+      "previous_SHA256": "00653b82c247549b6678b42b30100545ca6a051c99c0e8005feee9b78498cd2d",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_coded_memory.py",
+      "action": "REMOVE",
+      "previous_SHA256": "ecc223e3a7a43ce9b01dffd02579fba7408c5a8e57c3f4519ed228a042172e94",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_default_api.py",
+      "action": "REMOVE",
+      "previous_SHA256": "9c19cb1adf4a2804fe255dc611f8e47b6a06acf8aafdfaa3a93daa0ddf4600b0",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_ebm_compiler.py",
+      "action": "REMOVE",
+      "previous_SHA256": "968246c24668291093a4b49b8d6e2639877d667a87125a032c0adcbaf7b3400d",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_incremental_gain.py",
+      "action": "REMOVE",
+      "previous_SHA256": "5e8e67272e93472079e2d9b0fba00a6d2a06fb43666c061109afdd422959caa0",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_independence.py",
+      "action": "REMOVE",
+      "previous_SHA256": "ef21a3b05678fc8b53467f3b981908144108a7bf26a3158325be5fd86b455b53",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_inference_metadata_exact.py",
+      "action": "REMOVE",
+      "previous_SHA256": "364f1979f80960f08e42a2cfb983484a36f133409d81f721f295da7940047944",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_memory_budget.py",
+      "action": "REMOVE",
+      "previous_SHA256": "1c25c840fda2b6a6c6d77916f545cc73b652a0e7c62672ac010a60195b4b8fde",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_multiclass.py",
+      "action": "REMOVE",
+      "previous_SHA256": "217856da731e8e76eef569c8ddae42c16b9deb8be45f3721c61a4e21b20c1221",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_no_leakage.py",
+      "action": "REMOVE",
+      "previous_SHA256": "9593f4731cf99b65d4bcefbc273e39db690d64315055f0352d189402d27bbb86",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_packaging.py",
+      "action": "REMOVE",
+      "previous_SHA256": "ecdf9910b710f663b968511bad4b7780ff7b3cff86c40a2c977f46041b3452de",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_persistence.py",
+      "action": "REMOVE",
+      "previous_SHA256": "fc8b2e39b9ed1e3bfca2b98b982e7f4029cb795867b37bc043b13f7ffa89f2d2",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_pre_rc_api.py",
+      "action": "REMOVE",
+      "previous_SHA256": "91761901009f46458e189fd787d7ba42d46267c304bb1e19f0f2289b166a7d78",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_preprocessing.py",
+      "action": "REMOVE",
+      "previous_SHA256": "1bebe09011a23f87c0358e08dbce3cce95993ddb18b22925f3aedea2e6deb469",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_rational_callback.py",
+      "action": "REMOVE",
+      "previous_SHA256": "b4cb40633b011be4b7fe21d3a8ef3a622c5edc4c007bf154fc6294f7f56f5a56",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_regressor.py",
+      "action": "REMOVE",
+      "previous_SHA256": "7eaa2d404bc7a17882c8f8ca9186d20cf700456f574a4dd28ecee8f0b5f9cf60",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_release_contracts.py",
+      "action": "REMOVE",
+      "previous_SHA256": "b1f4ce03922029e5d6c45bfd6d0bbb4fafb72c785c6b10eaa05e1060a6ba1d9c",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_safe_blend.py",
+      "action": "REMOVE",
+      "previous_SHA256": "249b5d5b8fae14f2f6a297c91abf2fd64362fd9b4f5e4bff65e2ed784a225aeb",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_shared_encoder.py",
+      "action": "REMOVE",
+      "previous_SHA256": "3947ab50ff462c6ad703311b7d409cd19520866a2eb6f4e3099c9b35745c74d9",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/test_sklearn_compat.py",
+      "action": "REMOVE",
+      "previous_SHA256": "daa03657f3f30818366c5e89fde42effda186504253af68e273ddc928bb5f6f5",
+      "current_SHA256": null,
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": true
+    },
+    {
+      "path": "tests/tools/test_distribution_contents.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "98b56d1938be2af2b8f565c8d41507570be104183af18b12d22942bce3241907",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/tools/test_qualification_cache_identity.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "5e040ba67a53d30f084869ebf03eedce6726b22e7ee2aa291413b0a644865f59",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/tools/test_qualification_process.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "8a9bd8d383d9398cf4a120616cad466308eb08f9891215ce43b5335233130829",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/tools/test_qualification_v2_identity.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "5c298d42ce1dc8f7967e7a6c981728fb7302d68459b740c52e2e008327f3a8b5",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/tools/test_receipt_integrity.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "40304c5f1394bf584925f3ad86583edae7b01d0d363c7da36655000f5bb825ff",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tests/tools/test_version_preparation.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "0c508482c129bedcc634f9951f05b552df7f90e1fa64ede711aa80346b792653",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tools/engineering_probe.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "61711c43fffeb27942ec822bf8533582c2712d8994aed5fcdf3113fae1f03a3a",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tools/model_version_compatibility.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "0d6253064dd40b04b81efe676d17b0ced08ac336e35bd68c82abfea6c6ae87fc",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tools/prepare_version.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "8f916b79912cb4007e175131a43ac6694a0b75a370d31827fdada82589034aa0",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tools/qualification_identity.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "915cfc7d7a71fe208524da0b9e6ec7b09d49dbb1c41ac76f53045d9794cbffe0",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tools/qualification_process.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "c93d50e880edad4e1a36399276eecaff08e24dc5591f7d16a6f0a9cf4bfd0fb1",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tools/qualify_platform.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "4bf199d0212704ce5cd9b9b2a39604a45432782e035a1b733e7b5e25a0336c12",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tools/verify_qualification_receipt.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "965826a75e30967484af6713666b66860732e22a1b9171506bf60efc9028a3a1",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    },
+    {
+      "path": "tools/verify_repository.py",
+      "action": "ADD",
+      "previous_SHA256": null,
+      "current_SHA256": "e500df3374a50414d0e05a4e2a69bc228fa5c2376b57f2c52403bdcfadd6ad69",
+      "hash_binding": "Direct file hash",
+      "automatic_removal": false,
+      "approval_required": false
+    }
+  ],
+  "counts": {
+    "REMOVE": 38,
+    "ADD": 148,
+    "MODIFY": 33,
+    "KEEP": 24
+  },
+  "true_repository_inspected": false,
+  "all_real_removals_require_owner_approval": true,
+  "removals_applied": 0
+}

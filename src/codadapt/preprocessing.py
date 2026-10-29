@@ -4,6 +4,8 @@ The historical module/class path is retained for internal imports and trusted
 model persistence. Importability does not imply a supported standalone contract.
 """
 
+import sys
+
 from enum import Enum
 from numbers import Integral, Real
 
@@ -413,6 +415,17 @@ class BucketEncoder(TransformerMixin, BaseEstimator):
             if not X.columns.equals(self._columns_):
                 X = X.iloc[:, order]
         transformed = np.empty(X.shape, dtype=np.uint16)
+        if type(X) is pd.DataFrame:
+            direct_columns = _ordinary_frame_columns(X, self)
+            if direct_columns is not None and all(s["kind"] == "numeric" for s in self.schemas_):
+                for j, schema in enumerate(self.schemas_):
+                    values = direct_columns[j]
+                    if np.isinf(values).any():
+                        raise ValueError(
+                            f"Input contains infinity in feature {X.columns[j]!r}; infinities are not supported."
+                        )
+                    transformed[:, j] = self._transform_numeric(values, schema)
+                return transformed
         numeric_array = isinstance(X, np.ndarray) and all(
             schema["kind"] == "numeric" for schema in self.schemas_
         )
@@ -480,3 +493,31 @@ class BucketEncoder(TransformerMixin, BaseEstimator):
                 transformed[:, feature] = mapping[finest[:, feature]]
             levels.append(transformed)
         return levels
+
+
+# A transient read-only use of ordinary pandas storage; no view is retained.
+_FRAME_METHODS = {name: getattr(BucketEncoder, name) for name in (
+    "_column", "_numeric_values", "_check_dtype", "_transform_numeric",
+    "transform", "transform_levels", "_validate_input")}
+_FRAME_MANAGER = getattr(sys.modules.get("pandas.core.internals.managers"), "BlockManager", None)
+_FRAME_BLOCK = getattr(sys.modules.get("pandas.core.internals.blocks"), "NumpyBlock", None)
+
+
+def _ordinary_frame_columns(X, encoder):
+    if (type(X) is not pd.DataFrame or type(encoder) is not BucketEncoder
+            or pd.__version__ != "3.1.0" or np.__version__ != "2.5.4"
+            or any(name in vars(encoder) for name in _FRAME_METHODS)
+            or any(getattr(BucketEncoder, name) is not fn for name, fn in _FRAME_METHODS.items())):
+        return None
+    manager = X._mgr
+    if _FRAME_MANAGER is None or type(manager) is not _FRAME_MANAGER or len(manager.blocks) != 1:
+        return None
+    block = manager.blocks[0]
+    if _FRAME_BLOCK is None or type(block) is not _FRAME_BLOCK:
+        return None
+    values = block.values
+    if (type(values) is not np.ndarray or values.dtype != np.dtype("float64")
+            or values.shape != (X.shape[1], X.shape[0])
+            or not np.array_equal(block.mgr_locs.as_array, np.arange(X.shape[1]))):
+        return None
+    return values

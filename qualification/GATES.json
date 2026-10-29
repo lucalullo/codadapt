@@ -1,0 +1,701 @@
+{
+  "schema": 1,
+  "version": "2.1.0",
+  "state": "FINAL_LOCAL_MANUAL_TRANSFER_REVIEW",
+  "publication_approved": false,
+  "LOCAL_READY": "YES",
+  "ENGINEERING_QUALIFIED": "YES",
+  "MULTICLASS_IMPROVEMENT_QUALIFIED": "NO",
+  "BINARY_REGRESSION_PRESERVED": "YES",
+  "CROSS_PLATFORM_QUALIFIED": "NO",
+  "BACKUP_A": "HOLD",
+  "RELEASE": "HOLD",
+  "matrix": [
+    {
+      "OS": "Windows11",
+      "CPU": "x64",
+      "Python": "3.14.10",
+      "compiler": "MSVC14.51.36231/SDK10.0.26100.0",
+      "status": "PASS_FINITE_ACTUAL_210_NATIVE_AND_PURE",
+      "native_wheel_runtime": true,
+      "pure_wheel_runtime": true,
+      "optional_EBM": "PASS_IN_FULL_SUITE",
+      "automatic_backend": "Python",
+      "explicit_native": "PASS",
+      "dependency_pins": "requirements/windows314.txt",
+      "inherited_earlier_actual210_full_suite": {
+        "passed": 1012,
+        "skipped": 3,
+        "historical_xfail": 4,
+        "failed": 0,
+        "errors": 0
+      },
+      "full_suite_rerun_in_this_revision": false,
+      "new_final_targeted_tests": {
+        "native": {
+          "passed": 148,
+          "skipped": 1,
+          "failed": 0,
+          "errors": 0
+        },
+        "pure": {
+          "passed": 47,
+          "skipped": 51,
+          "failed": 0,
+          "errors": 0
+        }
+      },
+      "final_exact_wheel_consumers": "PASS_NATIVE_AND_PURE"
+    },
+    {
+      "OS": "Windows11",
+      "CPU": "x64",
+      "Python": "3.10.22",
+      "compiler": "MSVC14.51.36231/SDK10.0.26100.0",
+      "status": "CORE_PASS_FULL_PROFILE_HOLD_OPTIONAL_EBM_POLICY",
+      "native_wheel_runtime": true,
+      "pure_wheel_runtime": true,
+      "optional_EBM": "HOLD_LIBEBM_WIN_X64_DLL_APP_CONTROL_4551",
+      "automatic_backend": "Python",
+      "explicit_native": "PASS_CORE",
+      "dependency_pins": "requirements/windows310.txt",
+      "inherited_earlier_actual210_full_suite": {
+        "passed": 1002,
+        "skipped": 1,
+        "historical_xfail": 4,
+        "failed": 0,
+        "errors": 12
+      },
+      "full_suite_rerun_in_this_revision": false,
+      "new_final_targeted_tests": {
+        "native": {
+          "passed": 148,
+          "skipped": 1,
+          "failed": 0,
+          "errors": 0
+        },
+        "pure": {
+          "passed": 47,
+          "skipped": 51,
+          "failed": 0,
+          "errors": 0
+        }
+      },
+      "final_exact_wheel_consumers": "PASS_NATIVE_AND_PURE"
+    },
+    {
+      "OS": "Windows11",
+      "CPU": "x64",
+      "Python": "3.12.10",
+      "status": "BUILD_PASS_NEW_RUNTIME_HOLD_PREREQUISITE_POLICY",
+      "native_build": true,
+      "new_version_runtime_tested": false,
+      "reason": "R2fresh pandas indexers DLL denied; no changed condition for repeated import"
+    },
+    {
+      "OS": "Windows",
+      "CPU": "x64",
+      "Python": "3.11.18",
+      "status": "NOT_TESTED_HISTORICAL_RUNTIME_OR_DEPENDENCY_POLICY_BLOCK"
+    },
+    {
+      "OS": "Windows",
+      "CPU": "x64",
+      "Python": "3.12.16",
+      "status": "NOT_TESTED_HISTORICAL_RUNTIME_OR_DEPENDENCY_POLICY_BLOCK"
+    },
+    {
+      "OS": "Windows",
+      "CPU": "x64",
+      "Python": "3.13.18",
+      "status": "NOT_TESTED_HISTORICAL_RUNTIME_OR_DEPENDENCY_POLICY_BLOCK"
+    },
+    {
+      "OS": "Windows",
+      "CPU": "x64",
+      "Python": "3.15.2",
+      "status": "NOT_TESTED_HISTORICAL_RUNTIME_OR_DEPENDENCY_POLICY_BLOCK"
+    },
+    {
+      "OS": "Linux",
+      "CPU": "x64/ARM64",
+      "Python": "3.10-3.15 targets",
+      "status": "NOT_TESTED_NO_AUTHORIZED_OPERATIONAL_REAL_HOST"
+    },
+    {
+      "OS": "macOS",
+      "CPU": "x64/ARM64",
+      "Python": "3.10-3.15 targets",
+      "status": "NOT_TESTED_NO_AUTHORIZED_OPERATIONAL_REAL_HOST"
+    }
+  ],
+  "compatibility": [
+    {
+      "profile": "consumer_win314",
+      "before": {
+        "codadapt": "2.0.0.dev0+lab.g6r1",
+        "python": [
+          3,
+          14,
+          10
+        ],
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "system": "Windows",
+        "machine": "AMD64",
+        "sklearn": "1.9.1",
+        "joblib": "1.6.0"
+      },
+      "after": {
+        "codadapt": "2.1.0",
+        "python": [
+          3,
+          14,
+          10
+        ],
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "system": "Windows",
+        "machine": "AMD64",
+        "sklearn": "1.9.1",
+        "joblib": "1.6.0"
+      },
+      "model_count": 3,
+      "exact_array_comparisons": 126,
+      "old_pickle_joblib": "PASS_FINITE",
+      "new_export_load": "PASS",
+      "old_contract_images": "EXPECTED_REJECTION",
+      "fit_calls": 0
+    },
+    {
+      "profile": "core310_continue",
+      "before": {
+        "codadapt": "2.0.0.dev0+lab.g6r1",
+        "python": [
+          3,
+          10,
+          22
+        ],
+        "numpy": "1.26.4",
+        "pandas": "2.2.3",
+        "system": "Windows",
+        "machine": "AMD64",
+        "sklearn": "1.6.1",
+        "joblib": "1.6.0"
+      },
+      "after": {
+        "codadapt": "2.1.0",
+        "python": [
+          3,
+          10,
+          22
+        ],
+        "numpy": "1.26.4",
+        "pandas": "2.2.3",
+        "system": "Windows",
+        "machine": "AMD64",
+        "sklearn": "1.6.1",
+        "joblib": "1.6.0"
+      },
+      "model_count": 3,
+      "exact_array_comparisons": 126,
+      "old_pickle_joblib": "PASS_FINITE",
+      "new_export_load": "PASS",
+      "old_contract_images": "EXPECTED_REJECTION",
+      "fit_calls": 0
+    },
+    {
+      "profile": "pure_win314",
+      "before": {
+        "codadapt": "2.0.0.dev0+lab.g6r1",
+        "python": [
+          3,
+          14,
+          10
+        ],
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "system": "Windows",
+        "machine": "AMD64",
+        "sklearn": "1.9.1",
+        "joblib": "1.6.0"
+      },
+      "after": {
+        "codadapt": "2.1.0",
+        "python": [
+          3,
+          14,
+          10
+        ],
+        "numpy": "2.5.4",
+        "pandas": "3.1.0",
+        "system": "Windows",
+        "machine": "AMD64",
+        "sklearn": "1.9.1",
+        "joblib": "1.6.0"
+      },
+      "model_count": 3,
+      "exact_array_comparisons": 84,
+      "old_pickle_joblib": "PASS_FINITE",
+      "new_export_load": "PASS",
+      "old_contract_images": "EXPECTED_REJECTION",
+      "fit_calls": 0
+    },
+    {
+      "profile": "pure_win310",
+      "before": {
+        "codadapt": "2.0.0.dev0+lab.g6r1",
+        "python": [
+          3,
+          10,
+          22
+        ],
+        "numpy": "1.26.4",
+        "pandas": "2.2.3",
+        "system": "Windows",
+        "machine": "AMD64",
+        "sklearn": "1.6.1",
+        "joblib": "1.6.0"
+      },
+      "after": {
+        "codadapt": "2.1.0",
+        "python": [
+          3,
+          10,
+          22
+        ],
+        "numpy": "1.26.4",
+        "pandas": "2.2.3",
+        "system": "Windows",
+        "machine": "AMD64",
+        "sklearn": "1.6.1",
+        "joblib": "1.6.0"
+      },
+      "model_count": 3,
+      "exact_array_comparisons": 84,
+      "old_pickle_joblib": "PASS_FINITE",
+      "new_export_load": "PASS",
+      "old_contract_images": "EXPECTED_REJECTION",
+      "fit_calls": 0
+    }
+  ],
+  "original_replay": {
+    "status": "PASS_ORIGINAL_FROZEN_FINITE_REPLAY",
+    "version": "2.1.0",
+    "records": [
+      {
+        "task": "binary",
+        "exact_arrays": 18,
+        "get_params": "PASS",
+        "class_weight": null
+      },
+      {
+        "task": "multiclass",
+        "exact_arrays": 18,
+        "get_params": "PASS",
+        "class_weight": null
+      },
+      {
+        "task": "regression",
+        "exact_arrays": 6,
+        "get_params": "PASS",
+        "class_weight": "not_applicable"
+      }
+    ],
+    "fit_calls": 0,
+    "scope": "3original synthetic numeric models; old312serialized states under210/314 with same modern numerical pins,not arbitrary cross-version pickle guarantee"
+  },
+  "independent_research_fits": 0,
+  "algorithm_modified": false,
+  "source_contract_changed_for_version": "Historical2.1version step only; unchanged in this technical revision",
+  "ordinary_install_from_prebuilt_wheel_requires_compiler": false,
+  "remaining": [
+    "Approve proposed version and per-file removals/integrations before manual transfer",
+    "Authorized312fresh dependency runtime and310optionalEBM qualification",
+    "Actual Linux/macOS and other intended Windows profiles",
+    "Independent physical backup with verified receipt"
+  ],
+  "qualification_scope": "Windows x64/CPython3.14.10 exact pins;3.10.22core passes, optionalEBM fullprofile HOLD",
+  "preservation_scope": "Finite model/API/persistence tests;not universal accuracy guarantee",
+  "repository_transfer_ready": true,
+  "removal_approval_obtained": false,
+  "proposed_removals": 38,
+  "historical_paths_reviewed": 59,
+  "final_targeted_checks": [
+    {
+      "profile": "win310",
+      "backend": "native",
+      "status": "PASS_EXACT_DEFINITIVE_ARTIFACT_CONSUMER",
+      "wheel_SHA256": "d3b6ac1eeb3c600220e9f93244fe93c38da5fed01dd3d77e5cc517fae0cb9c46",
+      "current_targeted_tests": {
+        "passed": 148,
+        "skipped": 1,
+        "failed": 0,
+        "errors": 0
+      },
+      "steps": [
+        {
+          "label": "create",
+          "returncode": 0
+        },
+        {
+          "label": "install",
+          "returncode": 0
+        },
+        {
+          "label": "pip_check",
+          "returncode": 0
+        },
+        {
+          "label": "import",
+          "returncode": 0
+        },
+        {
+          "label": "targeted_tests",
+          "returncode": 0
+        },
+        {
+          "label": "three_task_example",
+          "returncode": 0
+        },
+        {
+          "label": "old_model_compatibility",
+          "returncode": 0
+        },
+        {
+          "label": "same210_export_replay",
+          "returncode": 0
+        }
+      ],
+      "new_engineering_example_fits": 3,
+      "new_scientific_fits": 0,
+      "earlier_G6R1_model_arrays": 126,
+      "earlier_G6R1_serving": "Expected rejection unchanged",
+      "earlier_210_export_replay": {
+        "status": "PASS_PRESERVED_210_EXPORT_CONTRACT_NO_FIT",
+        "fit_calls": 0,
+        "cases": [
+          {
+            "task": "binary",
+            "exact_arrays": 54,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "0e39a9b3fdf04dff64c6a05401ac20e7102d09886f1d239592a22837b781f859"
+          },
+          {
+            "task": "multiclass",
+            "exact_arrays": 54,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "afc6cc4a218bc6f7a910b938c343c70315386a15c185795ca40bc5e408d775c4"
+          },
+          {
+            "task": "regression",
+            "exact_arrays": 18,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "73d6540870aa1a8f68e164f7983c1dbdbd8127ffbcc60a89dabec97b2d1f9a81"
+          }
+        ],
+        "source_contract_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b"
+      },
+      "original_private_receipt_SHA256": "78986fafc5ad23f3fc9eb5ef577780d960b628aed002b35d02b04b527cee12ef",
+      "original_private_JUnit_SHA256": "dd35350c54a8c83d5ae45d4cc625036510149007c3c9f067146da22f7f6182a1",
+      "public_JUnit": "win310_native_targeted.xml",
+      "qualification_scope": "New exact wheel clean installation, affected tools, native boundaries/dispatch, saved-model replay and 3-task example",
+      "default_backend": "python",
+      "native_binary_binding": {
+        "measured_earlier_binary_SHA256": "39079dcdc8e19b1bbb97460fda064aded62c8ba2cee3a650796701b5ed28daa6",
+        "rebuilt_binary_SHA256": "7a792303da0236f6fc53ee48011b0894e79df46120eadb9aa09a14596f658d38",
+        "measured_code_section": {
+          "SHA256": "6ab27b3e41ed9aae4014cab6be3bb8bdd0fa02d5fe8d7e0b10b70f01a4906f57",
+          "bytes": 133632
+        },
+        "rebuilt_code_section": {
+          "SHA256": "6ab27b3e41ed9aae4014cab6be3bb8bdd0fa02d5fe8d7e0b10b70f01a4906f57",
+          "bytes": 133632
+        },
+        "entire_binary_identical": false,
+        "performance_is_prior_prepackaging_measurement": true
+      }
+    },
+    {
+      "profile": "win310",
+      "backend": "pure",
+      "status": "PASS_EXACT_DEFINITIVE_ARTIFACT_CONSUMER",
+      "wheel_SHA256": "d8f9d8a6290095c0dea466a99a1006c300efbe86600c7db4c4e7c90d14505b97",
+      "current_targeted_tests": {
+        "passed": 47,
+        "skipped": 51,
+        "failed": 0,
+        "errors": 0
+      },
+      "steps": [
+        {
+          "label": "create",
+          "returncode": 0
+        },
+        {
+          "label": "install",
+          "returncode": 0
+        },
+        {
+          "label": "pip_check",
+          "returncode": 0
+        },
+        {
+          "label": "import",
+          "returncode": 0
+        },
+        {
+          "label": "targeted_tests",
+          "returncode": 0
+        },
+        {
+          "label": "three_task_example",
+          "returncode": 0
+        },
+        {
+          "label": "old_model_compatibility",
+          "returncode": 0
+        },
+        {
+          "label": "same210_export_replay",
+          "returncode": 0
+        }
+      ],
+      "new_engineering_example_fits": 3,
+      "new_scientific_fits": 0,
+      "earlier_G6R1_model_arrays": 84,
+      "earlier_G6R1_serving": "Expected rejection unchanged",
+      "earlier_210_export_replay": {
+        "status": "PASS_PRESERVED_210_EXPORT_CONTRACT_NO_FIT",
+        "fit_calls": 0,
+        "cases": [
+          {
+            "task": "binary",
+            "exact_arrays": 27,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "0e39a9b3fdf04dff64c6a05401ac20e7102d09886f1d239592a22837b781f859"
+          },
+          {
+            "task": "multiclass",
+            "exact_arrays": 27,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "afc6cc4a218bc6f7a910b938c343c70315386a15c185795ca40bc5e408d775c4"
+          },
+          {
+            "task": "regression",
+            "exact_arrays": 9,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "73d6540870aa1a8f68e164f7983c1dbdbd8127ffbcc60a89dabec97b2d1f9a81"
+          }
+        ],
+        "source_contract_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b"
+      },
+      "original_private_receipt_SHA256": "fae8f5928c5cc00cd7a977dfad094cc93f8e5f31f78488ba9ce883a28ede0e22",
+      "original_private_JUnit_SHA256": "2958f4ad8760a171b45809ff9af81e48861add4b4ad4384311f2b5742a0cc174",
+      "public_JUnit": "win310_pure_targeted.xml",
+      "qualification_scope": "New exact wheel clean installation, affected tools, native boundaries/dispatch, saved-model replay and 3-task example",
+      "default_backend": "python"
+    },
+    {
+      "profile": "win314",
+      "backend": "native",
+      "status": "PASS_EXACT_DEFINITIVE_ARTIFACT_CONSUMER",
+      "wheel_SHA256": "3640fe40061e97931a613c8cfeae8520fc826fcbd7561b30e0b12faff30a82e8",
+      "current_targeted_tests": {
+        "passed": 148,
+        "skipped": 1,
+        "failed": 0,
+        "errors": 0
+      },
+      "steps": [
+        {
+          "label": "create",
+          "returncode": 0
+        },
+        {
+          "label": "install",
+          "returncode": 0
+        },
+        {
+          "label": "pip_check",
+          "returncode": 0
+        },
+        {
+          "label": "import",
+          "returncode": 0
+        },
+        {
+          "label": "targeted_tests",
+          "returncode": 0
+        },
+        {
+          "label": "three_task_example",
+          "returncode": 0
+        },
+        {
+          "label": "old_model_compatibility",
+          "returncode": 0
+        },
+        {
+          "label": "same210_export_replay",
+          "returncode": 0
+        }
+      ],
+      "new_engineering_example_fits": 3,
+      "new_scientific_fits": 0,
+      "earlier_G6R1_model_arrays": 126,
+      "earlier_G6R1_serving": "Expected rejection unchanged",
+      "earlier_210_export_replay": {
+        "status": "PASS_PRESERVED_210_EXPORT_CONTRACT_NO_FIT",
+        "fit_calls": 0,
+        "cases": [
+          {
+            "task": "binary",
+            "exact_arrays": 54,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "d0e355a4446b0f9019a2a0004b41e5c7c8d5720c12129ce5d390e99324f6464c"
+          },
+          {
+            "task": "multiclass",
+            "exact_arrays": 54,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "62f21c9456b7f15c5683d3084f4c09a2de19b64622b7b97f9dd45fc951379aa9"
+          },
+          {
+            "task": "regression",
+            "exact_arrays": 18,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "d0bb34e4bace4b9235ed905d0d69d245270f4e764ce85b469b08644c1a589174"
+          }
+        ],
+        "source_contract_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b"
+      },
+      "original_private_receipt_SHA256": "c1c7c4eb0451b404d6d31dd9683f4969ee28248e9301cb6dc52aeec1e11faee3",
+      "original_private_JUnit_SHA256": "aab4d605d38cb1afd858454577e18a627b19fc0cdaa3db5fdf399d1f3a9a3a93",
+      "public_JUnit": "win314_native_targeted.xml",
+      "qualification_scope": "New exact wheel clean installation, affected tools, native boundaries/dispatch, saved-model replay and 3-task example",
+      "default_backend": "python",
+      "native_binary_binding": {
+        "measured_earlier_binary_SHA256": "0e8d72b7933bbb9b48c93d94ce2d085f78a34d61bed2bedf6a98a77dfec5aaa5",
+        "rebuilt_binary_SHA256": "ffcb47688d535abc0d836973f582e714a61bb1f2422cc86116c1fb4af2e5f2ff",
+        "measured_code_section": {
+          "SHA256": "4e4d1ee2e46a22e7f47d0c270b17ddd07f5aaedc2697a767c0a161042f1b55c4",
+          "bytes": 141824
+        },
+        "rebuilt_code_section": {
+          "SHA256": "4e4d1ee2e46a22e7f47d0c270b17ddd07f5aaedc2697a767c0a161042f1b55c4",
+          "bytes": 141824
+        },
+        "entire_binary_identical": false,
+        "performance_is_prior_prepackaging_measurement": true
+      }
+    },
+    {
+      "profile": "win314",
+      "backend": "pure",
+      "status": "PASS_EXACT_DEFINITIVE_ARTIFACT_CONSUMER",
+      "wheel_SHA256": "d8f9d8a6290095c0dea466a99a1006c300efbe86600c7db4c4e7c90d14505b97",
+      "current_targeted_tests": {
+        "passed": 47,
+        "skipped": 51,
+        "failed": 0,
+        "errors": 0
+      },
+      "steps": [
+        {
+          "label": "create",
+          "returncode": 0
+        },
+        {
+          "label": "install",
+          "returncode": 0
+        },
+        {
+          "label": "pip_check",
+          "returncode": 0
+        },
+        {
+          "label": "import",
+          "returncode": 0
+        },
+        {
+          "label": "targeted_tests",
+          "returncode": 0
+        },
+        {
+          "label": "three_task_example",
+          "returncode": 0
+        },
+        {
+          "label": "old_model_compatibility",
+          "returncode": 0
+        },
+        {
+          "label": "same210_export_replay",
+          "returncode": 0
+        }
+      ],
+      "new_engineering_example_fits": 3,
+      "new_scientific_fits": 0,
+      "earlier_G6R1_model_arrays": 84,
+      "earlier_G6R1_serving": "Expected rejection unchanged",
+      "earlier_210_export_replay": {
+        "status": "PASS_PRESERVED_210_EXPORT_CONTRACT_NO_FIT",
+        "fit_calls": 0,
+        "cases": [
+          {
+            "task": "binary",
+            "exact_arrays": 27,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "d0e355a4446b0f9019a2a0004b41e5c7c8d5720c12129ce5d390e99324f6464c"
+          },
+          {
+            "task": "multiclass",
+            "exact_arrays": 27,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "62f21c9456b7f15c5683d3084f4c09a2de19b64622b7b97f9dd45fc951379aa9"
+          },
+          {
+            "task": "regression",
+            "exact_arrays": 9,
+            "earlier_210_export_accepted": true,
+            "image_SHA256": "d0bb34e4bace4b9235ed905d0d69d245270f4e764ce85b469b08644c1a589174"
+          }
+        ],
+        "source_contract_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b"
+      },
+      "original_private_receipt_SHA256": "5212b72c88351ae4a2320b92dc665c2b3015dc0c3ddfd9fc703cec388b2bfb78",
+      "original_private_JUnit_SHA256": "69ab4217333a87ecbf1d55e45a70b6ea6d63a62ea68ca4ddb91e90ffa15ed562",
+      "public_JUnit": "win314_pure_targeted.xml",
+      "qualification_scope": "New exact wheel clean installation, affected tools, native boundaries/dispatch, saved-model replay and 3-task example",
+      "default_backend": "python"
+    }
+  ],
+  "new_receipt_identity_regressions": {
+    "status": "PASS_FINAL_RECEIPT_TOOLING",
+    "profile": "Windows x64 / CPython 3.14.10 exact final native consumer",
+    "counts": {
+      "tests": 32,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "files": {
+      "tools/qualify_platform.py": "4bf199d0212704ce5cd9b9b2a39604a45432782e035a1b733e7b5e25a0336c12",
+      "tools/qualification_identity.py": "915cfc7d7a71fe208524da0b9e6ec7b09d49dbb1c41ac76f53045d9794cbffe0",
+      "tests/tools/test_qualification_cache_identity.py": "5e040ba67a53d30f084869ebf03eedce6726b22e7ee2aa291413b0a644865f59"
+    },
+    "receipt_SHA256": "725e84fd691b2cbb48eba84595925b8479254d0abc0e70cd2813d47e9cb488f0",
+    "junit_SHA256": "5105e546af3eb80806d9230b6f7483d3cb14215b87bac4f5fa1f1265e89f214a",
+    "scope": "Synthetic receipt integrity and staged build-input completeness; 12 root inputs plus 2 benchmark inputs; no core full suite, build, algorithm change or scientific fit",
+    "normal_import_cache_control": "PASS in targeted suite",
+    "noncache_tamper_controls": "PASS including benchmark and historical-migration root inputs",
+    "product_or_serving_changes": false
+  },
+  "product_source_changed_since_previous_210": false,
+  "serving_contract_changed_since_previous_210": false,
+  "automatic_guard_changed": false,
+  "current_automatic_310_314_backend": "Python",
+  "explicit_native_performance": "PASS_FINITE_PREPACKAGING_BENCHMARK; see NATIVE_PROFILE_EVALUATION.json",
+  "current_artifacts": "DISTRIBUTIONS.json"
+}
