@@ -32,7 +32,10 @@ jobs:
           python-version: ${{ inputs.python }}
           allow-prereleases: false
       - name: Install bounded runner dependency from official PyPI
-        run: python -I -B -m pip --isolated --disable-pip-version-check --no-input --keyring-provider disabled install --index-url https://pypi.org/simple --only-binary=:all: psutil==7.2.2
+        run: >-
+          python -I -B -m pip --isolated --disable-pip-version-check --no-input
+          --keyring-provider disabled install --index-url https://pypi.org/simple
+          --only-binary=:all: psutil==7.2.2
       - name: Execute actual host qualification
         run: python -I -B tools/qualify_platform.py --run-id ci --backend ${{ inputs.backend }}
       - uses: actions/upload-artifact@v4
