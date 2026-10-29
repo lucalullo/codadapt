@@ -9,8 +9,8 @@
       "SHA256": "9132a454d77ef499e8e3bc454756619dc08a481c82190af86c7385d33b70abb8"
     },
     ".github/workflows/qualification.yml": {
-      "bytes": 1643,
-      "SHA256": "d4713f0525fcff0391d7dfe5809da1f167e9b2a141b9bbff54b6b71eb7ed1c42"
+      "bytes": 1676,
+      "SHA256": "42abc83f9298dd760b957de0aee695635fd57223e66c0d78328261c4c3c2ab8e"
     },
     ".gitignore": {
       "bytes": 310,
@@ -77,8 +77,8 @@
       "SHA256": "3868e7337d2998d971b3dfbee7e4a41e59ee00fa1a05cfb1127d14549e671268"
     },
     "README.md": {
-      "bytes": 4512,
-      "SHA256": "3760b088d6be7c86a306d3caf8ab44c75a276c527191436bc70ee6033c9d8ca2"
+      "bytes": 11699,
+      "SHA256": "bca470575be2852b883eb75839ba47041415a5d137be5296e3ffb05fda477ca1"
     },
     "RELEASE_NOTES.md": {
       "bytes": 2531,
