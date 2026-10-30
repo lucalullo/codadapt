@@ -26,7 +26,7 @@ def test_invalid_elf_is_rejected(data):
 def test_missing_actual_target_still_returns_failure_archive():
     # The tool deliberately rejects output paths inside ROOT. Pytest --basetemp
     # can be inside ROOT in CI, so this negative test needs an external temp dir.
-    with TemporaryDirectory(prefix='codadapt-manylinux-negative-') as temporary:
+    with TemporaryDirectory(prefix='codadapt-manylinux-negative-', dir=ROOT.parent) as temporary:
         out=Path(temporary)/'run'
         result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'tools/manylinux_release.py'),
             '--output',str(out),'--expected-python','0.0.0','--image-digest','sha256:'+'0'*64],

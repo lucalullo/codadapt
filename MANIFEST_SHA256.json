@@ -972,8 +972,8 @@
       "SHA256": "40304c5f1394bf584925f3ad86583edae7b01d0d363c7da36655000f5bb825ff"
     },
     "tests/tools/test_release_distribution_tools.py": {
-      "bytes": 2349,
-      "SHA256": "858e6cbddce8d0a8790876d8c30e3c60abb0f1e9ec307b15e23817a5f83b8b86"
+      "bytes": 2366,
+      "SHA256": "2a1596b45c266f9f2f574914b7858daba5b78030f34e079c7b7c9b3001dab1d9"
     },
     "tests/tools/test_reproducible_sdist.py": {
       "bytes": 1894,
