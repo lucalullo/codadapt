@@ -1,6 +1,7 @@
 """Real local tooling controls; they never qualify a Linux wheel or a model."""
 from pathlib import Path
 import importlib.util,json,struct,subprocess,sys,zipfile
+from tempfile import TemporaryDirectory
 import pytest
 ROOT=Path(__file__).resolve().parents[2]
 spec=importlib.util.spec_from_file_location('elf_inspection',ROOT/'tools/inspect_elf_versions.py')
@@ -22,13 +23,16 @@ def test_parse_required_symbol_versions_without_loading_library():
 def test_invalid_elf_is_rejected(data):
     with pytest.raises(ValueError):elf.inspect(data)
 
-def test_missing_actual_target_still_returns_failure_archive(tmp_path):
-    out=tmp_path/'run'
-    result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'tools/manylinux_release.py'),
-        '--output',str(out),'--expected-python','0.0.0','--image-digest','sha256:'+'0'*64],
-        capture_output=True,text=True,timeout=15)
-    assert result.returncode==1
-    with zipfile.ZipFile(out/'CODADAPT_210_EXTERNAL_RESULTS.zip') as z:
-        state=json.loads(z.read('FINAL_STATUS.json'))
-        assert state['status']=='HOLD_EXECUTION_FAILED_OR_UNAVAILABLE'
-        assert state['steps']==[] and state['manylinux_qualified'] is False
+def test_missing_actual_target_still_returns_failure_archive():
+    # The tool deliberately rejects output paths inside ROOT. Pytest --basetemp
+    # can be inside ROOT in CI, so this negative test needs an external temp dir.
+    with TemporaryDirectory(prefix='codadapt-manylinux-negative-') as temporary:
+        out=Path(temporary)/'run'
+        result=subprocess.run([sys.executable,'-I','-B',str(ROOT/'tools/manylinux_release.py'),
+            '--output',str(out),'--expected-python','0.0.0','--image-digest','sha256:'+'0'*64],
+            capture_output=True,text=True,timeout=15)
+        assert result.returncode==1
+        with zipfile.ZipFile(out/'CODADAPT_210_EXTERNAL_RESULTS.zip') as z:
+            state=json.loads(z.read('FINAL_STATUS.json'))
+            assert state['status']=='HOLD_EXECUTION_FAILED_OR_UNAVAILABLE'
+            assert state['steps']==[] and state['manylinux_qualified'] is False
