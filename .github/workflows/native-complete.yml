@@ -37,6 +37,8 @@ jobs:
           if (-not $env:INCLUDE -or -not $env:LIB) { throw 'MSVC INCLUDE/LIB environment is missing' }
           Write-Host "MSVC compiler: $compiler"
           Write-Host "MSVC linker: $linker"
+          # Preserve the verified VS Developer Command Prompt environment for setuptools.
+          Add-Content -Path $env:GITHUB_ENV -Value 'DISTUTILS_USE_SDK=1'
       - name: Launcher process-budget dependency
         run: >-
           python -I -B -m pip --isolated --disable-pip-version-check --no-input --keyring-provider disabled install --index-url https://pypi.org/simple --only-binary=:all: psutil==7.2.2
