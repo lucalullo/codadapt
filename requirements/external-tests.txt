@@ -1,0 +1,2 @@
+-r qualification.txt
+-r build.txt

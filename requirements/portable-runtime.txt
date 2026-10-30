@@ -1,0 +1,7 @@
+# Unqualified dependency-resolution candidate for a real target. Freeze actual
+# installed versions in its receipt; this file does not promise Linux/Mac support.
+numpy>=1.24
+pandas>=2.0
+scipy>=1.8
+scikit-learn>=1.4
+threadpoolctl>=3.1

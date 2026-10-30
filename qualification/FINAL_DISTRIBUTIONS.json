@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FINAL_BUILD_AND_STATIC_ABI_ONLY",
+  "version": "2.1.0",
+  "compiler": "MSVC14.51.36231/WindowsSDK10.0.26100.0",
+  "flags": "C++17,/fp:strict,/O2",
+  "native_source_contract_unchanged": true,
+  "blocked_import_repeated": false,
+  "artifacts": {
+    "codadapt-2.1.0-cp314-cp314-win_amd64.whl": {
+      "bytes": 181688,
+      "SHA256": "eebe079380145c50d700dd79e18243246b391f083391ae2db98523b5b8a87a59"
+    },
+    "codadapt-2.1.0-py3-none-any.whl": {
+      "bytes": 90766,
+      "SHA256": "029f6751b35e0047b1f1ac1612db9af6756b786642737a4e36c6b1dafc8af02b"
+    },
+    "codadapt-2.1.0.tar.gz": {
+      "bytes": 7197323,
+      "SHA256": "6e7cb372e04b6099309d902889c3313841c0679a9e35444f6efd644dd8311c00"
+    }
+  },
+  "Linux_native_wheel": null,
+  "Linux_SHA256": null,
+  "new_native_calls_verified": 0,
+  "consumer_runtime": "HOLD_EXTERNAL_PREREQUISITES",
+  "manylinux": false
+}

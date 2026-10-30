@@ -1,0 +1,2 @@
+-r windows310.txt
+lightgbm==4.6.0

@@ -1,0 +1,38 @@
+name: Proposed R3 real-host native qualification (owner execution only)
+on:
+  workflow_dispatch:
+    inputs:
+      host:
+        type: choice
+        options: [ubuntu-latest, macos-15, macos-15-intel]
+        required: true
+      python:
+        type: choice
+        options: ['3.10', '3.12', '3.13', '3.14']
+        required: true
+permissions:
+  contents: read
+jobs:
+  target:
+    runs-on: ${{ inputs.host }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        backend: [native, pure]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ inputs.python }}
+      - name: Native build, install, actual C++ calls, tests and benchmark
+        if: matrix.backend == 'native'
+        run: python -I -B tools/qualify_native_target.py --context ci --backend native --output qualification_runs/native --runtime-requirements requirements/portable-benchmark.txt --allow-public-index --run-benchmark
+      - name: Separate clean Python fallback
+        if: matrix.backend == 'pure'
+        run: python -I -B tools/qualify_native_target.py --context ci --backend pure --output qualification_runs/pure --runtime-requirements requirements/portable-runtime.txt --allow-public-index
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: results-${{ inputs.host }}-${{ inputs.python }}-${{ matrix.backend }}
+          path: qualification_runs/

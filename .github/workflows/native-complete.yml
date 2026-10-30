@@ -1,0 +1,45 @@
+name: Owner-operated final native qualification (no publication)
+on:
+  workflow_dispatch:
+    inputs:
+      host:
+        type: choice
+        options: [ubuntu-latest, windows-latest, macos-15, macos-15-intel]
+        required: true
+      python:
+        description: Requested CPython patch/minor; actual version is recorded
+        default: '3.13.15'
+        required: true
+permissions:
+  contents: read
+jobs:
+  qualify:
+    runs-on: ${{ inputs.host }}
+    timeout-minutes: 35
+    env:
+      NETRC: /dev/null
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ inputs.python }}
+      - name: Launcher process-budget dependency
+        run: >-
+          python -I -B -m pip --isolated --disable-pip-version-check --no-input --keyring-provider disabled install --index-url https://pypi.org/simple --only-binary=:all: psutil==7.2.2
+      - name: Actual host chain with failure ZIP
+        if: always()
+        shell: python
+        env:
+          CODADAPT_EXPECTED_PYTHON: ${{ inputs.python }}
+        run: |
+          import os, subprocess, sys
+          raise SystemExit(subprocess.call([
+              sys.executable, '-I', '-B', 'tools/run_external.py',
+              '--context', 'ci', '--expected-python', os.environ['CODADAPT_EXPECTED_PYTHON'],
+              '--output', 'qualification_runs/final', '--allow-public-index']))
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: codadapt-${{ inputs.host }}-${{ inputs.python }}
+          path: qualification_runs/final/CODADAPT_210_EXTERNAL_RESULTS.zip
+          if-no-files-found: warn

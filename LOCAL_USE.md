@@ -1,20 +1,13 @@
-# Use the proposed local candidate
+# CodAdapt 2.1.0 — current review summary
 
-Use the exact tested Windowsx64 Python3.14.10 pins in requirements/windows314.txt.
-Install the matching proposed development wheel from the separately supplied
-artifact folder into a new authorized venv. No compiler is needed for a wheel.
-Use the pure wheel for Python-only inference. On314the automatic backend remains
-Python even when a native wheel is installed. Private explicit-native contexts
-are qualification tools, not a new public parameter.
+The internal repository is ready for owner review. Product sources, API,
+C++17 arithmetic and the serving contract are unchanged. Actual Kaggle evidence
+is in qualification/KAGGLE_NATIVE_20261029.json; current scope and remaining
+unverified targets are in docs/COMPATIBILITY.md. Native Linux use is explicit;
+no automatic-dispatch migration is included. Full backup is deferred by the
+owner; release-only ZIPs are not a replacement for that independent backup.
 
-From this source folder run:
-`python examples/basic_usage.py --output qualification_runs/example`.
-The3basic_*.py scripts give additional synthetic mixed-frame examples.
-For complete tests, install requirements/qualification.txt and provide matching
-dist/ or CODADAPT_TEST_DIST, then run `python -m pytest`.
-The3.10optional EBM component and3.12fresh runtime remain environment-gated;
-do not weaken Windows protections. See GATES_REPORT.md before interpreting PASS.
-
-See docs/NATIVE_PROFILE_DECISION.md for the measured explicit-native path;
-installing a native wheel on310/314 does not activate it automatically. The
-current final artifact identities and new checks are in RAPPORTO_FINALE.md.
+Multiclass research continues separately. No new predictive advantage is claimed.
+Publication and transfer require the owner's approval and actual downloaded
+artifact tests. See docs/INSTALLATION.md, docs/QUALIFICATION.md,
+docs/PERSISTENCE.md and docs/RELEASE_210.md.

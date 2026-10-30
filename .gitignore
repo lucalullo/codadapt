@@ -24,3 +24,6 @@ dist/
 .ipynb_checkpoints/
 .coverage
 htmlcov/
+
+# Private/cache contamination must never enter a public-review payload
+PRIVATE_CODEX/

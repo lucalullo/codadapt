@@ -3,9 +3,11 @@ include native/memory_read.cpp
 include native/toolchain_smoke.cpp
 recursive-include src/codadapt *.py *.json
 recursive-include docs *.md
+recursive-include qualification *.json *.xml *.md
 recursive-include tests *.py *.npz
 recursive-include tools *.py
 recursive-include examples *.py
+recursive-include examples *.ipynb
 recursive-include requirements *.txt
 include CHANGELOG.md RELEASE_NOTES.md SECURITY.md CONTRIBUTING.md
 include MIGRATION_PLAN.md ISTRUZIONI_TRASFERIMENTO_GITHUB.md

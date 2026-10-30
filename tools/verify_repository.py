@@ -5,9 +5,20 @@ import json
 
 ROOT=Path(__file__).resolve().parents[1]
 
+def validate_public_path(rel):
+    """A hash does not make private material or generated caches publishable."""
+    parts=rel.split('/')
+    forbidden={'.git','.venv','__pycache__','private_codex','results',
+               '.pytest_cache','.ruff_cache','.mypy_cache','.ipynb_checkpoints'}
+    if (PurePosixPath(rel).is_absolute() or ':' in rel or '\\' in rel
+            or any(p in ('','.','..') or p.lower() in forbidden for p in parts)
+            or rel.endswith(('.pyc','.pyo'))):
+        raise ValueError('Non-distributable manifest path: '+rel)
+
 def main():
     manifest=json.loads((ROOT/'MANIFEST_SHA256.json').read_text(encoding='utf-8'))
     for rel,row in manifest['files'].items():
+        validate_public_path(rel)
         name=PurePosixPath(rel)
         if name.is_absolute() or ':' in rel or '\\' in rel or any(p in ('','.','..') for p in rel.split('/')):
             raise ValueError('Invalid manifest path')

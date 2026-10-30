@@ -1,63 +1,46 @@
-# Reproducible qualification on a real target machine
+# Tests and actual-host qualification
 
-Use an authorized Windows, Linux or real macOS host. An emulator or cross-build
-alone does not qualify another OS. Install a C++17 compiler only through the
-owner's normal authorized process. Do not change security policies.
+The default suite is selected by pyproject.toml: native, legacy and tool tests.
+Four historical expected failures remain explicit; the old path-injection
+packaging test remains retained but excluded. No test was deleted to gain PASS.
+Build distributions first or supply CODADAPT_TEST_DIST to artifact tests.
 
-First install psutil==7.2.2 in the authorized interpreter that launches the runner
-(from official PyPI or an authorized offline wheelhouse). This is separate from
-the clean consumers. From this folder, using that target CPython interpreter:
-`python tools/qualify_platform.py --run-id host_python_native --backend native`
-Then a separate pure run:
-`python tools/qualify_platform.py --run-id host_python_pure --backend pure`.
-Windows native builds require an authorized x64 MSVC development shell.
-Optional `--wheelhouse /authorized/wheels` makes installs offline; it must
-contain all pinned runtime/build/test wheels for that OS/ABI. Otherwise only
-official PyPI is used, without credentials or user package configuration.
-Both commands create new isolated build and consumer environments, capture
-logs, compile the sdist/wheel, run three-task/persistence/determinism/engine
-probes and the preserved suite. Existing run directories are never overwritten.
+```text
+python tools/verify_repository.py
+python -m pytest
+```
 
-Outputs are under qualification_runs/<run-id>. Keep RESULT.json, all logs,
-install-report.json, junit.xml, probe/RESULT.json, dist and RECEIPT_MANIFEST.json.
-`python tools/verify_qualification_receipt.py qualification_runs/<run-id>`
-verifies source/runner identity and recorded hashes without executing models
-or commands from a receipt. This verifies consistency, not authenticity of an
-unknown sender or automatic platform promotion. Review the actual host,
-failures/skips, numerical equality, memory and timing results before promotion.
+The original Kaggle native/pure consumers and exact hashes are recorded in
+[KAGGLE_NATIVE_20261029.json](../qualification/KAGGLE_NATIVE_20261029.json).
+These full-suite results are reused only for unchanged product bytes, not as
+newly executed tests of refreshed metadata or another consumer. New tool tests
+and delivery checks are separately recorded in the delivery report.
 
-A PASS requires zero unexplained failures, declared expected failures/skips,
-clean consumer installation and matching artifact/source hashes. Require exact
-Python/native outputs within a runtime on the finite corpus. Record cross-OS
-differences separately. The native median batch2048 performance guard is
-<=1.10xPython on each engineering task; this does not replace independent
-predictive evidence. Whole-process memory is not model-only RAM.
+For a real authorized Windows/Linux/macOS host, install psutil==7.2.2 in the
+launcher environment, then use a NEW output and the exact artifact/paired sdist:
 
-The old legacy packaging test uses host-path injection and is retained but
-excluded from the standard command. It is not counted as PASS. This runner's
-genuinely clean consumer install and end-to-end probe replace that harness.
-No test failure is silently converted into a product PASS.
+```text
+python -I -B tools/run_external.py --context ci --output qualification_runs/new_host --native-wheel /path/native.whl --expected-wheel-sha256 TRUSTED_SHA256 --sdist /path/paired.tar.gz --allow-public-index
+```
 
-CI is provided as a manually triggered proposed matrix and has NOT been run
-on GitHub. Its existence does not qualify Linux/macOS or any new runtime.
+For actual Kaggle choose --context kaggle --expected-python 3.13.15. An authorized
+offline wheelhouse can replace --allow-public-index. This full runner tests the
+native consumer, exact outputs, persistence, pure fallback and fixed benchmarks.
+It returns logs and failure/skips as well as success. Do not execute unknown
+returned code or load unknown models merely to validate a receipt.
 
-The default `python -m pytest` command selects native,legacy,tools. Build local
-dist/ before artifact tests, or provide CODADAPT_TEST_DIST. No missing artifact
-is silently declared PASS. The preserved path-injection packaging module is
-explicitly excluded in pyproject; new distribution-content tests and genuine
-clean consumers replace it. Historical XFAILs remain explicit.
+To build and test a new target from source:
 
-Schema2 binds tools,tests,pins and build configuration as well as source identity.
-The runner records 300second stage,1800second total and1.5GiB sampled owned-tree
-budgets. It cleans recorded PID/birth-matched children. Performance HOLD does not
-become automatic platform promotion. See CI_AND_RUNNER_REVIEW.md.
+```text
+python tools/qualify_platform.py --run-id new_native --backend native
+python tools/qualify_platform.py --run-id new_pure --backend pure
+python tools/verify_qualification_receipt.py qualification_runs/new_native
+```
 
-The final 2.1.0 wheels have been installed and executed in genuinely fresh
-Windows x64 / CPython 3.14.10 and 3.10.22 native and pure consumers. The final
-targeted regressions are recorded in [RAPPORTO_FINALE.md](../RAPPORTO_FINALE.md).
-The earlier actual 2.1.0 full native suite on 3.14 passed 1012 tests, with
-3 skips and 4 historical XFAILs; it is reused only for unchanged product code.
-The full 3.10 optional profile still has 12 recorded EBM DLL policy errors,
-while its independent core checks pass. The pandas prerequisite denial applies
-to the fresh 3.12 runtime, not to every new wheel. Linux/macOS remain untested.
-No previous run is relabelled as a newly executed final-artifact test.
+Follow the exact target pins. A compatibility range or CI file is not evidence.
+Fresh dependency installation, native import/calls, numerical equality, API,
+persistence and costs need real execution. A package-only installation without
+dependencies or a smoke using existing host dependencies has a narrower scope.
+Never label it a fully clean consumer. No App Control, WSL or admin restriction
+may be bypassed. Prepared workflows are manual and do not publish packages.
+See [CI review](CI_AND_RUNNER_REVIEW.md) and [compatibility](COMPATIBILITY.md).

@@ -1,0 +1,24 @@
+{
+  "version": "2.1.0",
+  "state": "BUILD_ONLY_NOT_R3_RUNTIME_QUALIFIED",
+  "files": {
+    "codadapt-2.1.0-cp314-cp314-win_amd64.whl": {
+      "bytes": 184550,
+      "SHA256": "2e15a6f7a64da5ee7c0ff506753f899f613aec5752258e1c573a0feee433f7c4"
+    },
+    "codadapt-2.1.0-py3-none-any.whl": {
+      "bytes": 93627,
+      "SHA256": "013bbfa980c0bf1165700cad0994fcc7f1568cc8b5573f15d8a56a2d08d8f348"
+    },
+    "codadapt-2.1.0.tar.gz": {
+      "bytes": 7189946,
+      "SHA256": "d63f90febafd9f6bb32c817a13509b3ea4db082c674dee3ccc47e09e0683c167"
+    }
+  },
+  "Windows_extension": "codadapt/_native_kernel.cp314-win_amd64.pyd",
+  "Windows_extension_SHA256": "f7c580150d3edb42a3a04ca51093549493f62c44a3517688d7926cb0051a3561",
+  "Linux_native_wheel": null,
+  "Linux_SHA256": null,
+  "sdist_refresh": "Only credential-free runner env changed after nativebuild;wheel runtime/metadata inputs unchanged",
+  "actual_native_compilation": "MSVC14.51.36231/WindowsSDK10.0.26100.0,C++17,/fp:strict;newconsumer import not retried"
+}

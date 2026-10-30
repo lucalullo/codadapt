@@ -1,50 +1,64 @@
-# Local installation and source builds
+# Install CodAdapt 2.1.0
 
-This folder prepares the proposed 2.1.0 candidate for manual review. It is not
-an approved new index release. Use an authorized local wheel or build from
-source, and match OS, CPU architecture and CPython ABI exactly.
+No upload is performed by this repository. Use an owner-approved local artifact
+and compare its SHA-256 with the supplied distribution manifest before installing.
 
-Create a new environment with `python -m venv .venv` and use its interpreter
-for each command. Review [the gate report](../GATES_REPORT.md) before selecting
-a platform or artifact. The requirements/windows310.txt, windows312.txt and
-windows314.txt files describe exact dependency profiles; the current actually executed scope
-is in COMPATIBILITY.md. A requirements file does not qualify a Python patch or OS. A permitted
-metadata range is not a support matrix.
+## Exact verified native Kaggle profile
 
-Install a matching wheel from the separate authorized artifact folder with
-`python -m pip install <matching-local-wheel.whl>`. A prebuilt native wheel
-needs no compiler, but still needs its ordinary C++ runtime and OS permission
-to load. Pure wheels contain no native extension. Never weaken OS protections
-or relocate blocked dependencies to obtain a PASS.
+Linux x86-64, CPython 3.13.15, glibc 2.39; NumPy 2.5.4, pandas 3.1.0,
+SciPy 1.18.1, scikit-learn 1.9.1. Full pins are requirements/external-current.txt.
+The wheel's original SHA-256 is
+`f038373275a7de9f5ca7e5e4ff7ecaef591b0507b7b4d52e7ffc21b0ac414d65`.
 
-## Build from source
+In a new authorized environment on that profile:
 
-In a separate build environment install requirements/build.txt, then run
-`python -m build --wheel --sdist --no-isolation`. The default produces a pure
-wheel. For a native build, set the process-local `CODADAPT_BUILD_NATIVE=1` and
-run the same command from an authorized compiler shell. C++17 MSVC and Windows
-SDK, GCC/Clang, or Apple Clang are used on their respective systems. Native
-wheels are ABI-specific, not abi3.
+```text
+python -m venv .venv
+```
 
-Generated dist/, wheel/sdist, caches and qualification outputs are not tracked
-repository content. Build instructions for another OS do not demonstrate that
-it has been tested. Build commands do not publish anything.
+Use `.venv/bin/python` on Linux/macOS or `.venv\Scripts\python.exe` on Windows
+for subsequent commands. Windows/macOS cannot install the supplied Linux wheel.
+Install dependencies from a single authorized index or offline wheelhouse first:
 
-## Verify the installed candidate
+```text
+python -m pip install --index-url https://pypi.org/simple -r requirements/external-current.txt
+python -m pip install --no-deps /path/to/codadapt-2.1.0-cp313-cp313-linux_x86_64.whl
+python -c "import codadapt; print(codadapt.__version__)"
+```
 
-Install requirements/qualification.txt in the consumer environment. Use the
-installed package rather than source-path injection. Build local dist/ first
-or set `CODADAPT_TEST_DIST` to a matching authorized artifact folder. Then run
-`python -m pytest` from the repository root. It selects native, legacy and tools
-suites, with the documented historical packaging-harness exclusion.
+A matching prebuilt native wheel does not require a compiler. Ordinary Linux
+calls use Python; explicit native use and a fail-visible diagnostic are in
+[native usage](NATIVE_PROFILE_DECISION.md). The wheel is not manylinux and must
+not be retagged. Other hosts need actual tests before being advertised.
 
-Run `python examples/basic_usage.py --output qualification_runs/example` for
-the three tasks and persistence. The basic_classification.py,
-basic_multiclass.py and basic_regression.py examples are self-contained synthetic
-API demonstrations; they are not independent predictive benchmarks.
+## Pure Python wheel
 
-For a complete isolated build, consumer installation and evidence capture use
-[QUALIFICATION.md](QUALIFICATION.md). It requires psutil in the authorized
-interpreter that launches the bounded runner. If an OS policy blocks a required
-library, retain the exact failure and use the preserved qualified candidate;
-record the new version's gate as blocked until real authorized execution succeeds.
+Install the owner-selected `codadapt-2.1.0-py3-none-any.whl` with `--no-deps`
+after installing the declared dependencies. It contains no CodAdapt C++ binary
+and uses Python fallback. The universal wheel tag is not proof of functional
+qualification on all platforms. Several artifacts share a version and filename;
+select the exact directory and manifest hash, not a wildcard.
+
+## Building from the source repository or sdist
+
+```text
+python -m pip install --index-url https://pypi.org/simple -r requirements/build.txt
+python -m build --wheel --sdist --no-isolation
+```
+
+Default Linux builds request C++17. To build purely in Python, set the environment
+variable `CODADAPT_BUILD_NATIVE=0` before the command. To explicitly request C++
+on any target, set `CODADAPT_BUILD_NATIVE=1`; an authorized compiler/SDK is needed.
+POSIX example: `CODADAPT_BUILD_NATIVE=0 python -m build --wheel --sdist --no-isolation`.
+PowerShell example: `$env:CODADAPT_BUILD_NATIVE='0'` followed by the build command.
+These settings do not change automatic inference dispatch or saved models.
+
+Build in a new staging copy so egg-info/build output does not alter the reviewed
+source tree. No global configuration or OS protections should be changed.
+macOS requires real Apple hosts. A denied DLL must be resolved by an authorized
+administrator/host, not relocated or stripped of metadata to bypass policy.
+
+Run examples and tests using [qualification](QUALIFICATION.md). A metadata check,
+source smoke with existing dependencies, or import without dependencies is not
+a full clean-consumer qualification. TestPyPI/PyPI steps belong to the owner and
+are in [RELEASE_210.md](RELEASE_210.md).

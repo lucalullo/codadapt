@@ -1,0 +1,53 @@
+{
+  "version": "2.1.0",
+  "R3": "HOLD",
+  "targets": [
+    {
+      "OS": "Linux",
+      "context": "Kaggle",
+      "CPU": "x86_64",
+      "Python": "3.13.15",
+      "source": "USER_REPORTED_TEST_NO_RAW_RECEIPT",
+      "public_commit_reported": "28f590da2ed08438a0aa1b1938c2cea7725b18de",
+      "reported_PASS": 9,
+      "FAIL": 0,
+      "HOLD": 7,
+      "SKIP": 1,
+      "wheel": "py3-none-any",
+      "native_kernel": false,
+      "native_calls": 0,
+      "automatic_backend": "Python"
+    },
+    {
+      "OS": "Linux",
+      "context": "R3nativebuild/cleanconsumer",
+      "CPU": "x86_64",
+      "Python": "3.13target",
+      "native_wheel": "NOT_PRODUCED",
+      "runtime": "NOT_TESTED",
+      "reason": "No authorized operational local/remoteLinux;WSLdenied/Dockerunavailable;no account or Git operations"
+    },
+    {
+      "OS": "Windows11",
+      "CPU": "x64",
+      "Python": "3.14.10",
+      "build": "PASS_NATIVE_WHEEL_FROM_SDIST",
+      "runtime": "HOLD_NEW_CONSUMER_PREREQUISITE_APP_CONTROL_UNCHANGED",
+      "native_calls_R3_verified": 0
+    },
+    {
+      "OS": "macOS",
+      "CPU": "Intel/AppleSilicon",
+      "runtime": "NOT_TESTED"
+    }
+  ],
+  "build_policy_tests_PASS": 13,
+  "tool_receipt_tests_PASS": 9,
+  "tests_scope": "Configuration and synthetic receipt tests, not OS/ABI execution",
+  "automatic_dispatch": "HOLD_NO_PROTECTED_SOURCE_CHANGE",
+  "native_training": false,
+  "source_contract_SHA256": "940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b",
+  "source_contract_changed": false,
+  "RELEASE": "HOLD",
+  "BACKUP_A": "HOLD"
+}

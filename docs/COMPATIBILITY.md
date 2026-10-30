@@ -1,40 +1,29 @@
-# Actual compatibility and backend selection
+# Compatibility of CodAdapt 2.1.0
 
-CodAdapt 2.1.0 metadata permits CPython 3.10–3.15. This is an installation
-constraint, not a promise that every OS, patch and dependency set is qualified.
+| Profile / exact artifact | Observed evidence | Scope/status |
+|---|---|---|
+| Kaggle Linux x86-64 / CPython 3.13.15 / glibc 2.39, original native wheel | 1079 PASS / 3 SKIP / 4 XFAIL; 200 C++ calls, 35 exact arrays; persistence and benchmark | PASS for that original host/wheel/pin set |
+| Same host, original pure wheel | Separate clean consumer: 1029 PASS / 53 SKIP / 4 XFAIL | PASS for that original Python artifact/profile |
+| Native manylinux wheel | No actual baseline build/repair and final consumer proof | HOLD; not provided as manylinux |
+| New native Windows release distributions | Prior build/static checks do not establish execution of these bytes | Excluded from delivered qualified native artifacts |
+| macOS Intel / Apple Silicon | No actual Mac execution | NOT TESTED; no qualified native wheel supplied |
+| Historical Windows 3.10/3.12/3.14 source/runtime profiles | Earlier finite evidence is preserved with its identities | Historical scope only; not a new build/consumer PASS |
 
-| Windows x64 exact profile | Actual 2.1.0 execution | Explicit C++ | Normal automatic selection |
-|---|---|---|---|
-| CPython 3.14.10, requirements/windows314.txt | Clean native and pure consumers; inherited full native suite 1012 PASS, 3 SKIP, 4 historical XFAIL; final affected checks separately recorded | Finite correctness and performance PASS | Python |
-| CPython 3.10.22, requirements/windows310.txt | Core native and pure PASS; full suite 1002 PASS, 1 SKIP, 4 XFAIL, 12 optional EBM DLL policy errors | Core finite correctness/performance PASS; full optional profile HOLD | Python |
-| CPython 3.12.10, requirements/windows312.txt | Native/pure builds; fresh runtime HOLD at blocked pandas prerequisite | Historical preserved G6-R1 evidence only | Existing guard allows native if extension/pins match; not a fresh 2.1.0 runtime PASS |
-| Other available Windows patches 3.11.18, 3.12.16, 3.13.18, 3.15.2 | Existing runtime/dependency policy blockers; no changed conditions for another denied load | Not newly qualified | Python |
-| Linux or macOS, x64/ARM64 | NOT TESTED: no authorized operational real environment available | Not qualified | Python; this does not establish whole-package support |
+The native Linux wheel and kernel identities are in
+[KAGGLE_NATIVE_20261029.json](../qualification/KAGGLE_NATIVE_20261029.json).
+The kernel references GLIBC_2.34 and GLIBCXX_3.4.29; it was exercised on glibc 2.39.
+This is not a manylinux certificate or a guarantee for all later glibc hosts.
+See [MANYLINUX_RELEASE.md](MANYLINUX_RELEASE.md) for a real build/repair protocol.
 
-The full native suite is not a claim that the pure wheel ran every legacy test.
-Its selected fallback/boundary/packaging checks and three-task/persistence probes
-are separately recorded. The final targeted regressions on newly rebuilt exact
-artifacts are in [the final report](../RAPPORTO_FINALE.md). The original full-suite
-receipts remain historical evidence for unchanged product code, not a rerun.
+Python metadata accepts >=3.10,<3.16; availability and execution of dependencies
+must still be checked on each target. Older matrix/receipt files retained in
+qualification/ are historical and do not supersede this declared scope.
 
-An installed native wheel, an explicitly tested C++ path and an automatically
-selected C++ path are different facts. The private test selector is not a stable
-public estimator parameter. On 3.10/3.14 the default remains Python despite
-measured explicit-native gains. [NATIVE_PROFILE_DECISION.md](NATIVE_PROFILE_DECISION.md)
-contains exact pins, timings and the persistence reason for preserving the guard.
-Missing-extension fallback is expected; DLL/ABI/App Control errors are not
-silently relabelled as successful native execution.
+Automatic dispatch is unchanged: native is eligible only on its exact historical
+Windows CPython 3.12.10/dependency guard, if a valid module exists. Linux and other
+profiles use Python by default. Advanced explicit native inference is documented
+separately; no estimator parameter or serving identity migration is introduced.
 
-## Historical and external boundaries
-
-The preserved Windows 3.12.10 G6-R1 runtime has its own qualified automatic native
-behavior. The R2 fresh consumer failed a pandas DLL import; its old full suite
-used an already authorized G6-R1 runtime. Neither result qualifies a fresh final
-2.1.0/3.12 runtime. Actual 2.1.0/3.14 and core 3.10 installs were executed later.
-The optional 3.10 EBM error is preserved; no skip, alias or policy bypass fixes it.
-
-The 3.11 runner selects older compatible dependency candidates because the newer
-NumPy/SciPy pins require Python 3.12. Selection and build metadata are not runtime
-qualification. Linux/macOS require real authorized executions. No cross-build,
-CI configuration or predecessor-platform result replaces them. Retain exact
-producing environments for models; [PERSISTENCE.md](PERSISTENCE.md) states limits.
+SKIP and XFAIL remain separate from PASS. Four expected failures concern weighted
+row-repetition invariance and mixed NumPy object matrices; use supported pandas
+DataFrames for mixed data. Array-API tests not enabled are not claimed as passed.

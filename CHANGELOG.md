@@ -1,33 +1,13 @@
 # Changelog
 
-Final technical correction: unify receipt identities across producer, verifier
-and synthetic tests; exclude normal __pycache__ without ignoring other inputs.
-Verify before/after ordinary imports. Finalize 38 manual removal proposals from
-59 historical decisions, including 4 obsolete workflows. Preserve every 2.1.0
-product byte and serving contract. Explicit native 3.10/3.14 measurements are
-separate from automatic dispatch, which remains unchanged. See RAPPORTO_FINALE.md.
+## 2.1.0 — prepared for owner review
 
-## Proposed 2.1.0 — local review candidate, publication pending approval
-
-- Carry forward the G6-R1 ordered C++17 inference kernel and explicit Python
-  fallback, bounded large-batch allocation and guarded numeric DataFrame path.
-- Carry forward optional `class_weight="balanced"`, calculated internally from
-  effective positive TRAIN weight mass and combined once with `sample_weight`.
-- Carry forward source-bound serving artifacts, integrity validation and
-  commit-bound export receipts.
-- Prepare coherent 2.1.0 package metadata, source fingerprints and serving
-  contract in a new independent copy. Rebuild distributions for that exact identity.
-- Select native, legacy and tools suites in the standard pytest command; retain
-  historical expected failures and the documented obsolete harness exclusion.
-- Provide bounded manual qualification, artifact/input identity validation,
-  restored documentation/examples and an explicit plan for 59 historical paths.
-
-No new learning strategy or certified multiclass accuracy improvement is added.
-Default `class_weight=None`, the regression behavior and the conservative
-automatic backend guard are preserved. Current qualification results and open
-gates are in [GATES_REPORT.md](GATES_REPORT.md). Historical entries below keep
-their original scope and do not qualify this new version automatically.
-
+Retain the verified coded-memory engine, ordered C++17 reader and explicit Python
+fallback. Preserve the internal optional TRAIN-mass class balancing, weights,
+source-bound serving and compatible estimator interface. Consolidate installation,
+scope, manual qualification, examples and integrity documentation. Preserve the
+automatic guard and serving fingerprint. No new multiclass strategy or general
+performance superiority is claimed. See RELEASE_NOTES.md and docs/COMPATIBILITY.md.
 
 ---
 

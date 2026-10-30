@@ -1,0 +1,48 @@
+name: Proposed exact manylinux build and consumer qualification (no publication)
+on:
+  workflow_dispatch:
+    inputs:
+      image_digest:
+        description: Approved PyPA manylinux_2_28_x86_64 digest, sha256 plus 64 hex characters
+        required: true
+      python:
+        description: Exact expected CPython patch already present in approved image
+        default: '3.13.15'
+        required: true
+permissions:
+  contents: read
+jobs:
+  qualify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Owner-authorized pinned container, no privileged mode or publication
+        shell: python
+        env:
+          APPROVED_IMAGE_DIGEST: ${{ inputs.image_digest }}
+          EXPECTED_PYTHON: ${{ inputs.python }}
+        run: |
+          import os, pathlib, re, subprocess
+          digest=os.environ['APPROVED_IMAGE_DIGEST']
+          version=os.environ['EXPECTED_PYTHON']
+          if not re.fullmatch(r'sha256:[a-f0-9]{64}',digest):raise ValueError('Pinned digest required')
+          if not re.fullmatch(r'3\.(13|14)\.\d+',version):raise ValueError('Explicit supported proposal minor required')
+          abi='cp'+''.join(version.split('.')[:2])
+          source=pathlib.Path.cwd().resolve();output=source/'qualification_runs/manylinux'
+          output.mkdir(parents=True,exist_ok=False)
+          image='quay.io/pypa/manylinux_2_28_x86_64@'+digest
+          command=['docker','run','--rm','--memory=2g','--cpus=2',
+              '--mount','type=bind,src='+str(source)+',dst=/source,readonly',
+              '--mount','type=bind,src='+str(output)+',dst=/work',image,
+              '/opt/python/'+abi+'-'+abi+'/bin/python','-I','-B','/source/tools/manylinux_release.py',
+              '--output','/work/run','--expected-python',version,'--image-digest',digest,'--allow-public-index']
+          raise SystemExit(subprocess.call(command))
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: codadapt-2.1.0-manylinux-results
+          path: qualification_runs/manylinux/run/CODADAPT_210_EXTERNAL_RESULTS.zip
+          if-no-files-found: warn
