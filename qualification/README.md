@@ -1,13 +1,11 @@
-# Qualification evidence index
+# Evidence index
 
-KAGGLE_NATIVE_20261029.json is the current original-artifact evidence for Kaggle
-Linux CPython 3.13.15. It records actual native calls, exact comparisons, full
-native/pure suite outcomes and artifact hashes. Raw original receipts remain
-preserved outside this public source tree. Hashes establish integrity against
-the owner-supplied reference, not independent remote-runner authentication.
+OWNER_REPORTED_313.json records the four source-workflow successes and later Kaggle
+commit test reported by the owner. They were not fetched/replayed locally and do
+not automatically qualify newly built artifacts.
 
-Older XML/JSON files here retain the exact historical runtime/artifact scope;
-they are not tests of a new build just because the version is also 2.1.0. The
-authoritative current support summary is docs/COMPATIBILITY.md. Refreshed source
-documentation/metadata has separate build and test receipts in the delivery.
-No platform is promoted by a workflow, skipped check or synthetic receipt.
+KAGGLE_NATIVE_20261029.json preserves separately acquired original-wheel evidence,
+including 200 actual C++ calls and 35 exact arrays. Other XML/JSON files retain
+their own historical identities; do not relabel them as current artifact tests.
+Local final-package results and hashes are in the enclosing delivery report.
+See docs/COMPATIBILITY.md for scope and docs/BUILD_DISTRIBUTIONS.md for procedures.

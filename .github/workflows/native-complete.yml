@@ -7,7 +7,7 @@ on:
         options: [ubuntu-latest, windows-latest, macos-15, macos-15-intel]
         required: true
       python:
-        description: Requested CPython patch/minor; actual version is recorded
+        description: Requested CPython patch; actual version is recorded
         default: '3.13.15'
         required: true
 permissions:
@@ -16,49 +16,72 @@ jobs:
   qualify:
     runs-on: ${{ inputs.host }}
     timeout-minutes: 35
-    env:
-      NETRC: /dev/null
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ inputs.python }}
-      - name: Install LightGBM OpenMP runtime (macOS only)
-        if: runner.os == 'macOS'
-        shell: bash
-        run: |
-          brew install libomp
-          test -f "$(brew --prefix libomp)/lib/libomp.dylib"
-      - name: Activate Microsoft C++ compiler (Windows only)
+          allow-prereleases: false
+      - name: Activate MSVC x64 and Windows SDK in the job environment
         if: runner.os == 'Windows'
-        uses: ilammy/msvc-dev-cmd@0b201ec74fa43914dc39ae48a89fd1d8cb592756 # v1.13.0
+        uses: ilammy/msvc-dev-cmd@0b201ec74fa43914dc39ae48a89fd1d8cb592756
         with:
-          arch: amd64
-      - name: Verify Microsoft C++ environment (Windows only)
+          arch: x64
+      - name: Verify compiler environment and select it for setuptools
         if: runner.os == 'Windows'
-        shell: pwsh
+        shell: python
         run: |
-          $compiler = (Get-Command cl.exe -ErrorAction Stop).Source
-          $linker = (Get-Command link.exe -ErrorAction Stop).Source
-          if (-not $env:INCLUDE -or -not $env:LIB) { throw 'MSVC INCLUDE/LIB environment is missing' }
-          Write-Host "MSVC compiler: $compiler"
-          Write-Host "MSVC linker: $linker"
-          # Preserve the verified VS Developer Command Prompt environment for setuptools.
-          Add-Content -Path $env:GITHUB_ENV -Value 'DISTUTILS_USE_SDK=1'
+          import json, os, shutil, subprocess
+          required = ('INCLUDE', 'LIB', 'LIBPATH', 'WindowsSdkDir', 'WindowsSDKVersion', 'UniversalCRTSdkDir', 'UCRTVersion', 'VCToolsInstallDir')
+          missing = [key for key in required if not os.environ.get(key)]
+          cl = shutil.which('cl.exe')
+          link = shutil.which('link.exe')
+          if missing or not cl or not link:
+              raise RuntimeError('Incomplete MSVC/SDK environment: ' + repr(missing))
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as stream:
+              stream.write('DISTUTILS_USE_SDK=1\nMSSdk=1\n')
+          probe = subprocess.run([cl, '/Bv'], capture_output=True, text=True, errors='replace')
+          print(json.dumps({'cl': cl, 'link': link, 'sdk_version': os.environ['WindowsSDKVersion'], 'probe_returncode': probe.returncode}))
+          print(probe.stdout)
+          print(probe.stderr)
+          # cl /Bv may return 2 without a source; the actual wheel compilation
+          # remains mandatory. Finding cl alone is not a successful build.
+      - name: Install Homebrew libomp and export actual loader paths
+        if: runner.os == 'macOS'
+        shell: python
+        run: |
+          import json, os, pathlib, subprocess
+          subprocess.run(['brew', 'install', 'libomp'], check=True)
+          prefix = subprocess.check_output(['brew', '--prefix', 'libomp'], text=True).strip()
+          library = pathlib.Path(prefix) / 'lib' / 'libomp.dylib'
+          if not library.is_file():
+              raise RuntimeError('Homebrew libomp runtime is missing')
+          directory = str(library.parent)
+          values = {'LIBOMP_PREFIX': prefix,
+                    'DYLD_LIBRARY_PATH': directory + (':' + os.environ['DYLD_LIBRARY_PATH'] if os.environ.get('DYLD_LIBRARY_PATH') else ''),
+                    'DYLD_FALLBACK_LIBRARY_PATH': directory + ':' + os.environ.get('DYLD_FALLBACK_LIBRARY_PATH', '/usr/local/lib:/usr/lib')}
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as stream:
+              for key, value in values.items():
+                  stream.write(key + '=' + value + '\n')
+          print(json.dumps({'libomp': str(library), 'architecture': __import__('platform').machine()}))
       - name: Launcher process-budget dependency
         run: >-
-          python -I -B -m pip --isolated --disable-pip-version-check --no-input --keyring-provider disabled install --index-url https://pypi.org/simple --only-binary=:all: psutil==7.2.2
+          python -I -B -m pip --isolated --disable-pip-version-check --no-input
+          --keyring-provider disabled install --index-url https://pypi.org/simple
+          --only-binary=:all: psutil==7.2.2
       - name: Actual host chain with failure ZIP
-        if: always()
         shell: python
         env:
           CODADAPT_EXPECTED_PYTHON: ${{ inputs.python }}
         run: |
           import os, subprocess, sys
+          environment = dict(os.environ, NETRC=os.devnull, PIP_CONFIG_FILE=os.devnull)
           raise SystemExit(subprocess.call([
               sys.executable, '-I', '-B', 'tools/run_external.py',
               '--context', 'ci', '--expected-python', os.environ['CODADAPT_EXPECTED_PYTHON'],
-              '--output', 'qualification_runs/final', '--allow-public-index']))
+              '--output', 'qualification_runs/final', '--allow-public-index'], env=environment))
       - uses: actions/upload-artifact@v4
         if: always()
         with:

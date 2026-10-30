@@ -1,29 +1,27 @@
-# Compatibility of CodAdapt 2.1.0
+# Compatibility and evidence categories
 
-| Profile / exact artifact | Observed evidence | Scope/status |
-|---|---|---|
-| Kaggle Linux x86-64 / CPython 3.13.15 / glibc 2.39, original native wheel | 1079 PASS / 3 SKIP / 4 XFAIL; 200 C++ calls, 35 exact arrays; persistence and benchmark | PASS for that original host/wheel/pin set |
-| Same host, original pure wheel | Separate clean consumer: 1029 PASS / 53 SKIP / 4 XFAIL | PASS for that original Python artifact/profile |
-| Native manylinux wheel | No actual baseline build/repair and final consumer proof | HOLD; not provided as manylinux |
-| New native Windows release distributions | Prior build/static checks do not establish execution of these bytes | Excluded from delivered qualified native artifacts |
-| macOS Intel / Apple Silicon | No actual Mac execution | NOT TESTED; no qualified native wheel supplied |
-| Historical Windows 3.10/3.12/3.14 source/runtime profiles | Earlier finite evidence is preserved with its identities | Historical scope only; not a new build/consumer PASS |
+The owner reports green native-complete.yml source-workflow runs on Linux x86-64,
+Windows, macOS 15 Apple Silicon and macOS 15 Intel, all Python 3.13.15. The owner
+also reports successful Kaggle three-task/persistence/explicit C++ checks from
+commit 1637747ab0fa4996ca180d3220053bab36b014ec. The local candidate was corrected
+without fetching that commit. Source reports and local reproductions are distinct.
+See qualification/OWNER_REPORTED_313.json; no run log or artifact was fetched.
 
-The native Linux wheel and kernel identities are in
-[KAGGLE_NATIVE_20261029.json](../qualification/KAGGLE_NATIVE_20261029.json).
-The kernel references GLIBC_2.34 and GLIBCXX_3.4.29; it was exercised on glibc 2.39.
-This is not a manylinux certificate or a guarantee for all later glibc hosts.
-See [MANYLINUX_RELEASE.md](MANYLINUX_RELEASE.md) for a real build/repair protocol.
+The earlier original Kaggle artifacts have separately acquired hash-bound proof:
+1079 PASS/3 SKIP/4 XFAIL, 200 C++ calls and 35 exact arrays for the native wheel;
+1029 PASS/53 SKIP/4 XFAIL for pure. These apply to the exact original artifact and
+profile in qualification/KAGGLE_NATIVE_20261029.json, not new package hashes.
 
-Python metadata accepts >=3.10,<3.16; availability and execution of dependencies
-must still be checked on each target. Older matrix/receipt files retained in
-qualification/ are historical and do not supersede this declared scope.
+The current delivery's local results bind each newly built artifact separately.
+Unavailable Linux/manylinux/macOS final consumers are HOLD. Metadata accepts
+Python >=3.10,<3.16 but does not certify all combinations. Broad dependency ranges
+are resolver constraints; qualification uses exact requirements profiles.
 
-Automatic dispatch is unchanged: native is eligible only on its exact historical
-Windows CPython 3.12.10/dependency guard, if a valid module exists. Linux and other
-profiles use Python by default. Advanced explicit native inference is documented
-separately; no estimator parameter or serving identity migration is introduced.
+Automatic dispatch is unchanged. Linux/macOS/Windows 3.13 are not added to the
+automatic native guard. C++ inference is explicitly selectable through the
+version-specific private context. Training/encoding remain Python/NumPy.
 
-SKIP and XFAIL remain separate from PASS. Four expected failures concern weighted
-row-repetition invariance and mixed NumPy object matrices; use supported pandas
-DataFrames for mixed data. Array-API tests not enabled are not claimed as passed.
+The source serving contract and old-image acceptance rules are unchanged. No
+arbitrary cross-Python/NumPy/pandas pickle portability is claimed. SKIP/XFAIL are
+not counted as PASS. No wheel is declared manylinux without actual audit/repair
+and consumer execution. See BUILD_DISTRIBUTIONS.md and QUALIFICATION.md.

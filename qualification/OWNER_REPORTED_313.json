@@ -1,0 +1,38 @@
+{
+  "provenance": "Owner message; not fetched from GitHub or independently replayed",
+  "workflow": "native-complete.yml",
+  "green_profiles": [
+    {
+      "os": "Linux",
+      "arch": "x86_64",
+      "python": "3.13.15"
+    },
+    {
+      "os": "Windows",
+      "arch": "not specified in owner message",
+      "python": "3.13.15"
+    },
+    {
+      "os": "macOS 15",
+      "arch": "arm64",
+      "python": "3.13.15"
+    },
+    {
+      "os": "macOS 15",
+      "arch": "x86_64",
+      "python": "3.13.15"
+    }
+  ],
+  "Kaggle": {
+    "commit": "1637747ab0fa4996ca180d3220053bab36b014ec",
+    "tasks": [
+      "binary",
+      "multiclass",
+      "regression",
+      "persistence",
+      "explicit C++ inference"
+    ],
+    "reported": "PASS"
+  },
+  "newly_built_artifacts_automatically_qualified": false
+}

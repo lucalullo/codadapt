@@ -30,7 +30,10 @@ def main():
     if not a.wheelhouse and not a.allow_public_index:raise ValueError('Explicit offline wheelhouse or public-index authorization required')
     out.mkdir(parents=True);record=dict(status='INCOMPLETE',system=platform.system(),machine=platform.machine(),python=sys.version,backend=a.backend,context=a.context,steps=[])
     record['runner_provenance']={k:os.environ.get(k) for k in ('GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','RUNNER_OS','RUNNER_ARCH') if os.environ.get(k)}
-    env={k:v for k,v in os.environ.items() if k.upper() in ('PATH','SYSTEMROOT','WINDIR','COMSPEC','PATHEXT','INCLUDE','LIB','LIBPATH','DISTUTILS_USE_SDK','SDKROOT','MACOSX_DEPLOYMENT_TARGET')}
+    import importlib.util
+    spec=importlib.util.spec_from_file_location('codadapt_build_environment',ROOT/'tools/build_environment.py')
+    build_environment=importlib.util.module_from_spec(spec);spec.loader.exec_module(build_environment)
+    env=build_environment.forward_environment(os.environ)
     temp=out/'tmp';temp.mkdir();env.update(TEMP=str(temp),TMP=str(temp),TMPDIR=str(temp),PIP_CONFIG_FILE=os.devnull,NETRC=os.devnull,PIP_CACHE_DIR=str(out/'pip-cache'),PYTHONDONTWRITEBYTECODE='1',PYTHONNOUSERSITE='1',OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',NUMEXPR_NUM_THREADS='1')
     location=['--no-index','--find-links',str(a.wheelhouse.resolve()),'--only-binary=:all:'] if a.wheelhouse else ['--index-url','https://pypi.org/simple','--only-binary=:all:']
     def run(label,cmd,cwd=ROOT,extra=None):
@@ -50,7 +53,7 @@ def main():
             run('create_build',[sys.executable,'-I','-B','-m','venv','--without-pip',str(build)])
             run('build_dependencies',pip(python(build))+['install','--no-compile',*location,'-r',str(ROOT/'requirements/build.txt')])
             source=out/'source';source.mkdir()
-            for folder in ('src','native','tools','tests','docs','requirements','examples','benchmarks'):
+            for folder in ('src','native','tools','tests','docs','requirements','examples','benchmarks','qualification'):
                 shutil.copytree(ROOT/folder,source/folder,ignore=shutil.ignore_patterns('__pycache__','*.pyc','*.pyd','*.so'))
             for file in ROOT.iterdir():
                 if file.is_file():shutil.copyfile(file,source/file.name)
@@ -76,6 +79,7 @@ def main():
         run('native_boundary_suite',[str(python(consumer)),'-I','-B','-m','pytest','-q',* ([] if a.full_suite else ['tests/native']),'-o','cache_dir='+str(out/'pytest-cache'),'--basetemp='+str(out/'pytest-tmp'),'--junitxml='+str(out/'junit.xml')],extra={'CODADAPT_TEST_DIST':str(out/'dist')})
         if a.run_benchmark:
             if a.backend!='native':raise ValueError('Paired benchmark requires actual native consumer')
+            run('lightgbm_preflight',[str(python(consumer)),'-I','-B','-c','import lightgbm; print(lightgbm.__version__)'])
             run('competitive_benchmark',[str(python(consumer)),'-I','-B',str(ROOT/'tools/competitive_reference.py'),'--output',str(out/'benchmark')])
         record.update(status='PASS_EXECUTED_TARGET_CORE',scope='Native boundary and3synthetic tasks; not full legacy/optional/platform or performance promotion',artifacts={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in (out/'dist').iterdir()})
     except BaseException as error:record.update(status='FAIL_OR_BLOCKED',error=repr(error));raise

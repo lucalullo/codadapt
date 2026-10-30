@@ -5,12 +5,20 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "codadapt"
 version = "2.1.0"
+authors = [{name = "Luca Lullo"}]
+keywords = ["machine-learning", "tabular", "classification", "regression", "coded-memory"]
 description = "Adaptive coded-memory learning for tabular classification and regression"
 readme = "README.md"
 requires-python = ">=3.10,<3.16"
 license = "MIT"
 license-files = ["LICENSE"]
 dependencies = ["numpy>=1.24", "pandas>=2.0", "scikit-learn>=1.4", "scipy>=1.8", "threadpoolctl>=3.1"]
+
+[project.urls]
+Homepage = "https://github.com/lucalullo/codadapt"
+Documentation = "https://github.com/lucalullo/codadapt/blob/main/README.md"
+Source = "https://github.com/lucalullo/codadapt"
+Issues = "https://github.com/lucalullo/codadapt/issues"
 
 [project.optional-dependencies]
 ebm = ["interpret-core==0.7.8"]
