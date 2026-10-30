@@ -2,7 +2,7 @@
 
 **Adaptive coded-memory learning for tabular data, with a scikit-learn-compatible Python API.**
 
-CodAdapt 2.1.0 is a machine-learning library for binary classification, multiclass classification, and single-target regression. It learns compact coded representations of numerical and categorical features and uses residual memories to produce predictions. The estimators provide familiar `fit`, `predict`, and, for classification, `predict_proba` methods.
+CodAdapt is a machine-learning library for binary classification, multiclass classification, and single-target regression. It learns compact coded representations of numerical and categorical features and uses residual memories to produce predictions. The estimators provide familiar `fit`, `predict`, and, for classification, `predict_proba` methods.
 
 ## Installation
 
