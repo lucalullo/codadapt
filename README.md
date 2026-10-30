@@ -2,17 +2,17 @@
 
 **Adaptive coded-memory learning for tabular data, with a scikit-learn-compatible Python API.**
 
-CodAdapt is a machine-learning library for binary classification, multiclass classification, and single-target regression. It learns compact coded representations of numerical and categorical features and uses residual memories to produce predictions. The estimators provide familiar `fit`, `predict`, and, for classification, `predict_proba` methods.
+CodAdapt 2.1.0 is a machine-learning library for binary classification, multiclass classification, and single-target regression. It learns compact coded representations of numerical and categorical features and uses residual memories to produce predictions. The estimators provide familiar `fit`, `predict`, and, for classification, `predict_proba` methods.
 
 ## Installation
 
-Once CodAdapt 2.1.0 is published on PyPI:
+Install CodAdapt 2.1.0 from PyPI:
 
 ```bash
 python -m pip install codadapt==2.1.0
 ```
 
-Until the release is published, install an approved local distribution matching your environment. The package declares Python `>=3.10,<3.16`; this range does not mean that every Python, dependency, and operating-system combination has been independently qualified. See the [installation guide](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md) and [compatibility notes](https://github.com/lucalullo/codadapt/blob/main/docs/COMPATIBILITY.md).
+For source builds and platform-specific installation requirements, see the [installation guide](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md). The package declares Python `>=3.10,<3.16`; the declared range is not a guarantee that every environment has been independently tested. See the [compatibility notes](https://github.com/lucalullo/codadapt/blob/main/docs/COMPATIBILITY.md).
 
 ## Quick start
 
