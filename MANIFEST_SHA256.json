@@ -528,8 +528,8 @@
       "SHA256": "22063e8db17eebd4a559d0202fffada92ed91f360b9c1dc4c2173a0cb0aa7e8f"
     },
     ".github/workflows/native-complete.yml": {
-      "bytes": 1701,
-      "SHA256": "8d7eb0247dac76d887e910b359eac573ca73d59c06f39cbf2324ab2fed9e0bf1"
+      "bytes": 2395,
+      "SHA256": "495b63ade0e6d214d72da50d34523bbb7da922c3ead0a4a6ac7befa1ff5dba8d"
     },
     ".github/workflows/native-platform-r3.yml": {
       "bytes": 1507,
