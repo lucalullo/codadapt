@@ -1,0 +1,205 @@
+name: Publish to PyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      registered_publishers_verified:
+        description: Owner checked the existing Trusted Publisher and the protected pypi environment
+        type: boolean
+        default: false
+        required: true
+      approval:
+        description: Type PUBLISH codadapt 2.1.0; protected environment approval is also mandatory
+        type: string
+        required: true
+      testpypi_run_id:
+        description: Successful manual publish-testpypi.yml run for this same commit and exact release
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: codadapt-210-publication
+  cancel-in-progress: false
+
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+  PYTHONUTF8: '1'
+
+jobs:
+  prepare:
+    if: >-
+      github.repository == 'lucalullo/codadapt' &&
+      github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' &&
+      github.actor == 'lucalullo' && github.triggering_actor == 'lucalullo'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      test_attempt: ${{ steps.test_run.outputs.test_attempt }}
+    env:
+      RELEASE_DIR: ${{ runner.temp }}/codadapt210
+      OWNER_APPROVAL: ${{ inputs.approval }}
+      TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
+      TEST_RUN_ID: ${{ inputs.testpypi_run_id }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12.10'
+      - name: Require all four exact distributions including approved CPython 3.13 manylinux
+        run: python -I -B tools/publication_guard.py contract
+      - name: Require existing publisher and owner-required environment protection
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -I -B tools/publication_guard.py gate --channel pypi
+      - name: Resolve only the successful matching TestPyPI verification artifact
+        id: test_run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -I -B tools/publication_guard.py test-run --run-id "$TEST_RUN_ID"
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          artifact-ids: ${{ steps.test_run.outputs.artifact_id }}
+          run-id: ${{ inputs.testpypi_run_id }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/codadapt210
+          merge-multiple: true
+      - name: Verify the exact archived package bytes
+        run: python -I -B tools/publication_guard.py prepare --directory "$RELEASE_DIR"
+      - name: Require the verified TestPyPI receipt and recheck its downloadable files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TEST_RUN_ATTEMPT: ${{ steps.test_run.outputs.test_attempt }}
+        run: python -I -B tools/publication_guard.py promotion --directory "$RELEASE_DIR" --run-id "$TEST_RUN_ID" --attempt "$TEST_RUN_ATTEMPT"
+      - name: Reject an unexpected or partial existing PyPI release
+        run: python -I -B tools/publication_guard.py index --channel pypi --directory "$RELEASE_DIR" --phase pre
+      - name: Install metadata checker without rebuilding CodAdapt
+        run: >-
+          python -I -B -m pip --isolated --disable-pip-version-check --no-input
+          --keyring-provider disabled install --index-url https://pypi.org/simple
+          --only-binary=:all: --no-cache-dir twine==6.2.0
+      - name: Strict metadata check on the same TestPyPI distributions
+        run: python -I -B -m twine check --strict "$RELEASE_DIR"/dist/*
+      - name: Preserve the same approved bundle and TestPyPI receipt
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: codadapt-210-pypi-prepared-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/codadapt210/bundle.zip
+            ${{ runner.temp }}/codadapt210/VERIFIED.json
+          if-no-files-found: error
+          overwrite: false
+          retention-days: 90
+
+  publish:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    # Required reviewers are configured on GitHub, not by this YAML.
+    # gate fails if the existing pypi environment lacks the owner's protection.
+    environment:
+      name: pypi
+      url: https://pypi.org/p/codadapt
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    env:
+      RELEASE_DIR: ${{ runner.temp }}/codadapt210
+      OWNER_APPROVAL: ${{ inputs.approval }}
+      TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
+      TEST_RUN_ID: ${{ inputs.testpypi_run_id }}
+      TEST_RUN_ATTEMPT: ${{ needs.prepare.outputs.test_attempt }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12.10'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: codadapt-210-pypi-prepared-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/codadapt210
+      - name: Recheck owner authorization and environment protection after approval
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -I -B tools/publication_guard.py gate --channel pypi
+      - name: Revalidate the exact package bundle before any upload
+        run: python -I -B tools/publication_guard.py prepare --directory "$RELEASE_DIR"
+      - name: Revalidate the TestPyPI proof and complete remote file set
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -I -B tools/publication_guard.py promotion --directory "$RELEASE_DIR" --run-id "$TEST_RUN_ID" --attempt "$TEST_RUN_ATTEMPT"
+      - name: Recheck PyPI immediately before upload
+        id: index
+        run: python -I -B tools/publication_guard.py index --channel pypi --directory "$RELEASE_DIR" --phase pre
+      - name: Stage the same verified upload set in the Docker-mounted workspace
+        if: steps.index.outputs.needs_upload == 'true'
+        run: python -I -B tools/publication_guard.py upload-set --directory "$RELEASE_DIR"
+      - name: Publish the same complete release using the existing Trusted Publisher
+        if: steps.index.outputs.needs_upload == 'true'
+        uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # v1.14.2
+        with:
+          repository-url: https://upload.pypi.org/legacy/
+          packages-dir: qualification_runs/publication_upload/
+          skip-existing: false
+          verify-metadata: true
+          print-hash: true
+          attestations: true
+
+  verify:
+    needs: publish
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      RELEASE_DIR: ${{ runner.temp }}/codadapt210
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12.10'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: codadapt-210-pypi-prepared-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/codadapt210
+      - name: Verify the unchanged approved bundle
+        run: python -I -B tools/publication_guard.py prepare --directory "$RELEASE_DIR"
+      - name: Download and verify every PyPI artifact before declaring completion
+        run: python -I -B tools/publication_guard.py index --channel pypi --directory "$RELEASE_DIR" --phase post
+      - name: Record only a complete, verified publication
+        run: python -I -B tools/publication_guard.py record --channel pypi --directory "$RELEASE_DIR"
+      - name: Preserve publication receipt
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: codadapt-210-pypi-verified-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/codadapt210/PUBLICATION.json
+          if-no-files-found: error
+          overwrite: false
+          retention-days: 90
+      - name: Preserve verification logs even on failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: codadapt-210-pypi-logs-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/codadapt210/*.json
+          if-no-files-found: warn
+          overwrite: false
+          retention-days: 90

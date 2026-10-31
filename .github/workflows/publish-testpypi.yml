@@ -1,0 +1,187 @@
+name: Publish to TestPyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      registered_publishers_verified:
+        description: Owner checked the existing Trusted Publisher filename and environment; no new publisher
+        type: boolean
+        default: false
+        required: true
+      approval:
+        description: Type TEST codadapt 2.1.0 to authorize this manual TestPyPI operation
+        type: string
+        required: true
+      bundle_url:
+        description: Public HTTPS location of the exact approved distribution bundle; its SHA-256 is fixed in the release plan
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: codadapt-210-publication
+  cancel-in-progress: false
+
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+  PYTHONUTF8: '1'
+
+jobs:
+  prepare:
+    if: >-
+      github.repository == 'lucalullo/codadapt' &&
+      github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' &&
+      github.actor == 'lucalullo' && github.triggering_actor == 'lucalullo'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+    env:
+      RELEASE_DIR: ${{ runner.temp }}/codadapt210
+      OWNER_APPROVAL: ${{ inputs.approval }}
+      TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12.10'
+      - name: Require all four exact distributions including approved CPython 3.13 manylinux
+        run: python -I -B tools/publication_guard.py contract
+      - name: Validate source, owner authorization and existing environment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -I -B tools/publication_guard.py gate --channel testpypi
+      - name: Fetch only the approved immutable package bundle
+        env:
+          BUNDLE_URL: ${{ inputs.bundle_url }}
+        run: python -I -B tools/publication_guard.py fetch --directory "$RELEASE_DIR"
+      - name: Verify all package bytes, README and release manifest before staging
+        run: python -I -B tools/publication_guard.py prepare --directory "$RELEASE_DIR"
+      - name: Reject an unexpected or partial existing TestPyPI release
+        run: python -I -B tools/publication_guard.py index --channel testpypi --directory "$RELEASE_DIR" --phase pre
+      - name: Install metadata checker without building CodAdapt
+        run: >-
+          python -I -B -m pip --isolated --disable-pip-version-check --no-input
+          --keyring-provider disabled install --index-url https://pypi.org/simple
+          --only-binary=:all: --no-cache-dir twine==6.2.0
+      - name: Strict metadata check of every approved distribution
+        run: python -I -B -m twine check --strict "$RELEASE_DIR"/dist/*
+      - name: Preserve the exact bundle for later jobs; never rebuild
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: codadapt-210-testpypi-prepared-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/codadapt210/bundle.zip
+          if-no-files-found: error
+          overwrite: false
+          retention-days: 90
+
+  publish:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/p/codadapt
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    env:
+      RELEASE_DIR: ${{ runner.temp }}/codadapt210
+      OWNER_APPROVAL: ${{ inputs.approval }}
+      TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12.10'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: codadapt-210-testpypi-prepared-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/codadapt210
+      - name: Repeat guards in the protected publishing job
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -I -B tools/publication_guard.py gate --channel testpypi
+      - name: Revalidate the exact bundle before any upload
+        run: python -I -B tools/publication_guard.py prepare --directory "$RELEASE_DIR"
+      - name: Recheck remote state immediately before upload
+        id: index
+        run: python -I -B tools/publication_guard.py index --channel testpypi --directory "$RELEASE_DIR" --phase pre
+      - name: Stage the exact upload set in the Docker-mounted workspace
+        if: steps.index.outputs.needs_upload == 'true'
+        run: python -I -B tools/publication_guard.py upload-set --directory "$RELEASE_DIR"
+      - name: Upload the complete qualified set using the existing Trusted Publisher
+        if: steps.index.outputs.needs_upload == 'true'
+        uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # v1.14.2
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          packages-dir: qualification_runs/publication_upload/
+          skip-existing: false
+          verify-metadata: true
+          print-hash: true
+          attestations: true
+
+  verify:
+    needs: publish
+    runs-on: windows-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      RELEASE_DIR: ${{ runner.temp }}/codadapt210
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12.10'
+          architecture: x64
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: codadapt-210-testpypi-prepared-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/codadapt210
+      - name: Verify the approved local set
+        run: python -I -B tools/publication_guard.py prepare --directory "$env:RELEASE_DIR"
+      - name: Download every TestPyPI file and verify the complete remote set
+        run: python -I -B tools/publication_guard.py index --channel testpypi --directory "$env:RELEASE_DIR" --phase post
+      - name: Test actual downloaded pure and native wheels in clean consumers
+        run: python -I -B tools/publication_guard.py consumers --directory "$env:RELEASE_DIR"
+      - name: Issue the promotion receipt only after all verifications pass
+        run: python -I -B tools/publication_guard.py receipt --directory "$env:RELEASE_DIR"
+      - name: Store the same bytes and successful TestPyPI receipt
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: codadapt-210-testpypi-verified-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/codadapt210/bundle.zip
+            ${{ runner.temp }}/codadapt210/VERIFIED.json
+          if-no-files-found: error
+          overwrite: false
+          retention-days: 90
+      - name: Preserve verification logs separately, including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: codadapt-210-testpypi-logs-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/codadapt210/*.json
+            ${{ runner.temp }}/codadapt210/*.log
+            ${{ runner.temp }}/codadapt210/probe_*/RESULT.json
+          if-no-files-found: warn
+          overwrite: false
+          retention-days: 90
