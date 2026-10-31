@@ -24,20 +24,20 @@
       "SHA256": "8c13bb4af8b2f107dc440187cf811eadb4985388ae2c8abd5fc4c69ea8884141"
     },
     "DIFF_FROM_FINAL_REVIEW.json": {
-      "bytes": 68538,
-      "SHA256": "c9002d065ac193147f3b392ed02a57723322b48b1a9073dae7c3574c4ce007e5"
+      "bytes": 68548,
+      "SHA256": "2737d8c164875aef42243cdaf032f7eefe3dfc2be1c9b2110dfd7f0cc1b29444"
     },
     "DIFF_FROM_PREVIOUS_REVIEW.json": {
-      "bytes": 68538,
-      "SHA256": "c9002d065ac193147f3b392ed02a57723322b48b1a9073dae7c3574c4ce007e5"
+      "bytes": 68548,
+      "SHA256": "2737d8c164875aef42243cdaf032f7eefe3dfc2be1c9b2110dfd7f0cc1b29444"
     },
     "DIFF_FROM_R2.json": {
-      "bytes": 68538,
-      "SHA256": "c9002d065ac193147f3b392ed02a57723322b48b1a9073dae7c3574c4ce007e5"
+      "bytes": 68548,
+      "SHA256": "2737d8c164875aef42243cdaf032f7eefe3dfc2be1c9b2110dfd7f0cc1b29444"
     },
     "FILE_COMPARISON.json": {
-      "bytes": 68538,
-      "SHA256": "c9002d065ac193147f3b392ed02a57723322b48b1a9073dae7c3574c4ce007e5"
+      "bytes": 68548,
+      "SHA256": "2737d8c164875aef42243cdaf032f7eefe3dfc2be1c9b2110dfd7f0cc1b29444"
     },
     "GATES_REPORT.md": {
       "bytes": 788,
@@ -76,12 +76,12 @@
       "SHA256": "f30ee8203903b0f1278c9d2a98d4f3ee597f9900738bb171e9c0fa00f2ea008f"
     },
     "README.md": {
-      "bytes": 7219,
-      "SHA256": "f4ce03db7f58452d6705bb301dbcfbc9653a9fd235124a81b45b079e68642898"
+      "bytes": 7238,
+      "SHA256": "98393baaa10e5cb270fe84eb012b8f7f12c3a52ec298b7d25cd9f5b958e33f0b"
     },
     "RELEASE_NOTES.md": {
-      "bytes": 1033,
-      "SHA256": "dd589a8386a46cd6df40079838b3c92558ab3be818e4f7cef4ad8d580e51902f"
+      "bytes": 1511,
+      "SHA256": "1ad43b78f6ac43f15909a686dbcee3397f239409b1cce05fa82ae671be402eef"
     },
     "REMOVALS_REQUIRING_APPROVAL.json": {
       "bytes": 20801,
@@ -160,8 +160,8 @@
       "SHA256": "9e6311cf3308b06774df1e9ec5cbbcde7a85ad625dba7ce7c34c6b030fedfaaf"
     },
     "docs/COMPATIBILITY.md": {
-      "bytes": 1737,
-      "SHA256": "3c9bb280ad177fb5ebcfb21a5337d7707c0a085e67363c8362fd3bfe9edb972d"
+      "bytes": 2547,
+      "SHA256": "1e4d722306db82677690905e21fcf117204c6d3ae8aaa1aba302be531eabfa0f"
     },
     "docs/EBM_COMPILER.md": {
       "bytes": 8154,
@@ -188,8 +188,8 @@
       "SHA256": "8d8b1d65b07e637c148fca5eab05cfb901301c8f767f21217cad552315a8d00b"
     },
     "docs/INSTALLATION.md": {
-      "bytes": 3113,
-      "SHA256": "9c3f528d8cf8e0e4a8a62d66107944bdf060f2b4f7b471c485f77276cbc9d6d5"
+      "bytes": 4439,
+      "SHA256": "64df89856184ce883da551e0c46f3d9b385eb7d61215155df10f6a94e923839d"
     },
     "docs/KAGGLE_BENCHMARK_20261029.md": {
       "bytes": 1530,
@@ -204,8 +204,8 @@
       "SHA256": "c5e8e2ccf7568eac5fbe2a0dbb9b655bde2e1f4e3995e4281d537e1d8e05e0e6"
     },
     "docs/MANYLINUX_RELEASE.md": {
-      "bytes": 4326,
-      "SHA256": "fcde1f478b9b3245354cf4ac8c208f98573ce5e57f929f5ce842904d0e7e7c48"
+      "bytes": 4883,
+      "SHA256": "ca75393b657e83ec3558efeaeed19e4a517e7f9ac6c85ee3f8fc994fb42d1081"
     },
     "docs/MIGRATION_FINALIZATION.md": {
       "bytes": 766,
@@ -228,8 +228,8 @@
       "SHA256": "422214ade795568613cb293885fce2a09563cdb7a5e865708038795d538b6e86"
     },
     "docs/QUALIFICATION.md": {
-      "bytes": 2421,
-      "SHA256": "836e6d36b27719cb9b814922a902262fd06604290a2190a016cb89ab5d13a277"
+      "bytes": 2648,
+      "SHA256": "e0cc7216ed940872de80ccd973c40f6a0ac773a6f1f1751ece0b82108e36bafe"
     },
     "docs/R3_NATIVE_INTEGRATION.md": {
       "bytes": 766,
@@ -240,8 +240,8 @@
       "SHA256": "b30c3179b311743a7fd293a77f464d8ca05c84f8af8128ae2783e3b8343f1242"
     },
     "docs/RELEASE_210.md": {
-      "bytes": 3148,
-      "SHA256": "f42367df4369602d8e3d18cbbeda03b2aedf206cde763089a415f28e505ec88a"
+      "bytes": 3317,
+      "SHA256": "05f21e5612740cbf2f404e173f4e151c51be4b4bae98d8e7550d799d928b8457"
     },
     "docs/RELEASING.md": {
       "bytes": 766,
@@ -548,8 +548,8 @@
       "SHA256": "5bada938df04727af06e2da6b1f188fbc14b709c9c82d59cd00eeb24298dab98"
     },
     ".github/workflows/native-release-linux.yml": {
-      "bytes": 2193,
-      "SHA256": "1f765254f1b182aba9bd4d46b6075f2f4d12553502babade0b02c35b9ccf894b"
+      "bytes": 2166,
+      "SHA256": "f3606a0399b34f280f17f578a49368c1f0267cf68362a896e32cac09e6acbb8d"
     },
     ".github/workflows/qualification.yml": {
       "bytes": 1775,

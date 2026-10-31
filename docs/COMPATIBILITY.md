@@ -12,7 +12,19 @@ The earlier original Kaggle artifacts have separately acquired hash-bound proof:
 1029 PASS/53 SKIP/4 XFAIL for pure. These apply to the exact original artifact and
 profile in qualification/KAGGLE_NATIVE_20261029.json, not new package hashes.
 
-The current delivery's local results bind each newly built artifact separately.
+The earlier directly qualified Windows x64 / CPython 3.12.10 delivery
+recorded 1047 PASS/53 SKIP/4 XFAIL for pure and 1097 PASS/3 SKIP/4 XFAIL for
+native, with 200 actual native calls and 35 exact arrays. These are historical
+results on their exact hashes. The current delivery's local results bind each
+newly built artifact separately.
+
+The owner now also reports a green manylinux workflow using Python 3.13.18.
+No corresponding result archive, image digest, repaired wheel, hash or detailed
+receipt was supplied for this documentation update. Record this as
+OWNER_REPORTED_GREEN, DETAILS_PENDING, not independently verified manylinux
+qualification and not evidence for the new package hashes. It does not qualify
+other platforms or Python patches. The earlier 3.13.18/3.13.15 mismatch remains
+historical evidence; it was not repaired by weakening the worker's version guard.
 Unavailable Linux/manylinux/macOS final consumers are HOLD. Metadata accepts
 Python >=3.10,<3.16 but does not certify all combinations. Broad dependency ranges
 are resolver constraints; qualification uses exact requirements profiles.

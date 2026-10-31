@@ -23,7 +23,10 @@ launcher environment, then use a NEW output and the exact artifact/paired sdist:
 python -I -B tools/run_external.py --context ci --output qualification_runs/new_host --native-wheel /path/native.whl --expected-wheel-sha256 TRUSTED_SHA256 --sdist /path/paired.tar.gz --allow-public-index
 ```
 
-For actual Kaggle choose --context kaggle --expected-python 3.13.15. An authorized
+For Kaggle use --context kaggle and explicitly set --expected-python to the
+actual patch of the host being qualified. The original recorded profile used
+3.13.15; the owner-reported new manylinux run used 3.13.18, whose details remain
+pending. Neither is an automatic substitute for the other. An authorized
 offline wheelhouse can replace --allow-public-index. This full runner tests the
 native consumer, exact outputs, persistence, pure fallback and fixed benchmarks.
 It returns logs and failure/skips as well as success. Do not execute unknown

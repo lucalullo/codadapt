@@ -10,6 +10,12 @@ Prepared for owner review; not published by this work.
   failures are declared. No manylinux or untested macOS claim.
 - Professional installation, three-task examples, manual qualification and
   file-integrity procedures. No automated publication.
+- Approved library README, documented version 2.1.0, and normal installation
+  command `python -m pip install codadapt`. Distribution descriptions preserve
+  its exact bytes, including line endings, through the packaging-only hook.
+- Manylinux requires explicit Python patch input; no guessed 3.13.15 default.
+  Exact version/baseline checks are unchanged. The owner reports a green 3.13.18
+  run, whose detailed receipt and final wheel remain pending, not verified here.
 
 No new predictive algorithm, dispatch migration or default change is included.
 Serving contract remains 940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b.

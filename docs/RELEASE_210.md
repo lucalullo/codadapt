@@ -23,8 +23,10 @@ That gate does not block preparing this review repository.
 
 The original qualified Kaggle Linux wheel remains linux_x86_64, not manylinux;
 do not retag it or treat it as a portable index binary. Keep its paired original
-sdist and receipt. New pure builds carry the refreshed README/docs with unchanged
-product code; they need their own final target/download qualification. Do not
+sdist and receipt. New pure/native builds and the paired sdist carry the current approved
+README/docs with unchanged product code; they need their own exact-artifact
+target/download qualification. The owner reports a later green manylinux run
+on 3.13.18, but its receipt and exact repaired artifact remain pending here. Do not
 mix two different codadapt-2.1.0.tar.gz files or same-named wheels from different
 directories. The exact delivery manifest, not a dist/* wildcard, selects bytes.
 

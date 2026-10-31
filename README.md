@@ -4,12 +4,14 @@
 
 CodAdapt is a machine-learning library for binary classification, multiclass classification, and single-target regression. It learns compact coded representations of numerical and categorical features and uses residual memories to produce predictions. The estimators provide familiar `fit`, `predict`, and, for classification, `predict_proba` methods.
 
+**Documented version: 2.1.0.**
+
 ## Installation
 
-Install CodAdapt 2.1.0 from PyPI:
+Install CodAdapt from PyPI:
 
 ```bash
-python -m pip install codadapt==2.1.0
+python -m pip install codadapt
 ```
 
 For source builds and platform-specific installation requirements, see the [installation guide](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md). The package declares Python `>=3.10,<3.16`; the declared range is not a guarantee that every environment has been independently tested. See the [compatibility notes](https://github.com/lucalullo/codadapt/blob/main/docs/COMPATIBILITY.md).

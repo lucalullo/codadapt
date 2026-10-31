@@ -1,6 +1,10 @@
 # Linux release build and exact-artifact qualification
 
-State: prepared, NOT EXECUTED. The existing Kaggle wheel references GLIBC_2.34
+State: procedure prepared; the owner reports the latest manylinux workflow
+green with Python 3.13.18. Its result archive/receipt and exact artifact have not
+been supplied here, so detailed verification is PENDING. This Windows delivery
+does not independently execute or qualify Linux. New artifact hashes remain HOLD.
+The earlier historical Kaggle wheel references GLIBC_2.34
 and GLIBCXX_3.4.29; a manylinux_2_28 tag cannot be assigned just by renaming it.
 Build the unchanged source on the chosen actual baseline instead.
 
@@ -21,8 +25,9 @@ timings are distinct from auditwheel's symbol/library inspection. First qualify
 on the real baseline, then run the exact repaired wheel on the intended
 deployment/Kaggle host. A passed audit alone is not deployment qualification.
 
-No Linux build was executed from this Windows PC: WSL permission and absent Docker
-engine remain unchanged. The worker rejects a non-Linux/baseline invocation and
+No Linux build was executed by this Windows qualification. Earlier local
+WSL permission and Docker availability blockers are historical observations,
+not fresh checks in this documentation update. The worker rejects a non-Linux/baseline invocation and
 returns HOLD; this negative control is not a foreign-platform PASS. Missing
 dependency wheels, compiler errors and failed checks remain real blockers.
 
@@ -57,7 +62,9 @@ matching `python` input. For a verified image reporting 3.13.18, explicitly choo
 3.13.18 and qualify that profile; this does not prove 3.13.15 support. To require
 3.13.15, obtain an authorized image whose actual interpreter is 3.13.15 instead.
 Never infer a patch from the ABI directory `cp313-cp313` or a mutable image tag.
-The workflow's default input is a proposal, not proof of image contents.
+The workflow now has no default Python patch. Its required `python` input
+must be supplied explicitly after inspecting the chosen image. The worker still
+enforces exact interpreter equality; removing a default does not relax that check.
 
 The existing worker must still enforce actual Linux x86-64, glibc 2.28,
 AUDITWHEEL_PLAT, digest and exact Python equality, followed by audit/repair and

@@ -3,7 +3,36 @@
 No upload is performed by this repository. Use an owner-approved local artifact
 and compare its SHA-256 with the supplied distribution manifest before installing.
 
-## Exact verified native Kaggle profile
+## Current installation and documented version
+
+The documented version is 2.1.0. After owner publication, the normal command is:
+
+```text
+python -m pip install codadapt
+```
+
+The unpinned command resolves the version available on the selected index; it
+does not itself verify that 2.1.0 or these exact package hashes are installed.
+Check `python -c "import codadapt; print(codadapt.__version__)"` and the artifact
+manifest. This preparation does not upload files or verify index availability.
+Before publication use the reviewed local wheel and its SHA-256.
+
+The local Windows x64 / CPython 3.12.10 release procedure builds both a pure
+wheel and a cp312-cp312-win_amd64 native wheel from the paired sdist and verifies
+actual clean consumers. Exact final hashes, commands and results accompany each
+delivery; historical receipts must not be assigned to a newly rebuilt wheel.
+For example, after selecting the matching reviewed Windows artifact:
+
+```text
+python -m pip install /path/to/codadapt-2.1.0-cp312-cp312-win_amd64.whl
+python -m pip check
+```
+
+Pure wheels contain no CodAdapt binary. Other OS/ABI targets require their own
+native wheels and actual qualification. Native execution and automatic dispatch
+are separate: installing a native wheel does not extend the automatic guard.
+
+## Historical exact verified native Kaggle profile
 
 Linux x86-64, CPython 3.13.15, glibc 2.39; NumPy 2.5.4, pandas 3.1.0,
 SciPy 1.18.1, scikit-learn 1.9.1. Full pins are requirements/external-current.txt.
