@@ -25,19 +25,19 @@
     },
     "DIFF_FROM_FINAL_REVIEW.json": {
       "bytes": 68548,
-      "SHA256": "2737d8c164875aef42243cdaf032f7eefe3dfc2be1c9b2110dfd7f0cc1b29444"
+      "SHA256": "d2c00a79764a9f2a0890a901c8f3db4b30b2ec0625b91d70e8583bacbc10b1bd"
     },
     "DIFF_FROM_PREVIOUS_REVIEW.json": {
       "bytes": 68548,
-      "SHA256": "2737d8c164875aef42243cdaf032f7eefe3dfc2be1c9b2110dfd7f0cc1b29444"
+      "SHA256": "d2c00a79764a9f2a0890a901c8f3db4b30b2ec0625b91d70e8583bacbc10b1bd"
     },
     "DIFF_FROM_R2.json": {
       "bytes": 68548,
-      "SHA256": "2737d8c164875aef42243cdaf032f7eefe3dfc2be1c9b2110dfd7f0cc1b29444"
+      "SHA256": "d2c00a79764a9f2a0890a901c8f3db4b30b2ec0625b91d70e8583bacbc10b1bd"
     },
     "FILE_COMPARISON.json": {
       "bytes": 68548,
-      "SHA256": "2737d8c164875aef42243cdaf032f7eefe3dfc2be1c9b2110dfd7f0cc1b29444"
+      "SHA256": "d2c00a79764a9f2a0890a901c8f3db4b30b2ec0625b91d70e8583bacbc10b1bd"
     },
     "GATES_REPORT.md": {
       "bytes": 788,
@@ -76,8 +76,8 @@
       "SHA256": "f30ee8203903b0f1278c9d2a98d4f3ee597f9900738bb171e9c0fa00f2ea008f"
     },
     "README.md": {
-      "bytes": 7238,
-      "SHA256": "98393baaa10e5cb270fe84eb012b8f7f12c3a52ec298b7d25cd9f5b958e33f0b"
+      "bytes": 7228,
+      "SHA256": "c5d2fd726e56964ee0d1551582db2eb5eee18895ee6fbb315f3480dc62cc7900"
     },
     "RELEASE_NOTES.md": {
       "bytes": 1511,

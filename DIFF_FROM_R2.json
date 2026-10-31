@@ -138,7 +138,7 @@
       "path": "README.md",
       "action": "MODIFY",
       "before_SHA256": "87966881035d9486f85f1537f37dcfff3479ddb6c413f41f4a3641e3d76f8a92",
-      "after_SHA256": "98393baaa10e5cb270fe84eb012b8f7f12c3a52ec298b7d25cd9f5b958e33f0b"
+      "after_SHA256": "c5d2fd726e56964ee0d1551582db2eb5eee18895ee6fbb315f3480dc62cc7900"
     },
     {
       "path": "RELEASE_NOTES.md",
