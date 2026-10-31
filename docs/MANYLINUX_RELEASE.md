@@ -35,3 +35,37 @@ Primary references checked 2026-10-29:
 - https://pypi.org/project/auditwheel/
 - https://cibuildwheel.pypa.io/en/stable/options/#manylinux-*-image-musllinux-*-image
 - https://packaging.python.org/en/latest/guides/packaging-binary-extensions/
+
+
+## Exact interpreter/image alignment before a new release run
+
+The owner reports that the prior attempt stopped because the pinned image had
+CPython 3.13.18 while 3.13.15 was requested. This is a real version mismatch,
+not a C++ defect or a manylinux qualification. Do not disable the patch check,
+edit a wheel tag, or relabel that attempt PASS.
+
+Before requesting `native-release-linux.yml`, an authorized Linux operator must
+inspect the exact official image digest and its actual interpreter. Example
+(replace the placeholders with the owner-approved digest and target ABI):
+
+```text
+docker run --rm quay.io/pypa/manylinux_2_28_x86_64@sha256:<approved-64-hex-digest> /opt/python/cp313-cp313/bin/python -I -B -c "import platform; print(platform.python_version()); print(platform.libc_ver())"
+```
+
+Only after recording that output, dispatch with that same digest and an exactly
+matching `python` input. For a verified image reporting 3.13.18, explicitly choose
+3.13.18 and qualify that profile; this does not prove 3.13.15 support. To require
+3.13.15, obtain an authorized image whose actual interpreter is 3.13.15 instead.
+Never infer a patch from the ABI directory `cp313-cp313` or a mutable image tag.
+The workflow's default input is a proposal, not proof of image contents.
+
+The existing worker must still enforce actual Linux x86-64, glibc 2.28,
+AUDITWHEEL_PLAT, digest and exact Python equality, followed by audit/repair and
+execution of the repaired wheel. Preserve the result ZIP even for a mismatch.
+Owner-reported source workflow success cannot qualify new package hashes.
+
+For macOS, use `native-complete.yml` independently on `macos-15` and
+`macos-15-intel`, with the exact Python selected explicitly. Homebrew libomp
+must be available to the LightGBM benchmark process. Each run must build and
+install its final wheel, execute native calls/equality, persistence and suite,
+and preserve hashes/receipts. A prepared workflow is not executed evidence.

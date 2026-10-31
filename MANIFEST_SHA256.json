@@ -24,20 +24,20 @@
       "SHA256": "8c13bb4af8b2f107dc440187cf811eadb4985388ae2c8abd5fc4c69ea8884141"
     },
     "DIFF_FROM_FINAL_REVIEW.json": {
-      "bytes": 68316,
-      "SHA256": "ac039ae218e1ded27fbd4cc3cfa4048ca622ab174ed31e5b5cd61f8b4ca0c881"
+      "bytes": 68538,
+      "SHA256": "c9002d065ac193147f3b392ed02a57723322b48b1a9073dae7c3574c4ce007e5"
     },
     "DIFF_FROM_PREVIOUS_REVIEW.json": {
-      "bytes": 68316,
-      "SHA256": "ac039ae218e1ded27fbd4cc3cfa4048ca622ab174ed31e5b5cd61f8b4ca0c881"
+      "bytes": 68538,
+      "SHA256": "c9002d065ac193147f3b392ed02a57723322b48b1a9073dae7c3574c4ce007e5"
     },
     "DIFF_FROM_R2.json": {
-      "bytes": 68316,
-      "SHA256": "ac039ae218e1ded27fbd4cc3cfa4048ca622ab174ed31e5b5cd61f8b4ca0c881"
+      "bytes": 68538,
+      "SHA256": "c9002d065ac193147f3b392ed02a57723322b48b1a9073dae7c3574c4ce007e5"
     },
     "FILE_COMPARISON.json": {
-      "bytes": 68316,
-      "SHA256": "ac039ae218e1ded27fbd4cc3cfa4048ca622ab174ed31e5b5cd61f8b4ca0c881"
+      "bytes": 68538,
+      "SHA256": "c9002d065ac193147f3b392ed02a57723322b48b1a9073dae7c3574c4ce007e5"
     },
     "GATES_REPORT.md": {
       "bytes": 788,
@@ -76,8 +76,8 @@
       "SHA256": "f30ee8203903b0f1278c9d2a98d4f3ee597f9900738bb171e9c0fa00f2ea008f"
     },
     "README.md": {
-      "bytes": 8090,
-      "SHA256": "fd386821d034ad01bc0bd51836dcd2d1bd1dbaad7cc17d4923822ee23a10e6e7"
+      "bytes": 7219,
+      "SHA256": "f4ce03db7f58452d6705bb301dbcfbc9653a9fd235124a81b45b079e68642898"
     },
     "RELEASE_NOTES.md": {
       "bytes": 1033,
@@ -100,8 +100,8 @@
       "SHA256": "f86de260dd6a6466872ca7c4ef2a6ce20ce47a0cab86a11d590f9f4b52227e25"
     },
     "setup.py": {
-      "bytes": 998,
-      "SHA256": "725149cfea7f471d9596461c300cfedeb1975b3343d207fb25ef79c59e7880f6"
+      "bytes": 2544,
+      "SHA256": "17f2ea5dcfb4ab0763c2df4d8c7414a00937cabb091f3d8aa228c2afa34e5484"
     },
     "VERSION_PREPARATION.json": {
       "bytes": 1031,
@@ -204,8 +204,8 @@
       "SHA256": "c5e8e2ccf7568eac5fbe2a0dbb9b655bde2e1f4e3995e4281d537e1d8e05e0e6"
     },
     "docs/MANYLINUX_RELEASE.md": {
-      "bytes": 2328,
-      "SHA256": "82d138e91a9e910cc65cb6fd7457ffbc7578c0481874c196a50ea880c74215ef"
+      "bytes": 4326,
+      "SHA256": "fcde1f478b9b3245354cf4ac8c208f98573ce5e57f929f5ce842904d0e7e7c48"
     },
     "docs/MIGRATION_FINALIZATION.md": {
       "bytes": 766,
@@ -1010,6 +1010,10 @@
     "tests/data/regression/DATA.npz": {
       "bytes": 2410124,
       "SHA256": "4c61105c61b376ffddea1156318d5156d12f3279f3f99bd99c1f37d45aa72d84"
+    },
+    "tests/tools/test_release_readme_bytes.py": {
+      "bytes": 1847,
+      "SHA256": "af0a6e7079a1ca8a1ef2b433e68e332d60be86507c48310ee548116eb9fb7a2b"
     }
   },
   "publication_authorized": false
