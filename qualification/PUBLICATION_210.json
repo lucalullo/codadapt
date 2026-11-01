@@ -1054,6 +1054,21 @@
       "version": "2.1.0",
       "README_exact_bytes": true,
       "README_SHA256": "84f0fbf8def1e55b2918f2b090762529a6b0dccaacbd166d14126575592c27fc"
+    },
+    "native_linux/codadapt-2.1.0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl": {
+      "bytes": 190447,
+      "SHA256": "a81446fd3de1a32e3836f38870188d124a2ee2cd885cfa0dd37eb11e9c95dadd",
+      "version": "2.1.0",
+      "architecture": "Linux x86_64",
+      "python": "3.13.18",
+      "native_kernel_SHA256": "e899df90b07c0479c0c44fd81c1a733f22291e83313ada012daea0fd4ff798f2",
+      "manylinux_tags": [
+        "cp313-cp313-manylinux_2_24_x86_64",
+        "cp313-cp313-manylinux_2_28_x86_64"
+      ],
+      "README_exact_bytes": true,
+      "README_SHA256": "84f0fbf8def1e55b2918f2b090762529a6b0dccaacbd166d14126575592c27fc",
+      "qualification": "Approved GitHub Actions run 41231823732, glibc 2.28 actual consumer"
     }
   },
   "environments": {
@@ -1065,29 +1080,34 @@
     "pypi": "publish-pypi.yml"
   },
   "registration_evidence": "Owner confirms existing repository/environments/publishers; workflow filename match still pending owner review",
-  "qualified_scope": "New approved README. Three rebuilt local artifacts qualified on Windows x64 CPython 3.12.10. Fourth manylinux artifact must be built and qualified on new source; historical wheel explicitly ineligible.",
+  "qualified_scope": "Four exact artifacts. Windows x64 CPython 3.12.10 pure/native and source; original approved Linux x86_64 glibc 2.28 CPython 3.13.18 manylinux wheel. Publication remains HOLD.",
   "release": "HOLD",
   "required_distribution_count": 4,
-  "publication_set_status": "HOLD_NEW_README_MANYLINUX_REQUIRED",
+  "publication_set_status": "READY_FOUR_VERIFIED",
   "previous_three_distribution_bundle_SHA256": "61ffc28bd732240b04a4fcf5b9e44eabada2621571f6908fd21221d2315ab1dd",
-  "bundle_SHA256": null,
+  "bundle_SHA256": "d650760e7d29497f2572d1e5a2cc8cfa8ff2c23fb63c38019216407b0bb99176",
   "previous_distribution_manifest_SHA256": "cec3892cc381a1c177bad968ed4bcc86c68519f050b0a27a5ceab05cbc14f1d7",
-  "distribution_manifest_SHA256": null,
+  "distribution_manifest_SHA256": "31a78fcf37b86878362f901291b3a98c5eda7f0924fd6769f95819bac5d718d8",
   "manylinux_evidence": {
-    "status": "PENDING_NEW_README_QUALIFICATION",
-    "README_SHA256": "84f0fbf8def1e55b2918f2b090762529a6b0dccaacbd166d14126575592c27fc",
-    "approved_commit": null,
-    "source_commit": null,
+    "approved_commit": "74f91a6eaf2927f82da4cfc4bfb6354cf339289d",
+    "source_commit": "74f91a6eaf2927f82da4cfc4bfb6354cf339289d",
     "repository": "lucalullo/codadapt",
-    "conclusion": null,
-    "run_id": null,
-    "run_attempt": null,
-    "artifact_id": null,
+    "conclusion": "success",
+    "run_id": 41231823732,
+    "run_attempt": 1,
+    "artifact_id": 13054220930,
     "workflow_file": "native-release-linux.yml",
-    "wheel_filename": null,
-    "wheel_SHA256": null,
-    "qualification_receipt_SHA256": null,
-    "provenance_verified": false
+    "wheel_filename": "codadapt-2.1.0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+    "wheel_SHA256": "a81446fd3de1a32e3836f38870188d124a2ee2cd885cfa0dd37eb11e9c95dadd",
+    "README_SHA256": "84f0fbf8def1e55b2918f2b090762529a6b0dccaacbd166d14126575592c27fc",
+    "qualification_receipt_SHA256": "229277cd09ddb1eacad1bacd40bc69da2fb64c55fbceb767cdbbdcbd4ecf8e5d",
+    "provenance_verified": true,
+    "status": "VERIFIED_ORIGINAL_ARTIFACT",
+    "run_url": "https://github.com/lucalullo/codadapt/actions/runs/41231823732",
+    "artifact_digest": "sha256:17a90155c503526b7f395d7d41a147a3c2215083d3053767369209e01d17a065",
+    "python": "3.13.18",
+    "evidence_file": "qualification/MANYLINUX_210_COHERENT_EVIDENCE.json",
+    "evidence_SHA256": "c5e5e07885fc7e502d89c52bbacc61bd7942646847811e6fc72be2b3f62d697e"
   },
   "historical_publication_set": {
     "README_SHA256": "c5d2fd726e56964ee0d1551582db2eb5eee18895ee6fbb315f3480dc62cc7900",
