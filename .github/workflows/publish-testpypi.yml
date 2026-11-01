@@ -40,7 +40,6 @@ jobs:
       contents: read
       actions: read
     env:
-      RELEASE_DIR: ${{ runner.temp }}/codadapt210
       OWNER_APPROVAL: ${{ inputs.approval }}
       TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
     steps:
@@ -52,6 +51,13 @@ jobs:
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: '3.12.10'
+      - name: Initialize release directory in runner temp
+        shell: python
+        run: |
+          import os
+          from pathlib import Path
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env_file:
+              env_file.write(f"RELEASE_DIR={Path(os.environ['RUNNER_TEMP']) / 'codadapt210'}\n")
       - name: Require all four exact distributions including approved CPython 3.13 manylinux
         run: python -I -B tools/publication_guard.py contract
       - name: Validate source, owner authorization and existing environment
@@ -94,7 +100,6 @@ jobs:
       actions: read
       id-token: write
     env:
-      RELEASE_DIR: ${{ runner.temp }}/codadapt210
       OWNER_APPROVAL: ${{ inputs.approval }}
       TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
     steps:
@@ -106,6 +111,13 @@ jobs:
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: '3.12.10'
+      - name: Initialize release directory in runner temp
+        shell: python
+        run: |
+          import os
+          from pathlib import Path
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env_file:
+              env_file.write(f"RELEASE_DIR={Path(os.environ['RUNNER_TEMP']) / 'codadapt210'}\n")
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: codadapt-210-testpypi-prepared-${{ github.run_id }}-${{ github.run_attempt }}
@@ -139,8 +151,6 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: read
-    env:
-      RELEASE_DIR: ${{ runner.temp }}/codadapt210
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
@@ -151,6 +161,13 @@ jobs:
         with:
           python-version: '3.12.10'
           architecture: x64
+      - name: Initialize release directory in runner temp
+        shell: python
+        run: |
+          import os
+          from pathlib import Path
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env_file:
+              env_file.write(f"RELEASE_DIR={Path(os.environ['RUNNER_TEMP']) / 'codadapt210'}\n")
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: codadapt-210-testpypi-prepared-${{ github.run_id }}-${{ github.run_attempt }}

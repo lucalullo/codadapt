@@ -20,12 +20,12 @@
       "SHA256": "f3606a0399b34f280f17f578a49368c1f0267cf68362a896e32cac09e6acbb8d"
     },
     ".github/workflows/publish-pypi.yml": {
-      "bytes": 9146,
-      "SHA256": "ad95d3394a6490899c96a10384d644e04d97a67136aa8e4606ef8169d9d5f545"
+      "bytes": 9974,
+      "SHA256": "a338188c1832dd67e968379caf0f820f751e39299fb2eeed90a5b33381f91c33"
     },
     ".github/workflows/publish-testpypi.yml": {
-      "bytes": 8183,
-      "SHA256": "b547c98b16ee581de499c9f93bdcc021fcc79f65ffea190f783b365d8091d387"
+      "bytes": 9011,
+      "SHA256": "2e4b7af5c04b56f13b51a6784a87f80db496f31ab13683620d7d9e1fa2fe74c9"
     },
     ".github/workflows/qualification.yml": {
       "bytes": 1775,
