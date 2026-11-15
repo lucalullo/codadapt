@@ -1,11 +1,37 @@
 # CodAdapt
 
+[![PyPI version](https://img.shields.io/pypi/v/codadapt)](https://pypi.org/project/codadapt/)
+
 **Adaptive coded-memory learning for tabular data, with a scikit-learn-compatible Python API.**
 
 CodAdapt is a machine-learning library for binary classification, multiclass
 classification, and single-target regression. It encodes numerical and categorical
 features and learns residual contributions through lookup memories. Preprocessing
 is learned during fitting and reused when making predictions.
+
+## Why CodAdapt?
+
+CodAdapt explores an original approach to tabular learning through adaptive
+coded memories. Instead of conventional tree ensembles or neural networks,
+it encodes features and learns residual contributions through lookup memories.
+
+### Project status
+
+An early-stage algorithm under active research. Classification and regression
+work end-to-end, but predictive performance remains limited compared with
+established methods on the evaluated workloads. Work continues on interactions,
+accuracy, and generalization while preserving the coded-memory architecture.
+
+### When to use it
+
+For researchers comparing tabular learning approaches, or practitioners
+investigating memory-based feature representations and accuracy-size trade-offs.
+
+### When to consider alternatives
+
+For applications requiring extensively validated predictive performance,
+established methods such as LightGBM or CatBoost are safer starting points.
+CodAdapt is currently better suited to research than production use.
 
 ## Install
 
