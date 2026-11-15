@@ -36,6 +36,12 @@ jobs:
           python-version: ${{ matrix.python }}
           cache: pip
           cache-dependency-path: pyproject.toml
+      - name: Install pinned runtime and build dependencies
+        shell: python
+        run: |
+          import subprocess, sys
+          profile = f"requirements/windows{sys.version_info.major}{sys.version_info.minor}.txt"
+          subprocess.run([sys.executable, "-m", "pip", "install", "-r", profile, "-r", "requirements/build.txt"], check=True)
       - name: Install project and test dependencies
         run: python -m pip install -e ".[dev]"
       - name: Build sdist and wheel (no publication)
