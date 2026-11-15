@@ -10,8 +10,6 @@ recursive-include examples *.py
 recursive-include examples *.ipynb
 recursive-include requirements *.txt
 include CHANGELOG.md RELEASE_NOTES.md SECURITY.md CONTRIBUTING.md
-include MIGRATION_PLAN.md ISTRUZIONI_TRASFERIMENTO_GITHUB.md
-include GATES_REPORT.md
 prune fixtures
 prune results
 prune wheelhouse
