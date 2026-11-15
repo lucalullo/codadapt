@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "release/**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    name: Tests and distributions - ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-latest]
+        python: ["3.10", "3.12", "3.14"]
+    env:
+      CODADAPT_BUILD_NATIVE: ${{ runner.os == 'Linux' && '1' || '0' }}
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install project and test dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Build sdist and wheel (no publication)
+        run: python -m build
+      - name: Check package metadata
+        shell: python
+        run: |
+          from pathlib import Path
+          import subprocess, sys
+          artifacts = sorted(Path('dist').glob('*.whl')) + sorted(Path('dist').glob('*.tar.gz'))
+          if len(artifacts) != 2:
+              raise RuntimeError('Expected one wheel and one sdist')
+          subprocess.run([sys.executable, '-m', 'twine', 'check', '--strict', *map(str, artifacts)], check=True)
+      - name: Run complete configured pytest suite
+        run: python -m pytest -q
