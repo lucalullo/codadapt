@@ -1,0 +1,2568 @@
+{
+  "schema": "codadapt-source-sbom-2",
+  "name": "codadapt",
+  "version": "2.2.0",
+  "author": "Luca Lullo",
+  "scope": "Allowlisted source of CodAdapt 2.2.0. External dependencies are not vendored. Generated distributions are excluded from the source-only repository archive.",
+  "License_Expression": "MIT",
+  "original_components_license": "MIT, Copyright (c) 2026 Luca Lullo",
+  "third_party_licenses": "Preserved notices are independently applicable; no third-party rights are relicensed.",
+  "bundled_dependency_binaries": false,
+  "native_extension_built": false,
+  "declared_runtime_dependencies": [
+    "numpy>=1.26.4",
+    "pandas>=2.2.3",
+    "scikit-learn>=1.4",
+    "scipy>=1.8",
+    "threadpoolctl>=3.1"
+  ],
+  "declared_optional_dependencies": {
+    "ebm": [
+      "interpret-core==0.7.8"
+    ],
+    "dev": [
+      "pytest>=7.4",
+      "ruff>=0.9",
+      "build>=1.2",
+      "twine>=6.1",
+      "PyYAML>=6",
+      "nbformat>=5.9",
+      "nbclient>=0.10",
+      "ipykernel>=6.29"
+    ],
+    "benchmark": [
+      "psutil>=5.9",
+      "matplotlib>=3.7"
+    ]
+  },
+  "reference_environment_external_packages": [
+    {
+      "name": "joblib",
+      "version": "1.5.3",
+      "purl": "pkg:pypi/joblib@1.5.3",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "cee9c60896ae4e7a965a840fbde50d111d2f8018f61201d1ed2e9fc3dd4883e6",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license_classifiers": []
+    },
+    {
+      "name": "numpy",
+      "version": "2.3.5",
+      "purl": "pkg:pypi/numpy@2.3.5",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "7f8a1bfc2b82fee89e1ceef1038aa174ee814832b54c39b4b1b93028ce3f27b1",
+      "metadata_license_expression": null,
+      "metadata_license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ]
+    },
+    {
+      "name": "pandas",
+      "version": "2.2.3",
+      "purl": "pkg:pypi/pandas@2.2.3",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "f7026b9d554dd54f0002d6888e2ffa8f54b0f98f6d14001cee05c95e38072af7",
+      "metadata_license_expression": null,
+      "metadata_license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ]
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0",
+      "purl": "pkg:pypi/python-dateutil@4.0.0",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "39adffb0c736bb6b6839f89fd158bb9b9ad54a3a795e0ea2ea53e79e1f821907",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license_classifiers": []
+    },
+    {
+      "name": "pytz",
+      "version": "2026.6",
+      "purl": "pkg:pypi/pytz@2026.6",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "25de974e5d389a44fdedb89074f9ce19de3c7ab685b682e9a945d1ab36fc60a5",
+      "metadata_license_expression": null,
+      "metadata_license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ]
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.8.0",
+      "purl": "pkg:pypi/scikit-learn@1.8.0",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "95a8f42f4170fc940a71fedfed4fd9353723eb44126130a971a072fe5305d967",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license_classifiers": []
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/scipy@1.17.0",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "8749b8cd8e6c4944025fb8ffb8baf0f657a6f1e2f2a21a46add28feda7717d82",
+      "metadata_license_expression": null,
+      "metadata_license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ]
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.6.0",
+      "purl": "pkg:pypi/threadpoolctl@3.6.0",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "a45df8d07ea1883d772183a501d7d526076aa70dfcfddb276a2cbdc04def5341",
+      "metadata_license_expression": null,
+      "metadata_license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ]
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6",
+      "purl": "pkg:pypi/tzdata@2026.6",
+      "distributed_in_codadapt": false,
+      "role": "External dependency in the locally tested Windows CI profile",
+      "metadata_sha256": "8173da8700dd125e60c9caf7663d02ee3318851ee60d387b2b080f23a74a86a8",
+      "metadata_license_expression": null,
+      "metadata_license_classifiers": []
+    }
+  ],
+  "external_environment_scope": "Version snapshot for one tested Windows profile; not a portable dependency lock or a list of vendored components.",
+  "license_notice_inventory": [
+    {
+      "package": "cloudpickle",
+      "version": "3.1.2",
+      "wheel_member": "cloudpickle-3.1.2.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/00_000.txt",
+      "SHA256": "3029ea34173e9fdc233ad315dc6b100bd1ea71f529b1c1af97664a272fdc55f5",
+      "bytes": 1754,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "codadapt",
+      "version": "2.1.0",
+      "wheel_member": "codadapt-2.1.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/01_000.txt",
+      "SHA256": "3610c350fb9e5515a3c859187dba4f04f6d0345f840fbc17034b79db9d44d5b3",
+      "bytes": 1088,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "colorama",
+      "version": "0.4.6",
+      "wheel_member": "colorama-0.4.6.dist-info/licenses/LICENSE.txt",
+      "notice_file": "licenses/texts/03_000.txt",
+      "SHA256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318",
+      "bytes": 1491,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "iniconfig",
+      "version": "2.3.1",
+      "wheel_member": "iniconfig-2.3.1.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/04_000.txt",
+      "SHA256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4",
+      "bytes": 1098,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "joblib",
+      "version": "1.6.0",
+      "wheel_member": "joblib-1.6.0.dist-info/licenses/LICENSE.txt",
+      "notice_file": "licenses/texts/05_000.txt",
+      "SHA256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+      "bytes": 1527,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "narwhals",
+      "version": "2.28.0",
+      "wheel_member": "narwhals-2.28.0.dist-info/licenses/LICENSE.md",
+      "notice_file": "licenses/texts/06_000.txt",
+      "SHA256": "811445f30147b8f0c9d444c9025fd528f9532c54b7b83f6e2368473dc91cfdf0",
+      "bytes": 1082,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/LICENSE.txt",
+      "notice_file": "licenses/texts/07_000.txt",
+      "SHA256": "a804dff0ead9fadc5293456410bcbfc32bf024be9c4513459663fb7b442d2341",
+      "bytes": 45831,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "GCC-runtime-exception"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Keep GPLv3 and GCC Runtime Library Exception 3.1 notices with the covered runtime components.",
+        "The exception allows the specified combination of independent modules only when all target code comes from eligible compilation processes.",
+        "Do not infer a general exception for modified GCC or any arbitrary GPL dependency; repackaging runtime binaries requires separate provenance review."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "notice_file": "licenses/texts/07_001.txt",
+      "SHA256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150",
+      "bytes": 1039,
+      "families_or_component_terms": [
+        "Zlib"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Do not misrepresent origin; plainly mark altered source versions and retain the notice in source distributions."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "notice_file": "licenses/texts/07_002.txt",
+      "SHA256": "aea41976c720f91bd19725c16916a1ace40eb1ea42620d340e587a5de4bbcea0",
+      "bytes": 704,
+      "families_or_component_terms": [
+        "0BSD"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "No attribution condition in the grant; retain the supplied text in this notice pack as a conservative practice."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+      "notice_file": "licenses/texts/07_003.txt",
+      "SHA256": "d208152e2777ffd0126eacc1bd21c0320d69e4e6b622d21a2a12a47e8ef73763",
+      "bytes": 21155,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "Apache-2.0",
+        "CC0-1.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms.",
+        "Public-domain dedication/fallback only for the named component; no patent/trademark or third-party rights clearance."
+      ],
+      "review_note": "Highway offers Apache-2.0 OR BSD-3-Clause; the named random header is separately CC0. Preserve all texts; do not flatten the file to one license.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "notice_file": "licenses/texts/07_004.txt",
+      "SHA256": "b0fd592d4ead563148e3977e7b589169d46a5ef2ff133c755a81af880a3fc919",
+      "bytes": 1441,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Dragon4 is expressly relicensed to NumPy under MIT with the author's permission; its original Zlib license is historical, not an additional condition here.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "notice_file": "licenses/texts/07_005.txt",
+      "SHA256": "a732977853530066790c42817087f4829b518dd98d340c916acbfd227e39d3cb",
+      "bytes": 1542,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "notice_file": "licenses/texts/07_006.txt",
+      "SHA256": "585483905b13d4b42f800c55ba99e89d6e2e33ccd5f503e201c07531d148ff41",
+      "bytes": 1573,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "notice_file": "licenses/texts/07_007.txt",
+      "SHA256": "8db000e158c162e7249787852d8c69764706502ccee725c06641b31c1e95c8af",
+      "bytes": 1523,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "notice_file": "licenses/texts/07_008.txt",
+      "SHA256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b",
+      "bytes": 2314,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/ma/LICENSE",
+      "notice_file": "licenses/texts/07_009.txt",
+      "SHA256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7",
+      "bytes": 1616,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/LICENSE.md",
+      "notice_file": "licenses/texts/07_010.txt",
+      "SHA256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a",
+      "bytes": 3582,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "NCSA OR BSD-3-Clause. The BSD choice suffices for this component; component-specific licenses remain separate.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+      "notice_file": "licenses/texts/07_011.txt",
+      "SHA256": "cf5619f25b112d5ce7c896efffc8e610bcb345dfadcc19f2c1460aa48fff2c9e",
+      "bytes": 2805,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "notice_file": "licenses/texts/07_012.txt",
+      "SHA256": "92c10699884321f1c2947fe2a70ab23b0fbf1507f756d89dd08f38c61fc3d4fa",
+      "bytes": 2986,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "notice_file": "licenses/texts/07_013.txt",
+      "SHA256": "41190663b77bee5302386495a07b7eabfbfa571aa0ae2f11da6764162062fc4f",
+      "bytes": 1176,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+      "notice_file": "licenses/texts/07_014.txt",
+      "SHA256": "322ac46d870c8aeead6c53adcccc839296fb3c8e456eae155081297daf7f8013",
+      "bytes": 1540,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "notice_file": "licenses/texts/07_015.txt",
+      "SHA256": "28cad82ce1379dc529df30da78ec012d7d0d1d576b03ddcb93388aee53659f59",
+      "bytes": 1253,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+      "notice_file": "licenses/texts/07_016.txt",
+      "SHA256": "454ec7350e478e037061850b67395753b425b1cb0a34bbc26290b020bf89d763",
+      "bytes": 340,
+      "families_or_component_terms": [
+        "CC0-1.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Public-domain dedication/fallback only for the named component; no patent/trademark or third-party rights clearance."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy/_core/include/numpy/random/LICENSE.txt",
+      "notice_file": "licenses/texts/07_017.txt",
+      "SHA256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150",
+      "bytes": 1039,
+      "families_or_component_terms": [
+        "Zlib"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Do not misrepresent origin; plainly mark altered source versions and retain the notice in source distributions."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy/ma/LICENSE",
+      "notice_file": "licenses/texts/07_018.txt",
+      "SHA256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7",
+      "bytes": 1616,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy/random/LICENSE.md",
+      "notice_file": "licenses/texts/07_019.txt",
+      "SHA256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a",
+      "bytes": 3582,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Byte-identical duplicate of a bundled NumPy random notice; not a second independent license decision.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "packaging",
+      "version": "26.3",
+      "wheel_member": "packaging-26.3.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/08_000.txt",
+      "SHA256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+      "bytes": 197,
+      "families_or_component_terms": [
+        "BSD-2-Clause",
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "packaging is Apache-2.0 OR BSD-2-Clause, not a mandatory conjunction. Both supplied texts are retained.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "packaging",
+      "version": "26.3",
+      "wheel_member": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "notice_file": "licenses/texts/08_001.txt",
+      "SHA256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174,
+      "families_or_component_terms": [
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "packaging",
+      "version": "26.3",
+      "wheel_member": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "notice_file": "licenses/texts/08_002.txt",
+      "SHA256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "bytes": 1344,
+      "families_or_component_terms": [
+        "BSD-2-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/09_000.txt",
+      "SHA256": "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae",
+      "bytes": 1634,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/BOTTLENECK_LICENCE",
+      "notice_file": "licenses/texts/09_001.txt",
+      "SHA256": "053a90e30580f5d9d79817add1567f88b4a3eeb11bcded9ecf74619d17768066",
+      "bytes": 1360,
+      "families_or_component_terms": [
+        "BSD-2-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/DATEUTIL_LICENSE",
+      "notice_file": "licenses/texts/09_002.txt",
+      "SHA256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "bytes": 2889,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "dateutil's newer contributions are dual Apache/BSD; earlier BSD-covered portions retain their terms.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/HAVEN_LICENSE",
+      "notice_file": "licenses/texts/09_003.txt",
+      "SHA256": "48216b40b3d1b19452923dd6fd74655bf5c0df9d76b51eb0efade7e0b88bfbcc",
+      "bytes": 1099,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/HAVEN_MIT",
+      "notice_file": "licenses/texts/09_004.txt",
+      "SHA256": "87217d0a79195441ab615a3abb3ab6777502e57804ea83f973df975a67ebd720",
+      "bytes": 1264,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/KLIB_LICENSE",
+      "notice_file": "licenses/texts/09_005.txt",
+      "SHA256": "7463172c3a23321c1838896eba437f70a6de80ac5a840b2960966c8c5444abf1",
+      "bytes": 1104,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/MUSL_LICENSE",
+      "notice_file": "licenses/texts/09_006.txt",
+      "SHA256": "50a343c1ce9e27cd6c58023f13b91d2cd679861fe7fb6bbbbfbec3dcafc3583f",
+      "bytes": 6203,
+      "families_or_component_terms": [
+        "MIT",
+        "BSD-2-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred.",
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials."
+      ],
+      "review_note": "musl lists permissive components and a narrow public-header/CRT attribution exception. Preserve the complete notice; do not apply that exception to the whole package.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/NUMPY_LICENSE",
+      "notice_file": "licenses/texts/09_007.txt",
+      "SHA256": "81d42da02a56b611c35abc83d2241564b46bec3a5b1960b395d55cebca68fb6f",
+      "bytes": 1542,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/PACKAGING_LICENSE",
+      "notice_file": "licenses/texts/09_008.txt",
+      "SHA256": "1871330068a18f1f07c3f147a41c008e59f367f217041ca6eb20b0298639a128",
+      "bytes": 11519,
+      "families_or_component_terms": [
+        "BSD-2-Clause",
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "Vendored packaging has a dual-license choice. No blanket Apache obligation is imposed on unrelated addon code.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/PSF_LICENSE",
+      "notice_file": "licenses/texts/09_009.txt",
+      "SHA256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "bytes": 13936,
+      "families_or_component_terms": [
+        "PSF-history"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain PSF and the applicable historical notices (BeOpen/CNRI/CWI); include a brief change summary if modifying the covered code.",
+        "No right to use Python/PSF names as endorsement; preserve historical terms instead of relabeling as MIT."
+      ],
+      "review_note": "Historical Python notices are included by pandas; the old table's GPL-compatibility history does not relicense the addon or today's interpreter.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/PYPERCLIP_LICENSE",
+      "notice_file": "licenses/texts/09_010.txt",
+      "SHA256": "eafcd440e3570c6bc7b77dcec15dec398d13bc9b5e897336b221ff81ff19f345",
+      "bytes": 1486,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/PYUPGRADE_LICENSE",
+      "notice_file": "licenses/texts/09_011.txt",
+      "SHA256": "70aedcd6928272bd176e4fdc3384af22ee759d006fb15105d994756e4f2d1b7a",
+      "bytes": 1058,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/SAS7BDAT_LICENSE",
+      "notice_file": "licenses/texts/09_012.txt",
+      "SHA256": "458d5fd4175825440ad32d6bf6af45d1a19d4adb316b557d869c6560b6692e00",
+      "bytes": 1059,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/STATSBASE_JL_LICENSE",
+      "notice_file": "licenses/texts/09_013.txt",
+      "SHA256": "f371ccf0fb892a4cd9f2e550c4b8cf4362793d17028dc642ad55c1e01a41dfe1",
+      "bytes": 1249,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/ULTRAJSON_LICENSE",
+      "notice_file": "licenses/texts/09_014.txt",
+      "SHA256": "2bfbb5bb8ec66d136ec62d836ddc0c0019d44ef4d9389f1f6cab1c1109d774a2",
+      "bytes": 5974,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "Tcl"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Keep existing copyright notices and include the notice verbatim in distributions.",
+        "If applying new terms to modifications, mark them on the first page of each affected file; retain government-use and disclaimer text."
+      ],
+      "review_note": "UltraJSON includes three distinct notices: EA/ESN BSD, MODP BSD, and the Tcl numeric-decoder terms. Preserve all three.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/XSIMD_LICENSE",
+      "notice_file": "licenses/texts/09_015.txt",
+      "SHA256": "501352acba62cc54e8e3d293754d606f919c9b425b962193c211f9fa29cd9940",
+      "bytes": 1606,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/subprojects/fast_float-8.2.10/LICENSE-APACHE",
+      "notice_file": "licenses/texts/09_016.txt",
+      "SHA256": "097a889aa954d04e088b790b10a4014d6189561d0a6013935a73ce3d4ddaaf06",
+      "bytes": 10767,
+      "families_or_component_terms": [
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "fast_float offers Apache/Boost/MIT alternatives; preserve the supplied license set and choose consistently if incorporating it. No fast_float code is in the thin addon.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/subprojects/fast_float-8.2.10/LICENSE-BOOST",
+      "notice_file": "licenses/texts/09_017.txt",
+      "SHA256": "8d8291caf1cee26d23acf3eb67c9f9a2d58f1c681b16a4fbe8cbfb9e3c0b5a9b",
+      "bytes": 1337,
+      "families_or_component_terms": [
+        "Boost-1.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the full copyright/license/disclaimer in source and derivatives; the text exempts solely machine-executable object-code copies."
+      ],
+      "review_note": "Alternative fast_float license, not an additional mandatory condition on top of MIT.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/subprojects/fast_float-8.2.10/LICENSE-MIT",
+      "notice_file": "licenses/texts/09_018.txt",
+      "SHA256": "e562f3f974ced7e69dd1db77b820b36bcf8f30377f1aa105723fba449c53c4e6",
+      "bytes": 1079,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Alternative fast_float license; not permission to strip notices from the whole pandas binary.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pluggy",
+      "version": "1.7.0",
+      "wheel_member": "pluggy-1.7.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/10_000.txt",
+      "SHA256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606",
+      "bytes": 1110,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "psutil",
+      "version": "7.2.2",
+      "wheel_member": "psutil-7.2.2.dist-info/LICENSE",
+      "notice_file": "licenses/texts/11_000.txt",
+      "SHA256": "c7adc4d5d1337a548b967421f1fbe258b93033a0417708fd6f4e38f8ecbceb80",
+      "bytes": 1577,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pygments",
+      "version": "2.21.0",
+      "wheel_member": "pygments-2.21.0.dist-info/licenses/AUTHORS",
+      "notice_file": "licenses/texts/12_000.txt",
+      "SHA256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f",
+      "bytes": 11048,
+      "families_or_component_terms": [
+        "AUTHORS"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Contributor attribution list, not a substitute for the package license; retain with the accompanying license if redistributing this tool."
+      ],
+      "review_note": "Contributor list accompanies Pygments BSD-2-Clause. Tool is outside the minimal runtime closure.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pygments",
+      "version": "2.21.0",
+      "wheel_member": "pygments-2.21.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/12_001.txt",
+      "SHA256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+      "bytes": 1331,
+      "families_or_component_terms": [
+        "BSD-2-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pytest",
+      "version": "9.1.1",
+      "wheel_member": "pytest-9.1.1.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/13_000.txt",
+      "SHA256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b",
+      "bytes": 1091,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "python-dateutil",
+      "version": "3.0.0",
+      "wheel_member": "python_dateutil-3.0.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/14_000.txt",
+      "SHA256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "bytes": 2889,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_member": "scikit_learn-1.9.1.dist-info/licenses/COPYING",
+      "notice_file": "licenses/texts/15_000.txt",
+      "SHA256": "014b1b1ad74cf00997f7081a1635c3c203cd70c08f39c13d9a39347fcd464979",
+      "bytes": 2629,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_member": "sklearn/externals/array_api_compat/LICENSE",
+      "notice_file": "licenses/texts/15_001.txt",
+      "SHA256": "464569596b7e6162762669e4e4d1fe8d2618c03901ca7ba36e2603415fb6865d",
+      "bytes": 1118,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_member": "sklearn/externals/array_api_extra/LICENSE",
+      "notice_file": "licenses/texts/15_002.txt",
+      "SHA256": "8b2e8a4aa8a98ed811f17be2807b1eb90dcb021c1e5a0304d784d0a24f4ee907",
+      "bytes": 1118,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_member": "sklearn/svm/src/liblinear/COPYRIGHT",
+      "notice_file": "licenses/texts/15_003.txt",
+      "SHA256": "5e6d496ace27b9b277e2311f894c8100660e8c95ce909c1c1f1abb4702946415",
+      "bytes": 1517,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy-1.18.1.dist-info/LICENSE.txt",
+      "notice_file": "licenses/texts/16_000.txt",
+      "SHA256": "f0f5c56b298ec9795df1199edc328a987242716d14a1bde6813112e22dc15f99",
+      "bytes": 45881,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "GCC-runtime-exception"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Keep GPLv3 and GCC Runtime Library Exception 3.1 notices with the covered runtime components.",
+        "The exception allows the specified combination of independent modules only when all target code comes from eligible compilation processes.",
+        "Do not infer a general exception for modified GCC or any arbitrary GPL dependency; repackaging runtime binaries requires separate provenance review."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy/_lib/_uarray/LICENSE",
+      "notice_file": "licenses/texts/16_001.txt",
+      "SHA256": "e4c4acc31e8287066d7c995d26e3ef902ca1977ee187b260b11c278366503811",
+      "bytes": 1543,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy/fft/_duccfft/LICENSE.md",
+      "notice_file": "licenses/texts/16_002.txt",
+      "SHA256": "c04661685cff9d8035fe1c4c3ab357e7f7633cafc06a73e9d90c3c5fede8a86a",
+      "bytes": 1523,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy/integrate/LICENSE_DOP",
+      "notice_file": "licenses/texts/16_003.txt",
+      "SHA256": "6cc2ed6e35b8f376ff3d8f86aeef4e0c34c2309bd6f4a0565936d577839ba023",
+      "bytes": 3648,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "DOP integrator is BSD-3-Clause plus attribution/provenance of the original routines; no noncommercial limitation found in this text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy/spatial/qhull_src/COPYING_QHULL.txt",
+      "notice_file": "licenses/texts/16_004.txt",
+      "SHA256": "2a6ebb495e26dd5f88cbc40c593733da6edb27b64936f70409cd5a1acafb1c32",
+      "bytes": 1759,
+      "families_or_component_terms": [
+        "Qhull"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright and the full Qhull text in redistributions including products incorporating it.",
+        "Mark modifications with name/date/reason; provide notice that source is available from www.qhull.org."
+      ],
+      "review_note": "Non-SPDX simplification avoided: Qhull's modification and source-availability clauses are tracked explicitly.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "six",
+      "version": "1.17.0",
+      "wheel_member": "six-1.17.0.dist-info/LICENSE",
+      "notice_file": "licenses/texts/17_000.txt",
+      "SHA256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0",
+      "bytes": 1066,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "threadpoolctl",
+      "version": "3.7.0",
+      "wheel_member": "threadpoolctl-3.7.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/18_000.txt",
+      "SHA256": "81ac619075248b06e53660b652d10e485f4675f5d0ae0f97ea22370da1f7e23b",
+      "bytes": 1507,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "tzdata",
+      "version": "2026.5",
+      "wheel_member": "tzdata-2026.5.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/19_000.txt",
+      "SHA256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46",
+      "bytes": 625,
+      "families_or_component_terms": [
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "tzdata's package code is Apache-2.0. The license texts here do not by themselves prove every IANA payload file's provenance; no timezone payload is bundled into the addon.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "tzdata",
+      "version": "2026.5",
+      "wheel_member": "tzdata-2026.5.dist-info/licenses/licenses/LICENSE_APACHE",
+      "notice_file": "licenses/texts/19_001.txt",
+      "SHA256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "families_or_component_terms": [
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    }
+  ],
+  "source_files": [
+    {
+      "path": ".gitattributes",
+      "SHA256": "9132a454d77ef499e8e3bc454756619dc08a481c82190af86c7385d33b70abb8",
+      "bytes": 295
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "SHA256": "a1b1c1c187fd563a80588eb3d70e864a9b22686e9d2acbb262b7c606e670e4e5",
+      "bytes": 2208
+    },
+    {
+      "path": ".github/workflows/native-complete.yml",
+      "SHA256": "1eb2899c0db15ee8cfc13d6e1a4d8d4251cacaaf652e65706dd68f122fd11dea",
+      "bytes": 2151
+    },
+    {
+      "path": ".github/workflows/native-platform-r3.yml",
+      "SHA256": "58736f7205037f6303a3d68554e6ed32be3538a770af763fc387baa6ba334420",
+      "bytes": 2153
+    },
+    {
+      "path": ".github/workflows/native-release-linux.yml",
+      "SHA256": "d870a7dcac3c9791ae04e0b4c92dc9dc2cf0925da5cc000f34d3b803cbb82e1b",
+      "bytes": 2130
+    },
+    {
+      "path": ".github/workflows/publish-pypi.yml",
+      "SHA256": "570044aaae83d9d2304c91ec193d40ab52816510dc8bc0d0a3fc7b36b43c22f7",
+      "bytes": 2117
+    },
+    {
+      "path": ".github/workflows/publish-testpypi.yml",
+      "SHA256": "dcbfe3b3cd3bfd6b39b9e8d69ca8d41bdc89fa13402c02d07013d0da1de4d857",
+      "bytes": 2121
+    },
+    {
+      "path": ".github/workflows/qualification.yml",
+      "SHA256": "476ba9b54cf3def0d70ab7c2929edfb3c943e9e6517ce770e718e4a44911fa61",
+      "bytes": 2150
+    },
+    {
+      "path": ".gitignore",
+      "SHA256": "c5cf080b339347ce6db057d838a49d3e91323bc47152ac5bc2e6f9fe367dd087",
+      "bytes": 469
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "SHA256": "75a712f18e599b0d4ff3667bbc519821f1495647b6825b5bc592c26f61de5318",
+      "bytes": 259
+    },
+    {
+      "path": "CHANGELOG.md",
+      "SHA256": "d8f4942338fd7d33cfa8d8eabefec2f54652e52fece254e40f945db9c4ca50ab",
+      "bytes": 1070
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "SHA256": "b20f3b2220c02df259324f70b4d1735c07682450310e064d88602cf5cef236c1",
+      "bytes": 1032
+    },
+    {
+      "path": "LICENSE",
+      "SHA256": "263a6c2f014962a9dfe5c2c88d03ead74cb247527a663b1562d180f276446746",
+      "bytes": 1067
+    },
+    {
+      "path": "README.md",
+      "SHA256": "bbb47e31c97d230b20758c545221ca71abad4de7d9690cc86975402269fafb6d",
+      "bytes": 6088
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "SHA256": "73f55a961c5fc4e7ce156913a2c5164c93db9277d0caa43a9d736dad78740555",
+      "bytes": 2064
+    },
+    {
+      "path": "SECURITY.md",
+      "SHA256": "71019aad4ebf81c23b12cc7a9d2dbb6186708722b56c7e28434ac73854aa9d44",
+      "bytes": 514
+    },
+    {
+      "path": "benchmarks/COMPARISONS.md",
+      "SHA256": "93d55d2b81f1d62ec21ac43fcdd843dbe1734d638909064a4d14def0580c911a",
+      "bytes": 13796
+    },
+    {
+      "path": "benchmarks/DEVELOPMENT_PANEL.md",
+      "SHA256": "8fbe3b2894143db6bb71645094287ec8404bfe9326f1963478a7195a3740ffdd",
+      "bytes": 12836
+    },
+    {
+      "path": "benchmarks/FIGURES.md",
+      "SHA256": "cec834c155236eed60d4611d11ba610357b672f83746bbbf92c66afaebf69338",
+      "bytes": 3419
+    },
+    {
+      "path": "benchmarks/HISTORICAL_210.md",
+      "SHA256": "2cd1da8307670307710ab62968f200170575c314f93fd0d46ca4c4c4ec937685",
+      "bytes": 1352
+    },
+    {
+      "path": "benchmarks/METHODOLOGY.md",
+      "SHA256": "588d0353c8c2b8e029d18751184d08b9d31043a5b6d87ead2009bb0b4f2d82ab",
+      "bytes": 5118
+    },
+    {
+      "path": "benchmarks/README.md",
+      "SHA256": "cec3c40eed9eb5c88d363df6b9d9f6da228b388c89f31cc9fc53b3d7073a7714",
+      "bytes": 3721
+    },
+    {
+      "path": "benchmarks/RESULTS.md",
+      "SHA256": "486ca53f2869e423c8b27dd21588970818ffb4735da65d3224c2286d025ca768",
+      "bytes": 42841
+    },
+    {
+      "path": "benchmarks/TECHNICAL.md",
+      "SHA256": "e73f77994b46c2093627d8f2f9019cbc7b7ce52a1576efa63445d1f061befea9",
+      "bytes": 8013
+    },
+    {
+      "path": "benchmarks/data/class_recall.csv",
+      "SHA256": "f2a34e2d18b7f2830e05327c0993b87e3fa305d2224dfff14a91d6d8bca1a602",
+      "bytes": 11559
+    },
+    {
+      "path": "benchmarks/data/compression.csv",
+      "SHA256": "dca7bdf6fd8f830f437962e3abdcbf9974461d2392eeeda4f80dc9341fc1997e",
+      "bytes": 814
+    },
+    {
+      "path": "benchmarks/data/datasets.csv",
+      "SHA256": "dbc96445a6a3ab0aef79736f8a6087ae1c177fb59f957891908f4fc55eda9b0e",
+      "bytes": 745
+    },
+    {
+      "path": "benchmarks/data/full_precision.json",
+      "SHA256": "9ea2d41aa7e663f89e41de333326c1b73995d21408869408c65128430344a10e",
+      "bytes": 136217
+    },
+    {
+      "path": "benchmarks/data/joint_tradeoffs.csv",
+      "SHA256": "7b0f9af93cd01fd7103cd22bd705a42fd4ba567ffc3ac7be11a48930f76b4237",
+      "bytes": 2435
+    },
+    {
+      "path": "benchmarks/data/measurements.csv",
+      "SHA256": "c8e679dbb9fef484c26abc120c09534293446a040325a7c384c5e93ffe641839",
+      "bytes": 18618
+    },
+    {
+      "path": "benchmarks/data/paired_comparisons.csv",
+      "SHA256": "0855d8bc057079b1e98072024eda2459a4d2f8e6354064ffc9fd4891b8607d9d",
+      "bytes": 21724
+    },
+    {
+      "path": "benchmarks/data/provenance.json",
+      "SHA256": "e83cc07d27ce86337d9a4cdadd78249280c014f96050e7afc23f10dbb946fc79",
+      "bytes": 1498
+    },
+    {
+      "path": "benchmarks/data/reuse_setup.csv",
+      "SHA256": "f99338fe321ee374d5b352c606ca2f94afed6dc6adfa3f93c095acb448c1d6ab",
+      "bytes": 3003
+    },
+    {
+      "path": "benchmarks/data/serving_batches.csv",
+      "SHA256": "90d20e02eb1bdd88122400d645dde3b086b2d62c286afbc0bfc5160e3988540a",
+      "bytes": 567
+    },
+    {
+      "path": "benchmarks/data/serving_trace.csv",
+      "SHA256": "5c77e30c83ed36d03164e6fa82b390f62c767698b12c840b3e74264c4ed1bcf5",
+      "bytes": 233
+    },
+    {
+      "path": "benchmarks/data/technical_paths.csv",
+      "SHA256": "0aa5da3d953a8ab8a656cc0047897ea7377d0f14b32fb765a3d3d47e6d138634",
+      "bytes": 401
+    },
+    {
+      "path": "benchmarks/figures/b1_ms.svg",
+      "SHA256": "5ab8b80ca4ef922e552b3e362495c90dcee5c943429ab023c1b23d673ce49332",
+      "bytes": 42845
+    },
+    {
+      "path": "benchmarks/figures/b3000_ms.svg",
+      "SHA256": "65491f87f1de478ddefeda58c552e4814411c069ab6b2d15e3dc9acc5a544b7c",
+      "bytes": 42891
+    },
+    {
+      "path": "benchmarks/figures/compression.svg",
+      "SHA256": "c39e57ce91f3873c7b6c010033df576c3b3c4ac1d7e8e528048633dde9c17a34",
+      "bytes": 18573
+    },
+    {
+      "path": "benchmarks/figures/fit_prep_s.svg",
+      "SHA256": "67ea2195694cc4b1611c407ed0036c843e3da2b6ff7f2af8a9054f759f837b10",
+      "bytes": 42821
+    },
+    {
+      "path": "benchmarks/figures/load_ms.svg",
+      "SHA256": "704d04ab667494ba8b820a0670808c001c0a1fe746fb727fd7e7ce4618283c31",
+      "bytes": 42865
+    },
+    {
+      "path": "benchmarks/figures/model_bytes.svg",
+      "SHA256": "bff052bcfaa7df867eca94ec553e6745386aa3c9474100976219381f84df97e5",
+      "bytes": 42886
+    },
+    {
+      "path": "benchmarks/figures/quality_binary.svg",
+      "SHA256": "794044a0f28025c587355fb53299dfbb6ea5888b3fdeace1be3feaea3bfcf00e",
+      "bytes": 53214
+    },
+    {
+      "path": "benchmarks/figures/quality_multiclass.svg",
+      "SHA256": "c1e095d5d5e5af1da9845faf536d59d2104e52097f519e6a858a1c7b729aef33",
+      "bytes": 42399
+    },
+    {
+      "path": "benchmarks/figures/quality_regression.svg",
+      "SHA256": "2ef2de8fd46f32362453bb1bcad8f1b61dd5f0dd796c7bc705c919997530a3cd",
+      "bytes": 52606
+    },
+    {
+      "path": "benchmarks/figures/quality_resource.svg",
+      "SHA256": "9127c7afe976b9d3947b223519a3e2fa1cebcf37489b07fa08c4be2d0bc1ce50",
+      "bytes": 48605
+    },
+    {
+      "path": "benchmarks/figures/rows_per_s.svg",
+      "SHA256": "96a7b83c0e2b6d8ac47b3806fb3b7580c91870a60cd7a1c375e1c72d61084754",
+      "bytes": 42882
+    },
+    {
+      "path": "benchmarks/figures/serving_trace.svg",
+      "SHA256": "3d61aaf359030f501ff127198023edb13dd92d58700540629f33fd3c08912aeb",
+      "bytes": 10761
+    },
+    {
+      "path": "benchmarks/figures/technical_paths.svg",
+      "SHA256": "8f782d6110afd070fb6ee70cdce7ef47b3131ab1e831fe16351f6fdfb7f7d389",
+      "bytes": 18395
+    },
+    {
+      "path": "benchmarks/figures/train_rss_mib.svg",
+      "SHA256": "e2d8c498514c77afb55fbe1bf7203fc55e07f46fd9187ad69a91214a44b7b259",
+      "bytes": 42487
+    },
+    {
+      "path": "benchmarks/historical/DATA_LICENSE.md",
+      "SHA256": "4f6f98f21cbc892d67c46086d1f273de10371ae41822b201ee3fef87361898e8",
+      "bytes": 1352
+    },
+    {
+      "path": "benchmarks/historical/observed_classification.csv",
+      "SHA256": "e6e55737bcb2bdec01a4872a28b9a0cbbdcdb731f7b11cdfba75247fa2b0e908",
+      "bytes": 12189
+    },
+    {
+      "path": "benchmarks/overview/SUMMARY.md",
+      "SHA256": "c8b43483c26897ea9a744998af1e79adf3e382df972ea4844f78a83d9e11cd6b",
+      "bytes": 3985
+    },
+    {
+      "path": "benchmarks/overview/model_size.svg",
+      "SHA256": "66b0d7747415a89256bcb69cc0adc1e9bb21de02279716781e6208f3625c175e",
+      "bytes": 6951
+    },
+    {
+      "path": "benchmarks/overview/quality.svg",
+      "SHA256": "0256cc57fc5f0a74c3c9f7e52553ceff39fa90a5f62f75879cedf6bbe4228b6d",
+      "bytes": 7157
+    },
+    {
+      "path": "benchmarks/overview/summary.csv",
+      "SHA256": "28b60519e6b54d6f1760b281815bd81be6f39fbbdcc2642ec52d883bba0053e6",
+      "bytes": 2229
+    },
+    {
+      "path": "benchmarks/plot_overview.py",
+      "SHA256": "04396ca9a70cc94878ab6761a7e72e09317ba078f3dd8e6d2dc95ab39b651762",
+      "bytes": 7752
+    },
+    {
+      "path": "benchmarks/plot_results.py",
+      "SHA256": "fdafad25d8f68ede9694792639c65895d00bb37ae89920c09b7ddb59d0551016",
+      "bytes": 9908
+    },
+    {
+      "path": "docs/ALGORITHM.md",
+      "SHA256": "d133e6062aecefa8eb7aea51eeb889a7675f9467506ce14cdd8fa09616b30bca",
+      "bytes": 905
+    },
+    {
+      "path": "docs/API.md",
+      "SHA256": "1c1afb6abfb15b0fccc351b0e78a5e7c9cc13a19941a262a4d2d9a40c4386fc7",
+      "bytes": 3345
+    },
+    {
+      "path": "docs/COMPATIBILITY.md",
+      "SHA256": "bc6dd6aa98de1f42c9a0f94b53d043d149a3d8949188894a7027140aafa95969",
+      "bytes": 3520
+    },
+    {
+      "path": "docs/HISTORICAL_CHANGELOG_210.md",
+      "SHA256": "c379c8487446047d26b11625bf3dc61b1979d07cc768d5ec966131e0737615cc",
+      "bytes": 992
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "SHA256": "81f80b534f7a7aaeca2704fbf871d05343e9f7ab624fb9f3239b0328520d95cc",
+      "bytes": 1206
+    },
+    {
+      "path": "docs/LARGE_DATASETS.md",
+      "SHA256": "1cf92aff39f3b39636116d9849be8a4f2796229be9639f93a333b74df8ad98af",
+      "bytes": 672
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "SHA256": "d3a0eb627696825b1a98bf0f2a00358f5c0bbc11790ca7e5f756e193132a0383",
+      "bytes": 2508
+    },
+    {
+      "path": "docs/PERFORMANCE.md",
+      "SHA256": "17dcaf8368467bd8259d2378451f9f43d95cce623f61b82477c095baa7125cec",
+      "bytes": 4804
+    },
+    {
+      "path": "docs/PERSISTENCE.md",
+      "SHA256": "605ebb73dbaa1587a8ce9f687eec0f3690d60c62ed5fc71cbb5f236b5e8c1a54",
+      "bytes": 2727
+    },
+    {
+      "path": "docs/SOURCE_LAYOUT.md",
+      "SHA256": "73c0d9afa7e1abebe32e077c0d4b89000d0653d4137ad49776a1fa885b2e98f8",
+      "bytes": 1297
+    },
+    {
+      "path": "docs/USAGE.md",
+      "SHA256": "3249f6a0f296dc89dd30edd376a03eabcedbbd6ea0649df1d19271c6181e45ef",
+      "bytes": 3932
+    },
+    {
+      "path": "examples/README.md",
+      "SHA256": "5f62696c25164019ac558ce62ad84df9f63aa0da66179133bad532facc1dbf9e",
+      "bytes": 1156
+    },
+    {
+      "path": "examples/basic_classification.py",
+      "SHA256": "596d709c6caf8a07469c1312be2c0da255debbe5fc560b035107f2f311d91a5b",
+      "bytes": 2200
+    },
+    {
+      "path": "examples/basic_multiclass.py",
+      "SHA256": "302e1bf301f819ac78404b804ee0b916ee1b3d0eb4779abbae5b287d4fd2f0c4",
+      "bytes": 1018
+    },
+    {
+      "path": "examples/basic_regression.py",
+      "SHA256": "8e13a0f495e8aadca200ea61cfe82dd7b7bf5e30b9204ab032ea5da26cf47349",
+      "bytes": 1940
+    },
+    {
+      "path": "examples/basic_usage.py",
+      "SHA256": "ffe8181dae0ca0dc334f7a42645c83a13c6b0265251c62b6aa39605683675905",
+      "bytes": 3478
+    },
+    {
+      "path": "licenses/CORE_210_MIT.txt",
+      "SHA256": "3610c350fb9e5515a3c859187dba4f04f6d0345f840fbc17034b79db9d44d5b3",
+      "bytes": 1088
+    },
+    {
+      "path": "licenses/DEPENDENCY_NOTICE_INDEX.json",
+      "SHA256": "a0e7e1df9136e373f653ac98d7f5759612d91b5ba21320dbe346c15559c5c4a7",
+      "bytes": 59023
+    },
+    {
+      "path": "licenses/README.md",
+      "SHA256": "1e80ebb3d81157e9403ee919bbbe04f3b7000a0e122c82fcb3b69dc83cabe8bf",
+      "bytes": 2269
+    },
+    {
+      "path": "licenses/texts/00_000.txt",
+      "SHA256": "3029ea34173e9fdc233ad315dc6b100bd1ea71f529b1c1af97664a272fdc55f5",
+      "bytes": 1754
+    },
+    {
+      "path": "licenses/texts/01_000.txt",
+      "SHA256": "3610c350fb9e5515a3c859187dba4f04f6d0345f840fbc17034b79db9d44d5b3",
+      "bytes": 1088
+    },
+    {
+      "path": "licenses/texts/03_000.txt",
+      "SHA256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318",
+      "bytes": 1491
+    },
+    {
+      "path": "licenses/texts/04_000.txt",
+      "SHA256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4",
+      "bytes": 1098
+    },
+    {
+      "path": "licenses/texts/05_000.txt",
+      "SHA256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+      "bytes": 1527
+    },
+    {
+      "path": "licenses/texts/06_000.txt",
+      "SHA256": "811445f30147b8f0c9d444c9025fd528f9532c54b7b83f6e2368473dc91cfdf0",
+      "bytes": 1082
+    },
+    {
+      "path": "licenses/texts/07_000.txt",
+      "SHA256": "a804dff0ead9fadc5293456410bcbfc32bf024be9c4513459663fb7b442d2341",
+      "bytes": 45831
+    },
+    {
+      "path": "licenses/texts/07_001.txt",
+      "SHA256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150",
+      "bytes": 1039
+    },
+    {
+      "path": "licenses/texts/07_002.txt",
+      "SHA256": "aea41976c720f91bd19725c16916a1ace40eb1ea42620d340e587a5de4bbcea0",
+      "bytes": 704
+    },
+    {
+      "path": "licenses/texts/07_003.txt",
+      "SHA256": "d208152e2777ffd0126eacc1bd21c0320d69e4e6b622d21a2a12a47e8ef73763",
+      "bytes": 21155
+    },
+    {
+      "path": "licenses/texts/07_004.txt",
+      "SHA256": "b0fd592d4ead563148e3977e7b589169d46a5ef2ff133c755a81af880a3fc919",
+      "bytes": 1441
+    },
+    {
+      "path": "licenses/texts/07_005.txt",
+      "SHA256": "a732977853530066790c42817087f4829b518dd98d340c916acbfd227e39d3cb",
+      "bytes": 1542
+    },
+    {
+      "path": "licenses/texts/07_006.txt",
+      "SHA256": "585483905b13d4b42f800c55ba99e89d6e2e33ccd5f503e201c07531d148ff41",
+      "bytes": 1573
+    },
+    {
+      "path": "licenses/texts/07_007.txt",
+      "SHA256": "8db000e158c162e7249787852d8c69764706502ccee725c06641b31c1e95c8af",
+      "bytes": 1523
+    },
+    {
+      "path": "licenses/texts/07_008.txt",
+      "SHA256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b",
+      "bytes": 2314
+    },
+    {
+      "path": "licenses/texts/07_009.txt",
+      "SHA256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7",
+      "bytes": 1616
+    },
+    {
+      "path": "licenses/texts/07_010.txt",
+      "SHA256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a",
+      "bytes": 3582
+    },
+    {
+      "path": "licenses/texts/07_011.txt",
+      "SHA256": "cf5619f25b112d5ce7c896efffc8e610bcb345dfadcc19f2c1460aa48fff2c9e",
+      "bytes": 2805
+    },
+    {
+      "path": "licenses/texts/07_012.txt",
+      "SHA256": "92c10699884321f1c2947fe2a70ab23b0fbf1507f756d89dd08f38c61fc3d4fa",
+      "bytes": 2986
+    },
+    {
+      "path": "licenses/texts/07_013.txt",
+      "SHA256": "41190663b77bee5302386495a07b7eabfbfa571aa0ae2f11da6764162062fc4f",
+      "bytes": 1176
+    },
+    {
+      "path": "licenses/texts/07_014.txt",
+      "SHA256": "322ac46d870c8aeead6c53adcccc839296fb3c8e456eae155081297daf7f8013",
+      "bytes": 1540
+    },
+    {
+      "path": "licenses/texts/07_015.txt",
+      "SHA256": "28cad82ce1379dc529df30da78ec012d7d0d1d576b03ddcb93388aee53659f59",
+      "bytes": 1253
+    },
+    {
+      "path": "licenses/texts/07_016.txt",
+      "SHA256": "454ec7350e478e037061850b67395753b425b1cb0a34bbc26290b020bf89d763",
+      "bytes": 340
+    },
+    {
+      "path": "licenses/texts/07_017.txt",
+      "SHA256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150",
+      "bytes": 1039
+    },
+    {
+      "path": "licenses/texts/07_018.txt",
+      "SHA256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7",
+      "bytes": 1616
+    },
+    {
+      "path": "licenses/texts/07_019.txt",
+      "SHA256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a",
+      "bytes": 3582
+    },
+    {
+      "path": "licenses/texts/08_000.txt",
+      "SHA256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+      "bytes": 197
+    },
+    {
+      "path": "licenses/texts/08_001.txt",
+      "SHA256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174
+    },
+    {
+      "path": "licenses/texts/08_002.txt",
+      "SHA256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "bytes": 1344
+    },
+    {
+      "path": "licenses/texts/09_000.txt",
+      "SHA256": "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae",
+      "bytes": 1634
+    },
+    {
+      "path": "licenses/texts/09_001.txt",
+      "SHA256": "053a90e30580f5d9d79817add1567f88b4a3eeb11bcded9ecf74619d17768066",
+      "bytes": 1360
+    },
+    {
+      "path": "licenses/texts/09_002.txt",
+      "SHA256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "bytes": 2889
+    },
+    {
+      "path": "licenses/texts/09_003.txt",
+      "SHA256": "48216b40b3d1b19452923dd6fd74655bf5c0df9d76b51eb0efade7e0b88bfbcc",
+      "bytes": 1099
+    },
+    {
+      "path": "licenses/texts/09_004.txt",
+      "SHA256": "87217d0a79195441ab615a3abb3ab6777502e57804ea83f973df975a67ebd720",
+      "bytes": 1264
+    },
+    {
+      "path": "licenses/texts/09_005.txt",
+      "SHA256": "7463172c3a23321c1838896eba437f70a6de80ac5a840b2960966c8c5444abf1",
+      "bytes": 1104
+    },
+    {
+      "path": "licenses/texts/09_006.txt",
+      "SHA256": "50a343c1ce9e27cd6c58023f13b91d2cd679861fe7fb6bbbbfbec3dcafc3583f",
+      "bytes": 6203
+    },
+    {
+      "path": "licenses/texts/09_007.txt",
+      "SHA256": "81d42da02a56b611c35abc83d2241564b46bec3a5b1960b395d55cebca68fb6f",
+      "bytes": 1542
+    },
+    {
+      "path": "licenses/texts/09_008.txt",
+      "SHA256": "1871330068a18f1f07c3f147a41c008e59f367f217041ca6eb20b0298639a128",
+      "bytes": 11519
+    },
+    {
+      "path": "licenses/texts/09_009.txt",
+      "SHA256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "bytes": 13936
+    },
+    {
+      "path": "licenses/texts/09_010.txt",
+      "SHA256": "eafcd440e3570c6bc7b77dcec15dec398d13bc9b5e897336b221ff81ff19f345",
+      "bytes": 1486
+    },
+    {
+      "path": "licenses/texts/09_011.txt",
+      "SHA256": "70aedcd6928272bd176e4fdc3384af22ee759d006fb15105d994756e4f2d1b7a",
+      "bytes": 1058
+    },
+    {
+      "path": "licenses/texts/09_012.txt",
+      "SHA256": "458d5fd4175825440ad32d6bf6af45d1a19d4adb316b557d869c6560b6692e00",
+      "bytes": 1059
+    },
+    {
+      "path": "licenses/texts/09_013.txt",
+      "SHA256": "f371ccf0fb892a4cd9f2e550c4b8cf4362793d17028dc642ad55c1e01a41dfe1",
+      "bytes": 1249
+    },
+    {
+      "path": "licenses/texts/09_014.txt",
+      "SHA256": "2bfbb5bb8ec66d136ec62d836ddc0c0019d44ef4d9389f1f6cab1c1109d774a2",
+      "bytes": 5974
+    },
+    {
+      "path": "licenses/texts/09_015.txt",
+      "SHA256": "501352acba62cc54e8e3d293754d606f919c9b425b962193c211f9fa29cd9940",
+      "bytes": 1606
+    },
+    {
+      "path": "licenses/texts/09_016.txt",
+      "SHA256": "097a889aa954d04e088b790b10a4014d6189561d0a6013935a73ce3d4ddaaf06",
+      "bytes": 10767
+    },
+    {
+      "path": "licenses/texts/09_017.txt",
+      "SHA256": "8d8291caf1cee26d23acf3eb67c9f9a2d58f1c681b16a4fbe8cbfb9e3c0b5a9b",
+      "bytes": 1337
+    },
+    {
+      "path": "licenses/texts/09_018.txt",
+      "SHA256": "e562f3f974ced7e69dd1db77b820b36bcf8f30377f1aa105723fba449c53c4e6",
+      "bytes": 1079
+    },
+    {
+      "path": "licenses/texts/10_000.txt",
+      "SHA256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606",
+      "bytes": 1110
+    },
+    {
+      "path": "licenses/texts/11_000.txt",
+      "SHA256": "c7adc4d5d1337a548b967421f1fbe258b93033a0417708fd6f4e38f8ecbceb80",
+      "bytes": 1577
+    },
+    {
+      "path": "licenses/texts/12_000.txt",
+      "SHA256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f",
+      "bytes": 11048
+    },
+    {
+      "path": "licenses/texts/12_001.txt",
+      "SHA256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+      "bytes": 1331
+    },
+    {
+      "path": "licenses/texts/13_000.txt",
+      "SHA256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b",
+      "bytes": 1091
+    },
+    {
+      "path": "licenses/texts/14_000.txt",
+      "SHA256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "bytes": 2889
+    },
+    {
+      "path": "licenses/texts/15_000.txt",
+      "SHA256": "014b1b1ad74cf00997f7081a1635c3c203cd70c08f39c13d9a39347fcd464979",
+      "bytes": 2629
+    },
+    {
+      "path": "licenses/texts/15_001.txt",
+      "SHA256": "464569596b7e6162762669e4e4d1fe8d2618c03901ca7ba36e2603415fb6865d",
+      "bytes": 1118
+    },
+    {
+      "path": "licenses/texts/15_002.txt",
+      "SHA256": "8b2e8a4aa8a98ed811f17be2807b1eb90dcb021c1e5a0304d784d0a24f4ee907",
+      "bytes": 1118
+    },
+    {
+      "path": "licenses/texts/15_003.txt",
+      "SHA256": "5e6d496ace27b9b277e2311f894c8100660e8c95ce909c1c1f1abb4702946415",
+      "bytes": 1517
+    },
+    {
+      "path": "licenses/texts/16_000.txt",
+      "SHA256": "f0f5c56b298ec9795df1199edc328a987242716d14a1bde6813112e22dc15f99",
+      "bytes": 45881
+    },
+    {
+      "path": "licenses/texts/16_001.txt",
+      "SHA256": "e4c4acc31e8287066d7c995d26e3ef902ca1977ee187b260b11c278366503811",
+      "bytes": 1543
+    },
+    {
+      "path": "licenses/texts/16_002.txt",
+      "SHA256": "c04661685cff9d8035fe1c4c3ab357e7f7633cafc06a73e9d90c3c5fede8a86a",
+      "bytes": 1523
+    },
+    {
+      "path": "licenses/texts/16_003.txt",
+      "SHA256": "6cc2ed6e35b8f376ff3d8f86aeef4e0c34c2309bd6f4a0565936d577839ba023",
+      "bytes": 3648
+    },
+    {
+      "path": "licenses/texts/16_004.txt",
+      "SHA256": "2a6ebb495e26dd5f88cbc40c593733da6edb27b64936f70409cd5a1acafb1c32",
+      "bytes": 1759
+    },
+    {
+      "path": "licenses/texts/17_000.txt",
+      "SHA256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0",
+      "bytes": 1066
+    },
+    {
+      "path": "licenses/texts/18_000.txt",
+      "SHA256": "81ac619075248b06e53660b652d10e485f4675f5d0ae0f97ea22370da1f7e23b",
+      "bytes": 1507
+    },
+    {
+      "path": "licenses/texts/19_000.txt",
+      "SHA256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46",
+      "bytes": 625
+    },
+    {
+      "path": "licenses/texts/19_001.txt",
+      "SHA256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "native/README.md",
+      "SHA256": "85b63285b1303d93a618da5d48a3cefac91d7493aff44021cccd14428052d042",
+      "bytes": 515
+    },
+    {
+      "path": "native/memory_read.cpp",
+      "SHA256": "922974d7fcf4bec4f4a9952d1389dfc9db2602eac28090cea90488455e8209a2",
+      "bytes": 9529
+    },
+    {
+      "path": "native/toolchain_smoke.cpp",
+      "SHA256": "74483e746aab5fd315a15d16e9035b88c6f02632f1b23548971392e2e75bfd88",
+      "bytes": 591
+    },
+    {
+      "path": "pyproject.toml",
+      "SHA256": "764118e67b07a682added280f4fa881f5994cabdded77e00493f063f976bb7a9",
+      "bytes": 1510
+    },
+    {
+      "path": "qualification/README.md",
+      "SHA256": "c7edaaffb08bc8f24656140c85b6f7919e2b6ed2594611013faeac14c3cf1794",
+      "bytes": 2998
+    },
+    {
+      "path": "qualification/REVIEW.json",
+      "SHA256": "9a7ef78016801fc032c470bfd92040138d1944b13c431a41b8e298a26cdf66d6",
+      "bytes": 5482
+    },
+    {
+      "path": "release/FINAL_CHECKS.json",
+      "SHA256": "b63e0a6ace4ea4431a06e84bd109b8f61bf9d508e245f39443aefdfafcbd12ed",
+      "bytes": 2481
+    },
+    {
+      "path": "release/README.md",
+      "SHA256": "3dbb9d9dbed43a585671a79ac0ca1c01104f0e6f2f40d63c2ba6c4857ab6cabc",
+      "bytes": 2255
+    },
+    {
+      "path": "release/SOURCE_MANIFEST.txt",
+      "SHA256": "d01afc78a7d50e8f61e17b8bb5a944a8d7f5687bf6cba89139f443c396b0bcd3",
+      "bytes": 7364
+    },
+    {
+      "path": "release/STATUS.json",
+      "SHA256": "99fb8beced86ea0b909deb4434aaa08ac0348aac81f701d666ce05952bece529",
+      "bytes": 1282
+    },
+    {
+      "path": "requirements/README.md",
+      "SHA256": "ee34b8345728fbbebbd7b618805c34ea7f3aad3fa51cdc7196e1060b1add1ecb",
+      "bytes": 486
+    },
+    {
+      "path": "requirements/ci.txt",
+      "SHA256": "401e46ccf36fd8a20c593797f163f04d9b31832242abe834f79b823b1ef90781",
+      "bytes": 199
+    },
+    {
+      "path": "requirements/packaging.txt",
+      "SHA256": "a0db1b615f95ba2963c5387cbe74f00efec83a699f48713cfaab62efdce90505",
+      "bytes": 115
+    },
+    {
+      "path": "requirements/test-optional.txt",
+      "SHA256": "8196a6e6b711e679e06b8889861f8f4b4e6bf59ec3037030c911c22b5532f3f4",
+      "bytes": 181
+    },
+    {
+      "path": "requirements/verified.lock",
+      "SHA256": "7fa216b770e3f4bb4f3abf18f0a41b9166a3a0c3acfd3b09cb46f03f812d9a94",
+      "bytes": 1712
+    },
+    {
+      "path": "src/codadapt/__init__.py",
+      "SHA256": "f04264fdae988b9e17c56217af75c1c0d35f52137df2a701ec1032f8825ab70f",
+      "bytes": 758
+    },
+    {
+      "path": "src/codadapt/_base.py",
+      "SHA256": "a66aaf02e2a3338892de49c4c93d56dca3dab6b59630d184b06b59648753b12f",
+      "bytes": 24238
+    },
+    {
+      "path": "src/codadapt/_batching.py",
+      "SHA256": "314ef2b0c3546a6ee2d260f59ee39d3a1caa9073db842e43f4428ccd62bda6f2",
+      "bytes": 1710
+    },
+    {
+      "path": "src/codadapt/_bound_input.py",
+      "SHA256": "4bd9d157b5a1d5106c3898d9ff098b3772bb291371f3c526d07a786409a14dcf",
+      "bytes": 4536
+    },
+    {
+      "path": "src/codadapt/_class_weight.py",
+      "SHA256": "7c960b9c53a21eaed56808c921169078298235d354ab05c247780df5457e7294",
+      "bytes": 2451
+    },
+    {
+      "path": "src/codadapt/_core.py",
+      "SHA256": "ed5ee68396afd4527719c97b3abe29a4eed1bd497d7222e8a9a573b388ffdb02",
+      "bytes": 3615
+    },
+    {
+      "path": "src/codadapt/_inference.py",
+      "SHA256": "2cce6bfb09b1149f4ab5e968c33d657745d81497aee7b6f2c24adb1b11e77e0f",
+      "bytes": 3056
+    },
+    {
+      "path": "src/codadapt/_memory_admission.py",
+      "SHA256": "f5c4fe8601806187391914cd31eb45eb29a03854f5b2ca90934fba9bedbceec0",
+      "bytes": 13247
+    },
+    {
+      "path": "src/codadapt/_memory_policy.py",
+      "SHA256": "529fb43dd3af2b40aa9fbafd9c7650fce8922310dab07fe3bc7a93e1f2c173bc",
+      "bytes": 2683
+    },
+    {
+      "path": "src/codadapt/_multiclass.py",
+      "SHA256": "f55813eff1a0783ee1899b8e2d55500c889ad33a48f687b32ff0a1a87fd43b52",
+      "bytes": 9528
+    },
+    {
+      "path": "src/codadapt/_multiclass_artifact.py",
+      "SHA256": "22019c91761dc7926254415d5234acda1cefa9b4ba080b8f9ce4fac3b14d0376",
+      "bytes": 2552
+    },
+    {
+      "path": "src/codadapt/_multiclass_packing.py",
+      "SHA256": "546ce55462163db64857541587f3413be0766c2f8daa44fc5698a36345b5bdeb",
+      "bytes": 5727
+    },
+    {
+      "path": "src/codadapt/_resource_snapshot.py",
+      "SHA256": "d2903043d1272630deadf39a22a8a3dea7934924951fb70f2fbf35a238117b01",
+      "bytes": 14819
+    },
+    {
+      "path": "src/codadapt/_resource_tier.py",
+      "SHA256": "f4f0b51ee16fa877a2249e5696043a4db22690e6815910d8c0d05a716f6b1632",
+      "bytes": 2271
+    },
+    {
+      "path": "src/codadapt/_sequence_payload.py",
+      "SHA256": "424add92c0338da3bc93b8dd224ad249f609990a37c540918b64f720e8b8f5bc",
+      "bytes": 3293
+    },
+    {
+      "path": "src/codadapt/_serialization.py",
+      "SHA256": "fbffc4e31f2a076d3f7e32a1ec5717cd3555f56add9bfee09540b542f2ad6d20",
+      "bytes": 9719
+    },
+    {
+      "path": "src/codadapt/_serving.py",
+      "SHA256": "76f51a56eaa1c89b2e71c1823dbb1c9c286508abde3322ba9349252c2448ffd5",
+      "bytes": 663
+    },
+    {
+      "path": "src/codadapt/_training.py",
+      "SHA256": "07c8d94c69c19792e9568fddfd8817c16b67fb6edb3c6833a148a278670a6b9b",
+      "bytes": 17692
+    },
+    {
+      "path": "src/codadapt/_trusted_payload.py",
+      "SHA256": "6a952dde874b19b45c027412cb146c02e36481633f33f923c526f28526fd0297",
+      "bytes": 4051
+    },
+    {
+      "path": "src/codadapt/_version.py",
+      "SHA256": "0ca93ed5bfab66c245c458b526827b4e612f204434adff82f470195b0be3b8cd",
+      "bytes": 22
+    },
+    {
+      "path": "src/codadapt/_virtual_domain.py",
+      "SHA256": "9c91571b31ca553d9b0bd56a0669fe71c4cb9cf0f558f392bf4eb5a51ff0c28e",
+      "bytes": 1183
+    },
+    {
+      "path": "src/codadapt/_visible_tier.py",
+      "SHA256": "fdb4900a477e1e3188c83172c7cf158bab290169b7d5cce3fb42fd08cac2b2ee",
+      "bytes": 1986
+    },
+    {
+      "path": "src/codadapt/_visible_virtual.py",
+      "SHA256": "555fe507fb0af9e537375c176c8865e8c50398af3b47b998dd3066a04dfdc098",
+      "bytes": 5244
+    },
+    {
+      "path": "src/codadapt/classifier.py",
+      "SHA256": "e51faa542520855cab5c3716f8ccbb38e9090cae7cb160e3f264d758d446fa4b",
+      "bytes": 6678
+    },
+    {
+      "path": "src/codadapt/experimental/__init__.py",
+      "SHA256": "44796409ba32ae28ac44f4b0b492fc8a0e292c85592d9e21bedeacd13af5ed5b",
+      "bytes": 398
+    },
+    {
+      "path": "src/codadapt/experimental/_compiler.py",
+      "SHA256": "fe355d7954f20fa6af34f40e27d4aee9cdada474fc18d0f261be3e44bbff1a03",
+      "bytes": 7574
+    },
+    {
+      "path": "src/codadapt/experimental/_model.py",
+      "SHA256": "e38c537f785447fc01b884a2d2ac276b3a4a84d6d2f31e4ec018e2f6a180449d",
+      "bytes": 6974
+    },
+    {
+      "path": "src/codadapt/experimental/_rational.py",
+      "SHA256": "7f3f3cccaa4cc29cfc7f6c0835bc4abb1cc9aef3d6eb714adf7ed9c0daea5e0a",
+      "bytes": 5112
+    },
+    {
+      "path": "src/codadapt/experimental/_safe_blend.py",
+      "SHA256": "a70a783ab450d2c3a3a5b7d4ec3c898d83d2c4b1674f3932ff078c915c10ce0b",
+      "bytes": 10123
+    },
+    {
+      "path": "src/codadapt/preprocessing.py",
+      "SHA256": "209b4401bee34efb6aed6d2dca8635f9998a7528310511ff32b932098d883e55",
+      "bytes": 24200
+    },
+    {
+      "path": "src/codadapt/regressor.py",
+      "SHA256": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8",
+      "bytes": 425
+    },
+    {
+      "path": "src/codadapt/serving/__init__.py",
+      "SHA256": "920ba7269c9cea62443d7898b9a3d161beaa165af20044922e99adbed50adf3c",
+      "bytes": 1316
+    },
+    {
+      "path": "src/codadapt/serving/_contract.py",
+      "SHA256": "da6422a5e1c37343aa405940e39cb12da02e6075b0fc92c272ffe952d4382489",
+      "bytes": 2935
+    },
+    {
+      "path": "src/codadapt/serving/backing_compiler.py",
+      "SHA256": "6a590f918f4d9dfa8608f5d938668f84d34748a806569a9d5fd97e04d2f861a2",
+      "bytes": 3226
+    },
+    {
+      "path": "src/codadapt/serving/composed_runtime.py",
+      "SHA256": "dd619b3a8b5e72a0ed2490d51e4a61d1805d1b1565f80b17c43566b9182f03ba",
+      "bytes": 1424
+    },
+    {
+      "path": "src/codadapt/serving/exporter.py",
+      "SHA256": "f8c8235569a2ef8fb16262ac0dc868ffd083dfe3f23575504acfdd6ed6c5879e",
+      "bytes": 5699
+    },
+    {
+      "path": "src/codadapt/serving/metadata_compiler.py",
+      "SHA256": "d7675d2a0ec0e1963ced1ee4bbaa58067d8c66ceaf1256a555cb0ba40f291646",
+      "bytes": 3493
+    },
+    {
+      "path": "src/codadapt/serving/numeric_frame_runtime.py",
+      "SHA256": "cc77606106d779aef70c170766be1217a15ff7ced38aebe59578608cbacb8f81",
+      "bytes": 5465
+    },
+    {
+      "path": "src/codadapt/serving/portable_native_runtime.py",
+      "SHA256": "7a56a6b702fdd6fe1462082619ff7e3d52170590dea43ce7c98cdf1a8f4a2c3e",
+      "bytes": 18439
+    },
+    {
+      "path": "src/codadapt/serving/source_contract.json",
+      "SHA256": "0d92a788ac22e847a7831bb74049b48c250d294828ecc0c2f18c01958ebabf90",
+      "bytes": 6558
+    },
+    {
+      "path": "src/codadapt/serving/string_map_primitive.py",
+      "SHA256": "0bf858034672f1c275a51593e98709914bba9945d89113e72b5043a64fc77683",
+      "bytes": 1561
+    },
+    {
+      "path": "src/codadapt/serving/validated_native_format.py",
+      "SHA256": "9da4a94bd026e247b4a1d72c548e39d2f953a0e35db0cc683065d20695416b1c",
+      "bytes": 41718
+    },
+    {
+      "path": "tests/conftest.py",
+      "SHA256": "0cf174347f77fec30a76039a097bcf85d0b479c97960a6dbc857773de6cb2dba",
+      "bytes": 199
+    },
+    {
+      "path": "tests/fixtures/binary.json",
+      "SHA256": "f45994d2f850d391da1d10ff896120da9faf0eea869b6f58cf6a03d47e1c2e35",
+      "bytes": 1160
+    },
+    {
+      "path": "tests/fixtures/binary.pkl",
+      "SHA256": "3019b666e03225b60a23383fe44f595e15ced45a0c2429f05ebe1a8342f7bd28",
+      "bytes": 27040
+    },
+    {
+      "path": "tests/fixtures/binary.sha256",
+      "SHA256": "06ff591d02769b3bd73a2248e04a20fcf498d7953eed4b845ef271de79b8a838",
+      "bytes": 66
+    },
+    {
+      "path": "tests/fixtures/multiclass.json",
+      "SHA256": "25e3c2e2ed0f377ff648517e7c06360790d226f69d25af6e7a5cbda44fc51e54",
+      "bytes": 1167
+    },
+    {
+      "path": "tests/fixtures/multiclass.pkl",
+      "SHA256": "f36a2b1ca50f94daa54e6edc06921cc9eb8e783afedd69445b0fc55e28f900a4",
+      "bytes": 61242
+    },
+    {
+      "path": "tests/fixtures/multiclass.sha256",
+      "SHA256": "3a16185c0c5a4137a6c2f191abc1aebfddbd11a678e6641707280892ba486ad8",
+      "bytes": 66
+    },
+    {
+      "path": "tests/fixtures/regression.json",
+      "SHA256": "840d0787702ca29b9d81632a1f466ea6e49a1185416736e54712941d0c2586c4",
+      "bytes": 1147
+    },
+    {
+      "path": "tests/fixtures/regression.pkl",
+      "SHA256": "4adc74c5c2ee00118b96353dd9cf7dd6fe5a518eb8da7ebe6ee62f9bd9711d0b",
+      "bytes": 12182
+    },
+    {
+      "path": "tests/fixtures/regression.sha256",
+      "SHA256": "1772d1e4933b9cf310b4b6e506800d7103ada49f47f8fb365419157cd95a62b1",
+      "bytes": 66
+    },
+    {
+      "path": "tests/legacy/_binary_reference.py",
+      "SHA256": "5615ae561b25ca117943064fe3a996880b141026bfa5d9105daadb53edde9bae",
+      "bytes": 1160
+    },
+    {
+      "path": "tests/legacy/_multiclass_helpers.py",
+      "SHA256": "8594f25debd186e4796a0df838de86bbd49e99ac9c0a60aa80ecff397af2a949",
+      "bytes": 3493
+    },
+    {
+      "path": "tests/legacy/conftest.py",
+      "SHA256": "a48148cf2c17742e58f5fc0aadbbdea63ccffbaead902a953dd2b3b695b83e29",
+      "bytes": 598
+    },
+    {
+      "path": "tests/legacy/test_adaptive_levels.py",
+      "SHA256": "31923b7f1136b1b80131aaa8231c5396b2fd6fde00198812aa80c9f6559b4d85",
+      "bytes": 2520
+    },
+    {
+      "path": "tests/legacy/test_addressing.py",
+      "SHA256": "ab489530ef4027a28180f300f5fb20b8d2311c9813da16186d9af94976023783",
+      "bytes": 1912
+    },
+    {
+      "path": "tests/legacy/test_auto_memory.py",
+      "SHA256": "33d5b59f722975290e72a6718cf2bc4d87ca8bd9e6f445709e83bdccbf97d5e4",
+      "bytes": 5285
+    },
+    {
+      "path": "tests/legacy/test_auto_memory_cgroup.py",
+      "SHA256": "98a6f0a0e0cf40657bc605bc81f6a632cbc6e1ed62b88cf475888654e650ee32",
+      "bytes": 4985
+    },
+    {
+      "path": "tests/legacy/test_auto_memory_policy.py",
+      "SHA256": "e9116338d38665d86614ee314962980f626e25e14567abe6445754828f9b1ddf",
+      "bytes": 10596
+    },
+    {
+      "path": "tests/legacy/test_cardinality.py",
+      "SHA256": "d2761105870685498540a96212ba9b753cddc93b8e85d9ac7dcb764c3ce00f9e",
+      "bytes": 2572
+    },
+    {
+      "path": "tests/legacy/test_class_weight.py",
+      "SHA256": "91e08a74240d996626bd7491cd49c1e9158ca742207db1069a6505d6cb328a85",
+      "bytes": 14176
+    },
+    {
+      "path": "tests/legacy/test_classifier.py",
+      "SHA256": "a78a917d5e3a4c07b0b60645da8cd37e0cb4ddd1a24ed86ba1066e980ec4b503",
+      "bytes": 5786
+    },
+    {
+      "path": "tests/legacy/test_classifier_training.py",
+      "SHA256": "00653b82c247549b6678b42b30100545ca6a051c99c0e8005feee9b78498cd2d",
+      "bytes": 2718
+    },
+    {
+      "path": "tests/legacy/test_coded_memory.py",
+      "SHA256": "ecc223e3a7a43ce9b01dffd02579fba7408c5a8e57c3f4519ed228a042172e94",
+      "bytes": 2878
+    },
+    {
+      "path": "tests/legacy/test_default_api.py",
+      "SHA256": "9c19cb1adf4a2804fe255dc611f8e47b6a06acf8aafdfaa3a93daa0ddf4600b0",
+      "bytes": 3911
+    },
+    {
+      "path": "tests/legacy/test_ebm_compiler.py",
+      "SHA256": "968246c24668291093a4b49b8d6e2639877d667a87125a032c0adcbaf7b3400d",
+      "bytes": 8425
+    },
+    {
+      "path": "tests/legacy/test_incremental_gain.py",
+      "SHA256": "5e8e67272e93472079e2d9b0fba00a6d2a06fb43666c061109afdd422959caa0",
+      "bytes": 6657
+    },
+    {
+      "path": "tests/legacy/test_independence.py",
+      "SHA256": "ef21a3b05678fc8b53467f3b981908144108a7bf26a3158325be5fd86b455b53",
+      "bytes": 1709
+    },
+    {
+      "path": "tests/legacy/test_inference_metadata_exact.py",
+      "SHA256": "364f1979f80960f08e42a2cfb983484a36f133409d81f721f295da7940047944",
+      "bytes": 5056
+    },
+    {
+      "path": "tests/legacy/test_memory_budget.py",
+      "SHA256": "1c25c840fda2b6a6c6d77916f545cc73b652a0e7c62672ac010a60195b4b8fde",
+      "bytes": 6582
+    },
+    {
+      "path": "tests/legacy/test_multiclass.py",
+      "SHA256": "bfe5bda5b443a16851a56311db28f9e0b7221107960c5bbb214f55fc18db0b56",
+      "bytes": 11918
+    },
+    {
+      "path": "tests/legacy/test_no_leakage.py",
+      "SHA256": "9593f4731cf99b65d4bcefbc273e39db690d64315055f0352d189402d27bbb86",
+      "bytes": 6347
+    },
+    {
+      "path": "tests/legacy/test_persistence.py",
+      "SHA256": "fc8b2e39b9ed1e3bfca2b98b982e7f4029cb795867b37bc043b13f7ffa89f2d2",
+      "bytes": 3756
+    },
+    {
+      "path": "tests/legacy/test_pre_rc_api.py",
+      "SHA256": "91761901009f46458e189fd787d7ba42d46267c304bb1e19f0f2289b166a7d78",
+      "bytes": 4259
+    },
+    {
+      "path": "tests/legacy/test_preprocessing.py",
+      "SHA256": "1bebe09011a23f87c0358e08dbce3cce95993ddb18b22925f3aedea2e6deb469",
+      "bytes": 12195
+    },
+    {
+      "path": "tests/legacy/test_rational_callback.py",
+      "SHA256": "b4cb40633b011be4b7fe21d3a8ef3a622c5edc4c007bf154fc6294f7f56f5a56",
+      "bytes": 5610
+    },
+    {
+      "path": "tests/legacy/test_regressor.py",
+      "SHA256": "7eaa2d404bc7a17882c8f8ca9186d20cf700456f574a4dd28ecee8f0b5f9cf60",
+      "bytes": 3657
+    },
+    {
+      "path": "tests/legacy/test_release_contracts.py",
+      "SHA256": "b1f4ce03922029e5d6c45bfd6d0bbb4fafb72c785c6b10eaa05e1060a6ba1d9c",
+      "bytes": 5248
+    },
+    {
+      "path": "tests/legacy/test_safe_blend.py",
+      "SHA256": "249b5d5b8fae14f2f6a297c91abf2fd64362fd9b4f5e4bff65e2ed784a225aeb",
+      "bytes": 10613
+    },
+    {
+      "path": "tests/legacy/test_serving.py",
+      "SHA256": "07dfbcec030159653fb9b6a9d51420918d983b8944bdd3b4219c9a93844730d4",
+      "bytes": 9980
+    },
+    {
+      "path": "tests/legacy/test_shared_encoder.py",
+      "SHA256": "3947ab50ff462c6ad703311b7d409cd19520866a2eb6f4e3099c9b35745c74d9",
+      "bytes": 2683
+    },
+    {
+      "path": "tests/legacy/test_sklearn_compat.py",
+      "SHA256": "daa03657f3f30818366c5e89fde42effda186504253af68e273ddc928bb5f6f5",
+      "bytes": 4528
+    },
+    {
+      "path": "tests/test_packaging.py",
+      "SHA256": "8d0c05af85e0432c527dc4624cfca86192693408fc247dc0124e2eca76946dcc",
+      "bytes": 2055
+    },
+    {
+      "path": "tests/test_release.py",
+      "SHA256": "a14271b90d23b85a52af6095305fcebd7f7c02252d67216d9c77c0f1466bdb78",
+      "bytes": 4327
+    },
+    {
+      "path": "tests/test_snapshot_compatibility.py",
+      "SHA256": "fa0224e4ea421d4aaf0c30686aa41039d4c41cfb9eeacf236be6d2a95c1ae440",
+      "bytes": 2219
+    },
+    {
+      "path": "tools/check_workflows.py",
+      "SHA256": "827b2a478d7c3adc1abea1daac605bc266a080a1459dc5b1175989be33a626b3",
+      "bytes": 3029
+    },
+    {
+      "path": "tools/convert_snapshot_to_native_pickle.py",
+      "SHA256": "097459c23c2d13100eb43c4a0fec5460e3965bcccc2053f652c0ec15d7a59bd6",
+      "bytes": 1685
+    },
+    {
+      "path": "tools/release_backend.py",
+      "SHA256": "d27f487e26d83e7efcb7fea23ddf9df3b41c60fac17c9e05fe55a4d043ca7da2",
+      "bytes": 6584
+    },
+    {
+      "path": "tools/update_manifest.py",
+      "SHA256": "29c2bf2973f1a8bd4ee80594f00ae9c95845b24abdb4c727a572a16763f1a771",
+      "bytes": 1387
+    },
+    {
+      "path": "tools/verify_repository.py",
+      "SHA256": "df0f7d4519bbe35bebc1b8a2bdbaea375d1440f6e68592970b153f280372f9d0",
+      "bytes": 9284
+    }
+  ],
+  "inventory_exclusions": [
+    "release/SBOM.json",
+    "release/MANIFEST.json",
+    "release/SHA256SUMS.txt"
+  ],
+  "published_baseline_wheel_sha256": "a58603dc7d45c1752ed94630b294aa0791b57f03fb7d3f966b314e5153f9b6b3",
+  "ci_dependency_profile": "requirements/ci.txt",
+  "core_license": "MIT",
+  "new_contribution_license": "MIT for original components, on the author’s declared rights; third-party terms preserved"
+}

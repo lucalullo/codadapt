@@ -1,0 +1,4 @@
+# Verified packaging/validation tools, separate from runtime dependencies.
+build==1.6.1
+twine==6.2.0
+PyYAML==6.0.4

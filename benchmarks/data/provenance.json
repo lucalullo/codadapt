@@ -1,0 +1,33 @@
+{
+  "source_title": "CodAdapt 2.2.0 Comprehensive Performance and Efficiency Benchmark (24 November 2026)",
+  "source_pdf_sha256": "7a48734981777fcc8262f72e7021c709d3f83839935d3c95f054f03a37697692",
+  "source_included": false,
+  "transcription": "Tables, CSV and figures retain printed precision. Authenticated full-precision aggregate records are provided separately. No new timing, fitting, statistical reclassification or dataset rows.",
+  "development": {
+    "origins": 14,
+    "fit_attempts": 98,
+    "valid_algorithm_origin_measurements": 97,
+    "completed_pairs": 83,
+    "missing_pairs": 1,
+    "technical_replays": 14,
+    "exploratory_favorable": 14,
+    "inconclusive": 40,
+    "exploratory_unfavorable": 29,
+    "holm_confirmed_wins": 0,
+    "formal_equivalences": 0
+  },
+  "page_ranges": {
+    "datasets": "3-4",
+    "paired_intervals": "4-5, 9-11, 23-24",
+    "joint_tradeoffs": "20-21",
+    "measurements": "26-53",
+    "technical": "54-62"
+  },
+  "correction": "The reuse table physically contains 56 rows (14 origins x four batch sizes); the printed caption on p. 58 says 42 (14 x three). The CSV retains the 56 displayed rows. Confirm against original receipts before making any broader qualification claim.",
+  "aggregate_source_sha256": "28a5c29e1071301e22b17305768f67c42e0201ed4258e87ecd9dd97e866863c4",
+  "full_precision_aggregate_file": "full_precision.json",
+  "numeric_crosscheck": {
+    "quality_and_cost_values": 1358,
+    "mismatches_beyond_printed_rounding": 0
+  }
+}

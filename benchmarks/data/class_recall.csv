@@ -1,0 +1,240 @@
+dataset,task,algorithm,class,recall,source_page
+Breast Cancer Wisconsin,binary,CodAdapt 2.1.0,0,0.97196,26
+Breast Cancer Wisconsin,binary,CodAdapt 2.1.0,1,0.85938,26
+Breast Cancer Wisconsin,binary,Logistic / Ridge,0,0.97196,26
+Breast Cancer Wisconsin,binary,Logistic / Ridge,1,0.89062,26
+Breast Cancer Wisconsin,binary,Random Forest,0,0.97196,26
+Breast Cancer Wisconsin,binary,Random Forest,1,0.85938,26
+Breast Cancer Wisconsin,binary,HistGradientBoosting,0,0.97196,26
+Breast Cancer Wisconsin,binary,HistGradientBoosting,1,0.87500,26
+Breast Cancer Wisconsin,binary,XGBoost,0,0.97196,26
+Breast Cancer Wisconsin,binary,XGBoost,1,0.89062,26
+Breast Cancer Wisconsin,binary,LightGBM,0,0.97196,26
+Breast Cancer Wisconsin,binary,LightGBM,1,0.85938,26
+Breast Cancer Wisconsin,binary,CatBoost,0,0.97196,26
+Breast Cancer Wisconsin,binary,CatBoost,1,0.93750,26
+Danish occupancy,binary,CodAdapt 2.1.0,0,0.93697,28
+Danish occupancy,binary,CodAdapt 2.1.0,1,0.72866,28
+Danish occupancy,binary,Logistic / Ridge,0,0.90756,28
+Danish occupancy,binary,Logistic / Ridge,1,0.47561,28
+Danish occupancy,binary,Random Forest,0,0.91492,28
+Danish occupancy,binary,Random Forest,1,0.71951,28
+Danish occupancy,binary,HistGradientBoosting,0,0.92332,28
+Danish occupancy,binary,HistGradientBoosting,1,0.71341,28
+Danish occupancy,binary,XGBoost,0,0.92857,28
+Danish occupancy,binary,XGBoost,1,0.69207,28
+Danish occupancy,binary,LightGBM,0,0.93172,28
+Danish occupancy,binary,LightGBM,1,0.70122,28
+Danish occupancy,binary,CatBoost,0,0.93382,28
+Danish occupancy,binary,CatBoost,1,0.73780,28
+Denver trees,binary,CodAdapt 2.1.0,0,1.00000,30
+Denver trees,binary,CodAdapt 2.1.0,1,0.00000,30
+Denver trees,binary,Logistic / Ridge,0,0.89293,30
+Denver trees,binary,Logistic / Ridge,1,0.12983,30
+Denver trees,binary,Random Forest,0,0.99365,30
+Denver trees,binary,Random Forest,1,0.01288,30
+Denver trees,binary,HistGradientBoosting,0,1.00000,30
+Denver trees,binary,HistGradientBoosting,1,0.00000,30
+Denver trees,binary,XGBoost,0,1.00000,30
+Denver trees,binary,XGBoost,1,0.00000,30
+Denver trees,binary,LightGBM,0,1.00000,30
+Denver trees,binary,LightGBM,1,0.00000,30
+Denver trees,binary,CatBoost,0,0.99746,30
+Denver trees,binary,CatBoost,1,0.00396,30
+SECOM,binary,CodAdapt 2.1.0,0,1.00000,32
+SECOM,binary,CodAdapt 2.1.0,1,0.00000,32
+SECOM,binary,Logistic / Ridge,0,0.80297,32
+SECOM,binary,Logistic / Ridge,1,0.30000,32
+SECOM,binary,Random Forest,0,0.99628,32
+SECOM,binary,Random Forest,1,0.00000,32
+SECOM,binary,HistGradientBoosting,0,0.99628,32
+SECOM,binary,HistGradientBoosting,1,0.00000,32
+SECOM,binary,XGBoost,0,0.97770,32
+SECOM,binary,XGBoost,1,0.00000,32
+SECOM,binary,LightGBM,0,1.00000,32
+SECOM,binary,LightGBM,1,0.00000,32
+SECOM,binary,CatBoost,0,1.00000,32
+SECOM,binary,CatBoost,1,0.00000,32
+Statlog German Credit,binary,CodAdapt 2.1.0,0,0.89305,34
+Statlog German Credit,binary,CodAdapt 2.1.0,1,0.50000,34
+Statlog German Credit,binary,Logistic / Ridge,0,0.82353,34
+Statlog German Credit,binary,Logistic / Ridge,1,0.62500,34
+Statlog German Credit,binary,Random Forest,0,0.89305,34
+Statlog German Credit,binary,Random Forest,1,0.38750,34
+Statlog German Credit,binary,HistGradientBoosting,0,0.79679,34
+Statlog German Credit,binary,HistGradientBoosting,1,0.57500,34
+Statlog German Credit,binary,XGBoost,0,0.86096,34
+Statlog German Credit,binary,XGBoost,1,0.43750,34
+Statlog German Credit,binary,LightGBM,0,0.85027,34
+Statlog German Credit,binary,LightGBM,1,0.45000,34
+Statlog German Credit,binary,CatBoost,0,0.88770,34
+Statlog German Credit,binary,CatBoost,1,0.41250,34
+Annealing,multiclass,CodAdapt 2.1.0,0,0.00000,36
+Annealing,multiclass,CodAdapt 2.1.0,1,0.87500,36
+Annealing,multiclass,CodAdapt 2.1.0,2,0.95679,36
+Annealing,multiclass,CodAdapt 2.1.0,3,1.00000,36
+Annealing,multiclass,CodAdapt 2.1.0,4,0.22222,36
+Annealing,multiclass,Logistic / Ridge,0,0.50000,36
+Annealing,multiclass,Logistic / Ridge,1,0.95833,36
+Annealing,multiclass,Logistic / Ridge,2,0.98765,36
+Annealing,multiclass,Logistic / Ridge,3,1.00000,36
+Annealing,multiclass,Logistic / Ridge,4,0.66667,36
+Annealing,multiclass,Random Forest,0,0.50000,36
+Annealing,multiclass,Random Forest,1,0.91667,36
+Annealing,multiclass,Random Forest,2,1.00000,36
+Annealing,multiclass,Random Forest,3,1.00000,36
+Annealing,multiclass,Random Forest,4,0.88889,36
+Annealing,multiclass,HistGradientBoosting,0,0.50000,36
+Annealing,multiclass,HistGradientBoosting,1,0.83333,36
+Annealing,multiclass,HistGradientBoosting,2,0.98148,36
+Annealing,multiclass,HistGradientBoosting,3,1.00000,36
+Annealing,multiclass,HistGradientBoosting,4,0.66667,36
+Annealing,multiclass,XGBoost,0,0.50000,36
+Annealing,multiclass,XGBoost,1,0.91667,36
+Annealing,multiclass,XGBoost,2,0.99383,36
+Annealing,multiclass,XGBoost,3,1.00000,36
+Annealing,multiclass,XGBoost,4,0.77778,36
+Annealing,multiclass,LightGBM,0,0.50000,36
+Annealing,multiclass,LightGBM,1,0.70833,36
+Annealing,multiclass,LightGBM,2,0.99383,36
+Annealing,multiclass,LightGBM,3,1.00000,36
+Annealing,multiclass,LightGBM,4,0.88889,36
+Annealing,multiclass,CatBoost,0,0.00000,36
+Annealing,multiclass,CatBoost,1,1.00000,36
+Annealing,multiclass,CatBoost,2,0.99383,36
+Annealing,multiclass,CatBoost,3,1.00000,36
+Annealing,multiclass,CatBoost,4,0.77778,36
+Forest Types,multiclass,CodAdapt 2.1.0,0,0.93333,38
+Forest Types,multiclass,CodAdapt 2.1.0,1,0.91667,38
+Forest Types,multiclass,CodAdapt 2.1.0,2,0.80000,38
+Forest Types,multiclass,CodAdapt 2.1.0,3,0.75000,38
+Forest Types,multiclass,Logistic / Ridge,0,1.00000,38
+Forest Types,multiclass,Logistic / Ridge,1,0.66667,38
+Forest Types,multiclass,Logistic / Ridge,2,0.80000,38
+Forest Types,multiclass,Logistic / Ridge,3,0.87500,38
+Forest Types,multiclass,Random Forest,0,1.00000,38
+Forest Types,multiclass,Random Forest,1,0.75000,38
+Forest Types,multiclass,Random Forest,2,0.90000,38
+Forest Types,multiclass,Random Forest,3,0.87500,38
+Forest Types,multiclass,HistGradientBoosting,0,1.00000,38
+Forest Types,multiclass,HistGradientBoosting,1,0.66667,38
+Forest Types,multiclass,HistGradientBoosting,2,1.00000,38
+Forest Types,multiclass,HistGradientBoosting,3,0.75000,38
+Forest Types,multiclass,XGBoost,0,1.00000,38
+Forest Types,multiclass,XGBoost,1,0.75000,38
+Forest Types,multiclass,XGBoost,2,0.90000,38
+Forest Types,multiclass,XGBoost,3,0.87500,38
+Forest Types,multiclass,LightGBM,0,1.00000,38
+Forest Types,multiclass,LightGBM,1,0.75000,38
+Forest Types,multiclass,LightGBM,2,0.90000,38
+Forest Types,multiclass,LightGBM,3,0.87500,38
+Forest Types,multiclass,CatBoost,0,1.00000,38
+Forest Types,multiclass,CatBoost,1,0.75000,38
+Forest Types,multiclass,CatBoost,2,0.90000,38
+Forest Types,multiclass,CatBoost,3,0.87500,38
+Glass,multiclass,CodAdapt 2.1.0,1,0.89474,40
+Glass,multiclass,CodAdapt 2.1.0,2,0.70000,40
+Glass,multiclass,CodAdapt 2.1.0,3,0.00000,40
+Glass,multiclass,CodAdapt 2.1.0,5,0.00000,40
+Glass,multiclass,CodAdapt 2.1.0,6,0.50000,40
+Glass,multiclass,CodAdapt 2.1.0,7,0.50000,40
+Glass,multiclass,Logistic / Ridge,1,0.68421,40
+Glass,multiclass,Logistic / Ridge,2,0.70000,40
+Glass,multiclass,Logistic / Ridge,3,0.00000,40
+Glass,multiclass,Logistic / Ridge,5,0.00000,40
+Glass,multiclass,Logistic / Ridge,6,0.50000,40
+Glass,multiclass,Logistic / Ridge,7,0.62500,40
+Glass,multiclass,Random Forest,1,0.84211,40
+Glass,multiclass,Random Forest,2,0.85000,40
+Glass,multiclass,Random Forest,3,0.20000,40
+Glass,multiclass,Random Forest,5,0.66667,40
+Glass,multiclass,Random Forest,6,1.00000,40
+Glass,multiclass,Random Forest,7,0.62500,40
+Glass,multiclass,HistGradientBoosting,1,0.78947,40
+Glass,multiclass,HistGradientBoosting,2,0.70000,40
+Glass,multiclass,HistGradientBoosting,3,0.40000,40
+Glass,multiclass,HistGradientBoosting,5,0.33333,40
+Glass,multiclass,HistGradientBoosting,6,0.00000,40
+Glass,multiclass,HistGradientBoosting,7,0.62500,40
+Glass,multiclass,LightGBM,1,0.73684,40
+Glass,multiclass,LightGBM,2,0.75000,40
+Glass,multiclass,LightGBM,3,0.20000,40
+Glass,multiclass,LightGBM,5,0.33333,40
+Glass,multiclass,LightGBM,6,0.50000,40
+Glass,multiclass,LightGBM,7,0.62500,40
+Glass,multiclass,CatBoost,1,0.89474,40
+Glass,multiclass,CatBoost,2,0.85000,40
+Glass,multiclass,CatBoost,3,0.40000,40
+Glass,multiclass,CatBoost,5,1.00000,40
+Glass,multiclass,CatBoost,6,1.00000,40
+Glass,multiclass,CatBoost,7,0.62500,40
+Pen Digits,multiclass,CodAdapt 2.1.0,0,0.92788,42
+Pen Digits,multiclass,CodAdapt 2.1.0,1,0.83173,42
+Pen Digits,multiclass,CodAdapt 2.1.0,2,0.93750,42
+Pen Digits,multiclass,CodAdapt 2.1.0,3,0.96354,42
+Pen Digits,multiclass,CodAdapt 2.1.0,4,0.97596,42
+Pen Digits,multiclass,CodAdapt 2.1.0,5,0.84896,42
+Pen Digits,multiclass,CodAdapt 2.1.0,6,1.00000,42
+Pen Digits,multiclass,CodAdapt 2.1.0,7,0.98551,42
+Pen Digits,multiclass,CodAdapt 2.1.0,8,0.84293,42
+Pen Digits,multiclass,CodAdapt 2.1.0,9,0.96354,42
+Pen Digits,multiclass,Logistic / Ridge,0,0.90865,42
+Pen Digits,multiclass,Logistic / Ridge,1,0.91346,42
+Pen Digits,multiclass,Logistic / Ridge,2,0.96635,42
+Pen Digits,multiclass,Logistic / Ridge,3,0.99479,42
+Pen Digits,multiclass,Logistic / Ridge,4,0.99519,42
+Pen Digits,multiclass,Logistic / Ridge,5,0.92708,42
+Pen Digits,multiclass,Logistic / Ridge,6,0.98958,42
+Pen Digits,multiclass,Logistic / Ridge,7,0.95652,42
+Pen Digits,multiclass,Logistic / Ridge,8,0.91099,42
+Pen Digits,multiclass,Logistic / Ridge,9,0.96354,42
+Pen Digits,multiclass,Random Forest,0,0.99038,42
+Pen Digits,multiclass,Random Forest,1,0.96635,42
+Pen Digits,multiclass,Random Forest,2,0.97596,42
+Pen Digits,multiclass,Random Forest,3,0.98958,42
+Pen Digits,multiclass,Random Forest,4,1.00000,42
+Pen Digits,multiclass,Random Forest,5,0.97396,42
+Pen Digits,multiclass,Random Forest,6,1.00000,42
+Pen Digits,multiclass,Random Forest,7,1.00000,42
+Pen Digits,multiclass,Random Forest,8,0.98429,42
+Pen Digits,multiclass,Random Forest,9,1.00000,42
+Pen Digits,multiclass,HistGradientBoosting,0,0.99519,42
+Pen Digits,multiclass,HistGradientBoosting,1,0.97596,42
+Pen Digits,multiclass,HistGradientBoosting,2,0.98558,42
+Pen Digits,multiclass,HistGradientBoosting,3,0.98958,42
+Pen Digits,multiclass,HistGradientBoosting,4,1.00000,42
+Pen Digits,multiclass,HistGradientBoosting,5,0.99479,42
+Pen Digits,multiclass,HistGradientBoosting,6,1.00000,42
+Pen Digits,multiclass,HistGradientBoosting,7,0.99517,42
+Pen Digits,multiclass,HistGradientBoosting,8,0.98429,42
+Pen Digits,multiclass,HistGradientBoosting,9,1.00000,42
+Pen Digits,multiclass,XGBoost,0,0.99519,42
+Pen Digits,multiclass,XGBoost,1,0.96154,42
+Pen Digits,multiclass,XGBoost,2,0.98558,42
+Pen Digits,multiclass,XGBoost,3,0.98958,42
+Pen Digits,multiclass,XGBoost,4,1.00000,42
+Pen Digits,multiclass,XGBoost,5,0.97917,42
+Pen Digits,multiclass,XGBoost,6,1.00000,42
+Pen Digits,multiclass,XGBoost,7,0.99517,42
+Pen Digits,multiclass,XGBoost,8,0.96335,42
+Pen Digits,multiclass,XGBoost,9,0.99479,42
+Pen Digits,multiclass,LightGBM,0,0.99519,42
+Pen Digits,multiclass,LightGBM,1,0.97115,42
+Pen Digits,multiclass,LightGBM,2,0.98558,42
+Pen Digits,multiclass,LightGBM,3,0.98958,42
+Pen Digits,multiclass,LightGBM,4,1.00000,42
+Pen Digits,multiclass,LightGBM,5,0.99479,42
+Pen Digits,multiclass,LightGBM,6,1.00000,42
+Pen Digits,multiclass,LightGBM,7,0.99517,42
+Pen Digits,multiclass,LightGBM,8,0.97906,42
+Pen Digits,multiclass,LightGBM,9,0.99479,42
+Pen Digits,multiclass,CatBoost,0,0.99038,42
+Pen Digits,multiclass,CatBoost,1,0.98558,42
+Pen Digits,multiclass,CatBoost,2,0.99038,42
+Pen Digits,multiclass,CatBoost,3,0.99479,42
+Pen Digits,multiclass,CatBoost,4,1.00000,42
+Pen Digits,multiclass,CatBoost,5,0.99479,42
+Pen Digits,multiclass,CatBoost,6,1.00000,42
+Pen Digits,multiclass,CatBoost,7,1.00000,42
+Pen Digits,multiclass,CatBoost,8,0.98953,42
+Pen Digits,multiclass,CatBoost,9,1.00000,42

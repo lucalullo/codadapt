@@ -1,0 +1,15 @@
+dataset,task,core_rows,valid_rows,features,categorical_features,cells,reads,valid_groups
+Breast Cancer Wisconsin,binary,274,171,9,0,3650,24,117
+Danish occupancy,binary,3264,1280,6,1,3178,24,20
+Denver trees,binary,52,3372,4,3,0,0,1
+SECOM,binary,201,279,590,0,0,0,10
+Statlog German Credit,binary,426,267,20,13,806,8,267
+Annealing,multiclass,340,213,38,32,15777,120,211
+Forest Types,multiclass,83,53,9,0,14377,96,53
+Glass,multiclass,91,57,9,0,12360,112,57
+Pen Digits,multiclass,3199,1998,16,0,31462,240,1998
+Abalone,regression,1781,1114,8,1,1606,16,1114
+Automobile,regression,84,54,24,8,1602,16,52
+Concrete,regression,431,271,8,0,3169,24,113
+Edge task execution times,regression,1236,502,3,1,527,5,12
+NYC Reservoir,regression,588,252,4,1,4386,21,6

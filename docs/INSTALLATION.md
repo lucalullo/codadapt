@@ -1,93 +1,19 @@
-# Install CodAdapt 2.1.0
+# Installation
 
-No upload is performed by this repository. Use an owner-approved local artifact
-and compare its SHA-256 with the supplied distribution manifest before installing.
+When version 2.2.0 is available on PyPI:
 
-## Current installation and documented version
-
-The documented version is 2.1.0. After owner publication, the normal command is:
-
-```text
-python -m pip install codadapt
+```bash
+python -m pip install codadapt==2.2.0
 ```
 
-The unpinned command resolves the version available on the selected index; it
-does not itself verify that 2.1.0 or these exact package hashes are installed.
-Check `python -c "import codadapt; print(codadapt.__version__)"` and the artifact
-manifest. This preparation does not upload files or verify index availability.
-Before publication use the reviewed local wheel and its SHA-256.
+For this source revision, install locally from the repository root. Use a compatible dependency environment; the [CI dependency profile](../requirements/ci.txt) matches the tested core dependency versions. The [historical Windows lock](../requirements/verified.lock) describes the preceding build and is not a portable resolver lock.
 
-The local Windows x64 / CPython 3.12.10 release procedure builds both a pure
-wheel and a cp312-cp312-win_amd64 native wheel from the paired sdist and verifies
-actual clean consumers. Exact final hashes, commands and results accompany each
-delivery; historical receipts must not be assigned to a newly rebuilt wheel.
-For example, after selecting the matching reviewed Windows artifact:
-
-```text
-python -m pip install /path/to/codadapt-2.1.0-cp312-cp312-win_amd64.whl
+```bash
+python -m pip install -r requirements/ci.txt
+python -m pip wheel --no-build-isolation --no-deps . --wheel-dir dist
+python -m pip install --no-deps dist/codadapt-2.2.0-py3-none-any.whl
 python -m pip check
+python -m pytest -q tests
 ```
 
-Pure wheels contain no CodAdapt binary. Other OS/ABI targets require their own
-native wheels and actual qualification. Native execution and automatic dispatch
-are separate: installing a native wheel does not extend the automatic guard.
-
-## Historical exact verified native Kaggle profile
-
-Linux x86-64, CPython 3.13.15, glibc 2.39; NumPy 2.5.4, pandas 3.1.0,
-SciPy 1.18.1, scikit-learn 1.9.1. Full pins are requirements/external-current.txt.
-The wheel's original SHA-256 is
-`f038373275a7de9f5ca7e5e4ff7ecaef591b0507b7b4d52e7ffc21b0ac414d65`.
-
-In a new authorized environment on that profile:
-
-```text
-python -m venv .venv
-```
-
-Use `.venv/bin/python` on Linux/macOS or `.venv\Scripts\python.exe` on Windows
-for subsequent commands. Windows/macOS cannot install the supplied Linux wheel.
-Install dependencies from a single authorized index or offline wheelhouse first:
-
-```text
-python -m pip install --index-url https://pypi.org/simple -r requirements/external-current.txt
-python -m pip install --no-deps /path/to/codadapt-2.1.0-cp313-cp313-linux_x86_64.whl
-python -c "import codadapt; print(codadapt.__version__)"
-```
-
-A matching prebuilt native wheel does not require a compiler. Ordinary Linux
-calls use Python; explicit native use and a fail-visible diagnostic are in
-[native usage](NATIVE_PROFILE_DECISION.md). The wheel is not manylinux and must
-not be retagged. Other hosts need actual tests before being advertised.
-
-## Pure Python wheel
-
-Install the owner-selected `codadapt-2.1.0-py3-none-any.whl` with `--no-deps`
-after installing the declared dependencies. It contains no CodAdapt C++ binary
-and uses Python fallback. The universal wheel tag is not proof of functional
-qualification on all platforms. Several artifacts share a version and filename;
-select the exact directory and manifest hash, not a wildcard.
-
-## Building from the source repository or sdist
-
-```text
-python -m pip install --index-url https://pypi.org/simple -r requirements/build.txt
-python -m build --wheel --sdist --no-isolation
-```
-
-Default Linux builds request C++17. To build purely in Python, set the environment
-variable `CODADAPT_BUILD_NATIVE=0` before the command. To explicitly request C++
-on any target, set `CODADAPT_BUILD_NATIVE=1`; an authorized compiler/SDK is needed.
-POSIX example: `CODADAPT_BUILD_NATIVE=0 python -m build --wheel --sdist --no-isolation`.
-PowerShell example: `$env:CODADAPT_BUILD_NATIVE='0'` followed by the build command.
-These settings do not change automatic inference dispatch or saved models.
-
-Build in a new staging copy so egg-info/build output does not alter the reviewed
-source tree. No global configuration or OS protections should be changed.
-macOS requires real Apple hosts. A denied DLL must be resolved by an authorized
-administrator/host, not relocated or stripped of metadata to bypass policy.
-
-Run examples and tests using [qualification](QUALIFICATION.md). A metadata check,
-source smoke with existing dependencies, or import without dependencies is not
-a full clean-consumer qualification. TestPyPI/PyPI steps belong to the owner and
-are in [RELEASE_210.md](RELEASE_210.md).
+Alternatively use `python -m pip install --no-build-isolation --no-deps .` in an existing compatible environment. The standard-library PEP 517 backend generates metadata directly from `pyproject.toml` and `README.md` and builds a pure-Python distribution. Run `python tools/verify_repository.py` to check source integrity and deterministic archives. See [compatibility](COMPATIBILITY.md) for the precise tested profile. The MIT terms and third-party notices are described in the [license guide](../licenses/README.md).

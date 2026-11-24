@@ -1,0 +1,3933 @@
+{
+  "scope": "Full-precision aggregate development measurements only. No feature rows, targets or fitted models. Competitive model is CodAdapt 2.1.0; technical 2.2.0 evidence is separate.",
+  "source_sha256": "28a5c29e1071301e22b17305768f67c42e0201ed4258e87ecd9dd97e866863c4",
+  "records": [
+    {
+      "dataset": "Danish occupancy",
+      "task": "binary",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.88359375,
+        "balanced_accuracy": 0.8328166632506662,
+        "macro_F1": 0.8426390955048346,
+        "logloss": 0.27229809297799557,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9369747899159664,
+          0.7286585365853658
+        ],
+        "ROC_AUC": 0.9394679365648697,
+        "FPR_native_threshold": 0.06302521008403361
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0790301,
+        "complete_job_wall_s": 8.046000000002095,
+        "cold_start_snapshot_s": 2.3704108,
+        "raw_batch1_s": 0.0006948,
+        "raw_batch3000_s": 0.0015768,
+        "raw_batch3000_rows_per_s": 1902587.5190258753,
+        "model_B": 36577,
+        "train_process_peak_RSS_B": 150179840,
+        "controller_tree_peak_RSS_B": 322686976,
+        "file_hash_unpickle_load_s": 0.0005311,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150380544,
+          "process_RSS_loaded_B": 150405120,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 141505,
+          "peak_traced_unpickle_B": 158067,
+          "process_OS_peak_B": 150425600,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Danish occupancy",
+      "task": "binary",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.796875,
+        "balanced_accuracy": 0.6915863906538224,
+        "macro_F1": 0.7073349186025242,
+        "logloss": 0.4293413634606768,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.907563025210084,
+          0.47560975609756095
+        ],
+        "ROC_AUC": 0.8393561692969871,
+        "FPR_native_threshold": 0.09243697478991597
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1292567,
+        "complete_job_wall_s": 8.406000000002678,
+        "cold_start_snapshot_s": 2.6146407,
+        "raw_batch1_s": 0.0028249,
+        "raw_batch3000_s": 0.0041582,
+        "raw_batch3000_rows_per_s": 721466.0189505074,
+        "model_B": 3348,
+        "train_process_peak_RSS_B": 151396352,
+        "controller_tree_peak_RSS_B": 323371008,
+        "file_hash_unpickle_load_s": 0.0004395,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150528000,
+          "process_RSS_loaded_B": 150544384,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 19864,
+          "peak_traced_unpickle_B": 33378,
+          "process_OS_peak_B": 150564864,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Danish occupancy",
+      "task": "binary",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.86484375,
+        "balanced_accuracy": 0.817214080754253,
+        "macro_F1": 0.8207217600744834,
+        "logloss": 0.45371131990541846,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9149159663865546,
+          0.7195121951219512
+        ],
+        "ROC_AUC": 0.9013085417093667,
+        "FPR_native_threshold": 0.08508403361344538
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.4744078,
+        "complete_job_wall_s": 10.202999999994063,
+        "cold_start_snapshot_s": 2.946339,
+        "raw_batch1_s": 0.0058606,
+        "raw_batch3000_s": 0.0204014,
+        "raw_batch3000_rows_per_s": 147048.73194976815,
+        "model_B": 3749438,
+        "train_process_peak_RSS_B": 167137280,
+        "controller_tree_peak_RSS_B": 335945728,
+        "file_hash_unpickle_load_s": 0.0064628,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 168079360,
+          "process_RSS_loaded_B": 172838912,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 207782,
+          "peak_traced_unpickle_B": 4215998,
+          "process_OS_peak_B": 172969984,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Danish occupancy",
+      "task": "binary",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.86953125,
+        "balanced_accuracy": 0.818366980938717,
+        "macro_F1": 0.8251273136312507,
+        "logloss": 0.30716537640916824,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9233193277310925,
+          0.7134146341463414
+        ],
+        "ROC_AUC": 0.9221856425497029,
+        "FPR_native_threshold": 0.07668067226890757
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1592095,
+        "complete_job_wall_s": 9.531000000002678,
+        "cold_start_snapshot_s": 2.7226869,
+        "raw_batch1_s": 0.0027352,
+        "raw_batch3000_s": 0.0080325,
+        "raw_batch3000_rows_per_s": 373482.7264239029,
+        "model_B": 141224,
+        "train_process_peak_RSS_B": 155402240,
+        "controller_tree_peak_RSS_B": 327368704,
+        "file_hash_unpickle_load_s": 0.0010151,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154165248,
+          "process_RSS_loaded_B": 154193920,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 266917,
+          "peak_traced_unpickle_B": 296393,
+          "process_OS_peak_B": 154279936,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Danish occupancy",
+      "task": "binary",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "accuracy": 0.86796875,
+        "balanced_accuracy": 0.810322299651568,
+        "macro_F1": 0.8207418100337187,
+        "logloss": 0.3021560311317444,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9285714285714286,
+          0.6920731707317073
+        ],
+        "ROC_AUC": 0.9196828883992622,
+        "FPR_native_threshold": 0.07142857142857142
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2654838,
+        "complete_job_wall_s": 9.375,
+        "cold_start_snapshot_s": 2.9904756,
+        "raw_batch1_s": 0.0028953,
+        "raw_batch3000_s": 0.0041183,
+        "raw_batch3000_rows_per_s": 728455.9162761334,
+        "model_B": 96784,
+        "train_process_peak_RSS_B": 156274688,
+        "controller_tree_peak_RSS_B": 327962624,
+        "file_hash_unpickle_load_s": 0.0023429,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154030080,
+          "process_RSS_loaded_B": 154046464,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 15963,
+          "peak_traced_unpickle_B": 116422,
+          "process_OS_peak_B": 154075136,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Danish occupancy",
+      "task": "binary",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.87265625,
+        "balanced_accuracy": 0.8164711006353761,
+        "macro_F1": 0.827106006127196,
+        "logloss": 0.30485108618041384,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9317226890756303,
+          0.7012195121951219
+        ],
+        "ROC_AUC": 0.9199134684361548,
+        "FPR_native_threshold": 0.06827731092436974
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0884724,
+        "complete_job_wall_s": 8.672000000005937,
+        "cold_start_snapshot_s": 2.4303663,
+        "raw_batch1_s": 0.0008925,
+        "raw_batch3000_s": 0.0032037,
+        "raw_batch3000_rows_per_s": 936417.2675344134,
+        "model_B": 103848,
+        "train_process_peak_RSS_B": 165081088,
+        "controller_tree_peak_RSS_B": 336166912,
+        "file_hash_unpickle_load_s": 0.0009575,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 162344960,
+          "process_RSS_loaded_B": 162361344,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 17138,
+          "peak_traced_unpickle_B": 212140,
+          "process_OS_peak_B": 162381824,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Danish occupancy",
+      "task": "binary",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.88359375,
+        "balanced_accuracy": 0.8358142037302726,
+        "macro_F1": 0.843645345801043,
+        "logloss": 0.2479979021230469,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9338235294117647,
+          0.7378048780487805
+        ],
+        "ROC_AUC": 0.9514372822299652,
+        "FPR_native_threshold": 0.0661764705882353
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.5686522,
+        "complete_job_wall_s": 8.51600000000326,
+        "cold_start_snapshot_s": 2.8409973,
+        "raw_batch1_s": 0.0004514,
+        "raw_batch3000_s": 0.0016057,
+        "raw_batch3000_rows_per_s": 1868344.0244130285,
+        "model_B": 88395,
+        "train_process_peak_RSS_B": 171171840,
+        "controller_tree_peak_RSS_B": 339288064,
+        "file_hash_unpickle_load_s": 0.0006181,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 161611776,
+          "process_RSS_loaded_B": 161660928,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 94194,
+          "peak_traced_unpickle_B": 164777,
+          "process_OS_peak_B": 161722368,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Denver trees",
+      "task": "binary",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.7007710557532622,
+        "balanced_accuracy": 0.5,
+        "macro_F1": 0.4120313862249346,
+        "logloss": 0.6771640565103104,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          1.0,
+          0.0
+        ],
+        "ROC_AUC": 0.5,
+        "FPR_native_threshold": 0.0
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0610867,
+        "complete_job_wall_s": 7.2039999999979045,
+        "cold_start_snapshot_s": 2.1499803,
+        "raw_batch1_s": 0.0008234,
+        "raw_batch3000_s": 0.0019113,
+        "raw_batch3000_rows_per_s": 1569612.305760477,
+        "model_B": 7101,
+        "train_process_peak_RSS_B": 151482368,
+        "controller_tree_peak_RSS_B": 323067904,
+        "file_hash_unpickle_load_s": 0.0003873,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 151920640,
+          "process_RSS_loaded_B": 151937024,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 56239,
+          "peak_traced_unpickle_B": 71262,
+          "process_OS_peak_B": 151961600,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Denver trees",
+      "task": "binary",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.6645907473309609,
+        "balanced_accuracy": 0.5113821145031157,
+        "macro_F1": 0.4883604556675574,
+        "logloss": 0.7813518772671452,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.8929327126534067,
+          0.12983151635282458
+        ],
+        "ROC_AUC": 0.6450600960379017,
+        "FPR_native_threshold": 0.1070672873465933
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0832241,
+        "complete_job_wall_s": 7.297000000005937,
+        "cold_start_snapshot_s": 2.1747684,
+        "raw_batch1_s": 0.0026342,
+        "raw_batch3000_s": 0.0059053,
+        "raw_batch3000_rows_per_s": 508018.2209201904,
+        "model_B": 4629,
+        "train_process_peak_RSS_B": 151732224,
+        "controller_tree_peak_RSS_B": 324632576,
+        "file_hash_unpickle_load_s": 0.0002914,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 152985600,
+          "process_RSS_loaded_B": 153001984,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 24105,
+          "peak_traced_unpickle_B": 38242,
+          "process_OS_peak_B": 153022464,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Denver trees",
+      "task": "binary",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.7001779359430605,
+        "balanced_accuracy": 0.5032680903606853,
+        "macro_F1": 0.4239607283278466,
+        "logloss": 1.3984438160618982,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9936521371138384,
+          0.01288404360753221
+        ],
+        "ROC_AUC": 0.6481616782013088,
+        "FPR_native_threshold": 0.006347862886161659
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1466486,
+        "complete_job_wall_s": 8.10899999999674,
+        "cold_start_snapshot_s": 2.1616494,
+        "raw_batch1_s": 0.0052674,
+        "raw_batch3000_s": 0.0171647,
+        "raw_batch3000_rows_per_s": 174777.30458440867,
+        "model_B": 169265,
+        "train_process_peak_RSS_B": 155144192,
+        "controller_tree_peak_RSS_B": 328609792,
+        "file_hash_unpickle_load_s": 0.0017034,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 156434432,
+          "process_RSS_loaded_B": 156430336,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 211670,
+          "peak_traced_unpickle_B": 630158,
+          "process_OS_peak_B": 156467200,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Denver trees",
+      "task": "binary",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.7007710557532622,
+        "balanced_accuracy": 0.5,
+        "macro_F1": 0.4120313862249346,
+        "logloss": 0.6771640565103104,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          1.0,
+          0.0
+        ],
+        "ROC_AUC": 0.5,
+        "FPR_native_threshold": 0.0
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1130648,
+        "complete_job_wall_s": 8.468999999997322,
+        "cold_start_snapshot_s": 2.4703619,
+        "raw_batch1_s": 0.0031602,
+        "raw_batch3000_s": 0.0069082,
+        "raw_batch3000_rows_per_s": 434266.5238412322,
+        "model_B": 10144,
+        "train_process_peak_RSS_B": 155054080,
+        "controller_tree_peak_RSS_B": 327970816,
+        "file_hash_unpickle_load_s": 0.0005669,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154673152,
+          "process_RSS_loaded_B": 154689536,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 97813,
+          "peak_traced_unpickle_B": 119698,
+          "process_OS_peak_B": 156090368,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Denver trees",
+      "task": "binary",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "accuracy": 0.7007710557532622,
+        "balanced_accuracy": 0.5,
+        "macro_F1": 0.4120313862249346,
+        "logloss": 0.7072818875312805,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          1.0,
+          0.0
+        ],
+        "ROC_AUC": 0.39261081078587257,
+        "FPR_native_threshold": 0.0
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1349216,
+        "complete_job_wall_s": 7.812999999994645,
+        "cold_start_snapshot_s": 2.3958173,
+        "raw_batch1_s": 0.0035849,
+        "raw_batch3000_s": 0.0052699,
+        "raw_batch3000_rows_per_s": 569270.7641511224,
+        "model_B": 31917,
+        "train_process_peak_RSS_B": 156549120,
+        "controller_tree_peak_RSS_B": 329191424,
+        "file_hash_unpickle_load_s": 0.0015284,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 155688960,
+          "process_RSS_loaded_B": 155705344,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 19003,
+          "peak_traced_unpickle_B": 54661,
+          "process_OS_peak_B": 155725824,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Denver trees",
+      "task": "binary",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.7007710557532622,
+        "balanced_accuracy": 0.5,
+        "macro_F1": 0.4120313862249346,
+        "logloss": 0.6771640565103104,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          1.0,
+          0.0
+        ],
+        "ROC_AUC": 0.5,
+        "FPR_native_threshold": 0.0
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0720142,
+        "complete_job_wall_s": 8.328000000008615,
+        "cold_start_snapshot_s": 2.5757839,
+        "raw_batch1_s": 0.0017958,
+        "raw_batch3000_s": 0.0036632,
+        "raw_batch3000_rows_per_s": 818956.1039528281,
+        "model_B": 9115,
+        "train_process_peak_RSS_B": 165797888,
+        "controller_tree_peak_RSS_B": 337850368,
+        "file_hash_unpickle_load_s": 0.0004913,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 163557376,
+          "process_RSS_loaded_B": 163573760,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 21332,
+          "peak_traced_unpickle_B": 35182,
+          "process_OS_peak_B": 163594240,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Denver trees",
+      "task": "binary",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.7001779359430605,
+        "balanced_accuracy": 0.5007125879777726,
+        "macro_F1": 0.4156284738441232,
+        "logloss": 0.5806102899510664,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9974608548455354,
+          0.003964321110009911
+        ],
+        "ROC_AUC": 0.655038844223403,
+        "FPR_native_threshold": 0.0025391451544646637
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.356157,
+        "complete_job_wall_s": 8.296999999991385,
+        "cold_start_snapshot_s": 2.6220138,
+        "raw_batch1_s": 0.0007212,
+        "raw_batch3000_s": 0.0041571,
+        "raw_batch3000_rows_per_s": 721656.9242981885,
+        "model_B": 55625,
+        "train_process_peak_RSS_B": 166858752,
+        "controller_tree_peak_RSS_B": 341893120,
+        "file_hash_unpickle_load_s": 0.0005759,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 163618816,
+          "process_RSS_loaded_B": 163635200,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 69346,
+          "peak_traced_unpickle_B": 103351,
+          "process_OS_peak_B": 163721216,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "NYC Reservoir",
+      "task": "regression",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "RMSE": 2.8613769323593523,
+        "MAE": 2.0937262424357734
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0724458,
+        "complete_job_wall_s": 8.531999999991967,
+        "cold_start_snapshot_s": 2.5480521,
+        "raw_batch1_s": 0.0007921,
+        "raw_batch3000_s": 0.0015766,
+        "raw_batch3000_rows_per_s": 1902828.872256755,
+        "model_B": 45736,
+        "train_process_peak_RSS_B": 149028864,
+        "controller_tree_peak_RSS_B": 321789952,
+        "file_hash_unpickle_load_s": 0.0004758,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149700608,
+          "process_RSS_loaded_B": 149729280,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 147589,
+          "peak_traced_unpickle_B": 162441,
+          "process_OS_peak_B": 149753856,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "NYC Reservoir",
+      "task": "regression",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "RMSE": 0.9414863295579214,
+        "MAE": 0.8119429031145526
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.102864,
+        "complete_job_wall_s": 8.422000000005937,
+        "cold_start_snapshot_s": 2.5284344,
+        "raw_batch1_s": 0.002228,
+        "raw_batch3000_s": 0.0031723,
+        "raw_batch3000_rows_per_s": 945686.0952621127,
+        "model_B": 3054,
+        "train_process_peak_RSS_B": 149442560,
+        "controller_tree_peak_RSS_B": 321478656,
+        "file_hash_unpickle_load_s": 0.0004102,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150372352,
+          "process_RSS_loaded_B": 150388736,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 17351,
+          "peak_traced_unpickle_B": 30768,
+          "process_OS_peak_B": 150409216,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "NYC Reservoir",
+      "task": "regression",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "RMSE": 2.1435134873205093,
+        "MAE": 1.677493861045593
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2769768,
+        "complete_job_wall_s": 9.109000000011292,
+        "cold_start_snapshot_s": 2.7788794,
+        "raw_batch1_s": 0.0054958,
+        "raw_batch3000_s": 0.0178853,
+        "raw_batch3000_rows_per_s": 167735.51464051483,
+        "model_B": 5272995,
+        "train_process_peak_RSS_B": 170532864,
+        "controller_tree_peak_RSS_B": 338558976,
+        "file_hash_unpickle_load_s": 0.0078965,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 171356160,
+          "process_RSS_loaded_B": 175947776,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 125569,
+          "peak_traced_unpickle_B": 5642261,
+          "process_OS_peak_B": 179957760,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "NYC Reservoir",
+      "task": "regression",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "RMSE": 100.12685156598288,
+        "MAE": 37.81548743129403
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1202379,
+        "complete_job_wall_s": 8.703000000008615,
+        "cold_start_snapshot_s": 2.6393333,
+        "raw_batch1_s": 0.0023601,
+        "raw_batch3000_s": 0.0067247,
+        "raw_batch3000_rows_per_s": 446116.55538537033,
+        "model_B": 125454,
+        "train_process_peak_RSS_B": 152813568,
+        "controller_tree_peak_RSS_B": 326324224,
+        "file_hash_unpickle_load_s": 0.0006719,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153305088,
+          "process_RSS_loaded_B": 153456640,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 265514,
+          "peak_traced_unpickle_B": 294896,
+          "process_OS_peak_B": 153485312,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "NYC Reservoir",
+      "task": "regression",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "RMSE": 1.295928830291473,
+        "MAE": 0.9411278216986694
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1953028,
+        "complete_job_wall_s": 8.547000000005937,
+        "cold_start_snapshot_s": 2.6367097,
+        "raw_batch1_s": 0.0024124,
+        "raw_batch3000_s": 0.0038452,
+        "raw_batch3000_rows_per_s": 780193.4879850203,
+        "model_B": 97063,
+        "train_process_peak_RSS_B": 155324416,
+        "controller_tree_peak_RSS_B": 327204864,
+        "file_hash_unpickle_load_s": 0.0018976,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153788416,
+          "process_RSS_loaded_B": 153804800,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 13859,
+          "peak_traced_unpickle_B": 113762,
+          "process_OS_peak_B": 153825280,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "NYC Reservoir",
+      "task": "regression",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "RMSE": 91.68665608140664,
+        "MAE": 61.19148139395689
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0844136,
+        "complete_job_wall_s": 9.046999999991385,
+        "cold_start_snapshot_s": 2.7150607,
+        "raw_batch1_s": 0.0009286,
+        "raw_batch3000_s": 0.0069504,
+        "raw_batch3000_rows_per_s": 431629.83425414364,
+        "model_B": 211832,
+        "train_process_peak_RSS_B": 164417536,
+        "controller_tree_peak_RSS_B": 335892480,
+        "file_hash_unpickle_load_s": 0.0016434,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 162463744,
+          "process_RSS_loaded_B": 162480128,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 19610,
+          "peak_traced_unpickle_B": 426881,
+          "process_OS_peak_B": 162500608,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "NYC Reservoir",
+      "task": "regression",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "RMSE": 130.57362194644787,
+        "MAE": 116.08589938619714
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.5699433,
+        "complete_job_wall_s": 8.73399999999674,
+        "cold_start_snapshot_s": 3.0561264,
+        "raw_batch1_s": 0.0006262,
+        "raw_batch3000_s": 0.001931,
+        "raw_batch3000_rows_per_s": 1553599.1714137753,
+        "model_B": 183944,
+        "train_process_peak_RSS_B": 167096320,
+        "controller_tree_peak_RSS_B": 340017152,
+        "file_hash_unpickle_load_s": 0.0008411,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 160251904,
+          "process_RSS_loaded_B": 160280576,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 195164,
+          "peak_traced_unpickle_B": 236707,
+          "process_OS_peak_B": 160301056,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Concrete",
+      "task": "regression",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "RMSE": 7.6701310290383695,
+        "MAE": 6.1142937629835705
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0633095,
+        "complete_job_wall_s": 8.062000000005355,
+        "cold_start_snapshot_s": 2.4357097,
+        "raw_batch1_s": 0.0003073,
+        "raw_batch3000_s": 0.0009506,
+        "raw_batch3000_rows_per_s": 3155901.535872081,
+        "model_B": 37081,
+        "train_process_peak_RSS_B": 148733952,
+        "controller_tree_peak_RSS_B": 320782336,
+        "file_hash_unpickle_load_s": 0.0004867,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149848064,
+          "process_RSS_loaded_B": 149901312,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 151507,
+          "peak_traced_unpickle_B": 166281,
+          "process_OS_peak_B": 149925888,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Concrete",
+      "task": "regression",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "RMSE": 11.24128247989602,
+        "MAE": 8.99658785268079
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1003109,
+        "complete_job_wall_s": 8.218999999997322,
+        "cold_start_snapshot_s": 2.4778689,
+        "raw_batch1_s": 0.0011047,
+        "raw_batch3000_s": 0.0012609,
+        "raw_batch3000_rows_per_s": 2379252.9145848206,
+        "model_B": 2883,
+        "train_process_peak_RSS_B": 149733376,
+        "controller_tree_peak_RSS_B": 323129344,
+        "file_hash_unpickle_load_s": 0.0003063,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149983232,
+          "process_RSS_loaded_B": 149999616,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 15337,
+          "peak_traced_unpickle_B": 25926,
+          "process_OS_peak_B": 150020096,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Concrete",
+      "task": "regression",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "RMSE": 8.37789898372318,
+        "MAE": 5.972000369664051
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2110915,
+        "complete_job_wall_s": 8.96799999999348,
+        "cold_start_snapshot_s": 2.7540004,
+        "raw_batch1_s": 0.0042439,
+        "raw_batch3000_s": 0.0114445,
+        "raw_batch3000_rows_per_s": 262134.64983179694,
+        "model_B": 3888995,
+        "train_process_peak_RSS_B": 165216256,
+        "controller_tree_peak_RSS_B": 333651968,
+        "file_hash_unpickle_load_s": 0.0062726,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 166281216,
+          "process_RSS_loaded_B": 172109824,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 123700,
+          "peak_traced_unpickle_B": 4255668,
+          "process_OS_peak_B": 172126208,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Concrete",
+      "task": "regression",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "RMSE": 7.1259682926416,
+        "MAE": 5.064744059886489
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.145167,
+        "complete_job_wall_s": 8.60899999999674,
+        "cold_start_snapshot_s": 2.6455923,
+        "raw_batch1_s": 0.0015088,
+        "raw_batch3000_s": 0.010719,
+        "raw_batch3000_rows_per_s": 279876.85418415896,
+        "model_B": 207668,
+        "train_process_peak_RSS_B": 153075712,
+        "controller_tree_peak_RSS_B": 325685248,
+        "file_hash_unpickle_load_s": 0.0012663,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154202112,
+          "process_RSS_loaded_B": 154533888,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 486577,
+          "peak_traced_unpickle_B": 521292,
+          "process_OS_peak_B": 154566656,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Concrete",
+      "task": "regression",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "RMSE": 7.679752640519079,
+        "MAE": 5.35553333527459
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.3899561,
+        "complete_job_wall_s": 8.71799999999348,
+        "cold_start_snapshot_s": 2.9185833,
+        "raw_batch1_s": 0.0015863,
+        "raw_batch3000_s": 0.0047653,
+        "raw_batch3000_rows_per_s": 629551.1300442785,
+        "model_B": 313424,
+        "train_process_peak_RSS_B": 157597696,
+        "controller_tree_peak_RSS_B": 329089024,
+        "file_hash_unpickle_load_s": 0.002279,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 155582464,
+          "process_RSS_loaded_B": 155598848,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 15279,
+          "peak_traced_unpickle_B": 331737,
+          "process_OS_peak_B": 155619328,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Concrete",
+      "task": "regression",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "RMSE": 7.058913825954994,
+        "MAE": 5.0770828371993595
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0794289,
+        "complete_job_wall_s": 9.187000000005355,
+        "cold_start_snapshot_s": 2.7502088,
+        "raw_batch1_s": 0.0001411,
+        "raw_batch3000_s": 0.0101958,
+        "raw_batch3000_rows_per_s": 294238.8042134997,
+        "model_B": 157931,
+        "train_process_peak_RSS_B": 163205120,
+        "controller_tree_peak_RSS_B": 334614528,
+        "file_hash_unpickle_load_s": 0.0015612,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 161251328,
+          "process_RSS_loaded_B": 161267712,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 18392,
+          "peak_traced_unpickle_B": 318806,
+          "process_OS_peak_B": 161497088,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Concrete",
+      "task": "regression",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "RMSE": 6.222557113185795,
+        "MAE": 4.4559962059805684
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 1.1073751,
+        "complete_job_wall_s": 9.328000000008615,
+        "cold_start_snapshot_s": 3.5867189,
+        "raw_batch1_s": 0.0004327,
+        "raw_batch3000_s": 0.0015108,
+        "raw_batch3000_rows_per_s": 1985702.9388403494,
+        "model_B": 821261,
+        "train_process_peak_RSS_B": 171143168,
+        "controller_tree_peak_RSS_B": 334974976,
+        "file_hash_unpickle_load_s": 0.0016833,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 164896768,
+          "process_RSS_loaded_B": 164954112,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 833015,
+          "peak_traced_unpickle_B": 872985,
+          "process_OS_peak_B": 164974592,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "SECOM",
+      "task": "binary",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.96415770609319,
+        "balanced_accuracy": 0.5,
+        "macro_F1": 0.4908759124087591,
+        "logloss": 0.21961683435770094,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          1.0,
+          0.0
+        ],
+        "ROC_AUC": 0.5,
+        "FPR_native_threshold": 0.0
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1337443,
+        "complete_job_wall_s": 10.359000000011292,
+        "cold_start_snapshot_s": 2.618293,
+        "raw_batch1_s": 0.0044147,
+        "raw_batch3000_s": 0.0892765,
+        "raw_batch3000_rows_per_s": 33603.467877885,
+        "model_B": 292406,
+        "train_process_peak_RSS_B": 157368320,
+        "controller_tree_peak_RSS_B": 355205120,
+        "file_hash_unpickle_load_s": 0.0043669,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 162955264,
+          "process_RSS_loaded_B": 165216256,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 3394722,
+          "peak_traced_unpickle_B": 4012408,
+          "process_OS_peak_B": 166268928,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "SECOM",
+      "task": "binary",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.7849462365591398,
+        "balanced_accuracy": 0.5514869888475836,
+        "macro_F1": 0.4844789356984479,
+        "logloss": 1.3425618531236916,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.8029739776951673,
+          0.3
+        ],
+        "ROC_AUC": 0.5057620817843866,
+        "FPR_native_threshold": 0.1970260223048327
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1371495,
+        "complete_job_wall_s": 9.139999999999418,
+        "cold_start_snapshot_s": 2.682101,
+        "raw_batch1_s": 0.003405,
+        "raw_batch3000_s": 0.0310535,
+        "raw_batch3000_rows_per_s": 96607.46775725763,
+        "model_B": 50082,
+        "train_process_peak_RSS_B": 159838208,
+        "controller_tree_peak_RSS_B": 403742720,
+        "file_hash_unpickle_load_s": 0.000446,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154578944,
+          "process_RSS_loaded_B": 154595328,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 112148,
+          "peak_traced_unpickle_B": 143521,
+          "process_OS_peak_B": 159354880,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "SECOM",
+      "task": "binary",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.9605734767025089,
+        "balanced_accuracy": 0.49814126394052044,
+        "macro_F1": 0.489945155393053,
+        "logloss": 0.2976924551426688,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9962825278810409,
+          0.0
+        ],
+        "ROC_AUC": 0.6433085501858736,
+        "FPR_native_threshold": 0.0037174721189591076
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2645122,
+        "complete_job_wall_s": 10.21799999999348,
+        "cold_start_snapshot_s": 2.8251277,
+        "raw_batch1_s": 0.0073287,
+        "raw_batch3000_s": 0.0654892,
+        "raw_batch3000_rows_per_s": 45809.07997043787,
+        "model_B": 312808,
+        "train_process_peak_RSS_B": 162115584,
+        "controller_tree_peak_RSS_B": 394207232,
+        "file_hash_unpickle_load_s": 0.0019367,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 159076352,
+          "process_RSS_loaded_B": 159195136,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 278961,
+          "peak_traced_unpickle_B": 833293,
+          "process_OS_peak_B": 163958784,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "SECOM",
+      "task": "binary",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.9605734767025089,
+        "balanced_accuracy": 0.49814126394052044,
+        "macro_F1": 0.489945155393053,
+        "logloss": 0.20770774479299053,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9962825278810409,
+          0.0
+        ],
+        "ROC_AUC": 0.6910780669144981,
+        "FPR_native_threshold": 0.0037174721189591076
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.3261651,
+        "complete_job_wall_s": 8.781000000002678,
+        "cold_start_snapshot_s": 2.7707934,
+        "raw_batch1_s": 0.0030673,
+        "raw_batch3000_s": 0.0252542,
+        "raw_batch3000_rows_per_s": 118792.12170648843,
+        "model_B": 567273,
+        "train_process_peak_RSS_B": 171921408,
+        "controller_tree_peak_RSS_B": 379527168,
+        "file_hash_unpickle_load_s": 0.0014769,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 160387072,
+          "process_RSS_loaded_B": 160608256,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 1223561,
+          "peak_traced_unpickle_B": 1317328,
+          "process_OS_peak_B": 165425152,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "SECOM",
+      "task": "binary",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "accuracy": 0.942652329749104,
+        "balanced_accuracy": 0.4888475836431227,
+        "macro_F1": 0.48523985239852396,
+        "logloss": 0.2573772966861725,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9776951672862454,
+          0.0
+        ],
+        "ROC_AUC": 0.4440520446096654,
+        "FPR_native_threshold": 0.022304832713754646
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.3876898,
+        "complete_job_wall_s": 9.639999999999418,
+        "cold_start_snapshot_s": 2.609001,
+        "raw_batch1_s": 0.0097205,
+        "raw_batch3000_s": 0.0440977,
+        "raw_batch3000_rows_per_s": 68030.75897382403,
+        "model_B": 63634,
+        "train_process_peak_RSS_B": 193388544,
+        "controller_tree_peak_RSS_B": 374611968,
+        "file_hash_unpickle_load_s": 0.0017275,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 158404608,
+          "process_RSS_loaded_B": 158445568,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 49557,
+          "peak_traced_unpickle_B": 123627,
+          "process_OS_peak_B": 159948800,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "SECOM",
+      "task": "binary",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.96415770609319,
+        "balanced_accuracy": 0.5,
+        "macro_F1": 0.4908759124087591,
+        "logloss": 0.22396590148516807,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          1.0,
+          0.0
+        ],
+        "ROC_AUC": 0.6537174721189591,
+        "FPR_native_threshold": 0.0
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1312169,
+        "complete_job_wall_s": 8.921999999991385,
+        "cold_start_snapshot_s": 2.7308701,
+        "raw_batch1_s": 0.0013099,
+        "raw_batch3000_s": 0.00879,
+        "raw_batch3000_rows_per_s": 341296.92832764506,
+        "model_B": 35780,
+        "train_process_peak_RSS_B": 185090048,
+        "controller_tree_peak_RSS_B": 368644096,
+        "file_hash_unpickle_load_s": 0.0005217,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 165019648,
+          "process_RSS_loaded_B": 165105664,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 48021,
+          "peak_traced_unpickle_B": 95454,
+          "process_OS_peak_B": 166424576,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "SECOM",
+      "task": "binary",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.96415770609319,
+        "balanced_accuracy": 0.5,
+        "macro_F1": 0.4908759124087591,
+        "logloss": 0.21517302844446318,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          1.0,
+          0.0
+        ],
+        "ROC_AUC": 0.666542750929368,
+        "FPR_native_threshold": 0.0
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 11.3589879,
+        "complete_job_wall_s": 20.296000000002095,
+        "cold_start_snapshot_s": 13.8031628,
+        "raw_batch1_s": 0.0062041,
+        "raw_batch3000_s": 0.0220675,
+        "raw_batch3000_rows_per_s": 135946.527699105,
+        "model_B": 186871,
+        "train_process_peak_RSS_B": 249634816,
+        "controller_tree_peak_RSS_B": 419004416,
+        "file_hash_unpickle_load_s": 0.0008959,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 165928960,
+          "process_RSS_loaded_B": 165949440,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 265532,
+          "peak_traced_unpickle_B": 337847,
+          "process_OS_peak_B": 167268352,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Annealing",
+      "task": "multiclass",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.9107981220657277,
+        "balanced_accuracy": 0.6108024691358025,
+        "macro_F1": 0.6172295184490306,
+        "logloss": 0.2350037930218838,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "recall_per_class": [
+          0.0,
+          0.875,
+          0.9567901234567902,
+          1.0,
+          0.2222222222222222
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1041727,
+        "complete_job_wall_s": 8.781999999991967,
+        "cold_start_snapshot_s": 2.2134982,
+        "raw_batch1_s": 0.0079912,
+        "raw_batch3000_s": 0.0200424,
+        "raw_batch3000_rows_per_s": 149682.67273380436,
+        "model_B": 145132,
+        "train_process_peak_RSS_B": 151687168,
+        "controller_tree_peak_RSS_B": 326524928,
+        "file_hash_unpickle_load_s": 0.0017044,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 151752704,
+          "process_RSS_loaded_B": 152195072,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 379836,
+          "peak_traced_unpickle_B": 440373,
+          "process_OS_peak_B": 152227840,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Annealing",
+      "task": "multiclass",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.9671361502347418,
+        "balanced_accuracy": 0.8225308641975309,
+        "macro_F1": 0.8768070898084004,
+        "logloss": 0.13834955410460714,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "recall_per_class": [
+          0.5,
+          0.9583333333333334,
+          0.9876543209876543,
+          1.0,
+          0.6666666666666666
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1326402,
+        "complete_job_wall_s": 7.875,
+        "cold_start_snapshot_s": 2.1986547,
+        "raw_batch1_s": 0.0093209,
+        "raw_batch3000_s": 0.032854,
+        "raw_batch3000_rows_per_s": 91313.08212089851,
+        "model_B": 9248,
+        "train_process_peak_RSS_B": 152231936,
+        "controller_tree_peak_RSS_B": 336486400,
+        "file_hash_unpickle_load_s": 0.0004212,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 152039424,
+          "process_RSS_loaded_B": 152055808,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 44716,
+          "peak_traced_unpickle_B": 64805,
+          "process_OS_peak_B": 152104960,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Annealing",
+      "task": "multiclass",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.9812206572769953,
+        "balanced_accuracy": 0.861111111111111,
+        "macro_F1": 0.9104339508868234,
+        "logloss": 0.08237769901510346,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "recall_per_class": [
+          0.5,
+          0.9166666666666666,
+          1.0,
+          1.0,
+          0.8888888888888888
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1901207,
+        "complete_job_wall_s": 9.468999999997322,
+        "cold_start_snapshot_s": 2.2894836,
+        "raw_batch1_s": 0.0122834,
+        "raw_batch3000_s": 0.1312122,
+        "raw_batch3000_rows_per_s": 22863.727610694736,
+        "model_B": 664002,
+        "train_process_peak_RSS_B": 157216768,
+        "controller_tree_peak_RSS_B": 338849792,
+        "file_hash_unpickle_load_s": 0.0019195,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 158818304,
+          "process_RSS_loaded_B": 158834688,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 231769,
+          "peak_traced_unpickle_B": 1142177,
+          "process_OS_peak_B": 158851072,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Annealing",
+      "task": "multiclass",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.9483568075117371,
+        "balanced_accuracy": 0.7962962962962963,
+        "macro_F1": 0.8505594467204087,
+        "logloss": 0.1494405676890372,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "recall_per_class": [
+          0.5,
+          0.8333333333333334,
+          0.9814814814814815,
+          1.0,
+          0.6666666666666666
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.3052304,
+        "complete_job_wall_s": 10.218999999997322,
+        "cold_start_snapshot_s": 2.3991194,
+        "raw_batch1_s": 0.0105513,
+        "raw_batch3000_s": 0.1474144,
+        "raw_batch3000_rows_per_s": 20350.79340959906,
+        "model_B": 426646,
+        "train_process_peak_RSS_B": 158625792,
+        "controller_tree_peak_RSS_B": 340873216,
+        "file_hash_unpickle_load_s": 0.0021922,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 158257152,
+          "process_RSS_loaded_B": 158572544,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 1212748,
+          "peak_traced_unpickle_B": 1335374,
+          "process_OS_peak_B": 158617600,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Annealing",
+      "task": "multiclass",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "accuracy": 0.971830985915493,
+        "balanced_accuracy": 0.8376543209876542,
+        "macro_F1": 0.8919088393011589,
+        "logloss": 0.09365719556808472,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "recall_per_class": [
+          0.5,
+          0.9166666666666666,
+          0.9938271604938271,
+          1.0,
+          0.7777777777777778
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2785609,
+        "complete_job_wall_s": 10.125,
+        "cold_start_snapshot_s": 2.3684413,
+        "raw_batch1_s": 0.0205929,
+        "raw_batch3000_s": 0.0641589,
+        "raw_batch3000_rows_per_s": 46758.90640269705,
+        "model_B": 236218,
+        "train_process_peak_RSS_B": 158232576,
+        "controller_tree_peak_RSS_B": 338030592,
+        "file_hash_unpickle_load_s": 0.0028486,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 157872128,
+          "process_RSS_loaded_B": 157884416,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 27839,
+          "peak_traced_unpickle_B": 269176,
+          "process_OS_peak_B": 157904896,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Annealing",
+      "task": "multiclass",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.9530516431924883,
+        "balanced_accuracy": 0.8182098765432098,
+        "macro_F1": 0.8159071344724141,
+        "logloss": 0.12653793513505548,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "recall_per_class": [
+          0.5,
+          0.7083333333333334,
+          0.9938271604938271,
+          1.0,
+          0.8888888888888888
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1166875,
+        "complete_job_wall_s": 9.312999999994645,
+        "cold_start_snapshot_s": 2.2827876,
+        "raw_batch1_s": 0.0109603,
+        "raw_batch3000_s": 0.0754028,
+        "raw_batch3000_rows_per_s": 39786.32093237917,
+        "model_B": 328494,
+        "train_process_peak_RSS_B": 168660992,
+        "controller_tree_peak_RSS_B": 348069888,
+        "file_hash_unpickle_load_s": 0.0024343,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 165519360,
+          "process_RSS_loaded_B": 165531648,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 36807,
+          "peak_traced_unpickle_B": 666078,
+          "process_OS_peak_B": 165552128,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Annealing",
+      "task": "multiclass",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.9765258215962441,
+        "balanced_accuracy": 0.754320987654321,
+        "macro_F1": 0.7678602633714036,
+        "logloss": 0.0837953157529654,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "recall_per_class": [
+          0.0,
+          1.0,
+          0.9938271604938271,
+          1.0,
+          0.7777777777777778
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 48.9694809,
+        "complete_job_wall_s": 58.453000000008615,
+        "cold_start_snapshot_s": 51.0021574,
+        "raw_batch1_s": 0.0092741,
+        "raw_batch3000_s": 0.1088287,
+        "raw_batch3000_rows_per_s": 27566.257797805174,
+        "model_B": 1067665,
+        "train_process_peak_RSS_B": 267227136,
+        "controller_tree_peak_RSS_B": 430174208,
+        "file_hash_unpickle_load_s": 0.0016458,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 166744064,
+          "process_RSS_loaded_B": 167833600,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 1088373,
+          "peak_traced_unpickle_B": 1132122,
+          "process_OS_peak_B": 167849984,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Pen Digits",
+      "task": "multiclass",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.9279279279279279,
+        "balanced_accuracy": 0.9277557773293175,
+        "macro_F1": 0.9274693741717561,
+        "logloss": 0.4283665575910545,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "recall_per_class": [
+          0.9278846153846154,
+          0.8317307692307693,
+          0.9375,
+          0.9635416666666666,
+          0.9759615384615384,
+          0.8489583333333334,
+          1.0,
+          0.9855072463768116,
+          0.8429319371727748,
+          0.9635416666666666
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.148324,
+        "complete_job_wall_s": 8.327999999994063,
+        "cold_start_snapshot_s": 2.5359755,
+        "raw_batch1_s": 0.0022184,
+        "raw_batch3000_s": 0.0077389,
+        "raw_batch3000_rows_per_s": 387651.99188515166,
+        "model_B": 268543,
+        "train_process_peak_RSS_B": 152899584,
+        "controller_tree_peak_RSS_B": 324841472,
+        "file_hash_unpickle_load_s": 0.0021598,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 152920064,
+          "process_RSS_loaded_B": 152936448,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 475991,
+          "peak_traced_unpickle_B": 527599,
+          "process_OS_peak_B": 153174016,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Pen Digits",
+      "task": "multiclass",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.9524524524524525,
+        "balanced_accuracy": 0.9526170349682186,
+        "macro_F1": 0.9522681131730361,
+        "logloss": 0.168635381284047,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "recall_per_class": [
+          0.9086538461538461,
+          0.9134615384615384,
+          0.9663461538461539,
+          0.9947916666666666,
+          0.9951923076923077,
+          0.9270833333333334,
+          0.9895833333333334,
+          0.9565217391304348,
+          0.9109947643979057,
+          0.9635416666666666
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1482756,
+        "complete_job_wall_s": 7.9689999999973224,
+        "cold_start_snapshot_s": 2.4946533,
+        "raw_batch1_s": 0.0012499,
+        "raw_batch3000_s": 0.0019397,
+        "raw_batch3000_rows_per_s": 1546630.9223075735,
+        "model_B": 4954,
+        "train_process_peak_RSS_B": 152752128,
+        "controller_tree_peak_RSS_B": 324509696,
+        "file_hash_unpickle_load_s": 0.0002934,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 152203264,
+          "process_RSS_loaded_B": 152219648,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 20148,
+          "peak_traced_unpickle_B": 32977,
+          "process_OS_peak_B": 152240128,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Pen Digits",
+      "task": "multiclass",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.987987987987988,
+        "balanced_accuracy": 0.9880527168076252,
+        "macro_F1": 0.9880990067086419,
+        "logloss": 0.10645108840439473,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "recall_per_class": [
+          0.9903846153846154,
+          0.9663461538461539,
+          0.9759615384615384,
+          0.9895833333333334,
+          1.0,
+          0.9739583333333334,
+          1.0,
+          1.0,
+          0.9842931937172775,
+          1.0
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.4252029,
+        "complete_job_wall_s": 9.59299999999348,
+        "cold_start_snapshot_s": 2.9790886,
+        "raw_batch1_s": 0.0043306,
+        "raw_batch3000_s": 0.0183728,
+        "raw_batch3000_rows_per_s": 163284.85587390052,
+        "model_B": 5409572,
+        "train_process_peak_RSS_B": 172285952,
+        "controller_tree_peak_RSS_B": 344829952,
+        "file_hash_unpickle_load_s": 0.0086379,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 173379584,
+          "process_RSS_loaded_B": 178143232,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 213177,
+          "peak_traced_unpickle_B": 5873965,
+          "process_OS_peak_B": 182132736,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Pen Digits",
+      "task": "multiclass",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.991991991991992,
+        "balanced_accuracy": 0.9920568045073651,
+        "macro_F1": 0.9920998664039986,
+        "logloss": 0.039144307370170564,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "recall_per_class": [
+          0.9951923076923077,
+          0.9759615384615384,
+          0.9855769230769231,
+          0.9895833333333334,
+          1.0,
+          0.9947916666666666,
+          1.0,
+          0.9951690821256038,
+          0.9842931937172775,
+          1.0
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.7928762,
+        "complete_job_wall_s": 11.64100000000326,
+        "cold_start_snapshot_s": 3.1858031,
+        "raw_batch1_s": 0.0035865,
+        "raw_batch3000_s": 0.0643338,
+        "raw_batch3000_rows_per_s": 46631.786090670845,
+        "model_B": 2119690,
+        "train_process_peak_RSS_B": 163160064,
+        "controller_tree_peak_RSS_B": 336863232,
+        "file_hash_unpickle_load_s": 0.0053973,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 166174720,
+          "process_RSS_loaded_B": 167690240,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 3558200,
+          "peak_traced_unpickle_B": 3800050,
+          "process_OS_peak_B": 168288256,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Pen Digits",
+      "task": "multiclass",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "accuracy": 0.9864864864864865,
+        "balanced_accuracy": 0.9864369226440276,
+        "macro_F1": 0.9865212183360317,
+        "logloss": 0.04984937980771065,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "recall_per_class": [
+          0.9951923076923077,
+          0.9615384615384616,
+          0.9855769230769231,
+          0.9895833333333334,
+          1.0,
+          0.9791666666666666,
+          1.0,
+          0.9951690821256038,
+          0.9633507853403142,
+          0.9947916666666666
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.6405347,
+        "complete_job_wall_s": 9.531000000002678,
+        "cold_start_snapshot_s": 3.0755215,
+        "raw_batch1_s": 0.0017385,
+        "raw_batch3000_s": 0.0190021,
+        "raw_batch3000_rows_per_s": 157877.28724719898,
+        "model_B": 1032861,
+        "train_process_peak_RSS_B": 164495360,
+        "controller_tree_peak_RSS_B": 335646720,
+        "file_hash_unpickle_load_s": 0.0099958,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 159993856,
+          "process_RSS_loaded_B": 159969280,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 18967,
+          "peak_traced_unpickle_B": 1056344,
+          "process_OS_peak_B": 164814848,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Pen Digits",
+      "task": "multiclass",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.9904904904904905,
+        "balanced_accuracy": 0.9905316417338383,
+        "macro_F1": 0.9905954098965752,
+        "logloss": 0.040632488319036646,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "recall_per_class": [
+          0.9951923076923077,
+          0.9711538461538461,
+          0.9855769230769231,
+          0.9895833333333334,
+          1.0,
+          0.9947916666666666,
+          1.0,
+          0.9951690821256038,
+          0.9790575916230366,
+          0.9947916666666666
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.4440899,
+        "complete_job_wall_s": 11.23399999999674,
+        "cold_start_snapshot_s": 3.0376738,
+        "raw_batch1_s": 0.0002156,
+        "raw_batch3000_s": 0.0636561,
+        "raw_batch3000_rows_per_s": 47128.240655648086,
+        "model_B": 1837820,
+        "train_process_peak_RSS_B": 176680960,
+        "controller_tree_peak_RSS_B": 342786048,
+        "file_hash_unpickle_load_s": 0.0111335,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 169979904,
+          "process_RSS_loaded_B": 169992192,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 20219,
+          "peak_traced_unpickle_B": 3677740,
+          "process_OS_peak_B": 173662208,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Pen Digits",
+      "task": "multiclass",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.9944944944944945,
+        "balanced_accuracy": 0.9945458282991005,
+        "macro_F1": 0.9945833573746576,
+        "logloss": 0.02251634278991213,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "recall_per_class": [
+          0.9903846153846154,
+          0.9855769230769231,
+          0.9903846153846154,
+          0.9947916666666666,
+          1.0,
+          0.9947916666666666,
+          1.0,
+          1.0,
+          0.9895287958115183,
+          1.0
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 23.6405024,
+        "complete_job_wall_s": 31.875,
+        "cold_start_snapshot_s": 26.076213,
+        "raw_batch1_s": 0.0003897,
+        "raw_batch3000_s": 0.0100087,
+        "raw_batch3000_rows_per_s": 299739.2268726208,
+        "model_B": 5821349,
+        "train_process_peak_RSS_B": 194174976,
+        "controller_tree_peak_RSS_B": 368267264,
+        "file_hash_unpickle_load_s": 0.0079202,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 183083008,
+          "process_RSS_loaded_B": 189399040,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 5764497,
+          "peak_traced_unpickle_B": 6062936,
+          "process_OS_peak_B": 190115840,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Edge task execution times",
+      "task": "regression",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "RMSE": 0.08194451018195606,
+        "MAE": 0.0585223245807459
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0642568,
+        "complete_job_wall_s": 8.125,
+        "cold_start_snapshot_s": 2.5072651,
+        "raw_batch1_s": 0.0004068,
+        "raw_batch3000_s": 0.0009086,
+        "raw_batch3000_rows_per_s": 3301782.962799912,
+        "model_B": 10605,
+        "train_process_peak_RSS_B": 149585920,
+        "controller_tree_peak_RSS_B": 321331200,
+        "file_hash_unpickle_load_s": 0.0003687,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150179840,
+          "process_RSS_loaded_B": 150196224,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 57402,
+          "peak_traced_unpickle_B": 68112,
+          "process_OS_peak_B": 150216704,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Edge task execution times",
+      "task": "regression",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "RMSE": 0.07781212875230586,
+        "MAE": 0.057217185705979494
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0914361,
+        "complete_job_wall_s": 8.203000000008615,
+        "cold_start_snapshot_s": 2.5352199,
+        "raw_batch1_s": 0.0021436,
+        "raw_batch3000_s": 0.0033405,
+        "raw_batch3000_rows_per_s": 898069.1513246519,
+        "model_B": 2875,
+        "train_process_peak_RSS_B": 149745664,
+        "controller_tree_peak_RSS_B": 319823872,
+        "file_hash_unpickle_load_s": 0.0003234,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150216704,
+          "process_RSS_loaded_B": 150233088,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 16848,
+          "peak_traced_unpickle_B": 30313,
+          "process_OS_peak_B": 150253568,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Edge task execution times",
+      "task": "regression",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "RMSE": 0.18047249564406295,
+        "MAE": 0.12958758467222115
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.5142968,
+        "complete_job_wall_s": 9.343999999997322,
+        "cold_start_snapshot_s": 3.0083975,
+        "raw_batch1_s": 0.0055254,
+        "raw_batch3000_s": 0.0167182,
+        "raw_batch3000_rows_per_s": 179445.1555789499,
+        "model_B": 11262001,
+        "train_process_peak_RSS_B": 187375616,
+        "controller_tree_peak_RSS_B": 349773824,
+        "file_hash_unpickle_load_s": 0.0150252,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 189747200,
+          "process_RSS_loaded_B": 199626752,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 125186,
+          "peak_traced_unpickle_B": 11630550,
+          "process_OS_peak_B": 209764352,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Edge task execution times",
+      "task": "regression",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "RMSE": 0.06286598529519762,
+        "MAE": 0.038904354987774135
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1377986,
+        "complete_job_wall_s": 8.436999999990803,
+        "cold_start_snapshot_s": 2.6013789,
+        "raw_batch1_s": 0.0023325,
+        "raw_batch3000_s": 0.0054924,
+        "raw_batch3000_rows_per_s": 546209.3074065982,
+        "model_B": 192757,
+        "train_process_peak_RSS_B": 153452544,
+        "controller_tree_peak_RSS_B": 325287936,
+        "file_hash_unpickle_load_s": 0.000666,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153587712,
+          "process_RSS_loaded_B": 153677824,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 352016,
+          "peak_traced_unpickle_B": 381590,
+          "process_OS_peak_B": 153702400,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Edge task execution times",
+      "task": "regression",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "RMSE": 0.06385823146069075,
+        "MAE": 0.040218859302451414
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1873084,
+        "complete_job_wall_s": 8.375,
+        "cold_start_snapshot_s": 2.6711637,
+        "raw_batch1_s": 0.0022523,
+        "raw_batch3000_s": 0.0040377,
+        "raw_batch3000_rows_per_s": 742997.2509101717,
+        "model_B": 84866,
+        "train_process_peak_RSS_B": 155197440,
+        "controller_tree_peak_RSS_B": 327434240,
+        "file_hash_unpickle_load_s": 0.0015291,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154296320,
+          "process_RSS_loaded_B": 154312704,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 13388,
+          "peak_traced_unpickle_B": 101230,
+          "process_OS_peak_B": 154333184,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Edge task execution times",
+      "task": "regression",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "RMSE": 0.22342798543155795,
+        "MAE": 0.162700010183812
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0892056,
+        "complete_job_wall_s": 8.843999999997322,
+        "cold_start_snapshot_s": 2.7029345,
+        "raw_batch1_s": 0.000911,
+        "raw_batch3000_s": 0.002678,
+        "raw_batch3000_rows_per_s": 1120238.9843166543,
+        "model_B": 133195,
+        "train_process_peak_RSS_B": 164405248,
+        "controller_tree_peak_RSS_B": 335400960,
+        "file_hash_unpickle_load_s": 0.0010994,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 162467840,
+          "process_RSS_loaded_B": 162484224,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 15781,
+          "peak_traced_unpickle_B": 271074,
+          "process_OS_peak_B": 162742272,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Edge task execution times",
+      "task": "regression",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "RMSE": 0.07298982889949218,
+        "MAE": 0.05037337026847991
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2647816,
+        "complete_job_wall_s": 8.39100000000326,
+        "cold_start_snapshot_s": 2.6910853,
+        "raw_batch1_s": 0.0005986,
+        "raw_batch3000_s": 0.0017264,
+        "raw_batch3000_rows_per_s": 1737720.111214087,
+        "model_B": 76805,
+        "train_process_peak_RSS_B": 165908480,
+        "controller_tree_peak_RSS_B": 335044608,
+        "file_hash_unpickle_load_s": 0.0006671,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 160063488,
+          "process_RSS_loaded_B": 160104448,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 85369,
+          "peak_traced_unpickle_B": 137839,
+          "process_OS_peak_B": 160129024,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Abalone",
+      "task": "regression",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "RMSE": 2.481441886147318,
+        "MAE": 1.785858530310775
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0678905,
+        "complete_job_wall_s": 7.98399999999674,
+        "cold_start_snapshot_s": 2.5193106,
+        "raw_batch1_s": 0.0006382,
+        "raw_batch3000_s": 0.0015015,
+        "raw_batch3000_rows_per_s": 1998001.998001998,
+        "model_B": 23383,
+        "train_process_peak_RSS_B": 149164032,
+        "controller_tree_peak_RSS_B": 321171456,
+        "file_hash_unpickle_load_s": 0.0004053,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150085632,
+          "process_RSS_loaded_B": 150118400,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 117787,
+          "peak_traced_unpickle_B": 132593,
+          "process_OS_peak_B": 150138880,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Abalone",
+      "task": "regression",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "RMSE": 2.3599449970029536,
+        "MAE": 1.6709821680855352
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1039901,
+        "complete_job_wall_s": 8.25,
+        "cold_start_snapshot_s": 2.5984571,
+        "raw_batch1_s": 0.0027409,
+        "raw_batch3000_s": 0.0038518,
+        "raw_batch3000_rows_per_s": 778856.6384547484,
+        "model_B": 3172,
+        "train_process_peak_RSS_B": 150695936,
+        "controller_tree_peak_RSS_B": 324358144,
+        "file_hash_unpickle_load_s": 0.0003446,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150523904,
+          "process_RSS_loaded_B": 150540288,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 17469,
+          "peak_traced_unpickle_B": 30886,
+          "process_OS_peak_B": 150560768,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Abalone",
+      "task": "regression",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "RMSE": 2.2676730415426554,
+        "MAE": 1.638411131059246
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 1.1580509,
+        "complete_job_wall_s": 10.547000000005937,
+        "cold_start_snapshot_s": 3.6130465,
+        "raw_batch1_s": 0.0053416,
+        "raw_batch3000_s": 0.0332237,
+        "raw_batch3000_rows_per_s": 90296.98678955082,
+        "model_B": 9748015,
+        "train_process_peak_RSS_B": 183779328,
+        "controller_tree_peak_RSS_B": 359698432,
+        "file_hash_unpickle_load_s": 0.0145961,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 183476224,
+          "process_RSS_loaded_B": 197578752,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 125591,
+          "peak_traced_unpickle_B": 10116795,
+          "process_OS_peak_B": 202588160,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Abalone",
+      "task": "regression",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "RMSE": 2.2411835214358455,
+        "MAE": 1.6065217555957214
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1589246,
+        "complete_job_wall_s": 8.625,
+        "cold_start_snapshot_s": 2.6492715,
+        "raw_batch1_s": 0.0028052,
+        "raw_batch3000_s": 0.0088442,
+        "raw_batch3000_rows_per_s": 339205.3549218697,
+        "model_B": 149809,
+        "train_process_peak_RSS_B": 154243072,
+        "controller_tree_peak_RSS_B": 327442432,
+        "file_hash_unpickle_load_s": 0.0006425,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153976832,
+          "process_RSS_loaded_B": 154001408,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 276867,
+          "peak_traced_unpickle_B": 306249,
+          "process_OS_peak_B": 154128384,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Abalone",
+      "task": "regression",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "RMSE": 2.3222589255066786,
+        "MAE": 1.6487070217166813
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1809315,
+        "complete_job_wall_s": 8.327999999994063,
+        "cold_start_snapshot_s": 2.555095,
+        "raw_batch1_s": 0.002467,
+        "raw_batch3000_s": 0.0038656,
+        "raw_batch3000_rows_per_s": 776076.1589403974,
+        "model_B": 108117,
+        "train_process_peak_RSS_B": 157609984,
+        "controller_tree_peak_RSS_B": 328134656,
+        "file_hash_unpickle_load_s": 0.0016013,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154677248,
+          "process_RSS_loaded_B": 154693632,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 14058,
+          "peak_traced_unpickle_B": 125147,
+          "process_OS_peak_B": 154718208,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Abalone",
+      "task": "regression",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "RMSE": 2.2404545743775723,
+        "MAE": 1.5937573014066742
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0924336,
+        "complete_job_wall_s": 9.125,
+        "cold_start_snapshot_s": 3.21483,
+        "raw_batch1_s": 0.0009286,
+        "raw_batch3000_s": 0.0038301,
+        "raw_batch3000_rows_per_s": 783269.3663350827,
+        "model_B": 80137,
+        "train_process_peak_RSS_B": 164532224,
+        "controller_tree_peak_RSS_B": 335925248,
+        "file_hash_unpickle_load_s": 0.000802,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 161800192,
+          "process_RSS_loaded_B": 161816576,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 14674,
+          "peak_traced_unpickle_B": 165517,
+          "process_OS_peak_B": 162009088,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Abalone",
+      "task": "regression",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "RMSE": 2.237010708780219,
+        "MAE": 1.595749746025464
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.991302,
+        "complete_job_wall_s": 9.0,
+        "cold_start_snapshot_s": 3.4226723,
+        "raw_batch1_s": 0.0006743,
+        "raw_batch3000_s": 0.0020559,
+        "raw_batch3000_rows_per_s": 1459214.94236101,
+        "model_B": 213828,
+        "train_process_peak_RSS_B": 169574400,
+        "controller_tree_peak_RSS_B": 339693568,
+        "file_hash_unpickle_load_s": 0.0009102,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 162189312,
+          "process_RSS_loaded_B": 162209792,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 222790,
+          "peak_traced_unpickle_B": 276185,
+          "process_OS_peak_B": 162230272,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Automobile",
+      "task": "regression",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "RMSE": 4668.9459631494265,
+        "MAE": 2643.3512009169517
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0687845,
+        "complete_job_wall_s": 8.203999999997905,
+        "cold_start_snapshot_s": 2.5213835,
+        "raw_batch1_s": 0.0025327,
+        "raw_batch3000_s": 0.0057081,
+        "raw_batch3000_rows_per_s": 525568.9283649551,
+        "model_B": 31171,
+        "train_process_peak_RSS_B": 149381120,
+        "controller_tree_peak_RSS_B": 322985984,
+        "file_hash_unpickle_load_s": 0.0006505,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149647360,
+          "process_RSS_loaded_B": 149663744,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 228304,
+          "peak_traced_unpickle_B": 254472,
+          "process_OS_peak_B": 149692416,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Automobile",
+      "task": "regression",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "RMSE": 4092.1516090448827,
+        "MAE": 2448.9681913768995
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1125158,
+        "complete_job_wall_s": 8.25,
+        "cold_start_snapshot_s": 2.5388822,
+        "raw_batch1_s": 0.0045704,
+        "raw_batch3000_s": 0.0119414,
+        "raw_batch3000_rows_per_s": 251226.824325456,
+        "model_B": 5214,
+        "train_process_peak_RSS_B": 149921792,
+        "controller_tree_peak_RSS_B": 327143424,
+        "file_hash_unpickle_load_s": 0.0003468,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149958656,
+          "process_RSS_loaded_B": 149975040,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 25482,
+          "peak_traced_unpickle_B": 39713,
+          "process_OS_peak_B": 149995520,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Automobile",
+      "task": "regression",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "RMSE": 3458.7247679738157,
+        "MAE": 1994.2987962962961
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1977427,
+        "complete_job_wall_s": 9.25,
+        "cold_start_snapshot_s": 2.683226,
+        "raw_batch1_s": 0.0072805,
+        "raw_batch3000_s": 0.0321655,
+        "raw_batch3000_rows_per_s": 93267.63146849886,
+        "model_B": 774865,
+        "train_process_peak_RSS_B": 155033600,
+        "controller_tree_peak_RSS_B": 332681216,
+        "file_hash_unpickle_load_s": 0.0019344,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 158154752,
+          "process_RSS_loaded_B": 158167040,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 132794,
+          "peak_traced_unpickle_B": 1158046,
+          "process_OS_peak_B": 158273536,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Automobile",
+      "task": "regression",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "RMSE": 5959.620963005443,
+        "MAE": 3569.3557346987564
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1239687,
+        "complete_job_wall_s": 8.5,
+        "cold_start_snapshot_s": 2.5967496,
+        "raw_batch1_s": 0.0045714,
+        "raw_batch3000_s": 0.0142973,
+        "raw_batch3000_rows_per_s": 209829.8280094843,
+        "model_B": 24695,
+        "train_process_peak_RSS_B": 153432064,
+        "controller_tree_peak_RSS_B": 328794112,
+        "file_hash_unpickle_load_s": 0.0005461,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 152571904,
+          "process_RSS_loaded_B": 152666112,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 163168,
+          "peak_traced_unpickle_B": 193780,
+          "process_OS_peak_B": 152690688,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Automobile",
+      "task": "regression",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "RMSE": 2682.098216941831,
+        "MAE": 1675.0999801070602
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2247561,
+        "complete_job_wall_s": 8.781000000002678,
+        "cold_start_snapshot_s": 2.6373522,
+        "raw_batch1_s": 0.0070427,
+        "raw_batch3000_s": 0.0135422,
+        "raw_batch3000_rows_per_s": 221529.7366749863,
+        "model_B": 103146,
+        "train_process_peak_RSS_B": 155271168,
+        "controller_tree_peak_RSS_B": 329994240,
+        "file_hash_unpickle_load_s": 0.0018957,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153886720,
+          "process_RSS_loaded_B": 153903104,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 18420,
+          "peak_traced_unpickle_B": 124613,
+          "process_OS_peak_B": 153927680,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Automobile",
+      "task": "regression",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "RMSE": 5981.165432198132,
+        "MAE": 3550.001435571341
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0795765,
+        "complete_job_wall_s": 8.64100000000326,
+        "cold_start_snapshot_s": 2.7151246,
+        "raw_batch1_s": 0.003669,
+        "raw_batch3000_s": 0.0083332,
+        "raw_batch3000_rows_per_s": 360005.7600921614,
+        "model_B": 16749,
+        "train_process_peak_RSS_B": 163766272,
+        "controller_tree_peak_RSS_B": 338423808,
+        "file_hash_unpickle_load_s": 0.0003942,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 161820672,
+          "process_RSS_loaded_B": 161837056,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 21563,
+          "peak_traced_unpickle_B": 44085,
+          "process_OS_peak_B": 162172928,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Automobile",
+      "task": "regression",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "RMSE": 4609.294470726761,
+        "MAE": 2435.801815655959
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.8674444,
+        "complete_job_wall_s": 8.985000000000582,
+        "cold_start_snapshot_s": 3.3014671,
+        "raw_batch1_s": 0.0017659,
+        "raw_batch3000_s": 0.0102105,
+        "raw_batch3000_rows_per_s": 293815.1902453357,
+        "model_B": 155557,
+        "train_process_peak_RSS_B": 167981056,
+        "controller_tree_peak_RSS_B": 342740992,
+        "file_hash_unpickle_load_s": 0.0007926,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 160952320,
+          "process_RSS_loaded_B": 160968704,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 171024,
+          "peak_traced_unpickle_B": 205859,
+          "process_OS_peak_B": 161013760,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Statlog German Credit",
+      "task": "binary",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.7752808988764045,
+        "balanced_accuracy": 0.696524064171123,
+        "macro_F1": 0.7095721537345903,
+        "logloss": 0.5149040399271564,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.893048128342246,
+          0.5
+        ],
+        "ROC_AUC": 0.7709893048128342,
+        "FPR_native_threshold": 0.10695187165775401
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0776064,
+        "complete_job_wall_s": 8.5,
+        "cold_start_snapshot_s": 2.4468162,
+        "raw_batch1_s": 0.0034848,
+        "raw_batch3000_s": 0.0076156,
+        "raw_batch3000_rows_per_s": 393928.25253427174,
+        "model_B": 20465,
+        "train_process_peak_RSS_B": 149757952,
+        "controller_tree_peak_RSS_B": 323563520,
+        "file_hash_unpickle_load_s": 0.0008978,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150654976,
+          "process_RSS_loaded_B": 150683648,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 184521,
+          "peak_traced_unpickle_B": 211952,
+          "process_OS_peak_B": 150708224,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Statlog German Credit",
+      "task": "binary",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.7640449438202247,
+        "balanced_accuracy": 0.7242647058823529,
+        "macro_F1": 0.7218428058803102,
+        "logloss": 0.507608870364461,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.8235294117647058,
+          0.625
+        ],
+        "ROC_AUC": 0.7846256684491979,
+        "FPR_native_threshold": 0.17647058823529413
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1265939,
+        "complete_job_wall_s": 8.531000000002678,
+        "cold_start_snapshot_s": 2.4672449,
+        "raw_batch1_s": 0.0062549,
+        "raw_batch3000_s": 0.0165163,
+        "raw_batch3000_rows_per_s": 181638.74475518122,
+        "model_B": 5067,
+        "train_process_peak_RSS_B": 151060480,
+        "controller_tree_peak_RSS_B": 325201920,
+        "file_hash_unpickle_load_s": 0.0004811,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 150343680,
+          "process_RSS_loaded_B": 150360064,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 30024,
+          "peak_traced_unpickle_B": 44601,
+          "process_OS_peak_B": 150401024,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Statlog German Credit",
+      "task": "binary",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.7415730337078652,
+        "balanced_accuracy": 0.640274064171123,
+        "macro_F1": 0.6510332809273958,
+        "logloss": 0.5210025321016615,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.893048128342246,
+          0.3875
+        ],
+        "ROC_AUC": 0.7781417112299465,
+        "FPR_native_threshold": 0.10695187165775401
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.21798,
+        "complete_job_wall_s": 10.35899999999674,
+        "cold_start_snapshot_s": 2.5919628,
+        "raw_batch1_s": 0.009722,
+        "raw_batch3000_s": 0.0786739,
+        "raw_batch3000_rows_per_s": 38132.08700725399,
+        "model_B": 1623992,
+        "train_process_peak_RSS_B": 160342016,
+        "controller_tree_peak_RSS_B": 335679488,
+        "file_hash_unpickle_load_s": 0.004104,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 161353728,
+          "process_RSS_loaded_B": 162836480,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 217437,
+          "peak_traced_unpickle_B": 2090613,
+          "process_OS_peak_B": 164356096,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Statlog German Credit",
+      "task": "binary",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.7303370786516854,
+        "balanced_accuracy": 0.6858957219251336,
+        "macro_F1": 0.6831905075807515,
+        "logloss": 0.5789559925822774,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.7967914438502673,
+          0.575
+        ],
+        "ROC_AUC": 0.7412433155080214,
+        "FPR_native_threshold": 0.20320855614973263
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1685869,
+        "complete_job_wall_s": 8.936999999990803,
+        "cold_start_snapshot_s": 2.6315572,
+        "raw_batch1_s": 0.0060113,
+        "raw_batch3000_s": 0.0249837,
+        "raw_batch3000_rows_per_s": 120078.29104576183,
+        "model_B": 104686,
+        "train_process_peak_RSS_B": 156119040,
+        "controller_tree_peak_RSS_B": 334692352,
+        "file_hash_unpickle_load_s": 0.0006879,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154300416,
+          "process_RSS_loaded_B": 154324992,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 304722,
+          "peak_traced_unpickle_B": 335350,
+          "process_OS_peak_B": 154636288,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Statlog German Credit",
+      "task": "binary",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "accuracy": 0.7340823970037453,
+        "balanced_accuracy": 0.6492312834224598,
+        "macro_F1": 0.6578961615505386,
+        "logloss": 0.565989077091217,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.8609625668449198,
+          0.4375
+        ],
+        "ROC_AUC": 0.700066844919786,
+        "FPR_native_threshold": 0.13903743315508021
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1848862,
+        "complete_job_wall_s": 9.73399999999674,
+        "cold_start_snapshot_s": 2.6266334,
+        "raw_batch1_s": 0.0107051,
+        "raw_batch3000_s": 0.0276726,
+        "raw_batch3000_rows_per_s": 108410.4854621539,
+        "model_B": 72907,
+        "train_process_peak_RSS_B": 155512832,
+        "controller_tree_peak_RSS_B": 330563584,
+        "file_hash_unpickle_load_s": 0.0019448,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154451968,
+          "process_RSS_loaded_B": 154468352,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 20794,
+          "peak_traced_unpickle_B": 97613,
+          "process_OS_peak_B": 154492928,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Statlog German Credit",
+      "task": "binary",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.7303370786516854,
+        "balanced_accuracy": 0.6501336898395722,
+        "macro_F1": 0.6576923076923077,
+        "logloss": 0.5474586425446286,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.8502673796791443,
+          0.45
+        ],
+        "ROC_AUC": 0.7254344919786095,
+        "FPR_native_threshold": 0.1497326203208556
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0988199,
+        "complete_job_wall_s": 8.968999999997322,
+        "cold_start_snapshot_s": 2.5834389,
+        "raw_batch1_s": 0.0053048,
+        "raw_batch3000_s": 0.0132173,
+        "raw_batch3000_rows_per_s": 226975.25213167592,
+        "model_B": 44933,
+        "train_process_peak_RSS_B": 164536320,
+        "controller_tree_peak_RSS_B": 339468288,
+        "file_hash_unpickle_load_s": 0.0006214,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 162201600,
+          "process_RSS_loaded_B": 162254848,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 25863,
+          "peak_traced_unpickle_B": 97700,
+          "process_OS_peak_B": 162320384,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Statlog German Credit",
+      "task": "binary",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.7453183520599251,
+        "balanced_accuracy": 0.6501002673796792,
+        "macro_F1": 0.6612686567164179,
+        "logloss": 0.5270529781760095,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.8877005347593583,
+          0.4125
+        ],
+        "ROC_AUC": 0.7832219251336898,
+        "FPR_native_threshold": 0.11229946524064172
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 2.0266942,
+        "complete_job_wall_s": 11.109000000011292,
+        "cold_start_snapshot_s": 4.4675746,
+        "raw_batch1_s": 0.0062127,
+        "raw_batch3000_s": 0.0466791,
+        "raw_batch3000_rows_per_s": 64268.59129674736,
+        "model_B": 138252,
+        "train_process_peak_RSS_B": 178135040,
+        "controller_tree_peak_RSS_B": 347455488,
+        "file_hash_unpickle_load_s": 0.0010305,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 162177024,
+          "process_RSS_loaded_B": 162209792,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 156277,
+          "peak_traced_unpickle_B": 191983,
+          "process_OS_peak_B": 162246656,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Breast Cancer Wisconsin",
+      "task": "binary",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.9298245614035088,
+        "balanced_accuracy": 0.915668808411215,
+        "macro_F1": 0.9235469448584203,
+        "logloss": 0.1568906576300951,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9719626168224299,
+          0.859375
+        ],
+        "ROC_AUC": 0.9897780373831775,
+        "FPR_native_threshold": 0.028037383177570093
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0625553,
+        "complete_job_wall_s": 7.6710000000020955,
+        "cold_start_snapshot_s": 2.183659,
+        "raw_batch1_s": 0.0003287,
+        "raw_batch3000_s": 0.0010258,
+        "raw_batch3000_rows_per_s": 2924546.695262234,
+        "model_B": 40869,
+        "train_process_peak_RSS_B": 149000192,
+        "controller_tree_peak_RSS_B": 321597440,
+        "file_hash_unpickle_load_s": 0.0004591,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149561344,
+          "process_RSS_loaded_B": 149594112,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 166412,
+          "peak_traced_unpickle_B": 183078,
+          "process_OS_peak_B": 149614592,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Breast Cancer Wisconsin",
+      "task": "binary",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.9415204678362573,
+        "balanced_accuracy": 0.931293808411215,
+        "macro_F1": 0.936741639538325,
+        "logloss": 0.14328115612070672,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9719626168224299,
+          0.890625
+        ],
+        "ROC_AUC": 0.9891939252336449,
+        "FPR_native_threshold": 0.028037383177570093
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0890611,
+        "complete_job_wall_s": 7.48399999999674,
+        "cold_start_snapshot_s": 2.2948323,
+        "raw_batch1_s": 0.0011989,
+        "raw_batch3000_s": 0.001444,
+        "raw_batch3000_rows_per_s": 2077562.326869806,
+        "model_B": 3298,
+        "train_process_peak_RSS_B": 150118400,
+        "controller_tree_peak_RSS_B": 323616768,
+        "file_hash_unpickle_load_s": 0.0003811,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149467136,
+          "process_RSS_loaded_B": 149483520,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 18066,
+          "peak_traced_unpickle_B": 30842,
+          "process_OS_peak_B": 149504000,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Breast Cancer Wisconsin",
+      "task": "binary",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.9298245614035088,
+        "balanced_accuracy": 0.915668808411215,
+        "macro_F1": 0.9235469448584203,
+        "logloss": 0.13211329201852354,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9719626168224299,
+          0.859375
+        ],
+        "ROC_AUC": 0.9890478971962616,
+        "FPR_native_threshold": 0.028037383177570093
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1552543,
+        "complete_job_wall_s": 8.203000000008615,
+        "cold_start_snapshot_s": 2.427449,
+        "raw_batch1_s": 0.0042038,
+        "raw_batch3000_s": 0.0066304,
+        "raw_batch3000_rows_per_s": 452461.38996139,
+        "model_B": 277629,
+        "train_process_peak_RSS_B": 153026560,
+        "controller_tree_peak_RSS_B": 326823936,
+        "file_hash_unpickle_load_s": 0.0016234,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 154185728,
+          "process_RSS_loaded_B": 154578944,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 206122,
+          "peak_traced_unpickle_B": 732862,
+          "process_OS_peak_B": 154595328,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Breast Cancer Wisconsin",
+      "task": "binary",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.935672514619883,
+        "balanced_accuracy": 0.923481308411215,
+        "macro_F1": 0.9301703975943869,
+        "logloss": 0.1396556106185034,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9719626168224299,
+          0.875
+        ],
+        "ROC_AUC": 0.9884637850467289,
+        "FPR_native_threshold": 0.028037383177570093
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1102804,
+        "complete_job_wall_s": 8.093999999997322,
+        "cold_start_snapshot_s": 2.4230318,
+        "raw_batch1_s": 0.0013695,
+        "raw_batch3000_s": 0.0045686,
+        "raw_batch3000_rows_per_s": 656656.3060893929,
+        "model_B": 58972,
+        "train_process_peak_RSS_B": 152600576,
+        "controller_tree_peak_RSS_B": 325644288,
+        "file_hash_unpickle_load_s": 0.0008625,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 152358912,
+          "process_RSS_loaded_B": 152465408,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 201070,
+          "peak_traced_unpickle_B": 229848,
+          "process_OS_peak_B": 152485888,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Breast Cancer Wisconsin",
+      "task": "binary",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "accuracy": 0.9415204678362573,
+        "balanced_accuracy": 0.931293808411215,
+        "macro_F1": 0.936741639538325,
+        "logloss": 0.1878640204668045,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9719626168224299,
+          0.890625
+        ],
+        "ROC_AUC": 0.9862733644859812,
+        "FPR_native_threshold": 0.028037383177570093
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2090403,
+        "complete_job_wall_s": 7.936999999990803,
+        "cold_start_snapshot_s": 2.4824573,
+        "raw_batch1_s": 0.0014358,
+        "raw_batch3000_s": 0.0025425,
+        "raw_batch3000_rows_per_s": 1179941.0029498525,
+        "model_B": 56970,
+        "train_process_peak_RSS_B": 154304512,
+        "controller_tree_peak_RSS_B": 327454720,
+        "file_hash_unpickle_load_s": 0.0015949,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153157632,
+          "process_RSS_loaded_B": 153174016,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 16142,
+          "peak_traced_unpickle_B": 76815,
+          "process_OS_peak_B": 153194496,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Breast Cancer Wisconsin",
+      "task": "binary",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.9298245614035088,
+        "balanced_accuracy": 0.915668808411215,
+        "macro_F1": 0.9235469448584203,
+        "logloss": 0.1653222918158541,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9719626168224299,
+          0.859375
+        ],
+        "ROC_AUC": 0.9865654205607477,
+        "FPR_native_threshold": 0.028037383177570093
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0727427,
+        "complete_job_wall_s": 8.23399999999674,
+        "cold_start_snapshot_s": 2.5201711,
+        "raw_batch1_s": 0.0001506,
+        "raw_batch3000_s": 0.0019562,
+        "raw_batch3000_rows_per_s": 1533585.5229526635,
+        "model_B": 55759,
+        "train_process_peak_RSS_B": 163024896,
+        "controller_tree_peak_RSS_B": 334680064,
+        "file_hash_unpickle_load_s": 0.0006745,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 161161216,
+          "process_RSS_loaded_B": 161177600,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 16871,
+          "peak_traced_unpickle_B": 115193,
+          "process_OS_peak_B": 161599488,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Breast Cancer Wisconsin",
+      "task": "binary",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.9590643274853801,
+        "balanced_accuracy": 0.954731308411215,
+        "macro_F1": 0.9561618751144478,
+        "logloss": 0.12315088292354584,
+        "classes": [
+          0,
+          1
+        ],
+        "recall_per_class": [
+          0.9719626168224299,
+          0.9375
+        ],
+        "ROC_AUC": 0.9886098130841121,
+        "FPR_native_threshold": 0.028037383177570093
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.2715762,
+        "complete_job_wall_s": 8.296000000002095,
+        "cold_start_snapshot_s": 2.6423413,
+        "raw_batch1_s": 0.000282,
+        "raw_batch3000_s": 0.0006751,
+        "raw_batch3000_rows_per_s": 4443786.105762109,
+        "model_B": 174386,
+        "train_process_peak_RSS_B": 165359616,
+        "controller_tree_peak_RSS_B": 338444288,
+        "file_hash_unpickle_load_s": 0.0008143,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 160153600,
+          "process_RSS_loaded_B": 160169984,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 186893,
+          "peak_traced_unpickle_B": 225742,
+          "process_OS_peak_B": 160190464,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Forest Types",
+      "task": "multiclass",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.8490566037735849,
+        "balanced_accuracy": 0.8500000000000001,
+        "macro_F1": 0.8484717037348616,
+        "logloss": 0.4450036802807562,
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "recall_per_class": [
+          0.9333333333333333,
+          0.9166666666666666,
+          0.8,
+          0.75
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0816213,
+        "complete_job_wall_s": 7.98399999999674,
+        "cold_start_snapshot_s": 2.5138681,
+        "raw_batch1_s": 0.0009864,
+        "raw_batch3000_s": 0.003165,
+        "raw_batch3000_rows_per_s": 947867.2985781991,
+        "model_B": 124858,
+        "train_process_peak_RSS_B": 149188608,
+        "controller_tree_peak_RSS_B": 322105344,
+        "file_hash_unpickle_load_s": 0.0009167,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149680128,
+          "process_RSS_loaded_B": 149700608,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 231270,
+          "peak_traced_unpickle_B": 255534,
+          "process_OS_peak_B": 149725184,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Forest Types",
+      "task": "multiclass",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.8490566037735849,
+        "balanced_accuracy": 0.8354166666666667,
+        "macro_F1": 0.8439531025126272,
+        "logloss": 0.3802284348386623,
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "recall_per_class": [
+          1.0,
+          0.6666666666666666,
+          0.8,
+          0.875
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1025426,
+        "complete_job_wall_s": 7.890999999988708,
+        "cold_start_snapshot_s": 2.5151795,
+        "raw_batch1_s": 0.0011301,
+        "raw_batch3000_s": 0.0016394,
+        "raw_batch3000_rows_per_s": 1829937.782115408,
+        "model_B": 3384,
+        "train_process_peak_RSS_B": 149581824,
+        "controller_tree_peak_RSS_B": 321646592,
+        "file_hash_unpickle_load_s": 0.000292,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149700608,
+          "process_RSS_loaded_B": 149716992,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 18208,
+          "peak_traced_unpickle_B": 30925,
+          "process_OS_peak_B": 149741568,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Forest Types",
+      "task": "multiclass",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.8867924528301887,
+        "balanced_accuracy": 0.88125,
+        "macro_F1": 0.8865509751683812,
+        "logloss": 0.9665810770930962,
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "recall_per_class": [
+          1.0,
+          0.75,
+          0.9,
+          0.875
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1535429,
+        "complete_job_wall_s": 8.313000000009197,
+        "cold_start_snapshot_s": 2.5198899,
+        "raw_batch1_s": 0.0039171,
+        "raw_batch3000_s": 0.0063909,
+        "raw_batch3000_rows_per_s": 469417.45294090034,
+        "model_B": 152269,
+        "train_process_peak_RSS_B": 153190400,
+        "controller_tree_peak_RSS_B": 326893568,
+        "file_hash_unpickle_load_s": 0.0015574,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153321472,
+          "process_RSS_loaded_B": 153841664,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 207533,
+          "peak_traced_unpickle_B": 607457,
+          "process_OS_peak_B": 153862144,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Forest Types",
+      "task": "multiclass",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.8490566037735849,
+        "balanced_accuracy": 0.8541666666666666,
+        "macro_F1": 0.8521505376344085,
+        "logloss": 0.7314117658149252,
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "recall_per_class": [
+          1.0,
+          0.6666666666666666,
+          1.0,
+          0.75
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1121354,
+        "complete_job_wall_s": 8.187999999994645,
+        "cold_start_snapshot_s": 2.5133563,
+        "raw_batch1_s": 0.0017791,
+        "raw_batch3000_s": 0.007394,
+        "raw_batch3000_rows_per_s": 405734.37922639976,
+        "model_B": 77729,
+        "train_process_peak_RSS_B": 153120768,
+        "controller_tree_peak_RSS_B": 326623232,
+        "file_hash_unpickle_load_s": 0.001142,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153624576,
+          "process_RSS_loaded_B": 154198016,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 521377,
+          "peak_traced_unpickle_B": 586168,
+          "process_OS_peak_B": 154222592,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Forest Types",
+      "task": "multiclass",
+      "algorithm": "XGBoost",
+      "metrics": {
+        "accuracy": 0.8867924528301887,
+        "balanced_accuracy": 0.88125,
+        "macro_F1": 0.8865509751683812,
+        "logloss": 0.43837881088256836,
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "recall_per_class": [
+          1.0,
+          0.75,
+          0.9,
+          0.875
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1937188,
+        "complete_job_wall_s": 8.187000000005355,
+        "cold_start_snapshot_s": 2.6439877,
+        "raw_batch1_s": 0.0014722,
+        "raw_batch3000_s": 0.0027357,
+        "raw_batch3000_rows_per_s": 1096611.4705559819,
+        "model_B": 133939,
+        "train_process_peak_RSS_B": 154640384,
+        "controller_tree_peak_RSS_B": 327221248,
+        "file_hash_unpickle_load_s": 0.0022565,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153972736,
+          "process_RSS_loaded_B": 153989120,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 16450,
+          "peak_traced_unpickle_B": 154071,
+          "process_OS_peak_B": 154013696,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Forest Types",
+      "task": "multiclass",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.8867924528301887,
+        "balanced_accuracy": 0.88125,
+        "macro_F1": 0.8865509751683812,
+        "logloss": 0.36404125645436697,
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "recall_per_class": [
+          1.0,
+          0.75,
+          0.9,
+          0.875
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0806355,
+        "complete_job_wall_s": 8.343000000008033,
+        "cold_start_snapshot_s": 2.613997,
+        "raw_batch1_s": 0.000143,
+        "raw_batch3000_s": 0.0026236,
+        "raw_batch3000_rows_per_s": 1143466.9919195,
+        "model_B": 60994,
+        "train_process_peak_RSS_B": 163553280,
+        "controller_tree_peak_RSS_B": 334864384,
+        "file_hash_unpickle_load_s": 0.0008693,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 160997376,
+          "process_RSS_loaded_B": 161013760,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 16359,
+          "peak_traced_unpickle_B": 126084,
+          "process_OS_peak_B": 161452032,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Forest Types",
+      "task": "multiclass",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.8867924528301887,
+        "balanced_accuracy": 0.88125,
+        "macro_F1": 0.8865509751683812,
+        "logloss": 0.4795304676767997,
+        "classes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "recall_per_class": [
+          1.0,
+          0.75,
+          0.9,
+          0.875
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.5497016,
+        "complete_job_wall_s": 8.406000000002678,
+        "cold_start_snapshot_s": 2.9304325,
+        "raw_batch1_s": 0.0002905,
+        "raw_batch3000_s": 0.001724,
+        "raw_batch3000_rows_per_s": 1740139.2111368908,
+        "model_B": 547647,
+        "train_process_peak_RSS_B": 167419904,
+        "controller_tree_peak_RSS_B": 338980864,
+        "file_hash_unpickle_load_s": 0.0011326,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 162611200,
+          "process_RSS_loaded_B": 162627584,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 560585,
+          "peak_traced_unpickle_B": 599421,
+          "process_OS_peak_B": 162656256,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Glass",
+      "task": "multiclass",
+      "algorithm": "CodAdapt 2.1.0",
+      "metrics": {
+        "accuracy": 0.631578947368421,
+        "balanced_accuracy": 0.43245614035087715,
+        "macro_F1": 0.4509902242460382,
+        "logloss": 1.0676498742933946,
+        "classes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "recall_per_class": [
+          0.8947368421052632,
+          0.7,
+          0.0,
+          0.0,
+          0.5,
+          0.5
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0738937,
+        "complete_job_wall_s": 6.85899999999674,
+        "cold_start_snapshot_s": 2.0658933,
+        "raw_batch1_s": 0.0008788,
+        "raw_batch3000_s": 0.0028111,
+        "raw_batch3000_rows_per_s": 1067197.8940628225,
+        "model_B": 108580,
+        "train_process_peak_RSS_B": 149491712,
+        "controller_tree_peak_RSS_B": 322945024,
+        "file_hash_unpickle_load_s": 0.000828,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149233664,
+          "process_RSS_loaded_B": 149250048,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 221385,
+          "peak_traced_unpickle_B": 254161,
+          "process_OS_peak_B": 149270528,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Glass",
+      "task": "multiclass",
+      "algorithm": "Logistic / Ridge",
+      "metrics": {
+        "accuracy": 0.5789473684210527,
+        "balanced_accuracy": 0.4182017543859649,
+        "macro_F1": 0.44222951844903063,
+        "logloss": 1.1314841615772542,
+        "classes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "recall_per_class": [
+          0.6842105263157895,
+          0.7,
+          0.0,
+          0.0,
+          0.5,
+          0.625
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0889177,
+        "complete_job_wall_s": 7.125,
+        "cold_start_snapshot_s": 2.1507582,
+        "raw_batch1_s": 0.001074,
+        "raw_batch3000_s": 0.0014731,
+        "raw_batch3000_rows_per_s": 2036521.6210712104,
+        "model_B": 3559,
+        "train_process_peak_RSS_B": 149696512,
+        "controller_tree_peak_RSS_B": 323465216,
+        "file_hash_unpickle_load_s": 0.0002516,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 149508096,
+          "process_RSS_loaded_B": 149524480,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 18341,
+          "peak_traced_unpickle_B": 31058,
+          "process_OS_peak_B": 149544960,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Glass",
+      "task": "multiclass",
+      "algorithm": "Random Forest",
+      "metrics": {
+        "accuracy": 0.7543859649122807,
+        "balanced_accuracy": 0.6972953216374269,
+        "macro_F1": 0.7319930069930071,
+        "logloss": 0.7567808682522068,
+        "classes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "recall_per_class": [
+          0.8421052631578947,
+          0.85,
+          0.2,
+          0.6666666666666666,
+          1.0,
+          0.625
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1406986,
+        "complete_job_wall_s": 7.453000000008615,
+        "cold_start_snapshot_s": 2.1974947,
+        "raw_batch1_s": 0.0036859,
+        "raw_batch3000_s": 0.0075564,
+        "raw_batch3000_rows_per_s": 397014.45132602827,
+        "model_B": 519689,
+        "train_process_peak_RSS_B": 154570752,
+        "controller_tree_peak_RSS_B": 326733824,
+        "file_hash_unpickle_load_s": 0.00153,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 155840512,
+          "process_RSS_loaded_B": 155856896,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 209106,
+          "peak_traced_unpickle_B": 974790,
+          "process_OS_peak_B": 155877376,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Glass",
+      "task": "multiclass",
+      "algorithm": "HistGradientBoosting",
+      "metrics": {
+        "accuracy": 0.6491228070175439,
+        "balanced_accuracy": 0.47463450292397663,
+        "macro_F1": 0.4834253816811956,
+        "logloss": 0.9574072169121945,
+        "classes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "recall_per_class": [
+          0.7894736842105263,
+          0.7,
+          0.4,
+          0.3333333333333333,
+          0.0,
+          0.625
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.1127589,
+        "complete_job_wall_s": 7.437999999994645,
+        "cold_start_snapshot_s": 2.161727,
+        "raw_batch1_s": 0.002287,
+        "raw_batch3000_s": 0.0094179,
+        "raw_batch3000_rows_per_s": 318542.3502054598,
+        "model_B": 108858,
+        "train_process_peak_RSS_B": 153382912,
+        "controller_tree_peak_RSS_B": 324403200,
+        "file_hash_unpickle_load_s": 0.0012271,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 153538560,
+          "process_RSS_loaded_B": 154120192,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 668791,
+          "peak_traced_unpickle_B": 742519,
+          "process_OS_peak_B": 154140672,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Glass",
+      "task": "multiclass",
+      "algorithm": "LightGBM",
+      "metrics": {
+        "accuracy": 0.6491228070175439,
+        "balanced_accuracy": 0.5241959064327485,
+        "macro_F1": 0.5716808387581064,
+        "logloss": 0.9445831758746045,
+        "classes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "recall_per_class": [
+          0.7368421052631579,
+          0.75,
+          0.2,
+          0.3333333333333333,
+          0.5,
+          0.625
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 0.0742683,
+        "complete_job_wall_s": 8.139999999999418,
+        "cold_start_snapshot_s": 2.5467982,
+        "raw_batch1_s": 0.0001407,
+        "raw_batch3000_s": 0.0053282,
+        "raw_batch3000_rows_per_s": 563041.927855561,
+        "model_B": 126845,
+        "train_process_peak_RSS_B": 164290560,
+        "controller_tree_peak_RSS_B": 334983168,
+        "file_hash_unpickle_load_s": 0.0013997,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 161660928,
+          "process_RSS_loaded_B": 161677312,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 17404,
+          "peak_traced_unpickle_B": 257296,
+          "process_OS_peak_B": 161890304,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    },
+    {
+      "dataset": "Glass",
+      "task": "multiclass",
+      "algorithm": "CatBoost",
+      "metrics": {
+        "accuracy": 0.8070175438596491,
+        "balanced_accuracy": 0.7949561403508772,
+        "macro_F1": 0.8120352998401779,
+        "logloss": 0.71734332626908,
+        "classes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "recall_per_class": [
+          0.8947368421052632,
+          0.85,
+          0.4,
+          1.0,
+          1.0,
+          0.625
+        ]
+      },
+      "cost": {
+        "fit_including_preprocessing_s": 1.4198986,
+        "complete_job_wall_s": 9.01600000000326,
+        "cold_start_snapshot_s": 3.7677665,
+        "raw_batch1_s": 0.0002845,
+        "raw_batch3000_s": 0.0030652,
+        "raw_batch3000_rows_per_s": 978728.9573274174,
+        "model_B": 1204008,
+        "train_process_peak_RSS_B": 171765760,
+        "controller_tree_peak_RSS_B": 343511040,
+        "file_hash_unpickle_load_s": 0.0017568,
+        "resident_RSS": {
+          "process_RSS_before_load_B": 163590144,
+          "process_RSS_loaded_B": 164814848,
+          "RSS_delta_is_not_model_size": true,
+          "retained_traced_unpickle_B": 1216826,
+          "peak_traced_unpickle_B": 1257081,
+          "process_OS_peak_B": 164818944,
+          "traced_probe_is_separate_from_primary_untraced_timing": true
+        },
+        "cache_load_scope": "warm/unspecified, not certified cold filesystem"
+      }
+    }
+  ]
+}

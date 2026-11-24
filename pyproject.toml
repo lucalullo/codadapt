@@ -1,18 +1,21 @@
 [build-system]
-requires = ["setuptools==84.2.1", "wheel==0.48.0", "pybind11==3.1.0"]
-build-backend = "setuptools.build_meta"
+requires = []
+build-backend = "release_backend"
+backend-path = ["tools"]
 
 [project]
 name = "codadapt"
-version = "2.1.0"
+version = "2.2.0"
 authors = [{name = "Luca Lullo"}]
 keywords = ["machine-learning", "tabular", "classification", "regression", "coded-memory"]
 description = "Adaptive coded-memory learning for tabular classification and regression"
 readme = "README.md"
-requires-python = ">=3.10,<3.16"
+requires-python = ">=3.12"
+# Original CodAdapt components are MIT; third-party notices retain their terms.
 license = "MIT"
-license-files = ["LICENSE"]
-dependencies = ["numpy>=1.24", "pandas>=2.0", "scikit-learn>=1.4", "scipy>=1.8", "threadpoolctl>=3.1"]
+license-files = ["LICENSE", "licenses/CORE_210_MIT.txt", "licenses/README.md", "licenses/DEPENDENCY_NOTICE_INDEX.json", "licenses/texts/*.txt"]
+dependencies = ["numpy>=1.26.4", "pandas>=2.2.3", "scikit-learn>=1.4", "scipy>=1.8", "threadpoolctl>=3.1"]
+classifiers = ["Programming Language :: Python :: 3", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13"]
 
 [project.urls]
 Homepage = "https://github.com/lucalullo/codadapt"
@@ -22,22 +25,13 @@ Issues = "https://github.com/lucalullo/codadapt/issues"
 
 [project.optional-dependencies]
 ebm = ["interpret-core==0.7.8"]
-dev = ["pytest>=7.4", "ruff>=0.9", "build>=1.2", "twine>=5", "nbformat>=5.9", "nbclient>=0.10", "ipykernel>=6.29"]
-benchmark = ["psutil>=5.9"]
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools.package-data]
-"codadapt.serving" = ["source_contract.json"]
+dev = ["pytest>=7.4", "ruff>=0.9", "build>=1.2", "twine>=6.1", "PyYAML>=6", "nbformat>=5.9", "nbclient>=0.10", "ipykernel>=6.29"]
+benchmark = ["psutil>=5.9", "matplotlib>=3.7"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests/native", "tests/legacy", "tests/tools"]
-# This preserved historical test injects host dependencies via .pth. Genuine
-# clean consumer installation is required by tools/qualify_platform.py instead.
-addopts = "-ra --strict-markers --ignore=tests/legacy/test_packaging.py"
-markers = ["native: requires a successfully built and imported C++ extension"]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
 
 [tool.ruff]
-target-version = "py310"
+target-version = "py312"
 line-length = 100

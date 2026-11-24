@@ -1,49 +1,80 @@
-# Measured competitiveness and limitations
+# Performance and applicability
 
-Historical fixed panel: 90 fits, three public sources, five grouped folds,
-six fixed presets, tuning budget zero. Windows11 x64, AMD Ryzen7 255,
-8physical/16logical cores, about32GB RAM, one numerical thread. CPU affinity
-and frequency were not pinned. Python3.12.10, NumPy2.5.4, pandas3.1.0,
-SciPy1.18.1, sklearn1.9.1, LightGBM4.6.0. No fits repeated for this handoff.
+The supplied 68-page development benchmark report is the source evidence. This repository transcribes its displayed 97 algorithm-origin records, 83 paired comparisons and one missing comparison into standalone tables and figures. The [full-precision aggregate measurements](../benchmarks/data/full_precision.json) are supplied separately; they do not contain dataset rows. [Complete benchmark navigation](../benchmarks/README.md)
 
-| Source | CodAdapt BA / logloss | RandomForest | HGB | LightGBM |
-|---|---|---|---|---|
-| Music (4classes) | .7450 / .71474 | .7925 / .66724 | .8000 / .85197 | .7875 / .74840 |
-| Wireless (4classes) | .9720 / .13803 | .9850 / .05875 | .9810 / .08621 | .9825 / .07270 |
-| Rice (binary) | .92462 / .19845 | .91843 / .34571 | .91943 / .22696 | .91544 / .23246 |
+## Observed predictive advantages
 
-Balanced CodAdapt matches default on Music/Wireless here; Rice balanced BA
-.92067 and logloss .19992 are worse overall despite class-recall tradeoffs.
-All fold observations, accuracy and macro-F1 are in benchmarks/observed_classification.csv.
-The reproduction tool also reports per-class recall and confusion matrices.
-Music has65 of102 CodAdapt errors between relax and sad; their recall is
-.69/.53. This locates errors but does not identify a representation, selection
-or optimization cause. No new multiclass rule is admitted or integrated.
+The measured competitive quality and costs belong to CodAdapt 2.1.0. The 2.2.0
+technical qualification verifies parity and separate implementation benefits.
+There are 14 exploratory wins, 40 inconclusive comparisons, and 29 losses. Their
+intervals remain conditional on the observed groups and the frozen protocol.
 
-Music CodAdapt mean fit48.26ms, batch2048 inference3.672ms, pickle87.86KiB;
-HGB531.96ms/32.65ms/634.25KiB, RF222.08ms/10.00ms/972.14KiB.
-Whole-process RAM is different from model bytes or incremental allocator usage.
-Raw per-fold measurements retain slower and unfavorable cases. The three-source
-inference is underpowered; adjusted comparisons do not establish general superiority.
+| Dataset | Competitor | Metric | CodAdapt 2.1.0 | Competitor | Recorded interpretation |
+|---|---|---|---:|---:|---|
+| Danish occupancy | Logistic Regression | ROC-AUC | 0.939468 | 0.839356 | Exploratory win |
+| Danish occupancy | Random Forest | ROC-AUC | 0.939468 | 0.901309 | Exploratory win |
+| Concrete | Ridge | RMSE | 7.67013 | 11.2413 | Exploratory win |
+| Edge task execution times | Random Forest | RMSE | 0.0819445 | 0.180472 | Exploratory win |
+| Danish occupancy | CatBoost | ROC-AUC | 0.939468 | 0.951437 | Inconclusive, numerical direction favors CatBoost |
+| Annealing | Logistic Regression | Balanced accuracy | 0.610802 | 0.822531 | Loss |
+| Pen Digits | CatBoost | Balanced accuracy | 0.927756 | 0.994546 | Loss |
+| NYC Reservoir | Ridge | RMSE | 2.86138 | 0.941486 | Loss |
 
-Earlier finite engineering workloads measured native multiclass inference
-36.83% faster than the original Python reader at batch2048; the later guarded
-numeric-DataFrame optimization reduced median18.27% against its immediate
-predecessor. These are different experiments and the percentages must not be
-added. Batching reduced whole-process peak working set11.6–13.3%, with MC
-latency+1.8% and p95+5.7% on that measured large-batch workload.
-No native training speedup or new predictive-accuracy improvement is claimed.
+These examples direct readers to the full record. All algorithms, datasets,
+metric values, uncertainty, unfavorable costs, and missing observations remain
+available in the report. Operating recall and FPR must be assessed together with
+ranking and probability quality.
 
-New Python3.10/3.14 Windows receipts establish finite native/Python equality,
-separate clean pure/native consumers, and timing/memory observations. They do
-not turn these synthetic probes into independent predictive benchmarks.
-See compatibility for exact profiles and the conservative automatic dispatcher.
+## Performance-efficiency trade-offs
 
-## Final explicit-native check
+Fifteen points on six origins meet the loss margin, the byte ratio, and all five
+other measured cost conditions simultaneously. The origins are Danish occupancy,
+Denver trees, Statlog German Credit, Concrete, Edge task execution times, and NYC
+Reservoir. Each point retains its original competitor and protocol. Their loss
+ratio is at most 1.05, byte ratio at most 0.50, and the measured cost ratios meet
+the preregistered conditions. Joint uncertainty certification remains incomplete.
 
-A separate serial, no-fit benchmark on saved engineering models measured MC
-batch2048 median reductions of41.58% on Windows3.10.22 and41.18% on3.14.10.
-Normal automatic predictions remain Python on these profiles. See
-[NATIVE_PROFILE_DECISION.md](NATIVE_PROFILE_DECISION.md) for process repetitions,
-exact equivalence, p95, RAM, all batch sizes and finite limitations. These gains
-are not added to historical percentages or interpreted as accuracy improvements.
+For Danish occupancy versus Random Forest, point P02 records logloss 0.272298
+versus 0.453711, with point reductions of 83.34% in fit time, 99.02% in model bytes,
+88.14% in single-row inference, 92.27% in batch inference, 10.15% in training peak
+RSS, and 91.78% in loading. These remain workload-specific measurements.
+
+The 20 historical loss-byte points use fewer cost conditions. The stricter 15
+joint points are identified separately in development benchmark report. Neither set constitutes a clean
+independent Pareto confirmation. [All 15 joint cases](../benchmarks/COMPARISONS.md#joint-qualityresource-observations)
+
+## Technical 2.2.0 versus 2.1.0
+
+The following ratios are from the existing technical three-fixture panel at
+batch 512. A value below one indicates less elapsed time in that case.
+
+| Task | Combined 2.2 / three separate 2.1 calls | Combined 2.2 / efficient fused 2.1 | Prepared immutable input / fused 2.1 |
+|---|---:|---:|---:|
+| Binary | 0.3472275 | 1.013239 | 0.3579112 |
+| Multiclass | 0.3345491 | 0.9947802 | 0.5733094 |
+| Regression | 1.108536 | 1.092575 | 0.2076392 |
+
+The nine-case prepared-input qualification has a defined scope. Setup, retained
+codes, model copies, and memory peaks remain costs. Repeated requests must reuse
+the authenticated immutable input contract. The regression combined path can add
+overhead.
+
+Across the archived models, median compressed/raw file ratios are approximately
+0.2306 for binary, 0.2253 for multiclass, and 0.2556 for regression. Loaded RAM,
+decompression, and latency retain their separate measurements. Fresh 2.2.0
+training speed is unmeasured.
+
+## Choosing a model
+
+Choose CodAdapt where the measured quality, operational recall, and resource
+trade-off fit the deployment. Prefer a measured stronger competitor where the
+quality gap or operational limits dominate. The 40 inconclusive comparisons
+remain inconclusive and establish no formal equivalence. On an unmeasured workload,
+evaluate quality, preparation, training, inference, RAM, bytes, and loading together.
+
+The optional serving and trace companion has separate qualification. Trace
+reconstructs ordered memory contributions and adds work to prediction.
+[Serving and trace evidence](../benchmarks/TECHNICAL.md#separate-lightweight-serving-and-trace)
+
+[Complete applicability guide](../benchmarks/README.md)
+· [Scientific and platform limitations](LIMITATIONS.md)

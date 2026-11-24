@@ -1,32 +1,64 @@
 # Persistence and serving
 
-Models contain Python/numeric state, not serialized native pointers. Load only
-trusted pickle/joblib files and trusted serving images. SHA-256 detects changes
-against a trusted reference; it does not authenticate a sender or make arbitrary
-unpickling safe. Keep the producer's dependency environment with saved models.
+Use trusted models and compatible dependency versions. Keep an authenticated
+digest, the original model, and its original environment for rollback.
+
+## Native persistence
+
+The supported native pickle/joblib path is retained. Version 2.2.0 also exposes:
 
 ```python
-import joblib
-from codadapt.serving import export_model, load_model
+from codadapt import CodAdaptClassifier
 
-joblib.dump(model, "model.joblib")
-restored = joblib.load("model.joblib")  # only a trusted file
-receipt = export_model(model, "model.codadapt")
-served = load_model("model.codadapt", trusted=True,
-                    expected_sha256=receipt["artifact_sha256"])
-prediction = served.predict(X_new)
+model.save("model.cda", compress=True)
+restored = CodAdaptClassifier.load(
+    "model.cda", expected_sha256=authenticated_digest
+)
 ```
 
-Serving exports retain the exact source-bound 2.1.0 contract:
-`940f9fd84198feb1f6d6fb1a515ca2028a5f7a9ca65c4f98c8713391f58f462b`.
-This update changes no protected source, format, numerical profile, producer
-allowlist or loader validation. The fitted-only serving object has no fit method.
-Export commit/receipt binding and integrity checks remain in effect.
+`save` creates a new file and refuses to overwrite an existing file. `compress=True`
+uses zlib level 6. Loading validates the envelope and its bounds. The bounded
+envelope supports up to 32 MiB of pickle payload and 33 MiB of file data. Larger
+models retain the original native persistence path and its trust requirements.
+Compression changes storage and loading costs.
 
-Earlier source-bound images still require their matching producer runtime.
-Unchanged predictions or a successful pickle load do not prove cross-contract
-serving compatibility. Do not rename versions or widen hashes to force loading.
-Arbitrary cross-major NumPy/pandas pickle portability is not promised. A future
-migration needs explicit approval and old/new runtime replay; none is included.
-The exact Kaggle wheel/profile has export/load and persistence evidence. Newly
-built artifacts retain separate verification status in the delivery manifest.
+## Compatibility and rollback
+
+The previous technical build verified supported 2.1.0 native snapshots. The
+revised codec passes the supplied synthetic snapshot tests. On pandas 2.2.3,
+archived nonmissing Python string indexes can be migrated; unsupported missing
+semantics and unlisted constructors are refused. This is not a universal
+cross-version guarantee. Keep the original snapshot and environment. The
+[conversion tool](../tools/convert_snapshot_to_native_pickle.py) can extract a
+native pickle from an authenticated envelope without executing it:
+
+```bash
+python tools/convert_snapshot_to_native_pickle.py model.cda restored.pkl --expected-sha256 AUTHENTICATED_SHA256
+```
+
+Only replace the digest placeholder with an independently authenticated value.
+Existing output files are refused. Extraction preserves the trust requirements
+of the resulting pickle.
+
+## Native serving API
+
+```python
+from codadapt.serving import export_model, load_model
+
+receipt = export_model(model, "serving.image")
+served = load_model(
+    "serving.image", trusted=True,
+    expected_sha256=receipt["artifact_sha256"]
+)
+```
+
+Serving images bind their producer version, source contract, and profile.
+For migration, load a compatible native snapshot and export a new image.
+Images exported before the compatibility revision have a different source
+fingerprint and are not accepted automatically. Preserve the original environment when only a previous serving image is
+available. Hash validation preserves integrity and does not establish trust in an
+unknown pickle.
+
+## Separate lightweight companion
+
+A separate stdlib serving and trace companion was reported and measured on three synthetic schemas. It is not present in this source bundle and must not be described as a bundled feature. See the [technical benchmark](../benchmarks/TECHNICAL.md) for measured costs and the scope of the recorded checks.

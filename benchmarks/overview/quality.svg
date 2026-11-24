@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="635" viewBox="0 0 920 635" role="img">
+<title>CodAdapt 2.1.0 | Predictive quality</title>
+<desc>Directional ratio against the best eligible external primary-metric baseline; see summary table for raw scores. Lower ratios indicate a favorable numerical direction; not a significance test.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#172638">
+<text x="24" y="32" font-size="21" font-weight="bold">CodAdapt 2.1.0 | Predictive quality</text>
+<text x="24" y="55" font-size="12" fill="#475569">Directional ratio against the best eligible external primary-metric baseline; see summary table for raw scores.</text>
+<text x="24" y="83" font-size="12" font-weight="bold">Dataset / metric</text>
+<text x="295" y="83" font-size="11" fill="#246b83">Lower ratio</text>
+<text x="715" y="83" font-size="11" text-anchor="end" fill="#9b5622">Higher ratio</text>
+<text x="896" y="83" font-size="12" font-weight="bold" text-anchor="end">Ratio</text>
+<rect x="18" y="93" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="116" font-size="12">Breast Cancer Wisconsin / ROC-AUC</text>
+<line x1="505" y1="93" x2="505" y2="128" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="110" x2="504.91" y2="110" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="504.91" cy="110" r="5" fill="#246b83"/>
+<text x="896" y="115" font-size="12" text-anchor="end">0.9994x</text>
+<text x="24" y="151" font-size="12">Danish occupancy / ROC-AUC</text>
+<line x1="505" y1="128" x2="505" y2="163" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="145" x2="506.92" y2="145" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="506.92" cy="145" r="5" fill="#b76e32"/>
+<text x="896" y="150" font-size="12" text-anchor="end">1.013x</text>
+<rect x="18" y="163" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="186" font-size="12">Denver trees / ROC-AUC</text>
+<line x1="505" y1="163" x2="505" y2="198" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="180" x2="545.91" y2="180" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="545.91" cy="180" r="5" fill="#b76e32"/>
+<text x="896" y="185" font-size="12" text-anchor="end">1.31x</text>
+<text x="24" y="221" font-size="12">SECOM / ROC-AUC</text>
+<line x1="505" y1="198" x2="505" y2="233" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="215" x2="554.03" y2="215" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="554.03" cy="215" r="5" fill="#b76e32"/>
+<text x="896" y="220" font-size="12" text-anchor="end">1.382x</text>
+<rect x="18" y="233" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="256" font-size="12">Statlog German Credit / ROC-AUC</text>
+<line x1="505" y1="233" x2="505" y2="268" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="250" x2="507.66" y2="250" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="507.66" cy="250" r="5" fill="#b76e32"/>
+<text x="896" y="255" font-size="12" text-anchor="end">1.018x</text>
+<text x="24" y="291" font-size="12">Annealing / Balanced accuracy</text>
+<line x1="505" y1="268" x2="505" y2="303" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="285" x2="557.03" y2="285" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="557.03" cy="285" r="5" fill="#b76e32"/>
+<text x="896" y="290" font-size="12" text-anchor="end">1.41x</text>
+<rect x="18" y="303" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="326" font-size="12">Forest Types / Balanced accuracy</text>
+<line x1="505" y1="303" x2="505" y2="338" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="320" x2="510.47" y2="320" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="510.47" cy="320" r="5" fill="#b76e32"/>
+<text x="896" y="325" font-size="12" text-anchor="end">1.037x</text>
+<text x="24" y="361" font-size="12">Glass / Balanced accuracy</text>
+<line x1="505" y1="338" x2="505" y2="373" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="355" x2="597.22" y2="355" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="597.22" cy="355" r="5" fill="#b76e32"/>
+<text x="896" y="360" font-size="12" text-anchor="end">1.838x</text>
+<rect x="18" y="373" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="396" font-size="12">Pen Digits / Balanced accuracy</text>
+<line x1="505" y1="373" x2="505" y2="408" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="390" x2="515.53" y2="390" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="515.53" cy="390" r="5" fill="#b76e32"/>
+<text x="896" y="395" font-size="12" text-anchor="end">1.072x</text>
+<text x="24" y="431" font-size="12">Abalone / RMSE</text>
+<line x1="505" y1="408" x2="505" y2="443" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="425" x2="520.71" y2="425" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="520.71" cy="425" r="5" fill="#b76e32"/>
+<text x="896" y="430" font-size="12" text-anchor="end">1.109x</text>
+<rect x="18" y="443" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="466" font-size="12">Automobile / RMSE</text>
+<line x1="505" y1="443" x2="505" y2="478" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="460" x2="588.97" y2="460" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="588.97" cy="460" r="5" fill="#b76e32"/>
+<text x="896" y="465" font-size="12" text-anchor="end">1.741x</text>
+<text x="24" y="501" font-size="12">Concrete / RMSE</text>
+<line x1="505" y1="478" x2="505" y2="513" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="495" x2="536.68" y2="495" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="536.68" cy="495" r="5" fill="#b76e32"/>
+<text x="896" y="500" font-size="12" text-anchor="end">1.233x</text>
+<rect x="18" y="513" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="536" font-size="12">Edge task execution times / RMSE</text>
+<line x1="505" y1="513" x2="505" y2="548" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="530" x2="545.15" y2="530" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="545.15" cy="530" r="5" fill="#b76e32"/>
+<text x="896" y="535" font-size="12" text-anchor="end">1.303x</text>
+<text x="24" y="571" font-size="12">NYC Reservoir / RMSE</text>
+<line x1="505" y1="548" x2="505" y2="583" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="565" x2="673.39" y2="565" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="673.39" cy="565" r="5" fill="#b76e32"/>
+<text x="896" y="570" font-size="12" text-anchor="end">3.039x</text>
+<text x="295.00" y="600" font-size="11" text-anchor="middle">0.25x</text>
+<text x="505.00" y="600" font-size="11" text-anchor="middle">1x</text>
+<text x="715.00" y="600" font-size="11" text-anchor="middle">4x</text>
+<text x="505" y="619" font-size="11" text-anchor="middle" fill="#475569">Log-ratio axis | 1x = same recorded value | descriptive, not a statistical test</text>
+</g></svg>

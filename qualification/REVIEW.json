@@ -1,0 +1,70 @@
+{
+  "scope": "CodAdapt 2.2.0 public-source preparation, with unchanged input runtime and learning algorithm.",
+  "source_archive_sha256": "211dde78caf655eedca21db484f103e33c2fa8e92c569baba1b66458493b8faa",
+  "revised_runtime_SHA256": {
+    "src/codadapt/__init__.py": "f04264fdae988b9e17c56217af75c1c0d35f52137df2a701ec1032f8825ab70f",
+    "src/codadapt/_base.py": "a66aaf02e2a3338892de49c4c93d56dca3dab6b59630d184b06b59648753b12f",
+    "src/codadapt/_batching.py": "314ef2b0c3546a6ee2d260f59ee39d3a1caa9073db842e43f4428ccd62bda6f2",
+    "src/codadapt/_bound_input.py": "4bd9d157b5a1d5106c3898d9ff098b3772bb291371f3c526d07a786409a14dcf",
+    "src/codadapt/_class_weight.py": "7c960b9c53a21eaed56808c921169078298235d354ab05c247780df5457e7294",
+    "src/codadapt/_core.py": "ed5ee68396afd4527719c97b3abe29a4eed1bd497d7222e8a9a573b388ffdb02",
+    "src/codadapt/_inference.py": "2cce6bfb09b1149f4ab5e968c33d657745d81497aee7b6f2c24adb1b11e77e0f",
+    "src/codadapt/_memory_admission.py": "f5c4fe8601806187391914cd31eb45eb29a03854f5b2ca90934fba9bedbceec0",
+    "src/codadapt/_memory_policy.py": "529fb43dd3af2b40aa9fbafd9c7650fce8922310dab07fe3bc7a93e1f2c173bc",
+    "src/codadapt/_multiclass.py": "f55813eff1a0783ee1899b8e2d55500c889ad33a48f687b32ff0a1a87fd43b52",
+    "src/codadapt/_multiclass_artifact.py": "22019c91761dc7926254415d5234acda1cefa9b4ba080b8f9ce4fac3b14d0376",
+    "src/codadapt/_multiclass_packing.py": "546ce55462163db64857541587f3413be0766c2f8daa44fc5698a36345b5bdeb",
+    "src/codadapt/_resource_snapshot.py": "d2903043d1272630deadf39a22a8a3dea7934924951fb70f2fbf35a238117b01",
+    "src/codadapt/_resource_tier.py": "f4f0b51ee16fa877a2249e5696043a4db22690e6815910d8c0d05a716f6b1632",
+    "src/codadapt/_sequence_payload.py": "424add92c0338da3bc93b8dd224ad249f609990a37c540918b64f720e8b8f5bc",
+    "src/codadapt/_serialization.py": "fbffc4e31f2a076d3f7e32a1ec5717cd3555f56add9bfee09540b542f2ad6d20",
+    "src/codadapt/_serving.py": "76f51a56eaa1c89b2e71c1823dbb1c9c286508abde3322ba9349252c2448ffd5",
+    "src/codadapt/_training.py": "07c8d94c69c19792e9568fddfd8817c16b67fb6edb3c6833a148a278670a6b9b",
+    "src/codadapt/_trusted_payload.py": "6a952dde874b19b45c027412cb146c02e36481633f33f923c526f28526fd0297",
+    "src/codadapt/_version.py": "0ca93ed5bfab66c245c458b526827b4e612f204434adff82f470195b0be3b8cd",
+    "src/codadapt/_virtual_domain.py": "9c91571b31ca553d9b0bd56a0669fe71c4cb9cf0f558f392bf4eb5a51ff0c28e",
+    "src/codadapt/_visible_tier.py": "fdb4900a477e1e3188c83172c7cf158bab290169b7d5cce3fb42fd08cac2b2ee",
+    "src/codadapt/_visible_virtual.py": "555fe507fb0af9e537375c176c8865e8c50398af3b47b998dd3066a04dfdc098",
+    "src/codadapt/classifier.py": "e51faa542520855cab5c3716f8ccbb38e9090cae7cb160e3f264d758d446fa4b",
+    "src/codadapt/experimental/__init__.py": "44796409ba32ae28ac44f4b0b492fc8a0e292c85592d9e21bedeacd13af5ed5b",
+    "src/codadapt/experimental/_compiler.py": "fe355d7954f20fa6af34f40e27d4aee9cdada474fc18d0f261be3e44bbff1a03",
+    "src/codadapt/experimental/_model.py": "e38c537f785447fc01b884a2d2ac276b3a4a84d6d2f31e4ec018e2f6a180449d",
+    "src/codadapt/experimental/_rational.py": "7f3f3cccaa4cc29cfc7f6c0835bc4abb1cc9aef3d6eb714adf7ed9c0daea5e0a",
+    "src/codadapt/experimental/_safe_blend.py": "a70a783ab450d2c3a3a5b7d4ec3c898d83d2c4b1674f3932ff078c915c10ce0b",
+    "src/codadapt/preprocessing.py": "209b4401bee34efb6aed6d2dca8635f9998a7528310511ff32b932098d883e55",
+    "src/codadapt/regressor.py": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8",
+    "src/codadapt/serving/__init__.py": "920ba7269c9cea62443d7898b9a3d161beaa165af20044922e99adbed50adf3c",
+    "src/codadapt/serving/_contract.py": "da6422a5e1c37343aa405940e39cb12da02e6075b0fc92c272ffe952d4382489",
+    "src/codadapt/serving/backing_compiler.py": "6a590f918f4d9dfa8608f5d938668f84d34748a806569a9d5fd97e04d2f861a2",
+    "src/codadapt/serving/composed_runtime.py": "dd619b3a8b5e72a0ed2490d51e4a61d1805d1b1565f80b17c43566b9182f03ba",
+    "src/codadapt/serving/exporter.py": "f8c8235569a2ef8fb16262ac0dc868ffd083dfe3f23575504acfdd6ed6c5879e",
+    "src/codadapt/serving/metadata_compiler.py": "d7675d2a0ec0e1963ced1ee4bbaa58067d8c66ceaf1256a555cb0ba40f291646",
+    "src/codadapt/serving/numeric_frame_runtime.py": "cc77606106d779aef70c170766be1217a15ff7ced38aebe59578608cbacb8f81",
+    "src/codadapt/serving/portable_native_runtime.py": "7a56a6b702fdd6fe1462082619ff7e3d52170590dea43ce7c98cdf1a8f4a2c3e",
+    "src/codadapt/serving/source_contract.json": "0d92a788ac22e847a7831bb74049b48c250d294828ecc0c2f18c01958ebabf90",
+    "src/codadapt/serving/string_map_primitive.py": "0bf858034672f1c275a51593e98709914bba9945d89113e72b5043a64fc77683",
+    "src/codadapt/serving/validated_native_format.py": "9da4a94bd026e247b4a1d72c548e39d2f953a0e35db0cc683065d20695416b1c"
+  },
+  "new_research_fits": 0,
+  "new_competitive_measurements": 0,
+  "local_supplied_suite": {
+    "ci_windows": {
+      "passed": 143
+    },
+    "modern_windows": {
+      "passed": 141,
+      "skipped": 2
+    }
+  },
+  "restored_suite_ci_windows": {
+    "passed": 861,
+    "xfailed_strict_preexisting": 4,
+    "execution": "Built wheel installed in a separate consumer venv; no source-tree import path",
+    "packaging_safety_tests": 8
+  },
+  "hosted_execution": "PENDING",
+  "native_extension_built": false,
+  "standalone_companion_bundled": false,
+  "original_components_license": "MIT, Copyright (c) 2026 Luca Lullo; third-party terms preserved",
+  "publication_performed": false
+}

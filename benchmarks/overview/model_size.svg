@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="635" viewBox="0 0 920 635" role="img">
+<title>CodAdapt 2.1.0 | Serialized model size</title>
+<desc>Project bytes / bytes of the same quality-selected comparator; not loaded RAM. Lower ratios indicate a favorable numerical direction; not a significance test.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#172638">
+<text x="24" y="32" font-size="21" font-weight="bold">CodAdapt 2.1.0 | Serialized model size</text>
+<text x="24" y="55" font-size="12" fill="#475569">Project bytes / bytes of the same quality-selected comparator; not loaded RAM.</text>
+<text x="24" y="83" font-size="12" font-weight="bold">Dataset / metric</text>
+<text x="295" y="83" font-size="11" fill="#246b83">Lower ratio</text>
+<text x="715" y="83" font-size="11" text-anchor="end" fill="#9b5622">Higher ratio</text>
+<text x="896" y="83" font-size="12" font-weight="bold" text-anchor="end">Ratio</text>
+<rect x="18" y="93" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="116" font-size="12">Breast Cancer Wisconsin</text>
+<line x1="505" y1="93" x2="505" y2="128" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="110" x2="657.52" y2="110" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="657.52" cy="110" r="5" fill="#b76e32"/>
+<text x="896" y="115" font-size="12" text-anchor="end">12.39x</text>
+<text x="24" y="151" font-size="12">Danish occupancy</text>
+<line x1="505" y1="128" x2="505" y2="163" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="145" x2="451.53" y2="145" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="451.53" cy="145" r="5" fill="#246b83"/>
+<text x="896" y="150" font-size="12" text-anchor="end">0.4138x</text>
+<rect x="18" y="163" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="186" font-size="12">Denver trees</text>
+<line x1="505" y1="163" x2="505" y2="198" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="180" x2="380.28" y2="180" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="380.28" cy="180" r="5" fill="#246b83"/>
+<text x="896" y="185" font-size="12" text-anchor="end">0.1277x</text>
+<text x="24" y="221" font-size="12">SECOM</text>
+<line x1="505" y1="198" x2="505" y2="233" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="215" x2="464.85" y2="215" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="464.85" cy="215" r="5" fill="#246b83"/>
+<text x="896" y="220" font-size="12" text-anchor="end">0.5155x</text>
+<rect x="18" y="233" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="256" font-size="12">Statlog German Credit</text>
+<line x1="505" y1="233" x2="505" y2="268" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="250" x2="589.59" y2="250" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="589.59" cy="250" r="5" fill="#b76e32"/>
+<text x="896" y="255" font-size="12" text-anchor="end">4.039x</text>
+<text x="24" y="291" font-size="12">Annealing</text>
+<line x1="505" y1="268" x2="505" y2="303" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="285" x2="412.86" y2="285" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="412.86" cy="285" r="5" fill="#246b83"/>
+<text x="896" y="290" font-size="12" text-anchor="end">0.2186x</text>
+<rect x="18" y="303" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="326" font-size="12">Forest Types</text>
+<line x1="505" y1="303" x2="505" y2="338" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="320" x2="415.42" y2="320" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="415.42" cy="320" r="5" fill="#246b83"/>
+<text x="896" y="325" font-size="12" text-anchor="end">0.228x</text>
+<text x="24" y="361" font-size="12">Glass</text>
+<line x1="505" y1="338" x2="505" y2="373" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="355" x2="359.22" y2="355" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="359.22" cy="355" r="5" fill="#246b83"/>
+<text x="896" y="360" font-size="12" text-anchor="end">0.09018x</text>
+<rect x="18" y="373" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="396" font-size="12">Pen Digits</text>
+<line x1="505" y1="373" x2="505" y2="408" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="390" x2="318.60" y2="390" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="318.60" cy="390" r="5" fill="#246b83"/>
+<text x="896" y="395" font-size="12" text-anchor="end">0.04613x</text>
+<text x="24" y="431" font-size="12">Abalone</text>
+<line x1="505" y1="408" x2="505" y2="443" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="425" x2="370.90" y2="425" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="370.90" cy="425" r="5" fill="#246b83"/>
+<text x="896" y="430" font-size="12" text-anchor="end">0.1094x</text>
+<rect x="18" y="443" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="466" font-size="12">Automobile</text>
+<line x1="505" y1="443" x2="505" y2="478" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="460" x2="432.49" y2="460" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="432.49" cy="460" r="5" fill="#246b83"/>
+<text x="896" y="465" font-size="12" text-anchor="end">0.3022x</text>
+<text x="24" y="501" font-size="12">Concrete</text>
+<line x1="505" y1="478" x2="505" y2="513" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="495" x2="317.30" y2="495" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="317.30" cy="495" r="5" fill="#246b83"/>
+<text x="896" y="500" font-size="12" text-anchor="end">0.04515x</text>
+<rect x="18" y="513" width="884" height="35" fill="#f3f6f9"/>
+<text x="24" y="536" font-size="12">Edge task execution times</text>
+<line x1="505" y1="513" x2="505" y2="548" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="530" x2="329.27" y2="530" stroke="#246b83" stroke-width="8" stroke-linecap="round"/>
+<circle cx="329.27" cy="530" r="5" fill="#246b83"/>
+<text x="896" y="535" font-size="12" text-anchor="end">0.05502x</text>
+<text x="24" y="571" font-size="12">NYC Reservoir</text>
+<line x1="505" y1="548" x2="505" y2="583" stroke="#94a3b8" stroke-dasharray="3 3"/>
+<line x1="505" y1="565" x2="668.99" y2="565" stroke="#b76e32" stroke-width="8" stroke-linecap="round"/>
+<circle cx="668.99" cy="565" r="5" fill="#b76e32"/>
+<text x="896" y="570" font-size="12" text-anchor="end">14.98x</text>
+<text x="295.00" y="600" font-size="11" text-anchor="middle">0.03125x</text>
+<text x="505.00" y="600" font-size="11" text-anchor="middle">1x</text>
+<text x="715.00" y="600" font-size="11" text-anchor="middle">32x</text>
+<text x="505" y="619" font-size="11" text-anchor="middle" fill="#475569">Log-ratio axis | 1x = same recorded value | descriptive, not a statistical test</text>
+</g></svg>

@@ -1,0 +1,1171 @@
+{
+  "items": [
+    {
+      "package": "cloudpickle",
+      "version": "3.1.2",
+      "wheel_member": "cloudpickle-3.1.2.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/00_000.txt",
+      "SHA256": "3029ea34173e9fdc233ad315dc6b100bd1ea71f529b1c1af97664a272fdc55f5",
+      "bytes": 1754,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "codadapt",
+      "version": "2.1.0",
+      "wheel_member": "codadapt-2.1.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/01_000.txt",
+      "SHA256": "3610c350fb9e5515a3c859187dba4f04f6d0345f840fbc17034b79db9d44d5b3",
+      "bytes": 1088,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "colorama",
+      "version": "0.4.6",
+      "wheel_member": "colorama-0.4.6.dist-info/licenses/LICENSE.txt",
+      "notice_file": "licenses/texts/03_000.txt",
+      "SHA256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318",
+      "bytes": 1491,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "iniconfig",
+      "version": "2.3.1",
+      "wheel_member": "iniconfig-2.3.1.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/04_000.txt",
+      "SHA256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4",
+      "bytes": 1098,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "joblib",
+      "version": "1.6.0",
+      "wheel_member": "joblib-1.6.0.dist-info/licenses/LICENSE.txt",
+      "notice_file": "licenses/texts/05_000.txt",
+      "SHA256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a",
+      "bytes": 1527,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "narwhals",
+      "version": "2.28.0",
+      "wheel_member": "narwhals-2.28.0.dist-info/licenses/LICENSE.md",
+      "notice_file": "licenses/texts/06_000.txt",
+      "SHA256": "811445f30147b8f0c9d444c9025fd528f9532c54b7b83f6e2368473dc91cfdf0",
+      "bytes": 1082,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/LICENSE.txt",
+      "notice_file": "licenses/texts/07_000.txt",
+      "SHA256": "a804dff0ead9fadc5293456410bcbfc32bf024be9c4513459663fb7b442d2341",
+      "bytes": 45831,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "GCC-runtime-exception"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Keep GPLv3 and GCC Runtime Library Exception 3.1 notices with the covered runtime components.",
+        "The exception allows the specified combination of independent modules only when all target code comes from eligible compilation processes.",
+        "Do not infer a general exception for modified GCC or any arbitrary GPL dependency; repackaging runtime binaries requires separate provenance review."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "notice_file": "licenses/texts/07_001.txt",
+      "SHA256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150",
+      "bytes": 1039,
+      "families_or_component_terms": [
+        "Zlib"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Do not misrepresent origin; plainly mark altered source versions and retain the notice in source distributions."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "notice_file": "licenses/texts/07_002.txt",
+      "SHA256": "aea41976c720f91bd19725c16916a1ace40eb1ea42620d340e587a5de4bbcea0",
+      "bytes": 704,
+      "families_or_component_terms": [
+        "0BSD"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "No attribution condition in the grant; retain the supplied text in this notice pack as a conservative practice."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+      "notice_file": "licenses/texts/07_003.txt",
+      "SHA256": "d208152e2777ffd0126eacc1bd21c0320d69e4e6b622d21a2a12a47e8ef73763",
+      "bytes": 21155,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "Apache-2.0",
+        "CC0-1.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms.",
+        "Public-domain dedication/fallback only for the named component; no patent/trademark or third-party rights clearance."
+      ],
+      "review_note": "Highway offers Apache-2.0 OR BSD-3-Clause; the named random header is separately CC0. Preserve all texts; do not flatten the file to one license.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "notice_file": "licenses/texts/07_004.txt",
+      "SHA256": "b0fd592d4ead563148e3977e7b589169d46a5ef2ff133c755a81af880a3fc919",
+      "bytes": 1441,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Dragon4 is expressly relicensed to NumPy under MIT with the author's permission; its original Zlib license is historical, not an additional condition here.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "notice_file": "licenses/texts/07_005.txt",
+      "SHA256": "a732977853530066790c42817087f4829b518dd98d340c916acbfd227e39d3cb",
+      "bytes": 1542,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "notice_file": "licenses/texts/07_006.txt",
+      "SHA256": "585483905b13d4b42f800c55ba99e89d6e2e33ccd5f503e201c07531d148ff41",
+      "bytes": 1573,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "notice_file": "licenses/texts/07_007.txt",
+      "SHA256": "8db000e158c162e7249787852d8c69764706502ccee725c06641b31c1e95c8af",
+      "bytes": 1523,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "notice_file": "licenses/texts/07_008.txt",
+      "SHA256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b",
+      "bytes": 2314,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/ma/LICENSE",
+      "notice_file": "licenses/texts/07_009.txt",
+      "SHA256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7",
+      "bytes": 1616,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/LICENSE.md",
+      "notice_file": "licenses/texts/07_010.txt",
+      "SHA256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a",
+      "bytes": 3582,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "NCSA OR BSD-3-Clause. The BSD choice suffices for this component; component-specific licenses remain separate.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+      "notice_file": "licenses/texts/07_011.txt",
+      "SHA256": "cf5619f25b112d5ce7c896efffc8e610bcb345dfadcc19f2c1460aa48fff2c9e",
+      "bytes": 2805,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "notice_file": "licenses/texts/07_012.txt",
+      "SHA256": "92c10699884321f1c2947fe2a70ab23b0fbf1507f756d89dd08f38c61fc3d4fa",
+      "bytes": 2986,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "notice_file": "licenses/texts/07_013.txt",
+      "SHA256": "41190663b77bee5302386495a07b7eabfbfa571aa0ae2f11da6764162062fc4f",
+      "bytes": 1176,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+      "notice_file": "licenses/texts/07_014.txt",
+      "SHA256": "322ac46d870c8aeead6c53adcccc839296fb3c8e456eae155081297daf7f8013",
+      "bytes": 1540,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "notice_file": "licenses/texts/07_015.txt",
+      "SHA256": "28cad82ce1379dc529df30da78ec012d7d0d1d576b03ddcb93388aee53659f59",
+      "bytes": 1253,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy-2.5.4.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+      "notice_file": "licenses/texts/07_016.txt",
+      "SHA256": "454ec7350e478e037061850b67395753b425b1cb0a34bbc26290b020bf89d763",
+      "bytes": 340,
+      "families_or_component_terms": [
+        "CC0-1.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Public-domain dedication/fallback only for the named component; no patent/trademark or third-party rights clearance."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy/_core/include/numpy/random/LICENSE.txt",
+      "notice_file": "licenses/texts/07_017.txt",
+      "SHA256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150",
+      "bytes": 1039,
+      "families_or_component_terms": [
+        "Zlib"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Do not misrepresent origin; plainly mark altered source versions and retain the notice in source distributions."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy/ma/LICENSE",
+      "notice_file": "licenses/texts/07_018.txt",
+      "SHA256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7",
+      "bytes": 1616,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "wheel_member": "numpy/random/LICENSE.md",
+      "notice_file": "licenses/texts/07_019.txt",
+      "SHA256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a",
+      "bytes": 3582,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Byte-identical duplicate of a bundled NumPy random notice; not a second independent license decision.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "packaging",
+      "version": "26.3",
+      "wheel_member": "packaging-26.3.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/08_000.txt",
+      "SHA256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+      "bytes": 197,
+      "families_or_component_terms": [
+        "BSD-2-Clause",
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "packaging is Apache-2.0 OR BSD-2-Clause, not a mandatory conjunction. Both supplied texts are retained.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "packaging",
+      "version": "26.3",
+      "wheel_member": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "notice_file": "licenses/texts/08_001.txt",
+      "SHA256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174,
+      "families_or_component_terms": [
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "packaging",
+      "version": "26.3",
+      "wheel_member": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "notice_file": "licenses/texts/08_002.txt",
+      "SHA256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "bytes": 1344,
+      "families_or_component_terms": [
+        "BSD-2-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/09_000.txt",
+      "SHA256": "9850f6b5bdef7346503065807b878deb8058b976c5c329f4c4d23bf4796ce9ae",
+      "bytes": 1634,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/BOTTLENECK_LICENCE",
+      "notice_file": "licenses/texts/09_001.txt",
+      "SHA256": "053a90e30580f5d9d79817add1567f88b4a3eeb11bcded9ecf74619d17768066",
+      "bytes": 1360,
+      "families_or_component_terms": [
+        "BSD-2-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/DATEUTIL_LICENSE",
+      "notice_file": "licenses/texts/09_002.txt",
+      "SHA256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "bytes": 2889,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "dateutil's newer contributions are dual Apache/BSD; earlier BSD-covered portions retain their terms.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/HAVEN_LICENSE",
+      "notice_file": "licenses/texts/09_003.txt",
+      "SHA256": "48216b40b3d1b19452923dd6fd74655bf5c0df9d76b51eb0efade7e0b88bfbcc",
+      "bytes": 1099,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/HAVEN_MIT",
+      "notice_file": "licenses/texts/09_004.txt",
+      "SHA256": "87217d0a79195441ab615a3abb3ab6777502e57804ea83f973df975a67ebd720",
+      "bytes": 1264,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/KLIB_LICENSE",
+      "notice_file": "licenses/texts/09_005.txt",
+      "SHA256": "7463172c3a23321c1838896eba437f70a6de80ac5a840b2960966c8c5444abf1",
+      "bytes": 1104,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/MUSL_LICENSE",
+      "notice_file": "licenses/texts/09_006.txt",
+      "SHA256": "50a343c1ce9e27cd6c58023f13b91d2cd679861fe7fb6bbbbfbec3dcafc3583f",
+      "bytes": 6203,
+      "families_or_component_terms": [
+        "MIT",
+        "BSD-2-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred.",
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials."
+      ],
+      "review_note": "musl lists permissive components and a narrow public-header/CRT attribution exception. Preserve the complete notice; do not apply that exception to the whole package.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/NUMPY_LICENSE",
+      "notice_file": "licenses/texts/09_007.txt",
+      "SHA256": "81d42da02a56b611c35abc83d2241564b46bec3a5b1960b395d55cebca68fb6f",
+      "bytes": 1542,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/PACKAGING_LICENSE",
+      "notice_file": "licenses/texts/09_008.txt",
+      "SHA256": "1871330068a18f1f07c3f147a41c008e59f367f217041ca6eb20b0298639a128",
+      "bytes": 11519,
+      "families_or_component_terms": [
+        "BSD-2-Clause",
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "Vendored packaging has a dual-license choice. No blanket Apache obligation is imposed on unrelated addon code.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/PSF_LICENSE",
+      "notice_file": "licenses/texts/09_009.txt",
+      "SHA256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "bytes": 13936,
+      "families_or_component_terms": [
+        "PSF-history"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain PSF and the applicable historical notices (BeOpen/CNRI/CWI); include a brief change summary if modifying the covered code.",
+        "No right to use Python/PSF names as endorsement; preserve historical terms instead of relabeling as MIT."
+      ],
+      "review_note": "Historical Python notices are included by pandas; the old table's GPL-compatibility history does not relicense the addon or today's interpreter.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/PYPERCLIP_LICENSE",
+      "notice_file": "licenses/texts/09_010.txt",
+      "SHA256": "eafcd440e3570c6bc7b77dcec15dec398d13bc9b5e897336b221ff81ff19f345",
+      "bytes": 1486,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/PYUPGRADE_LICENSE",
+      "notice_file": "licenses/texts/09_011.txt",
+      "SHA256": "70aedcd6928272bd176e4fdc3384af22ee759d006fb15105d994756e4f2d1b7a",
+      "bytes": 1058,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/SAS7BDAT_LICENSE",
+      "notice_file": "licenses/texts/09_012.txt",
+      "SHA256": "458d5fd4175825440ad32d6bf6af45d1a19d4adb316b557d869c6560b6692e00",
+      "bytes": 1059,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/STATSBASE_JL_LICENSE",
+      "notice_file": "licenses/texts/09_013.txt",
+      "SHA256": "f371ccf0fb892a4cd9f2e550c4b8cf4362793d17028dc642ad55c1e01a41dfe1",
+      "bytes": 1249,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/ULTRAJSON_LICENSE",
+      "notice_file": "licenses/texts/09_014.txt",
+      "SHA256": "2bfbb5bb8ec66d136ec62d836ddc0c0019d44ef4d9389f1f6cab1c1109d774a2",
+      "bytes": 5974,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "Tcl"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Keep existing copyright notices and include the notice verbatim in distributions.",
+        "If applying new terms to modifications, mark them on the first page of each affected file; retain government-use and disclaimer text."
+      ],
+      "review_note": "UltraJSON includes three distinct notices: EA/ESN BSD, MODP BSD, and the Tcl numeric-decoder terms. Preserve all three.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/LICENSES/XSIMD_LICENSE",
+      "notice_file": "licenses/texts/09_015.txt",
+      "SHA256": "501352acba62cc54e8e3d293754d606f919c9b425b962193c211f9fa29cd9940",
+      "bytes": 1606,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/subprojects/fast_float-8.2.10/LICENSE-APACHE",
+      "notice_file": "licenses/texts/09_016.txt",
+      "SHA256": "097a889aa954d04e088b790b10a4014d6189561d0a6013935a73ce3d4ddaaf06",
+      "bytes": 10767,
+      "families_or_component_terms": [
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "fast_float offers Apache/Boost/MIT alternatives; preserve the supplied license set and choose consistently if incorporating it. No fast_float code is in the thin addon.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/subprojects/fast_float-8.2.10/LICENSE-BOOST",
+      "notice_file": "licenses/texts/09_017.txt",
+      "SHA256": "8d8291caf1cee26d23acf3eb67c9f9a2d58f1c681b16a4fbe8cbfb9e3c0b5a9b",
+      "bytes": 1337,
+      "families_or_component_terms": [
+        "Boost-1.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the full copyright/license/disclaimer in source and derivatives; the text exempts solely machine-executable object-code copies."
+      ],
+      "review_note": "Alternative fast_float license, not an additional mandatory condition on top of MIT.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pandas",
+      "version": "3.1.0",
+      "wheel_member": "pandas-3.1.0.dist-info/licenses/subprojects/fast_float-8.2.10/LICENSE-MIT",
+      "notice_file": "licenses/texts/09_018.txt",
+      "SHA256": "e562f3f974ced7e69dd1db77b820b36bcf8f30377f1aa105723fba449c53c4e6",
+      "bytes": 1079,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Alternative fast_float license; not permission to strip notices from the whole pandas binary.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pluggy",
+      "version": "1.7.0",
+      "wheel_member": "pluggy-1.7.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/10_000.txt",
+      "SHA256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606",
+      "bytes": 1110,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "psutil",
+      "version": "7.2.2",
+      "wheel_member": "psutil-7.2.2.dist-info/LICENSE",
+      "notice_file": "licenses/texts/11_000.txt",
+      "SHA256": "c7adc4d5d1337a548b967421f1fbe258b93033a0417708fd6f4e38f8ecbceb80",
+      "bytes": 1577,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pygments",
+      "version": "2.21.0",
+      "wheel_member": "pygments-2.21.0.dist-info/licenses/AUTHORS",
+      "notice_file": "licenses/texts/12_000.txt",
+      "SHA256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f",
+      "bytes": 11048,
+      "families_or_component_terms": [
+        "AUTHORS"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Contributor attribution list, not a substitute for the package license; retain with the accompanying license if redistributing this tool."
+      ],
+      "review_note": "Contributor list accompanies Pygments BSD-2-Clause. Tool is outside the minimal runtime closure.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pygments",
+      "version": "2.21.0",
+      "wheel_member": "pygments-2.21.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/12_001.txt",
+      "SHA256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+      "bytes": 1331,
+      "families_or_component_terms": [
+        "BSD-2-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source and accompanying binary materials."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "pytest",
+      "version": "9.1.1",
+      "wheel_member": "pytest-9.1.1.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/13_000.txt",
+      "SHA256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b",
+      "bytes": 1091,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "python-dateutil",
+      "version": "3.0.0",
+      "wheel_member": "python_dateutil-3.0.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/14_000.txt",
+      "SHA256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "bytes": 2889,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_member": "scikit_learn-1.9.1.dist-info/licenses/COPYING",
+      "notice_file": "licenses/texts/15_000.txt",
+      "SHA256": "014b1b1ad74cf00997f7081a1635c3c203cd70c08f39c13d9a39347fcd464979",
+      "bytes": 2629,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_member": "sklearn/externals/array_api_compat/LICENSE",
+      "notice_file": "licenses/texts/15_001.txt",
+      "SHA256": "464569596b7e6162762669e4e4d1fe8d2618c03901ca7ba36e2603415fb6865d",
+      "bytes": 1118,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_member": "sklearn/externals/array_api_extra/LICENSE",
+      "notice_file": "licenses/texts/15_002.txt",
+      "SHA256": "8b2e8a4aa8a98ed811f17be2807b1eb90dcb021c1e5a0304d784d0a24f4ee907",
+      "bytes": 1118,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_member": "sklearn/svm/src/liblinear/COPYRIGHT",
+      "notice_file": "licenses/texts/15_003.txt",
+      "SHA256": "5e6d496ace27b9b277e2311f894c8100660e8c95ce909c1c1f1abb4702946415",
+      "bytes": 1517,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy-1.18.1.dist-info/LICENSE.txt",
+      "notice_file": "licenses/texts/16_000.txt",
+      "SHA256": "f0f5c56b298ec9795df1199edc328a987242716d14a1bde6813112e22dc15f99",
+      "bytes": 45881,
+      "families_or_component_terms": [
+        "BSD-3-Clause",
+        "GCC-runtime-exception"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission.",
+        "Keep GPLv3 and GCC Runtime Library Exception 3.1 notices with the covered runtime components.",
+        "The exception allows the specified combination of independent modules only when all target code comes from eligible compilation processes.",
+        "Do not infer a general exception for modified GCC or any arbitrary GPL dependency; repackaging runtime binaries requires separate provenance review."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy/_lib/_uarray/LICENSE",
+      "notice_file": "licenses/texts/16_001.txt",
+      "SHA256": "e4c4acc31e8287066d7c995d26e3ef902ca1977ee187b260b11c278366503811",
+      "bytes": 1543,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy/fft/_duccfft/LICENSE.md",
+      "notice_file": "licenses/texts/16_002.txt",
+      "SHA256": "c04661685cff9d8035fe1c4c3ab357e7f7633cafc06a73e9d90c3c5fede8a86a",
+      "bytes": 1523,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy/integrate/LICENSE_DOP",
+      "notice_file": "licenses/texts/16_003.txt",
+      "SHA256": "6cc2ed6e35b8f376ff3d8f86aeef4e0c34c2309bd6f4a0565936d577839ba023",
+      "bytes": 3648,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "DOP integrator is BSD-3-Clause plus attribution/provenance of the original routines; no noncommercial limitation found in this text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "wheel_member": "scipy/spatial/qhull_src/COPYING_QHULL.txt",
+      "notice_file": "licenses/texts/16_004.txt",
+      "SHA256": "2a6ebb495e26dd5f88cbc40c593733da6edb27b64936f70409cd5a1acafb1c32",
+      "bytes": 1759,
+      "families_or_component_terms": [
+        "Qhull"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright and the full Qhull text in redistributions including products incorporating it.",
+        "Mark modifications with name/date/reason; provide notice that source is available from www.qhull.org."
+      ],
+      "review_note": "Non-SPDX simplification avoided: Qhull's modification and source-availability clauses are tracked explicitly.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "six",
+      "version": "1.17.0",
+      "wheel_member": "six-1.17.0.dist-info/LICENSE",
+      "notice_file": "licenses/texts/17_000.txt",
+      "SHA256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0",
+      "bytes": 1066,
+      "families_or_component_terms": [
+        "MIT"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain the copyright and permission notices in copies or substantial portions.",
+        "Retain the warranty/liability disclaimer; no patent or trademark clearance inferred."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "threadpoolctl",
+      "version": "3.7.0",
+      "wheel_member": "threadpoolctl-3.7.0.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/18_000.txt",
+      "SHA256": "81ac619075248b06e53660b652d10e485f4675f5d0ae0f97ea22370da1f7e23b",
+      "bytes": 1507,
+      "families_or_component_terms": [
+        "BSD-3-Clause"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Retain copyright, conditions and disclaimer in source redistributions and accompanying binary materials.",
+        "Do not use author/project names to endorse the product without permission."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "tzdata",
+      "version": "2026.5",
+      "wheel_member": "tzdata-2026.5.dist-info/licenses/LICENSE",
+      "notice_file": "licenses/texts/19_000.txt",
+      "SHA256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46",
+      "bytes": 625,
+      "families_or_component_terms": [
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "tzdata's package code is Apache-2.0. The license texts here do not by themselves prove every IANA payload file's provenance; no timezone payload is bundled into the addon.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    },
+    {
+      "package": "tzdata",
+      "version": "2026.5",
+      "wheel_member": "tzdata-2026.5.dist-info/licenses/licenses/LICENSE_APACHE",
+      "notice_file": "licenses/texts/19_001.txt",
+      "SHA256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "families_or_component_terms": [
+        "Apache-2.0"
+      ],
+      "obligations_if_covered_component_is_redistributed": [
+        "Provide the license, retain relevant notices, mark modified files and reproduce applicable upstream NOTICE attributions.",
+        "Patent grant/termination and trademark exclusions remain; separate dependencies keep their own terms."
+      ],
+      "review_note": "Permissive notice reviewed; preserve the full supplied text.",
+      "review_scope": "operative-text and distribution-mode assessment, not a title/keyword-only verdict"
+    }
+  ],
+  "scope": "Unmodified installed dependency notices. The codadapt 2.1.0 notice covers copied original core only; new components still require owner license approval.",
+  "dependency_binaries_in_wheel": false,
+  "owner_license_granted": false
+}

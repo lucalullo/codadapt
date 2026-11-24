@@ -1,0 +1,10 @@
+task,batch,combined_vs_three_calls,combined_vs_fused,prepared_vs_fused
+binary,1,0.35002,1.03594,0.35422
+binary,64,0.34841,1.02868,0.31638
+binary,512,0.34723,1.01324,0.35791
+multiclass,1,0.34477,1.02507,0.56621
+multiclass,64,0.34827,1.03490,0.52243
+multiclass,512,0.33455,0.99478,0.57331
+regression,1,1.02364,1.02511,0.17402
+regression,64,0.99196,1.01335,0.15715
+regression,512,1.10854,1.09257,0.20764

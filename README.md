@@ -4,180 +4,93 @@
 
 **Adaptive coded-memory learning for tabular data, with a scikit-learn-compatible Python API.**
 
-CodAdapt is a machine-learning library for binary classification, multiclass
-classification, and single-target regression. It encodes numerical and categorical
-features and learns residual contributions through lookup memories. Preprocessing
-is learned during fitting and reused when making predictions.
-
 ## Why CodAdapt?
 
-CodAdapt explores an original approach to tabular learning through adaptive
-coded memories. Instead of conventional tree ensembles or neural networks,
-it encodes features and learns residual contributions through lookup memories.
+CodAdapt learns residual contributions through lookup memories for binary classification, multiclass classification and single-target regression. Numerical and categorical inputs are encoded during fitting and the learned preprocessing is reused for predictions. It supports dense numerical arrays and mixed pandas DataFrames.
 
-### Project status
+## Project status
 
-An early-stage algorithm under active research. Classification and regression
-work end-to-end, but predictive performance remains limited compared with
-established methods on the evaluated workloads. Work continues on interactions,
-accuracy, and generalization while preserving the coded-memory architecture.
-
-### When to use it
-
-For researchers comparing tabular learning approaches, or practitioners
-investigating memory-based feature representations and accuracy-size trade-offs.
-
-### When to consider alternatives
-
-For applications requiring extensively validated predictive performance,
-established methods such as LightGBM or CatBoost are safer starting points.
-CodAdapt is currently better suited to research than production use.
+Version **2.2.0** is a technical improvement release with an unchanged predictive learner. It adds combined classifier outputs, optional snapshot compression and prepared immutable inputs for repeated requests. The competitive results are from 2.1.0; the 2.2.0 technical panel is separate. No predictive improvement is claimed. See the [release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md).
 
 ## Install
 
 ```bash
-pip install codadapt
+python -m pip install codadapt
 ```
 
-See the [installation guide](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md)
-for local wheel installation and source-build requirements.
+Requires Python 3.12 or later. The recorded qualification is Windows 11 x64, CPython 3.12.10 and the Python backend with pinned dependencies. The 2.2.0 source builds a pure-Python wheel; the historical C++ extension is not built. Install this version explicitly only after publication, or use a local source checkout/wheel. See the [installation and compatibility guidance](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md).
 
 ## Quick start
 
-### Binary classification
-
 ```python
 from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
 from codadapt import CodAdaptClassifier
 
-X, y = load_breast_cancer(return_X_y=True)
-model = CodAdaptClassifier(random_state=42)
-model.fit(X, y)
-
-predictions = model.predict(X)
-probabilities = model.predict_proba(X)
+X, y = load_breast_cancer(return_X_y=True, as_frame=True)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42, stratify=y
+)
+model = CodAdaptClassifier(random_state=42).fit(X_train, y_train)
+print("Test accuracy:", model.score(X_test, y_test))
 ```
 
-### Multiclass classification
-
-The same classifier handles multiclass targets without a task parameter.
-
-```python
-from sklearn.datasets import load_iris
-from codadapt import CodAdaptClassifier
-
-X, y = load_iris(return_X_y=True)
-model = CodAdaptClassifier(random_state=42)
-model.fit(X, y)
-
-predictions = model.predict(X)
-probabilities = model.predict_proba(X)
-```
-
-Probability column `j` corresponds to `model.classes_[j]`.
-
-### Regression
-
-```python
-from sklearn.datasets import load_diabetes
-from codadapt import CodAdaptRegressor
-
-X, y = load_diabetes(return_X_y=True)
-model = CodAdaptRegressor(random_state=42)
-model.fit(X, y)
-
-predictions = model.predict(X)
-```
-
-These snippets demonstrate the interface using training rows. Evaluate predictive
-quality on separate validation and test data.
+The classifier also supports multiclass targets. For regression, use `CodAdaptRegressor` with a numerical target. See [usage and examples](https://github.com/lucalullo/codadapt/blob/main/docs/USAGE.md). This example demonstrates the API, not the benchmark protocol.
 
 ## Highlights
 
-- Adaptive coded-memory learning for numerical and categorical tabular features.
-- Binary and multiclass classification through one estimator, plus a separate regressor.
-- Preprocessing fitted on training data, with supported missing-value handling.
-- `sample_weight` for both estimators and optional `class_weight="balanced"` for classification.
-- Familiar estimator methods, parameter inspection, cloning, and Pipeline integration.
-- Model persistence and integrity-checked serving utilities.
+- Binary and multiclass classification; single-target regression.
+- Automatic numerical/categorical encoding and supported missing-value handling.
+- scikit-learn-compatible estimators, cloning and pipelines.
+- Sample weights and optional balanced class weights.
+- Combined classifier scores, probabilities and labels (`predict_all`).
+- Prepared immutable-input sessions (`prepare_inference`) for repeated requests.
+- Optional compressed, integrity-checked snapshots and trusted model persistence; producer-bound serving utilities.
 
-## API and scikit-learn integration
+## Benchmarks
 
-Use `CodAdaptClassifier` for single-label classification and `CodAdaptRegressor`
-for single-target regression. Both accept `random_state` and provide `fit`,
-`predict`, `get_params`, and `set_params`. Classifiers also provide `predict_proba`,
-`decision_function`, and `classes_` after fitting.
+| Scope | Evidence |
+|---|---|
+| Competitive evidence | 2.1.0 vs six fixed baseline configurations; 14 development origins. |
+| Coverage | 97 of 98 estimator/dataset jobs measured; 83 paired comparisons, one missing. |
+| Technical evidence | 2.2.0 combined outputs, prepared inputs and snapshot compression; separate observations. |
+| Reproduction | Aggregate measurements and figure regeneration; original fit inputs and complete split/configuration are not bundled. |
 
-Dense numerical NumPy arrays and supported pandas DataFrames are accepted.
-Use DataFrames for mixed numerical and categorical columns; preserve the training
-feature schema when predicting. Arbitrary mixed-object NumPy arrays are outside
-the input contract.
+The [benchmark overview](https://github.com/lucalullo/codadapt/blob/main/benchmarks/README.md) links predictive quality, computational costs, complete figures, methodology, failures and numerical data. The two evidence scopes must not be combined into a new ranking.
 
-The estimators can be cloned and used in scikit-learn pipelines. For parameter
-semantics, categorical inputs, validation, and sample weights, see the
-[API reference](https://github.com/lucalullo/codadapt/blob/main/docs/API.md).
+## When to use it
 
-## Compatibility and source installation
+Use it when coded-memory learning and measured quality-resource trade-offs suit the workload. The development panel includes favorable loss/cost observations on Danish occupancy, Concrete and Edge task execution times; the separate technical panel records reduced combined-output time, prepared-request time and serialized size in tested cases.
 
-The package declares Python `>=3.10,<3.16`. Available wheels and supported dependency
-combinations vary by platform; see the
-[compatibility guide](https://github.com/lucalullo/codadapt/blob/main/docs/COMPATIBILITY.md)
-for the exact runtime scope.
+## When to consider alternatives
 
-Training and feature encoding use Python/NumPy. Some wheels also include an optional
-C++ inference backend, with a Python fallback. Installing a native wheel does not
-enable automatic native execution on every platform; explicit backend selection
-is described in the
-[native inference guide](https://github.com/lucalullo/codadapt/blob/main/docs/NATIVE_PROFILE_DECISION.md).
-
-A compatible prebuilt wheel needs no compiler. Building the optional native
-extension from source requires a C++17 compiler and the build dependencies specified
-by the package. Follow the
-[source installation instructions](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md).
-
-## Persistence
-
-After fitting a model, save and restore it with `joblib`:
-
-```python
-import joblib
-
-joblib.dump(model, "codadapt-model.joblib")
-restored = joblib.load("codadapt-model.joblib")  # Trusted files only
-restored_predictions = restored.predict(X)
-```
-
-Load only artifacts from trusted sources and keep compatible package and dependency
-versions. Cross-version serialization compatibility is not guaranteed. See
-[persistence and serving](https://github.com/lucalullo/codadapt/blob/main/docs/PERSISTENCE.md)
-for export, integrity checks, and loading requirements.
+Consider alternatives when the primary objective is predictive quality on the evaluated multiclass workloads or when strict recall/FPR or deployment requirements are not satisfied. The six baselines often achieve better primary scores; inconclusive results are not equivalence.
 
 ## Limitations
 
-Predictive quality, training cost, inference time, and memory use depend on the
-dataset and configuration. CodAdapt does not claim universal superiority over
-other tabular learning methods.
-
-`class_weight="balanced"` is optional and does not guarantee higher accuracy or
-better-calibrated probabilities. Backend controls are separate from the public
-estimator parameters. See the
-[limitations](https://github.com/lucalullo/codadapt/blob/main/docs/LIMITATIONS.md)
-and [performance documentation](https://github.com/lucalullo/codadapt/blob/main/docs/PERFORMANCE.md).
+- No universal predictive, timing or memory advantage is established.
+- No Holm-confirmed primary superiority or independent Pareto certification; C60 is not qualified.
+- A smaller snapshot does not imply lower loaded RAM; compression may increase loading cost.
+- Prepared inputs incur setup and retained model/input memory; regression combined requests can add overhead.
+- Arbitrary mixed-object NumPy arrays, broader runtime profiles and cross-version persistence are outside the verified contract.
 
 ## Documentation
 
+- [Usage and examples](https://github.com/lucalullo/codadapt/blob/main/docs/USAGE.md)
 - [API reference](https://github.com/lucalullo/codadapt/blob/main/docs/API.md)
 - [Installation](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md)
 - [Compatibility](https://github.com/lucalullo/codadapt/blob/main/docs/COMPATIBILITY.md)
+- [Algorithm and parameters](https://github.com/lucalullo/codadapt/blob/main/docs/ALGORITHM.md)
 - [Persistence and serving](https://github.com/lucalullo/codadapt/blob/main/docs/PERSISTENCE.md)
-- [Examples](https://github.com/lucalullo/codadapt/tree/main/examples)
+- [Benchmarks](https://github.com/lucalullo/codadapt/blob/main/benchmarks/README.md)
 - [Performance](https://github.com/lucalullo/codadapt/blob/main/docs/PERFORMANCE.md)
-- [Source repository](https://github.com/lucalullo/codadapt)
+- [Limitations](https://github.com/lucalullo/codadapt/blob/main/docs/LIMITATIONS.md)
+- [Release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md)
+- [Changelog](https://github.com/lucalullo/codadapt/blob/main/CHANGELOG.md)
 
 ## License
 
-CodAdapt is created by Luca Lullo and released under the
-[MIT License](https://github.com/lucalullo/codadapt/blob/main/LICENSE).
+CodAdapt is created by Luca Lullo. Its original components are released under the [MIT License](https://github.com/lucalullo/codadapt/blob/main/LICENSE), Copyright (c) 2026 Luca Lullo. Third-party components retain their licenses; see the [attribution guide](https://github.com/lucalullo/codadapt/blob/main/licenses/README.md).
 
 ## Author
 

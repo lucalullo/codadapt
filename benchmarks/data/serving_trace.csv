@@ -1,0 +1,4 @@
+task,state_bytes,loaded_rss_mib,process_peak_mib,predict_us,full_trace_us,compact_trace_us
+binary,5972,18.973,20.137,13.90,43.40,32.40
+multiclass,13668,20.047,22.391,34.30,111.10,80.80
+regression,1768,21.281,22.391,11.70,33.50,26.60

@@ -1,10 +1,11 @@
 {
   "format": "INTEGRATED_NATIVE_SERVING_ENVELOPE_4_PREVIEW",
-  "native_version": "2.1.0",
+  "native_version": "2.2.0",
   "native_sources": {
     "codadapt/__init__.py": "f04264fdae988b9e17c56217af75c1c0d35f52137df2a701ec1032f8825ab70f",
-    "codadapt/_base.py": "c64fe0ed61f85c37f09948b8d2ab7f59b35e4eed22a7ebc33da75192b91e5efb",
+    "codadapt/_base.py": "a66aaf02e2a3338892de49c4c93d56dca3dab6b59630d184b06b59648753b12f",
     "codadapt/_batching.py": "314ef2b0c3546a6ee2d260f59ee39d3a1caa9073db842e43f4428ccd62bda6f2",
+    "codadapt/_bound_input.py": "4bd9d157b5a1d5106c3898d9ff098b3772bb291371f3c526d07a786409a14dcf",
     "codadapt/_class_weight.py": "7c960b9c53a21eaed56808c921169078298235d354ab05c247780df5457e7294",
     "codadapt/_core.py": "ed5ee68396afd4527719c97b3abe29a4eed1bd497d7222e8a9a573b388ffdb02",
     "codadapt/_inference.py": "2cce6bfb09b1149f4ab5e968c33d657745d81497aee7b6f2c24adb1b11e77e0f",
@@ -16,9 +17,11 @@
     "codadapt/_resource_snapshot.py": "d2903043d1272630deadf39a22a8a3dea7934924951fb70f2fbf35a238117b01",
     "codadapt/_resource_tier.py": "f4f0b51ee16fa877a2249e5696043a4db22690e6815910d8c0d05a716f6b1632",
     "codadapt/_sequence_payload.py": "424add92c0338da3bc93b8dd224ad249f609990a37c540918b64f720e8b8f5bc",
+    "codadapt/_serialization.py": "fbffc4e31f2a076d3f7e32a1ec5717cd3555f56add9bfee09540b542f2ad6d20",
+    "codadapt/_serving.py": "76f51a56eaa1c89b2e71c1823dbb1c9c286508abde3322ba9349252c2448ffd5",
     "codadapt/_training.py": "07c8d94c69c19792e9568fddfd8817c16b67fb6edb3c6833a148a278670a6b9b",
     "codadapt/_trusted_payload.py": "6a952dde874b19b45c027412cb146c02e36481633f33f923c526f28526fd0297",
-    "codadapt/_version.py": "5f26eddac90165a98630d94bb8e5f5206fa1e2e231a940c600ef0c2065ab25a7",
+    "codadapt/_version.py": "0ca93ed5bfab66c245c458b526827b4e612f204434adff82f470195b0be3b8cd",
     "codadapt/_virtual_domain.py": "9c91571b31ca553d9b0bd56a0669fe71c4cb9cf0f558f392bf4eb5a51ff0c28e",
     "codadapt/_visible_tier.py": "fdb4900a477e1e3188c83172c7cf158bab290169b7d5cce3fb42fd08cac2b2ee",
     "codadapt/_visible_virtual.py": "555fe507fb0af9e537375c176c8865e8c50398af3b47b998dd3066a04dfdc098",
@@ -31,7 +34,7 @@
     "codadapt/preprocessing.py": "209b4401bee34efb6aed6d2dca8635f9998a7528310511ff32b932098d883e55",
     "codadapt/regressor.py": "642e9bdc83314539ea4c5bc54b8153fe45d41e61d9d5b86f8526ec8cc03912a8",
     "codadapt/serving/__init__.py": "920ba7269c9cea62443d7898b9a3d161beaa165af20044922e99adbed50adf3c",
-    "codadapt/serving/_contract.py": "64a2603cc827ef25a6e3c6a040093a564cfcb464368e48a744d7ef8aa572e825",
+    "codadapt/serving/_contract.py": "da6422a5e1c37343aa405940e39cb12da02e6075b0fc92c272ffe952d4382489",
     "codadapt/serving/backing_compiler.py": "6a590f918f4d9dfa8608f5d938668f84d34748a806569a9d5fd97e04d2f861a2",
     "codadapt/serving/composed_runtime.py": "dd619b3a8b5e72a0ed2490d51e4a61d1805d1b1565f80b17c43566b9182f03ba",
     "codadapt/serving/exporter.py": "f8c8235569a2ef8fb16262ac0dc868ffd083dfe3f23575504acfdd6ed6c5879e",
@@ -41,10 +44,10 @@
     "codadapt/serving/string_map_primitive.py": "0bf858034672f1c275a51593e98709914bba9945d89113e72b5043a64fc77683",
     "codadapt/serving/validated_native_format.py": "9da4a94bd026e247b4a1d72c548e39d2f953a0e35db0cc683065d20695416b1c"
   },
-  "native_source_sha256": "85c36bbee8f02c8e44c095b49f5dc8ac9d38e5051aba146f585b4cffbf0fc03f",
+  "native_source_sha256": "700c0c29503fcef3f6cdfe8f851b1bb496e6f265294805c092828bcc424040a3",
   "serving_sources": {
     "__init__.py": "920ba7269c9cea62443d7898b9a3d161beaa165af20044922e99adbed50adf3c",
-    "_contract.py": "64a2603cc827ef25a6e3c6a040093a564cfcb464368e48a744d7ef8aa572e825",
+    "_contract.py": "da6422a5e1c37343aa405940e39cb12da02e6075b0fc92c272ffe952d4382489",
     "backing_compiler.py": "6a590f918f4d9dfa8608f5d938668f84d34748a806569a9d5fd97e04d2f861a2",
     "composed_runtime.py": "dd619b3a8b5e72a0ed2490d51e4a61d1805d1b1565f80b17c43566b9182f03ba",
     "exporter.py": "f8c8235569a2ef8fb16262ac0dc868ffd083dfe3f23575504acfdd6ed6c5879e",
@@ -64,6 +67,7 @@
     "TOOLS/metadata_compiler.py": "f088d12cca050dd917d6789dc8df088d847da10c51d3e54c8e878580ba608926"
   },
   "public_release": false,
-  "source_profile": "CodAdapt isolated architecture lab; new exact producer contract, no publication or platform promotion",
-  "readable_private_predecessors": false
+  "source_profile": "2.2.0 source with restricted snapshot compatibility revision; serving images require matching producer contract",
+  "readable_private_predecessors": false,
+  "native_source_digest_algorithm": "SHA256 of native_sources JSON sorted keys with compact separators"
 }

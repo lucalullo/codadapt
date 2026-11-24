@@ -1,2 +1,0 @@
--r windows314.txt
-lightgbm==4.6.0

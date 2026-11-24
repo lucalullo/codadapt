@@ -27,3 +27,10 @@ htmlcov/
 
 # Private/cache contamination must never enter a public-review payload
 PRIVATE_CODEX/
+
+# Private and generated artifacts
+.env
+.env.*
+*.pkl.tmp
+*.cda
+*.joblib

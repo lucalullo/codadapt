@@ -67,7 +67,7 @@ def validate_producer(value):
             raise ValueError("Unsupported producer compatibility: " + name)
     if current["implementation"] != "CPython" or current["GIL_disabled"]:
         raise ValueError("Only standard-GIL CPython is admitted")
-    if (current["numpy"], current["pandas"]) not in {("2.5.4", "3.1.0"), ("1.26.4", "2.2.3")}:
+    if (current["numpy"], current["pandas"]) not in {("2.5.4", "3.1.0"), ("1.26.4", "2.2.3"), ("2.3.5", "2.2.3")}:
         raise ValueError(
             "This serving contract requires a qualified NumPy/pandas dependency profile"
         )

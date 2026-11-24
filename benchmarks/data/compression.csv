@@ -1,0 +1,15 @@
+origin,raw_bytes,compressed_bytes,byte_ratio,load_ratio,dataset
+UCI:15,40243,8933,0.22198,1.05811,Breast Cancer Wisconsin
+UCI:144,19759,4556,0.23058,1.02993,Statlog German Credit
+UCI179,289118,41055,0.14200,0.56945,SECOM
+DenverMunicipalForestryTreeInvento,6569,2985,0.45441,1.03074,Denver trees
+DanishResidentialApartmentSensorO,36014,11171,0.31018,1.07171,Danish occupancy
+UCI3,143687,13366,0.09302,1.08704,Annealing
+UCI:42,107919,24360,0.22572,1.13126,Glass
+UCI81,267929,94639,0.35322,1.21954,Pen Digits
+UCI:333,124246,27931,0.22480,1.13231,Forest Types
+UCI:1,22934,5498,0.23973,1.02737,Abalone
+UCI:10,30574,6962,0.22771,1.04836,Automobile
+UCI165,36455,10601,0.29080,1.08165,Concrete
+UCI859,10178,3067,0.30134,1.03797,Edge task execution times
+NYCDepReservoirOperations,45325,11583,0.25555,1.05179,NYC Reservoir

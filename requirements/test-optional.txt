@@ -1,0 +1,3 @@
+# Exercise retained optional EBM integration in the release validation suite.
+# Not a dependency of the default estimators and not a predictive qualification.
+interpret-core==0.7.8

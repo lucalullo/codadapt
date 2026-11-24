@@ -1,12 +1,16 @@
-# Source and distribution layout
+# Source layout
 
-src/codadapt contains the Python API/training/encoding and serving runtime.
-native/memory_read.cpp is the qualified strict-floating-point C++ inference kernel.
-tests/native, tests/legacy and tests/tools are all selected by default pytest.
-examples provide small synthetic binary/multiclass/regression and mixed-frame use.
-benchmarks contain current fixed results and explicitly labeled historical data.
+| Path | Purpose |
+|---|---|
+| `src/codadapt/` | 2.2.0 Python estimators, encoding, learning, inference, serving and persistence |
+| `native/` | Historical C++ source reference (not built by the 2.2.0 backend) |
+| `tests/` | Release checks, synthetic regression tests and snapshot fixtures |
+| `examples/` | Small, self-contained user examples (not executed as benchmarks) |
+| `benchmarks/` | Current standalone evidence transcription, figures, aggregate data and historical panel |
+| `docs/` | User and developer documentation |
+| `qualification/` | Scope and review receipts |
+| `release/` | Status, source manifest, integrity checks and SBOM |
+| `licenses/` | MIT license for original components and preserved third-party notices |
+| `tools/` | Local verification and conversion utilities |
 
-Generated wheel/sdist, build caches and qualification runs are excluded from
-tracked source. Development artifacts remain available separately with hashes.
-Build local dist/ before artifact tests or set CODADAPT_TEST_DIST to a matching
-authorized artifact directory. No distribution is an approved release.
+The standard-library PEP 517 backend is in `tools/release_backend.py`; its source allowlist is `release/SOURCE_MANIFEST.txt`. `PKG-INFO` and wheel metadata are generated only when building distributions, not stored at the root. Historical workflow paths now run Python-backend checks; publication paths perform preflight only. The previous native build system is not activated. This is a complete replacement source tree, not a merge overlay. See [release notes](../RELEASE_NOTES.md).

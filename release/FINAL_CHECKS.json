@@ -1,0 +1,66 @@
+{
+  "release": "CodAdapt 2.2.0",
+  "scope": "Technical release with unchanged predictive learner",
+  "local_platform": "Windows 11 x64, CPython 3.12.10",
+  "supplied_suite": {
+    "passed": 143,
+    "profile": "requirements/ci.txt"
+  },
+  "complete_installed_wheel_suite": {
+    "passed": 861,
+    "expected_failures": 4,
+    "failed": 0,
+    "unexpected_skips": 0
+  },
+  "expected_failures": "Pre-existing strict scope checks, documented in qualification/README.md; none introduced by this revision",
+  "examples": {
+    "executed": 4,
+    "failed": 0,
+    "scope": "Generated API demonstration data, not benchmarks"
+  },
+  "installed_integrity": {
+    "wheel_members_identical": 116,
+    "RECORD_hashes_verified": 119,
+    "source_tree_on_import_path": false
+  },
+  "twine_strict": "PASS, twine 6.2.0, for wheel and sdist",
+  "metadata_readme": "Exact byte equality with README.md, wheel METADATA and sdist PKG-INFO",
+  "deterministic_build": "PASS, repeated wheel/sdist builds and wheel rebuilt from sdist",
+  "workflows": {
+    "count": 7,
+    "syntax": "PASS_LOCAL_ACTIONLINT_1.7.12",
+    "permissions": "contents:read",
+    "publishing_steps": 0,
+    "hosted_execution": "PENDING"
+  },
+  "links": {
+    "offline_source_targets_and_anchors": "PASS",
+    "public_urls": 34,
+    "existing_GitHub_paths": 12,
+    "new_paths_valid_after_repository_replacement": 13,
+    "HTTP_HEAD_200": 9
+  },
+  "benchmarks": {
+    "records": 97,
+    "completed_pairs": 83,
+    "missing": 1,
+    "figures": 14,
+    "quality_cost_values_crosschecked": 1358,
+    "mismatches_beyond_rounding": 0
+  },
+  "scientific_limits": {
+    "new_predictive_candidates_qualified": 0,
+    "C60": "NOT_QUALIFIED",
+    "independent_Pareto": "NOT_CERTIFIED"
+  },
+  "distribution_boundary": "Source allowlist, runtime code, license notices, aggregate measurements and authenticated synthetic test fixtures only; no protected dataset or trained real-data model",
+  "local_preparation": "GO_IN_RECORDED_PROFILE",
+  "publication": "NO_GO_UNTIL_REQUIRED_GITHUB_RUNNERS_PASS_AND_OWNER_APPROVES_FINAL_HASHES",
+  "remaining_checks": [
+    "Hosted Ubuntu/Windows Python 3.12/3.13 matrix",
+    "Optional macOS workflow before claiming macOS",
+    "Recheck new GitHub document URLs after replacing repository files"
+  ],
+  "push_tag_upload_release_operations": 0,
+  "receipt_scope": "Historical Windows qualification of the supplied revision before documentation alignment; not a new verification of rebuilt distributions."
+}

@@ -486,3 +486,41 @@ class _BaseCodAdapt(BaseEstimator):
         tags.input_tags.sparse = False
         tags.target_tags.required = True
         return tags
+
+    def predict_all(self, X):
+        """Evaluate native scores, probabilities and classes in one pass.
+
+        Classifiers return (scores, probabilities, labels). Regressors return
+        (predictions,). Existing predict methods keep their original contract.
+        """
+        from ._serving import predict_all
+        return predict_all(self, X)
+
+    def save(self, path, *, compress=False):
+        """Create a new snapshot file; optionally use zlib compression.
+
+        Existing files are never overwritten. Load only trusted model files.
+        The bounded envelope includes a SHA-256 integrity digest.
+        """
+        from ._serialization import save_model
+        return save_model(self, path, compress=compress)
+
+    @classmethod
+    def load(cls, path, *, expected_sha256=None):
+        """Read a trusted native snapshot, including supported 2.1.0 pickles."""
+        from ._serialization import load_model
+        model = load_model(path, expected_sha256=expected_sha256)
+        if not isinstance(model, cls):
+            raise ValueError("Snapshot estimator type does not match requested class")
+        return model
+
+    def prepare_inference(self, X):
+        """Own a frozen model snapshot and encoded copy of one input.
+
+        Setup copies the model and codes once. The returned session accepts
+        explicit row indices, not new raw requests. Account for setup time and
+        both model copies if the original estimator remains resident.
+        """
+        from ._bound_input import prepare_inference
+        return prepare_inference(self, X)
+
