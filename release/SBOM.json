@@ -1332,13 +1332,13 @@
     },
     {
       "path": ".github/workflows/publish-pypi.yml",
-      "SHA256": "3c9d34cca69b787a05b8ccc9e09f6854379e2ee212506b750694cb4509339b8a",
-      "bytes": 9341
+      "SHA256": "e2057131667136cf4fb8f7308849a469c54a16061f1dc139f05cc785fa94422c",
+      "bytes": 7858
     },
     {
       "path": ".github/workflows/publish-testpypi.yml",
-      "SHA256": "270cf2138714d261fe441f381a1c8fa4a1713da69a5260cdfaa29ae7efcd168d",
-      "bytes": 8025
+      "SHA256": "8647eea14fc8368b7edc7882762f63bcc9a2c8aa16045cddfb098a13fa05222c",
+      "bytes": 7052
     },
     {
       "path": ".github/workflows/qualification.yml",
@@ -1752,8 +1752,8 @@
     },
     {
       "path": "docs/SOURCE_LAYOUT.md",
-      "SHA256": "c604237e7318e28bc718bead91d496b6d67bd9a31735ccc4480d610a4bb83ba7",
-      "bytes": 1353
+      "SHA256": "39b51eb2813bf2a4a8cdf1d535f8a3aba3cdf01f70ce017b9f3c4f8d8102145b",
+      "bytes": 1347
     },
     {
       "path": "docs/USAGE.md",
@@ -2172,8 +2172,8 @@
     },
     {
       "path": "release/README.md",
-      "SHA256": "4b811151a25a71565d32f4e3a3674089f2948ee523453caedacd672851f315b7",
-      "bytes": 4379
+      "SHA256": "93554a5622a30866984e8a8fc9fe083dee07e8b3f74a6d954e2c5ef391d92b6d",
+      "bytes": 4165
     },
     {
       "path": "release/SOURCE_MANIFEST.txt",
@@ -2182,8 +2182,8 @@
     },
     {
       "path": "release/STATUS.json",
-      "SHA256": "66b4c9d4499100cdb80d5278cdccc78a1fdfa085ba350c793c598186935ea77a",
-      "bytes": 2057
+      "SHA256": "f914189611f135f9bf6e6ae81eca652920018bbe0623edab32b513b63a3b1b39",
+      "bytes": 2118
     },
     {
       "path": "requirements/README.md",
@@ -2632,8 +2632,8 @@
     },
     {
       "path": "tests/test_publication_guard.py",
-      "SHA256": "5be8fdd33d666e8e425f3750551d7b8652108ee3bf6b9ce54918515da201d4f9",
-      "bytes": 8241
+      "SHA256": "f92c221ffaaf8a5bb5234f1cb0d8dc9ca2b4c15432ddae878843cf045381a7cf",
+      "bytes": 9037
     },
     {
       "path": "tests/test_release.py",
@@ -2647,8 +2647,8 @@
     },
     {
       "path": "tools/check_workflows.py",
-      "SHA256": "252e39a9fca1037390908d178b937b199a861f0a7118fcf943fde90652ef09a8",
-      "bytes": 5844
+      "SHA256": "a44c00d7dcdf841eb80603cf121533c4fb177c5855c6a341f0e879d6798501d6",
+      "bytes": 5835
     },
     {
       "path": "tools/convert_snapshot_to_native_pickle.py",
@@ -2657,8 +2657,8 @@
     },
     {
       "path": "tools/publication_guard.py",
-      "SHA256": "2adf5d937b12294c07d82d5006f417ffe5f87466ccf1ecc9a825273e32068386",
-      "bytes": 11454
+      "SHA256": "d0ca7a0fc73dd281308602e7f3e7dd433b60b708cadf77d124ccd3512a0bf9e3",
+      "bytes": 12627
     },
     {
       "path": "tools/release_backend.py",

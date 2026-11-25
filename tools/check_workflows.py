@@ -11,8 +11,7 @@ FORBIDDEN = re.compile(r'(?i)(twine\s+upload|pypa/gh-action-pypi-publish|gh\s+re
 # Byte-level policy pins cover the complete reviewed publication workflows,
 # including their verification steps, exact registry, conditions and privileges.
 # An intentional future workflow revision must be separately reviewed before updating a pin.
-PUBLICATION_WORKFLOWS_SHA256 = {'publish-pypi.yml': '3c9d34cca69b787a05b8ccc9e09f6854379e2ee212506b750694cb4509339b8a',
- 'publish-testpypi.yml': '270cf2138714d261fe441f381a1c8fa4a1713da69a5260cdfaa29ae7efcd168d'}
+PUBLICATION_WORKFLOWS_SHA256 = {'publish-pypi.yml': 'e2057131667136cf4fb8f7308849a469c54a16061f1dc139f05cc785fa94422c', 'publish-testpypi.yml': '8647eea14fc8368b7edc7882762f63bcc9a2c8aa16045cddfb098a13fa05222c'}
 
 
 def verify_publication(path, workflow):
@@ -20,8 +19,8 @@ def verify_publication(path, workflow):
         raise ValueError(f'Unreviewed publication workflow revision: {path.name}')
     channel = 'testpypi' if path.name == 'publish-testpypi.yml' else 'pypi'
     events = workflow.get('on', {})
-    if set(events) != {'workflow_dispatch'} or events['workflow_dispatch']['inputs']['publish']['default'] != 'false':
-        raise ValueError('Publication must be manually opted into')
+    if set(events) != {'workflow_dispatch'} or events['workflow_dispatch'] not in (None, '', {}):
+        raise ValueError('Publication must be manual with no additional inputs')
     jobs = workflow.get('jobs', {})
     if set(jobs) != {'verify', 'publish', 'verify_release'}:
         raise ValueError('Unexpected publishing job set')

@@ -2,27 +2,6 @@ name: Publish to PyPI
 
 on:
   workflow_dispatch:
-    inputs:
-      publish:
-        description: 'Publish verified distributions to PyPI (unchecked runs verify only)'
-        type: boolean
-        required: true
-        default: false
-      registered_publishers_verified:
-        description: 'Existing Trusted Publisher and GitHub environment verified'
-        type: boolean
-        required: true
-        default: false
-      approval:
-        description: 'Type PUBLISH codadapt 2.2.0 to approve publication'
-        type: string
-        required: false
-        default: ''
-      testpypi_run_id:
-        description: 'Successful TestPyPI upload/verification run ID for this same commit'
-        type: string
-        required: false
-        default: ''
 
 permissions:
   contents: read
@@ -83,36 +62,25 @@ jobs:
         run: python -B tools/verify_repository.py
       - name: Verify workflow safety
         run: python -B tools/check_workflows.py
-      - name: Validate manual owner approval and existing publishing environment
-        if: ${{ inputs.publish == true }}
+      - name: Validate owner dispatch and existing publishing environment
         env:
           GH_TOKEN: ${{ github.token }}
-          PUBLISH_CONFIRMED: ${{ inputs.publish }}
-          OWNER_APPROVAL: ${{ inputs.approval }}
-          TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
         run: python -B tools/publication_guard.py gate --channel pypi
-      - name: Require a successful matching TestPyPI publication run
+      - name: Automatically find a successful matching TestPyPI publication run
         id: test_run
-        if: ${{ inputs.publish == true }}
         env:
           GH_TOKEN: ${{ github.token }}
-          TEST_RUN_ID: ${{ inputs.testpypi_run_id }}
         shell: bash
-        run: python -B tools/publication_guard.py test-run --run-id "$TEST_RUN_ID"
+        run: python -B tools/publication_guard.py test-run
       - name: Retrieve the exact verified TestPyPI distributions
-        if: ${{ inputs.publish == true }}
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           artifact-ids: ${{ steps.test_run.outputs.artifact_id }}
-          run-id: ${{ inputs.testpypi_run_id }}
+          run-id: ${{ steps.test_run.outputs.run_id }}
           github-token: ${{ github.token }}
           path: dist
           merge-multiple: true
-      - name: Build wheel and source distribution (verification-only mode)
-        if: ${{ inputs.publish == false }}
-        run: python -m build
       - name: Require exact bytes already verified on TestPyPI
-        if: ${{ inputs.publish == true }}
         run: python -B tools/publication_guard.py index --channel testpypi --phase post
       - name: Check exact distribution metadata and README rendering
         shell: python
@@ -152,7 +120,7 @@ jobs:
     if: >-
       github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' &&
       github.repository == 'lucalullo/codadapt' && github.actor == 'lucalullo' &&
-      github.triggering_actor == 'lucalullo' && inputs.publish == true
+      github.triggering_actor == 'lucalullo'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     environment:
@@ -177,12 +145,9 @@ jobs:
           EXPECTED_WHEEL: ${{ needs.verify.outputs.wheel_sha256 }}
           EXPECTED_SDIST: ${{ needs.verify.outputs.sdist_sha256 }}
         run: python3 -B tools/publication_guard.py authenticate
-      - name: Recheck owner approval and environment protection
+      - name: Recheck owner dispatch and environment protection
         env:
           GH_TOKEN: ${{ github.token }}
-          PUBLISH_CONFIRMED: ${{ inputs.publish }}
-          OWNER_APPROVAL: ${{ inputs.approval }}
-          TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
         run: python3 -B tools/publication_guard.py gate --channel pypi
       - name: Recheck exact TestPyPI distribution bytes before promotion
         run: python3 -B tools/publication_guard.py index --channel testpypi --phase post

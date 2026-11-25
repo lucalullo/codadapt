@@ -108,17 +108,14 @@ def test_original_production_environment(protected_environment):
 def test_explicit_owner_dispatch_only(channel, protected_environment, monkeypatch):
     env = {'GITHUB_EVENT_NAME': 'workflow_dispatch', 'GITHUB_REPOSITORY': guard.REPO,
            'GITHUB_REF': 'refs/heads/main', 'GITHUB_ACTOR': guard.OWNER, 'GITHUB_TRIGGERING_ACTOR': guard.OWNER,
-           'GITHUB_WORKFLOW_REF': f'{guard.REPO}/.github/workflows/publish-{channel}.yml@refs/heads/main',
-           'PUBLISH_CONFIRMED': 'true', 'TRUSTED_PUBLISHER_CONFIRMED': 'true',
-           'OWNER_APPROVAL': ('TEST' if channel == 'testpypi' else 'PUBLISH') + ' codadapt 2.2.0'}
+           'GITHUB_WORKFLOW_REF': f'{guard.REPO}/.github/workflows/publish-{channel}.yml@refs/heads/main'}
     for key, value in env.items():
         monkeypatch.setenv(key, value)
     monkeypatch.setattr(guard, 'gh', lambda path: protected_environment if channel == 'pypi' else {'name': channel})
     guard.gate(channel)
     for key, invalid in [('GITHUB_EVENT_NAME', 'push'), ('GITHUB_REF', 'refs/heads/other'),
                          ('GITHUB_ACTOR', 'someone-else'), ('GITHUB_TRIGGERING_ACTOR', 'someone-else'),
-                         ('PUBLISH_CONFIRMED', 'false'), ('TRUSTED_PUBLISHER_CONFIRMED', 'false'),
-                         ('OWNER_APPROVAL', ''), ('GITHUB_WORKFLOW_REF', 'wrong')]:
+                         ('GITHUB_REPOSITORY', 'someone/other'), ('GITHUB_WORKFLOW_REF', 'wrong')]:
         monkeypatch.setenv(key, invalid)
         with pytest.raises(RuntimeError):
             guard.gate(channel)
@@ -128,7 +125,7 @@ def test_explicit_owner_dispatch_only(channel, protected_environment, monkeypatc
 def test_promotion_requires_matching_completed_run_and_artifact(monkeypatch, tmp_path):
     sha = 'a' * 40
     doc = {'id': 123, 'status': 'completed', 'conclusion': 'success', 'event': 'workflow_dispatch',
-           'path': '.github/workflows/publish-testpypi.yml', 'head_sha': sha, 'head_branch': 'main',
+           'path': '.github/workflows/publish-testpypi.yml@main', 'head_sha': sha, 'head_branch': 'main',
            'repository': {'full_name': guard.REPO}, 'head_repository': {'full_name': guard.REPO},
            'actor': {'login': guard.OWNER}, 'triggering_actor': {'login': guard.OWNER}, 'run_attempt': 1}
     jobs = {'total_count': 2, 'jobs': [{'name': name, 'conclusion': 'success'} for name in
@@ -140,7 +137,7 @@ def test_promotion_requires_matching_completed_run_and_artifact(monkeypatch, tmp
     monkeypatch.setenv('GITHUB_OUTPUT', str(output))
     monkeypatch.setattr(guard, 'gh', lambda path: jobs if '/jobs?' in path else artifacts if '/artifacts?' in path else doc)
     guard.verify_test_run('123')
-    assert output.read_text().strip() == 'artifact_id=456'
+    assert dict(line.split('=', 1) for line in output.read_text().splitlines()) == {'artifact_id': '456', 'run_id': '123'}
     for key, wrong in [('head_sha', 'b' * 40), ('conclusion', 'failure'), ('head_branch', 'other'),
                        ('event', 'push'), ('path', '.github/workflows/publish-pypi.yml')]:
         before = doc[key]
@@ -165,3 +162,27 @@ def test_record_hashes_outputs_valid_job_keys(distributions, monkeypatch, tmp_pa
     hashes = dict(line.split('=', 1) for line in output.read_text().splitlines())
     assert hashes == dict(zip(('wheel_sha256', 'sdist_sha256'),
                              (rec['sha256'] for rec in guard.distribution_files(distributions).values())))
+
+
+def test_discover_run_without_input(monkeypatch, tmp_path):
+    sha = 'b' * 40
+    monkeypatch.setenv('GITHUB_SHA', sha)
+    output = tmp_path / 'output'
+    monkeypatch.setenv('GITHUB_OUTPUT', str(output))
+    doc = {'total_count': 2, 'workflow_runs': [{'id': 321}, {'id': 123}]}
+    def listing(path):
+        assert 'publish-testpypi.yml/runs?' in path and 'head_sha=' + sha in path
+        return doc
+    monkeypatch.setattr(guard, 'gh', listing)
+    def validate(run_id, *, emit=True):
+        assert not emit
+        if run_id == '321':
+            raise RuntimeError('Missing successful publication job')
+        assert run_id == '123'
+        return '456'
+    monkeypatch.setattr(guard, 'verify_test_run', validate)
+    guard.discover_test_run()
+    assert output.read_text().splitlines() == ['artifact_id=456', 'run_id=123']
+    doc['workflow_runs'] = [{'id': 321}]
+    with pytest.raises(RuntimeError, match='Run Publish to TestPyPI first'):
+        guard.discover_test_run()

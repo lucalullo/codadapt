@@ -80,10 +80,6 @@ def gate(channel):
     require(e.get("GITHUB_REPOSITORY") == REPO and e.get("GITHUB_REF") == "refs/heads/main", "Wrong repository or branch")
     require(e.get("GITHUB_ACTOR") == OWNER and e.get("GITHUB_TRIGGERING_ACTOR") == OWNER, "Owner-operated publication only")
     require(e.get("GITHUB_WORKFLOW_REF") == f"{REPO}/.github/workflows/publish-{channel}.yml@refs/heads/main", "Wrong workflow")
-    require(e.get("PUBLISH_CONFIRMED") == "true", "Explicit publish selection required")
-    require(e.get("TRUSTED_PUBLISHER_CONFIRMED") == "true", "Confirm the existing Trusted Publisher first")
-    phrase = ("TEST" if channel == "testpypi" else "PUBLISH") + f" codadapt {VERSION}"
-    require(e.get("OWNER_APPROVAL") == phrase, "Enter the exact approval phrase: " + phrase)
     validate_environment(gh(f"/repos/{REPO}/environments/{channel}"), channel)
     print("PASS_MANUAL_OWNER_AND_ENVIRONMENT_GATE")
 
@@ -92,7 +88,9 @@ def validate_test_run(doc, run_id, sha):
     require(str(doc.get("id")) == run_id and doc.get("status") == "completed" and
             doc.get("conclusion") == "success", "Require a completed successful TestPyPI run")
     require(doc.get("event") == "workflow_dispatch" and
-            doc.get("path") == ".github/workflows/publish-testpypi.yml", "Wrong workflow/event")
+            doc.get("path") in {".github/workflows/publish-testpypi.yml",
+                                ".github/workflows/publish-testpypi.yml@main",
+                                ".github/workflows/publish-testpypi.yml@refs/heads/main"}, "Wrong workflow/event")
     require(doc.get("head_sha") == sha and doc.get("head_branch") == "main", "TestPyPI must use the exact current source commit")
     require(doc.get("repository", {}).get("full_name") == REPO and
             doc.get("head_repository", {}).get("full_name") == REPO, "Foreign workflow run")
@@ -101,8 +99,8 @@ def validate_test_run(doc, run_id, sha):
     require(type(doc.get("run_attempt")) is int and doc["run_attempt"] > 0, "Missing run attempt")
 
 
-def verify_test_run(run_id):
-    require(bool(re.fullmatch(r"[1-9][0-9]*", run_id or "")), "Enter the numeric successful TestPyPI run ID")
+def verify_test_run(run_id, *, emit=True):
+    require(bool(re.fullmatch(r"[1-9][0-9]*", run_id or "")), "Invalid TestPyPI run ID")
     doc = gh(f"/repos/{REPO}/actions/runs/{run_id}")
     sha = os.environ.get("GITHUB_SHA", "")
     require(bool(re.fullmatch(r"[0-9a-f]{40}", sha)), "Missing source commit")
@@ -121,8 +119,37 @@ def verify_test_run(run_id):
     require(type(artifact.get("id")) is int and artifact["id"] > 0 and
             0 < artifact.get("size_in_bytes", 0) <= LIMIT and
             artifact.get("workflow_run", {}).get("id") == int(run_id), "Unexpected artifact provenance or size")
-    output("artifact_id", str(artifact["id"]))
-    print("PASS_MATCHING_TESTPYPI_RUN")
+    if emit:
+        output("artifact_id", str(artifact["id"]))
+        output("run_id", run_id)
+        print("PASS_MATCHING_TESTPYPI_RUN")
+    return str(artifact["id"])
+
+
+def discover_test_run():
+    """Find a completed verified run on this exact commit, without operator input."""
+    sha = os.environ.get("GITHUB_SHA", "")
+    require(bool(re.fullmatch(r"[0-9a-f]{40}", sha)), "Missing source commit")
+    path = (f"/repos/{REPO}/actions/workflows/publish-testpypi.yml/runs"
+            f"?branch=main&event=workflow_dispatch&status=success&head_sha={sha}&per_page=100")
+    listing = gh(path)
+    runs = listing.get("workflow_runs", [])
+    require(isinstance(runs, list) and listing.get("total_count", 1001) <= 100,
+            "Too many candidate runs; cannot authenticate an unambiguous recent TestPyPI run")
+    for candidate in runs:
+        run_id = candidate.get("id")
+        if type(run_id) is not int or run_id <= 0:
+            continue
+        try:
+            artifact_id = verify_test_run(str(run_id), emit=False)
+        except RuntimeError as exc:
+            print(f"Run {run_id} rejected: {exc}")
+            continue
+        output("artifact_id", artifact_id)
+        output("run_id", str(run_id))
+        print(f"PASS_MATCHING_TESTPYPI_RUN {run_id}")
+        return
+    raise RuntimeError("No verified TestPyPI publication for this commit. Run Publish to TestPyPI first.")
 
 
 def distribution_files(directory):
@@ -221,7 +248,10 @@ def main():
     if args.command == "gate":
         gate(args.channel)
     elif args.command == "test-run":
-        verify_test_run(args.run_id)
+        if args.run_id:
+            verify_test_run(args.run_id)
+        else:
+            discover_test_run()
     elif args.command == "hashes":
         record_hashes(args.directory)
     elif args.command == "authenticate":
