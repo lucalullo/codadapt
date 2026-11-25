@@ -94,7 +94,7 @@ Consider alternatives when the primary objective is predictive quality on the ev
 
 ## License
 
-CodAdapt is created by Luca Lullo. Its original components are released under the [MIT License](https://github.com/lucalullo/codadapt/blob/main/LICENSE), Copyright (c) 2026 Luca Lullo. Third-party components retain their licenses; see the [attribution guide](https://github.com/lucalullo/codadapt/blob/main/licenses/README.md).
+CodAdapt is created by Luca Lullo. Its original components are released under the [MIT License](https://github.com/lucalullo/codadapt/blob/main/LICENSE), Copyright (c) 2026 Luca Lullo. Third-party components retain their licenses; see the [third-party notices](https://github.com/lucalullo/codadapt/blob/main/licenses/README.md).
 
 ## Author
 
