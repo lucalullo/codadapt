@@ -1337,8 +1337,8 @@
     },
     {
       "path": ".github/workflows/publish-testpypi.yml",
-      "SHA256": "08c7343f5a47fecb734d14b0ddd5ed19c2ce611c94c9e253a1bb3e4708ac6032",
-      "bytes": 2956
+      "SHA256": "3a73212eba95c5ad80730cbb05c3b06263b19baa82a946f47ffbbc7abf04c32a",
+      "bytes": 5943
     },
     {
       "path": ".github/workflows/qualification.yml",
@@ -1382,8 +1382,8 @@
     },
     {
       "path": "RELEASE_NOTES.md",
-      "SHA256": "d46cc43b0d3eb10571cf9b285bdfee0ed8d16fbb903d062505ee160399ac0186",
-      "bytes": 2708
+      "SHA256": "e6d25d0e4c5d412fab9adfce70e98ba36a049127b96a74ce6a69ee60fddccf6b",
+      "bytes": 2813
     },
     {
       "path": "SECURITY.md",
@@ -2157,8 +2157,8 @@
     },
     {
       "path": "qualification/README.md",
-      "SHA256": "c7edaaffb08bc8f24656140c85b6f7919e2b6ed2594611013faeac14c3cf1794",
-      "bytes": 2998
+      "SHA256": "3c58ad7b68c6d856421df0ea88f9d7ead6fa2fed076c154fa095a77be89cd798",
+      "bytes": 3147
     },
     {
       "path": "qualification/REVIEW.json",
@@ -2172,8 +2172,8 @@
     },
     {
       "path": "release/README.md",
-      "SHA256": "e47bf91e35e360289e1f6cbe3291d01b3442474996a80258c59c9823d0d34ad8",
-      "bytes": 2337
+      "SHA256": "45f45457d5f97ac2f9f251ea1c2032f59572cbb3c04aff058f179c808942c41c",
+      "bytes": 2603
     },
     {
       "path": "release/SOURCE_MANIFEST.txt",
@@ -2182,8 +2182,8 @@
     },
     {
       "path": "release/STATUS.json",
-      "SHA256": "4d239dc4e905a979deb004f18a483f337650360bed32d208e1cc13803577e4c2",
-      "bytes": 1747
+      "SHA256": "50d83e68fd00c1eb35b7ce2bef40e62f43892c6891e98bdbcdc10999396679c3",
+      "bytes": 1941
     },
     {
       "path": "requirements/README.md",
@@ -2642,8 +2642,8 @@
     },
     {
       "path": "tools/check_workflows.py",
-      "SHA256": "827b2a478d7c3adc1abea1daac605bc266a080a1459dc5b1175989be33a626b3",
-      "bytes": 3029
+      "SHA256": "e39162eab876133dda8262e482da061b8665f83773c7a351f26abadd1882c574",
+      "bytes": 8182
     },
     {
       "path": "tools/convert_snapshot_to_native_pickle.py",

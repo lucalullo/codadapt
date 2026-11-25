@@ -32,9 +32,10 @@ Use the complete reviewed source tree rather than copying over stale generated
 files. Keep the repository's `.git` directory and owner-managed configuration.
 This archive contains the complete tracked source tree. Back up the previous
 checkout and preserve `.git` and any required owner-managed local configuration
-when replacing the old source files. The seven workflow filenames overwrite
-their previous versions and perform checks only. They contain no publication,
-registry upload, release, tag or credential-writing step.
+when replacing the old source files. The seven workflow filenames overwrite their previous versions. Six are
+verification-only; the TestPyPI workflow permits a separate, explicitly
+selected manual upload after verification, via Trusted Publishing. It cannot
+publish to production PyPI or create a release or tag.
 
-Publication is a separate owner action after hosted checks and final hash
-approval. Nothing in this archive performs it automatically.
+Publication remains a separate owner action after hosted checks and final hash
+approval. No push or tag automatically publishes a package.

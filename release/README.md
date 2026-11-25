@@ -29,9 +29,12 @@ python -m pytest -q tests
 ```
 
 CI installs the built wheel and tests it using the source-layout test suite.
-No source-tree `PYTHONPATH` masks the installed package. Publication-named
-workflows are validation only. They have read-only repository permission, no
-publishing credentials, no `id-token: write`, and no upload command.
+No source-tree `PYTHONPATH` masks the installed package. The TestPyPI workflow defaults to verification only; a manual run on `main`
+with the `publish` input enabled transfers the tested distributions to a
+separate publishing job. Only that job uses `id-token: write` and the
+`testpypi` environment. It authenticates the exact transferred files and
+uses Trusted Publishing at the TestPyPI endpoint. The production PyPI
+workflow is verification-only. No push or tag triggers publication.
 
 After intentional source edits, refresh the inventory with
 `python tools/update_manifest.py`. This is bookkeeping, not qualification.
