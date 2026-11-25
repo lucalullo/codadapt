@@ -21,7 +21,7 @@ Fixed configurations on the 14 development origins; aggregate printed-precision 
 | Edge task execution times | RMSE (lower is better) | 0.081945 | HistGradientBoosting | 0.062866 | 1.30349 |
 | NYC Reservoir | RMSE (lower is better) | 2.86138 | Logistic / Ridge | 0.941486 | 3.03921 |
 
-The quality ratio is project / baseline for lower-is-better loss, and baseline / project for higher-is-better scores. A ratio below one favors the project numerically; this is not a confidence interval or an equivalence test. Ties are broken alphabetically for choosing the resource comparator.
+The quality ratio is project / baseline for lower-is-better loss, and baseline / project for higher-is-better scores. A ratio below one favors the project numerically; this is not a confidence interval or an equivalence test. Ties are broken alphabetically for choosing the resource comparator. Metrics differ between rows (ROC-AUC, balanced accuracy and RMSE); compare within each row, not the bar lengths as a cross-task quality ranking.
 
 ## Computational efficiency
 

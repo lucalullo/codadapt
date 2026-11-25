@@ -1,7 +1,8 @@
 # Data provenance and attribution
 
-Historical 2.1.0 source attribution. This 2.2.0 distribution includes aggregate
-measurements only; the normalized folds and original datasets are not included.
+Historical 2.1.0 source attribution. This source revision includes aggregate measurements, the authenticated historical
+fold manifest and the replay code. The normalized fold arrays and original
+datasets are not included.
 
 Normalized folds derive from UCI datasets under CC BY 4.0:
 https://creativecommons.org/licenses/by/4.0/ . Code remains under LICENSE (MIT).

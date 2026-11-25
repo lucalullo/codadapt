@@ -11,13 +11,15 @@
 | Dataset origins | 14 development origins |
 | Regime | Fixed configurations and splits, one numerical thread |
 | Final jobs | 97 measured / 98 attempted; 83 completed pairs, one missing |
-| Reproducibility | Aggregate measurements and figure regeneration; original fit inputs and complete configurations not bundled |
+| Reproducibility | Per-origin documentation, aggregate audit and chart regeneration; historical fold replay from authenticated original assets |
 
 ## Predictive performance
 
 The common overview compares CodAdapt 2.1.0 with the numerically best available external baseline on each dataset's primary metric (ROC-AUC for binary, balanced accuracy for multiclass, RMSE for regression). The missing Glass/XGBoost comparison stays missing. The original exploratory comparisons and intervals are retained separately.
 
 ![Primary metric comparison](overview/quality.svg)
+
+*Rows use different predictive metrics (ROC-AUC, balanced accuracy, RMSE). Compare CodAdapt with its comparator within each row only; the bar lengths are not a cross-task ranking.*
 
 [Summary table](overview/SUMMARY.md) · [Complete results](RESULTS.md) · [Paired comparisons](COMPARISONS.md)
 
@@ -35,7 +37,11 @@ Fifteen pointwise observations on six origins meet the original loss/byte screen
 
 ## Methodology and reproducibility
 
-The [methodology](METHODOLOGY.md) records the source, metrics, operating thresholds and statistical boundaries. The original exact fit configurations, split indices and source datasets are not included; full competitive reproduction is therefore not provided. `python benchmarks/plot_overview.py` reads the included aggregate CSV only. `python benchmarks/plot_results.py` recreates the original detailed figures from the recorded values; it does not train or score models. [Provenance](data/provenance.json) and [full-precision data](data/full_precision.json) preserve source custody.
+The [methodology](METHODOLOGY.md) records the source, metrics, operating thresholds and statistical boundaries. The [reproducibility matrix](REPRODUCE.md) identifies each original source, the evidence level, the commands that can be run and the missing artifacts. Original 14-origin refits are not reconstructible from the supplied aggregate records alone; the separate historical three-origin replay has authenticated fold manifests and a runnable recipe. `python benchmarks/plot_overview.py` reads the included aggregate CSV only. `python benchmarks/plot_results.py` recreates the original detailed figures from the recorded values; it does not train or score models. [Provenance](data/provenance.json) and [full-precision data](data/full_precision.json) preserve source custody.
+
+## Evidence roadmap
+
+Independent confirmation and a preregistered Pareto evaluation are future research objectives, not completed or scheduled results. The proposed evaluation retains at least 20 independently certified origins, a relative loss margin of 5% and a maximum byte ratio of 50%. The required origin certification and execution authorization are not complete; no date or successful outcome is promised.
 
 ## Complete results and figures
 

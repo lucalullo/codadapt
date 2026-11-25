@@ -1,6 +1,6 @@
 # Release verification
 
-CodAdapt **2.2.0** is a technical release with an unchanged predictive learner. The earlier qualification records refer to the supplied revision. The documentation alignment changes source and artifact hashes, not runtime modules. Hosted verification and publication remain pending.
+CodAdapt **2.2.0** is a technical release with an unchanged predictive learner. The earlier qualification records refer to the supplied revision. The documentation and reproduction guides change source and artifact hashes, not runtime modules. Hosted checks must be verified for the actual source revision; this document does not assert the current registry state.
 
 ## Artifacts and inventory
 

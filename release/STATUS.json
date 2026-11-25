@@ -6,7 +6,7 @@
   "third_party_notices": "Preserved, not relicensed",
   "local_verification": "PASS_IN_RECORDED_PROFILES",
   "github_hosted_verification": "PENDING",
-  "publication": "NOT_PERFORMED; separate owner action after final checks",
+  "publication": "Not performed by this source preparation; registry status must be checked independently.",
   "C60": "NOT_QUALIFIED",
   "C60_observed_accesses": [
     837,
@@ -30,5 +30,7 @@
   "joint_favorable_origins": 6,
   "native_binary_included": false,
   "standalone_lightweight_trace_companion_included": false,
-  "documentation_revision": "Presentation-only alignment; historical runtime evidence retained. New artifact hashes must be verified separately."
+  "documentation_revision": "Dataset-level reproducibility guides, authenticated historical fold replay recipe, explicit migration policy, citation and chart reading constraints. Runtime, numerical evidence and workflow definitions unchanged.",
+  "development_reproduction": "Aggregate audit and figure regeneration; original 14-origin fit inputs and complete split/configuration unavailable in this bundle.",
+  "historical_reproduction": "15 authenticated public historical fold archives, with original runner and manifest; obtain arrays separately. No fresh competitive fit."
 }

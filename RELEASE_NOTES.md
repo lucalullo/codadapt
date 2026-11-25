@@ -6,11 +6,14 @@ optional zlib snapshots and immutable-input reuse address specific inference and
 storage workloads. The restricted snapshot reader includes a tested pandas
 compatibility correction. The serving source contract matches the current code.
 
+## Migration from 2.1.0 (breaking distribution changes)
+
+- **Python:** this release requires Python >=3.12. Users of Python 3.10/3.11 must upgrade their environment or retain a compatible CodAdapt 2.1.0 release. The metadata constraint is not a guarantee of every later Python version or platform.
+- **C++ inference:** this release deliberately ships a pure-Python wheel and does not build or distribute the optional C++ backend. Native-backend users should keep a previously qualified 2.1.0 wheel, or build the historical 2.1.0 source using its original native-build instructions. Building the current checkout does not enable C++. Whether the extension returns in a future release is undecided; no return date is promised.
+- **Persistence:** keep the producer version and its environment for existing serving images, or re-export from a compatible native snapshot.
+
 ## Scope and compatibility
 
-- The wheel is pure Python. Historical optional C++ binaries are not built.
-- Package metadata requires Python 3.12 or later. Python 3.10/3.11 users of 2.1.0
-  must retain that release or migrate to an admitted environment.
 - Native snapshot migration and producer-bound serving-image compatibility are
   different contracts. Preserve the original environment for rollback.
 - The standalone lightweight serving/trace companion is not bundled. Its

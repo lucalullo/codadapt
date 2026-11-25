@@ -10,4 +10,4 @@ Separate previously published 90-fit panel (three sources, five grouped folds, s
 
 Music mean fit time / batch-2048 latency / pickle size: CodAdapt 48.26 ms / 3.672 ms / 87.86 KiB; Random Forest 222.08 ms / 10.00 ms / 972.14 KiB; HistGradientBoosting 531.96 ms / 32.65 ms / 634.25 KiB. No universal superiority is established.
 
-The [original fold observations](historical/observed_classification.csv) and [data attribution](historical/DATA_LICENSE.md) are preserved. Original dataset archives and runner history remain in the original 2.1.0 repository, not in this source bundle. Earlier experimental and native reports retain their historical identities.
+The [original fold observations](historical/observed_classification.csv) and [data attribution](historical/DATA_LICENSE.md) are preserved. The [historical reproduction recipe](historical/REPRODUCE.md) includes the authenticated fold manifest, exact runner and a staging command for the original public fold assets. The datasets themselves are not bundled. Earlier experimental and native reports retain their historical identities.

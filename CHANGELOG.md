@@ -2,6 +2,8 @@
 
 ## 2.2.0
 
+**Migration:** Python >=3.12 is required; the optional C++ inference backend is not included. See [release notes](RELEASE_NOTES.md) for compatibility and migration guidance.
+
 - Preserve the adaptive coded-memory learner, with combined classifier outputs, optional compressed snapshots and prepared immutable-input inference.
 - Retain the original estimator API and document persistence, serving, and migration boundaries.
 - Add the complete development benchmark tables, comparative figures and separate technical evidence.

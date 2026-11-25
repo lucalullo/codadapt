@@ -10,7 +10,7 @@ CodAdapt learns residual contributions through lookup memories for binary classi
 
 ## Project status
 
-Version **2.2.0** is a technical improvement release with an unchanged predictive learner. It adds combined classifier outputs, optional snapshot compression and prepared immutable inputs for repeated requests. The competitive results are from 2.1.0; the 2.2.0 technical panel is separate. No predictive improvement is claimed. See the [release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md).
+CodAdapt provides combined classifier outputs, optional snapshot compression and prepared immutable inputs for repeated requests. The underlying predictive learner is unchanged. Historical competitive measurements and current technical measurements are reported separately; no new predictive superiority is claimed. See the [release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md).
 
 ## Install
 
@@ -18,7 +18,9 @@ Version **2.2.0** is a technical improvement release with an unchanged predictiv
 python -m pip install codadapt
 ```
 
-Requires Python 3.12 or later. The recorded qualification is Windows 11 x64, CPython 3.12.10 and the Python backend with pinned dependencies. The 2.2.0 source builds a pure-Python wheel; the historical C++ extension is not built. Install this version explicitly only after publication, or use a local source checkout/wheel. See the [installation and compatibility guidance](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md).
+The badge shows the latest published PyPI version. The command installs the latest release compatible with the active Python environment. To install the exact source checkout instead, run `python -m pip install .` from its root.
+
+The current source requires Python 3.12 or later and builds a pure-Python wheel. The C++ inference backend is not included or built by this release. Users who require the previously supported native backend or Python 3.10/3.11 should retain a compatible 2.1.0 distribution. See the [migration notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md) and [installation guide](https://github.com/lucalullo/codadapt/blob/main/docs/INSTALLATION.md).
 
 ## Quick start
 
@@ -54,9 +56,9 @@ The classifier also supports multiclass targets. For regression, use `CodAdaptRe
 | Competitive evidence | 2.1.0 vs six fixed baseline configurations; 14 development origins. |
 | Coverage | 97 of 98 estimator/dataset jobs measured; 83 paired comparisons, one missing. |
 | Technical evidence | 2.2.0 combined outputs, prepared inputs and snapshot compression; separate observations. |
-| Reproduction | Aggregate measurements and figure regeneration; original fit inputs and complete split/configuration are not bundled. |
+| Reproducibility | Per-dataset source and evidence guides, aggregate verification and figure regeneration; a separate historical fold-replay recipe is available. |
 
-The [benchmark overview](https://github.com/lucalullo/codadapt/blob/main/benchmarks/README.md) links predictive quality, computational costs, complete figures, methodology, failures and numerical data. The two evidence scopes must not be combined into a new ranking.
+The [benchmark overview](https://github.com/lucalullo/codadapt/blob/main/benchmarks/README.md) links predictive quality, computational costs, complete figures, methodology, failures and numerical data. The two evidence scopes must not be combined into a new ranking. See the [reproducibility matrix](https://github.com/lucalullo/codadapt/blob/main/benchmarks/REPRODUCE.md) for exact coverage and missing inputs.
 
 ## When to use it
 
@@ -87,6 +89,8 @@ Consider alternatives when the primary objective is predictive quality on the ev
 - [Limitations](https://github.com/lucalullo/codadapt/blob/main/docs/LIMITATIONS.md)
 - [Release notes](https://github.com/lucalullo/codadapt/blob/main/RELEASE_NOTES.md)
 - [Changelog](https://github.com/lucalullo/codadapt/blob/main/CHANGELOG.md)
+- [Reproducing benchmarks](https://github.com/lucalullo/codadapt/blob/main/benchmarks/REPRODUCE.md)
+- [Citation](https://github.com/lucalullo/codadapt/blob/main/CITATION.cff)
 
 ## License
 

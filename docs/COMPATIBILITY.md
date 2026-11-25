@@ -37,9 +37,7 @@ model, digest and environment for rollback.
 
 ## Native and experimental functionality
 
-The historical optional C++ source is retained under [native](../native/README.md)
-but is not built into this wheel. Old native-wheel qualification does not apply
-to a new binary. A compiler is unnecessary for this pure-Python package.
+The omission of C++ is a distribution decision for this release: the optional extension is not built or shipped. The historical source is retained under [native](../native/README.md) for reference only. Users requiring native inference should retain a qualified 2.1.0 wheel or use the historical 2.1.0 build procedure; the current checkout cannot build that backend. Reintroduction is undecided. Old native-wheel qualification does not apply to a new binary. A compiler is unnecessary for this pure-Python package.
 `auto` uses the admitted Python path when no native extension is installed;
 requesting an unavailable native extension is an error, not a speedup.
 

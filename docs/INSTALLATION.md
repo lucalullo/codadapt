@@ -1,10 +1,12 @@
 # Installation
 
-When version 2.2.0 is available on PyPI:
+Install the latest compatible published release:
 
 ```bash
-python -m pip install codadapt==2.2.0
+python -m pip install codadapt
 ```
+
+The [PyPI project page](https://pypi.org/project/codadapt/) lists the published versions. Installing from a checkout is a separate operation and does not depend on registry availability.
 
 For this source revision, install locally from the repository root. Use a compatible dependency environment; the [CI dependency profile](../requirements/ci.txt) matches the tested core dependency versions. The [historical Windows lock](../requirements/verified.lock) describes the preceding build and is not a portable resolver lock.
 

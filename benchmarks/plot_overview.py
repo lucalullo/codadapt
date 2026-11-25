@@ -24,7 +24,7 @@ def chart(rows, filename, title, subtitle, ratio_key):
     """Use a symmetric log-ratio scale: left is numerically better/smaller."""
     width = 920
     row_height = 35
-    height = 145 + len(rows) * row_height
+    height = 167 + len(rows) * row_height
     logs = [math.log2(row[ratio_key]) for row in rows]
     extent = max(1, math.ceil(max(map(abs, logs))))
     center, half = 505, 210
@@ -32,7 +32,7 @@ def chart(rows, filename, title, subtitle, ratio_key):
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img">',
         f'<title>{esc(title)}</title>',
-        f'<desc>{esc(subtitle)} Lower ratios indicate a favorable numerical direction; not a significance test.</desc>',
+        f'<desc>{esc(subtitle)} Compare each dataset only with its own baseline; predictive metrics differ between rows. Lower ratios indicate a favorable numerical direction; not a significance test.</desc>',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
         '<g font-family="Arial, Helvetica, sans-serif" fill="#172638">',
         f'<text x="24" y="32" font-size="21" font-weight="bold">{esc(title)}</text>',
@@ -59,6 +59,10 @@ def chart(rows, filename, title, subtitle, ratio_key):
         x = center + tick / extent * half
         svg.append(f'<text x="{x:.2f}" y="{y+17}" font-size="11" text-anchor="middle">{2.0**tick:.4g}x</text>')
     svg.append(f'<text x="{center}" y="{y+36}" font-size="11" text-anchor="middle" fill="#475569">Log-ratio axis | 1x = same recorded value | descriptive, not a statistical test</text>')
+    caption = ("Metrics differ by row (ROC-AUC, balanced accuracy, RMSE); compare within each row only."
+               if ratio_key == "quality_ratio" else
+               "Each row compares stored bytes with its own baseline; workloads differ across datasets.")
+    svg.append(f'<text x="{center}" y="{y+52}" font-size="11" text-anchor="middle" fill="#475569">{esc(caption)}</text>')
     svg.append('</g></svg>')
     (OUT / filename).write_text("\n".join(svg) + "\n", encoding="utf-8")
 
@@ -77,7 +81,7 @@ def summarize(rows, project, scope, cost_label):
     lines = [f"# {project} benchmark summary", "", scope, "", "## Predictive performance", "", "| Dataset | Primary metric | Project | Best eligible external baseline | Baseline value | Directional ratio |", "|---|---|---:|---|---:|---:|"]
     for r in rows:
         lines.append(f'| {r["dataset"]} | {r["metric"]} ({"higher" if r["higher"] else "lower"} is better) | {number(r["value"])} | {r["comparator"]} | {number(r["baseline"])} | {number(r["quality_ratio"])} |')
-    lines += ["", "The quality ratio is project / baseline for lower-is-better loss, and baseline / project for higher-is-better scores. A ratio below one favors the project numerically; this is not a confidence interval or an equivalence test. Ties are broken alphabetically for choosing the resource comparator.", "", "## Computational efficiency", "", f"| Dataset | Quality-selected comparator | {cost_label}: project / baseline | Training RSS MiB: project / baseline | Serialized KiB: project / baseline |", "|---|---|---:|---:|---:|"]
+    lines += ["", "The quality ratio is project / baseline for lower-is-better loss, and baseline / project for higher-is-better scores. A ratio below one favors the project numerically; this is not a confidence interval or an equivalence test. Ties are broken alphabetically for choosing the resource comparator. Metrics differ between rows (ROC-AUC, balanced accuracy and RMSE); compare within each row, not the bar lengths as a cross-task quality ranking.", "", "## Computational efficiency", "", f"| Dataset | Quality-selected comparator | {cost_label}: project / baseline | Training RSS MiB: project / baseline | Serialized KiB: project / baseline |", "|---|---|---:|---:|---:|"]
     for r in rows:
         lines.append(f'| {r["dataset"]} | {r["comparator"]} | {number(r["cost"])} / {number(r["baseline_cost"])} | {number(r["rss"])} / {number(r["baseline_rss"])} | {number(r["bytes"]/1024)} / {number(r["baseline_bytes"]/1024)} |')
     lines += ["", "The comparator is selected by predictive quality, not by resource cost. Training and RSS definitions are protocol-specific; do not compare the two repositories as if they used a common workload. Stored bytes are not loaded RAM. See the [benchmark overview](../README.md) for coverage, detailed timing and scientific limitations.", "", "[Machine-readable summary](summary.csv). Regenerate from the recorded source CSV with `python benchmarks/plot_overview.py`. No new measurements are generated.", ""]

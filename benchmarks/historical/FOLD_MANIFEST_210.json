@@ -1,0 +1,252 @@
+{
+  "records": [
+    {
+      "ID": "wireless_0",
+      "source": "wireless",
+      "fold": 0,
+      "task": "classification",
+      "seed": 17,
+      "train_rows": 1600,
+      "eval_rows": 400,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "file": "wireless_0.npz",
+      "SHA256": "992afa3d25e929b4508be7ac332c58996364b8ddc17aca3ad78527eed91c7a38"
+    },
+    {
+      "ID": "wireless_1",
+      "source": "wireless",
+      "fold": 1,
+      "task": "classification",
+      "seed": 43,
+      "train_rows": 1600,
+      "eval_rows": 400,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "file": "wireless_1.npz",
+      "SHA256": "b3d9b239654a32e0f95c7de3c0932b87fd2a8be53b42646d44267ee2ea568a10"
+    },
+    {
+      "ID": "wireless_2",
+      "source": "wireless",
+      "fold": 2,
+      "task": "classification",
+      "seed": 89,
+      "train_rows": 1600,
+      "eval_rows": 400,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "file": "wireless_2.npz",
+      "SHA256": "58f8a2bfb73519023b354d586c23c11ac28d0f01a215f02956f96bb2e4efcb59"
+    },
+    {
+      "ID": "wireless_3",
+      "source": "wireless",
+      "fold": 3,
+      "task": "classification",
+      "seed": 137,
+      "train_rows": 1600,
+      "eval_rows": 400,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "file": "wireless_3.npz",
+      "SHA256": "4f0a89d2013936eb8fd57058cb886d3cb5ca0bd3412d2de48b5eeeee6483b9a0"
+    },
+    {
+      "ID": "wireless_4",
+      "source": "wireless",
+      "fold": 4,
+      "task": "classification",
+      "seed": 223,
+      "train_rows": 1600,
+      "eval_rows": 400,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "file": "wireless_4.npz",
+      "SHA256": "f9c92c13d7e5b4790b313314569ce77f23238b1798aa25436beeb9d09dce0fcb"
+    },
+    {
+      "ID": "music_0",
+      "source": "music",
+      "fold": 0,
+      "task": "classification",
+      "seed": 17,
+      "train_rows": 320,
+      "eval_rows": 80,
+      "classes": [
+        "angry",
+        "happy",
+        "relax",
+        "sad"
+      ],
+      "file": "music_0.npz",
+      "SHA256": "8e8c11103cca4be4c5c67e6f9bb0a646e1deed43e008400e7972b68941856d90"
+    },
+    {
+      "ID": "music_1",
+      "source": "music",
+      "fold": 1,
+      "task": "classification",
+      "seed": 43,
+      "train_rows": 320,
+      "eval_rows": 80,
+      "classes": [
+        "angry",
+        "happy",
+        "relax",
+        "sad"
+      ],
+      "file": "music_1.npz",
+      "SHA256": "6ac5d08498a4fbc50694c94ba9542874566bd355234ce82fc16290109c8ea85d"
+    },
+    {
+      "ID": "music_2",
+      "source": "music",
+      "fold": 2,
+      "task": "classification",
+      "seed": 89,
+      "train_rows": 320,
+      "eval_rows": 80,
+      "classes": [
+        "angry",
+        "happy",
+        "relax",
+        "sad"
+      ],
+      "file": "music_2.npz",
+      "SHA256": "51c4d7ff6989e5b5ecfe5b09f0d6d2ef6bcc5a102acf5ff393604bd0ab73836a"
+    },
+    {
+      "ID": "music_3",
+      "source": "music",
+      "fold": 3,
+      "task": "classification",
+      "seed": 137,
+      "train_rows": 320,
+      "eval_rows": 80,
+      "classes": [
+        "angry",
+        "happy",
+        "relax",
+        "sad"
+      ],
+      "file": "music_3.npz",
+      "SHA256": "776a20f0c37130d15739a2294b465abdfce44d3817b38976bf15e69b4d2dffa6"
+    },
+    {
+      "ID": "music_4",
+      "source": "music",
+      "fold": 4,
+      "task": "classification",
+      "seed": 223,
+      "train_rows": 320,
+      "eval_rows": 80,
+      "classes": [
+        "angry",
+        "happy",
+        "relax",
+        "sad"
+      ],
+      "file": "music_4.npz",
+      "SHA256": "cc12c1cf4ebd7177a2748185f5e4c5cf1e56e561b076f6ea601c7910afbc6a55"
+    },
+    {
+      "ID": "rice_0",
+      "source": "rice",
+      "fold": 0,
+      "task": "classification",
+      "seed": 17,
+      "train_rows": 3048,
+      "eval_rows": 762,
+      "classes": [
+        "Cammeo",
+        "Osmancik"
+      ],
+      "file": "rice_0.npz",
+      "SHA256": "a0d2c4a61de75c31d138e9fa4a7a2612281e6bf15a42cbe7c8d1f97e3707a5df"
+    },
+    {
+      "ID": "rice_1",
+      "source": "rice",
+      "fold": 1,
+      "task": "classification",
+      "seed": 43,
+      "train_rows": 3048,
+      "eval_rows": 762,
+      "classes": [
+        "Cammeo",
+        "Osmancik"
+      ],
+      "file": "rice_1.npz",
+      "SHA256": "9dce2b75e35935b9dfabde0a4bad54d389ef5eba21ae7341012e96692d370fae"
+    },
+    {
+      "ID": "rice_2",
+      "source": "rice",
+      "fold": 2,
+      "task": "classification",
+      "seed": 89,
+      "train_rows": 3048,
+      "eval_rows": 762,
+      "classes": [
+        "Cammeo",
+        "Osmancik"
+      ],
+      "file": "rice_2.npz",
+      "SHA256": "dc47dd434d825f9686e97064df13e87909230a3c475e6db8ca77c541d30760ff"
+    },
+    {
+      "ID": "rice_3",
+      "source": "rice",
+      "fold": 3,
+      "task": "classification",
+      "seed": 137,
+      "train_rows": 3048,
+      "eval_rows": 762,
+      "classes": [
+        "Cammeo",
+        "Osmancik"
+      ],
+      "file": "rice_3.npz",
+      "SHA256": "d7e03cc8574a4599b80ef9243599332925a3b206e1d1dd255967f3f0c75b2202"
+    },
+    {
+      "ID": "rice_4",
+      "source": "rice",
+      "fold": 4,
+      "task": "classification",
+      "seed": 223,
+      "train_rows": 3048,
+      "eval_rows": 762,
+      "classes": [
+        "Cammeo",
+        "Osmancik"
+      ],
+      "file": "rice_4.npz",
+      "SHA256": "583ac42967374baae2f070b144ea5ac8ed40b8a52b3f92afbdf19e75bedbb0e6"
+    }
+  ],
+  "format": "NPZ allow_pickle=False",
+  "license": "CC BY 4.0",
+  "new_fits": 0
+}
