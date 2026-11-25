@@ -1,15 +1,46 @@
-name: PyPI preparation - no upload
+name: Publish to PyPI
 
 on:
   workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Publish verified distributions to PyPI (unchecked runs verify only)'
+        type: boolean
+        required: true
+        default: false
+      registered_publishers_verified:
+        description: 'Existing Trusted Publisher and GitHub environment verified'
+        type: boolean
+        required: true
+        default: false
+      approval:
+        description: 'Type PUBLISH codadapt 2.2.0 to approve publication'
+        type: string
+        required: false
+        default: ''
+      testpypi_run_id:
+        description: 'Successful TestPyPI upload/verification run ID for this same commit'
+        type: string
+        required: false
+        default: ''
 
 permissions:
   contents: read
+
+concurrency:
+  group: codadapt-220-publication
+  cancel-in-progress: false
 
 jobs:
   verify:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 25
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      wheel_sha256: ${{ steps.package_hashes.outputs.wheel_sha256 }}
+      sdist_sha256: ${{ steps.package_hashes.outputs.sdist_sha256 }}
     strategy:
       fail-fast: false
       matrix:
@@ -23,6 +54,7 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
+          ref: ${{ github.sha }}
           persist-credentials: false
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
@@ -51,8 +83,37 @@ jobs:
         run: python -B tools/verify_repository.py
       - name: Verify workflow safety
         run: python -B tools/check_workflows.py
-      - name: Build wheel and source distribution
+      - name: Validate manual owner approval and existing publishing environment
+        if: ${{ inputs.publish == true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUBLISH_CONFIRMED: ${{ inputs.publish }}
+          OWNER_APPROVAL: ${{ inputs.approval }}
+          TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
+        run: python -B tools/publication_guard.py gate --channel pypi
+      - name: Require a successful matching TestPyPI publication run
+        id: test_run
+        if: ${{ inputs.publish == true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TEST_RUN_ID: ${{ inputs.testpypi_run_id }}
+        shell: bash
+        run: python -B tools/publication_guard.py test-run --run-id "$TEST_RUN_ID"
+      - name: Retrieve the exact verified TestPyPI distributions
+        if: ${{ inputs.publish == true }}
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          artifact-ids: ${{ steps.test_run.outputs.artifact_id }}
+          run-id: ${{ inputs.testpypi_run_id }}
+          github-token: ${{ github.token }}
+          path: dist
+          merge-multiple: true
+      - name: Build wheel and source distribution (verification-only mode)
+        if: ${{ inputs.publish == false }}
         run: python -m build
+      - name: Require exact bytes already verified on TestPyPI
+        if: ${{ inputs.publish == true }}
+        run: python -B tools/publication_guard.py index --channel testpypi --phase post
       - name: Check exact distribution metadata and README rendering
         shell: python
         run: |
@@ -72,3 +133,94 @@ jobs:
           subprocess.run([sys.executable, "-m", "pip", "check"], check=True)
       - name: Run installed-package tests (no benchmark datasets)
         run: python -m pytest -q tests
+      - name: Record verified distribution hashes
+        id: package_hashes
+        run: python -B tools/publication_guard.py hashes
+      - name: Store verified distributions
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: codadapt-pypi-distributions-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            dist/codadapt-2.2.0-py3-none-any.whl
+            dist/codadapt-2.2.0.tar.gz
+          if-no-files-found: error
+          retention-days: 90
+
+  publish:
+    name: Publish verified distributions to PyPI
+    needs: verify
+    if: >-
+      github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' &&
+      github.repository == 'lucalullo/codadapt' && github.actor == 'lucalullo' &&
+      github.triggering_actor == 'lucalullo' && inputs.publish == true
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment:
+      name: pypi
+      url: https://pypi.org/project/codadapt/
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Retrieve verified distributions
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: codadapt-pypi-distributions-${{ github.run_id }}-${{ github.run_attempt }}
+          path: dist
+      - name: Authenticate distributions
+        env:
+          EXPECTED_WHEEL: ${{ needs.verify.outputs.wheel_sha256 }}
+          EXPECTED_SDIST: ${{ needs.verify.outputs.sdist_sha256 }}
+        run: python3 -B tools/publication_guard.py authenticate
+      - name: Recheck owner approval and environment protection
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUBLISH_CONFIRMED: ${{ inputs.publish }}
+          OWNER_APPROVAL: ${{ inputs.approval }}
+          TRUSTED_PUBLISHER_CONFIRMED: ${{ inputs.registered_publishers_verified }}
+        run: python3 -B tools/publication_guard.py gate --channel pypi
+      - name: Recheck exact TestPyPI distribution bytes before promotion
+        run: python3 -B tools/publication_guard.py index --channel testpypi --phase post
+      - name: Reject partial or different existing releases
+        id: registry
+        run: python3 -B tools/publication_guard.py index --channel pypi --phase pre
+      - name: Publish using the existing Trusted Publisher
+        if: steps.registry.outputs.needs_upload == 'true'
+        uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # v1.14.2, retained from 2.1.0
+        with:
+          repository-url: https://upload.pypi.org/legacy/
+          packages-dir: dist/
+          skip-existing: false
+          verify-metadata: true
+          print-hash: true
+          attestations: true
+
+  verify_release:
+    name: Verify published PyPI distributions
+    needs: [verify, publish]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Retrieve verified distributions
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: codadapt-pypi-distributions-${{ github.run_id }}-${{ github.run_attempt }}
+          path: dist
+      - name: Authenticate distributions
+        env:
+          EXPECTED_WHEEL: ${{ needs.verify.outputs.wheel_sha256 }}
+          EXPECTED_SDIST: ${{ needs.verify.outputs.sdist_sha256 }}
+        run: python3 -B tools/publication_guard.py authenticate
+      - name: Download and verify every published file
+        run: python3 -B tools/publication_guard.py index --channel pypi --phase post

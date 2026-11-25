@@ -1332,13 +1332,13 @@
     },
     {
       "path": ".github/workflows/publish-pypi.yml",
-      "SHA256": "4184192c8c91345a08457daefafe64e9c23d00a11c3abffd41e9c98b3d460bc6",
-      "bytes": 2952
+      "SHA256": "3c9d34cca69b787a05b8ccc9e09f6854379e2ee212506b750694cb4509339b8a",
+      "bytes": 9341
     },
     {
       "path": ".github/workflows/publish-testpypi.yml",
-      "SHA256": "3a73212eba95c5ad80730cbb05c3b06263b19baa82a946f47ffbbc7abf04c32a",
-      "bytes": 5943
+      "SHA256": "270cf2138714d261fe441f381a1c8fa4a1713da69a5260cdfaa29ae7efcd168d",
+      "bytes": 8025
     },
     {
       "path": ".github/workflows/qualification.yml",
@@ -1382,8 +1382,8 @@
     },
     {
       "path": "RELEASE_NOTES.md",
-      "SHA256": "e6d25d0e4c5d412fab9adfce70e98ba36a049127b96a74ce6a69ee60fddccf6b",
-      "bytes": 2813
+      "SHA256": "35df678d8fc6270f8e0b233c60c5a76a8dc86f75f2ac9ce3bc1758d1a9b59472",
+      "bytes": 2917
     },
     {
       "path": "SECURITY.md",
@@ -1752,8 +1752,8 @@
     },
     {
       "path": "docs/SOURCE_LAYOUT.md",
-      "SHA256": "73c0d9afa7e1abebe32e077c0d4b89000d0653d4137ad49776a1fa885b2e98f8",
-      "bytes": 1297
+      "SHA256": "c604237e7318e28bc718bead91d496b6d67bd9a31735ccc4480d610a4bb83ba7",
+      "bytes": 1353
     },
     {
       "path": "docs/USAGE.md",
@@ -2157,8 +2157,8 @@
     },
     {
       "path": "qualification/README.md",
-      "SHA256": "3c58ad7b68c6d856421df0ea88f9d7ead6fa2fed076c154fa095a77be89cd798",
-      "bytes": 3147
+      "SHA256": "d3c6f1f0f6d9d19cc60f2d609f70d28d3bed94bf6dc541db150bbb9a84b2fd16",
+      "bytes": 3327
     },
     {
       "path": "qualification/REVIEW.json",
@@ -2172,18 +2172,18 @@
     },
     {
       "path": "release/README.md",
-      "SHA256": "45f45457d5f97ac2f9f251ea1c2032f59572cbb3c04aff058f179c808942c41c",
-      "bytes": 2603
+      "SHA256": "4b811151a25a71565d32f4e3a3674089f2948ee523453caedacd672851f315b7",
+      "bytes": 4379
     },
     {
       "path": "release/SOURCE_MANIFEST.txt",
-      "SHA256": "7894c607b645ed530e55c4de1b64b69e646d93d45fba45334658591a8f257bb7",
-      "bytes": 8336
+      "SHA256": "68ca168fd30d95fa57152e845f4393c1457631707ef414a12f47934d179b0136",
+      "bytes": 8395
     },
     {
       "path": "release/STATUS.json",
-      "SHA256": "50d83e68fd00c1eb35b7ce2bef40e62f43892c6891e98bdbcdc10999396679c3",
-      "bytes": 1941
+      "SHA256": "66b4c9d4499100cdb80d5278cdccc78a1fdfa085ba350c793c598186935ea77a",
+      "bytes": 2057
     },
     {
       "path": "requirements/README.md",
@@ -2631,6 +2631,11 @@
       "bytes": 2055
     },
     {
+      "path": "tests/test_publication_guard.py",
+      "SHA256": "5be8fdd33d666e8e425f3750551d7b8652108ee3bf6b9ce54918515da201d4f9",
+      "bytes": 8241
+    },
+    {
       "path": "tests/test_release.py",
       "SHA256": "a14271b90d23b85a52af6095305fcebd7f7c02252d67216d9c77c0f1466bdb78",
       "bytes": 4327
@@ -2642,13 +2647,18 @@
     },
     {
       "path": "tools/check_workflows.py",
-      "SHA256": "e39162eab876133dda8262e482da061b8665f83773c7a351f26abadd1882c574",
-      "bytes": 8182
+      "SHA256": "252e39a9fca1037390908d178b937b199a861f0a7118fcf943fde90652ef09a8",
+      "bytes": 5844
     },
     {
       "path": "tools/convert_snapshot_to_native_pickle.py",
       "SHA256": "097459c23c2d13100eb43c4a0fec5460e3965bcccc2053f652c0ec15d7a59bd6",
       "bytes": 1685
+    },
+    {
+      "path": "tools/publication_guard.py",
+      "SHA256": "2adf5d937b12294c07d82d5006f417ffe5f87466ccf1ecc9a825273e32068386",
+      "bytes": 11454
     },
     {
       "path": "tools/release_backend.py",

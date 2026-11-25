@@ -29,12 +29,40 @@ python -m pytest -q tests
 ```
 
 CI installs the built wheel and tests it using the source-layout test suite.
-No source-tree `PYTHONPATH` masks the installed package. The TestPyPI workflow defaults to verification only; a manual run on `main`
-with the `publish` input enabled transfers the tested distributions to a
-separate publishing job. Only that job uses `id-token: write` and the
-`testpypi` environment. It authenticates the exact transferred files and
-uses Trusted Publishing at the TestPyPI endpoint. The production PyPI
-workflow is verification-only. No push or tag triggers publication.
+No source-tree `PYTHONPATH` masks the installed package. Both publishing workflows
+default to verification only. Explicit owner-operated manual runs on `main` may
+publish using the existing Trusted Publishers, with OIDC permissions confined to
+the isolated publishing job. No push, tag or release event triggers publication.
+
+## Manual publication
+
+1. Ensure the required CI matrix passes for the final commit, and check the existing
+   Trusted Publishers: `publish-testpypi.yml` / `testpypi`, and
+   `publish-pypi.yml` / `pypi`. Preserve the original `pypi` environment protection:
+   sole owner reviewer, no administrative bypass, owner self-review permitted.
+2. Run **Publish to TestPyPI** on `main`. Select `publish` and
+   `registered_publishers_verified`, and enter `TEST codadapt 2.2.0`.
+   The job builds and checks both distributions, runs the installed-package tests,
+   transfers their authenticated bytes, publishes through OIDC, then downloads and
+   verifies the complete TestPyPI release. Inspect the rendered project page and
+   keep the numeric successful run ID (from its Actions URL).
+3. Without changing the source commit, run **Publish to PyPI** on `main`. Select
+   the two confirmation inputs, enter `PUBLISH codadapt 2.2.0` and the successful
+   TestPyPI run ID. The workflow checks that the run really uploaded and verified
+   the release, retrieves the exact verified artifact from that run without rebuilding
+   it, compares its contents to the actual downloaded TestPyPI bytes, and requires
+   the protected owner approval. Only identical distributions may be promoted.
+   After publication it downloads
+   and verifies the complete production release.
+4. An existing complete byte-identical release is verified without another upload.
+   An unexpected, partial, differing or yanked release is a hard stop; do not use
+   skip-existing to conceal a mismatch. If a run must be retried, rerun all jobs
+   so the artifacts belong to the current attempt. If the source changes, repeat
+   TestPyPI qualification before production promotion.
+
+The workflows use the existing OIDC registrations, not stored API tokens. The
+static checker and manifest authenticate the reviewed source; they do not prove
+hosted execution or registry acceptance.
 
 After intentional source edits, refresh the inventory with
 `python tools/update_manifest.py`. This is bookkeeping, not qualification.

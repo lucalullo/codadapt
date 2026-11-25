@@ -266,10 +266,12 @@ tests/legacy/test_serving.py
 tests/legacy/test_shared_encoder.py
 tests/legacy/test_sklearn_compat.py
 tests/test_packaging.py
+tests/test_publication_guard.py
 tests/test_release.py
 tests/test_snapshot_compatibility.py
 tools/check_workflows.py
 tools/convert_snapshot_to_native_pickle.py
+tools/publication_guard.py
 tools/release_backend.py
 tools/update_manifest.py
 tools/verify_repository.py

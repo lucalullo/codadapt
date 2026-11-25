@@ -43,13 +43,15 @@ do not qualify an attachment that is absent from the distributions.
 
 ## Hosted checks still required
 
-All seven workflows include verification. The TestPyPI workflow additionally
-allows an explicit manual, main-branch upload of verified distributions; other
-workflows are verification-only. Local `actionlint` and the workflow privilege
+All seven workflows include verification. The two publication workflows additionally
+allow explicit manual, owner-operated uploads from `main`, in separate protected
+publication jobs. The other five workflows are verification-only. Local `actionlint` and the workflow privilege
 check do not execute GitHub-hosted jobs. Before publication, require successful
 source, package, dependency, strict Twine and installed-wheel test jobs on the
 declared Ubuntu/Windows Python matrix. Qualify macOS separately before claiming
-it. The production PyPI workflow remains verification-only.
+it. Production PyPI publication requires the exact source commit and the same
+distribution bytes verified on TestPyPI, together with the existing owner-review
+protection on the `pypi` environment.
 
 See [release verification](../release/README.md), [compatibility](../docs/COMPATIBILITY.md)
 and [status](../release/STATUS.json). Publication remains a separate owner action.

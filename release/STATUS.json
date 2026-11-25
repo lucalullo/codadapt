@@ -30,9 +30,9 @@
   "joint_favorable_origins": 6,
   "native_binary_included": false,
   "standalone_lightweight_trace_companion_included": false,
-  "documentation_revision": "Dataset-level reproducibility guides, authenticated historical fold replay recipe, explicit migration policy, citation and chart reading constraints. Runtime and numerical evidence unchanged. TestPyPI Trusted Publishing is available only through a manual, explicitly selected main-branch run after verification.",
+  "documentation_revision": "Dataset-level reproducibility guides, authenticated historical fold replay recipe, explicit migration policy, citation and chart reading constraints. Runtime and numerical evidence unchanged. Both existing Trusted Publishing workflows are manually available; production requires a successful matching TestPyPI run, identical distribution bytes and the existing protected owner approval.",
   "development_reproduction": "Aggregate audit and figure regeneration; original 14-origin fit inputs and complete split/configuration unavailable in this bundle.",
   "historical_reproduction": "15 authenticated public historical fold archives, with original runner and manifest; obtain arrays separately. No fresh competitive fit.",
   "testpypi_workflow": "MANUAL_OPT_IN_ONLY",
-  "production_pypi_workflow": "VERIFICATION_ONLY"
+  "production_pypi_workflow": "MANUAL_OPT_IN_AFTER_MATCHING_TESTPYPI_RUN_AND_OWNER_REVIEW"
 }
