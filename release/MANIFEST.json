@@ -58,8 +58,8 @@
       "bytes": 1067
     },
     "README.md": {
-      "SHA256": "503101480d47a27a2c4782b13a2c1a5299203358fd8c69e7ce0b539aa1d15ab6",
-      "bytes": 6671
+      "SHA256": "1f432bc33da1be72faecadca96621a6fce46204ed6c8419a94c74f47fa09bac4",
+      "bytes": 6673
     },
     "RELEASE_NOTES.md": {
       "SHA256": "d46cc43b0d3eb10571cf9b285bdfee0ed8d16fbb903d062505ee160399ac0186",
@@ -698,7 +698,7 @@
       "bytes": 2337
     },
     "release/SBOM.json": {
-      "SHA256": "ac4d04dacd4b920bb2a8b2c3b5a781249daba8002f2c10c35372a42812d89846",
+      "SHA256": "69b0d9eb5f42ba95a4c254986f3e5033d58825333b92d64a931a007b4ea0247e",
       "bytes": 109177
     },
     "release/SOURCE_MANIFEST.txt": {
